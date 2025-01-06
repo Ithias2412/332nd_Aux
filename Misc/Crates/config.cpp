@@ -25,9 +25,11 @@ class CfgVehicles
 
 	class 332nd_Ammo_Crate: 3AS_Supply_Large_Prop
 	{
+		scope = 2;
+		scopeCurator = 2;
 		model="3as\3as_props\crates\models\supply_Large.p3d";
 		displayName="[332nd] Supply Crate (Ammo)";
-		editorCategory="332nd_EditorCategory";
+		//editorCategory="332nd_EditorCategory";
 		editorSubcategory="3AS_EditorSubcategory_Crates";
 		editorPreview="\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Ammo_Prop.jpg";
 		hiddenSelections[]=
@@ -166,9 +168,11 @@ class CfgVehicles
 
 	class 332nd_Medical_Crate: 3AS_Supply_Large_Prop
 	{
+		scope = 2;
+		scopeCurator = 2;
 		model="3as\3as_props\crates\models\supply_Large.p3d";
 		displayName="[332nd] Supply Crate (Medical)";
-		editorCategory="332nd_EditorCategory";
+		//editorCategory="332nd_EditorCategory";
 		editorSubcategory="3AS_EditorSubcategory_Crates";
 		hiddenSelections[]=
 		{
@@ -236,9 +240,11 @@ class CfgVehicles
 
 	class 332nd_Equipment_Crate: 3AS_Supply_Large_Prop
 	{
+		scope = 2;
+		scopeCurator = 2;
 		model="3as\3as_props\crates\models\supply_Large.p3d";
 		displayName="[332nd] Supply Crate (Equipment)";
-		editorCategory="332nd_EditorCategory";
+		//editorCategory="332nd_EditorCategory";
 		editorSubcategory="3AS_EditorSubcategory_Crates";
 		editorPreview="\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Black_Prop.jpg";
 		hiddenSelections[]=
