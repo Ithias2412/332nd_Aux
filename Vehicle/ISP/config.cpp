@@ -31,7 +31,6 @@ class CfgVehicles
         editorSubcategory = "EdSubcat_332nd_Vehicles";
         displayName = "[332nd] Swamp Speeder";
         hiddenSelectionsTextures[] = {
-            "332nd_Aux\Vehicle\ISP\Tex\332nd_Base_as.paa" // Custom texture path
         };
         crew = "B_Pilot_F"; // Replace with a custom crew unit if available
         typicalCargo[] = {"B_Soldier_F"};
@@ -46,7 +45,6 @@ class CfgVehicles
         editorSubcategory = "EdSubcat_332nd_Vehicles";
         displayName = "[332nd] Swamp Speeder (Transport)";
         hiddenSelectionsTextures[] = {
-            "332nd_Aux\Vehicle\ISP\Tex\332nd_Base_as.paa"
         };
         animationList[] = {
             "HideTurrets", 1
