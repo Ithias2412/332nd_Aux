@@ -27,7 +27,7 @@ class CfgVehicles
     {
         scope = 2; // Makes it available in the editor
         scopeCurator = 2; // Makes it available in Zeus
-        faction = "BLU_F"; // Replace with your custom faction if defined
+        faction = "332nd_Faction"; // Replace with your custom faction if defined
         editorSubcategory = "EdSubcat_332nd_Vehicles";
         displayName = "[332nd] Swamp Speeder";
         hiddenSelectionsTextures[] = {
