@@ -11,9 +11,9 @@ class CfgPatches
 
 class CfgEditorSubcategories
 {
-    class EdSubcat_332nd_Vehicles
+    class EdSubcat_332nd_Frankies_Aux_Affixes
     {
-        displayName = "332nd Legion Vehicles"; // Custom tab for 332nd vehicles
+        displayName = "Frankies Aux Affixes"; // Custom tab for 332nd vehicles
     };
 };
 
@@ -28,7 +28,7 @@ class CfgVehicles
         scope = 2; // Makes it available in the editor
         scopeCurator = 2; // Makes it available in Zeus
         faction = "332nd_Faction"; // Replace with your custom faction if defined
-        editorSubcategory = "EdSubcat_332nd_Vehicles";
+        editorSubcategory = "EdSubcat_332nd_Frankies_Aux_Affixes";
         displayName = "[332nd] Swamp Speeder";
         hiddenSelectionsTextures[] = {
         };
@@ -41,8 +41,8 @@ class CfgVehicles
     {
         scope = 2;
         scopeCurator = 2;
-        faction = "BLU_F";
-        editorSubcategory = "EdSubcat_332nd_Vehicles";
+        faction = "332nd_Faction";
+        editorSubcategory = "EdSubcat_332nd_Frankies_Aux_Affixes";
         displayName = "[332nd] Swamp Speeder (Transport)";
         hiddenSelectionsTextures[] = {
         };

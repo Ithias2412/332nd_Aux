@@ -131,7 +131,7 @@ class CfgWeapons
 	class missiles_ASRAAM;
 	class weapon_AGM_65Launcher;
 	class ace_missile_gbu_12;
-	class weapon_AMRAAMLauncher;
+	class missiles_Zephyr;
 	class ace_maverick_L_Launcher;
 	
 	class 332nd_Hammer_I: missiles_ASRAAM
@@ -147,7 +147,7 @@ class CfgWeapons
 			"332nd_Hammer_I_Mag",
 		};
 	};
-	class 332nd_Hammer_II: weapon_AMRAAMLauncher
+	class 332nd_Hammer_II: missiles_Zephyr //weapon_AMRAAMLauncher
 	{
 		displayName = "[332nd] Hammer II";
 		magazines[] = 
