@@ -86,6 +86,7 @@ class cfgWeapons
 		modes[]=
 		{
 			"manual",
+			"FastAuto",
 			"close",
 			"short",
 			"medium",
@@ -150,6 +151,68 @@ class cfgWeapons
 				weaponSoundEffect = "";
 			};
 			textureType = "fullAuto";
+			useAction = 0;
+			useActionTitle = "";
+			weaponSoundEffect = "";
+		};
+		class FastAuto: manual
+		{
+			aiDispersionCoefX = 2;
+			aiDispersionCoefY = 3;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 1;
+			aiRateOfFireDistance = 500;
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			burst = 1;
+			burstRangeMax = -1;
+			canShootInWater = 0;
+			dispersion = 0.00073;
+			displayName = "Full";
+			ffCount = 1;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
+			flash = "gunfire";
+			flashSize = 0.1;
+			maxRange = 10;
+			maxRangeProbab = 0.04;
+			midRange = 5;
+			midRangeProbab = 0.7;
+			minRange = 0;
+			minRangeProbab = 0.3;
+			multiplier = 1;
+			recoil = "recoil_auto_primary_3outof10";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			reloadTime = 0.05;
+			requiredOpticType = -1;
+			showToPlayer = 1;
+			sound[] = {"",10,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {};
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType
+			{
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
+				weaponSoundEffect = "";
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800};
+				closure1[] = {};
+				closure2[] = {};
+				soundBegin[] = {"begin1",1};
+				soundClosure[] = {};
+				weaponSoundEffect = "";
+			};
+			textureType = "fastAuto";
 			useAction = 0;
 			useActionTitle = "";
 			weaponSoundEffect = "";
