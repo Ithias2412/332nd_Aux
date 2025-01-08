@@ -402,8 +402,9 @@ class CfgVehicles
 						priority=5;
 						hardpoints[]=
 						{
-							"332nd_AA",
-							"332nd_LGB",
+							"332nd_Hammer_I",
+							"332nd_Anvil_I",
+							"332nd_Anvil_III",
 						};
 						turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
@@ -414,8 +415,9 @@ class CfgVehicles
 						priority=4;
 						hardpoints[]=
 						{
-							"332nd_AA",
-							"332nd_LGB",
+							"332nd_Hammer_I",
+							"332nd_Anvil_I",
+							"332nd_Anvil_III",
 						};
 						turret[]={0};
 						UIposition[]={0.079999998,0.34999999};
@@ -426,9 +428,9 @@ class CfgVehicles
 						priority=3;
 						hardpoints[]=
 						{
-							"332nd_AA",
-							"332nd_LGB",
-							"332nd_AGM",
+							"332nd_Hammer_I",
+							"332nd_Anvil_I",
+							"332nd_Anvil_III",
 						};
 						turret[]={0};
 						UIposition[]={0.1,0.30000001};
