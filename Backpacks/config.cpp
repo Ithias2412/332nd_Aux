@@ -91,7 +91,7 @@ class CfgVehicles
 		author="Ithias";
 		displayName="[332nd] Backpack (Medic)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=420;
+		maximumLoad=320;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
 		hiddenSelections[] = 
