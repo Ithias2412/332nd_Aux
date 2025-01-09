@@ -98,7 +98,7 @@ class RscDisplayMain: RscStandardDisplay
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="SafeZoneXAbs + 0.425 * SafeZoneW";
-			y="0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y="1.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
@@ -114,7 +114,7 @@ class RscDisplayMain: RscStandardDisplay
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="SafeZoneXAbs + 0.425 * SafeZoneW";
-			y="-2.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y="-1.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
@@ -130,7 +130,7 @@ class RscDisplayMain: RscStandardDisplay
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="SafeZoneXAbs + 0.425 * SafeZoneW";
-			y="-0.6 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y="0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
@@ -142,7 +142,8 @@ class RscDisplayMain: RscStandardDisplay
 			text="$STR_A3_RscDisplayMain_ButtonEditor";
 			tooltip="We love our mission builders";
 			x="SafeZoneXAbs + 0.425 * SafeZoneW";
-			y="-1.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			//y="-1.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y="-0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			onbuttonclick="";
