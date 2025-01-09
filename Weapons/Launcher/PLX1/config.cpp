@@ -43,7 +43,9 @@ class CfgAmmo
 {
 	class 332nd_Base_Ammo;
 	class M_Titan_AT;
-	class 332nd_PLX1_Ammo_AT: M_Titan_AT
+	class 3AS_M_MK43_AT;
+	
+	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
 	{
 		ExplosionEffects = "MortarExplosion";
 	};
@@ -57,11 +59,11 @@ class CfgMagazines
 	class 332nd_PLX1_Mag: JLTS_PLX1_AP_mag
 	{
 		ammo = "332nd_PLX1_Ammo_AT";
-		count = 2;
+		count = 1;
 		descriptionShort = "";
 		displayname = "PLX-1 AT Rocket";
 		displayNameShort = "AT";
-		mass = 100;
+		mass = 50;
 		scope = 2;
 	};
 };

@@ -35,6 +35,10 @@ class cfgWeapons
 		{
 			"Single",
 		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Weapons\Launcher\RPS6\Tex\332nd_rps6.paa"
+		};
 	};
 
 
@@ -43,7 +47,9 @@ class CfgAmmo
 {
 	class 332nd_Base_Ammo;
 	class R_PG32V_F;
-	class 332nd_RPS6_Ammo_AT: R_PG32V_F
+	class 3AS_R_MK41_AT;
+	
+	class 332nd_RPS6_Ammo_AT: 3AS_R_MK41_AT
 	{
 		ExplosionEffects = "MortarExplosion";
 	};
@@ -61,7 +67,7 @@ class CfgMagazines
 		descriptionShort = "";
 		displayname = "RPS-6 AT Rocket";
 		displayNameShort = "AT";
-		mass = 33.3;
+		mass = 12.5;
 		scope = 2;
 	};
 };

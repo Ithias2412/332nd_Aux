@@ -203,6 +203,36 @@ class CfgVehicles
 		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+	
+	class 332nd_Radio_Black: 332nd_Radio
+	{
+		displayName="[332nd] Radio (Black)";
+		hiddenSelections[] = 
+		{
+			"main",
+			"accumulator"
+		};		
+		hiddenSelectionsTextures[] = 
+		{
+			"\SWLB_equipment\backpacks\data\swlb_clone_rto_mini_backpack_night_co.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_accumulator_co.paa"
+		};
+	};
+
+	class 332nd_Radio_Orange: 332nd_Radio
+	{
+		displayName="[332nd] Radio (Orange)";
+		hiddenSelections[] = 
+		{
+			"main",
+			"accumulator"
+		};		
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Radio_Orange.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_accumulator_co.paa"
+		};
+	};
 
 	class 332nd_Repeater_CSW: ls_gar_mrbc_backpack
 	{
