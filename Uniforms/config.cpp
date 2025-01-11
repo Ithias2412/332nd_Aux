@@ -176,96 +176,189 @@ class CfgVehicles
 		model="\SWLB_clones\SWLB_clone_uniform.p3d";
 		class HitPoints
 		{
-			class HitHead //helm
+			class HitAbdomen //vest
 			{
-				name = "head";
 				armor = 1;
-				passThrough = 0.1;
+				depends = "0";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0.01;
+				Name = "spine1";
+				passThrough = 0.8;
+				radius = 0.16;
+				visual = "injury_body";
 			};
-			class HitFace //helm
-			{
-				name = "face_hub";
-				armor = 1;
-				passThrough = 0.1;
+			class HitArms //vest
+			{				
+				armor = 3;
+				depends = "0";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0.01;
+				Name = "arms";
+				passThrough = 1;
+				radius = 0.1;
+				visual = "injury_hands";
 			};
-			class HitNeck //helm
+			class HitBody //vest
 			{
-				name = "neck";
-				armor = 1;
-				passThrough = 0.1;
+				armor = 1000;
+				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+				explosionShielding = 6;
+				material = -1;
+				minimalHit = 0.01;
+				name = "body";
+				passThrough = 1;
+				radius = 0;
+				visual = "injury_body";
 			};
 			class HitChest //vest
 			{
-				name = "spine3";
 				armor = 1;
-				passThrough = 0.1;
+				depends = "0";
+				explosionShielding = 6;
+				material = -1;
+				minimalHit = 0.01;
+				name = "spine3";
+				passThrough = 0.8;
+				radius = 0.18;
+				visual = "injury_body";
 			};
 			class HitDiaphragm //vest
 			{
+				armor = 1;
+				depends = "0";
+				explosionShielding = 6;
+				material = -1;
+				minimalHit = 0.01;
 				name = "spine2";
-				armor = 1;
-				passThrough = 0.1;
+				passThrough = 0.8;
+				radius = 0.18;
+				visual = "injury_body";
 			};
-			class HitAbdomen //vest
+			class HitFace //helm
 			{
-				Name = "spine1";
 				armor = 1;
-				passThrough = 0.1;
-			};
-			class HitPelvis //vest
-			{
-				name = "pelvis";
-				armor = 1;
-				passThrough = 0.1;
-			};
-			class HitArms //vest
-			{
-				Name = "arms";
-				armor = 1;
-				passThrough = 0.1;
+				explosionShielding = 0.1;
+				material = -1;
+				minimalHit = 0.01;
+				name = "face_hub";
+				passThrough = 0.8;
+				radius = 0.08;
 			};
 			class HitHands //vest
 			{
 				name = "hands";
 				armor = 1;
 				passThrough = 0.1;
+				explosionShielding = 1;
+				radius = 0.1;
+				visual = "injury_hands";
 			};
-			class HitLegs //vest
+			class HitHead //helm
 			{
-				name = "legs";
 				armor = 1;
-				passThrough = 0.1;
+				depends = "HitFace max HitNeck";
+				explosionShielding = 0.5;
+				material = -1;
+				minimalHit = 0.01;
+				name = "head";
+				passThrough = 0.8;
+				radius = 0.2;
 			};
-			class HitBody //vest
-			{
-				Name = "body";
-				armor = 1;
-				passThrough = 0.1;
-			};
-			//Wierd shit
 			class HitLeftArm //vest
 			{
+				armor = 3;
+				depends = "HitArms";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0.01;
 				name = "hand_l";
-				armor = 1;
-				passThrough = 0.1;
+				passThrough = 1;
+				radius = 0.08;
+				visual = "injury_hands";
 			};
 			class HitLeftLeg //vest
 			{
+				armor = 3;
+				depends = "0";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0.01;
 				name = "leg_l";
+				passThrough = 1;
+				radius = 0.1;
+				visual = "injury_legs";
+			};
+			class HitLegs //vest
+			{
+				armor = 3;
+				depends = "0";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0.01;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.14;
+				visual = "injury_legs";
+			};
+			class HitNeck //helm
+			{
 				armor = 1;
-				passThrough = 0.1;
+				explosionShielding = 0.5;
+				material = -1;
+				minimalHit = 0.01;
+				name = "neck";
+				passThrough = 0.8;
+				radius = 0.1;
+			};
+			class HitPelvis //vest
+			{
+				armor = 6;
+				depends = "0";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0.01;
+				name = "pelvis";
+				passThrough = 0.8;
+				radius = 0.24;
+				visual = "injury_body";
 			};
 			class HitRightArm //vest
 			{
+				armor = 3;
+				depends = "HitArms";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0.01;
 				name = "hand_r";
-				armor = 1;
-				passThrough = 0.1;
+				passThrough = 1;
+				radius = 0.08;
+				visual = "injury_hands";
 			};
 			class HitRightLeg //vest
 			{
+				armor = 3;
+				depends = "0";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0.01;
 				name = "leg_r";
-				armor = 1;
-				passThrough = 0.1;
+				passThrough = 1;
+				radius = 0.1;
+				visual = "injury_legs";
+			};
+			class Incapacitated
+			{
+				armor = 1000;
+				depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+				explosionShielding = 1;
+				material = -1;
+				minimalHit = 0;
+				name = "body";
+				passThrough = 1;
+				radius = 0;
+				visual = "";
 			};
 		};
 	};
