@@ -30,7 +30,7 @@ class cfgWeapons
 	class 3AS_GL_F;
 	class UGL_F;
 	class JLTS_stun_muzzle;
-	class arifle_MX_Base_F;
+	class arifle_MX_Base_F;	
 
 //Primary
 	class 332nd_DC15A: arifle_MX_Base_F
@@ -73,7 +73,8 @@ class cfgWeapons
 		magazineWell[]={};
 		modes[]=
 		{
-			"Single"
+			"Single",
+			"Burst",
 		};
 		fireLightDiffuse[]={0,0,1};
 		drySound[]=
@@ -124,6 +125,48 @@ class cfgWeapons
 			recoil="recoil_single_primary_3outof10";
 			recoilProne="recoil_single_primary_prone_3outof10";
 			dispersion=0.00058;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=250;
+			midRangeProbab=0.69999999;
+			maxRange=450;
+			maxRangeProbab=0.30000001;
+		};
+		class Burst: Single
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				begin1[]=
+				{
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
+					1,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			reloadTime=0.096000001;
+			burst = 3;
+			textureType = "burst";
+			recoil="recoil_auto_primary_3outof10";
+			recoilProne="recoil_auto_primary_prone_3outof10";
+			dispersion=0.00073000003;
 			minRange=2;
 			minRangeProbab=0.5;
 			midRange=250;
