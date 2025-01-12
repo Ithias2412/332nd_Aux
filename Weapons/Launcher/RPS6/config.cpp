@@ -52,6 +52,7 @@ class CfgAmmo
 	class 332nd_RPS6_Ammo_AT: 3AS_R_MK41_AT
 	{
 		ExplosionEffects = "MortarExplosion";
+		hit=300;
 	};
 
 
@@ -67,7 +68,7 @@ class CfgMagazines
 		descriptionShort = "";
 		displayname = "RPS-6 AT Rocket";
 		displayNameShort = "AT";
-		mass = 12.5;
+		mass = 11.1;
 		scope = 2;
 	};
 };

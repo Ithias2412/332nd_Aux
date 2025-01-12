@@ -178,7 +178,7 @@ class CfgMagazines
 		descriptionShort = "";
 		displayname = "DC-15S 45 Round Energy Cell";
 		displayNameShort = "";
-		mass = 8.3;
+		mass = 6.6;
 		scope = 2;
 	};
 };
