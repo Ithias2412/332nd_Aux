@@ -55,19 +55,19 @@ class cfgWeapons
 			{
 				class Face
 				{
-					armor=40;
+					armor=20;
 					hitpointName="HitFace";
 					passThrough=0.1;
 				};
 				class Head
 				{
-					armor=40;
+					armor=20;
 					hitPointName="HitHead";
 					passThrough=0.1;
 				};
 				class Neck
 				{
-					armor=40;
+					armor=20;
 					hitpointName="HitNeck";
 					passThrough=0.1;
 				};
@@ -92,19 +92,19 @@ class cfgWeapons
 			{
 				class Face
 				{
-					armor=40;
+					armor=20;
 					hitpointName="HitFace";
 					passThrough=0.1;
 				};
 				class Head
 				{
-					armor=40;
+					armor=20;
 					hitPointName="HitHead";
 					passThrough=0.1;
 				};
 				class Neck
 				{
-					armor=40;
+					armor=20;
 					hitpointName="HitNeck";
 					passThrough=0.1;
 				};
@@ -147,19 +147,19 @@ class cfgWeapons
 			{
 				class Face
 				{
-					armor=40;
+					armor=20;
 					hitpointName="HitFace";
 					passThrough=0.1;
 				};
 				class Head
 				{
-					armor=40;
+					armor=20;
 					hitPointName="HitHead";
 					passThrough=0.1;
 				};
 				class Neck
 				{
-					armor=40;
+					armor=20;
 					hitpointName="HitNeck";
 					passThrough=0.1;
 				};
