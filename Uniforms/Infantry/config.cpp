@@ -1,4 +1,3 @@
-
 class CfgPatches {
 	class 332nd_Uniforms {
 		units[] = 
