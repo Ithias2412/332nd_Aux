@@ -58,7 +58,7 @@ class CfgVehicles
         scopeCurator = 2; // Available in Zeus
         displayName = "[332nd] LAAT/LE (Republic)";
         vehicleClass = "Air";
-        faction = "BLU_F"; // Assign to a faction (default NATO here, adjust as needed)
+        faction = "332nd_Faction"; // Assign to a faction (default NATO here, adjust as needed)
         editorSubcategory = "EdSubcat_Helicopters"; // Use appropriate subcategory
         typicalCargo[] =
         {
