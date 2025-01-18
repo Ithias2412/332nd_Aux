@@ -53,6 +53,8 @@ class CfgVehicles
 		displayname="[332nd] LAAT/i"; // Changed from "LAAT/i Gunship (Pylons)"
 		ls_impulsor_boostSpeed_1=300; //Changed from 400
 		transportSoldier=22;
+		ls_impulsor_fuelDrain_1=0.00005; // was 0.000099999997;
+		ls_impulsor_fuelDrain_2=0.00010; // was 0.00030000001;
 		magazines[]= // changed from "200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"
 		{
 			"200rnd_laat_he_mag",
