@@ -351,6 +351,10 @@ class cfgWeapons
 					"101st_Aux_Pistol_A",
 					"DBA_MGO_A",
 					"ls_acc_dcHolosight_blue",
+					"332nd_Optics_Seelig_Point",
+					"optic_MRD",
+					"DBA_MRCO_A",
+					"332nd_Optics_Seelig_Point_Zoom",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
