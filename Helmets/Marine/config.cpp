@@ -34,8 +34,8 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Helmets\Tex\332nd_Marine_Helmet_CT.paa",
-			"332nd_Aux\Helmets\Tex\332nd_Marine_Helmet_CT.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Marine_CT.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Marine_CT.paa",
 		};
 		model = "JLTS_AE_GM\SEA_Helmet_GM_Base.p3d";
 		class ItemInfo: HeadgearItem
@@ -52,19 +52,19 @@ class cfgWeapons
 			{
 				class Face
 				{
-					armor=20;
+					armor = 15;
 					hitpointName="HitFace";
 					passThrough=0.1;
 				};
 				class Head
 				{
-					armor=20;
+					armor = 15;
 					hitPointName="HitHead";
 					passThrough=0.1;
 				};
 				class Neck
 				{
-					armor=20;
+					armor = 15;
 					hitpointName="HitNeck";
 					passThrough=0.1;
 				};
@@ -81,8 +81,57 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Helmets\Tex\332nd_Marine_Helmet_NCO.paa",
-			"332nd_Aux\Helmets\Tex\332nd_Marine_Helmet_NCO.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Marine_NCO.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Marine_NCO.paa",
 		};
+	};
+};
+
+class XtdGearModels
+{
+    class CfgWeapons 
+    {
+        class 332nd_Helmets_Marine_Extended
+        {
+            label = "Hazardous Environment";
+            author = "Ithias";
+			options[] = { "Type", };
+            class Type
+            {
+                label = "Type";
+				values[] = { "Trooper", "NCO",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Trooper
+                {
+                    label = "Trooper";
+                    //description = "Non NCO";
+                    //image = "xxx";
+                };
+				class NCO
+                {
+                    label = "NCO";
+                    //description = "Non Trooper";
+                    //image = "xxx";
+                };
+            };
+        };
+    };
+};
+
+class XtdGearInfos
+{
+    class CfgWeapons 
+    {
+        class 332nd_Helmet_Marine_CT
+        {
+            model = "332nd_Helmets_Marine_Extended";
+            Type = "Trooper";
+        };
+        class 332nd_Helmet_Marine_NCO
+        {
+            model = "332nd_Helmets_Marine_Extended";
+            Type = "NCO";
+        };
 	};
 };

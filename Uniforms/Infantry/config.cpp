@@ -163,6 +163,46 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 		};
 	};
 
+//Customs
+
+class 332nd_Uniform_Clone_Ithias: 332nd_Uniform_Clone_CR
+	{
+		dlc="332nd";
+		author="Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Custom)";
+		//displayName="[332nd] Clone Trooper Armor (Ithias)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Ithias_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+
+class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
+	{
+		dlc="332nd";
+		author="Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Custom)";
+		//displayName="[332nd] Clone Trooper Armor (Cherryy)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Cherryy_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+
 };
 
 class CfgVehicles
@@ -485,6 +525,45 @@ class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO.paa",
 		};
 	};
+
+//Customs
+
+class 332nd_Uniform_Clone_Ithias_Veh: 332nd_Uniform_Clone_CT_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Ithias";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ithias.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ithias.paa",
+		};
+	};
+
+class 332nd_Uniform_Clone_Cherryy_Veh: 332nd_Uniform_Clone_CT_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Cherryy";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Cherryy.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cherryy.paa",
+		};
+	};
+
 };
 
 class XtdGearModels
@@ -493,15 +572,15 @@ class XtdGearModels
     {
         class 332nd_Uniform_Extended
         {
-            label = "332nd Uniforms";
+            label = "Uniforms";
             author = "Ithias";
-			options[] = { "Rank", "variant" };
-            class Rank
+			options[] = { "Trooper", "Medic", "Customs", };
+            class Trooper
             {
-                label = "Rank";
+                label = "Trooper";
 				values[] = { "CR", "CT", "SCT", "VCT", "NCO", };
                 changeingame = 0;
-                alwaysSelectable = 0;
+                alwaysSelectable = 1;
                 class CR
                 {
                     label = "CR";
@@ -533,23 +612,48 @@ class XtdGearModels
                     //image = "xxx";
                 };
             };
-            class variant
+            class Medic
             {
-                label = "variant";
-                values[] = { "Trooper", "Medic", };
+                label = "Medic";
+                values[] = { "CT", "SCT", "VCT", };
                 changeingame = 0;
-                alwaysSelectable = 0;
-                class Trooper
+                alwaysSelectable = 1;
+				class CT
                 {
-                    label = "Trooper";
-                    description = "No MOS";
-                    // image = "xxx";
+                    label = "CT";
+                    description = "Trooper";
+                    //image = "xxx";
                 };
-                class Medic
+                class SCT
                 {
-                    label = "Medic";
-                    description = "Medic MOS";
-                    // image = "xxx";
+                    label = "SCT";
+                    description = "Senior Trooper";
+                    //image = "xxx";
+                };
+                class VCT
+                {
+                    label = "VCT";
+                    description = "Veteran Trooper";
+                    //image = "xxx";
+                };
+            };
+            class Customs
+            {
+                label = "Customs";
+				values[] = { "Ithias", "Cherryy", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Ithias
+                {
+                    label = "Ithias";
+                    description = "His weiner is 10 ft long";
+                    //image = "xxx";
+                };
+				class Cherryy
+                {
+                    label = "Cherryy";
+                    description = "Remade his custom 3 times";
+                    //image = "xxx";
                 };
             };
         };
@@ -563,50 +667,52 @@ class XtdGearInfos
         class 332nd_Uniform_Clone_CR
         {
             model = "332nd_Uniform_Extended";
-            Rank = "CR";
-            variant = "Trooper";
+            Trooper = "CR";
         };
         class 332nd_Uniform_Clone_CT
         {
             model = "332nd_Uniform_Extended";
-            Rank = "CT";
-            variant = "Trooper";
+            Trooper = "CT";
         };
         class 332nd_Uniform_Clone_SCT
         {
             model = "332nd_Uniform_Extended";
-            Rank = "SCT";
-            variant = "Trooper";
+            Trooper = "SCT";
         };
         class 332nd_Uniform_Clone_VCT
         {
             model = "332nd_Uniform_Extended";
-            Rank = "VCT";
-            variant = "Trooper";
-        };
-        class 332nd_Uniform_Clone_CT_Medic
-        {
-            model = "332nd_Uniform_Extended";
-            Rank = "CT";
-            variant = "Medic";
-        };
-        class 332nd_Uniform_Clone_SCT_Medic
-        {
-            model = "332nd_Uniform_Extended";
-            Rank = "SCT";
-            variant = "Medic";
-        };
-        class 332nd_Uniform_Clone_VCT_Medic
-        {
-            model = "332nd_Uniform_Extended";
-            Rank = "VCT";
-            variant = "Medic";
+            Trooper = "VCT";
         };
         class 332nd_Uniform_Clone_NCO
         {
             model = "332nd_Uniform_Extended";
-            Rank = "NCO";
-            variant = "Trooper";
+            Trooper = "NCO";
+        };
+        class 332nd_Uniform_Clone_CT_Medic
+        {
+            model = "332nd_Uniform_Extended";
+            Medic = "CT";
+        };
+        class 332nd_Uniform_Clone_SCT_Medic
+        {
+            model = "332nd_Uniform_Extended";
+            Medic = "SCT";
+        };
+        class 332nd_Uniform_Clone_VCT_Medic
+        {
+            model = "332nd_Uniform_Extended";
+            Medic = "VCT";
+        };
+        class 332nd_Uniform_Clone_Ithias
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Ithias";
+        };
+        class 332nd_Uniform_Clone_Cherryy
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Cherryy";
         };
     };
 };

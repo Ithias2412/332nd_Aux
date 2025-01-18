@@ -48,7 +48,7 @@ class CfgAmmo
 	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
 	{
 		ExplosionEffects = "MortarExplosion";
-		hit=300;
+		hit=700;
 	};
 
 

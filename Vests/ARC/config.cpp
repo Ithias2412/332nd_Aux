@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 332nd_Vests_Marine {
+	class 332nd_Vests_ARC {
 		units[] = 
         {
 			""
@@ -19,24 +19,26 @@ class cfgWeapons
 	class VestItem;
 	class Hands;
 	class Pelvis;
-	class SEA_Vest_GM_21;
+	class SWLB_clone_arc_armor;
 
 
-	class 332nd_Marine_Vest: SEA_Vest_GM_21
+	class 332nd_ARC_Vest_1: SWLB_clone_arc_armor
 	{
 		author="Cherryy + Ithias";
-		displayName = "[332nd] Hazardous Environment Vest";
+		displayName = "[332nd] ARC Vest (Black Kama)";
 		hiddenSelections[] = 
 		{
 			"camo1",
+			"camo2",
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Vests\Tex\332nd_Vest_Marine.paa",
+			"\332nd_Aux\Vests\Tex\332nd_Vest_ARC.paa",
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Grey_K_Black.paa",
 		};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "JLTS_AE_GM\SEA_Vest_GM_Base.p3d";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
 			containerClass="Supply60";
 			vestType = "Rebreather";
 			mass=80;
@@ -120,7 +122,36 @@ class cfgWeapons
             };
 			hiddenSelections[] = 
 			{
-				"camo1"
+				"camo1",
+				"camo2",
+			};
+		};
+	};
+
+	class 332nd_ARC_Vest_2: SWLB_clone_arc_armor
+	{
+		author="Cherryy + Ithias";
+		displayName = "[332nd] ARC Vest (Grey Kama)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Vests\Tex\332nd_Vest_ARC.paa",
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Grey_K_Grey.paa",
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass="Supply60";
+			vestType = "Rebreather";
+			mass=80;
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2",
 			};
 		};
 	};

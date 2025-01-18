@@ -263,7 +263,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\332nd_Aux\Uniforms\Tex\332nd_Marine_Upper_CT.paa",
+			"\332nd_Aux\Uniforms\Tex\332nd_Upper_Marine_CT.paa",
 			"\JLTS_AE_GM\data\BaseTextures\Uniform\Plastic\BodyLower_ca.paa",
 			"\JLTS_AE_GM\data\BaseTextures\Uniform\Undersuit_co.paa",
 		};
@@ -283,9 +283,58 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\332nd_Aux\Uniforms\Tex\332nd_Marine_Upper_NCO.paa",
+			"\332nd_Aux\Uniforms\Tex\332nd_Upper_Marine_NCO.paa",
 			"\JLTS_AE_GM\data\BaseTextures\Uniform\Plastic\BodyLower_ca.paa",
 			"\JLTS_AE_GM\data\BaseTextures\Uniform\Undersuit_co.paa",
 		};
 	};
+};
+
+class XtdGearModels
+{
+    class CfgWeapons 
+    {
+        class 332nd_Uniform_Marine_Extended
+        {
+            label = "Hazardous Environment";
+            author = "Ithias";
+			options[] = { "Type", };
+            class Type
+            {
+                label = "Type";
+				values[] = { "Trooper", "NCO", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Trooper
+                {
+                    label = "Trooper";
+                    //description = "Recruit";
+                    //image = "xxx";
+                };
+				class NCO
+                {
+                    label = "NCO";
+                    //description = "Trooper";
+                    //image = "xxx";
+                };
+            };
+        };
+    };
+};
+
+class XtdGearInfos
+{
+    class CfgWeapons 
+    {
+        class 332nd_Uniform_Marine_CT
+        {
+            model = "332nd_Uniform_Marine_Extended";
+            Type = "Trooper";
+        };
+        class 332nd_Uniform_Marine_NCO
+        {
+            model = "332nd_Uniform_Marine_Extended";
+            Type = "NCO";
+        };
+    };
 };
