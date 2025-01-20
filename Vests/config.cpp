@@ -53,8 +53,7 @@ class cfgWeapons
 	class 332nd_Trooper_Vest: SWLB_clone_basic_armor
 	{
 		author="Ithias";
-		//displayName = "[332nd] Vest (Trooper)";
-		displayName = "[332nd] Vest";
+		displayName = "[332nd] Vest (Trooper)";
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
@@ -149,11 +148,9 @@ class cfgWeapons
 
 //Veteran Start
 
-	class 332nd_Veteran_Vest_variant_1: SWLB_clone_recon_armor
+	class 332nd_Veteran_Vest_variant_1: 332nd_Trooper_Vest
 	{
-		author="SW Legion Studios";
-		//displayName="[332nd] Vest (VCT+ / variant 1)";
-		displayName = "[332nd] Vest";
+		displayName="[332nd] Vest (VCT+ / variant 1)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_recon_armor_ca.paa";
 		model="\SWLB_clones\SWLB_clone_recon_armor.p3d";
 		hiddenSelections[]=
@@ -172,8 +169,6 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel="\SWLB_clones\SWLB_clone_recon_armor.p3d";
-			containerClass="Supply60";
-			vestType = "Rebreather";
 			hiddenSelections[]=
 			{
 				"camo1",
@@ -181,66 +176,12 @@ class cfgWeapons
 				"holster",
 				"pauldron"
 			};
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 15;
-					passThrough = 0.1;
-				};
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-				class Hands
-				{
-					hitpointName = "HitHands";
-					armor = 15;
-					passThrough = 0.1;
-				};
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-            };
 		};
 	};
 	
-	class 332nd_Veteran_Vest_variant_2: SWLB_clone_specialist_armor
+	class 332nd_Veteran_Vest_variant_2: 332nd_Trooper_Vest
 	{
-		author="SW Legion Studios";
-		//displayName="[332nd] Vest (VCT+ / variant 2)";
-		displayName = "[332nd] Vest";
+		displayName="[332nd] Vest (VCT+ / variant 2)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
 		model="\SWLB_clones\SWLB_clone_specialist_armor.p3d";
 		hiddenSelections[]=
@@ -256,75 +197,19 @@ class cfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel="\SWLB_clones\SWLB_clone_specialist_armor.p3d";
-			containerClass="Supply60";
-			vestType = "Rebreather";
 			hiddenSelections[]=
 			{
 				"camo1",
 				"camo2"
 			};
-			mass=80;
-			class HitpointsProtectionInfo
-            {
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 15;
-					passThrough = 0.1;
-				};
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-				class Hands
-				{
-					hitpointName = "HitHands";
-					armor = 15;
-					passThrough = 0.1;
-				};
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-            };
 		};
 	};
 
-	class 332nd_Veteran_Vest_variant_3: SWLB_CEE_ARF_Vest
+	class 332nd_Veteran_Vest_variant_3: 332nd_Trooper_Vest
 	{
-		scope=2;
-		//displayName="[332nd] Vest (VCT+ / variant 3)";
-		displayName = "[332nd] Vest";
+		displayName="[332nd] Vest (VCT+ / variant 3)";
 		model="\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
-		uniformModel="\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+		//uniformModel="\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -340,66 +225,12 @@ class cfgWeapons
 		class ItemInfo: Vestitem
 		{
 			uniformModel="\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
-			containerClass="Supply60";
-			vestType = "Rebreather";
-			mass=80;
 			hiddenSelections[]=
 			{
 				"camo1",
 				"camo2",
 				"camo3"
 			};
-			class HitpointsProtectionInfo
-            {
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 15;
-					passThrough = 0.1;
-				};
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-				class Hands
-				{
-					hitpointName = "HitHands";
-					armor = 15;
-					passThrough = 0.1;
-				};
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    armor = 15;
-                    passThrough = 0.1;
-                };
-            };
 		};
 	};
 	

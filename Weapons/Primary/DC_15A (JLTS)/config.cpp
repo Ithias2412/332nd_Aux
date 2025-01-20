@@ -355,6 +355,7 @@ class cfgWeapons
 					"optic_MRD",
 					"DBA_MRCO_A",
 					"332nd_Optics_Seelig_Point_Zoom",
+					"332nd_Mode_C_Zoom_2",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

@@ -45,7 +45,7 @@ class cfgWeapons
 		picture="\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
 		model="\MRC\JLTS\weapons\DC15X\DC15X.p3d";
 		baseWeapon="332nd_DC15X";
-		recoil="3AS_recoil_DLT19X";
+		recoil="recoil_mx";
 		reloadAction = "GestureReload_IDAReload1";
 		hiddenSelections[]=
 		{
