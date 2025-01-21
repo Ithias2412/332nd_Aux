@@ -457,6 +457,19 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_DC15A_Wood: 332nd_DC15A
+	{
+		displayName="[332nd] DC-15A GL [Wood]";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"illum"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\weapons\DC15A\data\DC15A_co.paa"
+		};
+	};
 };
 class CfgAmmo
 {
