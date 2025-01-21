@@ -50,10 +50,11 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"101st_Aux_Pistol_A",
-					"DBA_MGO_A",
-					"optic_Holosight_blk_F",
-					"optic_Aco",
+					"332nd_Mode_A_Zoom_2",
+					"332nd_Mode_B_Zoom_2",
+					"332nd_Mode_C_Zoom_2",
+					"332nd_Mode_D_Zoom_2",
+					"332nd_Mode_Seelig_Point_Zoom_2",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

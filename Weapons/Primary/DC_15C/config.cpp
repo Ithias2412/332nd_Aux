@@ -126,14 +126,13 @@ class cfgWeapons
 				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[]=
 				{
-					//"3AS_optic_acog_DC15C",
-					"3AS_optic_reflex_DC15C",
-					"3AS_optic_holo_DC15S",
-					"101st_Aux_Pistol_A",
-					"DBA_MGO_A",
-					"3AS_Imp_Optic_1",
-					"SWLW_Westar35S_scope",
-					"optic_Aco",
+					"332nd_3AS_C_Acog",
+					"332nd_3AS_C_Reflex",
+					"332nd_Mode_A_Zoom_2",
+					"332nd_Mode_B_Zoom_2",
+					"332nd_Mode_C_Zoom_2",
+					"332nd_Mode_D_Zoom_2",
+					"332nd_Mode_Seelig_Point_Zoom_2",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
