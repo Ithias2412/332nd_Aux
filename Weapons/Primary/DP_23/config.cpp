@@ -91,13 +91,11 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"3AS_optic_reflex_DC15C",
-					"3AS_optic_holo_DC15S",
-					"101st_Aux_Pistol_A",
-					"DBA_MGO_A",
-					"3AS_Imp_Optic_1",
-					"ls_acc_dcHolosight_blue",
-					"optic_Aco",
+					"332nd_Mode_A_Zoom_2",
+					"332nd_Mode_B_Zoom_2",
+					"332nd_Mode_C_Zoom_2",
+					"332nd_Mode_D_Zoom_2",
+					"332nd_Mode_Seelig_Point_Zoom_2",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

@@ -347,15 +347,11 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"3AS_optic_holo_DC15S",
-					"101st_Aux_Pistol_A",
-					"DBA_MGO_A",
-					"ls_acc_dcHolosight_blue",
-					"332nd_Optics_Seelig_Point",
-					"optic_MRD",
-					"DBA_MRCO_A",
-					"332nd_Optics_Seelig_Point_Zoom",
+					"332nd_Mode_A_Zoom_2",
+					"332nd_Mode_B_Zoom_2",
 					"332nd_Mode_C_Zoom_2",
+					"332nd_Mode_D_Zoom_2",
+					"332nd_Mode_Seelig_Point_Zoom_2",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
@@ -437,10 +433,11 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"3AS_optic_holo_DC15S",
-					"101st_Aux_Pistol_A",
-					"DBA_MGO_A",
-					"ls_acc_dcHolosight_blue",
+					"332nd_Mode_A_Zoom_2",
+					"332nd_Mode_B_Zoom_2",
+					"332nd_Mode_C_Zoom_2",
+					"332nd_Mode_D_Zoom_2",
+					"332nd_Mode_Seelig_Point_Zoom_2",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
@@ -459,7 +456,7 @@ class cfgWeapons
 	};
 	class 332nd_DC15A_Wood: 332nd_DC15A
 	{
-		displayName="[332nd] DC-15A GL [Wood]";
+		displayName="[332nd] DC-15A Wood (RFL)";
 		hiddenSelections[]=
 		{
 			"camo1",
