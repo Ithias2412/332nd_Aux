@@ -496,3 +496,52 @@ class CfgMagazines
 		scope = 2;
 	};
 };
+
+class XtdGearModels
+{
+    class CfgWeapons 
+    {
+        class 332nd_Weapons_DC15A_Extended
+        {
+            label = "DC-15A";
+            author = "Ithias";
+			options[] = { "Stock", };
+            class Stock
+            {
+                label = "Stock";
+				values[] = { "Default", "Wood",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Default
+                {
+                    label = "Default";
+                    description = "For normal people";
+                    //image = "xxx";
+                };
+				class Wood
+                {
+                    label = "Wood";
+                    description = "For the other people";
+                    //image = "xxx";
+                };
+            };
+        };
+    };
+};
+
+class XtdGearInfos
+{
+    class CfgWeapons 
+    {
+        class 332nd_DC15A
+        {
+            model = "332nd_Weapons_DC15A_Extended";
+            Stock = "Default";
+        };
+        class 332nd_DC15A_Wood
+        {
+            model = "332nd_Weapons_DC15A_Extended";
+            Stock = "Wood";
+        };
+	};
+};
