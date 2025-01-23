@@ -176,7 +176,7 @@ class CfgMagazines
 	class 332nd_DC15S_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_DC15S_Ammo_9x19";
-		count = 45;
+		count = 60;
 		descriptionShort = "";
 		displayname = "DC-15S 45 Round Energy Cell";
 		displayNameShort = "";

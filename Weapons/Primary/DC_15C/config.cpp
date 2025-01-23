@@ -146,11 +146,10 @@ class cfgWeapons
 				{
 					"332nd_3AS_C_Acog",
 					"332nd_3AS_C_Reflex",
-					"332nd_Mode_A_Zoom_2",
-					"332nd_Mode_B_Zoom_2",
-					"332nd_Mode_C_Zoom_2",
-					"332nd_Mode_D_Zoom_2",
-					"332nd_Mode_Seelig_Point_Zoom_2",
+					"332nd_Mode_A_Zoom_2_Forward",
+					"332nd_Mode_B_Zoom_2_Forward",
+					"332nd_Mode_C_Zoom_2_Forward",
+					"332nd_Mode_D_Zoom_2_Forward",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
@@ -321,7 +320,7 @@ class CfgMagazines
 	class 332nd_DC15C_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_DC15C_Ammo_556x45";
-		count = 30;
+		count = 45;
 		descriptionShort = "";
 		displayname = "DC-15C 30 Round Energy Cell";
 		displayNameShort = "";
