@@ -44,17 +44,35 @@ class cfgWeapons
 			"FullAuto_15L",
 			"FastAuto_15L",
 		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
+				memoryPointCamera = "eye";
+				opticsDisablePeripherialVision = 0.67;
+				opticsFlare = "true";
+				opticsID = 1;
+				opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+				opticsZoomInit = 0.75;
+				opticsZoomMax = 1.1;
+				opticsZoomMin = 0.375;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]=
 				{
-					"332nd_Mode_A_Zoom_2",
-					"332nd_Mode_B_Zoom_2",
-					"332nd_Mode_C_Zoom_2",
-					"332nd_Mode_D_Zoom_2",
-					"332nd_Mode_Seelig_Point_Zoom_2",
+					"332nd_3AS_C_Acog",
+					"332nd_Mode_A_Zoom_2_Raised",
+					"332nd_Mode_B_Zoom_2_Raised",
+					"332nd_Mode_C_Zoom_2_Raised",
+					"332nd_Mode_D_Zoom_2_Raised",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
