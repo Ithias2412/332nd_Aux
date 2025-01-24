@@ -323,8 +323,8 @@ class cfgWeapons
 };
 class CfgAmmo
 {
-	class 332nd_Base_Ammo;
-	class 332nd_Z6_Ammo_556x45: 332nd_Base_Ammo
+	class 332nd_Base_Ammo_IDA;
+	class 332nd_Z6_Ammo_556x45: 332nd_Base_Ammo_IDA
 	{
 		ACE_caliber = 5.69;
 		ACE_bulletLength = 23.012;

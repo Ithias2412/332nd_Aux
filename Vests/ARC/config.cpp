@@ -34,7 +34,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"\332nd_Aux\Vests\Tex\332nd_Vest_ARC.paa",
-			"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Grey_K_Black.paa",
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Grey_K_Grey.paa",
 		};
 		class ItemInfo: VestItem
 		{
@@ -128,33 +128,6 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_ARC_Vest_2: SWLB_clone_arc_armor
-	{
-		author="Cherryy + Ithias";
-		displayName = "[332nd] ARC Vest (Grey Kama)";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARC.paa",
-			"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Grey_K_Grey.paa",
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
-			containerClass="Supply60";
-			vestType = "Rebreather";
-			mass=80;
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2",
-			};
-		};
-	};
 
 
 };

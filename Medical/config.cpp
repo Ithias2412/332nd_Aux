@@ -7,7 +7,8 @@ class CfgPatches {
 		weapons[] = 
         {
             "332nd_Acti_Bandage_Weap",
-			"332nd_Painkiller_Weap"
+			"332nd_Painkiller_Weap",
+			"332nd_Bacta_Spray_Weap",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -183,8 +184,12 @@ class ace_medical_treatment
                 effectiveness = 1.5;
             };
         };
+        class 332nd_Bacta_Spray: 332nd_Acti_Bandage 
+		{
+			//NA
+		};
     };
-    class Medication 
+    class Medication
 	{
 		class Morphine;
         class 332nd_Painkiller: Morphine 
@@ -202,6 +207,7 @@ class ace_medical_treatment
 
 	};
 };
+
 class ace_medical_treatment_actions
 {
     class FieldDressing;
@@ -213,7 +219,19 @@ class ace_medical_treatment_actions
         displayNameProgress = "STOP THAT BLEED TROOPER!";
 		items[]=
 		{
-			"332nd_Acti_Bandage_Weap"
+			"332nd_Acti_Bandage_Weap",
+		};
+	};
+	class 332nd_Bacta_Spray: 332nd_Acti_Bandage
+	{
+		displayName="[332nd] Bacta Spray";
+        displayNameProgress = "OH MY GOD IM OOOOOOOZING!";
+		medicRequired = 1;
+		items[]=
+		{
+			"332nd_Bacta_Spray_Weap",
+			"332nd_Bacta_Spray_Weap",
+			"332nd_Bacta_Spray_Weap",
 		};
 	};
 	class 332nd_Painkiller: Morphine
@@ -223,11 +241,12 @@ class ace_medical_treatment_actions
         allowedSelections[] = {"Head"};
 		items[]=
 		{
-			"332nd_Painkiller_Weap"
+			"332nd_Painkiller_Weap",
 		};
 	};
 };
-class cfgWeapons 
+
+class cfgWeapons
 {
     class ACE_fieldDressing;
     class ACE_morphine;
@@ -241,6 +260,16 @@ class cfgWeapons
 		class ItemInfo: CBA_MiscItem_ItemInfo 
 		{
 			mass = 0.3;
+        };
+	};
+	class 332nd_Bacta_Spray_Weap: 332nd_Acti_Bandage_Weap
+	{
+		scope=2;
+		author="Ithias";
+		displayName="[332nd] Bacta Spray";
+		class ItemInfo: CBA_MiscItem_ItemInfo 
+		{
+			mass = 0.9;
         };
 	};
 	class 332nd_Painkiller_Weap: ACE_morphine

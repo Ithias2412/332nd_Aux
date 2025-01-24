@@ -80,8 +80,8 @@ class cfgWeapons
 };
 class CfgAmmo
 {
-	class 332nd_Base_Ammo;
-	class 332nd_Valken_Ammo_762x51: 332nd_Base_Ammo
+	class 332nd_Base_Ammo_IDA;
+	class 332nd_Valken_Ammo_762x51: 332nd_Base_Ammo_IDA
 	{
 		ACE_bulletLength = 28.956;
 		ACE_bulletMass = 9.4608;

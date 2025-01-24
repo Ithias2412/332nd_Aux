@@ -24,7 +24,7 @@ class CfgWeapons
 		displayName = "[332nd] NVG Chip";
 		picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 	};
-	class 332nd_NVG_Rangefinder: lsd_gar_rangefinder_nvg
+	class 332nd_NVG_Rangefinder: OPTRE_NVG
 	{
 		displayName = "[332nd] Rangefinder";
 		model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_rangefinder_nvg_on.p3d";
@@ -155,5 +155,151 @@ class CfgGlasses
 		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_cc_ca.paa";
 	};
 
-//Untextured Varients
+};
+
+class XtdGearModels
+{
+    class CfgWeapons 
+    {
+        class 332nd_NVG_Extended
+        {
+            label = "Night Vision";
+            author = "Ithias";
+			options[] = { "Type", };
+            class Type
+            {
+                label = "Type";
+				values[] = { "Chip", "Visor", "Rangefinder", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Chip
+                {
+                    label = "Chip";
+                    description = "Default";
+                    //image = "xxx";
+                };
+				class Visor
+                {
+                    label = "Visor";
+                    description = "SCT+";
+                    //image = "xxx";
+                };
+				class Rangefinder
+                {
+                    label = "Rangefinder";
+                    description = "SCT+";
+                    //image = "xxx";
+                };
+            };
+        };
+    };
+    class CfgGlasses 
+    {
+        class 332nd_Facewear_Extended
+        {
+            label = "Facewear";
+            author = "Ithias";
+			options[] = { "Type", "Variant", };
+            class Type
+            {
+                label = "Type";
+				values[] = { "Visor", "Rangefinder", "Commander", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Commander
+                {
+                    label = "Commander";
+                    description = "CL+";
+                    //image = "xxx";
+                };
+				class Visor
+                {
+                    label = "Visor";
+                    description = "SCT+";
+                    //image = "xxx";
+                };
+				class Rangefinder
+                {
+                    label = "Rangefinder";
+                    description = "SCT+";
+                    //image = "xxx";
+                };
+            };
+            class Variant
+            {
+                label = "Variant";
+				values[] = { "A", "B", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class A
+                {
+                    label = "A";
+                    //description = "Default";
+                    //image = "xxx";
+                };
+                class B
+                {
+                    label = "B";
+                    //description = "Not Default";
+                    //image = "xxx";
+                };
+			};
+        };
+    };
+};
+
+class XtdGearInfos
+{
+    class CfgWeapons 
+    {
+        class 332nd_NVG_Chip
+        {
+            model = "332nd_NVG_Extended";
+            Type = "Chip";
+        };
+        class 332nd_NVG_Rangefinder
+        {
+            model = "332nd_NVG_Extended";
+            Type = "Rangefinder";
+        };
+        class 332nd_NVG_Visor
+        {
+            model = "332nd_NVG_Extended";
+            Type = "Visor";
+        };
+    };
+    class CfgGlasses 
+    {
+        class 332nd_Facewear_Rangefinder
+        {
+            model = "332nd_Facewear_Extended";
+            Type = "Rangefinder";
+            Activation = "A";
+        };
+        class 332nd_Facewear_Visor
+        {
+            model = "332nd_Facewear_Extended";
+            Type = "Visor";
+            Activation = "B";
+        };
+        class 332nd_Facewear_Visor_Off
+        {
+            model = "332nd_Facewear_Extended";
+            Type = "Visor";
+            Activation = "A";
+        };
+        class 332nd_Facewear_XO_White
+        {
+            model = "332nd_Facewear_Extended";
+            Type = "Commander";
+            Activation = "A";
+        };
+        class 332nd_Facewear_CO_White
+        {
+            model = "332nd_Facewear_Extended";
+            Type = "Commander";
+            Activation = "B";
+        };
+    };
+
 };

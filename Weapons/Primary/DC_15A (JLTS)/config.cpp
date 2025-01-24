@@ -470,8 +470,8 @@ class cfgWeapons
 };
 class CfgAmmo
 {
-	class 332nd_Base_Ammo;
-	class 332nd_DC15A_Ammo_762x39: 332nd_Base_Ammo
+	class 332nd_Base_Ammo_IDA;
+	class 332nd_DC15A_Ammo_762x39: 332nd_Base_Ammo_IDA
 	{
 		ACE_bulletLength = 28.956;
 		ACE_bulletMass = 7.9704;
