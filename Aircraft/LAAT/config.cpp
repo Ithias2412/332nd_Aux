@@ -400,7 +400,7 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment="332nd_Missile_AA_Mag";
+						attachment="332nd_Hammer_I";
 						priority=5;
 						hardpoints[]=
 						{
@@ -413,7 +413,7 @@ class CfgVehicles
 					};
 					class PylonLeft2: PylonLeft1
 					{
-						attachment="332nd_Bomb_LGB_Mag";
+						attachment="332nd_Anvil_III";
 						priority=4;
 						hardpoints[]=
 						{
@@ -426,7 +426,7 @@ class CfgVehicles
 					};
 					class PylonLeft3: PylonLeft1
 					{
-						attachment="332nd_Missile_AGM_Mag";
+						attachment="332nd_Anvil_I";
 						priority=3;
 						hardpoints[]=
 						{
@@ -465,12 +465,12 @@ class CfgVehicles
 						displayName="Default";
 						attachment[]=
 						{
-							"332nd_Missile_AA_Mag",
-							"332nd_Bomb_LGB_Mag",
-							"332nd_Missile_AGM_Mag",
-							"332nd_Missile_AGM_Mag",
-							"332nd_Bomb_LGB_Mag",
-							"332nd_Missile_AA_Mag"
+							"332nd_Hammer_I",
+							"332nd_Anvil_III",
+							"332nd_Anvil_I",
+							"332nd_Anvil_I",
+							"332nd_Anvil_III",
+							"332nd_Hammer_I"
 						};
 					};
 					class AT
@@ -478,12 +478,12 @@ class CfgVehicles
 						displayName="CAS";
 						attachment[]=
 						{
-							"332nd_Bomb_LGB_Mag",
-							"332nd_Bomb_LGB_Mag",
-							"332nd_Missile_AGM_Mag",
-							"332nd_Missile_AGM_Mag",
-							"332nd_Bomb_LGB_Mag",
-							"332nd_Bomb_LGB_Mag"
+							"332nd_Anvil_I",
+							"332nd_Anvil_I",
+							"332nd_Anvil_III",
+							"332nd_Anvil_III",
+							"332nd_Anvil_I",
+							"332nd_Anvil_I"
 						};
 					};
 					class CAP
@@ -491,12 +491,12 @@ class CfgVehicles
 						displayName="CAP";
 						attachment[]=
 						{
-							"332nd_Missile_AA_Mag",
-							"332nd_Missile_AA_Mag",
-							"332nd_Missile_AA_Mag",
-							"332nd_Missile_AA_Mag",
-							"332nd_Missile_AA_Mag",
-							"332nd_Missile_AA_Mag"
+							"332nd_Hammer_I",
+							"332nd_Hammer_I",
+							"332nd_Hammer_I",
+							"332nd_Hammer_I",
+							"332nd_Hammer_I",
+							"332nd_Hammer_I"
 						};
 					};
 				};

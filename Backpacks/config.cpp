@@ -252,3 +252,149 @@ class CfgVehicles
 
 
 };
+
+class XtdGearModels
+{
+    class CfgVehicles
+    {
+        class 332nd_Backpack_Extended
+        {
+            label = "Backpack";
+            author = "Ithias";
+			options[] = { "Type", "Radio", };
+            class Type
+            {
+                label = "Type";
+				values[] = { "Bag", "Leg_Bag", "Backpack", "Medic", "JTAC", "Heavy", "CSW", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Bag
+                {
+                    label = "Bag";
+                    description = "Default";
+                    //image = "xxx";
+                };
+				class Leg_Bag
+                {
+                    label = "Bag + Pouch";
+                    description = "MRK/GRN";
+                    //image = "xxx";
+                };
+				class Backpack
+                {
+                    label = "Backpack";
+                    description = "AR/AT";
+                    //image = "xxx";
+                };
+				class Medic
+                {
+                    label = "Medic";
+                    description = "Medic";
+                    //image = "xxx";
+                };
+				class JTAC
+                {
+                    label = "JTAC";
+                    description = "JTAC";
+                    //image = "xxx";
+                };
+				class Heavy
+                {
+                    label = "Heavy";
+                    description = "ENG/Ammo Bearer";
+                    //image = "xxx";
+                };
+				class CSW
+                {
+                    label = "CSW";
+                    description = "BANNED!";
+                    //image = "xxx";
+                };
+
+            };
+            class Radio
+            {
+                label = "Radio";
+				values[] = { "White", "Orange", "Black", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class White
+                {
+                    label = "White";
+                    //description = "White";
+                    //image = "xxx";
+                };
+				class Orange
+                {
+                    label = "Orange";
+                    //description = "Orange";
+                    //image = "xxx";
+                };
+				class Black
+                {
+                    label = "Black";
+                    //description = "Black";
+                    //image = "xxx";
+                };
+            };
+        };
+    };
+};
+
+class XtdGearInfos
+{
+    class CfgVehicles
+    {
+        class 332nd_Backpack
+        {
+            model = "332nd_Backpack_Extended";
+            Type = "Backpack";
+        };
+        class 332nd_Backpack_JTAC
+        {
+            model = "332nd_Backpack_Extended";
+            Type = "JTAC";
+        };
+        class 332nd_Backpack_Medic
+        {
+            model = "332nd_Backpack_Extended";
+            Type = "Medic";
+        };
+        class 332nd_Backpack_Heavy
+        {
+            model = "332nd_Backpack_Extended";
+            Type = "Heavy";
+        };
+        class 332nd_Bag
+        {
+            model = "332nd_Backpack_Extended";
+            Type = "Bag";
+        };
+        class 332nd_Leg_Bag
+        {
+            model = "332nd_Backpack_Extended";
+            Type = "Leg_Bag";
+        };
+        class 332nd_Repeater_CSW
+        {
+            model = "332nd_Backpack_Extended";
+            Type = "CSW";
+        };
+
+        class 332nd_Radio
+        {
+            model = "332nd_Backpack_Extended";
+            Radio = "White";
+        };
+        class 332nd_Radio_Black
+        {
+            model = "332nd_Backpack_Extended";
+            Radio = "Black";
+        };
+        class 332nd_Radio_Orange
+        {
+            model = "332nd_Backpack_Extended";
+            Radio = "Orange";
+        };
+    };
+};
