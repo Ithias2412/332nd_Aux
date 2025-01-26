@@ -321,32 +321,3 @@ class cfgWeapons
 		};
 	};
 };
-class CfgAmmo
-{
-	class 332nd_Base_Ammo_IDA;
-	class 332nd_DC15X_Ammo_50: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 58.674;
-		ACE_bulletMass = 41.9256;
-        ACE_caliber = 12.954;
-		hit = 30;
-		caliber = 2.6;
-		typicalspeed=800;
-	};
-
-};
-class CfgMagazines
-{
-	class 332nd_Base_Mag;
-	class 332nd_DC15X_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_DC15X_Ammo_50";
-		count = 5;
-		descriptionShort = "";
-		displayname = "DC-15X 5 Round Energy Cell";
-		displayNameShort = "";
-		mass = 15;
-		scope = 2;
-		initSpeed = 1000;
-	};
-};

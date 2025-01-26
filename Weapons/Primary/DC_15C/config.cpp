@@ -300,31 +300,3 @@ class cfgWeapons
 	};
 
 };
-class CfgAmmo
-{
-	class 332nd_Base_Ammo_IDA;
-	class 332nd_DC15C_Ammo_556x45: 332nd_Base_Ammo_IDA
-	{
-		ACE_caliber = 5.69;
-		ACE_bulletLength = 23.012;
-        ACE_bulletMass = 4.0176;
-		hit=10;
-		caliber=1;
-		typicalspeed=800;
-	};
-
-};
-class CfgMagazines
-{
-	class 332nd_Base_Mag;
-	class 332nd_DC15C_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_DC15C_Ammo_556x45";
-		count = 45;
-		descriptionShort = "";
-		displayname = "DC-15C 30 Round Energy Cell";
-		displayNameShort = "";
-		mass = 8.3;
-		scope = 2;
-	};
-};

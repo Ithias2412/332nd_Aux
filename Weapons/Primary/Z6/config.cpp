@@ -60,7 +60,6 @@ class cfgWeapons
 			"\MRC\JLTS\weapons\Z6\data\Z6_1_co.paa",
 			"\MRC\JLTS\weapons\Z6\data\Z6_2_co.paa"
 		};
-		recoil="JLTS_recoil_Z6";
 		maxZeroing=1200;
 		handAnim[]=
 		{
@@ -320,31 +319,4 @@ class cfgWeapons
 		};
 	};
 
-};
-class CfgAmmo
-{
-	class 332nd_Base_Ammo_IDA;
-	class 332nd_Z6_Ammo_556x45: 332nd_Base_Ammo_IDA
-	{
-		ACE_caliber = 5.69;
-		ACE_bulletLength = 23.012;
-        ACE_bulletMass = 4.0176;
-		hit=10;
-		caliber=1;
-		typicalspeed=800;
-	};
-};
-class CfgMagazines
-{
-	class 332nd_Base_Mag;
-	class 332nd_Z6_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_Z6_Ammo_556x45";
-		count = 400;
-		descriptionShort = "";
-		displayname = "Z-6 400 Round Energy Cell";
-		displayNameShort = "";
-		mass = 40;
-		scope = 2;
-	};
 };

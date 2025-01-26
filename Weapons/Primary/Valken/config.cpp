@@ -78,32 +78,3 @@ class cfgWeapons
 	};
 
 };
-class CfgAmmo
-{
-	class 332nd_Base_Ammo_IDA;
-	class 332nd_Valken_Ammo_762x51: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 28.956;
-		ACE_bulletMass = 9.4608;
-        ACE_caliber = 7.823;
-		hit = 11.6;
-		caliber = 1.6;
-		typicalspeed=800;
-	};
-
-};
-class CfgMagazines
-{
-	class 332nd_Base_Mag;
-	class 332nd_Valken_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_Valken_Ammo_762x51";
-		count = 20;
-		descriptionShort = "";
-		displayname = "Valken 20 Round Energy Cell";
-		displayNameShort = "";
-		mass = 13.6;
-		scope = 2;
-		initSpeed = 1000;
-	};
-};

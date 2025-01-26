@@ -124,33 +124,3 @@ class cfgWeapons
 		};
 	};
 };
-class CfgAmmo
-{
-	class 332nd_Base_Shotgun_Ammo;
-	class 3AS_EY30_Pellets_Submunition;
-	class 332nd_DP23_Ammo_12g: 3AS_EY30_Pellets_Submunition
-	{
-		//ACE_bulletLength = 28.956;
-		//ACE_bulletMass = 7.9704;
-		//ACE_caliber = 7.823;
-		hit=10;
-		caliber=1;
-		typicalspeed=800;
-		//submunitionAmmo = "CUP_12Gauge_Pellets_Submunition_No00_Buck_Deploy";
-	};
-
-};
-class CfgMagazines
-{
-	class 332nd_Base_Mag;
-	class 332nd_DP23_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_DP23_Ammo_12g";
-		count = 10;
-		descriptionShort = "";
-		displayname = "DP-23 10 Round Energy Cell";
-		displayNameShort = "";
-		mass = 8;
-		scope = 2;
-	};
-};

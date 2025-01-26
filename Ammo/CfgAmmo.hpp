@@ -1,0 +1,298 @@
+class CfgAmmo {
+	class BulletBase;
+	class ShotgunBase;
+	class SubmunitionBase;
+	class IDA_blasterbolt;
+	class 3AS_EY30_Pellets_Submunition;
+
+	//Start Base Ammo Classes
+	class 332nd_Base_Ammo: BulletBase
+	{
+		ACE_damageType = "bullet";
+		ace_vehicle_damage_incendiary = 0.1;
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		airFriction = -0.00018;
+		airLock = 1;
+		audibleFire = 45;
+		caliber = 1.5;
+		cartridge = "";
+		coefGravity = 0.01;
+		dangerRadiusBulletClose = 10;
+		dangerRadiusHit = 12;
+		deflecting = 0;
+		deflectionSlowDown = 1.0;
+		effectFlare = "FlareShell";
+		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		effectsFire = "CannonFire";
+		hit = 8;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initTime = 0;
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+		muzzleEffect = "";
+		suppressionRadiusBulletClose = 6;
+		suppressionRadiusHit = 8;
+		timeToLive = 10;
+		tracerEndTime = 10;
+		tracerScale = 0.975;
+		tracerStartTime = 0;
+		typicalSpeed = 472;
+	};
+
+	class 332nd_Base_Ammo_IDA: 332nd_Base_Ammo
+	{
+		ACE_damageType = "bullet";
+		ace_vehicle_damage_incendiary = 0.1;
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		airFriction = -0.00018;
+		airLock = 1;
+		audibleFire = 45;
+		brightness = 1000;
+		bulletFly[] = {"bulletFly1",0.2,"bulletFly2",0.2,"bulletFly3",0.2,"bulletFly4",0.2,"bulletFly5",0.2};
+		bulletFly1[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_1.wss",2.23872,1,100};
+		bulletFly2[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_2.wss",2.23872,1,100};
+		bulletFly3[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_3.wss",2.23872,1,100};
+		bulletFly4[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_4.wss",2.23872,1,100};
+		bulletFly5[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_5.wss",2.23872,1,100};
+		caliber = 1.5;
+		cartridge = "";
+		coefGravity = 0.01;
+		dangerRadiusBulletClose = 10;
+		dangerRadiusHit = 12;
+		deflecting = 0;
+		deflectionSlowDown = 1.0;
+		effectFlare = "FlareShell";
+		effectfly = "IDA_BlasterBoltGlow_Blue_Fly";
+		effectsFire = "CannonFire";
+		ExplosionEffects = "IDA_ImpactEffect";
+		//explosive = 1;
+		flaresize = 5;
+		hit = 8;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initTime = 0;
+		model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
+		muzzleEffect = "";
+		suppressionRadiusBulletClose = 6;
+		suppressionRadiusHit = 8;
+		timeToLive = 10;
+		tracerEndTime = 10;
+		tracerScale = 1;
+		tracerStartTime = 0;
+		typicalSpeed = 472;
+		class HitEffects
+		{
+			default_mat = "IDA_ImpactEffect";
+			Hit_Foliage_Dead = "IDA_ImpactEffect";
+			Hit_Foliage_Green = "IDA_ImpactEffect";
+			Hit_Foliage_Green_big = "IDA_ImpactEffect";
+			Hit_Foliage_Palm = "IDA_ImpactEffect";
+			Hit_Foliage_Pine = "IDA_ImpactEffect";
+			hitBuilding = "IDA_ImpactEffect";
+			hitConcrete = "IDA_ImpactEffect";
+			hitFoliage = "IDA_ImpactEffect";
+			hitGlass = "IDA_ImpactEffect";
+			hitGlassArmoRed = "IDA_ImpactEffect";
+			hitGroundHard = "IDA_ImpactEffect";
+			hitGroundRed = "IDA_ImpactEffect";
+			hitGroundSoft = "IDA_ImpactEffect";
+			hitMan = "IDA_ImpactEffect";
+			hitMetal = "IDA_ImpactEffect";
+			hitMetalPlate = "IDA_ImpactEffect";
+			hitPlastic = "IDA_ImpactEffect";
+			hitRubber = "IDA_ImpactEffect";
+			hitTyre = "IDA_ImpactEffect";
+			hitVirtual = "IDA_ImpactEffect";
+			hitWater = "IDA_ImpactEffect";
+			hitWood = "IDA_ImpactEffect";
+		};
+	};
+
+	class 332nd_Base_Shotgun_Ammo: ShotgunBase
+	{
+		ace_vehicle_damage_incendiary = 0.1;
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		airFriction = -0.00018;
+		airLock = 1;
+		audibleFire = 45;
+		caliber = 1;
+		cartridge = "FxCartridge_slug";
+		coefGravity = 0.01;
+		dangerRadiusBulletClose = 10;
+		dangerRadiusHit = 12;
+		deflecting = 0;
+		deflectionSlowDown = 1.0;
+		effectFlare = "FlareShell";
+		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		effectsFire = "CannonFire";
+		hit = 5;
+		indirectHit = 2;
+		indirectHitRange = 0.5;
+		initTime = 0;
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+		muzzleEffect = "";
+		simulation = "shotSpread";
+		suppressionRadiusBulletClose = 6;
+		suppressionRadiusHit = 8;
+		timeToLive = 10;
+		tracerEndTime = 10;
+		tracerScale = 0.975;
+		tracerStartTime = 0;
+		typicalSpeed = 472;
+	};
+
+	class 332nd_Base_Shotgun_Ammo_Sub: SubmunitionBase
+	{
+		ace_vehicle_damage_incendiary = 0.1;
+		aiAmmoUsageFlags = "64 + 128 + 256";
+		airFriction = -0.00018;
+		airLock = 1;
+		audibleFire = 45;
+		caliber = 1;
+		cartridge = "";
+		coefGravity = 0.01;
+		dangerRadiusBulletClose = 10;
+		dangerRadiusHit = 12;
+		deflecting = 0;
+		deflectionSlowDown = 1.0;
+		effectFlare = "FlareShell";
+		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		effectsFire = "CannonFire";
+		hit = 5;
+		indirectHit = 2;
+		indirectHitRange = 0.5;
+		initTime = 0;
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+		muzzleEffect = "";
+		simulation = "shotSpread";
+		suppressionRadiusBulletClose = 6;
+		suppressionRadiusHit = 8;
+		timeToLive = 10;
+		tracerEndTime = 10;
+		tracerScale = 1;
+		tracerStartTime = 0.05;
+		typicalSpeed = 472;
+		submunitionAmmo = "DBA_85mm_Pellets";
+		submunitionConeAngle = 4;
+		submunitionConeType[] = {"randomcenter",16};
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitialOffset[] = {0,0,0.2};
+		submunitionInitSpeed = 415;
+		submunitionParentSpeedCoef = 0;
+		warheadName = "AP";
+	};
+
+	//DC-15A Ammo
+	class 332nd_DC15A_Ammo_762x39: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 28.956;
+		ACE_bulletMass = 7.9704;
+        ACE_caliber = 7.823;
+		hit=11;
+		caliber=1.2;
+		typicalspeed=800;
+	};
+
+	//DC-15C Ammo
+	class 332nd_DC15C_Ammo_556x45: 332nd_Base_Ammo_IDA
+	{
+		ACE_caliber = 5.69;
+		ACE_bulletLength = 23.012;
+        ACE_bulletMass = 4.0176;
+		hit=10;
+		caliber=1;
+		typicalspeed=800;
+	};
+
+	//DC-15L Ammo
+	class 332nd_DC15L_Ammo_762x51: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 28.956;
+		ACE_bulletMass = 9.4608;
+        ACE_caliber = 7.823;
+		hit = 11.6;
+		caliber = 1.6;
+		typicalspeed=800;
+	};
+
+	//DC-15S Ammo
+	class 332nd_DC15S_Ammo_9x19: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 15.494;
+		ACE_bulletMass = 8.0352;
+        ACE_caliber = 9.017;
+		hit=5;
+		caliber=0.4;
+		typicalspeed=800;
+	};
+
+
+	//DC-15X Ammo
+	class 332nd_DC15X_Ammo_50: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 58.674;
+		ACE_bulletMass = 41.9256;
+        ACE_caliber = 12.954;
+		hit = 30;
+		caliber = 2.6;
+		typicalspeed=800;
+	};
+
+	//DP-23 Ammo
+	class 332nd_DP23_Ammo_12g: 3AS_EY30_Pellets_Submunition
+	{
+		//ACE_bulletLength = 28.956;
+		//ACE_bulletMass = 7.9704;
+		//ACE_caliber = 7.823;
+		hit=10;
+		caliber=1;
+		typicalspeed=800;
+		//submunitionAmmo = "CUP_12Gauge_Pellets_Submunition_No00_Buck_Deploy";
+	};
+
+	//Valken Ammo
+	class 332nd_Valken_Ammo_762x51: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 28.956;
+		ACE_bulletMass = 9.4608;
+        ACE_caliber = 7.823;
+		hit = 11.6;
+		caliber = 1.6;
+		typicalspeed=800;
+	};
+
+	//Westar Ammo
+	class 332nd_Westar_Ammo_556x45: 332nd_Base_Ammo
+	{
+		ACE_caliber = 5.69;
+		ACE_bulletLength = 23.012;
+		ACE_bulletMass = 4.0176;
+		hit=10;
+		caliber=1;
+		typicalspeed=800;
+		effectFly = "3AS_PlasmaBolt_Yellow_Fly";
+		model = "\3AS\3AS_Weapons\Data\tracer_yellow.p3d";
+	};
+
+	//Z-6 Ammo
+	class 332nd_Z6_Ammo_556x45: 332nd_Base_Ammo_IDA
+	{
+		ACE_caliber = 5.69;
+		ACE_bulletLength = 23.012;
+        ACE_bulletMass = 4.0176;
+		hit=10;
+		caliber=1;
+		typicalspeed=800;
+	};
+
+	//DC-17S Ammo
+	class 332nd_DC17S_Ammo_9x19: 332nd_Base_Ammo
+	{
+		ACE_bulletLength = 15.494;
+		ACE_bulletMass = 8.0352;
+        ACE_caliber = 9.017;
+		hit=6;
+		caliber=0.4;
+		typicalspeed=800;
+	};
+};
