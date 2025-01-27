@@ -25,7 +25,8 @@ class cfgWeapons
 		displayName="[332nd] DC-17S";
 		magazines[] =
 		{
-			"332nd_DC17S_Mag"
+			"332nd_DC17S_Mag",
+			"332nd_DC17S_45ACP_Mag"
 		};
 		magazineWell[]=
 		{
