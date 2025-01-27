@@ -187,6 +187,7 @@ class CfgAmmo {
 	class 3AS_R_MK41_AT;
 	class M_Titan_AT;
 	class 3AS_M_MK43_AT;
+	class ACE_NLAW;
 
 	//DC-15A Ammo
 	class 332nd_DC15A_Ammo_762x39: 332nd_Base_Ammo_IDA
@@ -308,6 +309,12 @@ class CfgAmmo {
 		ExplosionEffects = "MortarExplosion";
 		hit=300;
 	};
+	class 332nd_RPS6_Ammo_NLAW: ACE_NLAW 
+	{
+		ExplosionEffects = "MortarExplosion";
+		hit=300;
+	};
+	
 
 	//PLX1 Ammo
 	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT

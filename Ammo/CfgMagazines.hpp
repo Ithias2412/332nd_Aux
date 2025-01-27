@@ -12,7 +12,6 @@ class CfgMagazines {
 	};
 	class JLTS_RPS6_mag;
 	class JLTS_PLX1_AP_mag;
-	class 332nd_PLX1_Mag: JLTS_PLX1_AP_mag
 
 	//DC-15A Mags
 	class 332nd_DC15A_Mag: 332nd_Base_Mag
@@ -144,6 +143,16 @@ class CfgMagazines {
 		displayname = "RPS-6 AT Rocket";
 		displayNameShort = "AT";
 		mass = 11.1;
+		scope = 2;
+	};
+	class 332nd_RPS6_NLAW_Mag: JLTS_RPS6_mag
+	{
+		ammo = "332nd_RPS6_Ammo_NLAW";
+		count = 1;
+		descriptionShort = "";
+		displayname = "RPS-6 AT NLAW";
+		displayNameShort = "AT";
+		mass = 22;
 		scope = 2;
 	};
 

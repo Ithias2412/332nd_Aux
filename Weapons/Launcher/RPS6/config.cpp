@@ -25,7 +25,8 @@ class cfgWeapons
 		displayName="[332nd] RPS-6 (AT)";
 		magazines[] =
 		{
-			"332nd_RPS6_Mag"
+			"332nd_RPS6_Mag",
+			"332nd_RPS6_NLAW_Mag"
 		};
 		magazineWell[]=
 		{
