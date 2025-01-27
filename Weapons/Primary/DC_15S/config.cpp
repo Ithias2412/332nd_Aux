@@ -35,7 +35,8 @@ class cfgWeapons
 		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_ui_ca.paa";
 		magazines[] =
 		{
-			"332nd_DC15S_Mag"
+			"332nd_DC15S_Mag",
+			"332nd_DC15S_45ACP_Mag"
 		};
 		magazineWell[]=
 		{

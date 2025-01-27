@@ -334,4 +334,53 @@ class CfgAmmo {
 		hit=700;
 	};
 
+	//Starting Ammo Config By Caliber and typical
+
+	class 332nd_556x45_Ball: 332nd_Base_Ammo
+	{
+		ACE_caliber = 5.69;
+		ACE_bulletLength = 23.012;
+        ACE_bulletMass = 4.0176;
+		hit=10;
+		caliber=1;
+		typicalspeed=800;
+	};
+	class 332nd_762x51_Ball: 332nd_Base_Ammo
+	{
+		ACE_bulletLength = 28.956;
+		ACE_bulletMass = 9.4608;
+        ACE_caliber = 7.823;
+		hit = 11.6;
+		caliber = 1.6;
+		typicalspeed=800;
+
+	};
+	class 332nd_9x19_Ball: 332nd_Base_Ammo
+	{
+		ACE_bulletLength = 15.494;
+		ACE_bulletMass = 8.0352;
+        ACE_caliber = 9.017;
+		hit=5;
+		caliber=0.4;
+		typicalspeed=800;
+	};
+	class 332nd_50BW_Ball: 332nd_Base_Ammo
+	{
+		ACE_bulletLength = 58.674;
+		ACE_bulletMass = 41.9256;
+        ACE_caliber = 12.954;
+		hit = 30;
+		caliber = 2.6;
+		typicalspeed=800;
+
+	};
+	class 332nd_45ACP: 332nd_Base_Ammo{
+		ACE_caliber = 11.481;
+        ACE_bulletLength = 17.272;
+        ACE_bulletMass = 14.904;
+		typicalspeed=800;
+		caliber = 2.6;
+		hit=7;
+	};
+
 };

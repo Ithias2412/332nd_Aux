@@ -55,8 +55,19 @@ class CfgMagazines {
 		ammo = "332nd_DC15S_Ammo_9x19";
 		count = 60;
 		descriptionShort = "";
-		displayname = "DC-15S 45 Round Energy Cell";
+		displayname = "DC-15S 60 Round Energy Cell";
 		displayNameShort = "";
+		mass = 6.6;
+		scope = 2;
+	};
+
+	class 332nd_DC15S_45ACP_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_45ACP";
+		count = 30;
+		descriptionShort = "";
+		displayname = "DC-15S 30 Round High Power Energy Cell";
+		displayNameShort = "Hi-Pow";
 		mass = 6.6;
 		scope = 2;
 	};
@@ -139,6 +150,17 @@ class CfgMagazines {
 		descriptionShort = "";
 		displayname = "DC-17S 30 Round Energy Cell";
 		displayNameShort = "";
+		mass = 8;
+		scope = 2;
+	};
+
+	class 332nd_DC17S_45ACP_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_45ACP";
+		count = 15;
+		descriptionShort = "";
+		displayname = "DC-17S 15 Round High Power Energy Cell";
+		displayNameShort = "Hi-Pow";
 		mass = 8;
 		scope = 2;
 	};
