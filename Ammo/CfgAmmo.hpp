@@ -245,6 +245,17 @@ class CfgAmmo {
 		typicalspeed=800;
 	};
 
+	//332nd 950mm_Ball
+	class 332nd_950mm_Ball: 332nd_Base_Ammo_IDA
+	{
+		ACE_caliber = 24.1;
+		ACE_bulletLength = 70;
+		ACE_bulletMass = 233.276;
+		typicalspeed=800;
+		hit = 120;
+		caliber = 5;
+		};
+		
 	//DP-23 Ammo
 	class 332nd_DP23_Ammo_12g: 3AS_EY30_Pellets_Submunition
 	{

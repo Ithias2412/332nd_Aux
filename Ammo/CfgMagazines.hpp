@@ -73,6 +73,15 @@ class CfgMagazines {
 		scope = 2;
 		initSpeed = 1000;
 	};
+	// 332nd_950mm_Ball Mag
+	class 332nd_950mm_Ball_1rd_MAG: 332nd_Base_Mag
+	{
+		ammo = "332nd_950mm_Ball";
+		count = 1;
+		displayname = "950mm 1 Round Energy Cell";
+		mass = 15;
+		scope = 2;
+	};
 
 	//DP-23 Mag
 	class 332nd_DP23_Mag: 332nd_Base_Mag
