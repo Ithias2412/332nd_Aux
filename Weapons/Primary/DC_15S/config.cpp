@@ -49,7 +49,7 @@ class cfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			reloadTime=0.085000001;
+			reloadTime=0.05;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
 			dispersion=0.00145;

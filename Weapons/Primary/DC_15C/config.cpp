@@ -150,6 +150,7 @@ class cfgWeapons
 					"332nd_Mode_B_Zoom_2_Forward",
 					"332nd_Mode_C_Zoom_2_Forward",
 					"332nd_Mode_D_Zoom_2_Forward",
+					"332nd_Mode_Seelig_Point_Zoom_2"
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
@@ -272,6 +273,7 @@ class cfgWeapons
 					"332nd_Mode_B_Zoom_2_Forward",
 					"332nd_Mode_C_Zoom_2_Forward",
 					"332nd_Mode_D_Zoom_2_Forward",
+					"332nd_Mode_Seelig_Point_Zoom_2"
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
