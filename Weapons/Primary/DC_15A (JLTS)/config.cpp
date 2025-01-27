@@ -467,6 +467,21 @@ class cfgWeapons
 			"\MRC\JLTS\weapons\DC15A\data\DC15A_co.paa"
 		};
 	};
+	class 332nd_DC15A_GL_Wood: 332nd_DC15A_GL
+	{
+		displayName="[332nd] DC-15A GL Wood (GRN)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"illum"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\weapons\DC15A\data\DC15A_co.paa"
+		};
+	};
+	
+	
 };
 
 class XtdGearModels
