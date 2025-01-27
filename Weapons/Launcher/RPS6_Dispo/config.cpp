@@ -30,7 +30,8 @@ class cfgWeapons
 	class 332nd_Dispo_Base: 3AS_RPS6_Base
 	{
 		author="Ithias";
-		displayName="[332nd] Disposible Launcher (RFL)";	
+		displayName="[332nd] Disposible Launcher (RFL)";
+		magazines[] = {"332nd_RPS6_NLAW_Mag"};
 	};
 	class 332nd_Dispo_F: 332nd_Dispo_Base
 	{
