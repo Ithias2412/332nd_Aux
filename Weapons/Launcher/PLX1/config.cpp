@@ -39,32 +39,3 @@ class cfgWeapons
 
 
 };
-class CfgAmmo
-{
-	class 332nd_Base_Ammo;
-	class M_Titan_AT;
-	class 3AS_M_MK43_AT;
-	
-	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
-	{
-		ExplosionEffects = "MortarExplosion";
-		hit=700;
-	};
-
-
-};
-class CfgMagazines
-{
-	class 332nd_Base_Mag;
-	class JLTS_PLX1_AP_mag;
-	class 332nd_PLX1_Mag: JLTS_PLX1_AP_mag
-	{
-		ammo = "332nd_PLX1_Ammo_AT";
-		count = 2;
-		descriptionShort = "";
-		displayname = "PLX-1 AT Rocket";
-		displayNameShort = "AT";
-		mass = 50;
-		scope = 2;
-	};
-};

@@ -10,6 +10,9 @@ class CfgMagazines {
 		mass=10;
 		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
 	};
+	class JLTS_RPS6_mag;
+	class JLTS_PLX1_AP_mag;
+	class 332nd_PLX1_Mag: JLTS_PLX1_AP_mag
 
 	//DC-15A Mags
 	class 332nd_DC15A_Mag: 332nd_Base_Mag
@@ -131,4 +134,29 @@ class CfgMagazines {
 		mass = 8;
 		scope = 2;
 	};
+
+	//RPS6 Mag
+	class 332nd_RPS6_Mag: JLTS_RPS6_mag
+	{
+		ammo = "332nd_RPS6_Ammo_AT";
+		count = 1;
+		descriptionShort = "";
+		displayname = "RPS-6 AT Rocket";
+		displayNameShort = "AT";
+		mass = 11.1;
+		scope = 2;
+	};
+
+	//PLX1 Mag
+	class 332nd_PLX1_Mag: JLTS_PLX1_AP_mag
+	{
+		ammo = "332nd_PLX1_Ammo_AT";
+		count = 2;
+		descriptionShort = "";
+		displayname = "PLX-1 AT Rocket";
+		displayNameShort = "AT";
+		mass = 50;
+		scope = 2;
+	};
+
 };
