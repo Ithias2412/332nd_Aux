@@ -160,7 +160,7 @@ class CfgMagazines {
 		count = 1;
 		descriptionShort = "";
 		displayname = "RPS-6 AT NLAW";
-		displayNameShort = "AT";
+		displayNameShort = "NLAW";
 		mass = 22;
 		scope = 2;
 	};
