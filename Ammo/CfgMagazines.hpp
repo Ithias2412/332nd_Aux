@@ -52,22 +52,11 @@ class CfgMagazines {
 	//DC-15S Mag
 	class 332nd_DC15S_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_DC15S_Ammo_9x19";
+		ammo = "332nd_45ACP";
 		count = 60;
 		descriptionShort = "";
 		displayname = "DC-15S 60 Round Energy Cell";
 		displayNameShort = "";
-		mass = 6.6;
-		scope = 2;
-	};
-
-	class 332nd_DC15S_45ACP_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_45ACP";
-		count = 30;
-		descriptionShort = "";
-		displayname = "DC-15S 30 Round High Power Energy Cell";
-		displayNameShort = "Hi-Pow";
 		mass = 6.6;
 		scope = 2;
 	};
