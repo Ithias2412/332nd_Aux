@@ -364,7 +364,7 @@ class CfgAmmo {
 		caliber=0.4;
 		typicalspeed=800;
 	};
-	class 332nd_50BW_Ball: 332nd_Base_Ammo
+	class 332nd_50_BMG_Ball: 332nd_Base_Ammo
 	{
 		ACE_bulletLength = 58.674;
 		ACE_bulletMass = 41.9256;

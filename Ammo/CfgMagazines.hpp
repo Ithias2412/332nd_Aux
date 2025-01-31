@@ -110,7 +110,6 @@ class CfgMagazines {
 	class 332nd_Valken_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Valken_Ammo_762x51";
-
 		count = 20;
 		descriptionShort = "";
 		displayname = "Valken 20 Round Energy Cell";

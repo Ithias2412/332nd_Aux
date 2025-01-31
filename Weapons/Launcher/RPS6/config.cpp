@@ -26,7 +26,7 @@ class cfgWeapons
 		magazines[] =
 		{
 			"332nd_RPS6_Mag",
-			"332nd_RPS6_NLAW_Mag"
+			//"332nd_RPS6_NLAW_Mag"
 		};
 		magazineWell[]=
 		{
@@ -38,7 +38,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"332nd_Aux\Weapons\Launcher\RPS6\Tex\332nd_rps6.paa"
+			"332nd_Aux\Weapons\Launcher\RPS6\Tex\332nd_rps6.paa",
 		};
 	};
 
