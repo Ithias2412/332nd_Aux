@@ -23,6 +23,11 @@ class cfgFactionClasses
 		side=1;
 		priority=1;
 	};
+    class 332nd_Droids_Faction {
+        displayName = "332nd Auxiliary Droids";
+        priority = 2;
+        side = 0; // OPFOR
+    };
 };
 
 class CfgEditorCategories
@@ -31,4 +36,7 @@ class CfgEditorCategories
 	{
 		displayName="332nd";
 	};
+    class 332nd_Droids_Subcategory {
+        displayName = "332nd Auxiliary Droids";  // This will appear in the Eden Editor under the Units section
+    };
 };
