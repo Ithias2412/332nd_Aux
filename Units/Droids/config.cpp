@@ -116,6 +116,7 @@ class CfgVehicles {
         displayName = "B1 Security Droid";
         faction = "332nd_Droids_Faction";
         editorSubcategory = "332nd_Droids_Subcategory";
+        uniformClass = "JLTS_DroidB1_Security"; // Security uniform
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
