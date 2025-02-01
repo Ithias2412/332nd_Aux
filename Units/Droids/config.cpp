@@ -1,5 +1,5 @@
 class CfgPatches {
-    class JLTS_characters_DroidUnits {
+    class 332nd_characters_DroidUnits {
         author = "Frank";
         name = "332nd Aux Droids";
         requiredAddons[] = {"JLTS_characters_DroidArmor"};
@@ -17,13 +17,6 @@ class CfgPatches {
     };
 };
 
-class CfgFactionClasses {
-    class 332nd_Droids_Faction {
-        displayName = "332nd Auxiliary Droids";
-        priority = 2;
-        side = 0; // OPFOR
-    };
-};
 
 class CfgVehicles {
     // **Base Droid Class (No uniform enforced, inherits from JLTS)**
@@ -118,7 +111,7 @@ class CfgVehicles {
     };
 
     // **B1 Security Droid**
-    class 332nd_Droid_B1_Security: JLTS_Droid_B1_Security {
+    class 332nd_Droid_B1_Security: JLTS_Droid_B1_E5 {
         scope = 2;
         displayName = "B1 Security Droid";
         faction = "332nd_Droids_Faction";

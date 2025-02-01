@@ -145,6 +145,16 @@ class 332nd_Uniform_Clone_VCT_Medic: 332nd_Uniform_Clone_CR
 		};
 	};
 
+	class 332nd_Uniform_Clone_NCO_Medic: 332nd_Uniform_Clone_CR {
+        displayName = "[332nd] Clone Trooper Armor (NCO / Medic)";
+        class ItemInfo: UniformItem {
+            uniformClass = "332nd_Uniform_Clone_NCO_Veh_Medic";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+        };
+    };
+
 class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
@@ -162,6 +172,27 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
+    class 332nd_Uniform_Clone_Zeus: 332nd_Uniform_Clone_CR {
+        dlc = "332nd";
+        author = "Ithias";
+        scope = 2;
+        displayName = "[332nd] Clone Trooper Armor (Zeus)";
+        class ItemInfo: UniformItem {
+            uniformClass = "332nd_Uniform_Clone_Zeus_Veh";
+            containerClass = "Supply50";
+            mass = 40;
+        };
+    };
+
+    class 332nd_Uniform_Clone_NCO_Zeus: 332nd_Uniform_Clone_CR {
+        displayName = "[332nd] Clone Trooper Armor (NCO / Zeus)";
+        class ItemInfo: UniformItem {
+            uniformClass = "332nd_Uniform_Clone_NCO_Zeus_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+        };
+    };
 
 //Customs
 
@@ -508,6 +539,14 @@ class 332nd_Uniform_Clone_VCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
+    class 332nd_Uniform_Clone_NCO_Veh_Medic: 332nd_Uniform_Clone_CT_Veh {
+        uniformClass = "332nd_Uniform_Clone_NCO_Medic";
+        hiddenSelectionsTextures[] = {
+            "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_NCO_Medic.paa",
+            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO.paa"
+        };
+    };
+
 class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
@@ -525,6 +564,23 @@ class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO.paa",
 		};
 	};
+
+	class 332nd_Uniform_Clone_Zeus_Veh: 332nd_Uniform_Clone_CT_Veh {
+        scope = 1;
+        uniformClass = "332nd_Uniform_Clone_Zeus";
+        hiddenSelectionsTextures[] = {
+            "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Zeus.paa",
+            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Zeus.paa"
+        };
+    };
+
+    class 332nd_Uniform_Clone_NCO_Zeus_Veh: 332nd_Uniform_Clone_CT_Veh {
+        uniformClass = "332nd_Uniform_Clone_NCO_Zeus";
+        hiddenSelectionsTextures[] = {
+            "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_NCO_Zeus.paa",
+            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO_Zeus.paa"
+        };
+    };
 
 //Customs
 

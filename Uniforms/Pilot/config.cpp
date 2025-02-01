@@ -37,6 +37,28 @@ class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
+
+	class 332nd_Uniform_Clone_CX: 332nd_Uniform_Clone_CR {
+        dlc = "332nd";
+        author = "Ithias";
+        scope = 2;
+        displayName = "[332nd] Clone Trooper Armor (CX)";
+        class ItemInfo: UniformItem {
+            uniformClass = "332nd_Uniform_Clone_CX_Veh";
+            containerClass = "Supply50";
+            mass = 40;
+        };
+    };
+
+    class 332nd_Uniform_Clone_NCO_CX: 332nd_Uniform_Clone_CX {
+        displayName = "[332nd] Clone Trooper Armor (NCO / CX)";
+        class ItemInfo: UniformItem {
+            uniformClass = "332nd_Uniform_Clone_NCO_CX_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+        };
+    };
 };
 
 class CfgVehicles
@@ -59,6 +81,22 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_CX_Veh: 332nd_Uniform_Clone_CR_Veh {
+        scope = 1;
+        uniformClass = "332nd_Uniform_Clone_CX";
+        hiddenSelectionsTextures[] = {
+            "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CX.paa",
+            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CX.paa"
+        };
+    };
+
+    class 332nd_Uniform_Clone_NCO_CX_Veh: 332nd_Uniform_Clone_CR_Veh {
+        uniformClass = "332nd_Uniform_Clone_NCO_CX";
+        hiddenSelectionsTextures[] = {
+            "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CX_NCO.paa",
+            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CX_NCO.paa"
+        };
+    };
 };
 
 class XtdGearModels
