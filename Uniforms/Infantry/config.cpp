@@ -630,7 +630,7 @@ class XtdGearModels
         {
             label = "Uniforms";
             author = "Ithias";
-			options[] = { "Trooper", "Medic", "Customs", };
+			options[] = { "Trooper", "Medic", "Zeus", "Customs", };
             class Trooper
             {
                 label = "Trooper";
@@ -671,7 +671,7 @@ class XtdGearModels
             class Medic
             {
                 label = "Medic";
-                values[] = { "CT", "SCT", "VCT", };
+                values[] = { "CT", "SCT", "VCT", "MedicNCO" };
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class CT
@@ -692,7 +692,32 @@ class XtdGearModels
                     description = "Veteran Trooper";
                     //image = "xxx";
                 };
+				class MedicNCO
+				{
+					label = "NCO";
+					description = "Leadership";
+					//image = "xxx";
+				};
             };
+			class Zeus
+			{
+				label = "Zeus";
+				values[] = { "Zeus","ZeusNCO", };
+				changeingame = 0;
+				alwaysSelectable = 1;
+				class Zeus
+				{
+					label = "Zeus";
+					description = "Zeus";
+					//image = "xxx";
+				};
+				class ZeusNCO
+				{
+					label = "ZeusNCO";
+					description = "Zeus";
+					//image = "xxx";
+				};
+			};
             class Customs
             {
                 label = "Customs";
@@ -760,6 +785,21 @@ class XtdGearInfos
             model = "332nd_Uniform_Extended";
             Medic = "VCT";
         };
+		class 332nd_Uniform_Clone_NCO_Medic
+		{
+			model = "332nd_Uniform_Extended";
+			Medic = "MedicNCO";
+		};
+		class 332nd_Uniform_Clone_Zeus
+		{
+			model = "332nd_Uniform_Extended";
+			Zeus = "Zeus";
+		};
+		class 332nd_Uniform_Clone_NCO_Zeus
+		{
+			model = "332nd_Uniform_Extended";
+			Zeus = "ZeusNCO";
+		};
         class 332nd_Uniform_Clone_Ithias
         {
             model = "332nd_Uniform_Extended";
