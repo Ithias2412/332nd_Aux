@@ -124,6 +124,42 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Body.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Frankenburg: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Frankenburg)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Frankenburg.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Seelig: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Seelig)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Seelig.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Weaver: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Weaver)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Weaver.paa"
+		};
+	};
 
 };
 
@@ -158,7 +194,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", };
+				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -185,6 +221,24 @@ class XtdGearModels
                     description = "The man the myth the legend";
                     //image = "xxx";
                 };
+				class Frankenburg
+				{
+					label = "Frankenburg";
+					description = "";
+				};
+				class Seelig
+                {
+                    label = "Seeling";
+                    description = "";
+                    //image = "xxx";
+                };
+				class Weaver
+				{
+					label = "Weaver";
+					description = "";
+					//image = "xxx";
+				};
+
             };
         };
     };
@@ -220,7 +274,22 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Roseiry";
         };
-        class 332nd_Helmet_P2_Body
+        class 332nd_Helmet_P2_Frankenburg
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Frankenburg";
+        };
+		class 332nd_Helmet_P2_Seelig
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Seelig";
+        };
+		class 332nd_Helmet_P2_Weaver
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Weaver";
+        };
+		class 332nd_Helmet_P2_Body
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Body";

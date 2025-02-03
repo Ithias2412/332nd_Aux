@@ -98,6 +98,28 @@ class cfgWeapons
 		};
 	};
 
+	class 332nd_Helmet_Pilot_Saiko: 332nd_Helmet_Pilot
+	{
+		scope=2;
+		dlc="332nd Aux";
+		author="Ithias";
+		displayName="[332nd] Pilot Helmet (Saiko)";
+		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Pilot_P2_Helmet_Saiko.paa",
+		};
+		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
+		subItems[]=
+		{
+			""
+		};
+	};
+
 };
 
 class XtdGearModels
@@ -125,13 +147,19 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka",};
+				values[] = { "Asuka", "Saiko",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Asuka
                 {
                     label = "Asuka";
                     description = "LAAT Enjoyer";
+                    //image = "xxx";
+                };
+				class Saiko
+                {
+                    label = "Saiko";
+                    description = "ARC Enjoyer";
                     //image = "xxx";
                 };
             };
@@ -152,6 +180,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Asuka";
+        };
+		class 332nd_Helmet_Pilot_Saiko
+        {
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Saiko";
         };
 	};
 };
