@@ -707,13 +707,13 @@ class XtdGearModels
 				alwaysSelectable = 1;
 				class Zeus
 				{
-					label = "Zeus";
+					label = "CPO";
 					description = "Zeus";
 					//image = "xxx";
 				};
 				class ZeusNCO
 				{
-					label = "ZeusNCO";
+					label = "CMDR";
 					description = "Zeus";
 					//image = "xxx";
 				};
