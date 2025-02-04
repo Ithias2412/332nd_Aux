@@ -47,8 +47,8 @@ class CfgVehicles {
         uniformClass = "JLTS_DroidB1"; // Standard Battle Droid uniform
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
     };
 
     // **B1 Anti-Tank (Uses Standard JLTS AT Uniform)**
@@ -58,8 +58,8 @@ class CfgVehicles {
         uniformClass = "JLTS_DroidB1"; // Uses default AT droid uniform
         weapons[] = {"JLTS_E5", "JLTS_RPS6", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RPS6", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell", "JLTS_RPS6_mag"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell", "JLTS_RPS6_mag"};
+        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell", "JLTS_RPS6_mag"};
+        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",  "JLTS_RG4D_mag", "SmokeShell", "JLTS_RPS6_mag"};
     };
 
     // **B1 Support Gunner**
@@ -69,8 +69,8 @@ class CfgVehicles {
         uniformClass = "JLTS_DroidB1"; // Support variant
         weapons[] = {"JLTS_E5C", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5C", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5C_mag", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5C_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        magazines[] = {"JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        respawnMagazines[] = {"JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_RG4D_mag", "SmokeShell"};
     };
 
     // **B1 Sniper (Uses Sniper Droid Model)**
@@ -82,8 +82,8 @@ class CfgVehicles {
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5S_mag", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5S_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        magazines[] = {"JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        respawnMagazines[] = {"JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_RG4D_mag", "SmokeShell"};
     };
 
     // **B1 Commander**
@@ -92,8 +92,8 @@ class CfgVehicles {
         displayName = "B1 Commander";
         uniformClass = "JLTS_DroidB1_Commander"; // Commander-specific uniform
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        respawnWeapons[] = {"JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"JLTS_E5_mag", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_RG4D_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
     };
 
@@ -106,8 +106,8 @@ class CfgVehicles {
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
     };
 
     // **B1 Security Droid**
@@ -120,7 +120,7 @@ class CfgVehicles {
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
     };
 
@@ -133,8 +133,8 @@ class CfgVehicles {
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
+        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
     };
 };
 
