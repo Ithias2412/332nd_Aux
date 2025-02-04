@@ -492,10 +492,29 @@ class XtdGearModels
         {
             label = "DC-15A";
             author = "Ithias";
-			options[] = { "Stock", };
-            class Stock
+			options[] = { "RFL", "GRN",};
+            class RFL
             {
-                label = "Stock";
+                label = "RFL";
+				values[] = { "Default", "Wood",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Default
+                {
+                    label = "Default";
+                    description = "For normal people";
+                    //image = "xxx";
+                };
+				class Wood
+                {
+                    label = "Wood";
+                    description = "For the other people";
+                    //image = "xxx";
+                };
+            };
+            class GRN
+            {
+                label = "GRN";
 				values[] = { "Default", "Wood",};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -523,12 +542,22 @@ class XtdGearInfos
         class 332nd_DC15A
         {
             model = "332nd_Weapons_DC15A_Extended";
-            Stock = "Default";
+            RFL = "Default";
         };
         class 332nd_DC15A_Wood
         {
             model = "332nd_Weapons_DC15A_Extended";
-            Stock = "Wood";
+            RFL = "Wood";
+        };
+        class 332nd_DC15A_GL
+        {
+            model = "332nd_Weapons_DC15A_Extended";
+            GRN = "Default";
+        };
+        class 332nd_DC15A_GL_Wood
+        {
+            model = "332nd_Weapons_DC15A_Extended";
+            GRN = "Wood";
         };
 	};
 };

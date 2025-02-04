@@ -300,3 +300,52 @@ class cfgWeapons
 		};
 	};
 };
+
+class XtdGearModels
+{
+    class CfgWeapons 
+    {
+        class 332nd_Weapons_DC15C_Extended
+        {
+            label = "DC-15C";
+            author = "Ithias";
+			options[] = { "DC15C", };
+            class DC15C
+            {
+                label = "DC-15C";
+				values[] = { "RFL", "GRN",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class RFL
+                {
+                    label = "RFL";
+                    description = "For normal people";
+                    //image = "xxx";
+                };
+				class GRN
+                {
+                    label = "GRN";
+                    description = "For the other people";
+                    //image = "xxx";
+                };
+            };
+        };
+    };
+};
+
+class XtdGearInfos
+{
+    class CfgWeapons 
+    {
+        class 332nd_DC15C
+        {
+            model = "332nd_Weapons_DC15C_Extended";
+            DC15C = "RFL";
+        };
+        class 332nd_DC15C_GL
+        {
+            model = "332nd_Weapons_DC15C_Extended";
+            DC15C = "GRN";
+        };
+	};
+};
