@@ -145,15 +145,23 @@ class 332nd_Uniform_Clone_VCT_Medic: 332nd_Uniform_Clone_CR
 		};
 	};
 
-	class 332nd_Uniform_Clone_NCO_Medic: 332nd_Uniform_Clone_CR {
+class 332nd_Uniform_Clone_NCO_Medic: 332nd_Uniform_Clone_CR
+	{
+		dlc="332nd";
+		author="Ithias";
+		scope=2;
         displayName = "[332nd] Clone Trooper Armor (NCO / Medic)";
-        class ItemInfo: UniformItem {
-            uniformClass = "332nd_Uniform_Clone_NCO_Veh_Medic";
+		//displayName="[332nd] Clone Trooper Armor (NCO / Medic)";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_NCO_Veh_Medic";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
-        };
-    };
+		};
+	};
 
 class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 	{
