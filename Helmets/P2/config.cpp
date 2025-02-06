@@ -70,6 +70,19 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_CT.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Medic: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Medic)";
+		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Medic.paa"
+		};
+	};
 
 //Customs
 
@@ -160,6 +173,19 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Weaver.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Hicks: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Hicks)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Hicks.paa"
+		};
+	};
+
 
 };
 
@@ -175,7 +201,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Recruit", "Trooper",};
+				values[] = { "Recruit", "Trooper", "Medic",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Recruit
@@ -190,29 +216,35 @@ class XtdGearModels
                     description = "CT+";
                     //image = "xxx";
                 };
+                class Medic
+                {
+                    label = "Medic";
+                    //description = "...";
+                    //image = "xxx";
+                };
             };
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver",};
+				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
                 {
                     label = "Ithias";
-                    description = "His weiner is 10 ft long";
+                    description = "Bout to crash out";
                     //image = "xxx";
                 };
 				class Cherryy
                 {
                     label = "Cherryy";
-                    description = "Remade his custom 3 times";
+                    description = "Piller of the community";
                     //image = "xxx";
                 };
 				class Roseiry
                 {
                     label = "Roseiry";
-                    description = "Does not like custom descriptions";
+                    description = "Loves stealing (Also hates custom descriptions)";
                     //image = "xxx";
                 };
 				class Body
@@ -224,18 +256,24 @@ class XtdGearModels
 				class Frankenburg
 				{
 					label = "Frankenburg";
-					description = "";
+					description = "In too many S-Shops";
 				};
 				class Seelig
                 {
-                    label = "Seeling";
-                    description = "";
+                    label = "Seelig";
+                    description = "Flight 5342 Pilot";
                     //image = "xxx";
                 };
 				class Weaver
 				{
 					label = "Weaver";
-					description = "";
+					description = "Sleeps on the Sofa (Wife is angry)";
+					//image = "xxx";
+				};
+				class Hicks
+				{
+					label = "Hicks";
+					description = "Lolcow enjoyer";
 					//image = "xxx";
 				};
 
@@ -257,6 +295,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Type = "Trooper";
+        };
+		class 332nd_Helmet_P2_Medic
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Type = "Medic";
         };
 		//customs
         class 332nd_Helmet_P2_Ithias
@@ -293,6 +336,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Body";
+        };
+		class 332nd_Helmet_P2_Hicks
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Hicks";
         };
 
 	};

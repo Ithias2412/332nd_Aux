@@ -274,31 +274,31 @@ class XtdGearInfos
         {
             model = "332nd_Facewear_Extended";
             Type = "Rangefinder";
-            Activation = "A";
+            Variant = "A";
         };
         class 332nd_Facewear_Visor
         {
             model = "332nd_Facewear_Extended";
             Type = "Visor";
-            Activation = "B";
+            Variant = "B";
         };
         class 332nd_Facewear_Visor_Off
         {
             model = "332nd_Facewear_Extended";
             Type = "Visor";
-            Activation = "A";
+            Variant = "A";
         };
         class 332nd_Facewear_XO_White
         {
             model = "332nd_Facewear_Extended";
             Type = "Commander";
-            Activation = "A";
+            Variant = "A";
         };
         class 332nd_Facewear_CO_White
         {
             model = "332nd_Facewear_Extended";
             Type = "Commander";
-            Activation = "B";
+            Variant = "B";
         };
     };
 
