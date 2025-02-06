@@ -421,7 +421,7 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment="332nd_Hammer_I";
+						attachment="332nd_Hammer_I_Mag";
 						priority=5;
 						hardpoints[]=
 						{
@@ -434,7 +434,7 @@ class CfgVehicles
 					};
 					class PylonLeft2: PylonLeft1
 					{
-						attachment="332nd_Anvil_III";
+						attachment="332nd_Anvil_III_Mag";
 						priority=4;
 						hardpoints[]=
 						{
@@ -447,7 +447,7 @@ class CfgVehicles
 					};
 					class PylonLeft3: PylonLeft1
 					{
-						attachment="332nd_Anvil_I";
+						attachment="332nd_Anvil_I_Mag";
 						priority=3;
 						hardpoints[]=
 						{
@@ -486,12 +486,12 @@ class CfgVehicles
 						displayName="Default";
 						attachment[]=
 						{
-							"332nd_Hammer_I",
-							"332nd_Anvil_III",
-							"332nd_Anvil_I",
-							"332nd_Anvil_I",
-							"332nd_Anvil_III",
-							"332nd_Hammer_I"
+							"332nd_Hammer_I_Mag",
+							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_III_Mag",
+							"332nd_Hammer_I_Mag",
 						};
 					};
 					class AT
@@ -499,12 +499,12 @@ class CfgVehicles
 						displayName="CAS";
 						attachment[]=
 						{
-							"332nd_Anvil_I",
-							"332nd_Anvil_I",
-							"332nd_Anvil_III",
-							"332nd_Anvil_III",
-							"332nd_Anvil_I",
-							"332nd_Anvil_I"
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_I_Mag"
 						};
 					};
 					class CAP
@@ -512,12 +512,12 @@ class CfgVehicles
 						displayName="CAP";
 						attachment[]=
 						{
-							"332nd_Hammer_I",
-							"332nd_Hammer_I",
-							"332nd_Hammer_I",
-							"332nd_Hammer_I",
-							"332nd_Hammer_I",
-							"332nd_Hammer_I"
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag"
 						};
 					};
 				};
