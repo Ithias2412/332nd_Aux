@@ -254,8 +254,8 @@ class CfgAmmo {
 		typicalspeed=800;
 		hit = 120;
 		caliber = 5;
-	};
-
+		};
+		
 	//DP-23 Ammo
 	class 332nd_DP23_Ammo_12g: 3AS_EY30_Pellets_Submunition
 	{
@@ -325,18 +325,13 @@ class CfgAmmo {
 		ExplosionEffects = "MortarExplosion";
 		hit=300;
 	};
-	class 332nd_Dispo_Ammo_NLAW: ACE_NLAW 
-	{
-		ExplosionEffects = "MortarExplosion";
-		hit=900;
-	};
-
+	
 
 	//PLX1 Ammo
 	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
 	{
 		ExplosionEffects = "MortarExplosion";
-		hit=900;
+		hit=700;
 	};
 
 	//Starting Ammo Config By Caliber and typical

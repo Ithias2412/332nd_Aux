@@ -31,11 +31,7 @@ class cfgWeapons
 	{
 		author="Ithias";
 		displayName="[332nd] Disposible Launcher (RFL)";
-		magazines[] = 
-		{
-			"332nd_Dispo_Mag",
-		};
-		//modelOptics = "\332nd_Aux\Misc\Optics\332nd_Zoom";
+		magazines[] = {"332nd_RPS6_NLAW_Mag"};
 	};
 	class 332nd_Dispo_F: 332nd_Dispo_Base
 	{

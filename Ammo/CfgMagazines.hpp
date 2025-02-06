@@ -174,16 +174,6 @@ class CfgMagazines {
 		mass = 22;
 		scope = 2;
 	};
-	class 332nd_Dispo_Mag: JLTS_RPS6_mag
-	{
-		ammo = "332nd_Dispo_Ammo_NLAW";
-		count = 1;
-		descriptionShort = "";
-		displayname = "Dispo AT NLAW";
-		displayNameShort = "NLAW";
-		mass = 22;
-		scope = 2;
-	};
 
 	//PLX1 Mag
 	class 332nd_PLX1_Mag: JLTS_PLX1_AP_mag

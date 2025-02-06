@@ -180,7 +180,6 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-/*
     class 332nd_Uniform_Clone_Zeus: 332nd_Uniform_Clone_CR {
         dlc = "332nd";
         author = "Ithias";
@@ -192,6 +191,7 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
             mass = 40;
         };
     };
+
     class 332nd_Uniform_Clone_NCO_Zeus: 332nd_Uniform_Clone_CR {
         displayName = "[332nd] Clone Trooper Armor (NCO / Zeus)";
         class ItemInfo: UniformItem {
@@ -201,7 +201,7 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 			mass=40;
         };
     };
-*/
+
 //Customs
 
 class 332nd_Uniform_Clone_Ithias: 332nd_Uniform_Clone_CR
@@ -508,7 +508,7 @@ class 332nd_Uniform_Clone_CT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_Medic.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_Medic.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
 		};
 	};
 class 332nd_Uniform_Clone_SCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
@@ -525,7 +525,7 @@ class 332nd_Uniform_Clone_SCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_Medic.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_SCT_Medic.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_SCT.paa",
 		};
 	};
 
@@ -543,16 +543,15 @@ class 332nd_Uniform_Clone_VCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_VCT_Medic.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_VCT_Medic.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_VCT.paa",
 		};
 	};
 
-    class 332nd_Uniform_Clone_NCO_Veh_Medic: 332nd_Uniform_Clone_CT_Veh 
-	{
+    class 332nd_Uniform_Clone_NCO_Veh_Medic: 332nd_Uniform_Clone_CT_Veh {
         uniformClass = "332nd_Uniform_Clone_NCO_Medic";
         hiddenSelectionsTextures[] = {
             "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_NCO_Medic.paa",
-            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO_Medic.paa"
+            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO.paa"
         };
     };
 
@@ -573,7 +572,7 @@ class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO.paa",
 		};
 	};
-/*
+
 	class 332nd_Uniform_Clone_Zeus_Veh: 332nd_Uniform_Clone_CT_Veh {
         scope = 1;
         uniformClass = "332nd_Uniform_Clone_Zeus";
@@ -590,7 +589,7 @@ class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
             "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO_Zeus.paa"
         };
     };
-*/
+
 //Customs
 
 class 332nd_Uniform_Clone_Ithias_Veh: 332nd_Uniform_Clone_CT_Veh
@@ -639,7 +638,7 @@ class XtdGearModels
         {
             label = "Uniforms";
             author = "Ithias";
-			options[] = { "Trooper", "Medic", /* "Zeus", */ "Customs", };
+			options[] = { "Trooper", "Medic", "Zeus", "Customs", };
             class Trooper
             {
                 label = "Trooper";
@@ -708,7 +707,7 @@ class XtdGearModels
 					//image = "xxx";
 				};
             };
-		/*	class Zeus
+			class Zeus
 			{
 				label = "Zeus";
 				values[] = { "Zeus","ZeusNCO", };
@@ -726,7 +725,7 @@ class XtdGearModels
 					description = "Zeus";
 					//image = "xxx";
 				};
-			}; */
+			};
             class Customs
             {
                 label = "Customs";
@@ -799,7 +798,6 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Medic = "MedicNCO";
 		};
-		/*
 		class 332nd_Uniform_Clone_Zeus
 		{
 			model = "332nd_Uniform_Extended";
@@ -810,7 +808,6 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Zeus = "ZeusNCO";
 		};
-		*/
         class 332nd_Uniform_Clone_Ithias
         {
             model = "332nd_Uniform_Extended";
