@@ -76,28 +76,6 @@ class cfgWeapons
 
 //Customs
 
-	class 332nd_Helmet_Pilot_Asuka: 332nd_Helmet_Pilot
-	{
-		scope=2;
-		dlc="332nd Aux";
-		author="Ithias";
-		displayName="[332nd] Pilot Helmet (Asuka)";
-		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
-		hiddenSelections[]=
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Asuka.paa",
-		};
-		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
-		subItems[]=
-		{
-			""
-		};
-	};
-
 	class 332nd_Helmet_Pilot_Saiko: 332nd_Helmet_Pilot
 	{
 		scope=2;
@@ -111,7 +89,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Helmets\Tex\332nd_Pilot_P2_Helmet_Saiko.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Saiko.paa",
 		};
 		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
 		subItems[]=
@@ -119,7 +97,6 @@ class cfgWeapons
 			""
 		};
 	};
-
 };
 
 class XtdGearModels
@@ -147,15 +124,9 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Saiko",};
+				values[] = { "Saiko",};
                 changeingame = 0;
                 alwaysSelectable = 1;
-                class Asuka
-                {
-                    label = "Asuka";
-                    description = "LAAT Enjoyer";
-                    //image = "xxx";
-                };
 				class Saiko
                 {
                     label = "Saiko";
@@ -175,11 +146,6 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_Pilot_Extended";
             Type = "Pilot";
-        };
-        class 332nd_Helmet_Pilot_Asuka
-        {
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Asuka";
         };
 		class 332nd_Helmet_Pilot_Saiko
         {

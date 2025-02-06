@@ -1,3 +1,5 @@
+/*
+
 class CfgPatches {
 	class 332nd_Uniforms_Pilot {
 		units[] = 

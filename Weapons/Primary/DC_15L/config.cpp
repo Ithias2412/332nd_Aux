@@ -28,7 +28,8 @@ class cfgWeapons
 	{
 		author="Ithias";
 		displayName="[332nd] DC-15L (AR)";
-		recoil="3AS_recoil_DC15L";
+		//recoil="3AS_recoil_DC15L";
+		recoil="IDA_recoil_Z6";
 		reloadAction = "GestureReload_JLTS_DC15A";
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15X\DC15X_ui.paa";
 		magazines[] =
@@ -77,15 +78,24 @@ class cfgWeapons
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
-				compatibleItems[]={};
+				compatibleItems[]=
+				{
+					
+				};
 			};
 			class PointerSlot: PointerSlot
 			{
-				compatibleItems[]={};
+				compatibleItems[]=
+				{
+					
+				};
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				compatibleItems[]={};
+				compatibleItems[]=
+				{
+					"3AS_Bipod_DC15L_f",
+				};
 			};
 		};
 		class FullAuto_15L: FullAuto
