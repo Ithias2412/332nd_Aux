@@ -246,8 +246,12 @@ class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
 
 class CfgVehicles
 {
-	class SWLB_clone_base_P2;
-	class 332nd_Uniform_Clone_CR_Veh: SWLB_clone_base_P2
+	class B_soldier_base_F;
+	class B_Soldier_F: B_soldier_base_F
+	{
+		class HitPoints;
+	};
+	class 332nd_Uniform_Clone_CR_Veh: B_Soldier_F
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_CR";
