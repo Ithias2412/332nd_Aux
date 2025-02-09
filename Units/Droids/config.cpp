@@ -1,10 +1,16 @@
-class CfgPatches {
-    class 332nd_characters_DroidUnits {
+class CfgPatches 
+{
+    class 332nd_characters_DroidUnits 
+	{
         author = "Frank";
         name = "332nd Aux Droids";
-        requiredAddons[] = {"JLTS_characters_DroidArmor"};
+        requiredAddons[] = 
+		{
+			"JLTS_characters_DroidArmor"
+		};
         weapons[] = {};
-        units[] = {
+        units[] = 
+		{
             "332nd_Droid_B1_Rifleman",
             "332nd_Droid_B1_AT",
             "332nd_Droid_B1_Support",
@@ -30,7 +36,8 @@ class CfgVehicles {
     class 332nd_Droid_Base: JLTS_Droid_B1_E5 {
         scope = 0; // Base class (hidden)
         faction = "332nd_Droids_Faction";
-        editorSubcategory = "332nd_Droids_Subcategory";
+        //editorSubcategory = "332nd_Droids_Subcategory";
+        editorSubcategory = "JLTS_droids_normal";
         backpack = "JLTS_B1_backpack";
         weapons[] = {"Throw", "Put"}; // Default for all, overridden by subclasses
         respawnWeapons[] = {"Throw", "Put"};
@@ -78,7 +85,8 @@ class CfgVehicles {
         scope = 2;
         displayName = "B1 Sniper";
         faction = "332nd_Droids_Faction";
-        editorSubcategory = "332nd_Droids_Subcategory";
+        //editorSubcategory = "332nd_Droids_Subcategory";
+        editorSubcategory = "JLTS_droids_normal";
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
@@ -102,7 +110,8 @@ class CfgVehicles {
         scope = 2;
         displayName = "B1 Crewman";
         faction = "332nd_Droids_Faction";
-        editorSubcategory = "332nd_Droids_Subcategory";
+        //editorSubcategory = "332nd_Droids_Subcategory";
+        editorSubcategory = "JLTS_droids_normal";
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
@@ -115,7 +124,8 @@ class CfgVehicles {
         scope = 2;
         displayName = "B1 Security Droid";
         faction = "332nd_Droids_Faction";
-        editorSubcategory = "332nd_Droids_Subcategory";
+        //editorSubcategory = "332nd_Droids_Subcategory";
+        editorSubcategory = "JLTS_droids_normal";
         uniformClass = "JLTS_DroidB1_Security"; // Security uniform
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
@@ -129,7 +139,8 @@ class CfgVehicles {
         scope = 2;
         displayName = "B1 Pilot";
         faction = "332nd_Droids_Faction";
-        editorSubcategory = "332nd_Droids_Subcategory";
+        //editorSubcategory = "332nd_Droids_Subcategory";
+        editorSubcategory = "JLTS_droids_normal";
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
