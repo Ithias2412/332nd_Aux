@@ -77,7 +77,7 @@ class CfgVehicles
 				name="face_hub";
 				passThrough = 0.8; 
 				radius = 0.08; 
-				explosionShielding=0.1;
+				explosionShielding=0.3;
 				minimalHit = 0.01; 
 			};
 			class HitNeck: HitFace
@@ -87,7 +87,7 @@ class CfgVehicles
 				name="neck";
 				passThrough = 0.8; 
 				radius=0.1;
-				explosionShielding=0.5;
+				explosionShielding=1.5;
 				minimalHit = 0.01; 
 			};
 			class HitHead: HitNeck
@@ -97,7 +97,7 @@ class CfgVehicles
 				name="head";
 				passThrough = 0.8; 
 				radius=0.2;
-				explosionShielding=0.5;
+				explosionShielding=1.5;
 				minimalHit = 0.01; 
 				depends="HitFace max HitNeck";
 			};
@@ -108,7 +108,7 @@ class CfgVehicles
 				name="pelvis";
 				passThrough = 0.8; 
 				radius = 0.24; 
-				explosionShielding = 1; 
+				explosionShielding = 3; 
 				visual="injury_body";
 				minimalHit = 0.01; 
 				depends="";
@@ -120,7 +120,7 @@ class CfgVehicles
 				name="spine1";
 				passThrough = 0.8;	
 				radius=0.16;
-				explosionShielding = 1;	
+				explosionShielding = 3;	
 				visual="injury_body";
 				minimalHit = 0.01;	
 			};
@@ -165,7 +165,7 @@ class CfgVehicles
 				name="arms";
 				passThrough=1;
 				radius=0.1;
-				explosionShielding = 1; 
+				explosionShielding = 3; 
 				visual="injury_hands";
 				minimalHit = 0.01; 
 				depends="0";
@@ -177,7 +177,7 @@ class CfgVehicles
 				name="hands";
 				passThrough = 0.1; 
 				radius=0.1;
-				explosionShielding=1;
+				explosionShielding=3;
 				visual="injury_hands";
 				minimalHit=0.01; 
 				depends="HitArms";
@@ -189,7 +189,7 @@ class CfgVehicles
 				name="legs";
 				passThrough=1;
 				radius=0.14;
-				explosionShielding = 1; 
+				explosionShielding = 3; 
 				visual="injury_legs";
 				minimalHit = 0.01; 
 				depends="0";
@@ -201,7 +201,7 @@ class CfgVehicles
 				name="body";
 				passThrough=1;
 				radius=0;
-				explosionShielding = 1; 
+				explosionShielding = 3; 
 				visual="";
 				minimalHit=0;
 				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
@@ -228,7 +228,7 @@ class CfgVehicles
 				name="leg_l";
 				passThrough=1;
 				radius=0.1;
-				explosionShielding = 1; 
+				explosionShielding = 3; 
 				visual="injury_legs";
 				minimalHit = 0.01; 
 			};
