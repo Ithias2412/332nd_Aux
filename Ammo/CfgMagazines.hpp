@@ -12,7 +12,74 @@ class CfgMagazines {
 	};
 	class JLTS_RPS6_mag;
 	class JLTS_PLX1_AP_mag;
-
+	//UGL Grenades and Smokes
+	class 1Rnd_HE_Grenade_shell;
+	class 332nd_HE_LGrenade_Mag: 1Rnd_HE_Grenade_shell
+	{
+		ammo="332nd_HE_LGrenade";
+		count=1;
+		descriptionShort="";
+		displayname="332nd 1 Round HE";
+		displayNameShort="";
+		mass=4;
+		scope=2;
+	};
+	class IDA_Smoke_LauncherGrenade;
+	class 3Rnd_Smoke_Grenade_shell;
+	class 332nd_Smoke_LauncherGrenade: 3Rnd_Smoke_Grenade_shell
+	{
+		author="Cherryy";
+		count=1;
+		displayName="332nd Impact Smoke (White)";
+		displayNameShort="White Smoke";
+		descriptionShort="Impact Smoke grenade";
+		ammo="IDA_smoke_Impact";
+		mass=4;
+	};
+	class 332nd_SmokeRed_LauncherGrenade: IDA_Smoke_LauncherGrenade
+	{
+		author="Cherryy";
+		count=1;
+		displayName="332nd Impact Smoke (Red)";
+		displayNameShort="Red Smoke";
+		descriptionShort="Red Impact Smoke grenade";
+		ammo="IDA_smoke_Impact_Red";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_red_CA.paa";
+		mass=4;
+	};
+	class 332nd_SmokeGreen_LauncherGrenade: 332nd_Smoke_LauncherGrenade
+	{
+		author="Cherryy";
+		count=1;
+		displayName="332nd Impact Smoke (Green)";
+		displayNameShort="Green Smoke";
+		descriptionShort="Green Impact Smoke grenade";
+		ammo="IDA_smoke_Impact_Green";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_green_CA.paa";
+		mass=4;
+	};
+	class 332nd_SmokeBlue_LauncherGrenade: 332nd_Smoke_LauncherGrenade
+	{
+		author="Cherryy";
+		count=1;
+		displayName="332nd Impact Smoke (Blue)";
+		displayNameShort="Blue Smoke";
+		descriptionShort="Blue Impact Smoke grenade";
+		ammo="IDA_smoke_Impact_Blue";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
+		mass=4;
+	};
+	class 332nd_SmokePurple_LauncherGrenade: 332nd_Smoke_LauncherGrenade
+	{
+		author="Cherryy";
+		count=1;
+		displayName="332nd Impact Smoke (Purple)";
+		displayNameShort="Purple Smoke";
+		descriptionShort="Purple Impact Smoke grenade";
+		ammo="IDA_smoke_Impact_Purple";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_purple_CA.paa";
+		mass=4;
+	};
 	//DC-15A Mags
 	class 332nd_DC15A_Mag: 332nd_Base_Mag
 	{
