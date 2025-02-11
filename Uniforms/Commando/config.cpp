@@ -191,6 +191,12 @@ class CfgVehicles
         hiddenSelections[] = {"Camo","Camo1"};
 		hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Armor_Standard_CO.paa","\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"};
     };
+    class 332nd_Rep_Commando_F: 332nd_Rep_Commando_base_F
+	{
+		scope = 2;
+		displayName = "[332nd] Republic Commando";
+		weapons[] = {"Throw","Put","3AS_DC17M_F"};
+	};
 
     class 332nd_Katarn_Backpack_Base: 3AS_Katarn_Backpack_Base
     {
@@ -231,4 +237,39 @@ class cfgWeapons
 
     };
 
+    class 332nd_Katarn_Helmet_Base: 3AS_Katarn_Helmet_Base
+    {
+        scope = 0;
+		weaponPoolAvailable = 1;
+		displayName = "[332nd] Republic Katarn Helmet";
+		picture = "3AS\3AS_Characters\Commando\data\UI\Katarn_Helmet_Unmarked_UI_ca.paa";
+		model = "\3AS\3AS_Characters\Commando\3AS_Katarn_Helmet.p3d";
+		hiddenSelections[] = {"camo","camo1"};
+		hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Helmet_Standard_CO.paa","\3AS\3AS_Characters\Commando\data\Katarn_Helmet_Standard_CO.paa"};
+		descriptionShort = "$STR_A3_SP_AL_II";
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "\3AS\3AS_Characters\Commando\3AS_Katarn_Helmet.p3d";
+			modelSides[] = {3,1};
+			hiddenSelections[] = {"camo","camo1"};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 15;
+					passThrough = 0.5;
+				};
+			};
+		};
+		subItems[] = {"3AS_Katarn_Integrated_NVG_TI_F"};
+
+    };
+    class 3AS_H_Katarn_Helmet: 3AS_Katarn_Helmet_Base
+	{
+		scope = 2;
+		displayName = "[332nd] Republic Katarn Helmet";
+		hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Helmet_Standard_CO.paa","\3AS\3AS_Characters\Commando\data\Katarn_Helmet_Standard_CO.paa"};
+	};
 };
