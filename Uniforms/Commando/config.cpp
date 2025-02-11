@@ -1,5 +1,8 @@
-class CfgPatches {
-	class 332nd_Uniforms_Commando {
+/*
+class CfgPatches 
+{
+	class 332nd_Uniforms_Commando 
+	{
 		units[] = 
         {
             ""
@@ -21,6 +24,9 @@ class CfgVehicles
 		class HitPoints;
 	};
     
+	class 3AS_Rep_Commando_base_F;
+	class UniformInfo;
+	class SlotsInfo;
     class 332nd_Rep_Commando_base_F: 3AS_Rep_Commando_base_F
     {
         displayName = "[332nd] Republic Commando";

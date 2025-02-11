@@ -47,6 +47,7 @@ class CfgVehicles {
 	class SWLB_clone_bag_leg;
 	class lsd_cis_bxdroid_specops;
 	class WBK_BX_Assasin_1;
+	class HitPoints;
 
     // B1 Droids
     class 332nd_Droid_Base: JLTS_Droid_B1_E5 
@@ -205,6 +206,175 @@ class CfgVehicles {
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
         linkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
         respawnLinkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
+		class HitPoints: HitPoints
+		{
+			class HitFace
+			{
+				armor=1;
+				material=-1;
+				name="face_hub";
+				passThrough = 0.8; 
+				radius = 0.08; 
+				explosionShielding=0.1;
+				minimalHit = 0.01; 
+			};
+			class HitNeck: HitFace
+			{
+				armor=8;
+				material=-1;
+				name="neck";
+				passThrough = 0.1; 
+				radius=0.1;
+				explosionShielding = 0.5;
+				minimalHit = 0.01; 
+			};
+			class HitHead: HitNeck
+			{
+				armor=1;
+				material=-1;
+				name="head";
+				passThrough = 0.1;
+				radius=0.2;
+				explosionShielding = 0.5;
+				minimalHit = 0.01; 
+				depends="HitFace max HitNeck";
+			};
+			class HitPelvis: HitHead
+			{
+				armor = 10;
+				material=-1;
+				name="pelvis";
+				passThrough = 0.1; 
+				radius = 0.24; 
+				explosionShielding = 3;
+				visual="injury_body";
+				minimalHit = 0.01; 
+				depends="";
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor = 10;
+				material=-1;
+				name="spine1";
+				passThrough = 0.1;
+				radius=0.16;
+				explosionShielding = 3;	
+				visual="injury_body";
+				minimalHit = 0.01;	
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor = 10;
+				material=-1;
+				name="spine2";
+				passThrough = 0.1;
+				radius = 0.18; 
+				explosionShielding = 6;
+				visual="injury_body";
+				minimalHit = 0.01; 
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor = 10;
+				material=-1;
+				name="spine3";
+				passThrough = 0.1;
+				radius = 0.18; 
+				explosionShielding = 6;
+				visual="injury_body";
+				minimalHit = 0.01; 
+			};
+			class HitBody: HitChest
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.01;
+				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitBody
+			{
+				armor = 10;
+				material=-1;
+				name="arms";
+				passThrough = 0.1;
+				radius=0.1;
+				explosionShielding = 2;
+				visual="injury_hands";
+				minimalHit = 0.01; 
+				depends="0";
+			};
+			class HitHands: HitArms
+			{
+				armor = 10;
+				material=-1;
+				name="hands";
+				passThrough = 0.1;
+				radius=0.1;
+				explosionShielding = 1;
+				visual="injury_hands";
+				minimalHit=0.01; 
+				depends="HitArms";
+			};
+			class HitLegs: HitHands
+			{
+				armor = 10;
+				material=-1;
+				name="legs";
+				passThrough = 0.1;
+				radius=0.14;
+				explosionShielding = 2;
+				visual="injury_legs";
+				minimalHit = 0.01; 
+				depends="0";
+			};
+			class Incapacitated: HitLegs
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding = 3; 
+				visual="";
+				minimalHit=0;
+				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+			class HitLeftArm
+			{
+				armor = 10;
+				material=-1;
+				name="hand_l";
+				passThrough = 0.1;
+				radius = 0.08; 
+				explosionShielding = 2;
+				visual="injury_hands";
+				minimalHit = 0.01; 
+			};
+			class HitRightArm: HitLeftArm
+			{
+				name="hand_r";
+			};
+			class HitLeftLeg
+			{
+				armor = 10;
+				material=-1;
+				name="leg_l";
+				passThrough = 0.1;
+				radius=0.1;
+				explosionShielding = 2;
+				visual="injury_legs";
+				minimalHit = 0.01; 
+			};
+			class HitRightLeg: HitLeftLeg
+			{
+				name="leg_r";
+			};	
+		};
 	};
 	class 332nd_CIS_Hum_AT: 332nd_CIS_Hum
 	{
@@ -897,7 +1067,7 @@ class CfgGroups
                 };
                 class 332nd_Rifle_Squad 
 				{
-                    name = "B1 Rifle Squad";
+                    name = "Rifle Squad";
                     faction = "332nd_CIS_Faction";
                     side = 0;
                     class Unit0 
@@ -933,28 +1103,28 @@ class CfgGroups
                         side = 0;
                         vehicle = "332nd_CIS_Hum";
                         rank = "PRIVATE";
-                        position[] = {15, -15, 0};
+                        position[] = {-10, -10, 0};
                     };
                     class Unit5 
 					{
                         side = 0;
                         vehicle = "332nd_CIS_Hum_Med";
                         rank = "PRIVATE";
-                        position[] = {-15, -15, 0};
+                        position[] = {15, -15, 0};
                     };
                     class Unit6 
 					{
                         side = 0;
                         vehicle = "332nd_CIS_Hum_AR";
                         rank = "PRIVATE";
-                        position[] = {20, -20, 0};
+                        position[] = {-15, -15, 0};
                     };
                     class Unit7 
 					{
                         side = 0;
                         vehicle = "332nd_CIS_Hum_AR";
                         rank = "PRIVATE";
-                        position[] = {-20, -20, 0};
+                        position[] = {20, -20, 0};
                     };
                 };
 				class 332nd_Hum_Commander_Escort
@@ -1048,7 +1218,7 @@ class CfgGroups
 				};
 				class 332nd_BX_T_Series_Escort
 				{
-                    name = "BX T-Series Escort (BX)";
+                    name = "T-Series Escort (BX)";
                     faction = "332nd_CIS_Faction";
                     side = 0;
                     class Unit0 {
