@@ -35,10 +35,12 @@ class CfgVehicles
         editorSubcategory = "332nd_Aux_EdSubcat_Commandos";
         uniformClass = "332nd_Aux_U_Katarn_Armor";
         backpack = "332nd_Aux_B_Katarn_Backpack";
+		hiddenSelections[] = {"Camo","Camo1"};
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Armor_Standard_CO.paa",
+            "\332nd_Aux\Uniforms\Tex332nd_Commando_Armor.paa",
             "\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
         };
+		
     };
 
     // Backpacks
@@ -47,7 +49,7 @@ class CfgVehicles
     {
         displayName = "[332nd] Republic Katarn Backpack";
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Backpack_Standard_CO.paa"
+            "\332nd_Aux\Backpacks\Tex\332nd_Commando_Backpack.paa"
         };
     };
 };
@@ -140,7 +142,7 @@ class cfgWeapons
     {
         displayName = "[332nd] Republic Katarn Helmet";
         hiddenSelections[] = {"camo","camo1"};
-		hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Helmet_Standard_CO.paa","\3AS\3AS_Characters\Commando\data\Katarn_Helmet_Standard_CO.paa"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\Helmets\Tex\332nd_Commando_Helmet.paa","\332nd_Aux\Helmets\Tex\332nd_Commando_Helmet.paa"};
 		
     };
 };
