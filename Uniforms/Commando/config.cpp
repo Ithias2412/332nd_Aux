@@ -37,7 +37,7 @@ class CfgVehicles
         backpack = "332nd_Aux_B_Katarn_Backpack";
 		hiddenSelections[] = {"Camo","Camo1"};
         hiddenSelectionsTextures[] = {
-            "\332nd_Aux\Uniforms\Tex332nd_Commando_Armor.paa",
+            "\332nd_Aux\Uniforms\Tex\332nd_Commando_Armor.paa",
             "\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
         };
 		
