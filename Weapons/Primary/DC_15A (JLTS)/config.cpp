@@ -422,6 +422,16 @@ class cfgWeapons
 				"OP_eye4"
 			};
 			discreteDistanceInitIndex=0;
+			magazines[]=
+			{
+				"332nd_HE_LGrenade_Mag",
+				"332nd_Smoke_LauncherGrenade",
+				"332nd_SmokeRed_LauncherGrenade",
+				"332nd_SmokeGreen_LauncherGrenade",
+				"332nd_SmokeBlue_LauncherGrenade",
+				"332nd_SmokePurple_LauncherGrenade"
+			};
+			magazineWell[]={};
 		};
 		irLaserPos="";
 		irLaserEnd="";

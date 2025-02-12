@@ -27,6 +27,7 @@ class cfgWeapons
     class ItemInfo;
 	class 3AS_DC15C_F;
 	class 3AS_DC15C_GL;
+	class UGL_F;
 	
 //Primary
 	class 332nd_DC15C: 3AS_DC15C_F
@@ -48,6 +49,19 @@ class cfgWeapons
 		{
 			"FullAuto",
 			"Single"
+		};
+		class 3AS_15CGL: UGL_F
+		{
+			magazines[]=
+			{
+				"332nd_HE_LGrenade_Mag",
+				"332nd_Smoke_LauncherGrenade",
+				"332nd_SmokeRed_LauncherGrenade",
+				"332nd_SmokeGreen_LauncherGrenade",
+				"332nd_SmokeBlue_LauncherGrenade",
+				"332nd_SmokePurple_LauncherGrenade"
+			};
+			magazineWell[]={};
 		};
 		class OpticsModes
 		{

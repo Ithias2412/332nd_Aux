@@ -188,7 +188,56 @@ class CfgAmmo {
 	class M_Titan_AT;
 	class 3AS_M_MK43_AT;
 	class ACE_NLAW;
-
+	//UGL Grenades & Smokes
+	class G_40mm_HE;
+	class smokeshell;
+	class 332nd_HE_LGrenade: G_40mm_HE
+	{
+		ace_frag_enabled=1;
+		indirectHitRange=5;
+		indirectHit=20;
+		effectflare="FlareShell";
+		effectfly="IDA_BlasterBoltGlow_Blue_Fly";
+		fuseDistance=0;
+		ExplosionEffects="GrenadeExplosion";
+		CraterEffects="GrenadeCrater";
+		lightcolor[]={0,0,1};
+		model="Indecisive_Armoury_Ammos\Data\40mm_Grenade\IDA_40mm_Grenade.p3d";
+	};
+	class 332nd_UGL_Smoke: smokeshell
+	{
+		model="\A3\weapons_f\Ammo\UGL_slug";
+	};
+	class 332nd_UGL_Smoke_Red: 332nd_UGL_Smoke
+	{
+		smokeColor[]={0.84380001,0.1383,0.1353,1};
+		effectsSmoke="SmokeShellRedEffect";
+	};
+	class 332nd_UGL_Smoke_Green: 332nd_UGL_Smoke
+	{
+		smokeColor[]={0.21250001,0.62580001,0.48909998,1};
+		effectsSmoke="SmokeShellGreenEffect";
+	};
+	class 332nd_UGL_Smoke_Yellow: 332nd_UGL_Smoke
+	{
+		smokeColor[]={0.98830003,0.86059999,0.071900003,1};
+		effectsSmoke="SmokeShellYellowEffect";
+	};
+	class 332nd_UGL_Smoke_Purple: 332nd_UGL_Smoke
+	{
+		smokeColor[]={0.4341,0.1388,0.41439998,1};
+		effectsSmoke="SmokeShellPurpleEffect";
+	};
+	class 332nd_UGL_Smoke_Blue: 332nd_UGL_Smoke
+	{
+		smokeColor[]={0.1183,0.1867,1,1};
+		effectsSmoke="SmokeShellBlueEffect";
+	};
+	class 332nd_UGL_Smoke_Orange: 332nd_UGL_Smoke
+	{
+		smokeColor[]={0.66970003,0.22750001,0.10053,1};
+		effectsSmoke="SmokeShellOrangeEffect";
+	};
 	//DC-15A Ammo
 	class 332nd_DC15A_Ammo_762x39: 332nd_Base_Ammo_IDA
 	{
