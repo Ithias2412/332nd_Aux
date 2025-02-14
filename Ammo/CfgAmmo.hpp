@@ -436,5 +436,4 @@ class CfgAmmo {
 		caliber = 2.6;
 		hit=7;
 	};
-
 };

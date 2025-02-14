@@ -59,7 +59,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_RTO_CT: 332nd_Helmet_RTO_Base
 	{
-		displayName="[332nd] P2 RTO Helmet (CT)";
+		displayName="[332nd] P2 Radio Helmet (CT)";
 		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
 		scope=2;
 		hiddenSelections[]=
@@ -73,105 +73,4 @@ class cfgWeapons
 	};
 //Customs
 
-};
-
-class XtdGearModels
-{
-    class CfgWeapons 
-    {
-        class 332nd_Helmets_P2_RTO_Extended
-        {
-            label = "RTO";
-            author = "Cherryy";
-			options[] = { "Type", "Customs", };
-            class Type
-            {
-                label = "Type";
-				values[] = { "Trooper",};
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class Trooper
-                {
-                    label = "Trooper";
-                    description = "CT+";
-                    //image = "xxx";
-                };
-            };
-            /*class Customs
-            {
-                label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks",};
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class Ithias
-                {
-                    label = "Ithias";
-                    description = "Bout to crash out";
-                    //image = "xxx";
-                };
-				class Cherryy
-                {
-                    label = "Cherryy";
-                    description = "Piller of the community";
-                    //image = "xxx";
-                };
-				class Roseiry
-                {
-                    label = "Roseiry";
-                    description = "Loves stealing (Also hates custom descriptions)";
-                    //image = "xxx";
-                };
-				class Body
-                {
-                    label = "Body";
-                    description = "The man the myth the legend";
-                    //image = "xxx";
-                };
-				class Frankenburg
-				{
-					label = "Frankenburg";
-					description = "In too many S-Shops";
-				};
-				class Seelig
-                {
-                    label = "Seelig";
-                    description = "Flight 5342 Pilot";
-                    //image = "xxx";
-                };
-				class Weaver
-				{
-					label = "Weaver";
-					description = "Sleeps on the Sofa (Wife is angry)";
-					//image = "xxx";
-				};
-				class Hicks
-				{
-					label = "Hicks";
-					description = "Lolcow enjoyer";
-					//image = "xxx";
-				};
-
-            };*/
-        };
-    };
-};
-
-class XtdGearInfos
-{
-    class CfgWeapons 
-    {
-        class 332nd_Helmet_RTO_CT
-        {
-            model = "332nd_Helmets_P2_RTO_Extended";
-            Type = "Trooper";
-        };
-		//customs
-        /*
-		class 332nd_Helmet_P2_Ithias
-        {
-            model = "332nd_Helmets_P2_Extended";
-            Customs = "Ithias";
-        };
-		*/
-	};
 };

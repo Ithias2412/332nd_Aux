@@ -98,7 +98,7 @@ class CfgMagazines {
 		ammo = "332nd_DC15C_Ammo_556x45";
 		count = 45;
 		descriptionShort = "";
-		displayname = "DC-15C 30 Round Energy Cell";
+		displayname = "DC-15C 45 Round Energy Cell";
 		displayNameShort = "";
 		mass = 8.3;
 		scope = 2;

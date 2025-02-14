@@ -199,13 +199,16 @@ class CfgVehicles {
 		faction = "332nd_CIS_Faction";
 		glassesEnabled = 0;
 		backpack = "";
-        uniformClass = "3AS_U_CIS_Light_Armor";
+        uniformClass = "332nd_Uniform_CIS_Human_Light";
         weapons[] = {"JLTS_E5", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
         linkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
         respawnLinkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
+		model = "\3AS\3AS_CIS_Infantry\Model\CIS_Inf.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"3AS\3AS_CIS_Infantry\data\cis_inf_texture_armour_co.paa"};
 		class HitPoints: HitPoints
 		{
 			class HitFace
@@ -241,7 +244,7 @@ class CfgVehicles {
 			};
 			class HitPelvis: HitHead
 			{
-				armor = 8;
+				armor = 14; //was 8
 				depends = "";
 				explosionShielding = 3;
 				material = -1;
@@ -253,7 +256,7 @@ class CfgVehicles {
 			};
 			class HitAbdomen: HitPelvis
 			{
-				armor = 6;
+				armor = 9; //was 6
 				depends = "";
 				explosionShielding = 3;
 				material = -1;
@@ -265,7 +268,7 @@ class CfgVehicles {
 			};
 			class HitDiaphragm: HitAbdomen
 			{
-				armor = 6;
+				armor = 9; //was 6
 				depends = "";
 				explosionShielding = 6;
 				material = -1;
@@ -277,7 +280,7 @@ class CfgVehicles {
 			};
 			class HitChest: HitDiaphragm
 			{
-				armor = 8;
+				armor = 12; //was 8
 				depends = "";
 				explosionShielding = 6;
 				material = -1;
@@ -301,7 +304,7 @@ class CfgVehicles {
 			};
 			class HitArms: HitBody
 			{
-				armor = 6;
+				armor = 9; //was 6
 				depends = "0";
 				explosionShielding = 3;
 				material = -1;
@@ -313,7 +316,7 @@ class CfgVehicles {
 			};
 			class HitHands: HitArms
 			{
-				armor = 6;
+				armor = 9; //was 6
 				depends = "HitArms";
 				explosionShielding = 1;
 				material = -1;
@@ -325,7 +328,7 @@ class CfgVehicles {
 			};
 			class HitLegs: HitHands
 			{
-				armor = 6;
+				armor = 9; //was 6
 				depends = "0";
 				explosionShielding = 3;
 				material = -1;
@@ -349,7 +352,7 @@ class CfgVehicles {
 			};
 			class HitLeftArm
 			{
-				armor = 6;
+				armor = 9; //was 6
 				explosionShielding = 3;
 				material = -1;
 				minimalHit = 0.01;
@@ -364,7 +367,7 @@ class CfgVehicles {
 			};
 			class HitLeftLeg
 			{
-				armor = 6;
+				armor = 9; //was 6
 				explosionShielding = 3;
 				material = -1;
 				minimalHit = 0.01;
@@ -377,23 +380,26 @@ class CfgVehicles {
 			{
 				name="leg_r";
 			};	
-		};
+		};	
 	};
 	class 332nd_CIS_Hum_AT: 332nd_CIS_Hum
 	{
 		displayName = "CIS Infantry Anti-Tank";
 		backpack = "332nd_CIS_Hum_AT_Backpack";
-        uniformClass = "3AS_U_CIS_Heavy_Armor";
+        uniformClass = "332nd_Uniform_CIS_Human_Heavy";
         weapons[] = {"JLTS_RPS6", "JLTS_E5", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_RPS6", "JLTS_E5", "Throw", "Put"};
         magazines[] = {"JLTS_RPS6_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_RPS6_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
+		model = "3AS\3AS_CIS_Infantry\Model\CIS_Heavy.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"3AS\3AS_CIS_Infantry\data\heavy\cis_heavy_texture_armour_co.paa"};
 	};
-	class 332nd_CIS_Hum_AR: 332nd_CIS_Hum
+	class 332nd_CIS_Hum_AR: 332nd_CIS_Hum_AT
 	{
 		displayName = "CIS Infantry Support Gunner";
 		backpack = "";
-        uniformClass = "3AS_U_CIS_Heavy_Armor";
+        uniformClass = "332nd_Uniform_CIS_Human_Heavy";
         weapons[] = {"JLTS_E5C", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5C", "Throw", "Put"};
         magazines[] = {"JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "SmokeShell"};
@@ -403,7 +409,7 @@ class CfgVehicles {
 	{
 		displayName = "CIS Infantry Medic";
 		backpack = "";
-        uniformClass = "3AS_U_CIS_Medic_Armor";
+        uniformClass = "332nd_Uniform_CIS_Human_Medical";
         weapons[] = {"JLTS_E5", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
@@ -411,11 +417,15 @@ class CfgVehicles {
         linkedItems[] = {"3AS_CIS_Medic_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
         respawnLinkedItems[] = {"3AS_CIS_Medic_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
 		RespawnItems[] = {"ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", };
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"3AS\3AS_CIS_Infantry\data\cis_inf_medic_texture_armour_co.paa"};
 	};
 	class 332nd_CIS_Hum_Officer: 332nd_CIS_Hum
 	{
 		displayName = "CIS Infantry Officer";
-        uniformClass = "3AS_U_CIS_Officer_Armor";
+        uniformClass = "332nd_Uniform_CIS_Human_Officer";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"3AS\3AS_CIS_Infantry\data\cis_inf_officer_texture_armour_co.paa"};
 	};
 	class 332nd_CIS_Hum_AT_Backpack: SWLB_clone_bag_leg
 	{
