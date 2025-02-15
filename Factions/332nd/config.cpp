@@ -19,7 +19,7 @@ class cfgFactionClasses
 	class 332nd_Faction
 	{
 		icon="";
-		displayName="332nd";
+		displayName="[332nd] Raxshir Company";
 		side=1;
 		priority=1;
 	};
@@ -29,6 +29,6 @@ class CfgEditorCategories
 {
 	class 332nd_EditorCategory
 	{
-		displayName="332nd";
+		displayName="[332nd] Raxshir Company";
 	};
 };
