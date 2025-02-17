@@ -1,4 +1,4 @@
-/*class CfgPatches
+class CfgPatches
 {
     class AuxMod_332nd_DroidPopper
     {
@@ -18,19 +18,25 @@
     };
 };
 
-class cfgFunctions
+class CfgFunctions
 {
     class AuxMod_332nd_DroidPopper
     {
-        class functions
+        tag = "AuxMod_332nd_DroidPopper"; // This must match when calling the function
+
+        class Functions
         {
-            file = "332nd_Aux\Functions";
+            file = "\332nd_Aux\functions"; // Adjusted to reference the PBO's file structure
+
             class DroidPopper
             {
+                description = "Handles Droid Popper grenade effects.";
+                recompile = 1; // Optional for development
             };
         };
     };
 };
+
 
 class Extended_HitPart_EventHandlers
 {
@@ -112,4 +118,3 @@ class CfgMagazines
         nameSound = "handgrenade";
     };
 };
-*/
