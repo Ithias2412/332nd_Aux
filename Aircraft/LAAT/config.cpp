@@ -572,7 +572,7 @@ class CfgVehicles
 					"lsd_vehicles_heli\laati\data\332nd_Ikran_Body2.paa",
 					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Doors1.paa",
 					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Doors2.paa",
-					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Doors2.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Doors3.paa",
 					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Wings.paa",
 					"lsd_vehicles_heli\laati\data\missiles_co.paa",
 					"lsd_vehicles_heli\laati\data\cockpits_co.paa",
