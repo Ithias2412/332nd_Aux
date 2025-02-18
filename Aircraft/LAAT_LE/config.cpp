@@ -1,80 +1,99 @@
-class CfgPatches
+class CfgPatches 
 {
-    class 332nd_Aux_LAAT_LE
-    {
-        requiredAddons[] = { "3AS_LAAT_LE" };
-        units[] =
+	class 332nd_LAAT_LE 
+	{
+		requiredAddons[] = {};
+		units[] = 
         {
-            "332nd_Aux_Patrol_LAAT_Republic"
+			"332nd_LAAT_LE",
         };
-        weapons[] = {};
-    };
+		weapons[] = 
+        {
+            "",
+        };
+	};
 };
 
 class CfgVehicles
 {
-    class 3AS_Patrol_LAAT_Base;
-
-    class 332nd_Aux_Patrol_LAAT_Base: 3AS_Patrol_LAAT_Base
-    {
-        scope = 1; // Hidden in the editor but available for inheritance
-        scopeCurator = 0;
-        weapons[] =
-        {
-            "3as_LAAT_Medium_Canon",
-            "CMFlareLauncher"
-        };
-        magazines[] =
-        {
-            "240Rnd_CMFlare_Chaff_Magazine",
-            "240Rnd_CMFlare_Chaff_Magazine",
-            "240Rnd_CMFlare_Chaff_Magazine",
-            "240Rnd_CMFlare_Chaff_Magazine",
-            "3as_LAAT_1000Rnd_Medium_shells",
-            "3as_LAAT_1000Rnd_Medium_shells",
-            "3as_LAAT_1000Rnd_Medium_shells",
-            "3as_LAAT_1000Rnd_Medium_shells"
-        };
-        memoryPointGun[] =
-        {
-            "z_gunL_muzzle",
-            "z_gunR_muzzle"
-        };
-        memorypointcm[] =
-        {
-            "flare_launcher1",
-            "flare_launcher2"
-        };
-        memorypointcmdir[] =
-        {
-            "flare_launcher1_dir",
-            "flare_launcher2_dir"
-        };
-    };
-
-    class 332nd_Aux_Patrol_LAAT_Republic: 332nd_Aux_Patrol_LAAT_Base
-    {
-        scope = 2; // Visible in the editor
-        scopeCurator = 2; // Available in Zeus
-        displayName = "[332nd] LAAT/LE (Republic)";
-        vehicleClass = "Air";
-        faction = "332nd_Faction"; // Assign to a faction (default NATO here, adjust as needed)
-        editorSubcategory = "EdSubcat_Helicopters"; // Use appropriate subcategory
-        typicalCargo[] =
-        {
-            "B_Helipilot_F" // Adjust to valid crew units
-        };
-        hiddenSelections[] =
-        {
-            "camo"
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "3AS\3as_LAAT\LAAT_LE\data\republicpatrol01_CO.paa"
-        };
-        class Library
-        {
-            libTextDesc = "";
-        };
-    };
+	class Helicopter_Base_H;
+	class ls_laatle_base: Helicopter_Base_H
+	{
+		class Components;
+	};
+	class ls_heli_laatle: ls_laatle_base
+	{
+		class Components: Components 
+		{
+			class TransportPylonsComponent;
+		};
+	};
+	class 332nd_LAAT_LE: ls_heli_laatle
+	{
+		displayname = "[332nd] LAAT/le";
+		faction = "332nd_Faction";
+		ls_impulsor_fuelDrain_1=0.00005; 
+		ls_impulsor_fuelDrain_2=0.00010;
+		ls_impulsor_boostSpeed_1=300;
+		icon = "lsd_vehicles_heli\laati\data\ui\laat_icon.paa";
+		camouflage = 1;
+		class Components: Components
+		{
+			class TransportPylonsComponent: TransportPylonsComponent
+			{
+				uiPicture = "";
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment="332nd_Anvil_III_Mag";
+						priority=5;
+						hardpoints[]=
+						{
+							"332nd_Anvil_III",
+						};
+						turret[]={0};
+						UIposition[] = {0.06,0.4};
+					};
+					class PylonLeft2: PylonLeft1
+					{
+						attachment="332nd_Anvil_III_Mag";
+						priority=4;
+						hardpoints[]=
+						{
+							"332nd_Anvil_III",
+						};
+						turret[]={0};
+						UIposition[] = {0.08,0.35};
+					};
+					class PylonLeft3: PylonLeft1
+					{
+						attachment="332nd_Anvil_III_Mag";
+						priority=3;
+						hardpoints[]=
+						{
+							"332nd_Anvil_III",
+						};
+						turret[]={0};
+						UIposition[] = {0.1,0.3};
+					};
+					class PylonRight3: PylonLeft3
+					{
+						mirroredMissilePos=3;
+						UIposition[] = {0.64,0.4};
+					};
+					class PylonRight2: PylonLeft2
+					{
+						mirroredMissilePos=2;
+						UIposition[] = {0.62,0.35};
+					};
+					class PylonRight1: PylonLeft1
+					{
+						mirroredMissilePos=1;
+						UIposition[] = {0.59,0.3};
+					};
+				};
+			};
+		};
+	};
 };

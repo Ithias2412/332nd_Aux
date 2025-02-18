@@ -12,6 +12,8 @@ class CfgPatches {
             "332nd_Anvil_I",
 			"332nd_Anvil_III",
 			"332nd_Forge_III",
+			"332nd_Forge_I",
+			"332nd_Forge_X_N",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -26,6 +28,8 @@ class CfgMagazines
 	class ace_missile_gbu_gbu12;
 	class PylonMissile_1Rnd_GAA_missiles;
 	class ace_maverick_L_magazine_x1;
+	class PylonRack_Bomb_SDB_x4; // Forge I
+	class FSNB_B61_4_Timed_M; // Forge X-N
 
 	class 332nd_Hammer_I_Mag: PylonMissile_1Rnd_AAA_missiles
 	{
@@ -122,6 +126,38 @@ class CfgMagazines
 		pylonWeapon = "332nd_Forge_III";
 		weight = 0;
 	};
+	class 332nd_Forge_I_Mag: PylonRack_Bomb_SDB_x4
+	{
+		ammo = "ammo_Bomb_SDB";
+		author = "Ithias";
+		count = 2;
+		descriptionShort = "250lb, high-explosive, infrared-guided bomb";
+		displayName = "[332nd] Forge I";
+		displayNameShort = "IR Bomb";
+		hardpoints[] = 
+		{
+			"332nd_Forge_I",
+		};
+		model = "\A3\Weapons_F_Sams\Ammo\PylonPod_Bomb_05_x4_F";
+		pylonWeapon = "332nd_Forge_I";
+		weight = 0;
+	};
+	class 332nd_Forge_X_N_Mag: FSNB_B61_4_Timed_M
+	{
+		ammo = "FSNB_B61_4_Timed";
+		author = "Ithias";
+		count = 1;
+		descriptionShort = "0.3 kt, nuclear, un-guided bomb";
+		displayName = "[332nd] Forge X-N";
+		displayNameShort = "Nuke";
+		hardpoints[] = 
+		{
+			"332nd_Forge_X_N",
+		};
+		model = "\A3\Weapons_F\DynamicLoadout\PylonMissile_1x_Bomb_02_F.p3d";
+		pylonWeapon = "332nd_Forge_X_N";
+		weight = 0;
+	};
 
 
 };
@@ -133,6 +169,8 @@ class CfgWeapons
 	class ace_missile_gbu_12;
 	class missiles_Zephyr;
 	class ace_maverick_L_Launcher;
+	class weapon_SDBLauncher; // Forge I
+	class FSNB_B61_4_Timed_W; // Forge X-N
 	
 	class 332nd_Hammer_I: missiles_ASRAAM
 	{
@@ -177,6 +215,29 @@ class CfgWeapons
 		magazines[] = 
 		{
 			"332nd_Forge_III_Mag",
+		};
+	};
+	class 332nd_Forge_I: weapon_SDBLauncher
+	{
+		displayName = "[332nd] Forge I";
+		magazines[] = 
+		{
+			"332nd_Forge_I_Mag",
+		};
+	};
+	class 332nd_Forge_X_N: FSNB_B61_4_Timed_W
+	{
+		displayName = "[332nd] Forge X-N";
+		magazines[] = 
+		{
+			"332nd_Forge_X_N_Mag",
+		};
+		modes[] = 
+		{
+			"FSNB_YIELD_300",
+			//"FSNB_YIELD_1500",
+			//"FSNB_YIELD_10000",
+			//"FSNB_YIELD_50000",
 		};
 	};
 

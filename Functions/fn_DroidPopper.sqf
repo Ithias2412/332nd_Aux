@@ -28,3 +28,5 @@ private _affectedUnits = _position nearEntities [["Man"], _radius];
         _x setDamage 1;
     };
 } forEach _affectedUnits;
+
+
