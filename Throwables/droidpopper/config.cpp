@@ -75,6 +75,7 @@ class cfgAmmo
     };
     class 332nd_DroidPopper_ammo: Grenade
     {
+        droidPopper = 1
         displayName = "332nd Droid Popper";
         hit = 1;
         indirectHit = 1;
