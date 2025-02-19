@@ -16,16 +16,26 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class Helicopter_Base_H;
-	class ls_laatle_base: Helicopter_Base_H
+	class Helicopter_Base_F;
+	class Helicopter_Base_H: Helicopter_Base_F
 	{
 		class Components;
+	};
+	class ls_laatle_base: Helicopter_Base_H
+	{
+		class Components: Components 
+		{
+			class TransportPylonsComponent;
+		};
 	};
 	class ls_heli_laatle: ls_laatle_base
 	{
 		class Components: Components 
 		{
-			class TransportPylonsComponent;
+			class TransportPylonsComponent: TransportPylonsComponent
+			{
+				
+			};
 		};
 	};
 	class 332nd_LAAT_LE: ls_heli_laatle

@@ -16,16 +16,26 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class Plane_Fighter_03_dynamicLoadout_base_F;
-	class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F
+	class Plane_Fighter_03_base_F;
+	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
 	{
 		class Components;
+	};
+	class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F
+	{
+		class Components: Components 
+		{
+			class TransportPylonsComponent;
+		};
 	};
 	class 3AS_BTLB_Bomber: BTL_Base
 	{
 		class Components: Components 
 		{
-			class TransportPylonsComponent;
+			class TransportPylonsComponent: TransportPylonsComponent
+			{
+				
+			};
 		};
 	};
 	class 332nd_Y_Wing: 3AS_BTLB_Bomber
@@ -43,7 +53,38 @@ class CfgVehicles
 		{
 			class TransportPylonsComponent: TransportPylonsComponent
 			{
-				uiPicture = "";
+				UIPicture = "3as\3AS_BTLB\data\ui\pylon_ywing.paa";
+				class Presets
+				{
+					class Empty
+					{
+						displayName = "Empty";
+						attachment[] = {};
+					};
+					class Bombs
+					{
+						displayName = "Bombs";
+						attachment[] = 
+						{
+							"332nd_Forge_I_Mag",
+							"332nd_Forge_I_Mag",
+							"332nd_Forge_III_Mag",
+							"332nd_Forge_III_Mag",
+							"332nd_Forge_III_Mag",
+							"332nd_Forge_III_Mag",
+							"332nd_Forge_I_Mag",
+							"332nd_Forge_I_Mag",
+						};
+					};
+				/*	class Missiles
+					{
+						
+					};
+					class Nuke
+					{
+						
+					};	*/
+				};
 				class Pylons
 				{
 					class Pylon1
@@ -109,7 +150,7 @@ class CfgVehicles
 					class Pylon7: Pylon1
 					{
 						attachment="332nd_Forge_III_Mag";
-						priority = 7;
+						priority = 9;
 						hardpoints[]=
 						{
 							"332nd_Anvil_I",
@@ -119,7 +160,7 @@ class CfgVehicles
 							"332nd_Forge_X_N",
 						};
 						turret[]={0};
-						UIposition[] = {0.6,0.45};
+						UIposition[] = {0.45,0.4};
 					};
 					class Pylon8: Pylon7
 					{
