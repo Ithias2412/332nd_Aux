@@ -78,7 +78,7 @@ class CfgVehicles
 		{
 			"3AS_ARC_Light_Canon",
 			"CMFlareLauncher",
-			"Laserdesignator_pilotCamera"
+			//"Laserdesignator_pilotCamera"
 		};
 		magazines[]=
 		{
