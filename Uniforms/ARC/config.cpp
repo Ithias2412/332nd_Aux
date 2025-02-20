@@ -74,12 +74,18 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "ARC", };
+				values[] = { "ARC", "Commando",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class ARC
                 {
                     label = "ARC";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
+                class Commando
+                {
+                    label = "Commando";
                     description = "With Zeus Approval";
                     //image = "xxx";
                 };
@@ -97,5 +103,11 @@ class XtdGearInfos
             model = "332nd_Uniform_Fun_Op_Extended";
             Type = "ARC";
         };
+        class 332nd_Uniform_Commando
+        {
+            model = "332nd_Uniform_Fun_Op_Extended";
+            Type = "Commando";
+        };
     };
 };
+

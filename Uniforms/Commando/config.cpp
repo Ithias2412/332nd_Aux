@@ -1,148 +1,228 @@
-class CfgPatches
+class CfgPatches {
+	class 332nd_Uniforms_Commando {
+		units[] = 
+        {
+            ""
+        };
+		weapons[] = 
+        {
+            ""
+        };
+		requiredVersion = 0.100000;
+		requiredAddons[] = {};
+	};
+};
+//#include "xtdGear.hpp"
+class cfgWeapons 
 {
-    class 332nd_Aux_Characters_Commando
-    {
-        addonRootClass = "332nd_Aux_Characters";
-        requiredAddons[] = {"A3_Characters_F", "A3_Weapons_F", "JLTS_radios", "3AS_Characters_Commando"};
-        requiredVersion = 0.1;
-        units[] = {
-            "332nd_Aux_Commando_Base"
-        };
-        weapons[] = {
-            "332nd_Aux_U_Katarn_Armor",
-            "332nd_Aux_V_Katarn_Vest_Demo",
-            "332nd_Aux_V_Katarn_Vest_Tech",
-            "332nd_Aux_V_Katarn_Vest_Tech_Foxtrot",
-            "332nd_Aux_V_Katarn_Vest_Tech_Omega",
-            "332nd_Aux_V_Katarn_Vest_Sniper",
-            "332nd_Aux_V_Katarn_Vest_Team_Leader",
-            "332nd_Aux_V_Katarn_Vest_Team_Leader_Boss",
-            "332nd_Aux_V_Katarn_Vest_Team_Leader_Foxtrot",
-            "332nd_Aux_B_Katarn_Backpack"
-        };
-    };
+    class ItemInfo;
+    class UniformItem;
+	class 3AS_U_Rep_Katarn_Armor;
+	
+// Uniform
+class 332nd_Uniform_Commando: 3AS_U_Rep_Katarn_Armor
+	{
+		dlc="332nd";
+		author="Ithias + Frankenburg";
+		scope=2;
+		displayName="[332nd] Commando Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Commando_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
 {
-    class 3AS_Rep_Commando_base_F;
-
-    class 332nd_Aux_Commando_Base: 3AS_Rep_Commando_base_F
-    {
-        author = "332nd Auxiliary";
-        displayName = "[332nd] Republic Commando";
-        faction = "332nd_Aux";
-        editorSubcategory = "332nd_Aux_EdSubcat_Commandos";
-        uniformClass = "332nd_Aux_U_Katarn_Armor";
-        backpack = "332nd_Aux_B_Katarn_Backpack";
-		hiddenSelections[] = {"Camo","Camo1"};
-        hiddenSelectionsTextures[] = {
-            "\332nd_Aux\Uniforms\Tex\332nd_Commando_Armor.paa",
-            "\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
-        };
-		
-    };
-
-    // Backpacks
-    class 3AS_B_Katarn_Backpack;
-    class 332nd_Aux_B_Katarn_Backpack: 3AS_B_Katarn_Backpack
-    {
-        displayName = "[332nd] Republic Katarn Backpack";
-        hiddenSelectionsTextures[] = {
-            "\332nd_Aux\Backpacks\Tex\332nd_Commando_Backpack.paa"
-        };
-    };
-};
-
-class cfgWeapons
-{
-    class 3AS_U_Rep_Katarn_Armor;
-    
-    // Command Uniform
-    class 332nd_Aux_U_Katarn_Armor: 3AS_U_Rep_Katarn_Armor
-    {
-        displayName = "[332nd] Republic Katarn Armor";
-    };
-
-    // Vests
-    class 3AS_V_Katarn_Vest_Demo;
-    class 332nd_Aux_V_Katarn_Vest_Demo: 3AS_V_Katarn_Vest_Demo
-    {
-        displayName = "[332nd] Republic Katarn Demolitions Vest";
-        hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Vest_Demo_CO.paa"
-        };
-    };
-
-    class 3AS_V_Katarn_Vest_Tech;
-    class 332nd_Aux_V_Katarn_Vest_Tech: 3AS_V_Katarn_Vest_Tech
-    {
-        displayName = "[332nd] Republic Katarn Technician Vest";
-        hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Vest_Tech_CO.paa"
-        };
-    };
-
-    class 3AS_V_Katarn_Vest_Tech_Foxtrot;
-    class 332nd_Aux_V_Katarn_Vest_Tech_Foxtrot: 3AS_V_Katarn_Vest_Tech_Foxtrot
-    {
-        displayName = "[332nd] Republic Katarn Technician Vest (Foxtrot)";
-        hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Vest_Tech_Foxtrot_CO.paa"
-        };
-    };
-
-    class 3AS_V_Katarn_Vest_Tech_Omega;
-    class 332nd_Aux_V_Katarn_Vest_Tech_Omega: 3AS_V_Katarn_Vest_Tech_Omega
-    {
-        displayName = "[332nd] Republic Katarn Technician Vest (Omega)";
-        hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Vest_Tech_Omega_CO.paa"
-        };
-    };
-
-    class 3AS_Katarn_Vest_Sniper;
-    class 332nd_Aux_V_Katarn_Vest_Sniper: 3AS_Katarn_Vest_Sniper
-    {
-        displayName = "[332nd] Republic Katarn Sniper Vest";
-        hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Vest_Sniper_CO.paa"
-        };
-    };
-
-    class 3AS_Katarn_Vest_Team_Leader;
-    class 332nd_Aux_V_Katarn_Vest_Team_Leader: 3AS_Katarn_Vest_Team_Leader
-    {
-        displayName = "[332nd] Republic Katarn Team Leader Vest";
-        hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Vest_Team_Leader_CO.paa"
-        };
-    };
-
-    class 3AS_Katarn_Vest_Team_Leader_Boss;
-    class 332nd_Aux_V_Katarn_Vest_Team_Leader_Boss: 3AS_Katarn_Vest_Team_Leader_Boss
-    {
-        displayName = "[332nd] Republic Katarn Team Leader Vest (Boss)";
-        hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Vest_Team_Leader_Boss_CO.paa"
-        };
-    };
-
-    class 3AS_Katarn_Vest_Team_Leader_Foxtrot;
-    class 332nd_Aux_V_Katarn_Vest_Team_Leader_Foxtrot: 3AS_Katarn_Vest_Team_Leader_Foxtrot
-    {
-        displayName = "[332nd] Republic Katarn Team Leader Vest (Foxtrot)";
-        hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Characters\Commando\data\Katarn_Vest_Team_Leader_Foxtrot_CO.paa"
-        };
-    };
-	class 3AS_H_Katarn_Helmet;
-
-    class 332nd_Aux_H_Katarn_Helmet: 3AS_H_Katarn_Helmet
-    {
-        displayName = "[332nd] Republic Katarn Helmet";
-        hiddenSelections[] = {"camo","camo1"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\Helmets\Tex\332nd_Commando_Helmet.paa","\332nd_Aux\Helmets\Tex\332nd_Commando_Helmet.paa"};
-		
-    };
+	class 3AS_Rep_Commando_F;
+	class HitPoints;
+	class 332nd_Uniform_Commando_Veh: 3AS_Rep_Commando_F
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Commando";
+		hiddenSelections[] = 
+		{
+			"Camo",
+			"Camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Uniforms\Tex\332nd_Commando_Armor.paa",
+			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
+		};
+		class HitPoints: HitPoints
+		{
+			class HitFace
+			{
+				armor=1;
+				material=-1;
+				name="face_hub";
+				passThrough = 0.8; 
+				radius = 0.08; 
+				explosionShielding=0.3;
+				minimalHit = 0.01; 
+			};
+			class HitNeck: HitFace
+			{
+				armor=1;
+				material=-1;
+				name="neck";
+				passThrough = 0.8; 
+				radius=0.1;
+				explosionShielding=1.5;
+				minimalHit = 0.01; 
+			};
+			class HitHead: HitNeck
+			{
+				armor=1;
+				material=-1;
+				name="head";
+				passThrough = 0.8; 
+				radius=0.2;
+				explosionShielding=1.5;
+				minimalHit = 0.01; 
+				depends="HitFace max HitNeck";
+			};
+			class HitPelvis: HitHead
+			{
+				armor = 6; 
+				material=-1;
+				name="pelvis";
+				passThrough = 0.8; 
+				radius = 0.24; 
+				explosionShielding = 3; 
+				visual="injury_body";
+				minimalHit = 0.01; 
+				depends="";
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor = 1;	
+				material=-1;
+				name="spine1";
+				passThrough = 0.8;	
+				radius=0.16;
+				explosionShielding = 3;	
+				visual="injury_body";
+				minimalHit = 0.01;	
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor = 1; 
+				material=-1;
+				name="spine2";
+				passThrough = 0.8; 
+				radius = 0.18; 
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit = 0.01; 
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor = 1; 
+				material=-1;
+				name="spine3";
+				passThrough = 0.8; 
+				radius = 0.18; 
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit = 0.01; 
+			};
+			class HitBody: HitChest
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitBody
+			{
+				armor = 3; 
+				material=-1;
+				name="arms";
+				passThrough=1;
+				radius=0.1;
+				explosionShielding = 3; 
+				visual="injury_hands";
+				minimalHit = 0.01; 
+				depends="0";
+			};
+			class HitHands: HitArms
+			{
+				armor = 1; 
+				material=-1;
+				name="hands";
+				passThrough = 0.1; 
+				radius=0.1;
+				explosionShielding=3;
+				visual="injury_hands";
+				minimalHit=0.01; 
+				depends="HitArms";
+			};
+			class HitLegs: HitHands
+			{
+				armor = 3; 
+				material=-1;
+				name="legs";
+				passThrough=1;
+				radius=0.14;
+				explosionShielding = 3; 
+				visual="injury_legs";
+				minimalHit = 0.01; 
+				depends="0";
+			};
+			class Incapacitated: HitLegs
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding = 3; 
+				visual="";
+				minimalHit=0;
+				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+			class HitLeftArm
+			{
+				armor = 3; 
+				material=-1;
+				name="hand_l";
+				passThrough=1;
+				radius = 0.08; 
+				explosionShielding=3;
+				visual="injury_hands";
+				minimalHit = 0.01; 
+			};
+			class HitRightArm: HitLeftArm
+			{
+				name="hand_r";
+			};
+			class HitLeftLeg
+			{
+				armor = 3; 
+				material=-1;
+				name="leg_l";
+				passThrough=1;
+				radius=0.1;
+				explosionShielding = 3; 
+				visual="injury_legs";
+				minimalHit = 0.01; 
+			};
+			class HitRightLeg: HitLeftLeg
+			{
+				name="leg_r";
+			};
+		};
+	};
 };

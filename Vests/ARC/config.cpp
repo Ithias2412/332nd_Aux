@@ -22,7 +22,7 @@ class cfgWeapons
 	class SWLB_clone_arc_armor;
 
 
-	class 332nd_ARC_Vest_1: SWLB_clone_arc_armor
+	class 332nd_ARC_Vest: SWLB_clone_arc_armor
 	{
 		author="Cherryy + Ithias";
 		displayName = "[332nd] ARC Vest (Black Kama)";
@@ -127,7 +127,128 @@ class cfgWeapons
 			};
 		};
 	};
+};
 
+class XtdGearModels
+{
+    class CfgWeapons 
+    {
+        class 332nd_Vests_Fun_Ops_Extended
+        {
+            label = "Fun Operations";
+            author = "Ithias";
+			options[] = { "ARC", "Commando",};
+            class ARC
+            {
+                label = "ARC";
+				values[] = { "ARC",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class ARC
+                {
+                    label = "ARC";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
+            };
+            class Commando
+            {
+                label = "Commando";
+				values[] = { "Base", "Demolitions", "Sniper", "TL", "TL_Red", "TL_Orange", "Technician", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Base
+                {
+                    label = "Armor Plating";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
+                class Demolitions
+                {
+                    label = "Demolitions";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
+                class Sniper
+                {
+                    label = "Sniper";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
+                class TL
+                {
+                    label = "TL";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
+                class TL_Red
+                {
+                    label = "TL (Red)";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
+                class TL_Orange
+                {
+                    label = "TL (Orange)";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
+                class Technician
+                {
+                    label = "Technician";
+                    description = "With Zeus Approval";
+                    //image = "xxx";
+                };
 
+            };
+        };
+    };
+};
 
+class XtdGearInfos
+{
+    class CfgWeapons 
+    {
+        class 332nd_ARC_Vest
+        {
+            model = "332nd_Vests_Fun_Ops_Extended";
+            ARC = "ARC";
+        };
+        class 332nd_Commando_Vest
+        {
+            model = "332nd_Vests_Fun_Ops_Extended";
+            Commando = "Base";
+        };
+        class 332nd_Commando_Vest_Demolitions
+        {
+            model = "332nd_Vests_Fun_Ops_Extended";
+            Commando = "Demolitions";
+        };
+        class 332nd_Commando_Vest_Sniper
+        {
+            model = "332nd_Vests_Fun_Ops_Extended";
+            Commando = "Sniper";
+        };
+        class 332nd_Commando_Vest_TL
+        {
+            model = "332nd_Vests_Fun_Ops_Extended";
+            Commando = "TL";
+        };
+        class 332nd_Commando_Vest_TL_Red
+        {
+            model = "332nd_Vests_Fun_Ops_Extended";
+            Commando = "TL_Red";
+        };
+        class 332nd_Commando_Vest_TL_Orange
+        {
+            model = "332nd_Vests_Fun_Ops_Extended";
+            Commando = "TL_Orange";
+        };
+        class 332nd_Commando_Vest_Technician
+        {
+            model = "332nd_Vests_Fun_Ops_Extended";
+            Commando = "Technician";
+        };
+
+	};
 };
