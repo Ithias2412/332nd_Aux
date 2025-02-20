@@ -302,7 +302,7 @@ class CfgAmmo {
 		ACE_bulletMass = 233.276;
 		typicalspeed=800;
 		hit = 120;
-		caliber = 5;
+		caliber = 80;
 	};
 
 	//DP-23 Ammo
