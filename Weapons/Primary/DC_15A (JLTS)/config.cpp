@@ -483,11 +483,13 @@ class cfgWeapons
 		hiddenSelections[]=
 		{
 			"camo1",
+			"camo2",
 			"illum"
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"\MRC\JLTS\weapons\DC15A\data\DC15A_co.paa"
+			"\MRC\JLTS\weapons\DC15A\data\DC15A_ugl_co.paa"
 		};
 	};
 	
