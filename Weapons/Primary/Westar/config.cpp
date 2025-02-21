@@ -13,6 +13,14 @@ class CfgPatches {
 		requiredAddons[] = {"3AS_Weapons_WestarM5"};
 	};
 };
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class PointerSlot;
+class UnderBarrelSlot;
 class CfgWeapons 
 {
 	class 3AS_WestarM5_F;
