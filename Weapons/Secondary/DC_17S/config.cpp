@@ -7,19 +7,29 @@ class CfgPatches {
 		weapons[] = 
         {
             "332nd_DC17S",
+			"33nd_DC17S_Dual",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
 	};
 };
 //#include "xtdGear.hpp"
+class ItemInfo;
+class 3AS_DC17S_F;
+class SWLW_DC17;
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class PointerSlot;
+class UnderBarrelSlot;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_DC17S_F;
-	class SWLW_DC17;
-	
-	class 332nd_DC17S: SWLW_DC17
+	class 3AS_DC17STest_F;
+	class 332nd_DC17S: 3AS_DC17S_F
 	{
 		author="Ithias";
 		displayName="[332nd] DC-17S";
@@ -36,5 +46,12 @@ class cfgWeapons
 		{
 			"Single",
 		};
+	};
+	class 33nd_DC17S_Dual : 3AS_DC17STest_F
+	{
+		displayName = "[332] Dual DC-17S Sidearm";
+		magazines[] = {"3AS_60Rnd_Test_mag"};
+		recoil = "3as_recoil_light";
+
 	};
 };
