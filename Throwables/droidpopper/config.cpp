@@ -73,16 +73,6 @@ class cfgAmmo
     {
         droidPopper = 1
         displayName = "[332nd] Droid Popper";
-        hit = 1;
-        indirectHit = 1;
-        indirectHitRange = 8;
-        model = "\A3\Weapons_F\ammo\handgrenade_thrown.p3d";
-        hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] =
-        {
-            "\A3\Weapons_F\Data\UI\gear_handgrenade_CA.paa"
-        };
-        fuseDistance = 0;
     };
 };
 
@@ -96,10 +86,5 @@ class CfgMagazines
         displayNameShort = "Droid Popper";
         count = 1;
         ammo = "332nd_DroidPopper_ammo";
-        mass = 8;
-        descriptionShort = "Droid Popper";
-        model = "\A3\Weapons_F\ammo\handgrenade_thrown.p3d";
-        initSpeed = 18;
-        nameSound = "handgrenade";
     };
 };
