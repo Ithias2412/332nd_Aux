@@ -5,7 +5,7 @@ class CfgPatches
 		requiredAddons[] = {"3AS_Rebel_Armor_PX10"};
 		units[] = 
 		{
-			"332nd_PX10",
+			"332nd_PX10_F",
 		};
 		weapons[] = {};
 	};
