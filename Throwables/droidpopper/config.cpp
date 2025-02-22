@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class AuxMod_332nd_DroidPopper
+    class 332nd_DroidPopper
     {
         author = "332nd";
         requiredAddons[] =
@@ -58,7 +58,6 @@ class cfgWeapons
         class ThrowMuzzle;
         class 332nd_DroidPopperMuzzle: ThrowMuzzle
         {
-            model = "\A3\Weapons_F\ammo\handgrenade_thrown.p3d";
             magazines[] =
             {
                 "332nd_DroidPopper_x1_mag"
@@ -69,21 +68,14 @@ class cfgWeapons
 
 class cfgAmmo
 {
-    class Default;
-    class Grenade: Default
-    {
-    };
-    class 332nd_DroidPopper_ammo: Grenade
+    class GrenadeHand;
+    class 332nd_DroidPopper_ammo: GrenadeHand
     {
         droidPopper = 1
-        displayName = "332nd Droid Popper";
+        displayName = "[332nd] Droid Popper";
         hit = 1;
         indirectHit = 1;
         indirectHitRange = 8;
-        simulation = "shotGrenade";
-        explosionEffects = "GrenadeExplosion";
-        explosionSoundEffect = "DefaultExplosion";
-        typicalspeed = 18;
         model = "\A3\Weapons_F\ammo\handgrenade_thrown.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] =
@@ -96,24 +88,16 @@ class cfgAmmo
 
 class CfgMagazines
 {
-    class Default;
-    class CA_Magazine: Default
-    {
-    };
-    class HandGrenade: CA_Magazine
-    {
-    };
+    class HandGrenade;
     class 332nd_DroidPopper_x1_mag: HandGrenade
     {
         author = "332nd";
-        scope = 2;
-        displayName = "332nd 1Rnd Droid Popper";
+        displayName = "[332nd] Droid Popper";
         displayNameShort = "Droid Popper";
         count = 1;
         ammo = "332nd_DroidPopper_ammo";
-        mass = 10;
-        descriptionShort = "332nd Droid Popper";
-        type = 256;
+        mass = 8;
+        descriptionShort = "Droid Popper";
         model = "\A3\Weapons_F\ammo\handgrenade_thrown.p3d";
         initSpeed = 18;
         nameSound = "handgrenade";
