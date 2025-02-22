@@ -9,20 +9,23 @@ class CfgPatches {
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = {"332nd_Vests",};
 	};
 };
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
     class ItemInfo;
-
+	class VestItem;
+	class Hands;
+	class Pelvis;
 	class 332nd_Trooper_Vest;
+
 
 
 //ARF Start
 //Desert
-	class 332nd_ARF_Sergeant_Vest_variant_1_Desert: 332nd_Trooper_Vest
+class 332nd_ARF_Sergeant_Vest_variant_1_Desert: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 1 / Desert)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -47,6 +50,7 @@ class cfgWeapons
 		};
 	};
 
+	
 	class 332nd_ARF_Sergeant_Vest_variant_2_Desert: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 2 / Desert)";
@@ -128,7 +132,7 @@ class cfgWeapons
 		};
 	};
 //Urban
-	class 332nd_ARF_Sergeant_Vest_variant_1_Urban: 332nd_Trooper_Vest
+class 332nd_ARF_Sergeant_Vest_variant_1_Urban: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 1 / Urban)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -153,6 +157,7 @@ class cfgWeapons
 		};
 	};
 
+	
 	class 332nd_ARF_Sergeant_Vest_variant_2_Urban: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 2 / Urban)";
@@ -234,7 +239,7 @@ class cfgWeapons
 		};
 	};
 //Winter
-	class 332nd_ARF_Sergeant_Vest_variant_1_Winter: 332nd_Trooper_Vest
+class 332nd_ARF_Sergeant_Vest_variant_1_Winter: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 1 / Winter)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -259,6 +264,7 @@ class cfgWeapons
 		};
 	};
 
+	
 	class 332nd_ARF_Sergeant_Vest_variant_2_Winter: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 2 / Winter)";
@@ -340,7 +346,7 @@ class cfgWeapons
 		};
 	};
 //Woodland
-	class 332nd_ARF_Sergeant_Vest_variant_1_Woodland: 332nd_Trooper_Vest
+class 332nd_ARF_Sergeant_Vest_variant_1_Woodland: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 1 / Woodland)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -365,6 +371,7 @@ class cfgWeapons
 		};
 	};
 
+	
 	class 332nd_ARF_Sergeant_Vest_variant_2_Woodland: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 2 / Woodland)";
@@ -445,24 +452,21 @@ class cfgWeapons
 			};
 		};
 	};
-
 };
-
 
 class XtdGearModels
 {
     class CfgWeapons 
     {
-		//ARF Extended
 		class 332nd_ARF_Vest_Extended
         {
-            label = "332nd Vests ARF";
+            label = "332nd Vests";
             author = "Ithias & Cherryy";
 			options[] = { "Rank", "variant", "Camo", };
             class Rank
             {
                 label = "Rank";
-				values[] = { "CS", "CSM", };
+				values[] = { "CS", };
                 changeingame = 0;
                 alwaysSelectable = 0;
                 class CS
@@ -471,17 +475,11 @@ class XtdGearModels
                     description = "Sergeant";
                     //image = "xxx";
                 };
-                class CSM
-                {
-                    label = "CSM+";
-                    description = "Sergeant Major";
-                    //image = "xxx";
-                };
             };
             class variant
             {
                 label = "variant";
-                values[] = { "variant1", "variant2", "variant3", "variant4", "variant5", };
+                values[] = { "variant1", "variant2", };
                 changeingame = 0;
                 alwaysSelectable = 0;
                 class variant1
@@ -494,24 +492,6 @@ class XtdGearModels
                 {
                     label = "2";
                     description = "variant 2";
-                    // image = "xxx";
-                };
-                class variant3
-                {
-                    label = "3";
-                    description = "variant 3";
-                    // image = "xxx";
-                };
-                class variant4
-                {
-                    label = "4";
-                    description = "variant 4";
-                    // image = "xxx";
-                };
-                class variant5
-                {
-                    label = "5";
-                    description = "variant 5";
                     // image = "xxx";
                 };
             };
@@ -547,15 +527,14 @@ class XtdGearModels
                 };
             };
         };
-    };
+	};
 };
+
 class XtdGearInfos
 {
     class CfgWeapons 
     {
-		//ARF
 		//Desert
-		//CS
 		class 332nd_ARF_Sergeant_Vest_variant_1_Desert
         {
             model = "332nd_ARF_Vest_Extended";
@@ -570,23 +549,7 @@ class XtdGearInfos
             variant = "variant2";
 			camo = "Desert";
         };
-		class 332nd_ARF_Sergeant_Vest_variant_3_Desert
-        {
-            model = "332nd_ARF_Vest_Extended";
-            Rank = "CS";
-            variant = "variant3";
-			camo = "Desert";
-        };
-		class 332nd_ARF_Sergeant_Vest_variant_4_Desert
-        {
-            model = "332nd_ARF_Vest_Extended";
-            Rank = "CS";
-            variant = "variant4";
-			camo = "Desert";
-        };
-		//ARF
 		//Urban
-		//CS
 		class 332nd_ARF_Sergeant_Vest_variant_1_Urban
         {
             model = "332nd_ARF_Vest_Extended";
@@ -601,23 +564,7 @@ class XtdGearInfos
             variant = "variant2";
 			camo = "Urban";
         };
-		class 332nd_ARF_Sergeant_Vest_variant_3_Urban
-        {
-            model = "332nd_ARF_Vest_Extended";
-            Rank = "CS";
-            variant = "variant3";
-			camo = "Urban";
-        };
-		class 332nd_ARF_Sergeant_Vest_variant_4_Urban
-        {
-            model = "332nd_ARF_Vest_Extended";
-            Rank = "CS";
-            variant = "variant4";
-			camo = "Urban";
-        };
-		//ARF
 		//Winter
-		//CS
 		class 332nd_ARF_Sergeant_Vest_variant_1_Winter
         {
             model = "332nd_ARF_Vest_Extended";
@@ -632,23 +579,7 @@ class XtdGearInfos
             variant = "variant2";
 			camo = "Winter";
         };
-		class 332nd_ARF_Sergeant_Vest_variant_3_Winter
-        {
-            model = "332nd_ARF_Vest_Extended";
-            Rank = "CS";
-            variant = "variant3";
-			camo = "Winter";
-        };
-		class 332nd_ARF_Sergeant_Vest_variant_4_Winter
-        {
-            model = "332nd_ARF_Vest_Extended";
-            Rank = "CS";
-            variant = "variant4";
-			camo = "Winter";
-        };
-		//ARF
 		//Woodland
-		//CS
 		class 332nd_ARF_Sergeant_Vest_variant_1_Woodland
         {
             model = "332nd_ARF_Vest_Extended";
@@ -663,20 +594,5 @@ class XtdGearInfos
             variant = "variant2";
 			camo = "Woodland";
         };
-		class 332nd_ARF_Sergeant_Vest_variant_3_Woodland
-        {
-            model = "332nd_ARF_Vest_Extended";
-            Rank = "CS";
-            variant = "variant3";
-			camo = "Woodland";
-        };
-		class 332nd_ARF_Sergeant_Vest_variant_4_Woodland
-        {
-            model = "332nd_ARF_Vest_Extended";
-            Rank = "CS";
-            variant = "variant4";
-			camo = "Woodland";
-        };
-		//ARF
-    };
+	};
 };

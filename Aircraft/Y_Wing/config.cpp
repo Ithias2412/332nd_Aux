@@ -89,7 +89,7 @@ class CfgVehicles
 							"332nd_Anvil_III",
 							"332nd_Forge_I",
 							"332nd_Forge_III",
-							"332nd_Forge_X_N",
+							//"332nd_Forge_X_N",
 						};
 						turret[]={0};
 						UIposition[] = {0.5,0.25};
@@ -109,7 +109,7 @@ class CfgVehicles
 							"332nd_Anvil_III",
 							"332nd_Forge_I",
 							"332nd_Forge_III",
-							"332nd_Forge_X_N",
+							//"332nd_Forge_X_N",
 						};
 						turret[]={0};
 						UIposition[] = {0.55,0.35};
@@ -129,7 +129,7 @@ class CfgVehicles
 							"332nd_Anvil_III",
 							"332nd_Forge_I",
 							"332nd_Forge_III",
-							"332nd_Forge_X_N",
+							//"332nd_Forge_X_N",
 						};
 						turret[]={0};
 						UIposition[] = {0.6,0.45};
@@ -149,7 +149,7 @@ class CfgVehicles
 							"332nd_Anvil_III",
 							"332nd_Forge_I",
 							"332nd_Forge_III",
-							"332nd_Forge_X_N",
+							//"332nd_Forge_X_N",
 						};
 						turret[]={0};
 						UIposition[] = {0.45,0.4};

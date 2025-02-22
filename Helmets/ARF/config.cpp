@@ -146,11 +146,11 @@ class XtdGearModels
         {
             label = "ARF";
             author = "Ithias";
-			options[] = { "Type", };
-            class Type
+			options[] = { "Default", "Camo", };
+            class Default
             {
-                label = "Type";
-				values[] = { "Trooper", "Woodland", "Winter", "Urban", "Desert", };
+                label = "Default";
+				values[] = { "Trooper", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Trooper
@@ -159,15 +159,16 @@ class XtdGearModels
                     //description = "Non Camo";
                     //image = "xxx";
                 };
-				class Woodland
+			};
+            class Camo
+            {
+                label = "Camo";
+				values[] = { "Desert", "Urban", "Winter", "Woodland", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+				class Desert
                 {
-                    label = "Woodland";
-                    //description = "NA";
-                    //image = "xxx";
-                };
-				class Winter
-                {
-                    label = "Winter";
+                    label = "Desert";
                     //description = "NA";
                     //image = "xxx";
                 };
@@ -177,9 +178,15 @@ class XtdGearModels
                     //description = "NA";
                     //image = "xxx";
                 };
-				class Desert
+				class Winter
                 {
-                    label = "Desert";
+                    label = "Winter";
+                    //description = "NA";
+                    //image = "xxx";
+                };
+				class Woodland
+                {
+                    label = "Woodland";
                     //description = "NA";
                     //image = "xxx";
                 };
@@ -195,27 +202,27 @@ class XtdGearInfos
         class 332nd_Helmet_ARF_Base
         {
             model = "332nd_Helmets_ARF_Extended";
-            Type = "Trooper";
+            Default = "Trooper";
         };
         class 332nd_Helmet_ARF_Woodland
         {
             model = "332nd_Helmets_ARF_Extended";
-            Type = "Woodland";
+            Camo = "Woodland";
         };
         class 332nd_Helmet_ARF_Winter
         {
             model = "332nd_Helmets_ARF_Extended";
-            Type = "Winter";
+            Camo = "Winter";
         };
         class 332nd_Helmet_ARF_Urban
         {
             model = "332nd_Helmets_ARF_Extended";
-            Type = "Urban";
+            Camo = "Urban";
         };
         class 332nd_Helmet_ARF_Desert
         {
             model = "332nd_Helmets_ARF_Extended";
-            Type = "Desert";
+            Camo = "Desert";
         };
 	};
 };

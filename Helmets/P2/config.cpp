@@ -173,7 +173,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Weaver.paa"
 		};
 	};
-/*	class 332nd_Helmet_P2_Hicks: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Hicks: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Hicks)";
 		hiddenSelections[]=
@@ -184,7 +184,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Hicks.paa"
 		};
-	};	*/
+	};
 
 
 };
@@ -232,7 +232,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", /* "Hicks", */};
+				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -276,12 +276,12 @@ class XtdGearModels
 					description = "Sleeps on the Sofa (Wife is angry)";
 					//image = "xxx";
 				};
-			/*	class Hicks
+				class Hicks
 				{
 					label = "Hicks";
 					description = "Lolcow enjoyer";
 					//image = "xxx";
-				};	*/
+				};	
             };
         };
     };
@@ -347,11 +347,11 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Body";
         };
-	/*	class 332nd_Helmet_P2_Hicks
+		class 332nd_Helmet_P2_Hicks
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Hicks";
-        };	*/
+        };	
 	};
 };
 
