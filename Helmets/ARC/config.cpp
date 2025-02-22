@@ -96,7 +96,7 @@ class XtdGearModels
         {
             label = "Fun Operations";
             author = "Ithias";
-			options[] = { "Type", "Varient", };
+			options[] = { "Type", "Variant", };
             class Type
             {
                 label = "Type";
