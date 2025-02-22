@@ -129,21 +129,6 @@ class CfgMusic
 		duration = 184;
 		musicClass = "332nd_Music_Misc";
     };
-	class HIKARI
-    {
-        name = "HIKARI";
-		sound[] = {"332nd_Aux\music\music\Misc\HIKARI.ogg",1,1};
-		duration = 112;
-		musicClass = "332nd_Music_Misc";
-    };
-	class November_Rain_Ending
-    {
-        name = "November Rain Ending";
-		sound[] = {"332nd_Aux\music\music\Misc\November_Rain_Ending.ogg",1,1};
-		duration = 126;
-		musicClass = "332nd_Music_Misc";
-    };
-
 };
 
 
