@@ -18,6 +18,7 @@ class cfgWeapons
     class ItemInfo;
 	class HeadgearItem;
 	class SWLB_clone_P15_helmet;
+	class SWLB_clone_P2_helmet;
 
 //Base Start
 	class 332nd_Helmet_ARC: SWLB_clone_P15_helmet
@@ -40,9 +41,9 @@ class cfgWeapons
 		{
 			mass=1;
 			uniformModel = "\SWLB_clones\SWLB_clone_P15_helmet.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[]=
 			{
-				"camo1",
+			"camo1",
 			};
 			modelSides[] = {6};
             class HitpointsProtectionInfo
@@ -68,6 +69,22 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_Helmet_ARC_P2: SWLB_clone_P2_helmet
+	{
+		author="Cherryy";
+		dlc="332nd Aux";
+		displayName="[332nd] ARC Helmet (P2)";
+		//displayName="[332nd] P2 Helmet (CT)";
+		//picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_ARC.paa",
+		};
+	};
 };
 
 
@@ -79,7 +96,7 @@ class XtdGearModels
         {
             label = "Fun Operations";
             author = "Ithias";
-			options[] = { "Type", };
+			options[] = { "Type", "Varient", };
             class Type
             {
                 label = "Type";
@@ -99,6 +116,25 @@ class XtdGearModels
                     //image = "xxx";
                 };
             };
+			class Variant
+            {
+                label = "Variant";
+				values[] = { "P1", "P2", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class P1
+                {
+                    label = "P1";
+                    //description = "Default";
+                    //image = "xxx";
+                };
+                class P2
+                {
+                    label = "P2";
+                    //description = "Not Default";
+                    //image = "xxx";
+                };
+			};
         };
     };
 };
@@ -111,11 +147,19 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_Fun_Ops_Extended";
             Type = "ARC";
+			Variant = "P1";
+        };
+		class 332nd_Helmet_ARC_P2
+        {
+            model = "332nd_Helmets_Fun_Ops_Extended";
+            Type = "ARC";
+			Variant = "P2";
         };
         class 332nd_Helmet_Commando
         {
             model = "332nd_Helmets_Fun_Ops_Extended";
             Type = "Commando";
+			Variant = "P2";
         };
 	};
 };
