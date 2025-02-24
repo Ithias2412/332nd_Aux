@@ -188,7 +188,27 @@ class cfgWeapons
 
 
 };
-
+class CfgGlasses
+{
+	class G_Diving;
+	class 332nd_Clone_HelmetInterior_P2: G_Diving
+	{
+		scope = 2;
+		author = "Frankie";
+		displayName = "Clone Trooper P2 Helmet Interior";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_interior_ui_ca.paa";
+		model = "\A3\Weapons_f\DummyNVG";
+		identityTypes[] = {"NoGlasses",0};
+		mass = 4;
+		ACE_Color[] = {0,0,0};
+		ACE_TintAmount = 0;
+		ACE_Overlay = "";
+		ACE_OverlayCracked = "";
+		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
+		ACE_Resistance = 2;
+		ACE_Protection = 1;
+	};
+};
 class XtdGearModels
 {
     class CfgWeapons 
