@@ -21,11 +21,9 @@ class cfgWeapons
 	class Pelvis;
 	class 332nd_Trooper_Vest;
 
-
-
 //ARF Start
 //Desert
-class 332nd_ARF_Sergeant_Vest_variant_1_Desert: 332nd_Trooper_Vest
+	class 332nd_ARF_Sergeant_Vest_variant_1_Desert: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 1 / Desert)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -76,63 +74,8 @@ class 332nd_ARF_Sergeant_Vest_variant_1_Desert: 332nd_Trooper_Vest
 		};
 	};
 
-	class 332nd_ARF_Sergeant_Vest_variant_3_Desert: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (ARF CS+ / variant 3 / Desert)";
-		model="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"pauldron"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARF_Desert.paa",
-			"SWLB_clones\data\light_accessories_co.paa",
-			"SWLB_clones\data\heavy_accessories_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2",
-				"pauldron"
-			};
-		};
-	};
-	
-	class 332nd_ARF_Sergeant_Vest_variant_4_Desert: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (ARF CS+ / variant 4 / Desert)";
-		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SWLB_clones\data\light_accessories_co.paa",
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARF_Desert.paa",
-			"SWLB_clones\data\heavy_accessories_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2",
-				"camo3"
-			};
-		};
-	};
 //Urban
-class 332nd_ARF_Sergeant_Vest_variant_1_Urban: 332nd_Trooper_Vest
+	class 332nd_ARF_Sergeant_Vest_variant_1_Urban: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 1 / Urban)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -183,63 +126,8 @@ class 332nd_ARF_Sergeant_Vest_variant_1_Urban: 332nd_Trooper_Vest
 		};
 	};
 
-	class 332nd_ARF_Sergeant_Vest_variant_3_Urban: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (ARF CS+ / variant 3 / Urban)";
-		model="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"pauldron"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARF_Urban.paa",
-			"SWLB_clones\data\light_accessories_co.paa",
-			"SWLB_clones\data\heavy_accessories_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2",
-				"pauldron"
-			};
-		};
-	};
-	
-	class 332nd_ARF_Sergeant_Vest_variant_4_Urban: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (ARF CS+ / variant 4 / Urban)";
-		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SWLB_clones\data\light_accessories_co.paa",
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARF_Urban.paa",
-			"SWLB_clones\data\heavy_accessories_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2",
-				"camo3"
-			};
-		};
-	};
 //Winter
-class 332nd_ARF_Sergeant_Vest_variant_1_Winter: 332nd_Trooper_Vest
+	class 332nd_ARF_Sergeant_Vest_variant_1_Winter: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 1 / Winter)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -290,63 +178,8 @@ class 332nd_ARF_Sergeant_Vest_variant_1_Winter: 332nd_Trooper_Vest
 		};
 	};
 
-	class 332nd_ARF_Sergeant_Vest_variant_3_Winter: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (ARF CS+ / variant 3 / Winter)";
-		model="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"pauldron"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARF_Winter.paa",
-			"SWLB_clones\data\light_accessories_co.paa",
-			"SWLB_clones\data\heavy_accessories_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2",
-				"pauldron"
-			};
-		};
-	};
-	
-	class 332nd_ARF_Sergeant_Vest_variant_4_Winter: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (ARF CS+ / variant 4 / Winter)";
-		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SWLB_clones\data\light_accessories_co.paa",
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARF_Winter.paa",
-			"SWLB_clones\data\heavy_accessories_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2",
-				"camo3"
-			};
-		};
-	};
 //Woodland
-class 332nd_ARF_Sergeant_Vest_variant_1_Woodland: 332nd_Trooper_Vest
+	class 332nd_ARF_Sergeant_Vest_variant_1_Woodland: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (ARF CS+ / variant 1 / Woodland)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -397,61 +230,6 @@ class 332nd_ARF_Sergeant_Vest_variant_1_Woodland: 332nd_Trooper_Vest
 		};
 	};
 
-	class 332nd_ARF_Sergeant_Vest_variant_3_Woodland: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (ARF CS+ / variant 3 / Woodland)";
-		model="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"pauldron"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARF_Woodland.paa",
-			"SWLB_clones\data\light_accessories_co.paa",
-			"SWLB_clones\data\heavy_accessories_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2",
-				"pauldron"
-			};
-		};
-	};
-	
-	class 332nd_ARF_Sergeant_Vest_variant_4_Woodland: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (ARF CS+ / variant 4 / Woodland)";
-		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SWLB_clones\data\light_accessories_co.paa",
-			"\332nd_Aux\Vests\Tex\332nd_Vest_ARF_Woodland.paa",
-			"SWLB_clones\data\heavy_accessories_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2",
-				"camo3"
-			};
-		};
-	};
 };
 
 class XtdGearModels
