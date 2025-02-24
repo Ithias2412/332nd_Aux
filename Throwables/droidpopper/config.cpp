@@ -73,6 +73,8 @@ class cfgAmmo
     {
         droidPopper = 1
         displayName = "[332nd] Droid Popper";
+        indirectHit = 1;
+        indirectHitRange = 15;
     };
 };
 
