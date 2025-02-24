@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Effects
+	class 332nd_Effects
 	{
 		name = "332nd - Main";
 		units[] = {};
@@ -112,4 +112,9 @@ class CfgCloudlets
     {
         color[] = {{0.0, 0.5, 0.5, 0.07}, {0.0, 0.6, 0.6, 0.09}, {0.0, 0.7, 0.7, 0.05}, {0.0, 0.3, 0.3, 0.004}, {0.0, 0.2, 0.2, 0.003}};
     };
+	class Missile3;
+	class 332nd_Missile_Red: Missile3
+	{
+		color[] = {{1,0,0,0.07},{1,0,0,0.07},{1,0,0,0.07},{0,0,0,0.004},{0,0,0,0.003}};
+	};
 };

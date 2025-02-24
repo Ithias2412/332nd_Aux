@@ -7,7 +7,7 @@ class CfgPatches {
 		weapons[] = 
         {
             "332nd_DC17S",
-			"33nd_DC17S_Dual",
+			"332nd_DC17S_Dual",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -15,8 +15,6 @@ class CfgPatches {
 };
 //#include "xtdGear.hpp"
 class ItemInfo;
-class 3AS_DC17S_F;
-class SWLW_DC17;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
@@ -25,19 +23,20 @@ class CowsSlot;
 class MuzzleSlot;
 class PointerSlot;
 class UnderBarrelSlot;
+class WeaponSlotsInfo;
 class cfgWeapons 
 {
 	class 3AS_DC17S_F;
 	class 3AS_DC17STest_F;
+	class JLTS_stun_muzzle;
 	class 332nd_DC17S: 3AS_DC17S_F
 	{
 		author="Ithias";
 		displayName="[332nd] DC-17S";
+		recoil = "IDA_recoil_dc17";
 		magazines[] =
 		{
 			"332nd_DC17S_Mag",
-			"332nd_DC17S_45ACP_Mag",
-			"ls_mag_stunLow_2Rnd"
 		};
 		magazineWell[]=
 		{
@@ -47,12 +46,34 @@ class cfgWeapons
 		{
 			"Single",
 		};
+		muzzles[] = { "this", "Stun" };
+		class Stun: JLTS_stun_muzzle
+		{
+			magazines[] = 
+			{
+				"332nd_DC17S_Stun_Mag",
+			};
+		};
 	};
-	class 33nd_DC17S_Dual : 3AS_DC17STest_F
+	class 332nd_DC17S_Dual : 3AS_DC17STest_F
 	{
-		displayName = "[332] Dual DC-17S Sidearm";
-		magazines[] = {"3AS_60Rnd_Test_mag","ls_mag_stunLow_2Rnd"};
-		recoil = "3as_recoil_light";
-
+		displayName = "[332nd] Dual DC-17S";
+		recoil = "IDA_recoil_dc17";
+		magazines[] = 
+		{
+			"332nd_DC17S_Mag_Dual",
+		};
+		magazineWell[]=
+		{
+			
+		};
+		muzzles[] = { "this", "Stun" };
+		class Stun: JLTS_stun_muzzle
+		{
+			magazines[] = 
+			{
+				"332nd_DC17S_Stun_Mag",
+			};
+		};
 	};
 };

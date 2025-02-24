@@ -1,9 +1,18 @@
-class CfgAmmo {
+class CfgAmmo 
+{
 	class BulletBase;
 	class ShotgunBase;
 	class SubmunitionBase;
 	class IDA_blasterbolt;
 	class 3AS_EY30_Pellets_Submunition;
+	class R_PG32V_F;
+	class 3AS_R_MK41_AT;
+	class M_Titan_AT;
+	class 3AS_M_MK43_AT;
+	class ACE_NLAW;
+	class G_40mm_HE;
+	class smokeshell;
+
 	
 
 	//Start Base Ammo Classes
@@ -37,9 +46,8 @@ class CfgAmmo {
 		tracerEndTime = 10;
 		tracerScale = 0.975;
 		tracerStartTime = 0;
-		typicalSpeed = 472;
+		typicalspeed = 800;
 	};
-
 	class 332nd_Base_Ammo_IDA: 332nd_Base_Ammo
 	{
 		ACE_damageType = "bullet";
@@ -80,7 +88,7 @@ class CfgAmmo {
 		tracerEndTime = 10;
 		tracerScale = 1;
 		tracerStartTime = 0;
-		typicalSpeed = 472;
+		typicalspeed = 800;
 		class HitEffects
 		{
 			default_mat = "IDA_ImpactEffect";
@@ -108,7 +116,6 @@ class CfgAmmo {
 			hitWood = "IDA_ImpactEffect";
 		};
 	};
-
 	class 332nd_Base_Shotgun_Ammo: ShotgunBase
 	{
 		ace_vehicle_damage_incendiary = 0.1;
@@ -141,7 +148,6 @@ class CfgAmmo {
 		tracerStartTime = 0;
 		typicalSpeed = 472;
 	};
-
 	class 332nd_Base_Shotgun_Ammo_Sub: SubmunitionBase
 	{
 		ace_vehicle_damage_incendiary = 0.1;
@@ -183,14 +189,98 @@ class CfgAmmo {
 		warheadName = "AP";
 	};
 
-	class R_PG32V_F;
-	class 3AS_R_MK41_AT;
-	class M_Titan_AT;
-	class 3AS_M_MK43_AT;
-	class ACE_NLAW;
+
+	//Rifle Ammo 
+	class 332nd_950mm_Ball: 332nd_Base_Ammo_IDA
+	{
+		ACE_caliber = 24.1;
+		ACE_bulletLength = 70;
+		ACE_bulletMass = 233.276;
+		hit = 120;
+		indirectHit = 10;
+		caliber = 80;
+		indirectHitRange = 5; 
+		deflecting = -1;
+	};
+	class 332nd_50_BMG_Ball: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 58.674;
+		ACE_bulletMass = 41.9256;
+        ACE_caliber = 12.954;
+		hit = 30;
+		caliber = 2.6;
+		typicalspeed = 1200;
+	};
+	class 332nd_12g_Pellets: 3AS_EY30_Pellets_Submunition
+	{
+		hit=10;
+		caliber=1;
+	};
+	class 332nd_762x51_Ball: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 28.956;
+		ACE_bulletMass = 9.4608;
+        ACE_caliber = 7.823;
+		hit = 11.6;
+		caliber = 1.6;
+	};
+	class 332nd_762x39_Ball: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 28.956;
+		ACE_bulletMass = 7.9704;
+        ACE_caliber = 7.823;
+		hit=11;
+		caliber=1.2;
+	};
+	class 332nd_556x45_Ball: 332nd_Base_Ammo_IDA
+	{
+		ACE_caliber = 5.69;
+		ACE_bulletLength = 23.012;
+        ACE_bulletMass = 4.0176;
+		hit = 10;
+		caliber = 1;
+	};
+	class 332nd_45ACP: 332nd_Base_Ammo_IDA
+	{
+		ACE_caliber = 11.481;
+        ACE_bulletLength = 17.272;
+        ACE_bulletMass = 14.904;
+		caliber = 2.6;
+		hit = 7;
+	};
+	class 332nd_45ACP_Dual: 332nd_Base_Ammo_IDA
+	{
+		model = "\3AS\3AS_Weapons\Data\tracer_blue_dual.p3d";
+		ACE_caliber = 11.481;
+        ACE_bulletLength = 17.272;
+        ACE_bulletMass = 14.904;
+		caliber = 2.6;
+		hit = 7;
+	};
+	//AT Ammo
+	//RPS6 / Dispo
+	class 332nd_RPS6_Ammo_AT: 3AS_R_MK41_AT
+	{
+		ExplosionEffects = "MortarExplosion";
+		hit=300;
+	};
+	class 332nd_RPS6_Ammo_NLAW: ACE_NLAW 
+	{
+		ExplosionEffects = "MortarExplosion";
+		hit=300;
+	};
+	class 332nd_Dispo_Ammo_NLAW: ACE_NLAW 
+	{
+		ExplosionEffects = "MortarExplosion";
+		hit=900;
+	};
+	//PLX1
+	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
+	{
+		ExplosionEffects = "MortarExplosion";
+		hit=900;
+	};
 	//UGL Grenades & Smokes
-	class G_40mm_HE;
-	class smokeshell;
 	class 332nd_HE_LGrenade: G_40mm_HE
 	{
 		ace_frag_enabled=1;
@@ -237,206 +327,5 @@ class CfgAmmo {
 	{
 		smokeColor[]={0.66970003,0.22750001,0.10053,1};
 		effectsSmoke="SmokeShellOrangeEffect";
-	};
-	//DC-15A Ammo
-	class 332nd_DC15A_Ammo_762x39: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 28.956;
-		ACE_bulletMass = 7.9704;
-        ACE_caliber = 7.823;
-		hit=11;
-		caliber=1.2;
-		typicalspeed=800;
-	};
-
-	//DC-15C Ammo
-	class 332nd_DC15C_Ammo_556x45: 332nd_Base_Ammo_IDA
-	{
-		ACE_caliber = 5.69;
-		ACE_bulletLength = 23.012;
-        ACE_bulletMass = 4.0176;
-		hit=10;
-		caliber=1;
-		typicalspeed=800;
-	};
-
-	//DC-15L Ammo
-	class 332nd_DC15L_Ammo_762x51: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 28.956;
-		ACE_bulletMass = 9.4608;
-        ACE_caliber = 7.823;
-		hit = 11.6;
-		caliber = 1.6;
-		typicalspeed=800;
-	};
-
-	//DC-15S Ammo
-	class 332nd_DC15S_Ammo_9x19: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 15.494;
-		ACE_bulletMass = 8.0352;
-        ACE_caliber = 9.017;
-		hit=5;
-		caliber=0.4;
-		typicalspeed=800;
-	};
-
-
-	//DC-15X Ammo
-	class 332nd_DC15X_Ammo_50: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 58.674;
-		ACE_bulletMass = 41.9256;
-        ACE_caliber = 12.954;
-		hit = 30;
-		caliber = 2.6;
-		typicalspeed=800;
-	};
-
-	//332nd 950mm_Ball
-	class 332nd_950mm_Ball: 332nd_Base_Ammo_IDA
-	{
-		ACE_caliber = 24.1;
-		ACE_bulletLength = 70;
-		ACE_bulletMass = 233.276;
-		typicalspeed=800;
-		hit = 120;
-		indirectHit = 10;
-		caliber = 80;
-		indirectHitRange = 5; 
-		deflecting = -1;
-	};
-
-	//DP-23 Ammo
-	class 332nd_DP23_Ammo_12g: 3AS_EY30_Pellets_Submunition
-	{
-		//ACE_bulletLength = 28.956;
-		//ACE_bulletMass = 7.9704;
-		//ACE_caliber = 7.823;
-		hit=10;
-		caliber=1;
-		typicalspeed=800;
-		//submunitionAmmo = "CUP_12Gauge_Pellets_Submunition_No00_Buck_Deploy";
-	};
-
-	//Valken Ammo
-	class 332nd_Valken_Ammo_762x51: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 28.956;
-		ACE_bulletMass = 9.4608;
-        ACE_caliber = 7.823;
-		hit = 11.6;
-		caliber = 1.6;
-		typicalspeed=800;
-	};
-
-	//Westar Ammo
-	class 332nd_Westar_Ammo_556x45: 332nd_Base_Ammo
-	{
-		ACE_caliber = 5.69;
-		ACE_bulletLength = 23.012;
-		ACE_bulletMass = 4.0176;
-		hit=10;
-		caliber=1;
-		typicalspeed=800;
-		effectFly = "3AS_PlasmaBolt_Yellow_Fly";
-		model = "\3AS\3AS_Weapons\Data\tracer_yellow.p3d";
-	};
-
-	//Z-6 Ammo
-	class 332nd_Z6_Ammo_556x45: 332nd_Base_Ammo_IDA
-	{
-		ACE_caliber = 5.69;
-		ACE_bulletLength = 23.012;
-        ACE_bulletMass = 4.0176;
-		hit=10;
-		caliber=1;
-		typicalspeed=800;
-	};
-
-	//DC-17S Ammo
-	class 332nd_DC17S_Ammo_9x19: 332nd_Base_Ammo
-	{
-		ACE_bulletLength = 15.494;
-		ACE_bulletMass = 8.0352;
-        ACE_caliber = 9.017;
-		hit=6;
-		caliber=0.4;
-		typicalspeed=800;
-	};
-
-	//RPS6 Ammo
-	class 332nd_RPS6_Ammo_AT: 3AS_R_MK41_AT
-	{
-		ExplosionEffects = "MortarExplosion";
-		hit=300;
-	};
-	class 332nd_RPS6_Ammo_NLAW: ACE_NLAW 
-	{
-		ExplosionEffects = "MortarExplosion";
-		hit=300;
-	};
-	class 332nd_Dispo_Ammo_NLAW: ACE_NLAW 
-	{
-		ExplosionEffects = "MortarExplosion";
-		hit=900;
-	};
-
-
-	//PLX1 Ammo
-	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
-	{
-		ExplosionEffects = "MortarExplosion";
-		hit=900;
-	};
-
-	//Starting Ammo Config By Caliber and typical
-
-	class 332nd_556x45_Ball: 332nd_Base_Ammo
-	{
-		ACE_caliber = 5.69;
-		ACE_bulletLength = 23.012;
-        ACE_bulletMass = 4.0176;
-		hit=10;
-		caliber=1;
-		typicalspeed=800;
-	};
-	class 332nd_762x51_Ball: 332nd_Base_Ammo
-	{
-		ACE_bulletLength = 28.956;
-		ACE_bulletMass = 9.4608;
-        ACE_caliber = 7.823;
-		hit = 11.6;
-		caliber = 1.6;
-		typicalspeed=800;
-
-	};
-	class 332nd_9x19_Ball: 332nd_Base_Ammo
-	{
-		ACE_bulletLength = 15.494;
-		ACE_bulletMass = 8.0352;
-        ACE_caliber = 9.017;
-		hit=5;
-		caliber=0.4;
-		typicalspeed=800;
-	};
-	class 332nd_50_BMG_Ball: 332nd_Base_Ammo
-	{
-		ACE_bulletLength = 58.674;
-		ACE_bulletMass = 41.9256;
-        ACE_caliber = 12.954;
-		hit = 30;
-		caliber = 2.6;
-		typicalspeed=800;
-
-	};
-	class 332nd_45ACP: 332nd_Base_Ammo{
-		ACE_caliber = 11.481;
-        ACE_bulletLength = 17.272;
-        ACE_bulletMass = 14.904;
-		typicalspeed=800;
-		caliber = 2.6;
-		hit=7;
 	};
 };

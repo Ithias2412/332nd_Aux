@@ -119,7 +119,7 @@ class CfgMagazines
 	class 3AS_250Rnd_MK4ES_shells;
 	class 332nd_PX10_Repeater_Mag: 3AS_250Rnd_MK4ES_shells
 	{
-		ammo = "332nd_DC15A_Ammo_762x39";
+		ammo = "332nd_762x51_Ball";
 		count = 750;
 		displayName = "750 Round Repeater Energy Block";
 		displayNameShort = "";

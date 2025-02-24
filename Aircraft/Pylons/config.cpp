@@ -33,7 +33,7 @@ class CfgMagazines
 
 	class 332nd_Hammer_I_Mag: PylonMissile_1Rnd_AAA_missiles
 	{
-		ammo = "M_Air_AA";
+		ammo = "332nd_Hammer_I_Ammo";
 		author = "Ithias";
 		count = 3;
 		descriptionShort = "Short-range, infrared-guided, air-to-air missile with high-explosive warhead";
@@ -245,5 +245,32 @@ class CfgWeapons
 
 class CfgAmmo
 {
-	
+	class M_Air_AA;
+	class 332nd_Hammer_I_Ammo: M_Air_AA
+	{
+		effectsMissile = "332nd_Smoke_Hammer";
+	};
+};
+class 332nd_Smoke_Hammer
+	{
+		class Light1
+		{
+			intensity = 0.01;
+			interval = 1;
+			lifeTime = 1;
+			position[] = {0,0,0};
+			simulation = "light";
+			type = "RocketLight";
+		};
+		class 332nd_Smoke_Hammer
+		{
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1; 
+			position[] = {0, 0, 0}; 
+			qualityLevel = 2;
+			simulation = "particles";
+			type = "332nd_Missile_Red";
+		};
+	};
 };

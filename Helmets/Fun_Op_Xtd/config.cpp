@@ -44,13 +44,13 @@ class XtdGearModels
                 class P1
                 {
                     label = "P1";
-                    //description = "Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
                 class P2
                 {
                     label = "P2";
-                    //description = "Not Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
 			};
@@ -63,25 +63,25 @@ class XtdGearModels
                 class Trooper
                 {
                     label = "Trooper";
-                    //description = "Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
                 class Boost
                 {
                     label = "Boost";
-                    //description = "Not Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
                 class Comet
                 {
                     label = "Comet";
-                    //description = "Not Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
                 class Sinker
                 {
                     label = "Sinker";
-                    //description = "Not Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
 			};
@@ -94,19 +94,19 @@ class XtdGearModels
                 class Trooper
                 {
                     label = "Trooper";
-                    //description = "Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
                 class Waxer
                 {
                     label = "Waxer";
-                    //description = "Not Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
                 class Boil
                 {
                     label = "Boil";
-                    //description = "Not Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
 			};
@@ -119,7 +119,7 @@ class XtdGearModels
                 class Trooper
                 {
                     label = "Trooper";
-                    //description = "Default";
+                    description = "With Zeus Approval";
                     //image = "xxx";
                 };
 			};
