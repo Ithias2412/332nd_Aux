@@ -113,8 +113,95 @@ class CfgCloudlets
         color[] = {{0.0, 0.5, 0.5, 0.07}, {0.0, 0.6, 0.6, 0.09}, {0.0, 0.7, 0.7, 0.05}, {0.0, 0.3, 0.3, 0.004}, {0.0, 0.2, 0.2, 0.003}};
     };
 	class Missile3;
-	class 332nd_Missile_Red: Missile3
+	class 332nd_Missile_Red_Smoke: Missile3
 	{
 		color[] = {{1,0,0,0.07},{1,0,0,0.07},{1,0,0,0.07},{0,0,0,0.004},{0,0,0,0.003}};
 	};
+	class 332nd_Missile_Blue_Smoke: Missile3
+	{
+        color[] = {{0,0,1,0.07},{0,0,1,0.07},{0,0,1,0.07},{0,0,0.75,0.004},{0,0,0,0.003}};
+	};
+	class 332nd_Missile_Teal_Smoke: Missile3
+	{
+        color[] = {{0.0, 0.5, 0.5, 0.07}, {0.0, 0.6, 0.6, 0.09}, {0.0, 0.7, 0.7, 0.05}, {0.0, 0.3, 0.3, 0.004}, {0.0, 0.2, 0.2, 0.003}};
+	};
+
+};
+
+class CfgLights
+{
+	class RocketLight;
+	class 332nd_Missile_Red_Light: RocketLight
+	{
+		ambient[] = {0,0,0};
+		blinking = 0;
+		//brightness = "100";
+		color[] = {1,0,0};
+		dayLight = 1;
+		diffuse[] = {1,0.25,0.05};
+		drawLight = 0;
+		flareMaxDistance = 6000;
+		flareSize = 2;
+		intensity = 25000;
+		size = 1;
+		useFlare = 1;
+		class Attenuation
+		{
+			constant = 0;
+			hardLimitEnd = 200;
+			hardLimitStart = 100;
+			linear = 0;
+			quadratic = 1;
+			start = 0;
+		};
+	};
+	class 332nd_Missile_Blue_Light: RocketLight
+	{
+		ambient[] = {0,0,0};
+		blinking = 0;
+		//brightness = "100";
+		color[] = {0,0,1};
+		dayLight = 1;
+		diffuse[] = {1,0.25,0.05};
+		drawLight = 0;
+		flareMaxDistance = 6000;
+		flareSize = 2;
+		intensity = 25000;
+		size = 1;
+		useFlare = 1;
+		class Attenuation
+		{
+			constant = 0;
+			hardLimitEnd = 200;
+			hardLimitStart = 100;
+			linear = 0;
+			quadratic = 1;
+			start = 0;
+		};
+	};
+	class 332nd_Missile_Teal_Light: RocketLight
+	{
+		ambient[] = {0,0,0};
+		blinking = 0;
+		//brightness = "100";
+		color[] = {0,0.5,0.5};
+		dayLight = 1;
+		diffuse[] = {1,0.25,0.05};
+		drawLight = 0;
+		flareMaxDistance = 6000;
+		flareSize = 2;
+		intensity = 25000;
+		size = 1;
+		useFlare = 1;
+		class Attenuation
+		{
+			constant = 0;
+			hardLimitEnd = 200;
+			hardLimitStart = 100;
+			linear = 0;
+			quadratic = 1;
+			start = 0;
+		};
+	};
+
 };
