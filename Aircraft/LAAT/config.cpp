@@ -76,6 +76,15 @@ class CfgVehicles
 				};
 			};
 		};
+		weapons[]= 
+		{
+			"ls_laat_gun",
+			"ls_laat_gun_2",
+			"ls_laat_DAR",
+			"CMFlareLauncher",
+			"332nd_Dropcrate_PW1",
+			
+		};
 		magazines[]= // changed from "200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"
 		{
 			"200rnd_laat_he_mag",
@@ -88,6 +97,7 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
+			"Pylon_332nd_Dropcrate_1rnd", 
 		};
 		hiddenselectionstextures[]=
 		{
