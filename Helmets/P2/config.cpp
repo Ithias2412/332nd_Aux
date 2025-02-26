@@ -83,7 +83,6 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Medic.paa"
 		};
 	};
-
 //Customs
 
 	class 332nd_Helmet_P2_Ithias: 332nd_Helmet_P2_CR
@@ -185,8 +184,42 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Hicks.paa"
 		};
 	};
-
-
+	class 332nd_Helmet_P2_Crow: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Crow)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crow.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Tokyo: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Tokyo)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Tokyo.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Spectre: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Spectre)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Spectre.paa"
+		};
+	};
 };
 class CfgGlasses
 {
@@ -252,7 +285,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks",};
+				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks", "Crow", "Tokyo", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -302,6 +335,24 @@ class XtdGearModels
 					description = "Lolcow enjoyer";
 					//image = "xxx";
 				};	
+				class Crow
+				{
+					label = "Crow";
+					description = "On the List";
+					//image = "xxx";
+				};
+				class Tokyo
+				{
+					label = "Tokyo";
+					description = "VR Gamer";
+					//image = "xxx";
+				};
+				class Spectre
+				{
+					label = "Spectre";
+					description = "Goon Platoon";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -372,6 +423,21 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Hicks";
         };	
+		class 332nd_Helmet_P2_Crow
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Crow";
+        };	
+		class 332nd_Helmet_P2_Tokyo
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Tokyo";
+        };
+		class 332nd_Helmet_P2_Spectre
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Spectre";
+        };
 	};
 };
 
