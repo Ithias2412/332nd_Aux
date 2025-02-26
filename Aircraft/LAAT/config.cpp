@@ -55,6 +55,7 @@ class CfgVehicles
 		transportSoldier=22;
 		ls_impulsor_fuelDrain_1=0.00005; // was 0.000099999997;
 		ls_impulsor_fuelDrain_2=0.00010; // was 0.00030000001;
+		armor = 200; //was 100
 		class ace_cargo 
 		{
 			class cargo 

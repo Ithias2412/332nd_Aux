@@ -14,6 +14,8 @@ class CfgPatches {
 			"332nd_Forge_III",
 			"332nd_Forge_I",
 			"332nd_Forge_X_N",
+			"332nd_CIS_A2A_Missile",
+			"332nd_CIS_ATG_Missile",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -52,7 +54,17 @@ class CfgMagazines
 		pylonWeapon = "332nd_Hammer_I";
 		weight = 0;
 	};
-	
+	class 332nd_CIS_A2A_Missile_Mag: 332nd_Hammer_I_Mag
+	{
+		ammo = "332nd_CIS_A2A_Missile_Ammo";
+		count = 1;
+		displayName = "[332nd] CIS A2A Missile";
+		hardpoints[] = 
+		{
+			"332nd_CIS_A2A_Missile",
+		};
+		pylonWeapon = "332nd_CIS_A2A_Missile";
+	};
 	class 332nd_Hammer_II_Mag: PylonMissile_1Rnd_GAA_missiles
 	{
 		ammo = "332nd_Hammer_II_Ammo";
@@ -92,7 +104,17 @@ class CfgMagazines
 		pylonWeapon = "332nd_Anvil_I";
 		weight = 0;
 	};
-	
+	class 332nd_CIS_ATG_Missile_Mag: 332nd_Anvil_I_Mag
+	{
+		ammo = "332nd_CIS_ATG_Missile_Ammo";
+		count = 1;
+		displayName = "[332nd] CIS ATG Missile";
+		hardpoints[] = 
+		{
+			"332nd_CIS_ATG_Missile",
+		};
+		pylonWeapon = "332nd_CIS_ATG_Missile";
+	};
 	class 332nd_Anvil_III_Mag: ace_maverick_L_magazine_x1
 	{
 		ammo = "332nd_Anvil_III_Ammo";
@@ -185,6 +207,14 @@ class CfgWeapons
 			"332nd_Hammer_I_Mag",
 		};
 	};
+	class 332nd_CIS_A2A_Missile: 332nd_Hammer_I
+	{
+		displayName = "[332nd] CIS A2A Missile";
+		magazines[] = 
+		{
+			"332nd_CIS_A2A_Missile_Mag",
+		};
+	};
 	class 332nd_Hammer_II: missiles_Zephyr //weapon_AMRAAMLauncher
 	{
 		displayName = "[332nd] Hammer II";
@@ -199,6 +229,14 @@ class CfgWeapons
 		magazines[] = 
 		{
 			"332nd_Anvil_I_Mag",
+		};
+	};
+	class 332nd_CIS_ATG_Missile: 332nd_Anvil_I
+	{
+		displayName = "[332nd] CIS ATG Missile";
+		magazines[] = 
+		{
+			"332nd_CIS_ATG_Missile_Mag",
 		};
 	};
 	class 332nd_Anvil_III: ace_maverick_L_Launcher
@@ -254,6 +292,11 @@ class CfgAmmo
 	{
 		effectsMissile = "332nd_Effect_Hammer";
 	};
+	class 332nd_CIS_A2A_Missile_Ammo: 332nd_Hammer_I_Ammo
+	{
+		effectsMissile = "332nd_Effect_CIS_A2A";
+	};
+
 	class 332nd_Hammer_II_Ammo: M_Zephyr
 	{
 		effectsMissile = "332nd_Effect_Hammer";
@@ -262,6 +305,11 @@ class CfgAmmo
 	{
 		effectsMissile = "332nd_Effect_Anvil";
 	};
+	class 332nd_CIS_ATG_Missile_Ammo: 332nd_Anvil_I_Ammo
+	{
+		effectsMissile = "332nd_Effect_CIS_ATG";
+	};
+
 	class 332nd_Anvil_III_Ammo: ace_maverick_L
 	{
 		effectsMissile = "332nd_Effect_Anvil";
@@ -291,6 +339,30 @@ class 332nd_Effect_Hammer
 	};
 };
 
+class 332nd_Effect_CIS_A2A
+{
+	class 332nd_Light_CIS_A2A
+	{
+		intensity = 0.01;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0,0,0};
+		simulation = "light";
+		type = "332nd_Missile_Red_Light";
+	};
+	class 332nd_Smoke_CIS_A2A
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1; 
+		position[] = {0, 0, 0}; 
+		qualityLevel = 2;
+		simulation = "particles";
+		type = "332nd_Missile_Red_Smoke";
+	};
+};
+
+
 class 332nd_Effect_Anvil
 {
 	class 332nd_Light_Anvil
@@ -300,7 +372,7 @@ class 332nd_Effect_Anvil
 		lifeTime = 1;
 		position[] = {0,0,0};
 		simulation = "light";
-		type = "332nd_Missile_Teal_Light";
+		type = "332nd_Missile_Green_Light";
 	};
 	class 332nd_Smoke_Anvil
 	{
@@ -310,6 +382,29 @@ class 332nd_Effect_Anvil
 		position[] = {0, 0, 0}; 
 		qualityLevel = 2;
 		simulation = "particles";
-		type = "332nd_Missile_Teal_Smoke";
+		type = "332nd_Missile_Green_Smoke";
+	};
+};
+
+class 332nd_Effect_CIS_ATG
+{
+	class 332nd_Light_CIS_ATG
+	{
+		intensity = 0.01;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0,0,0};
+		simulation = "light";
+		type = "332nd_Missile_Pink_Light";
+	};
+	class 332nd_Smoke_CIS_ATG
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1; 
+		position[] = {0, 0, 0}; 
+		qualityLevel = 2;
+		simulation = "particles";
+		type = "332nd_Missile_Pink_Smoke";
 	};
 };

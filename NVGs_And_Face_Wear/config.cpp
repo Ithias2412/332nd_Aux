@@ -107,6 +107,24 @@ class CfgGlasses
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
 		scope = 1;
 	};
+	class G_Diving;
+	class 332nd_Clone_HelmetInterior_P2: G_Diving
+	{
+		scope = 2;
+		author = "Frankie";
+		displayName = "[332nd] P2 Helmet Interior";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_interior_ui_ca.paa";
+		model = "\A3\Weapons_f\DummyNVG";
+		identityTypes[] = {"NoGlasses",0};
+		mass = 4;
+		ACE_Color[] = {0,0,0};
+		ACE_TintAmount = 0;
+		ACE_Overlay = "";
+		ACE_OverlayCracked = "";
+		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
+		ACE_Resistance = 2;
+		ACE_Protection = 1;
+	};
 	class 332nd_Facewear_Rangefinder :332nd_Facewear_Base
 	{
 		scope = 2;
@@ -203,7 +221,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Visor", "Rangefinder", "Commander", };
+				values[] = { "Visor", "Rangefinder", "Commander", "Overlay", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Commander
@@ -222,6 +240,12 @@ class XtdGearModels
                 {
                     label = "Rangefinder";
                     description = "SCT+";
+                    //image = "xxx";
+                };
+				class Overlay
+                {
+                    label = "Overlay";
+                    description = "First Person P2 Overlay";
                     //image = "xxx";
                 };
             };
@@ -274,7 +298,6 @@ class XtdGearInfos
         {
             model = "332nd_Facewear_Extended";
             Type = "Rangefinder";
-            Variant = "A";
         };
         class 332nd_Facewear_Visor
         {
@@ -300,6 +323,11 @@ class XtdGearInfos
             Type = "Commander";
             Variant = "B";
         };
+		class 332nd_Clone_HelmetInterior_P2
+		{
+            model = "332nd_Facewear_Extended";
+            Type = "Overlay";
+		};
     };
 
 };

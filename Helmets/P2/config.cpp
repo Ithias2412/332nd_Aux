@@ -220,27 +220,19 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Spectre.paa"
 		};
 	};
-};
-class CfgGlasses
-{
-	class G_Diving;
-	class 332nd_Clone_HelmetInterior_P2: G_Diving
+/*	class 332nd_Helmet_P2_Kiyler: 332nd_Helmet_P2_CR
 	{
-		scope = 2;
-		author = "Frankie";
-		displayName = "Clone Trooper P2 Helmet Interior";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_interior_ui_ca.paa";
-		model = "\A3\Weapons_f\DummyNVG";
-		identityTypes[] = {"NoGlasses",0};
-		mass = 4;
-		ACE_Color[] = {0,0,0};
-		ACE_TintAmount = 0;
-		ACE_Overlay = "";
-		ACE_OverlayCracked = "";
-		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
-		ACE_Resistance = 2;
-		ACE_Protection = 1;
-	};
+		displayName="[332nd] P2 Helmet (Kiyler)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Kiyler.paa"
+		};
+	};	*/
+
 };
 class XtdGearModels
 {
@@ -285,7 +277,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks", "Crow", "Tokyo", };
+				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks", "Crow", "Tokyo", "Spectre", /* "Kiyler", */};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -353,6 +345,12 @@ class XtdGearModels
 					description = "Goon Platoon";
 					//image = "xxx";
 				};
+			/*	class Kiyler
+				{
+					label = "Kiyler";
+					description = "High asf";
+					//image = "xxx";
+				};	*/
             };
         };
     };
@@ -438,6 +436,11 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Spectre";
         };
+	/*	class 332nd_Helmet_P2_Kiyler
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Kiyler";
+        };	*/
 	};
 };
 
