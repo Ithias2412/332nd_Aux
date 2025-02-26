@@ -921,7 +921,7 @@ class CfgMagazines
             };                  
         };  
 		displayName = "332nd_Dropcrate_x1";
-		displayNameShort = "Laser Guided";
+		displayNameShort = "Drop Resupply Crate";
 		descriptionShort = "332nd_Dropcrate";					
 		ammo = "332nd_Dropcrate_A";
 		initSpeed = 0;
@@ -950,7 +950,7 @@ class CfgWeapons
 	class 332nd_Dropcrate_PW1: weapon_LGBLauncherBase
 	{
 		scope = 2;
-		displayName = "Resupply Dropcrate 332nd";
+		displayName = "[332nd] Resupply Dropcrate";
 		displayNameMagazine = "332ndDC";
 		shortNameMagazine = "332DC";
 		cursoraim = "bomb";

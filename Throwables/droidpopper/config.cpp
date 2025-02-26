@@ -72,7 +72,7 @@ class cfgAmmo
     class 332nd_DroidPopper_ammo: GrenadeHand
     {
         droidPopper = 1
-        displayName = "[332nd] Droid Popper";
+        displayName = "[BANNED / 332nd] WIP Droid Popper";
         indirectHit = 1;
         indirectHitRange = 15;
     };
@@ -84,7 +84,7 @@ class CfgMagazines
     class 332nd_DroidPopper_x1_mag: HandGrenade
     {
         author = "332nd";
-        displayName = "[332nd] Droid Popper";
+        displayName = "[BANNED / 332nd] WIP Droid Popper";
         displayNameShort = "Droid Popper";
         count = 1;
         ammo = "332nd_DroidPopper_ammo";
