@@ -4,7 +4,7 @@ class CfgAmmo
 	class ShotgunBase;
 	class SubmunitionBase;
 	class IDA_blasterbolt;
-	class 3AS_EY30_Pellets_Submunition;
+	class IDA_blasterbolt_scatter;
 	class R_PG32V_F;
 	class 3AS_R_MK41_AT;
 	class M_Titan_AT;
@@ -211,7 +211,7 @@ class CfgAmmo
 		caliber = 2.6;
 		typicalspeed = 1200;
 	};
-	class 332nd_12g_Pellets: 3AS_EY30_Pellets_Submunition
+	class 332nd_12g_Pellets: IDA_blasterbolt_scatter
 	{
 		hit=10;
 		caliber=1;
@@ -223,6 +223,14 @@ class CfgAmmo
         ACE_caliber = 7.823;
 		hit = 11.6;
 		caliber = 1.6;
+	};
+	class 332nd_338_Lapua_Ball: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 39.573;
+		ACE_bulletMass = 16.2;
+        ACE_caliber = 8.585;
+		hit = 16;
+		caliber = 2.07;
 	};
 	class 332nd_762x39_Ball: 332nd_Base_Ammo_IDA
 	{

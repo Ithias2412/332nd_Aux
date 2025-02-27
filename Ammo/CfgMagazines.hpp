@@ -61,7 +61,7 @@ class CfgMagazines
 	};
 	class 332nd_Valken_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_762x51_Ball";
+		ammo = "332nd_338_Lapua_Ball";
 		count = 20;
 		displayname = "Valken 20 Round Energy Cell";
 		mass = 13.6;
