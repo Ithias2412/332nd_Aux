@@ -31,6 +31,7 @@ class CfgVehicles
 		backpack = "";
 		displayName = "[332nd] Spawn Unit";
 		faceType = "Man_A3";
+		items[] = {};
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
 		magazines[] = {};
 		respawnItems[] = {"ItemMap","ItemCompass","ItemWatch"};

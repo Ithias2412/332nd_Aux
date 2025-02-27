@@ -184,7 +184,7 @@ class CfgVehicles
 		author="Ithias";
 		displayName="[332nd] Radio";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
-		maximumLoad=100;
+		maximumLoad=200;
 		mass=40;
 		hiddenSelections[] = 
 		{
