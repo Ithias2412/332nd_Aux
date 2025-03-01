@@ -25,6 +25,7 @@ class cfgWeapons
 		author="Ithias";
 		dlc="332nd Aux";
 		displayName="[332nd] ARF Helmet";
+		332nd_Has_Lowlight = 1;
 		//displayName="[332nd] P2 Helmet (CT)";
 		//picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
 		subItems[] = {};
