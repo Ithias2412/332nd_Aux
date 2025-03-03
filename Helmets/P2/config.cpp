@@ -220,6 +220,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Spectre.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Stryker: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Stryker)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Stryker.paa"
+		};
+	};
 /*	class 332nd_Helmet_P2_Kiyler: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Kiyler)";
@@ -277,7 +289,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks", "Crow", "Tokyo", "Spectre", /* "Kiyler", */};
+				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks", "Crow", "Tokyo", "Spectre","Stryker",  /* "Kiyler", */};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -343,6 +355,12 @@ class XtdGearModels
 				{
 					label = "Spectre";
 					description = "Goon Platoon";
+					//image = "xxx";
+				};	
+				class Stryker
+				{
+					label = "Stryker";
+					description = "Stryker Eureka";
 					//image = "xxx";
 				};
 			/*	class Kiyler
@@ -435,6 +453,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Spectre";
+        };
+		class 332nd_Helmet_P2_Stryker
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Stryker";
         };
 	/*	class 332nd_Helmet_P2_Kiyler
         {
