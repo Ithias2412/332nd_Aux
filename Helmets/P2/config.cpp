@@ -148,7 +148,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Frankenburg.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Seelig: 332nd_Helmet_P2_CR
+/*	class 332nd_Helmet_P2_Seelig: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Seelig)";
 		hiddenSelections[]=
@@ -159,7 +159,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Seelig.paa"
 		};
-	};
+	};	*/
 	class 332nd_Helmet_P2_Weaver: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Weaver)";
@@ -232,7 +232,19 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Stryker.paa"
 		};
 	};
-/*	class 332nd_Helmet_P2_Kiyler: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Sovereign: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Sovereign)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Sovereign.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Kiyler: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Kiyler)";
 		hiddenSelections[]=
@@ -243,7 +255,19 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Kiyler.paa"
 		};
-	};	*/
+	};	
+	class 332nd_Helmet_P2_Shark: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Shark)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Shark.paa"
+		};
+	};	
 
 };
 class XtdGearModels
@@ -289,7 +313,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks", "Crow", "Tokyo", "Spectre","Stryker",  /* "Kiyler", */};
+				values[] = { "Ithias", "Cherryy", "Roseiry", "Body", "Frankenburg", "Seelig", "Weaver", "Hicks", "Crow", "Tokyo", "Spectre", "Stryker", "Kiyler", "Sovereign", "Shark", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -363,12 +387,24 @@ class XtdGearModels
 					description = "Stryker Eureka";
 					//image = "xxx";
 				};
-			/*	class Kiyler
+				class Kiyler
 				{
 					label = "Kiyler";
 					description = "High asf";
 					//image = "xxx";
-				};	*/
+				};	
+				class Sovereign
+				{
+					label = "Sovereign";
+					description = "Dosent know what he wants to do";
+					//image = "xxx";
+				};	
+				class Shark
+				{
+					label = "Shark";
+					description = "50/50 RPS-6 Hit Chance";
+					//image = "xxx";
+				};	
             };
         };
     };
@@ -419,7 +455,7 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Frankenburg";
         };
-		class 332nd_Helmet_P2_Seelig
+		class 332nd_Helmet_RTO_Seelig
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Seelig";
@@ -459,11 +495,21 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Stryker";
         };
-	/*	class 332nd_Helmet_P2_Kiyler
+		class 332nd_Helmet_P2_Sovereign
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Sovereign";
+        };	
+		class 332nd_Helmet_P2_Kiyler
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Kiyler";
-        };	*/
+        };	
+		class 332nd_Helmet_P2_Shark
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Shark";
+        };	
 	};
 };
 

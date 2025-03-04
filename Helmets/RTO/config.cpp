@@ -22,6 +22,7 @@ class cfgWeapons
 	{
 		author="Cherryy";
 		dlc="332nd Aux";
+		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
 		displayName="[332nd] P2 RTO Helmet (Base)";
 		scope=0;
 		subItems[] = {};
@@ -60,7 +61,6 @@ class cfgWeapons
 	class 332nd_Helmet_RTO_CT: 332nd_Helmet_RTO_Base
 	{
 		displayName="[332nd] P2 Radio Helmet (CT)";
-		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
 		scope=2;
 		hiddenSelections[]=
 		{
@@ -68,7 +68,20 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Helmets\Tex\332nd_JTAC_P2_Helmet_CT.paa"
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_RTO_CT.paa"
+		};
+	};
+	class 332nd_Helmet_RTO_Seelig: 332nd_Helmet_RTO_Base
+	{
+		displayName="[332nd] P2 Radio Helmet (Seelig)";
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_RTO_Seelig.paa"
 		};
 	};
 //Customs
