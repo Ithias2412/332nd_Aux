@@ -196,12 +196,8 @@ class CfgWeapons
 	
 	class 332nd_Hammer_I: missiles_ASRAAM
 	{
-		cmImmunity = 0.6;
 		displayName = "[332nd] Hammer I";
-		magazineReloadTime = 0.1;
-		reloadTime = 0.1;
-		weaponLockDelay = 3;
-		weaponLockSystem = 2;
+		weaponLockSystem = 8; //Was 2
 		magazines[] = 
 		{
 			"332nd_Hammer_I_Mag",

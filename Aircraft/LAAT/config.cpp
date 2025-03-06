@@ -45,6 +45,7 @@ class CfgVehicles
 	class lsd_heli_laati: lsd_laat_base
 	{
 		class ACE_SelfActions;
+		class HitPoints;
 	};
 	
 	class 332nd_LAAT: lsd_heli_laati
@@ -56,6 +57,21 @@ class CfgVehicles
 		ls_impulsor_fuelDrain_1=0.00005; // was 0.000099999997;
 		ls_impulsor_fuelDrain_2=0.00010; // was 0.00030000001;
 		armor = 200; //was 100
+		class HitPoints: HitPoints
+		{
+			class HitAvionics
+			{
+				armor=5; // was 1
+				convexComponent="avionics_hit";
+				explosionShielding=2;
+				material=51;
+				name="avionics_hit";
+				passThrough=1;
+				visual="";
+				radius=0.5;
+			};
+
+		};
 		class ace_cargo 
 		{
 			class cargo 

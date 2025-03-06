@@ -47,6 +47,10 @@ class CfgVehicles
 		ls_impulsor_boostSpeed_1=300;
 		icon = "lsd_vehicles_heli\laati\data\ui\laat_icon.paa";
 		camouflage = 1;
+		class pilotCamera
+		{
+			//Removed
+		};
 		class Components: Components
 		{
 			class TransportPylonsComponent: TransportPylonsComponent

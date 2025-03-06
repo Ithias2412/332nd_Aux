@@ -242,6 +242,25 @@ class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
 		};
 	};
 
+class 332nd_Uniform_Clone_Weaver: 332nd_Uniform_Clone_CR
+	{
+		dlc="332nd";
+		author="Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Custom)";
+		//displayName="[332nd] Clone Trooper Armor (Weaver)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Weaver_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+
 };
 
 class CfgVehicles
@@ -612,6 +631,24 @@ class 332nd_Uniform_Clone_Cherryy_Veh: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
+class 332nd_Uniform_Clone_Weaver_Veh: 332nd_Uniform_Clone_CT_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Weaver";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Weaver.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Weaver.paa",
+		};
+	};
+
 };
 
 class XtdGearModels
@@ -713,7 +750,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", };
+				values[] = { "Ithias", "Cherryy", "Weaver", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -726,6 +763,12 @@ class XtdGearModels
                 {
                     label = "Cherryy";
                     description = "Remade his custom 3 times";
+                    //image = "xxx";
+                };
+				class Weaver
+                {
+                    label = "Weaver";
+                    description = "IDA Enjoyer";
                     //image = "xxx";
                 };
             };
@@ -803,6 +846,11 @@ class XtdGearInfos
         {
             model = "332nd_Uniform_Extended";
             Customs = "Cherryy";
+        };
+        class 332nd_Uniform_Clone_Weaver
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Weaver";
         };
     };
 };

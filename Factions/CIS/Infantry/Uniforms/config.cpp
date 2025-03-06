@@ -66,7 +66,7 @@ class 332nd_Uniform_CIS_Human_Heavy: 3AS_U_CIS_Heavy_Armor
 	{
 		dlc="332nd";
 		scope=1;
-		displayName = "[332nd] CIS Officer Armor";
+		displayName = "[332nd] CIS Heavy Armor";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
