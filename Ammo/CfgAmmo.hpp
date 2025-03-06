@@ -12,10 +12,22 @@ class CfgAmmo
 	class ACE_NLAW;
 	class G_40mm_HE;
 	class smokeshell;
+	class BulletBase;
 
-	
+
 
 	//Start Base Ammo Classes
+	class 332nd_Balistic_Bullet_Base: BulletBase
+	{
+		airFriction = -0.00018;
+		airLock = 1;
+		audibleFire = 45;
+		coefGravity = 0.01;
+		deflecting = 0;
+		deflectionSlowDown = 1.0;
+		typicalspeed = 800;
+		//muzzleEffect = "";
+	};
 	class 332nd_Base_Ammo: BulletBase
 	{
 		ACE_damageType = "bullet";
@@ -203,6 +215,15 @@ class CfgAmmo
 		deflecting = -1;
 	};
 	class 332nd_50_BMG_Ball: 332nd_Base_Ammo_IDA
+	{
+		ACE_bulletLength = 58.674;
+		ACE_bulletMass = 41.9256;
+        ACE_caliber = 12.954;
+		hit = 30;
+		caliber = 2.6;
+		typicalspeed = 1200;
+	};
+	class 332nd_Slug_Thrower_Ammo: 332nd_Balistic_Bullet_Base
 	{
 		ACE_bulletLength = 58.674;
 		ACE_bulletMass = 41.9256;

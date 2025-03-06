@@ -43,6 +43,16 @@ class CfgMagazines
 		scope = 2;
 		initSpeed = 1200;
 	};
+	class 332nd_Slug_Thrower_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Slug_Thrower_Ammo";
+		count = 5;
+		displayname = "Slug Thrower 5 Round Bullet Block";
+		mass = 15;
+		scope = 2;
+		initSpeed = 1200;
+		picture = "\A3\weapons_f\data\UI\m_M24_CA.paa";
+	};
 	class 332nd_DP23_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_12g_Pellets";
