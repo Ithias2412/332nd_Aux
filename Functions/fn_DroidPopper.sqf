@@ -22,11 +22,13 @@ if (getNumber(configFile >> "CfgAmmo" >> _ammoUsed >> "droidPopper") != 1) exitW
 private _classname = toLower (typeOf _target);
 
 if (_classname find "droid" >= 0 || _classname find "b1" >= 0 || _classname find "b2" >= 0) then {
-    _unit setDamage 1;
     _unit disableAI "AUTOCOMBAT"; // Prevents automatic combat reactions
     _unit disableAI "COVER"; // Stops AI from seeking cover
     _unit disableAI "SUPPRESSION"; // Stops AI from reacting to enemy fire
-    _unit setUnitPos "UP"; // Forces standing position
+    _unit setUnitPos "MIDDLE"; // Set the unit's stance to "MIDDLE"
+    sleep 4;
+    _unit switchMove "AmovPknlMstpSrasWrflDnon";
+    sleep 4;
     _target disableAI "all";
 
     // Re-enable AI after 4 seconds

@@ -12,7 +12,6 @@ class CfgAmmo
 	class ACE_NLAW;
 	class G_40mm_HE;
 	class smokeshell;
-	class BulletBase;
 
 
 
