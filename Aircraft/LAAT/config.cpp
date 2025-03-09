@@ -612,6 +612,51 @@ class CfgVehicles
 			"332nd_Base_tex",
 			1,
 		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class Style_Changer
+			{
+				displayName="Change Camo";
+				exceptions[]=
+				{
+					"isNotInside",
+					"isNotSwimming",
+					"isNotSitting"
+				};
+				condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled=0;
+				priority=2;
+				class DefaultSkin
+				{
+					displayName="332nd Base Skin";
+					exceptions[]=
+					{
+						"isNotInside",
+						"isNotSwimming",
+						"isNotSitting"
+					};
+					condition="!(isNull objectParent player)";
+					statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Body_1.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Door_1.paa']; _target setObjectTextureGlobal [3,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Door_2.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Wings.paa']; _target setObjectTextureGlobal [6,'lsd_vehicles_heli\laati\data\missiles_co.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					showDisabled=0;
+					runOnHover=0;
+					priority=2.5;
+				};
+				class 332nd_Skins
+				{
+					displayname="332nd Custom Skins";
+					class 332nd_Ikran: DefaultSkin
+					{
+						displayName="332nd Ikran";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Body1.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Body2.paa']; _target setObjectTextureGlobal [2,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Doors1.paa']; _target setObjectTextureGlobal [3,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Doors2.paa']; _target setObjectTextureGlobal [4,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Doors3.paa']; _target setObjectTextureGlobal [5,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Ikran_Wings.paa']; _target setObjectTextureGlobal [6,'lsd_vehicles_heli\laati\data\missiles_co.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 332nd_Asuka: DefaultSkin
+					{
+						displayName="332nd Asuka";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Body_1_Asuka.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Door_1.paa']; _target setObjectTextureGlobal [3,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Door_2.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Wings.paa']; _target setObjectTextureGlobal [6,'lsd_vehicles_heli\laati\data\missiles_co.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+				};
+			};
+		};
 	};
 	
 
