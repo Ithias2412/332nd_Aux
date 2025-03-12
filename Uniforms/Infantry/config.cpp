@@ -260,6 +260,42 @@ class 332nd_Uniform_Clone_Weaver: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
+class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
+	{
+		dlc="332nd";
+		author="Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Custom)";
+		//displayName="[332nd] Clone Trooper Armor (Weaver)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Asuka_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+/* class 332nd_Uniform_Clone_Frankenburg: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Custom)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Frankenburg_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};*/
 
 };
 
@@ -648,7 +684,40 @@ class 332nd_Uniform_Clone_Weaver_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Weaver.paa",
 		};
 	};
-
+class 332nd_Uniform_Clone_Asuka_Veh: 332nd_Uniform_Clone_CT_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Asuka";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Asuka.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
+		};
+	};
+/* class 332nd_Uniform_Clone_Frankenburg_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Frankenburg";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Frankenburg.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Frankenburg.paa",
+		};
+	}; */
 };
 
 class XtdGearModels
@@ -750,7 +819,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Weaver", };
+				values[] = { "Ithias", "Cherryy", "Weaver", "Asuka", "Frankenburg" };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -771,6 +840,18 @@ class XtdGearModels
                     description = "IDA Enjoyer";
                     //image = "xxx";
                 };
+				class Asuka
+                {
+                    label = "Asuka";
+                    description = "Sucks at Destiny";
+                    //image = "xxx";
+                };
+				/* class Frankenburg
+                {
+                    label = "Frankenburg";
+                    description = "Aux Mod Slave";
+                    //image = "xxx";
+                }; */
             };
         };
     };
@@ -852,5 +933,15 @@ class XtdGearInfos
             model = "332nd_Uniform_Extended";
             Customs = "Weaver";
         };
+		class 332nd_Uniform_Clone_Asuka
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Asuka";
+        };
+		/* class 332nd_Uniform_Clone_Frankenburg
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Frankenburg";
+        }; */
     };
 };
