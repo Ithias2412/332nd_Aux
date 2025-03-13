@@ -28,12 +28,6 @@ class CfgMusic
 		duration = 69;
 		musicClass = "332nd_Music_Rock";
 	};
-    {
-        name = "Brain Stew";
-		sound[] = {"332nd_Aux\music\music\Rock\brain_Stew.ogg",1,1};
-		duration = 190;
-		musicClass = "332nd_Music_Rock";
-    };
     class Highway_to_Hell
     {
         name = "Highway To Hell";
