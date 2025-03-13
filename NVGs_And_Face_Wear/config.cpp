@@ -77,6 +77,19 @@ class CfgWeapons
 			uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
 		};
 	};
+	class 332nd_NVG_Visor_Asuka: 332nd_NVG_Visor
+	{
+		displayName = "[332nd] Visor (Asuka)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa"
+		};
+	};
 };
 class CfgGlasses
 {
@@ -147,7 +160,22 @@ class CfgGlasses
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG.paa"};
 		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
 	};
-
+	class 332nd_Facewear_Visor_Cherry: 332nd_Facewear_Visor
+	{
+		scope = 2;
+		displayName = "[332nd] Visor (Cherry)";
+		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa"};
+	};
+	class 332nd_Facewear_Visor_Cherry_Off: 332nd_Facewear_Visor
+	{
+		scope = 2;
+		displayName = "[332nd] Visor (Cherry Off)";
+		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa"};
+	};
 //White
 	class 332nd_Facewear_XO_White :332nd_Facewear_Base
 	{
