@@ -29,8 +29,8 @@ class CfgMagazines
 	class 332nd_DLT_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_950mm_Ball";
-		count = 1;
-		displayname = "DLT 1 Round Energy Cell";
+		count = 3;
+		displayname = "DLT 3 Round Energy Cell";
 		mass = 15;
 		scope = 2;
 	};

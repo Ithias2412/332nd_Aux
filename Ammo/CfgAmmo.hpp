@@ -209,7 +209,7 @@ class CfgAmmo
 		ACE_bulletMass = 233.276;
 		hit = 120;
 		indirectHit = 10;
-		caliber = 80;
+		caliber = 20;
 		indirectHitRange = 5; 
 		deflecting = -1;
 	};
