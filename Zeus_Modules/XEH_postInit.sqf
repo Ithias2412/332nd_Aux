@@ -1339,7 +1339,7 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 			{
 				params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 				
-				_options = ["AT-TE", "Juggernaut"];
+				_options = ["AT-TE", "PX-10"];
 				
 				["Standby for Deployment", [
 					["sideS", ["Side select (ONLY ONE!)", "The side the spawned dropped units will be on."], [east]],

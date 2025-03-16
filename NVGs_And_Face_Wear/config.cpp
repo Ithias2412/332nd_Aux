@@ -87,7 +87,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa"
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa" 
+		};
+	};
+	class 332nd_NVG_Visor_Cherryy: 332nd_NVG_Visor
+	{
+		displayName = "[332nd] Visor (Cherryy)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa" 
 		};
 	};
 };
@@ -120,23 +133,12 @@ class CfgGlasses
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
 		scope = 1;
 	};
-	class G_Diving;
-	class 332nd_Clone_HelmetInterior_P2: G_Diving
+	class SWLB_clone_P2_HUD;
+	class 332nd_Clone_HelmetInterior_P2: SWLB_clone_P2_HUD
 	{
 		scope = 2;
 		author = "Frankie";
 		displayName = "[332nd] P2 Helmet Interior";
-		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneHelmetP2_interior_ui_ca.paa";
-		model = "\A3\Weapons_f\DummyNVG";
-		identityTypes[] = {"NoGlasses",0};
-		mass = 4;
-		ACE_Color[] = {0,0,0};
-		ACE_TintAmount = 0;
-		ACE_Overlay = "";
-		ACE_OverlayCracked = "";
-		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
-		ACE_Resistance = 2;
-		ACE_Protection = 1;
 	};
 	class 332nd_Facewear_Rangefinder :332nd_Facewear_Base
 	{
@@ -160,21 +162,34 @@ class CfgGlasses
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG.paa"};
 		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
 	};
-	class 332nd_Facewear_Visor_Cherry: 332nd_Facewear_Visor
+//Customs
+	class 332nd_Facewear_Visor_Cherryy: 332nd_Facewear_Visor
 	{
 		scope = 2;
-		displayName = "[332nd] Visor (Cherry)";
-		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+		displayName = "[332nd] Visor (On / Cherryy)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa"};
 	};
-	class 332nd_Facewear_Visor_Cherry_Off: 332nd_Facewear_Visor
+	class 332nd_Facewear_Visor_Cherryy_Off: 332nd_Facewear_Visor_Off
 	{
 		scope = 2;
-		displayName = "[332nd] Visor (Cherry Off)";
-		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
+		displayName = "[332nd] Visor (Off / Cherryy)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa"};
+	};
+	class 332nd_Facewear_Visor_Asuka: 332nd_Facewear_Visor
+	{
+		scope = 2;
+		displayName = "[332nd] Visor (On / Asuka)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa"};
+	};
+	class 332nd_Facewear_Visor_Asuka_Off: 332nd_Facewear_Visor_Off
+	{
+		scope = 2;
+		displayName = "[332nd] Visor (Off / Asuka)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa"};
 	};
 //White
 	class 332nd_Facewear_XO_White :332nd_Facewear_Base
@@ -211,7 +226,7 @@ class XtdGearModels
         {
             label = "Night Vision";
             author = "Ithias";
-			options[] = { "Type", };
+			options[] = { "Type", "Customs",};
             class Type
             {
                 label = "Type";
@@ -237,6 +252,25 @@ class XtdGearModels
                     //image = "xxx";
                 };
             };
+            class Customs
+            {
+                label = "Customs";
+				values[] = { "Cherryy", "Asuka",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Cherryy
+                {
+                    label = "Cherryy";
+                    //description = "Default";
+                    //image = "xxx";
+                };
+				class Asuka
+                {
+                    label = "Asuka";
+                    //description = "SCT+";
+                    //image = "xxx";
+                };
+            };
         };
     };
     class CfgGlasses 
@@ -245,7 +279,7 @@ class XtdGearModels
         {
             label = "Facewear";
             author = "Ithias";
-			options[] = { "Type", "Variant", };
+			options[] = { "Type", "Variant", "Customs",};
             class Type
             {
                 label = "Type";
@@ -296,6 +330,25 @@ class XtdGearModels
                     //image = "xxx";
                 };
 			};
+            class Customs
+            {
+                label = "Customs";
+				values[] = { "Cherryy", "Asuka", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Cherryy
+                {
+                    label = "Cherryy";
+                    //description = "Default";
+                    //image = "xxx";
+                };
+                class Asuka
+                {
+                    label = "Asuka";
+                    //description = "Not Default";
+                    //image = "xxx";
+                };
+			};
         };
     };
 };
@@ -318,6 +371,16 @@ class XtdGearInfos
         {
             model = "332nd_NVG_Extended";
             Type = "Visor";
+        };
+        class 332nd_NVG_Visor_Cherryy
+        {
+            model = "332nd_NVG_Extended";
+            Customs = "Cherryy";
+        };
+        class 332nd_NVG_Visor_Asuka  
+        {
+            model = "332nd_NVG_Extended";
+            Customs = "Asuka";
         };
     };
     class CfgGlasses 
@@ -356,6 +419,29 @@ class XtdGearInfos
             model = "332nd_Facewear_Extended";
             Type = "Overlay";
 		};
+        class 332nd_Facewear_Visor_Cherryy
+        {
+            model = "332nd_Facewear_Extended";
+            Customs = "Cherryy";
+            Variant = "B";
+        };
+        class 332nd_Facewear_Visor_Cherryy_Off
+        {
+            model = "332nd_Facewear_Extended";
+            Customs = "Cherryy";
+            Variant = "A";
+        };
+        class 332nd_Facewear_Visor_Asuka
+        {
+            model = "332nd_Facewear_Extended";
+            Customs = "Asuka";
+            Variant = "B";
+        };
+        class 332nd_Facewear_Visor_Asuka_Off
+        {
+            model = "332nd_Facewear_Extended";
+            Customs = "Asuka";
+            Variant = "A";
+        };
     };
-
 };
