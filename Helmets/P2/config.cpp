@@ -181,6 +181,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Kiyler.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Peter: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Peter)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Peter.paa"
+		};
+	};
 	class 332nd_Helmet_P2_Roseiry: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Roseiry)";
@@ -253,6 +265,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Tokyo.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Walkie: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Walkie)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Walkie.paa"
+		};
+	};
 	class 332nd_Helmet_P2_Weaver: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Weaver)";
@@ -309,7 +333,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Body", "Cherryy", "Crow", "Frankenburg", "Hicks", "Kilyer", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Weaver", };
+				values[] = { "Asuka", "Body", "Cherryy", "Crow", "Frankenburg", "Hicks", "Kilyer", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -359,6 +383,12 @@ class XtdGearModels
                     description = "Bout to crash out";
                     //image = "xxx";
                 };
+				class Peter
+                {
+                    label = "Peter";
+                    description = "Bout to crash out";
+                    //image = "xxx";
+                };
 				class Roseiry
                 {
                     label = "Roseiry";
@@ -399,6 +429,12 @@ class XtdGearModels
 				{
 					label = "Tokyo";
 					description = "VR Gamer";
+					//image = "xxx";
+				};
+				class Walkie
+				{
+					label = "Walkie";
+					description = "Whispers drugs into my system";
 					//image = "xxx";
 				};
 				class Weaver
@@ -477,6 +513,11 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ithias";
         };
+		class 332nd_Helmet_P2_Peter
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Peter";
+        };
         class 332nd_Helmet_P2_Roseiry
         {
             model = "332nd_Helmets_P2_Extended";
@@ -511,6 +552,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Tokyo";
+        };
+		class 332nd_Helmet_P2_Walkie
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Walkie";
         };
 		class 332nd_Helmet_P2_Weaver
         {
