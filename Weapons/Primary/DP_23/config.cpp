@@ -44,6 +44,21 @@ class cfgWeapons
 		{
 			"Single",
 		};
+		class EventHandlers
+		{
+			fired = "_this call CBA_fnc_weaponEvents";
+		};
+		class CBA_weaponEvents
+		{
+			delay = 0;
+			handAction = "WBK_HaloShotgun_Pump";
+			hasOptic = 1;
+			onEmpty = 0;
+			sound = "optre_shotgun_pump";
+			soundEmpty = "";
+			soundLocation = "LeftHandMiddle1";
+			soundLocationEmpty = "";
+		};
 		class Single: Mode_SemiAuto
 		{
 			sounds[]=
@@ -73,7 +88,7 @@ class cfgWeapons
 					1
 				};
 			};
-			reloadTime=1;
+			reloadTime=1.1;
 			recoil = "recoil_single_primary_3outof10";
 			recoilProne = "recoil_single_primary_prone_3outof10";
 			dispersion=0.00073;
