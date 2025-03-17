@@ -77,6 +77,33 @@ class CfgWeapons
 			uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
 		};
 	};
+	class 332nd_NVG_Inverted_Visor: OPTRE_NVG
+	{
+		displayName = "[332nd] Visor (Inverted)";
+		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_ca.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted.paa"
+		};
+		visionMode[] = 
+		{
+			"Normal","NVG",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 5;
+			modelOff = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
+			type = 616;
+			uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+		};
+	};
 	class 332nd_NVG_Visor_Asuka: 332nd_NVG_Visor
 	{
 		displayName = "[332nd] Visor (Asuka)";
@@ -162,6 +189,23 @@ class CfgGlasses
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG.paa"};
 		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
 	};
+	class 332nd_Facewear_Visor_Inverted :332nd_Facewear_Base
+	{
+		scope = 2;
+		displayName = "[332nd] Visor Inverted (On)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted.paa"};
+		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_ca.paa";
+	};
+	class 332nd_Facewear_Visor_Off_Inverted :332nd_Facewear_Visor
+	{
+		scope = 2;
+		displayName = "[332nd] Visor Inverted (Off)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted.paa"};
+		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
+	};
 //Customs
 	class 332nd_Facewear_Visor_Cherryy: 332nd_Facewear_Visor
 	{
@@ -230,7 +274,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Chip", "Visor", "Rangefinder", };
+				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Chip
@@ -242,6 +286,12 @@ class XtdGearModels
 				class Visor
                 {
                     label = "Visor";
+                    description = "SCT+";
+                    //image = "xxx";
+                };
+				class Visor_Inverted
+                {
+                    label = "Visor Inverted";
                     description = "SCT+";
                     //image = "xxx";
                 };
@@ -283,7 +333,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Visor", "Rangefinder", "Commander", "Overlay", };
+				values[] = { "Visor", "Visor_Inverted", "Rangefinder", "Commander", "Overlay", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Commander
@@ -295,6 +345,12 @@ class XtdGearModels
 				class Visor
                 {
                     label = "Visor";
+                    description = "SCT+";
+                    //image = "xxx";
+                };
+				class Visor_Inverted
+                {
+                    label = "Visor Inverted";
                     description = "SCT+";
                     //image = "xxx";
                 };
@@ -372,6 +428,11 @@ class XtdGearInfos
             model = "332nd_NVG_Extended";
             Type = "Visor";
         };
+		class 332nd_NVG_Inverted_Visor
+        {
+            model = "332nd_NVG_Extended";
+            Type = "Visor_Inverted";
+        };
         class 332nd_NVG_Visor_Cherryy
         {
             model = "332nd_NVG_Extended";
@@ -400,6 +461,18 @@ class XtdGearInfos
         {
             model = "332nd_Facewear_Extended";
             Type = "Visor";
+            Variant = "A";
+        };
+		class 332nd_Facewear_Visor_Inverted
+        {
+            model = "332nd_Facewear_Extended";
+            Type = "Visor_Inverted";
+            Variant = "B";
+        };
+        class 332nd_Facewear_Visor_Off_Inverted
+        {
+           model = "332nd_Facewear_Extended";
+            Type = "Visor_Inverted";
             Variant = "A";
         };
         class 332nd_Facewear_XO_White
