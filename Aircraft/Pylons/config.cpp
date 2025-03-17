@@ -197,7 +197,6 @@ class CfgWeapons
 	class 332nd_Hammer_I: missiles_ASRAAM
 	{
 		displayName = "[332nd] Hammer I";
-		weaponLockSystem = 8; //Was 2
 		magazines[] = 
 		{
 			"332nd_Hammer_I_Mag",
