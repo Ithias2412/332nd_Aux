@@ -93,7 +93,7 @@ class CfgVehicles
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel";
 	};
 };
-class XtdGearModels
+/*class XtdGearModels
 {
     class CfgWeapons 
     {
