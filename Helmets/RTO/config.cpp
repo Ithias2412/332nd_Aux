@@ -84,6 +84,19 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_RTO_Seelig.paa"
 		};
 	};
+	class 332nd_Helmet_RTO_Cin: 332nd_Helmet_RTO_Base
+	{
+		displayName="[332nd] P2 Radio Helmet (Cin)";
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_RTO_Cin.paa"
+		};
+	};
 //Customs
 
 };

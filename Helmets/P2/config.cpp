@@ -333,7 +333,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Body", "Cherryy", "Crow", "Frankenburg", "Hicks", "Kilyer", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
+				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Frankenburg", "Hicks", "Kilyer", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -352,6 +352,12 @@ class XtdGearModels
                 {
                     label = "Cherryy";
                     description = "Piller of the community";
+                    //image = "xxx";
+                };
+				class Cin
+                {
+                    label = "Cin";
+                    description = "Where's the 9 Line";
                     //image = "xxx";
                 };
 				class Crow
@@ -386,7 +392,7 @@ class XtdGearModels
 				class Peter
                 {
                     label = "Peter";
-                    description = "Bout to crash out";
+                    description = "Hey there CMDR";
                     //image = "xxx";
                 };
 				class Roseiry
@@ -487,6 +493,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Cherryy";
+        };
+		class 332nd_Helmet_RTO_Cin
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Cin";
         };
 		class 332nd_Helmet_P2_Crow
         {
