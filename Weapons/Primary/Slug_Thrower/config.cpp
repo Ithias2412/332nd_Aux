@@ -507,6 +507,14 @@ class cfgWeapons
 				};
 			};
 		};
+		class LinkedItems
+		{
+			class LinkedItemsMuzzle 
+			{
+				item = "Slug_Thrower_Muzzle";
+				slot = "MuzzleSlot";
+			};
+		};
 	};
 	class muzzle_snds_H;
 	class Slug_Thrower_Muzzle: muzzle_snds_H

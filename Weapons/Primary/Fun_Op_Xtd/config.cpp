@@ -85,7 +85,7 @@ class XtdGearInfos
             model = "332nd_Weapons_Fun_Ops_Extended";
             Westar = "GRN";
         };
-        class 332nd_DLT19
+        class 332nd_DLT19X
         {
             model = "332nd_Weapons_Fun_Ops_Extended";
             DLT = "MRK";

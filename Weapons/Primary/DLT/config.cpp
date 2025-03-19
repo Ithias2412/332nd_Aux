@@ -6,7 +6,7 @@ class CfgPatches
         requiredAddons[] = {"A3_Weapons_F"};
         requiredVersion = 0.1;
         units[] = {};
-        weapons[] = {"332nd_DLT19"};
+        weapons[] = {"332nd_DLT19X"};
     };
 };
 
@@ -15,7 +15,7 @@ class Mode_FullAuto;
 class CfgWeapons
 {
     class Rifle_Base_F;
-    class 332nd_DLT19: Rifle_Base_F
+    class 332nd_DLT19X: Rifle_Base_F
     {
         scope = 2;
         author = "332nd Auxiliary";

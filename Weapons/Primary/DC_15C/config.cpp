@@ -21,6 +21,7 @@ class UnderBarrelSlot;
 class MuzzleSlot;
 class Mode_FullAuto;
 class Mode_SemiAuto;
+class Mode_Burst;
 
 class cfgWeapons 
 {
@@ -39,7 +40,7 @@ class cfgWeapons
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC23\DC23_ui.paa";
 		magazines[] =
 		{
-			"332nd_DC15C_Mag"
+			"332nd_DC15C_Mag",
 		};
 		magazineWell[]=
 		{
@@ -48,7 +49,8 @@ class cfgWeapons
 		modes[] = 
 		{
 			"FullAuto",
-			"Single"
+			"Single",
+			//"Burst"
 		};
 		class 3AS_15CGL: UGL_F
 		{
@@ -59,7 +61,7 @@ class cfgWeapons
 				"332nd_SmokeRed_LauncherGrenade",
 				"332nd_SmokeGreen_LauncherGrenade",
 				"332nd_SmokeBlue_LauncherGrenade",
-				"332nd_SmokePurple_LauncherGrenade"
+				"332nd_SmokePurple_LauncherGrenade",
 			};
 			magazineWell[]={};
 		};
@@ -79,6 +81,41 @@ class cfgWeapons
 				opticsZoomMin = 0.375;
 				useModelOptics = 0;
 				visionMode[] = {};
+			};
+		};
+		class Burst: Mode_Burst
+		{
+			reloadTime=0.12;
+			dispersion=0.00087;
+			minRange=0;
+			minRangeProbab=0.89999998;
+			midRange=15;
+			midRangeProbab=0.69999999;
+			maxRange=30;
+			maxRangeProbab=0.1;
+			soundContinuous=0;
+			soundBurst=0;
+			recoil="recoil_auto_primary_3outof10";
+			recoilProne="recoil_auto_primary_prone_3outof10";
+			sounds[]=
+			{
+				"StandardSound",
+				"SilencedSound"
+			};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_DC15C_Shot_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					""
+				};
 			};
 		};
 		class FullAuto: Mode_FullAuto
@@ -164,7 +201,7 @@ class cfgWeapons
 					"332nd_Mode_B_Zoom_2_Forward",
 					"332nd_Mode_C_Zoom_2_Forward",
 					"332nd_Mode_D_Zoom_2_Forward",
-					"332nd_Mode_Seelig_Point_Zoom_2"
+					"332nd_Mode_Seelig_Point_Zoom_2_Forward",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

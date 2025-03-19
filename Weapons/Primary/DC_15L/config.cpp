@@ -43,7 +43,7 @@ class cfgWeapons
 		modes[]=
 		{
 			"FullAuto_15L",
-			"FastAuto_15L",
+			//"FastAuto_15L",
 		};
 		class OpticsModes
 		{
@@ -69,11 +69,12 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_3AS_C_Acog",
-					"332nd_Mode_A_Zoom_2_Raised",
-					"332nd_Mode_B_Zoom_2_Raised",
-					"332nd_Mode_C_Zoom_2_Raised",
-					"332nd_Mode_D_Zoom_2_Raised",
+					"332nd_Mode_A_Raised",
+					"332nd_Mode_A_Zoom_2_Forward",
+					"332nd_Mode_B_Raised",
+					"332nd_Mode_C_Raised",
+					"332nd_Mode_D_Raised",
+					"332nd_Mode_Seelig_Point_Raised",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
@@ -111,7 +112,7 @@ class cfgWeapons
 			burst = 1;
 			burstRangeMax = -1;
 			canShootInWater = 0;
-			dispersion = 0.00058;
+			dispersion = 0.00174;
 			displayName = "Full";
 			ffCount = 1;
 			ffFrequency = 11;
@@ -127,7 +128,7 @@ class cfgWeapons
 			multiplier = 1;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
-			reloadTime = 0.15;
+			reloadTime = 0.12;
 			requiredOpticType = -1;
 			showToPlayer = 1;
 			sound[] = {"",10,1};
@@ -166,7 +167,7 @@ class cfgWeapons
 			burst = 1;
 			burstRangeMax = -1;
 			canShootInWater = 0;
-			dispersion = 0.00058;
+			dispersion = 0.00174;
 			displayName = "Full";
 			ffCount = 1;
 			ffFrequency = 11;
@@ -209,5 +210,4 @@ class cfgWeapons
 			weaponSoundEffect = "";			
 		};
 	};
-
 };

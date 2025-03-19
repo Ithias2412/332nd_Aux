@@ -47,6 +47,13 @@ class cfgWeapons
 		baseWeapon="332nd_DC15X";
 		recoil="recoil_mx";
 		reloadAction = "GestureReload_IDAReload1";
+		reloadMagazineSound[] = 
+		{
+			"\Indecisive_Armoury_Sounds\blaster_reload_1.ogg",
+			1.5,
+			1,
+			100
+		};
 		hiddenSelections[]=
 		{
 			"camo1"

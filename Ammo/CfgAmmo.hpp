@@ -74,7 +74,7 @@ class CfgAmmo
 		bulletFly3[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_3.wss",2.23872,1,100};
 		bulletFly4[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_4.wss",2.23872,1,100};
 		bulletFly5[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_5.wss",2.23872,1,100};
-		caliber = 1.5;
+		caliber = 1;
 		cartridge = "";
 		coefGravity = 0.01;
 		dangerRadiusBulletClose = 10;
@@ -127,79 +127,42 @@ class CfgAmmo
 			hitWood = "IDA_ImpactEffect";
 		};
 	};
-	class 332nd_Base_Shotgun_Ammo: ShotgunBase
-	{
-		ace_vehicle_damage_incendiary = 0.1;
-		aiAmmoUsageFlags = "64 + 128 + 256";
-		airFriction = -0.00018;
-		airLock = 1;
-		audibleFire = 45;
-		caliber = 1;
-		cartridge = "FxCartridge_slug";
-		coefGravity = 0.01;
-		dangerRadiusBulletClose = 10;
-		dangerRadiusHit = 12;
-		deflecting = 0;
-		deflectionSlowDown = 1.0;
-		effectFlare = "FlareShell";
-		effectFly = "3AS_PlasmaBolt_Blue_Fly";
-		effectsFire = "CannonFire";
-		hit = 5;
-		indirectHit = 2;
-		indirectHitRange = 0.5;
-		initTime = 0;
-		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
-		muzzleEffect = "";
-		simulation = "shotSpread";
-		suppressionRadiusBulletClose = 6;
-		suppressionRadiusHit = 8;
-		timeToLive = 10;
-		tracerEndTime = 10;
-		tracerScale = 0.975;
-		tracerStartTime = 0;
-		typicalSpeed = 472;
-	};
-	class 332nd_Base_Shotgun_Ammo_Sub: SubmunitionBase
-	{
-		ace_vehicle_damage_incendiary = 0.1;
-		aiAmmoUsageFlags = "64 + 128 + 256";
-		airFriction = -0.00018;
-		airLock = 1;
-		audibleFire = 45;
-		caliber = 1;
-		cartridge = "";
-		coefGravity = 0.01;
-		dangerRadiusBulletClose = 10;
-		dangerRadiusHit = 12;
-		deflecting = 0;
-		deflectionSlowDown = 1.0;
-		effectFlare = "FlareShell";
-		effectFly = "3AS_PlasmaBolt_Blue_Fly";
-		effectsFire = "CannonFire";
-		hit = 5;
-		indirectHit = 2;
-		indirectHitRange = 0.5;
-		initTime = 0;
-		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
-		muzzleEffect = "";
-		simulation = "shotSpread";
-		suppressionRadiusBulletClose = 6;
-		suppressionRadiusHit = 8;
-		timeToLive = 10;
-		tracerEndTime = 10;
-		tracerScale = 1;
-		tracerStartTime = 0.05;
-		typicalSpeed = 472;
-		submunitionAmmo = "DBA_85mm_Pellets";
-		submunitionConeAngle = 4;
-		submunitionConeType[] = {"randomcenter",16};
-		submunitionDirectionType = "SubmunitionModelDirection";
-		submunitionInitialOffset[] = {0,0,0.2};
-		submunitionInitSpeed = 415;
-		submunitionParentSpeedCoef = 0;
-		warheadName = "AP";
-	};
 
+	//Ammo Overhaul x2
+	class 332nd_Gas_Level_M1: 332nd_Base_Ammo_IDA
+	{
+		// 
+		hit = 20;
+		caliber = 2;
+	};
+	class 332nd_Gas_Level_M2: 332nd_Base_Ammo_IDA
+	{
+		// 
+		hit = 15;
+		caliber = 2;
+	};
+	class 332nd_Gas_Level_M3: 332nd_Base_Ammo_IDA
+	{
+		// 
+		hit = 10;
+		caliber = 2;
+	};
+	class 332nd_Gas_Level_S1: 332nd_Base_Ammo_IDA
+	{
+		// B1=2 B2=12
+		hit = 15;
+	};
+	class 332nd_Gas_Level_S2: 332nd_Base_Ammo_IDA
+	{
+		// B1=3 B2=20
+		hit = 10;
+	};
+	class 332nd_Gas_Level_S3: 332nd_Base_Ammo_IDA
+	{
+		// B1=4 b2=22
+		hit = 7;
+		//hit = 8;
+	};
 
 	//Rifle Ammo 
 	class 332nd_950mm_Ball: 332nd_Base_Ammo_IDA
@@ -235,6 +198,7 @@ class CfgAmmo
 	{
 		hit=10;
 		caliber=1;
+		typicalspeed = 800;
 	};
 	class 332nd_762x51_Ball: 332nd_Base_Ammo_IDA
 	{

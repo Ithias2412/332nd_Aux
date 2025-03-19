@@ -178,7 +178,7 @@ class cfgWeapons
 				};
 			};
 			//reloadTime=0.12;
-			reloadTime=0.18;
+			reloadTime = 0.17142;
 			burst = 3;
 			textureType = "burst";
 			recoil="recoil_auto_primary_3outof10";
@@ -221,7 +221,7 @@ class cfgWeapons
 				};
 			};
 			//reloadTime=0.12;
-			reloadTime=0.18;
+			reloadTime = 0.17142;
 			recoil="recoil_auto_primary_3outof10";
 			recoilProne="recoil_auto_primary_prone_3outof10";
 			dispersion=0.00073000003;

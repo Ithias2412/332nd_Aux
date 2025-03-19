@@ -50,6 +50,7 @@ class cfgWeapons
 		picture="\MRC\JLTS\weapons\Z6\data\ui\Z6_ui_ca.paa";
 		model="\MRC\JLTS\weapons\Z6\Z6.p3d";
 		recoil="IDA_recoil_Z6";
+		WBK_UseHeavyWeaponFramework="true";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -105,7 +106,7 @@ class cfgWeapons
 			burst = 1;
 			burstRangeMax = -1;
 			canShootInWater = 0;
-			dispersion = 0.00073;
+			dispersion = 0.00087;
 			displayName = "Full";
 			ffCount = 1;
 			ffFrequency = 11;
@@ -167,7 +168,7 @@ class cfgWeapons
 			burst = 1;
 			burstRangeMax = -1;
 			canShootInWater = 0;
-			dispersion = 0.00073;
+			dispersion = 0.00087;
 			displayName = "Full";
 			ffCount = 1;
 			ffFrequency = 11;
@@ -289,10 +290,11 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_Mode_A_Zoom_2_Raised",
-					"332nd_Mode_B_Zoom_2_Raised",
-					"332nd_Mode_C_Zoom_2_Raised",
-					"332nd_Mode_D_Zoom_2_Raised",
+					"332nd_Mode_A_Raised",
+					"332nd_Mode_B_Raised",
+					"332nd_Mode_C_Raised",
+					"332nd_Mode_D_Raised",
+					"332nd_Mode_Seelig_Point_Raised",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

@@ -63,10 +63,18 @@ class CfgMagazines
 	};
 	class 332nd_DC15L_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_762x51_Ball";
+		ammo = "332nd_Gas_Level_M2";
 		count = 200;
 		displayname = "DC-15L 200 Round Energy Cell";
 		mass = 40;
+		scope = 2;
+	};
+	class 332nd_DLT19L_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_M1";
+		count = 100;
+		displayname = "DLT-19L 100 Round Energy Cell";
+		mass = 28.5;
 		scope = 2;
 	};
 	class 332nd_Valken_Mag: 332nd_Base_Mag
@@ -79,7 +87,7 @@ class CfgMagazines
 	};
 	class 332nd_DC15A_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_762x39_Ball";
+		ammo = "332nd_Gas_Level_S1";
 		count = 30;
 		displayname = "DC-15A 30 Round Energy Cell";
 		mass = 10;
@@ -87,10 +95,10 @@ class CfgMagazines
 	};
 	class 332nd_DC15C_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_556x45_Ball";
+		ammo = "332nd_Gas_Level_S2";
 		count = 45;
 		displayname = "DC-15C 45 Round Energy Cell";
-		mass = 8.3;
+		mass = 8.3; 
 		scope = 2;
 	};
 	class 332nd_Westar_Mag: 332nd_Base_Mag
@@ -103,18 +111,26 @@ class CfgMagazines
 	}
 	class 332nd_Z6_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_556x45_Ball";
+		ammo = "332nd_Gas_Level_M3";
 		count = 400;
 		displayname = "Z-6 400 Round Energy Cell";
 		mass = 40;
 		scope = 2;
 	};
-	class 332nd_DC15S_Mag: 332nd_Base_Mag
+	class 332nd_DC15S_Low_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_45ACP";
+		ammo = "332nd_Gas_Level_S3";
 		count = 60;
-		displayname = "DC-15S 60 Round Energy Cell";
-		mass = 6.6;
+		displayname = "DC-15S 60 Round Low Power Energy Cell";
+		mass = 6.6; 
+		scope = 2;
+	};
+	class 332nd_DC15S_High_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_S2";
+		count = 45;
+		displayname = "DC-15S 45 Round High Power Energy Cell";
+		mass = 8.3; 
 		scope = 2;
 	};
 	class 332nd_DC17S_Mag: 332nd_Base_Mag
