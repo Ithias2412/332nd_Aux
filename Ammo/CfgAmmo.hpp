@@ -129,23 +129,29 @@ class CfgAmmo
 	};
 
 	//Ammo Overhaul x2
+	class 332nd_Gas_Level_L2: 332nd_Base_Ammo_IDA
+	{
+		// B1=2 B2=6 
+		hit = 25;
+		caliber = 2;
+	};
 	class 332nd_Gas_Level_M1: 332nd_Base_Ammo_IDA
 	{
-		// 
+		// B1=2 B2=6 
 		hit = 20;
-		caliber = 2;
+		caliber = 1.5;
 	};
 	class 332nd_Gas_Level_M2: 332nd_Base_Ammo_IDA
 	{
-		// 
+		// B1=2 B2=12
 		hit = 15;
-		caliber = 2;
+		caliber = 1.5;
 	};
 	class 332nd_Gas_Level_M3: 332nd_Base_Ammo_IDA
 	{
-		// 
+		// B1=3 B2=18
 		hit = 10;
-		caliber = 2;
+		caliber = 1.5;
 	};
 	class 332nd_Gas_Level_S1: 332nd_Base_Ammo_IDA
 	{
@@ -161,7 +167,6 @@ class CfgAmmo
 	{
 		// B1=4 b2=22
 		hit = 7;
-		//hit = 8;
 	};
 
 	//Rifle Ammo 

@@ -14,6 +14,11 @@ class CfgPatches {
 };
 //#include "xtdGear.hpp"
 class Mode_SemiAuto;
+class WeaponSlotsInfo;
+class CowsSlot;
+class UnderBarrelSlot;
+class MuzzleSlot;
+class PointerSlot;
 
 class cfgWeapons 
 {
@@ -75,6 +80,32 @@ class cfgWeapons
 				};
 			};
 		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=60;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]=
+				{
+					"332nd_3AS_VK38X",
+				};
+				iconPicture="";
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[]={};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]={};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[]=
+				{
+					"3AS_Bipod_VK38X_f",
+				};
+			};
+		};
 	};
-
 };

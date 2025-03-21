@@ -72,14 +72,14 @@ class CfgMagazines
 	class 332nd_DLT19L_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_M1";
-		count = 100;
-		displayname = "DLT-19L 100 Round Energy Cell";
-		mass = 28.5;
+		count = 250;
+		displayname = "DLT-19L 250 Round Energy Cell";
+		mass = 100;
 		scope = 2;
 	};
 	class 332nd_Valken_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_338_Lapua_Ball";
+		ammo = "332nd_Gas_Level_L2";
 		count = 20;
 		displayname = "Valken 20 Round Energy Cell";
 		mass = 13.6;
