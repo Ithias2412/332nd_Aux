@@ -1,80 +1,68 @@
 class CfgPatches {
-	class 332nd_DC15X {
+	class 332nd_DW_32S {
 		units[] = 
         {
 			""
         };
 		weapons[] = 
         {
-            "332nd_DC15X",
+            "332nd_DW_32S",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
 	};
 };
 //#include "xtdGear.hpp"
+class Mode_SemiAuto;
+class WeaponSlotsInfo;
 class CowsSlot;
 class UnderBarrelSlot;
 class MuzzleSlot;
 class PointerSlot;
-class Mode_SemiAuto;
 class Mode_FullAuto;
-class WeaponSlotsInfo;
 class GunParticles;
+
 class cfgWeapons 
 {
     class ItemInfo;
-	class optic_lrps;
-	class InventoryOpticsItem_Base_F;
-	class JLTS_DC15X_scope;
-	class UGL_F;
-	class arifle_MX_Base_F;
+	class JLTS_DW32S;
+	class JLTS_stun_muzzle;
 
 //Primary
-
-	class 332nd_DC15X: arifle_MX_Base_F
+	class 332nd_DW_32S: JLTS_DW32S
 	{
 		JLTS_hasElectronics=1;
-		JLTS_hasEMPProtection=0;
-		JLTS_friedItem="JLTS_DC15X_fried";
-		JLTS_repairTime=33;
-		author="Ithias";
+		JLTS_hasEMPProtection=1;
+		JLTS_friedItem="";
+		author="MrClock";
 		scope=2;
-		displayName="[332nd] DC-15X (MRK)";
-		descriptionShort="$STR_JLTS_descs_BlasterRifle";
-		picture="\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
-		model="\MRC\JLTS\weapons\DC15X\DC15X.p3d";
-		baseWeapon="332nd_DC15X";
-		recoil="recoil_mx";
-		reloadAction = "GestureReload_IDAReload1";
-		reloadMagazineSound[] = 
-		{
-			"\Indecisive_Armoury_Sounds\blaster_reload_1.ogg",
-			1.5,
-			1,
-			100
-		};
+		displayName="[332nd] DW-32S (MRK)";
+		descriptionShort="$STR_JLTS_descs_BlasterRifleScoped";
+		picture="\MRC\JLTS\weapons\DW32S\data\ui\DW32S_ui_ca.paa";
+		model="\MRC\JLTS\weapons\DW32S\DW32S.p3d";
+		reloadAction = "3AS_GestureReload_DC17M";
 		hiddenSelections[]=
 		{
 			"camo1"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MRC\JLTS\weapons\DC15X\data\DC15X_co.paa"
+			"\MRC\JLTS\weapons\DW32S\data\DW32S_co.paa"
 		};
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
-			"\MRC\JLTS\weapons\DC15X\anims\DC15X_handanim.rtm"
+			"\MRC\JLTS\weapons\DW32S\anims\DW32S_handanim.rtm"
 		};
 		magazines[]=
 		{
-			"332nd_DC15X_Mag"
+			"332nd_DW_32S_Mag"
 		};
 		magazineWell[]={};
 		modes[]=
 		{
-			"Single"
+			"Single",
+			"FullAuto",
 		};
 		fireLightDiffuse[]={0,0,1};
 		drySound[]=
@@ -84,6 +72,16 @@ class cfgWeapons
 			1,
 			10
 		};
+		muzzles[]=
+		{
+			"this",
+			//"Stun"
+		};
+		class Stun: JLTS_stun_muzzle
+		{
+		};
+		distanceZoomMin=400;
+		distanceZoomMax=400;
 		class Single: Mode_SemiAuto
 		{
 			sounds[]=
@@ -99,21 +97,29 @@ class cfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15x\DC15x.ogg",2.5,1,1800};
-				beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15x\DC15x.ogg",1,1,400};
-				soundBegin[] = {"begin1",1};
-				soundBeginWater[] = {"beginwater1",1};
-				weaponSoundEffect = "";
+				weaponSoundEffect="";
+				begin1[]=
+				{
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
+					1,
+					1.1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
 			};
-			reloadTime=0.5;
-			recoil = "recoil_single_primary_3outof10";
-			recoilProne = "recoil_single_primary_prone_3outof10";
-			dispersion=0.00018;
+			reloadTime=0.1;
+			recoil="recoil_single_mx";
+			recoilProne="recoil_single_prone_mx";
+			dispersion = 0.00018;
 			minRange=2;
 			minRangeProbab=0.5;
-			midRange=250;
+			midRange=200;
 			midRangeProbab=0.69999999;
-			maxRange=450;
+			maxRange=400;
 			maxRangeProbab=0.30000001;
 		};
 		class FullAuto: Mode_FullAuto
@@ -134,9 +140,9 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire",
-					2.5,
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
+					1.1,
 					1800
 				};
 				soundBegin[]=
@@ -145,10 +151,10 @@ class cfgWeapons
 					1
 				};
 			};
-			reloadTime=0.096000001;
+			reloadTime=0.1;
+			dispersion = 0.00018;
 			recoil="recoil_auto_mx";
 			recoilProne="recoil_auto_prone_mx";
-			dispersion=0.00073000003;
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;
@@ -175,9 +181,9 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire",
-					2.5,
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
+					1.1,
 					1800
 				};
 				soundBegin[]=
@@ -186,7 +192,6 @@ class cfgWeapons
 					1
 				};
 			};
-			dispersion=0.00073000003;
 			showToPlayer=0;
 			burst=3;
 			aiBurstTerminable=1;
@@ -217,9 +222,9 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire",
-					2.5,
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
+					1.1,
 					1800
 				};
 				soundBegin[]=
@@ -228,13 +233,13 @@ class cfgWeapons
 					1
 				};
 			};
-			dispersion=0.00073000003;
 			requiredOpticType=1;
+			showToPlayer=0;
 			minRange=2;
 			minRangeProbab=0.2;
 			midRange=450;
 			midRangeProbab=0.69999999;
-			maxRange=650;
+			maxRange=600;
 			maxRangeProbab=0.2;
 			aiRateOfFire=6;
 			aiRateOfFireDistance=600;
@@ -257,9 +262,9 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire",
-					2.5,
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
+					1.1,
 					1800
 				};
 				soundBegin[]=
@@ -268,33 +273,59 @@ class cfgWeapons
 					1
 				};
 			};
-			dispersion=0.00073000003;
 			requiredOpticType=2;
+			showToPlayer=0;
 			minRange=100;
-			minRangeProbab=0.2;
-			midRange=550;
-			midRangeProbab=0.69999999;
-			maxRange=800;
+			minRangeProbab=0.1;
+			midRange=500;
+			midRangeProbab=0.60000002;
+			maxRange=700;
 			maxRangeProbab=0.050000001;
 			aiRateOfFire=8;
-			aiRateOfFireDistance=800;
+			aiRateOfFireDistance=700;
 		};
-		class Pointer
+		weaponInfoType="RscOptics_nightstalker";
+		modelOptics="\332nd_Aux\Misc\Optics\332nd_Zoom.p3d";
+		class OpticsModes
 		{
-			irLaserPos="laser pos";
-			irLaserEnd="laser dir";
-			irDistance=5;
+			class NCTALKEP
+			{
+				opticsID=1;
+				opticsDisplayName="WFOV";
+				useModelOptics=1;
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera1",
+					"OpticsBlur1"
+				};
+				opticsZoomMin=0.0099999998;
+				opticsZoomMax=0.041999999;
+				opticsZoomInit=0.041999999;
+				discreteDistance[]={300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+				discreteDistanceInitIndex=2;
+				distanceZoomMin=300;
+				distanceZoomMax=2400;
+				discretefov[]={0.041999999,0.0099999998};
+				discreteInitIndex=0;
+				memoryPointCamera="opticView";
+				modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+				visionMode[]=
+				{
+					"Normal",
+					"NVG",
+					"TI"
+				};
+				opticsFlare=1;
+				opticsDisablePeripherialVision=1;
+				cameraDir="";
+			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=92;
+			mass=68;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[]=
-				{
-					"332nd_JLTS_DC15X_scope"
-				};
-				iconPicture="";
+				compatibleItems[]={};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
@@ -307,14 +338,6 @@ class cfgWeapons
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
 				compatibleItems[]={};
-			};
-		};
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="332nd_JLTS_DC15X_scope";
 			};
 		};
 		class GunParticles

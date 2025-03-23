@@ -36,7 +36,7 @@ class CfgMagazines
 	};
 	class 332nd_DC15X_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_50_BMG_Ball";
+		ammo = "332nd_Gas_Level_L1";
 		count = 5;
 		displayname = "DC-15X 5 Round Energy Cell";
 		mass = 15;
@@ -45,13 +45,31 @@ class CfgMagazines
 	};
 	class 332nd_Slug_Thrower_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_Slug_Thrower_Ammo";
-		count = 5;
-		displayname = "Slug Thrower 5 Round Bullet Block";
+		ammo = "332nd_Slug_Thrower_Round";
+		count = 4;
+		displayname = "Slug Thrower 4 Round Bullet Block";
 		mass = 15;
 		scope = 2;
 		initSpeed = 1200;
 		picture = "\A3\weapons_f\data\UI\m_M24_CA.paa";
+	};
+	class 332nd_Firepuncher_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_L3_P";
+		count = 20;
+		displayname = "Firepuncher 20 Round Energy Cell";
+		mass = 13.6;
+		scope = 2;
+		initSpeed = 1200;
+	};
+	class 332nd_DW_32S_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_L3";
+		count = 20;
+		displayname = "DW-32S 20 Round Energy Cell";
+		mass = 13.6;
+		scope = 2;
+		initSpeed = 1200;
 	};
 	class 332nd_DP23_Mag: 332nd_Base_Mag
 	{
@@ -84,12 +102,21 @@ class CfgMagazines
 		displayname = "Valken 20 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
+		initSpeed = 1200;
 	};
 	class 332nd_DC15A_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_S1";
 		count = 30;
 		displayname = "DC-15A 30 Round Energy Cell";
+		mass = 10;
+		scope = 2;
+	};
+	class 332nd_EPL_2_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_S1";
+		count = 30;
+		displayname = "EPL-2 30 Round Energy Cell";
 		mass = 10;
 		scope = 2;
 	};
@@ -100,6 +127,25 @@ class CfgMagazines
 		displayname = "DC-15C 45 Round Energy Cell";
 		mass = 8.3; 
 		scope = 2;
+	};
+	class 332nd_C_24_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_S2";
+		count = 45;
+		displayname = "C-24 45 Round Energy Cell";
+		mass = 8.3; 
+		scope = 2;
+	};
+	class 332nd_C_24_Flamer_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_FlameRound";
+		count = 4;
+		displayname = "C-24 Flame Cartridge";
+		mass = 10; 
+		scope = 2;
+		initSpeed = 25;
+		lastRoundsTracer = 999;
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_ammo_flamer.paa";
 	};
 	class 332nd_Westar_Mag: 332nd_Base_Mag
 	{
@@ -214,6 +260,15 @@ class CfgMagazines
 		displayNameShort="";
 		mass=4;
 		scope=2;
+	};
+	class 332nd_HE_EPL_Mag: 332nd_HE_LGrenade_Mag
+	{
+		ammo="332nd_HE_EPL_Grenade";
+		count=3;
+		displayname="3x HE Grenade";
+		mass=12.5;
+		//initSpeed = 80;
+		initSpeed = 200;
 	};
 	class 332nd_Smoke_LauncherGrenade: 3Rnd_Smoke_Grenade_shell
 	{

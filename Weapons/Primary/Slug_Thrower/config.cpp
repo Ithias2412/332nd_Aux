@@ -372,32 +372,34 @@ class cfgWeapons
 		{
 			class optic
 			{
-				cameraDir="";
-				distanceZoomMax = 300;
-				distanceZoomMin = 300;
-				discreteDistance[]={100,200,300,400,500};
-				discretefov[]={0.25};
-				discreteDistanceInitIndex=1;
-				discreteInitIndex = 0;
-				memoryPointCamera="opticView";
-				modelOptics[]=
-				{
-					"\332nd_Aux\Misc\Optics\332nd_Zoom.p3d"
-				};
-				opticsDisablePeripherialVision=1;
-				opticsDisplayName="WFOV";
-				opticsFlare=1;
 				opticsID=1;
-				opticsPPEffects[]={};
-				opticsZoomInit=0.25;
-				opticsZoomMax=0.25;
-				opticsZoomMin=0.25;
+				opticsDisplayName="WFOV";
 				useModelOptics=1;
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera1",
+					"OpticsBlur1"
+				};
+				opticsZoomMin=0.0099999998;
+				opticsZoomMax=0.041999999;
+				opticsZoomInit=0.041999999;
+				discreteDistance[]={300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+				discreteDistanceInitIndex=2;
+				distanceZoomMin=300;
+				distanceZoomMax=2400;
+				discretefov[]={0.041999999,0.0099999998};
+				discreteInitIndex=0;
+				memoryPointCamera="opticView";
+				modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
 				visionMode[]=
 				{
 					"Normal",
-					"NVG"
+					"NVG",
+					"TI"
 				};
+				opticsFlare=1;
+				opticsDisablePeripherialVision=1;
+				cameraDir="";
 			};
 			class Iron
 			{

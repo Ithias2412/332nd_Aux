@@ -107,5 +107,13 @@ class cfgWeapons
 				};
 			};
 		};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="332nd_3AS_VK38X";
+			};
+		};
 	};
 };

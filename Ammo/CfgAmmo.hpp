@@ -12,6 +12,7 @@ class CfgAmmo
 	class ACE_NLAW;
 	class G_40mm_HE;
 	class smokeshell;
+	class FlameRound;
 
 
 
@@ -127,31 +128,68 @@ class CfgAmmo
 			hitWood = "IDA_ImpactEffect";
 		};
 	};
-
+	class 332nd_FlameRound: FlameRound
+	{
+		//submunitionAmmo = "FlameRound_sub";
+		//submunitionConeAngle = 4;
+		//submunitionConeType[] = {"poissondisc",4};
+		submunitionAmmo = "FlameRound_sub";
+		submunitionConeAngle = 1;
+		submunitionConeType[] = {"poissondisc",1};
+	};
 	//Ammo Overhaul x2
+	class 332nd_Slug_Thrower_Round: 332nd_Balistic_Bullet_Base
+	{
+		// B1=1 B2=2
+		hit = 35;
+		caliber = 3;
+		typicalspeed = 1200;
+	};
+	class 332nd_Gas_Level_L1: 332nd_Base_Ammo_IDA
+	{
+		// B1=1 B2=2
+		hit = 35;
+		caliber = 3;
+		typicalspeed = 1200;
+	};
 	class 332nd_Gas_Level_L2: 332nd_Base_Ammo_IDA
 	{
-		// B1=2 B2=6 
+		// B1=1 B2=4
 		hit = 25;
-		caliber = 2;
+		caliber = 3;
+		typicalspeed = 1200;
+	};
+	class 332nd_Gas_Level_L3: 332nd_Base_Ammo_IDA
+	{
+		// B1=2 B2=6 
+		hit = 20;
+		caliber = 3;
+		typicalspeed = 1200;
+	};
+	class 332nd_Gas_Level_L3_P: 332nd_Base_Ammo_IDA
+	{
+		// B1=2 B2=6
+		hit = 20;
+		caliber = 25;
+		typicalspeed = 1200;
 	};
 	class 332nd_Gas_Level_M1: 332nd_Base_Ammo_IDA
 	{
 		// B1=2 B2=6 
 		hit = 20;
-		caliber = 1.5;
+		caliber = 2;
 	};
 	class 332nd_Gas_Level_M2: 332nd_Base_Ammo_IDA
 	{
 		// B1=2 B2=12
 		hit = 15;
-		caliber = 1.5;
+		caliber = 2;
 	};
 	class 332nd_Gas_Level_M3: 332nd_Base_Ammo_IDA
 	{
 		// B1=3 B2=18
 		hit = 10;
-		caliber = 1.5;
+		caliber = 2;
 	};
 	class 332nd_Gas_Level_S1: 332nd_Base_Ammo_IDA
 	{
@@ -290,6 +328,15 @@ class CfgAmmo
 		CraterEffects="GrenadeCrater";
 		lightcolor[]={0,0,1};
 		model="Indecisive_Armoury_Ammos\Data\40mm_Grenade\IDA_40mm_Grenade.p3d";
+	};
+	class 332nd_HE_EPL_Grenade: 332nd_HE_LGrenade
+	{
+		coefGravity = 0.01;
+		deflecting = 0;
+		airFriction = -0.00018;
+		indirectHit= 10;
+		//typicalspeed = 80;
+		typicalspeed = 200;
 	};
 	class 332nd_UGL_Smoke: smokeshell
 	{

@@ -232,6 +232,7 @@ class cfgWeapons
 		author="Ithias";
 		displayName="[332nd] DC-15C GL (GRN)";
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC23\DC23_ui.paa";
+		reloadAction = "3AS_GestureReload_DC17M";
 		magazines[] =
 		{
 			"332nd_DC15C_Mag"
@@ -244,6 +245,19 @@ class cfgWeapons
 		{
 			"FullAuto",
 			"Single"
+		};
+		class 3AS_15CGL: UGL_F
+		{
+			magazines[]=
+			{
+				"332nd_HE_LGrenade_Mag",
+				"332nd_Smoke_LauncherGrenade",
+				"332nd_SmokeRed_LauncherGrenade",
+				"332nd_SmokeGreen_LauncherGrenade",
+				"332nd_SmokeBlue_LauncherGrenade",
+				"332nd_SmokePurple_LauncherGrenade",
+			};
+			magazineWell[]={};
 		};
 		class FullAuto: Mode_FullAuto
 		{

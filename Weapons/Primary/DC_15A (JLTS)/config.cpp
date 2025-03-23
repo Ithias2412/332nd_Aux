@@ -449,7 +449,11 @@ class cfgWeapons
 				"332nd_SmokeBlue_LauncherGrenade",
 				"332nd_SmokePurple_LauncherGrenade"
 			};
-			magazineWell[] = {"UGL_40x36", "332nd_UGL_MagWell"};
+			magazineWell[] = 
+			{
+				//"UGL_40x36",
+				//"332nd_UGL_MagWell"
+			};
 		};
 		irLaserPos="";
 		irLaserEnd="";

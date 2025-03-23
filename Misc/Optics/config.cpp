@@ -1153,6 +1153,128 @@ class cfgWeapons
 	{
 		class ItemInfo;
 	};
+	class InventoryOpticsItem_Base_F;
+	class optic_lrps;
+
+	class 332nd_JLTS_DC15X_scope: optic_lrps
+	{
+		displayName="[JLTS] DC-15X Scope";
+		picture="\MRC\JLTS\weapons\DC15X\data\ui\DC15X_scope_ui_ca.paa";
+		descriptionShort="$STR_JLTS_descs_DC15X_scope";
+		model="\MRC\JLTS\weapons\DC15X\DC15X_scope.p3d";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\weapons\DC15X\data\DC15X_scope_co.paa"
+		};
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			mass=16;
+			opticType=2;
+			weaponInfoType="RscWeaponRangeZeroingFOV";
+			optics=1;
+			modelOptics="\A3\Weapons_F\acc\reticle_sniper_F";
+			class OpticsModes
+			{
+				class Snip
+				{
+					opticsID=1;
+					opticsDisplayName="WFOV";
+					useModelOptics=1;
+					opticsPPEffects[]=
+					{
+						"OpticsCHAbera1",
+						"OpticsBlur1"
+					};
+					opticsZoomMin=0.0099999998;
+					opticsZoomMax=0.041999999;
+					opticsZoomInit=0.041999999;
+					discreteDistance[]={300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+					discreteDistanceInitIndex=2;
+					distanceZoomMin=300;
+					distanceZoomMax=2400;
+					discretefov[]={0.041999999,0.0099999998};
+					discreteInitIndex=0;
+					memoryPointCamera="opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"TI"
+					};
+					opticsFlare=1;
+					opticsDisablePeripherialVision=1;
+					cameraDir="";
+				};
+			};
+		};
+	};
+
+	class 332nd_IDA_773_scope: optic_lrps
+	{
+		author="Indecisive Armoury Team";
+		scope=2;
+		displayname="[IDA] 773-FP Scope";
+		picture="\Indecisive_Armoury_Weapons_REPUBLIC\Data\773Scope\773Scope_ui.paa";
+		model="\Indecisive_Armoury_Weapons_REPUBLIC\Data\773Scope\Model\IDA_773_Scope.p3d";
+		memoryPointCamera="eye";
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			mass=10;
+			optics=1;
+			modelOptics="\Indecisive_Armoury_Weapons_REPUBLIC\Data\773Scope\2dScope\IDA_DMR_Scope.p3d";
+			allowedSlots[]={801,701,901};
+			class OpticsModes
+			{
+				class IDA_773_Collimator
+				{
+					distanceZoomMax=200;
+					distanceZoomMin=200;
+					memoryPointCamera="eye";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsID=1;
+					opticsPPEffects="[""Default""]";
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode="[]";
+				};
+				class IDA_773_Scope
+				{
+					opticsID=2;
+					useModelOptics=1;
+					opticsPPEffects[]={};
+					opticsZoomMin=0.02;
+					opticsZoomMax=0.0625;
+					opticsZoomInit=0.0625;
+					discreteDistance[]={100,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex=1;
+					distanceZoomMin=100;
+					distanceZoomMax=1000;
+					discreteFov[]={0.0625,0.02};
+					discreteInitIndex=0;
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					memoryPointCamera="opticView";
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"Ti"
+					};
+					thermalMode[]={1,2};
+					opticsFlare=1;
+					opticsDisablePeripherialVision=1;
+					cameraDir="";
+				};
+			};
+		};
+	};
 	
 	class 332nd_3AS_VK38X: 3AS_Optic_VK38X
 	{
@@ -1210,7 +1332,6 @@ class cfgWeapons
 			};
 		};
 	};
-
 
 	class 332nd_3AS_C_Acog: 3AS_optic_acog_DC15C
 	{

@@ -35,7 +35,7 @@ class cfgWeapons
 		{
 			"332nd_Dispo_Mag",
 		};
-		//modelOptics = "\332nd_Aux\Misc\Optics\332nd_Zoom";
+		modelOptics = "\332nd_Aux\Misc\Optics\332nd_Zoom_Dump";
 	};
 	class 332nd_Dispo_F: 332nd_Dispo_Base
 	{
