@@ -19,18 +19,28 @@ class cfgWeapons
 	class VestItem;
 	class Hands;
 	class Pelvis;
-    class SWLB_clone_airborne_armor;
-    class SWLB_clone_airborne_nco_armor;
-    class SWLB_CEE_Airborne_Officer;
     class SWLB_clone_basic_armor;
-	class 332nd_Trooper_Vest: SWLB_clone_basic_armor
+	class SWLB_clone_airborne_armor : SWLB_clone_basic_armor
+	{
+		class ItemInfo;
+	};
+	class SWLB_clone_airborne_nco_armor : SWLB_clone_airborne_armor
+	{
+		class ItemInfo;
+	};
+	class ls_blueforVest_base;
+	class ls_gar_airborneOfficer_vest : ls_blueforVest_base
+	{
+		class ItemInfo;
+	};
+	class 332nd_AB_Trooper_Base_Vest: SWLB_clone_basic_armor
 	{
 		author="Ithias";
-		displayName = "[332nd] Vest (Trooper)";
+		displayName = "[332nd] AB Vest (Base)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_recon_armor_ca.paa";
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
+			uniformModel="\SWLB_clones\SWLB_clone_airborne_armor.p3d";
 			containerClass="Supply60";
 			vestType = "Rebreather";
 			mass=80;
@@ -112,15 +122,19 @@ class cfgWeapons
 				};
 				*/
             };
-			hiddenSelections[] = 
+			hiddenSelections[]=
 			{
-				"",
+				"camo1",
+				"camo2",
+				"ammo",
+				"pauldron"
 			};
 		};
 	};
-	class 332nd_AB_Vest_variant_1: 332nd_Trooper_Vest
+	class 332nd_AB_Vest_variant_1: 332nd_AB_Trooper_Base_Vest
 	{
-		displayName="[332nd] AB Vest (Variant 1)";
+		author="Cherryy";
+		displayName="[332nd] Airborne Vest (CT)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
 		model="\SWLB_clones\SWLB_clone_airborne_armor.p3d";
 		hiddenSelections[]=
@@ -132,11 +146,25 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
+			//"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
+			//"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
 			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
-			//"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
+		};
+	};
+    //NCO Start
+    class 332nd_AB_NCO_Vest_variant_1: SWLB_clone_airborne_nco_armor
+	{
+		displayName="[332nd] Airborne Vest (NCO)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
+		model="\SWLB_clones\SWLB_clone_medic_armor.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
+			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
 			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa"
 		};
-        class ItemInfo: VestItem
+		class ItemInfo: VestItem
 		{
 			uniformModel="\SWLB_clones\SWLB_clone_airborne_armor.p3d";
 			containerClass="Supply60";
@@ -220,36 +248,6 @@ class cfgWeapons
 				};
 				*/
             };
-			hiddenSelections[] = 
-			{
-				"",
-			};
-		};
-	};
-    //NCO Start
-    class 332nd_AB_NCO_Vest_variant_1: 332nd_AB_Vest_variant_1
-	{
-		displayName="[332nd] AB Vest ( NCO / Variant 1)";
-		picture="\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
-		model="\SWLB_clones\SWLB_clone_medic_armor.p3d";
-        hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"ammo",
-			"pauldron"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
-			//"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
-			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
-			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa"
-		};
-        class ItemInfo: VestItem
-		{
-			uniformModel="\SWLB_clones\SWLB_clone_airborne_armor.p3d";
-			containerClass="Supply80";
 			hiddenSelections[]=
 			{
 				"camo1",
@@ -257,24 +255,14 @@ class cfgWeapons
 				"ammo",
 				"pauldron"
 			};
-			mass=80;
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					hitpointName="HitLegs";
-					armor=6;
-					passThrough=0.30000001;
-				};
-			};
 		};
 	};
     //Officer Start
     class 332nd_AB_Officer_Vest_variant_1: 332nd_AB_Vest_variant_1
 	{
 		displayName="[332nd] AB Vest ( Officer / Variant 1)";
-		model="\SWLB_CEE\data\SWLB_CEE_Airborne_Officer.p3d";
-		uniformModel="\SWLB_CEE\data\SWLB_CEE_Airborne_Officer.p3d";
+		model="ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
+		uniformModel="ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
 		hiddenSelections[]=
 		{
 			"ammo",
@@ -289,12 +277,12 @@ class cfgWeapons
 			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
-			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa"
+			//"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa"
 		};
-        class ItemInfo: Vestitem
+       class ItemInfo: ItemInfo
 		{
-			uniformModel="\SWLB_CEE\data\SWLB_CEE_Airborne_Officer.p3d";
-			containerClass="Supply80";
+			uniformModel="ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
+			containerClass="Supply60";
 			hiddenSelections[]=
 			{
 				"ammo",

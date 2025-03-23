@@ -333,7 +333,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Frankenburg", "Hicks", "Kilyer", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
+				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Frankenburg", "Hicks", "Kiyler", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
