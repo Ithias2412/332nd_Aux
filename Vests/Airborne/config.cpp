@@ -36,6 +36,7 @@ class cfgWeapons
 	class 332nd_AB_Trooper_Base_Vest: SWLB_clone_basic_armor
 	{
 		author="Ithias";
+		scope=0;
 		displayName = "[332nd] AB Vest (Base)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_recon_armor_ca.paa";
 		class ItemInfo: VestItem
@@ -134,6 +135,7 @@ class cfgWeapons
 	class 332nd_AB_Vest_variant_1: 332nd_AB_Trooper_Base_Vest
 	{
 		author="Cherryy";
+		scope=2;
 		displayName="[332nd] Airborne Vest (CT)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
 		model="\SWLB_clones\SWLB_clone_airborne_armor.p3d";
@@ -146,8 +148,8 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			//"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
-			//"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
+			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
+			"",
 			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
 		};
 	};
@@ -155,13 +157,14 @@ class cfgWeapons
     class 332nd_AB_NCO_Vest_variant_1: SWLB_clone_airborne_nco_armor
 	{
 		displayName="[332nd] Airborne Vest (NCO)";
+		scope=2;
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
 		model="\SWLB_clones\SWLB_clone_medic_armor.p3d";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
-			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
+			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa", //Pauldron Flap
 			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa"
 		};
 		class ItemInfo: VestItem
@@ -261,6 +264,7 @@ class cfgWeapons
     class 332nd_AB_Officer_Vest_variant_1: 332nd_AB_Vest_variant_1
 	{
 		displayName="[332nd] AB Vest ( Officer / Variant 1)";
+		scope=2;
 		model="ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
 		uniformModel="ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
 		hiddenSelections[]=
@@ -273,13 +277,13 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
-			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa",
-			//"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa"
+			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa", //
+			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa", //Strap & Bag
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa", //kama
+			"", //idk what this is
+			"" //im honestly lost
 		};
-       class ItemInfo: ItemInfo
+        class ItemInfo: ItemInfo
 		{
 			uniformModel="ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
 			containerClass="Supply60";
