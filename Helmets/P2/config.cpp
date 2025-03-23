@@ -133,6 +133,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crow.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Denal: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Denal)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Denal.paa"
+		};
+	};
 	class 332nd_Helmet_P2_Frankenburg: 332nd_Helmet_P2_CR	
 	{
 		displayName="[332nd] P2 Helmet (Frankenburg)";
@@ -333,7 +345,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Frankenburg", "Hicks", "Kiyler", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
+				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Denal", "Frankenburg", "Hicks", "Kiyler", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -364,6 +376,12 @@ class XtdGearModels
 				{
 					label = "Crow";
 					description = "On the List";
+					//image = "xxx";
+				};
+				class Denal
+				{
+					label = "Denal";
+					description = "Resident Aussie";
 					//image = "xxx";
 				};
 				class Frankenburg
@@ -503,6 +521,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Crow";
+        };
+		class 332nd_Helmet_P2_Denal
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Denal";
         };
 		class 332nd_Helmet_P2_Frankenburg
         {
