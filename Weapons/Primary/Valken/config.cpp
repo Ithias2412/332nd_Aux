@@ -33,6 +33,7 @@ class cfgWeapons
 		recoil="3AS_recoil_DC15A";
 		reloadAction = "3AS_GestureReload_DC17M";
 		picture = "\MRC\JLTS\weapons\DW32S\data\ui\DW32S_ui_ca.paa"; 
+		scope = 2;
 		magazines[] =
 		{
 			"332nd_Valken_Mag"
@@ -105,14 +106,6 @@ class cfgWeapons
 				{
 					"3AS_Bipod_VK38X_f",
 				};
-			};
-		};
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="332nd_3AS_VK38X";
 			};
 		};
 	};
