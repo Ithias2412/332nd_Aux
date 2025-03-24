@@ -206,6 +206,26 @@ class CfgAmmo
 		// B1=4 b2=22
 		hit = 7;
 	};
+	class 332nd_Scattershot_S2: IDA_blasterbolt_scatter
+	{
+		submunitionAmmo = "332nd_Scattershot_S1_Sub";
+		submunitionConeAngle = 0.50;
+		submunitionConeType[] = {"random",18};
+	};
+	class 332nd_Scattershot_S1: IDA_blasterbolt_scatter
+	{
+		submunitionAmmo = "332nd_Scattershot_S1_Sub";
+		submunitionConeAngle = 0.50;
+		submunitionConeType[] = {"random",12};
+	};
+	class 332nd_Scattershot_S1_Sub: 332nd_Base_Ammo_IDA
+	{
+		hit = 6;
+	};
+	class 332nd_Condensedshot_S1: 332nd_Base_Ammo_IDA
+	{
+		hit = 35;
+	};
 
 	//Rifle Ammo 
 	class 332nd_950mm_Ball: 332nd_Base_Ammo_IDA
@@ -236,12 +256,6 @@ class CfgAmmo
 		hit = 30;
 		caliber = 2.6;
 		typicalspeed = 1200;
-	};
-	class 332nd_12g_Pellets: IDA_blasterbolt_scatter
-	{
-		hit=10;
-		caliber=1;
-		typicalspeed = 800;
 	};
 	class 332nd_762x51_Ball: 332nd_Base_Ammo_IDA
 	{

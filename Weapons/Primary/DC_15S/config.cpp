@@ -174,6 +174,17 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_DC15S_Shield: 332nd_DC15S
+	{
+		baseWeapon = "332nd_DC15S_Shield";
+		displayName = "[332nd] DC-15S + Shield (ENG)";
+		handAnim[] = {"OFP2_ManSkeleton","Indecisive_Armoury_Anims\Republic\Shield_Rep.rtm"};
+		model = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15S\Model\IDA_DC15S_Shield.p3d";
+		magazines[] =
+		{
+			"332nd_DC15S_Low_Mag",
+		};
+	};
 	class 332nd_DC15S_GL: 332nd_DC15S
 	{
 		baseWeapon="332nd_DC15S_GL";

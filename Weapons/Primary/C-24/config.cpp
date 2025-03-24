@@ -329,11 +329,7 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_Mode_A_Zoom_2_Raised",
-					"332nd_Mode_B_Zoom_2_Raised",
-					"332nd_Mode_C_Zoom_2_Raised",
-					"332nd_Mode_D_Zoom_2_Raised",
-					"332nd_Mode_Seelig_Point_Zoom_2_Raised",
+					"332nd_Mode_A_Zoom_2_C_24",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

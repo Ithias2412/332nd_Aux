@@ -510,6 +510,110 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_Mode_A_Zoom_2_C_24: optic_Yorris
+	{
+		displayName="[332nd] Mode A (2x)";
+		model="332nd_Aux\Misc\Optics\332nd_Mode_A_C_24.p3d";
+		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass=1;
+			optics=1;
+			class OpticsModes
+			{
+				class Nozoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					distanceZoomMax=600;
+					distanceZoomMin=100;
+					memoryPointCamera="eye";
+					modelOptics="\A3\Weapons_F\empty";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode[]={};
+				};
+				class Yeszoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
+		};
+	};
+	class 332nd_Mode_A_Zoom_2_Scattergun: optic_Yorris
+	{
+		displayName="[332nd] Mode A (2x)";
+		model="332nd_Aux\Misc\Optics\332nd_Mode_A_Scattergun.p3d";
+		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass=1;
+			optics=1;
+			class OpticsModes
+			{
+				class Nozoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					distanceZoomMax=600;
+					distanceZoomMin=100;
+					memoryPointCamera="eye";
+					modelOptics="\A3\Weapons_F\empty";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode[]={};
+				};
+				class Yeszoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
+		};
+	};
 	class 332nd_Mode_B_Zoom_2: optic_Yorris
 	{
 		displayName="[332nd] Mode B (2x)";

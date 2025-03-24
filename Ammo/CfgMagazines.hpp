@@ -73,9 +73,25 @@ class CfgMagazines
 	};
 	class 332nd_DP23_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_12g_Pellets";
+		ammo = "332nd_Scattershot_S1";
 		count = 10;
 		displayname = "DP-23 10 Round Energy Cell";
+		mass = 8;
+		scope = 2;
+	};
+	class 332nd_ScatterGun_Scattershot_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Scattershot_S2";
+		count = 10;
+		displayname = "Scatter-shot 10 Round Energy Cell";
+		mass = 8;
+		scope = 2;
+	};
+	class 332nd_ScatterGun_Condensedshot_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Condensedshot_S1";
+		count = 5;
+		displayname = "Condensed-shot 5 Round Energy Cell";
 		mass = 8;
 		scope = 2;
 	};
@@ -139,7 +155,7 @@ class CfgMagazines
 	class 332nd_C_24_Flamer_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_FlameRound";
-		count = 4;
+		count = 10;
 		displayname = "C-24 Flame Cartridge";
 		mass = 10; 
 		scope = 2;
@@ -149,7 +165,7 @@ class CfgMagazines
 	};
 	class 332nd_Westar_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_556x45_Ball";
+		ammo = "332nd_Gas_Level_S2";
 		count = 60;
 		displayname = "Westar 60 Round Energy Cell";
 		mass = 8;
@@ -181,7 +197,7 @@ class CfgMagazines
 	};
 	class 332nd_DC17S_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_45ACP";
+		ammo = "332nd_Gas_Level_S1";
 		count = 30;
 		displayname = "DC-17S 30 Round Energy Cell";
 		mass = 8;
@@ -189,7 +205,7 @@ class CfgMagazines
 	};
 	class 332nd_DC17S_Mag_Dual: 332nd_Base_Mag
 	{
-		ammo = "332nd_45ACP_Dual";
+		ammo = "332nd_Gas_Level_S1";
 		count = 30;
 		displayname = "DC-17S 30 Round Energy Cell";
 		mass = 8;
