@@ -97,6 +97,27 @@ class cfgWeapons
 			""
 		};
 	};
+	class 332nd_Helmet_Pilot_Shadow: 332nd_Helmet_Pilot
+	{
+		scope=2;
+		dlc="332nd Aux";
+		author="Wasnt pookie Ithias";
+		displayName="[332nd] Pilot Helmet (Shadow)";
+		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Shadow.paa",
+		};
+		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
+		subItems[]=
+		{
+			""
+		};
+	};
 };
 
 class XtdGearModels
@@ -124,13 +145,19 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Saiko",};
+				values[] = { "Saiko", "Shadow",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Saiko
                 {
                     label = "Saiko";
                     description = "ARC Enjoyer";
+                    //image = "xxx";
+                };
+				class Shadow
+                {
+                    label = "Shadow";
+                    description = "Angel who?";
                     //image = "xxx";
                 };
             };
@@ -151,6 +178,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Saiko";
+        };
+		class 332nd_Helmet_Pilot_Shadow
+        {
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Shadow";
         };
 	};
 };
