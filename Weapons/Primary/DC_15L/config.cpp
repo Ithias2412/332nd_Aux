@@ -26,6 +26,8 @@ class cfgWeapons
 //Primary
 	class 332nd_DC15L: 3AS_DC15L_F
 	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Arrow";
 		author="Ithias";
 		displayName="[332nd] DC-15L (AR)";
 		//recoil="3AS_recoil_DC15L";
@@ -69,12 +71,12 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_Mode_A_Zoom_2_Raised_Forward",
-					"332nd_Mode_B_Zoom_2_Raised_Forward",
-					"332nd_Mode_C_Zoom_2_Raised_Forward",
-					"332nd_Mode_D_Zoom_2_Raised_Forward",
+					"332nd_Mode_A_Raised_Forward",
+					"332nd_Mode_B_Raised_Forward",
+					"332nd_Mode_C_Raised_Forward",
+					"332nd_Mode_D_Raised_Forward",
 					"332nd_Mode_Seelig_Point_Raised_Forward",
-=				};
+				};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{

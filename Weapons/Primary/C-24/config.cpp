@@ -30,6 +30,8 @@ class cfgWeapons
 //Primary
 	class 332nd_C_24: IDA_E11D
 	{
+		cursor = "332nd_Cursor_Block";
+		cursoraim = "332nd_Cursor_Dot";
 		ace_overheating_mrbs=40000;
 		ace_overheating_slowdownFactor=0;
 		ace_overheating_allowSwapBarrel=0;
@@ -329,7 +331,11 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_Mode_A_Zoom_2_C_24",
+					"332nd_Mode_A_Zoom_2_Raised_2",
+					"332nd_Mode_B_Zoom_2_Raised_2",
+					"332nd_Mode_C_Zoom_2_Raised_2",
+					"332nd_Mode_D_Zoom_2_Raised_2",
+					"332nd_Mode_Seelig_Point_Zoom_2_Raised_2",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

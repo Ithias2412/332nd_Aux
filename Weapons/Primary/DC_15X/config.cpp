@@ -34,6 +34,8 @@ class cfgWeapons
 
 	class 332nd_DC15X: arifle_MX_Base_F
 	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Dot";
 		JLTS_hasElectronics=1;
 		JLTS_hasEMPProtection=0;
 		JLTS_friedItem="JLTS_DC15X_fried";

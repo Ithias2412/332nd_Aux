@@ -30,6 +30,8 @@ class cfgWeapons
 //Primary
 	class 332nd_DC15S: IDA_DC15S
 	{
+		cursor = "332nd_Cursor_Circle";
+		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
 		displayName="[332nd] DC-15S (RFL)";
 		recoil = "3AS_recoil_DC15S";
@@ -176,6 +178,8 @@ class cfgWeapons
 	};
 	class 332nd_DC15S_Shield: 332nd_DC15S
 	{
+		cursor = "";
+		cursoraim = "";
 		baseWeapon = "332nd_DC15S_Shield";
 		displayName = "[332nd] DC-15S + Shield (ENG)";
 		handAnim[] = {"OFP2_ManSkeleton","Indecisive_Armoury_Anims\Republic\Shield_Rep.rtm"};

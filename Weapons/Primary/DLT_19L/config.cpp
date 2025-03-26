@@ -1,3 +1,4 @@
+/*
 class CfgPatches {
 	class 332nd_DLT19L {
 		units[] = 
@@ -27,6 +28,8 @@ class cfgWeapons
 //Primary
 	class 332nd_DLT19L: arifle_MX_Base_F
 	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Arrow";
 		author="Ithias";
 		scope=2;
 		inertia=0;
@@ -152,11 +155,7 @@ class cfgWeapons
 					1
 				};
 			};
-			reloadTime=0.059999999;
-		/*	magazines[]=
-			{
-				"IDA_blaster_battery_Red"
-			};	*/
+			reloadTime=0.06;
 			//dispersion = 0.0049999999;
 			dispersion = 0.0045;
 			burst=1;
@@ -176,7 +175,6 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_Mode_A_DLT_19L",
 					"332nd_Mode_A_Zoom_2_Raised_Forward",
 					"332nd_Mode_B_Zoom_2_Raised_Forward",
 					"332nd_Mode_C_Zoom_2_Raised_Forward",

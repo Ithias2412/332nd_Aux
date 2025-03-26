@@ -30,6 +30,8 @@ class cfgWeapons
 //Primary
 	class 332nd_Firepuncher: arifle_MX_Base_F
 	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Dot";
 		ace_overheating_mrbs=40000;
 		ace_overheating_slowdownFactor=0;
 		ace_overheating_allowSwapBarrel=0;

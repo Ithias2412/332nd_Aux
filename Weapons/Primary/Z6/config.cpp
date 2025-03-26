@@ -38,6 +38,8 @@ class cfgWeapons
 //Primary
 	class 332nd_Z6: LMG_Mk200_F
 	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Arrow";
 		JLTS_hasElectronics=1;
 		JLTS_hasEMPProtection=0;
 		JLTS_friedItem="JLTS_Z6_fried";
@@ -290,10 +292,10 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_Mode_A_Zoom_2_Raised_Forward",
-					"332nd_Mode_B_Zoom_2_Raised_Forward",
-					"332nd_Mode_C_Zoom_2_Raised_Forward",
-					"332nd_Mode_D_Zoom_2_Raised_Forward",
+					"332nd_Mode_A_Raised_Forward",
+					"332nd_Mode_B_Raised_Forward",
+					"332nd_Mode_C_Raised_Forward",
+					"332nd_Mode_D_Raised_Forward",
 					"332nd_Mode_Seelig_Point_Raised_Forward",
 				};
 			};

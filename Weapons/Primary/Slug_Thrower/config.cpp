@@ -361,6 +361,8 @@ class cfgWeapons
 
 	class 332nd_Slug_Thrower: IDA_DL63
 	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Dot";
 		author = "Vipor + Ithias";
 		IDA_StunWeapon = "";
 		displayName="[332nd] MK I Slug Thrower (MRK)";

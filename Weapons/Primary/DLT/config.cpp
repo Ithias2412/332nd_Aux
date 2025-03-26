@@ -17,6 +17,8 @@ class CfgWeapons
     class Rifle_Base_F;
     class 332nd_DLT19X: Rifle_Base_F
     {
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Dot";
         scope = 2;
         author = "332nd Auxiliary";
         displayName = "[332nd] DLT-19 Anti Material Blaster [MRK]";

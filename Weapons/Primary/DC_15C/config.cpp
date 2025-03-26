@@ -33,6 +33,8 @@ class cfgWeapons
 //Primary
 	class 332nd_DC15C: 3AS_DC15C_F
 	{
+		cursor = "332nd_Cursor_Block";
+		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
 		displayName="[332nd] DC-15C (RFL)";
 		recoil="3AS_recoil_DC15S";
@@ -229,6 +231,8 @@ class cfgWeapons
 	};
 	class 332nd_DC15C_GL: 3AS_DC15C_GL
 	{
+		cursor = "332nd_Cursor_Block";
+		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
 		displayName="[332nd] DC-15C GL (GRN)";
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC23\DC23_ui.paa";

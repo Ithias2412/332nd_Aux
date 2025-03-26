@@ -33,6 +33,8 @@ class CfgWeapons
 	class 3AS_WestarM5_GL;
 	class 332nd_Westar: 3AS_WestarM5_F
 	{
+		cursor = "332nd_Cursor_Block";
+		cursoraim = "332nd_Cursor_Dot";
 		displayName = "[332nd] Westar-M5";
 		magazines[] = {"332nd_Westar_Mag"};
 		magazineWell[]={};
@@ -118,6 +120,8 @@ class CfgWeapons
 	};
 	class 332nd_Westar_GL: 3AS_WestarM5_GL
 	{
+		cursor = "332nd_Cursor_Block";
+		cursoraim = "332nd_Cursor_Dot";
 		displayName = "[332nd] Westar-M5 GL Rifle";
 		magazines[] = {"332nd_Westar_Mag"};
 		magazineWell[]={};

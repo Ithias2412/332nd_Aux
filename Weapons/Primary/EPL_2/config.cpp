@@ -30,6 +30,8 @@ class cfgWeapons
 //Primary
 	class 332nd_EPL_2: JLTS_EPL2
 	{
+		cursor = "332nd_Cursor_Block";
+		cursoraim = "332nd_Cursor_Dot";
 		JLTS_hasElectronics=1;
 		JLTS_hasEMPProtection=1;
 		JLTS_friedItem="";

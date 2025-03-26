@@ -28,6 +28,8 @@ class cfgWeapons
 //Primary
 	class 332nd_Valken: 3AS_Valken38X_F
 	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
 		displayName="[332nd] Valken (MRK)";
 		recoil="3AS_recoil_DC15A";

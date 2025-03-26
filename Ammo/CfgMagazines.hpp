@@ -103,12 +103,12 @@ class CfgMagazines
 		mass = 40;
 		scope = 2;
 	};
-	class 332nd_DLT19L_Mag: 332nd_Base_Mag
+	class 332nd_DLT15_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_M1";
 		count = 250;
-		displayname = "DLT-19L 250 Round Energy Cell";
-		mass = 100;
+		displayname = "DLT-15 250 Round Energy Cell";
+		mass = 66.6;
 		scope = 2;
 	};
 	class 332nd_Valken_Mag: 332nd_Base_Mag
@@ -200,15 +200,15 @@ class CfgMagazines
 		ammo = "332nd_Gas_Level_S1";
 		count = 30;
 		displayname = "DC-17S 30 Round Energy Cell";
-		mass = 8;
+		mass = 5;
 		scope = 2;
 	};
 	class 332nd_DC17S_Mag_Dual: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_S1";
-		count = 30;
-		displayname = "DC-17S 30 Round Energy Cell";
-		mass = 8;
+		count = 60;
+		displayname = "DC-17S 60 Round Energy Cell";
+		mass = 10;
 		scope = 2;
 	};
 	class 332nd_DC17S_Stun_Mag: 332nd_Base_Mag

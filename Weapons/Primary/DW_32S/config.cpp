@@ -31,6 +31,8 @@ class cfgWeapons
 //Primary
 	class 332nd_DW_32S: JLTS_DW32S
 	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Dot";
 		JLTS_hasElectronics=1;
 		JLTS_hasEMPProtection=1;
 		JLTS_friedItem="";

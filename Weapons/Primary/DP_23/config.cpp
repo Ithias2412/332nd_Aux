@@ -29,6 +29,8 @@ class cfgWeapons
 
 	class 332nd_DP23: JLTS_DP23
 	{
+		cursor = "332nd_Cursor_Circle";
+		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
 		displayName="[332nd] DP-23 (RFL)";
 		reloadAction = "GestureReload_IDAReload1";
