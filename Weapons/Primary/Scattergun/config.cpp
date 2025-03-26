@@ -31,7 +31,7 @@ class cfgWeapons
 	class 332nd_Scattergun: Rifle_Base_F
 	{
 		cursor = "332nd_Cursor_Circle";
-		cursoraim = "332nd_Cursor_Dot";
+		cursoraim = "";
 		scope=2;
 		displayName="[332nd] Scattergun (ENG)";
 		model="3as\3AS_Weapons\Scattergun\3AS_Scattergun_F.p3d";
