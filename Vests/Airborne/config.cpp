@@ -272,7 +272,7 @@ class cfgWeapons
 			"ammo",
 			"camo1",
 			"camo2",
-			"camo3",
+			"ammo",
 			"pauldron"
 		};
 		hiddenSelectionsTextures[]=
@@ -281,7 +281,7 @@ class cfgWeapons
 			"332nd_Aux\Vests\Tex\332nd_AB_Heavy_Acc.paa", //Strap & Bag
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa", //kama
 			"", //idk what this is
-			"" //im honestly lost
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_P_Half_K_Black.paa" //im honestly lost
 		};
         class ItemInfo: ItemInfo
 		{
