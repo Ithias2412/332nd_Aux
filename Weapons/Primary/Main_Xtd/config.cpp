@@ -24,7 +24,7 @@ class XtdGearModels
 			options[] = { "Rifleman", "AutoRifleman", "Marksman", "Grenadier", "Engineer", "PlatoonAssets", "Material", };
             class Rifleman
             {
-                label = "Rifleman";
+                label = "Rifleman (RFL)";
 				values[] = { "DC_15A", "DC_15C", "DC_15S", "DP_23", };
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -55,7 +55,7 @@ class XtdGearModels
             };
             class AutoRifleman
             {
-                label = "Auto Rifleman";
+                label = "Auto Rifleman (AR)";
 				values[] = { "Z_6", "DC_15L", };
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -74,7 +74,7 @@ class XtdGearModels
             };
             class Marksman
             {
-                label = "Marksman";
+                label = "Marksman (MRK)";
 				values[] = { "Valken", "Firepuncher", "DW_32S", };
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -99,7 +99,7 @@ class XtdGearModels
             };
             class Grenadier
             {
-                label = "Grenadier";
+                label = "Grenadier (GRN)";
 				values[] = { "DC15A_GL", "DC15C_GL", "DC15S_GL", };
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -124,7 +124,7 @@ class XtdGearModels
             };
             class Engineer
             {
-                label = "Engineer";
+                label = "Engineer (ENG)";
 				values[] = { "Scattergun", "C_24", };
                 changeingame = 0;
                 alwaysSelectable = 1;

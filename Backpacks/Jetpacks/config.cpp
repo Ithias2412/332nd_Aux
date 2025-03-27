@@ -99,6 +99,7 @@ class CfgVehicles
 	class 332nd_MC: 332nd_Jetpack_Base
 	{
 		scope=2;
+		maximumLoad=180;
 		hiddenSelections[]=
 		{
 			"camo1"

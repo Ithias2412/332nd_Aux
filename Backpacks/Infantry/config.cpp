@@ -309,7 +309,7 @@ class CfgVehicles
 		author="Ithias";
 		displayName="[332nd] Radio";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
-		maximumLoad=200;
+		maximumLoad=150;
 		mass=40;
 		hiddenSelections[] = 
 		{
@@ -384,31 +384,38 @@ class XtdGearModels
         {
             label = "Backpack";
             author = "Ithias";
-			options[] = { "Misc", "NCO", "Jumppack", };
-            class Misc
+			options[] = { "Bags", "Backpacks", "NCO", "Jumppack", };
+            class Bags
             {
-                label = "Misc";
-				values[] = { "Rifleman", "Grenadier", "Marksman", "Backpack", "AR", "AT", "ENG", "Ammo", "JTAC", "Medic", };
+                label = "Bags";
+				values[] = { "Rifleman", "Grenadier", "Marksman", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Rifleman
                 {
-                    label = "Rifleman Bags";
+                    label = "Rifleman";
                     description = "RFL";
                     //image = "xxx";
                 };
 				class Grenadier
                 {
-                    label = "Grenadier Bags";
+                    label = "Grenadier";
                     description = "GRN";
                     //image = "xxx";
                 };
 				class Marksman
                 {
-                    label = "Marksman Bags";
+                    label = "Marksman";
                     description = "MRK";
                     //image = "xxx";
                 };
+			};
+            class Backpacks
+            {
+                label = "Backpacks";
+				values[] = { "Backpack", "AR", "AT", "ENG", "Ammo", "JTAC", "Medic", };
+                changeingame = 0;
+                alwaysSelectable = 1;
 				class Backpack
                 {
                     label = "Backpack";
@@ -520,52 +527,52 @@ class XtdGearInfos
         class 332nd_Backpack
         {
             model = "332nd_Backpack_Extended";
-            Misc = "Backpack";
+            Backpacks = "Backpack";
         };
         class 332nd_Backpack_AR
         {
             model = "332nd_Backpack_Extended";
-            Misc = "AR";
+            Backpacks = "AR";
         };
         class 332nd_Backpack_AT
         {
             model = "332nd_Backpack_Extended";
-            Misc = "AT";
+            Backpacks = "AT";
         };
         class 332nd_Backpack_JTAC
         {
             model = "332nd_Backpack_Extended";
-            Misc = "JTAC";
+            Backpacks = "JTAC";
         };
         class 332nd_Bag
         {
             model = "332nd_Backpack_Extended";
-            Misc = "Rifleman";
+            Bags = "Rifleman";
         };
         class 332nd_Leg_Bag
         {
             model = "332nd_Backpack_Extended";
-            Misc = "Grenadier";
+            Bags = "Grenadier";
         };
         class 332nd_Leg
         {
             model = "332nd_Backpack_Extended";
-            Misc = "Marksman";
+            Bags = "Marksman";
         };
         class 332nd_Backpack_Medic
         {
             model = "332nd_Backpack_Extended";
-            Misc = "Medic";
+            Backpacks = "Medic";
         };
         class 332nd_Backpack_Engineer
         {
             model = "332nd_Backpack_Extended";
-            Misc = "ENG";
+            Backpacks = "ENG";
         };
         class 332nd_Backpack_Ammo_Bearer
         {
             model = "332nd_Backpack_Extended";
-            Misc = "Ammo";
+            Backpacks = "Ammo";
         };
         class 332nd_Radio
         {
