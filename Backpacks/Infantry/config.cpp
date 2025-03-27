@@ -25,6 +25,7 @@ class CfgVehicles
 	class ls_gar_mrbc_backpack;
 	class 3AS_Republic_Mortar_Bag;
 	class SWLB_clone_bag;
+	class SWLB_clone_bag_leg;
 
 //Base Items
 
@@ -48,6 +49,54 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = 
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+	class 332nd_Backpack_AR: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Auto-Rifleman)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_AR.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+	class 332nd_Backpack_AT: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Anti-Tank)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_AT.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
 			""
@@ -87,6 +136,39 @@ class CfgVehicles
 		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+	class 332nd_Backpack_NCO: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (NCO)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Fulcrum.paa",
+			"",
+			"",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+		};
+		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
 
 	class 332nd_Backpack_Medic: SWLB_clone_backpack
 	{
@@ -106,7 +188,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Medic.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
@@ -114,10 +196,35 @@ class CfgVehicles
 		};
 	};
 
-	class 332nd_Backpack_Heavy: SWLB_clone_backpack
+	class 332nd_Backpack_Engineer: SWLB_clone_backpack
 	{
 		author="Ithias";
-		displayName="[332nd] Backpack (Heavy)";
+		displayName="[332nd] Backpack (Engineer)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=320;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Engineer.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+	class 332nd_Backpack_Ammo_Bearer: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Ammo Bearer)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -143,7 +250,7 @@ class CfgVehicles
 	class 332nd_Bag: SWLB_clone_bag_belt
 	{
 		author="Ithias";
-		displayName="[332nd] Bag";
+		displayName="[332nd] Rifleman Bags";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_bag.p3d";
 		maximumLoad=100;
 		mass=40;
@@ -162,7 +269,7 @@ class CfgVehicles
 	class 332nd_Leg_Bag: SWLB_clone_bag
 	{
 		author="Ithias";
-		displayName="[332nd] Bag + Pouch";
+		displayName="[332nd] Grenadier Bags";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_bag.p3d";
 		maximumLoad=150;
 		mass=40;
@@ -177,7 +284,25 @@ class CfgVehicles
 			"\SWLB_equipment\backpacks\data\bag_co.paa"
 		};
 	};
-
+	
+	class 332nd_Leg: SWLB_clone_bag_leg
+	{
+		author="Ithias";
+		displayName="[332nd] Marksman Bags";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_bag.p3d";
+		maximumLoad=150;
+		mass=40;
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"",
+			"\SWLB_equipment\backpacks\data\bag_co.paa",
+		};
+	};
 
 	class 332nd_Radio: SWLB_clone_RTO_mini_backpack
 	{
@@ -236,13 +361,12 @@ class CfgVehicles
 		};
 	};
 
-	class 332nd_Repeater_CSW: ls_gar_mrbc_backpack
+/*	class 332nd_Repeater_CSW: ls_gar_mrbc_backpack
 	{
 		author="Ithias";
 		displayName = "[332nd] Blaster Cannon CSW (BANNED)";
 	};
 	
-	/*
 	class 332nd_Mortor_CSW: 3AS_Republic_Mortar_Bag
 	{
 		author="Ithias";
@@ -260,60 +384,79 @@ class XtdGearModels
         {
             label = "Backpack";
             author = "Ithias";
-			options[] = { "Type", "Radio", };
-            class Type
+			options[] = { "Misc", "NCO", "Jumppack", };
+            class Misc
             {
-                label = "Type";
-				values[] = { "Bag", "Leg_Bag", "Backpack", "Medic", "JTAC", "Heavy", "CSW", };
+                label = "Misc";
+				values[] = { "Rifleman", "Grenadier", "Marksman", "Backpack", "AR", "AT", "ENG", "Ammo", "JTAC", "Medic", };
                 changeingame = 0;
                 alwaysSelectable = 1;
-                class Bag
+                class Rifleman
                 {
-                    label = "Bag";
-                    description = "Default";
+                    label = "Rifleman Bags";
+                    description = "RFL";
                     //image = "xxx";
                 };
-				class Leg_Bag
+				class Grenadier
                 {
-                    label = "Bag + Pouch";
-                    description = "MRK/GRN";
+                    label = "Grenadier Bags";
+                    description = "GRN";
+                    //image = "xxx";
+                };
+				class Marksman
+                {
+                    label = "Marksman Bags";
+                    description = "MRK";
                     //image = "xxx";
                 };
 				class Backpack
                 {
                     label = "Backpack";
-                    description = "AR/AT";
+					//description = "";
                     //image = "xxx";
                 };
-				class Medic
+				class AR
                 {
-                    label = "Medic";
-                    description = "Medic";
+                    label = "Auto-Rifleman";
+                    description = "AR";
+                    //image = "xxx";
+                };
+				class AT
+                {
+                    label = "Anti-Tank";
+                    description = "AT";
+                    //image = "xxx";
+                };
+				class ENG
+                {
+                    label = "Engineer";
+                    description = "ENG";
+                    //image = "xxx";
+                };
+				class Ammo
+                {
+                    label = "Ammo Bearer";
+					//description = "";
                     //image = "xxx";
                 };
 				class JTAC
                 {
                     label = "JTAC";
-                    description = "JTAC";
+					//description = "";
                     //image = "xxx";
                 };
-				class Heavy
+				class Medic
                 {
-                    label = "Heavy";
-                    description = "ENG/Ammo Bearer";
+                    label = "Medic";
+					//description = "";
                     //image = "xxx";
                 };
-				class CSW
-                {
-                    label = "CSW";
-                    description = "BANNED!";
-                    //image = "xxx";
-                };
+
             };
-            class Radio
+            class NCO
             {
-                label = "Radio";
-				values[] = { "White", "Orange", "Black", };
+                label = "NCO";
+				values[] = { "White", "Orange", "Black", "Backpack", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class White
@@ -334,6 +477,37 @@ class XtdGearModels
                     //description = "Black";
                     //image = "xxx";
                 };
+				class Backpack
+                {
+                    label = "Backpack";
+                    description = "For using weapon quals!";
+                    //image = "xxx";
+                };
+            };
+            class Jumppack
+            {
+                label = "Jumppack";
+				values[] = { "JT12", "JT12_LR", "Pilot", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class JT12
+                {
+                    label = "JT12";
+                    //description = "White";
+                    //image = "xxx";
+                };
+				class JT12_LR
+                {
+                    label = "JT12 (LR)";
+                    //description = "Orange";
+                    //image = "xxx";
+                };
+				class Pilot
+                {
+                    label = "Pilot";
+                    //description = "Black";
+                    //image = "xxx";
+                };
             };
         };
 	};
@@ -346,52 +520,87 @@ class XtdGearInfos
         class 332nd_Backpack
         {
             model = "332nd_Backpack_Extended";
-            Type = "Backpack";
+            Misc = "Backpack";
+        };
+        class 332nd_Backpack_AR
+        {
+            model = "332nd_Backpack_Extended";
+            Misc = "AR";
+        };
+        class 332nd_Backpack_AT
+        {
+            model = "332nd_Backpack_Extended";
+            Misc = "AT";
         };
         class 332nd_Backpack_JTAC
         {
             model = "332nd_Backpack_Extended";
-            Type = "JTAC";
-        };
-        class 332nd_Backpack_Medic
-        {
-            model = "332nd_Backpack_Extended";
-            Type = "Medic";
-        };
-        class 332nd_Backpack_Heavy
-        {
-            model = "332nd_Backpack_Extended";
-            Type = "Heavy";
+            Misc = "JTAC";
         };
         class 332nd_Bag
         {
             model = "332nd_Backpack_Extended";
-            Type = "Bag";
+            Misc = "Rifleman";
         };
         class 332nd_Leg_Bag
         {
             model = "332nd_Backpack_Extended";
-            Type = "Leg_Bag";
+            Misc = "Grenadier";
         };
-        class 332nd_Repeater_CSW
+        class 332nd_Leg
         {
             model = "332nd_Backpack_Extended";
-            Type = "CSW";
+            Misc = "Marksman";
+        };
+        class 332nd_Backpack_Medic
+        {
+            model = "332nd_Backpack_Extended";
+            Misc = "Medic";
+        };
+        class 332nd_Backpack_Engineer
+        {
+            model = "332nd_Backpack_Extended";
+            Misc = "ENG";
+        };
+        class 332nd_Backpack_Ammo_Bearer
+        {
+            model = "332nd_Backpack_Extended";
+            Misc = "Ammo";
         };
         class 332nd_Radio
         {
             model = "332nd_Backpack_Extended";
-            Radio = "White";
+            NCO = "White";
         };
         class 332nd_Radio_Black
         {
             model = "332nd_Backpack_Extended";
-            Radio = "Black";
+            NCO = "Black";
         };
         class 332nd_Radio_Orange
         {
             model = "332nd_Backpack_Extended";
-            Radio = "Orange";
+            NCO = "Orange";
+        };
+        class 332nd_Backpack_NCO
+        {
+            model = "332nd_Backpack_Extended";
+            NCO = "Backpack";
+        };
+        class 332nd_JT12
+        {
+            model = "332nd_Backpack_Extended";
+            Jumppack = "JT12";
+        };
+        class 332nd_JT12_LR
+        {
+            model = "332nd_Backpack_Extended";
+            Jumppack = "JT12_LR";
+        };
+        class 332nd_MC
+        {
+            model = "332nd_Backpack_Extended";
+            Jumppack = "Pilot";
         };
     };
 };

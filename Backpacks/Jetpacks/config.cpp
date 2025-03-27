@@ -37,6 +37,31 @@ class CfgVehicles
         BNA_KC_jetpacks_effectSound = "\ORA\BNA_KC\addons\jetpacks\data\audio\Jetpack_Loop.wss";
         BNA_KC_jetpacks_lightColor[] = {0, 0.1, 0.9};  // Light color in format [R, G, B]
         BNA_KC_jetpacks_freefallHeight = 500;  // Freefall height to set on unit when jetpacking
+		//nsm
+		NSM_jumppack_is_jumppack = 1;
+		NSM_jumppack_spam_delay = 1;
+		NSM_jumppack_energy_capacity = 200;
+		NSM_jumppack_recharge = 5;
+		NSM_jumppack_jump_types[] = 
+		{
+			{
+				"Jump",// Name of jump
+				{
+					20,		//forward velo  [meters/second] (0)
+					10,		//verticle velo [meters/second] (1)
+					50,		//cost          [no units]      (2)
+					0,		//angle         [degrees]       (3)
+					1,		//directional   [bool, 0 = false, 1 = true] (4)
+					0		//can prone jump [bool, 0 = false, 1 = true] (5)
+				}
+			},
+		};
+		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
+		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
+		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
+		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
+		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
+
 	};
     class 332nd_JT12: 332nd_Jetpack_Base
     {  
@@ -91,6 +116,20 @@ class CfgVehicles
 		tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
         tf_subtype="digital_lr";
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel";
+		NSM_jumppack_jump_types[] = 
+		{
+			{
+				"Jump",// Name of jump
+				{
+					30,		//forward velo  [meters/second] (0)
+					10,		//verticle velo [meters/second] (1)
+					200,	//cost          [no units]      (2)
+					0,		//angle         [degrees]       (3)
+					1,		//directional   [bool, 0 = false, 1 = true] (4)
+					0		//can prone jump [bool, 0 = false, 1 = true] (5)
+				}
+			},
+		};
 	};
 };
 /*class XtdGearModels

@@ -179,7 +179,7 @@ class cfgWeapons
 	class 332nd_DC15S_Shield: 332nd_DC15S
 	{
 		cursor = "";
-		cursoraim = "";
+		cursoraim = "CursorAim";
 		baseWeapon = "332nd_DC15S_Shield";
 		displayName = "[332nd] DC-15S + Shield (ENG)";
 		handAnim[] = {"OFP2_ManSkeleton","Indecisive_Armoury_Anims\Republic\Shield_Rep.rtm"};
