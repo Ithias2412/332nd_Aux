@@ -414,225 +414,8 @@ player spawn {
 
 }];
 
-["[332nd] Low Gravity", "Enable zero gravity", {missionNamespace setVariable ["WBK_ZeroGEnabled",true,true];}] call zen_custom_modules_fnc_register;
-["[332nd] Low Gravity", "Disable zero gravity", {missionNamespace setVariable ["WBK_ZeroGEnabled",false,true];}] call zen_custom_modules_fnc_register;
-WBK_VACUUM_Helmets_And_FaceWear = ["CBRN_MASK_GEC","UCMC_Helm_R3","UCMC_Helm_H1","UCMC_Helm_C4","UCMC_Helm_R1","UCMC_Helm_H2","UCMC_Helm_C5","UCMC_Helm_R2","UCMC_Helm_McA"];
-
-movez = -1;
-vectrue = [0,0,0];
-addMissionEventHandler ["EachFrame",{
-    _zerog = call intrig;
-    _alt = (getPosASL player) select 2;
-    if ((missionNamespace getVariable ["WBK_ZeroGEnabled", false]) && !(isTouchingGround player)) then {
-        hintSilent format ["Altitude: %1", _alt];
-        veccurent = velocity player;
-        vectrue = veccurent vectorAdd vecupdate;
-        player setVelocity [(vectrue select 0), (vectrue select 1), 0 + movez];
-    };
-}];
-degtoarr = {
-_return = [0, 1, 0]; 
-_angle = _this select 0;
-_xlen = tan _angle;
-
-if ((_angle > 0) && (_angle < 90)) then {_return = [_xlen, 1, 0]};
-if ((_angle > 90) && (_angle < 180)) then {_return = [-_xlen, -1, 0]};
-if ((_angle > 180) && (_angle < 270)) then {_return = [-_xlen, -1, 0]};
-if ((_angle > 270) && (_angle < 360)) then {_return = [_xlen, 1, 0]};
-if (_angle == 90) then {_return = [1, 0, 0]};
-if (_angle == 180) then {_return = [0, -1, 0]};
-if (_angle == 270) then {_return = [-1, 0, 0]};
-_return = vectorNormalized _return;
-_return
-};
-vecupdate = [0,0,0];
-addMissionEventHandler ["EachFrame",{
-	if (missionNamespace getVariable ["WBK_ZeroGEnabled", false]) then {
-		vecupdate = [0,0,0];
-		if ((inputAction "MoveForward" > 0)) then {
-			_weaponVectorDir = player weaponDirection currentWeapon player;
-			vecupdate = [(_weaponVectorDir select 0) * 0.01, (_weaponVectorDir select 1) * 0.01, 0];
-		};
-		
-		if ((inputAction "TurnLeft" > 0)) then {
-			_weaponVectorDir = player weaponDirection currentWeapon player;
-			_adir = _weaponVectorDir # 0 atan2 _weaponVectorDir # 1;
-			_newdir = _adir + 280;
-			if (_newdir > 360) then {
-				_buffer = 360 - _adir;
-				_newdir = 280 - _buffer;
-			};
-			_velocity = [_newdir] call degtoarr;
-			vecupdate = [(_velocity select 0) * 0.01, (_velocity select 1) * 0.01, 0];
-		};
-
-		if ((inputAction "TurnRight" > 0)) then {
-			_weaponVectorDir = player weaponDirection currentWeapon player;
-			_adir = _weaponVectorDir # 0 atan2 _weaponVectorDir # 1;
-			_newdir = _adir + 90;
-			if (_newdir > 360) then {
-				_buffer = 360 - _adir;
-				_newdir = 90 - _buffer;
-			};
-			_velocity = [_newdir] call degtoarr;
-			vecupdate = [(_velocity select 0) * 0.01, (_velocity select 1) * 0.01, 0];
-		};
-	 
-		if ((inputAction "MoveBack" > 0)) then {
-			_weaponVectorDir = player weaponDirection currentWeapon player;
-			vecupdate = [(_weaponVectorDir select 0) * -0.01, (_weaponVectorDir select 1) * -0.01, 0];
-		};
-	};
-}];
-player spawn {
-	while {alive _this} do {
-		waitUntil {sleep 1; missionNamespace getVariable ["WBK_ZeroGEnabled", false] || !alive _this};
-		if !(alive _this) exitWith {};
-		1 fadeSound 0;
-		1 fadeRadio 0;
-		1 fadeSpeech 0;
-		playSoundUI ["vacum_enter", 2, 1];
-		_V_Phase3_pietre = "#particlesource" createVehicleLocal (getposasl _this);
-		_V_Phase3_pietre attachto [_this];
-		_V_Phase3_pietre setParticleCircle [20, [0, 0, 0]];
-		_V_Phase3_pietre setParticleRandom [0, [0.25, 0.25, 0], [0.175, 0.175, 0], 0, 0.25, [0, 0, 0, 0.1], 0, 0];
-		_V_Phase3_pietre setParticleParams [["\A3\data_f\ParticleEffects\Universal\Mud.p3d", 1, 0, 1], "", "SpaceObject", 1, 10, [0, 0, 0], [0, 0, 4], 1, 1.2, 1, 0.0001, [0.1, 0.1, 0.1], [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]], [0.08], 1, 0, "", "", _this];
-		_V_Phase3_pietre setDropInterval 0.01;
-		[_this,{  
-				if (isDedicated) exitWith {};  
-				_this setAnimSpeedCoef 0.85;
-				_object = _this;   
-				_1_fum = "#particlesource" createVehicleLocal (getPosATL _object);   
-				_1_fum setDropInterval 0.007;   
-				_1_fum setParticleCircle [0, [0, 0, 0]];   
-				_1_fum setParticleRandom [0.5,[0,0,0],[0,0,0],1,0.01,[0,0,0,0.1],0.01,0,10];   
-				_1_fum spawn {uisleep 0.9; deleteVehicle _this};   
-				_1_fum attachTo [_this,[-0.1,-0.3,0.2],"head"];    
-				_1_fum setParticleParams [["\A3\data_f\cl_basic", 1, 0, 1],   
-				 "",   
-				 "Billboard",   
-				 1,   
-				 0.5,   
-				 [0, 0, 0],   
-				 (vectorDir _this) vectorMultiply (-1),   
-				 1,   
-				 9,   
-				 7.9,   
-				 0.035,   
-				 [0.01, 0.2],   
-				 [[1, 1, 1, 1], [1, 1, 1, 0.5], [1, 1, 1, 0]],   
-				 [0.01],   
-				 1,   
-				 0,   
-				 "",   
-				 "",   
-				 _1_fum,   
-				 0,   
-				 false,   
-				 0   
-				];   
-		}] remoteExec ["spawn",0,false];
-		_this spawn {
-			while {alive _this && missionNamespace getVariable ["WBK_ZeroGEnabled", false]} do {
-				playSoundUI ["vacuum_breathing", 1.2, 1];
-				uiSleep 13.2;
-			};
-		};
-		_this spawn {
-		_unit = _this;
-		while {
-				alive _unit && missionNamespace getVariable ["WBK_ZeroGEnabled", false]
-			}
-			do {
-				if (isNull _unit) exitWith {};
-				if ((speed _unit) != 0 && isTouchingGround _unit) then {
-					switch (true) do {
-						case (
-							(animationState _unit == "ARMA_AlternativeRun_WW2Style") or(animationState _unit == "ARMA_AlternativePistol") or(animationState _unit == "ARMA_AlternativeRunLowered") or(animationState _unit == "ARMA_AlternativeRunLowered") or(animationState _unit == "ARMA_AlternativeRun") or(animationState _unit == "melee_sprintf") or(animationState _unit == "melee_sprintfl") or(animationState _unit == "melee_sprintfr") or(animationState _unit == "AmovPercMevaSnonWnonDf") or(animationState _unit == "AmovPercMevaSnonWnonDfl") or(animationState _unit == "AmovPercMevaSnonWnonDfr") or(animationState _unit == "AmovPknlMevaSnonWnonDf") or(animationState _unit == "AmovPknlMevaSnonWnonDfl") or(animationState _unit == "AmovPknlMevaSnonWnonDfr") or(animationState _unit == "AmovPknlMevaSlowWrflDf") or(animationState _unit == "AmovPknlMevaSlowWrflDfl") or(animationState _unit == "AmovPknlMevaSlowWrflDfr") or(animationState _unit == "AmovPknlMevaSrasWrflDf") or(animationState _unit == "AmovPknlMevaSrasWrflDfl") or(animationState _unit == "AmovPknlMevaSrasWrflDfr") or(animationState _unit == "AmovPknlMevaSrasWpstDf") or(animationState _unit == "AmovPknlMevaSrasWpstDfl") or(animationState _unit == "AmovPknlMevaSrasWpstDfr") or(animationState _unit == "AmovPknlMevaSnonWbinDf") or(animationState _unit == "AmovPknlMevaSnonWbinDfl") or(animationState _unit == "AmovPknlMevaSnonWbinDfr") or(animationState _unit == "AmovPercMevaSlowWrflDf") or(animationState _unit == "AmovPercMevaSlowWrflDfl") or(animationState _unit == "AmovPercMevaSlowWrflDfr") or(animationState _unit == "AmovPercMevaSrasWrflDf") or(animationState _unit == "AmovPercMevaSrasWrflDfl") or(animationState _unit == "AmovPercMevaSrasWrflDfr") or(animationState _unit == "AmovPercMevaSrasWpstDf") or(animationState _unit == "AmovPercMevaSrasWpstDfl") or(animationState _unit == "AmovPercMevaSrasWpstDfr") or(animationState _unit == "AmovPercMevaSlowWpstDf") or(animationState _unit == "AmovPercMevaSlowWpstDfr") or(animationState _unit == "AmovPercMevaSlowWpstDfl") or(animationState _unit == "AmovPercMevaSlowWlnrDf") or(animationState _unit == "AmovPercMevaSlowWlnrDfl") or(animationState _unit == "AmovPercMevaSlowWlnrDfr") or(animationState _unit == "AmovPercMevaSnonWbinDf") or(animationState _unit == "AmovPercMevaSnonWbinDfl") or(animationState _unit == "AmovPercMevaSnonWbinDfr")
-						):{
-							   playSoundUI [selectRandom ["vacuum_movement_1","vacuum_movement_2","vacuum_movement_3","vacuum_movement_4"], 0.5, 1];
-							   playSoundUI [selectRandom ["vacuum_step_1","vacuum_step_2","vacuum_step_3","vacuum_step_4"], 1, 1];
-								UiSleep 0.1;
-							};
-						case (stance _unit != "STAND"): {playSoundUI [selectRandom ["vacuum_movement_1","vacuum_movement_2","vacuum_movement_3","vacuum_movement_4"], 1, 1]; UiSleep 0.6;};
-						case ((((speed _unit) > 8) and((speed _unit) < 16.5)) or (((speed _unit) < (6 * (-1))) and((speed _unit) > (13 * (-1))))):{
-								playSoundUI [selectRandom ["vacuum_movement_1","vacuum_movement_2","vacuum_movement_3","vacuum_movement_4"], 0.8, 1];
-								playSoundUI [selectRandom ["vacuum_step_1","vacuum_step_2","vacuum_step_3","vacuum_step_4"], 1, 1];
-								UiSleep 0.215;
-							};
-						case ((((speed _unit) > 0) and((speed _unit) < 8)) or(((speed _unit) < 0) and((speed _unit) > (6 * (-1))))):{
-								playSoundUI [selectRandom ["vacuum_movement_1","vacuum_movement_2","vacuum_movement_3","vacuum_movement_4"], 0.5, 1]; 
-								playSoundUI [selectRandom ["vacuum_step_1","vacuum_step_2","vacuum_step_3","vacuum_step_4"], 0.7, 1];
-								UiSleep 0.38;
-							};
-					};
-				};
-				UiSleep 0.25;
-			};
-		};
-		waitUntil {sleep 1; !(missionNamespace getVariable ["WBK_ZeroGEnabled", false]) || !(alive _this)};
-		deleteVehicle _V_Phase3_pietre;
-		if !(alive _this) exitWith {};
-		playSoundUI ["vacum_exit", 2, 1];
-		1 fadeSound 1;
-		1 fadeRadio 1;
-		1 fadeSpeech 1;
-		[_this, 1] remoteExec ["setAnimSpeedCoef",0];
-		uiSleep 1;
-	};
-};
-
-SB_Acclamator_Barrage = {
-_currentTarget = _this;
-_position = (getPosATL _currentTarget);
-_position = [(_position select 0), (_position select 1) - 50, (_position select 2)];
 
 
-_Ship = "ls_acclamator_2";
-_Altitude = 250;
-_Ship_direction = 0;
-
-sleep 1;
-_ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPLUS_fnc_JumpShipin;
-sleep 2;
-_sndEmmiter = "#particleSource" createVehicleLocal [getPosATL _currentTarget select 0,getPosATL _currentTarget select 1,500];
-_countMines =20;
-while {_countMines > 0} do {
-_snd = selectRandom ["3AS\3AS_Main\Sounds\HeavyTurboLaser\heavy_turbolaser_1.ogg","3AS\3AS_Main\Sounds\HeavyTurboLaser\heavy_turbolaser_2.ogg","3AS\3AS_Main\Sounds\HeavyTurboLaser\heavy_turbolaser_3.ogg","3AS\3AS_Main\Sounds\HeavyTurboLaser\heavy_turbolaser_4.ogg"];
-playSound3D [_snd, _ReturnShip, false, getPosASL _ReturnShip, 5, 1, 2500];
-_dist = random 40;
-_dir = random 360;
-_pos = getpos _currentTarget;
-_random = selectRandom [1,2,3,4];
-switch _random do {
-    case 1: {_pos =  [((getPosATL _ReturnShip) select 0) + 25, ((getPosATL _ReturnShip) select 1) + 35, 300];};
-    case 2: {_pos =  [((getPosATL _ReturnShip) select 0) , ((getPosATL _ReturnShip) select 1) + 45, 300];};
-    case 3: {_pos =  [((getPosATL _ReturnShip) select 0) - 25, ((getPosATL _ReturnShip) select 1) + 35, 300];};
-    case 4: {_pos =  [((getPosATL _ReturnShip) select 0) , ((getPosATL _ReturnShip) select 1) + 45, 300];};
-    default {_pos = _position};
-};
-_shell = "IDA_thermal_shell_HP_Blue" createvehicle _pos;
-[_ReturnShip, _shell] remoteExecCall ["disableCollisionWith", 0, _ReturnShip];
-_shell setVectorDirandUp [[0,1,1],[0.1,0.1,1]];
-[_shell, [0,0,-150]] remoteExec ["setVelocity"];
-uiSleep 0.4;
-_countMines = _countMines - 1;
-};
-uisleep 0.1;
-[_ReturnShip] call ScifiSupportPLUS_fnc_JumpOut;
-deleteVehicle _currentTarget;
-};
-
-
-
-["[332nd] Republic Modules", "Acclamator Barrage",
-    {
-        params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
-        _target = "Land_HelipadEmpty_F" createVehicle [0,0,0];
-        _target setPosASL _pos;  
-		_target spawn SB_Acclamator_Barrage;
-        
-}, "\PHAN\data\Rocket.paa"] call zen_custom_modules_fnc_register;	
 
 
 
@@ -766,7 +549,7 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 
             _currentposition = [((getPosATL _ReturnShip) select 0), ((getPosATL _ReturnShip) select 1), (((getPosATL _ReturnShip) select 2))];
 
-            _Banshee = createVehicle ["332nd_Vulture", _currentposition, [], 0, "CAN_COLLIDE"];
+            _Banshee = createVehicle ["332nd_CIS_Vulture", _currentposition, [], 0, "CAN_COLLIDE"];
             (_dropside select 0) createvehiclecrew _Banshee;
             _Banshee engineOn true;
 
@@ -999,7 +782,7 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 			{
 				params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 				
-				_options = ["Specialist", "AT Team", "RIfle Team", "B2 Team", "Commandos"];
+				_options = ["B1 Rifle Squad", "B1 Fireteam", "B1 AT Team", "B2 Fireteam", "BX Team", "BX Team (Melee)" ];
 				
 				["spawn Droid Dispenser", [
 					["sideS", ["Side select (ONLY ONE!)", "The side the spawned dropped units will be on."], [east]],
@@ -1120,26 +903,30 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 											_list = [
 												["332nd_Droid_B1_Rifleman",
 													"332nd_Droid_B1_Rifleman",
-													"332nd_Droid_B1_AT",
-													"332nd_Droid_B1_Commander",
-													"332nd_Droid_B1_Sniper"],
-												["332nd_Droid_B1_Rifleman",
-													"332nd_Droid_B1_AT",
-													"332nd_Droid_B1_AT",
 													"332nd_Droid_B1_Rifleman",
-													"332nd_Droid_B1_Rifleman"],
+													"332nd_Droid_B1_Rifleman",
+													"332nd_Droid_B1_Rifleman",
+													"332nd_Droid_B1_Rifleman",
+													"332nd_Droid_B1_Support",
+													"332nd_Droid_B1_Support"],
 												["332nd_Droid_B1_Rifleman",
 													"332nd_Droid_B1_Rifleman",
 													"332nd_Droid_B1_Rifleman",
+													"332nd_Droid_B1_Support"],
+												["332nd_Droid_B1_Rifleman",
 													"332nd_Droid_B1_Rifleman",
-													"332nd_Droid_B1_Rifleman"],			
+													"332nd_Droid_B1_AT",
+													"332nd_Droid_B1_AT"],
 												["332nd_Droid_B2",
 													"332nd_Droid_B2",
 													"332nd_Droid_B2",
-													"332nd_Droid_B2_Rockets"],
+													"332nd_Droid_B2"],
 												["332nd_Droid_BX_Range",
 													"332nd_Droid_BX_Range",
-												"332nd_Droid_BX_Range"]
+													"332nd_Droid_BX_Range"],
+												["332nd_Droid_BX_Melee",
+													"332nd_Droid_BX_Melee",
+													"332nd_Droid_BX_Melee"]
 											] # _selection;
 											
 											_listout=[];
@@ -1194,11 +981,11 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 			{
 				params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 				
-				_options = ["AAT", "heavy AAT", "GAT", "GAT light", "Raptor", "HAGM"];
+				_options = ["AAT", "AAT (heavy)", "Advanced DSD", "MTT", "Assault Craft", "Crab Droid", "Dwarf Spider Droid MK3", "GAT", "GAT (Canon)", "Hailfire Tank", "Dwarf Spider Droid", "Raptor Light UGV", "HAG-M", "Droideka", "Droideka (Sniper)"];
 				
 				["Standby for Deployment", [
 					["sideS", ["Side select (ONLY ONE!)", "The side the spawned dropped units will be on."], [east]],
-					["toOLBOX", ["Type select", "What type of vehicle to drop in."], [3, 2, 3, _options, nil]]
+					["toOLBOX", ["Type select", "What type of vehicle to drop in."], [3, 5, 3, _options, nil]]
 					], {
 						params["_values", "_arguments"];
 						_dropside=_values # 0;
@@ -1308,10 +1095,19 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 							_list = [
 								["332nd_CIS_AAT"],
 								["332nd_CIS_AAT_Heavy"],
-								["332nd_CIS_GAT_Heavy"],
+								["332nd_CIS_Advanced_DSD"],
+								["332nd_CIS_MTT"],
+								["332nd_CIS_Assault_Craft"],
+								["332nd_CIS_Crab_Droid"],
+								["332nd_CIS_Dwarf_Spider_Droid_MK3"],
 								["332nd_CIS_GAT_Light"],
+								["332nd_CIS_GAT_Heavy"],
+								["332nd_CIS_Hailfire_Tank"],
+								["332nd_CIS_Dwarf_Spider_Droid"],
 								["332nd_CIS_Raptor"],
-								["332nd_CIS_HAGM"]
+								["332nd_CIS_HAGM"],
+								["332nd_CIS_Deka"],
+								["332nd_CIS_Deka_Sniper"]
 							] # _selection;
 							
 							_listout=[];
@@ -1475,191 +1271,6 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 						};
 					}, {}, [_pos]] call zen_dialog_fnc_create;
 				}, "\titanfall_script\images\titanfall.paa"] call zen_custom_modules_fnc_register;
-		["[332nd] Republic Modules", "LAAT/c vehicle drop",
-		{
-			params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
-
-			["spawn LAAT/c vehicle drop",
-				[
-					["COMBO", ["Choose Aircraft", "The aircraft that will deploy the vehicle"], [SB_332nd_LAAT_C_list, SB_332nd_LAAT_C_listDISPLAY]],
-					["COMBO", ["Choose vehicle", "The vehicle that will be deployed"], [SB_332nd_LAAT_C_GV_list, SB_332nd_LAAT_C_GV_listDISPLAY]],
-					["CHECKBOX",["Add Crew","Add crew to deployed vehicle"],[false]],
-					["SLIDER",["Insert Distance","How far away the aircraft start it's flight path"],[1000,5000,2000,0]],
-					["toOLBOX", "Insert Direction", [0, 1, 8, ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]]]
-				],
-				{ 
-					_this spawn {
-					params["_values", "_arguments"];
-
-						_Aircraft = _values # 0;
-						_dropvehicle = _values # 1;
-						_addcrew = _values # 2;
-						_InsertDistance = _values # 3;
-						_direction = _values # 4;
-
-						_Ship_direction = [0, 45, 90, 135, 180, 225, 270, 315] # _direction;
-												
-						_position=_arguments select 0;
-
-						[_position, _Aircraft,_dropvehicle,_addcrew,_InsertDistance,_Ship_direction] call SB_ScifiSupportPlus_fnc_332nd_LAAT_CVehicleDrop;
-
-					};
-				},
-				{},
-				[_pos]] call zen_dialog_fnc_create;
-		},
-		"\PHAN_ScifiSupportPlus\data\Laat-c.paa"] call zen_custom_modules_fnc_register;
-
-		SB_ScifiSupportPlus_fnc_332nd_LAAT_CVehicleDrop = {
-		params ["_position", "_Aircraft", "_dropvehicle", "_addcrew", "_insertdistance", "_Ship_direction"];
-
-		[_position, _Aircraft, _dropvehicle, _addcrew, _insertdistance, _Ship_direction] spawn {
-		params ["_position", "_Aircraft", "_dropvehicle", "_addcrew", "_insertdistance", "_Ship_direction"];
-		
-		_logic = createvehicle ["land_AirHorn_01_F", ASLtoATL _position, [], 0, "CAN_COLLIDE"];
-		hideObjectglobal _logic;
-		_logic setDir _Ship_direction;
-		_logic setPosATL (getPosATL _logic);
-		
-		_position = (getPosATL _logic);
-		
-		_craterposNew = _logic getRelPos [(_insertdistance), (_Ship_direction)];
-		_craterposdrop = _logic getRelPos [-100, - (_Ship_direction)];
-		_craterposOut = _logic getRelPos [-5000, - (_Ship_direction)];
-		
-		_dropperAircraft = createvehicle [_Aircraft, _craterposNew, [], 0, "FLY"];
-		createvehiclecrew _dropperAircraft;
-		_dropperAircraft flyinHeight 15;
-		_dropperAircraft limitspeed 200;
-		
-		_droppervehicle = createvehicle [_dropvehicle, [(random 100), 0, 1], [], 0, "NONE"];
-		
-		sleep 0.1;
-		
-		if (_addcrew) then {
-			createvehiclecrew _droppervehicle;
-		};
-		
-
-		
-		_droppervehicle attachto [_dropperAircraft, [0.12, -4.5, -((boundingBox _droppervehicle)#1#1)]];
-		
-		_droppervehicle disableCollisionwith _dropperAircraft;
-		_dropperAircraft disableCollisionwith _droppervehicle;
-		
-		_dropperAircraft setCombatbehaviour "CARELESS";
-		_dropperAircraft domove (_craterposdrop);
-		
-		{
-			[_x, [[_dropperAircraft], false]] remoteExec ["addcuratorEditableObjects", 0];
-			[_x, [[_droppervehicle], false]] remoteExec ["addcuratorEditableObjects", 0];
-		} forEach allCurators;
-		
-		waitUntil {
-			((_dropperAircraft distance2D _craterposdrop) < 200) || (!alive _dropperAircraft)
-		};
-		if (!alive _dropperAircraft) exitwith {
-			detach _droppervehicle;
-		};
-		
-		_dropperAircraft spawn {
-			_this allowdamage false;
-			sleep 2; _this allowdamage true;
-		};
-		detach _droppervehicle;
-		_dropperAircraft domove (_craterposOut);
-		_dropperAircraft flyinHeight 100;
-		_dropperAircraft limitspeed 300;
-		
-		waitUntil {
-			((_dropperAircraft distance2D _craterposOut) < 250) || (!alive _dropperAircraft)
-		};
-		if (!alive _dropperAircraft) exitwith {};
-		
-		{
-			deletevehicle _x
-		} forEach (crew _dropperAircraft);
-		deletevehicle _dropperAircraft;
-		deletevehicle _logic;
-		};
-		};
-
-		SB_332nd_LAAT_C_list_insert = [
-		"SB_LAATC",
-		"332nd_LAATC"
-		];
-
-		SB_332nd_LAAT_C_list=[];
-		{
-		if (_x!="" && (gettext (configFile >> "Cfgvehicles" >> _x >> "displayname")) != "") then {
-			SB_332nd_LAAT_C_list pushBack _x;
-		}
-		}forEach SB_332nd_LAAT_C_list_insert;
-		SB_332nd_LAAT_C_list;
-
-		SB_332nd_LAAT_C_listDISPLAY=[];
-		{
-		if (_x!="" && (gettext (configFile >> "Cfgvehicles" >> _x >> "displayname")) != "") then {
-			_colour=switch ((getNumber (configFile >> "Cfgvehicles" >> _x >> "side"))) do {
-				case 0: {
-					[255, 0, 0, 255]
-				};
-				case 1: {
-					[0, 0, 255, 255]
-				};
-				case 2: {
-					[0, 255, 0, 255]
-				};
-				case 3: {
-					[255, 0, 255, 255]
-				};
-				default {
-					[0, 0, 0, 255]
-				};
-			};
-			SB_332nd_LAAT_C_listDISPLAY pushBack [(gettext (configFile >> "Cfgvehicles" >> _x >> "displayname")), "", (gettext (configFile >> "Cfgvehicles" >> _x >> "editorPreview")), _colour];
-		}
-		}forEach SB_332nd_LAAT_C_list;
-		SB_332nd_LAAT_C_listDISPLAY;
-
-		SB_332nd_LAAT_C_GV_list_insert = [
-		"332nd_ATTE", 
-		"332nd_PX10_F"
-		];
-
-		SB_332nd_LAAT_C_GV_list=[];
-		{
-		if (_x!="" && (gettext (configFile >> "Cfgvehicles" >> _x >> "displayname")) != "") then {
-			SB_332nd_LAAT_C_GV_list pushBack _x;
-		}
-		}forEach SB_332nd_LAAT_C_GV_list_insert;
-		SB_332nd_LAAT_C_GV_list;
-
-		SB_332nd_LAAT_C_GV_listDISPLAY=[];
-		{
-		if (_x!="" && (gettext (configFile >> "Cfgvehicles" >> _x >> "displayname")) != "") then {
-			_colour=switch ((getNumber (configFile >> "Cfgvehicles" >> _x >> "side"))) do {
-				case 0: {
-					[255, 0, 0, 255]
-				};
-				case 1: {
-					[0, 0, 255, 255]
-				};
-				case 2: {
-					[0, 255, 0, 255]
-				};
-				case 3: {
-					[255, 0, 255, 255]
-				};
-				default {
-					[0, 0, 0, 255]
-				};
-			};
-			SB_332nd_LAAT_C_GV_listDISPLAY pushBack [(gettext (configFile >> "Cfgvehicles" >> _x >> "displayname")), "", (gettext (configFile >> "Cfgvehicles" >> _x >> "editorPreview")), _colour];
-		}
-		}forEach SB_332nd_LAAT_C_GV_list;
-		SB_332nd_LAAT_C_GV_listDISPLAY;
-
 
 			["[332nd] Droid Modules", "HMP vehicle drop",
 		{

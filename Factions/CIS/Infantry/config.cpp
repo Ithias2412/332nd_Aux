@@ -666,25 +666,25 @@ class CfgGroups
                         side = 0;
                         vehicle = "332nd_Droid_B1_Rifleman";
                         rank = "PRIVATE";
-                        position[] = {15, -15, 0};
+						position[] = {-10, -10, 0};
                     };
                     class Unit5 {
                         side = 0;
                         vehicle = "332nd_Droid_B1_Rifleman";
                         rank = "PRIVATE";
-                        position[] = {-15, -15, 0};
+						position[] = {15, -15, 0};
                     };
                     class Unit6 {
                         side = 0;
                         vehicle = "332nd_Droid_B1_Support";
                         rank = "PRIVATE";
-                        position[] = {20, -20, 0};
+						position[] = {-15, -15, 0};
                     };
                     class Unit7 {
                         side = 0;
                         vehicle = "332nd_Droid_B1_Support";
                         rank = "PRIVATE";
-                        position[] = {-20, -20, 0};
+						position[] = {20, -20, 0};
                     };
                 };
                 class 332nd_Defensive_Garrison 
