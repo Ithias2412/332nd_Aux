@@ -14,6 +14,7 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
+
 //#include "xtdGear.hpp"
 class ace_medical_treatment
 {
@@ -204,7 +205,34 @@ class ace_medical_treatment
             incompatibleMedication[] = {};
             viscosityChange = 0;
         };
+        class 332nd_Franks_Jungle_Juice
+        {
+            painReduce = 0.5;
+			hrIncreaseLow[] = {10,40};
+			hrIncreaseNormal[] = {10,40};
+			hrIncreaseHigh[] = {10,30};
+			timeInSystem = 150;
+			timeTillMaxEffect = 15;
+			maxDose = 4;
+            dose = 1;
+			incompatibleMedication[] = {};
+			viscosityChange = 0;
 
+        };
+        class 332nd_Zagustin
+        {
+            painReduce = 0;
+			hrIncreaseLow[] = {-5,-15};
+			hrIncreaseNormal[] = {-5,-20};
+			hrIncreaseHigh[] = {-5,-25};
+			timeInSystem = 120;
+			timeTillMaxEffect = 20;
+			maxDose = 3;
+            dose = 1;
+			incompatibleMedication[] = {};
+			viscosityChange = 50
+
+        };
 	};
 };
 
@@ -212,6 +240,16 @@ class ace_medical_treatment_actions
 {
     class FieldDressing;
 	class Morphine;
+    class BasicInjector: Morphine
+	{
+		treatmentLocations = 0;
+		litter[] = {{"ACE_MedicalLitter_adenosine"}};
+		treatmentTime = 5;
+		allowSelfTreatment = 1;
+		condition = "";
+		consumeItem = 1;
+		medicRequired = 0;
+	};
 
 	class 332nd_Acti_Bandage: FieldDressing
 	{
@@ -244,6 +282,26 @@ class ace_medical_treatment_actions
 			"332nd_Painkiller_Weap",
 		};
 	};
+    class 332nd_Franks_Jungle_Juice: BasicInjector
+    {
+        displayName="[332nd] Frank's Jungle Juice";
+        displayNameProgress = "Time to get fucked up!";
+        allowedSelections[] = {"Head"};
+        items[]=
+        {
+            "332nd_Franks_Jungle_Juice_Weap",
+        };
+    };
+    class 332nd_Zagustin: BasicInjector
+    {
+        displayName="[332nd] Za Gustin";
+        displayNameProgress = "Please stop bleeding.";
+        allowedSelections[] = {"Head"};
+        items[]=
+        {
+            "332nd_Zagustin_Weap",
+        };
+    };
 };
 
 class cfgWeapons
@@ -251,7 +309,32 @@ class cfgWeapons
     class ACE_fieldDressing;
     class ACE_morphine;
 	class CBA_MiscItem_ItemInfo;
+	class ACE_salineIV;
+    class 332nd_Franks_Jungle_Juice_Weap: ACE_morphine
+    {
+        scope=2;
+        author="Frankie";
+        displayName="[332nd] Frank's Jungle Juice";
+        descriptionShort = "A special blend of chemicals to help you get through the day.";
+        descriptionUse = "Time to get fucked up!";
+        class ItemInfo: CBA_MiscItem_ItemInfo
+        {
+            mass = 0.5;
+        };
 
+    };
+    class 332nd_Zagustin_Weap: ACE_morphine
+    {
+        scope=2;
+        author="Frankie";
+        displayName="[332nd] Za Gustin";
+        descriptionShort = "Please stop bleeding.";
+        descriptionUse = "Oh shit, oh fuck.";
+        class ItemInfo: CBA_MiscItem_ItemInfo
+        {
+            mass = 0.5;
+        };
+    };
 	class 332nd_Acti_Bandage_Weap: ACE_fieldDressing
 	{
 		scope=2;
