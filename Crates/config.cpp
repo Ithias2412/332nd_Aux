@@ -57,6 +57,86 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DC15L_Mag";
 			};
+			class 332nd_C_24_Mag
+			{
+				count = 100;
+				magazine = "332nd_C_24_Mag";
+			};
+			class 332nd_C_24_Flamer_Mag
+			{
+				count = 50;
+				magazine = "332nd_C_24_Flamer_Mag";
+			};
+			class 332nd_DLT15_Mag
+			{
+				count = 100;
+				magazine = "332nd_DLT15_Mag";
+			};
+			class 332nd_DW_32S_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Mag";
+			};
+			class 332nd_EPL_2_Mag
+			{
+				count = 100;
+				magazine = "332nd_EPL_2_Mag";
+			};
+			class 332nd_HE_EPL_Mag
+			{
+				count = 25;
+				magazine = "332nd_HE_EPL_Mag";
+			};
+			class 332nd_Firepuncher_Mag
+			{
+				count = 100;
+				magazine = "332nd_Firepuncher_Mag";
+			};
+			class 332nd_ScatterGun_Scattershot_Mag
+			{
+				count = 100;
+				magazine = "332nd_ScatterGun_Scattershot_Mag";
+			};
+			class 332nd_Slug_Thrower_Mag
+			{
+				count = 100;
+				magazine = "332nd_Slug_Thrower_Mag";
+			};
+			class 332nd_Westar_Mag
+			{
+				count = 100;
+				magazine = "332nd_Westar_Mag";
+			};
+			class 332nd_HE_LGrenade_Mag
+			{
+				count = 50;
+				magazine = "332nd_HE_LGrenade_Mag";
+			};
+			class 332nd_Smoke_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_Smoke_LauncherGrenade";
+			};
+			class 332nd_SmokeRed_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_SmokeRed_LauncherGrenade";
+			};
+			class 332nd_SmokeGreen_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_SmokeGreen_LauncherGrenade";
+			};
+			class 332nd_SmokeBlue_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_SmokeBlue_LauncherGrenade";
+			};
+			class 332nd_SmokePurple_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_SmokePurple_LauncherGrenade";
+			};
 			class 332nd_DC15S_Mag
 			{
 				count = 100;
@@ -774,6 +854,91 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DC15L_Mag";
 			};
+			class 332nd_C_24_Mag
+			{
+				count = 100;
+				magazine = "332nd_C_24_Mag";
+			};
+			class 332nd_C_24_Flamer_Mag
+			{
+				count = 50;
+				magazine = "332nd_C_24_Flamer_Mag";
+			};
+			class 332nd_DLT15_Mag
+			{
+				count = 100;
+				magazine = "332nd_DLT15_Mag";
+			};
+			/* class 332nd_DLT19L_Mag
+			{
+				count = 100;
+				magazine = "332nd_DLT19L_Mag";
+			}; */
+			class 332nd_DW_32S_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Mag";
+			};
+			class 332nd_EPL_2_Mag
+			{
+				count = 100;
+				magazine = "332nd_EPL_2_Mag";
+			};
+			class 332nd_HE_EPL_Mag
+			{
+				count = 25;
+				magazine = "332nd_HE_EPL_Mag";
+			};
+			class 332nd_Firepuncher_Mag
+			{
+				count = 100;
+				magazine = "332nd_Firepuncher_Mag";
+			};
+			class 332nd_ScatterGun_Scattershot_Mag
+			{
+				count = 100;
+				magazine = "332nd_ScatterGun_Scattershot_Mag";
+			};
+			class 332nd_Slug_Thrower_Mag
+			{
+				count = 100;
+				magazine = "332nd_Slug_Thrower_Mag";
+			};
+			class 332nd_Westar_Mag
+			{
+				count = 100;
+				magazine = "332nd_Westar_Mag";
+			};
+			class 332nd_HE_LGrenade_Mag
+			{
+				count = 50;
+				magazine = "332nd_HE_LGrenade_Mag";
+			};
+			class 332nd_Smoke_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_Smoke_LauncherGrenade";
+			};
+			class 332nd_SmokeRed_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_SmokeRed_LauncherGrenade";
+			};
+			class 332nd_SmokeGreen_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_SmokeGreen_LauncherGrenade";
+			};
+			class 332nd_SmokeBlue_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_SmokeBlue_LauncherGrenade";
+			};
+			class 332nd_SmokePurple_LauncherGrenade
+			{
+				count = 50;
+				magazine = "332nd_SmokePurple_LauncherGrenade";
+			};
 			class 332nd_DC15S_Mag
 			{
 				count = 100;
@@ -798,11 +963,6 @@ class CfgVehicles
 			{
 				count = 100;
 				magazine = "332nd_Z6_Mag";
-			};
-			class 1Rnd_HE_Grenade_shell
-			{
-				count = 100;
-				magazine = "1Rnd_HE_Grenade_shell";
 			};
 			class 332nd_DC17S_Mag
 			{
