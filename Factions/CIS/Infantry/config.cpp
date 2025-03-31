@@ -61,8 +61,8 @@ class CfgVehicles {
         respawnWeapons[] = {"Throw", "Put"};
         magazines[] = {"SmokeShell"};
         respawnMagazines[] = {"SmokeShell"};
-        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
-        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
+        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
     };
     class 332nd_Droid_B1_Rifleman: 332nd_Droid_Base 
 	{
@@ -107,6 +107,8 @@ class CfgVehicles {
         respawnWeapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
         magazines[] = {"JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_RG4D_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};    
     };
     class 332nd_Droid_B1_Commander: 332nd_Droid_Base 
 	{
@@ -130,6 +132,8 @@ class CfgVehicles {
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};    
     };
     class 332nd_Droid_B1_Security: JLTS_Droid_B1_E5 
 	{
@@ -144,6 +148,8 @@ class CfgVehicles {
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
     };
     class 332nd_Droid_B1_Pilot: JLTS_Droid_B1_Pilot 
 	{
@@ -157,6 +163,8 @@ class CfgVehicles {
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
+        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
     };
 	// B2 Droids
     class 332nd_Droid_B2: 3AS_CIS_B2_F 
@@ -170,8 +178,8 @@ class CfgVehicles {
         respawnWeapons[] = {"3AS_DWBlaster_F", "Throw", "Put"};
         magazines[] = {"3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "SmokeShell"};
         respawnMagazines[] = {"3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "SmokeShell"};
-        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
-        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
+        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch","332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch","332nd_NVG_Chip"};
     };
     class 332nd_Droid_B2_Rockets: 332nd_Droid_B2 
 	{
@@ -189,8 +197,9 @@ class CfgVehicles {
         respawnWeapons[] = {"Throw", "Put"};
         magazines[] = {"SmokeShell"};
         respawnMagazines[] = {"SmokeShell"};
-        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
-        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+
 	};
 	//Human CIS
 	class 332nd_CIS_Hum: 3AS_U_CIS_Light
@@ -204,8 +213,8 @@ class CfgVehicles {
         respawnWeapons[] = {"JLTS_E5", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
-        linkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
-        respawnLinkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch"};
+        linkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 		model = "\3AS\3AS_CIS_Infantry\Model\CIS_Inf.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"3AS\3AS_CIS_Infantry\data\cis_inf_texture_armour_co.paa"};
@@ -450,6 +459,8 @@ class CfgVehicles {
         respawnWeapons[] = {"WBK_Dutch_Vibro", "JLTS_E5", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
+        linkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 
 	};
 	class 332nd_Droid_BX_Range: lsd_cis_bxdroid_specops
@@ -460,6 +471,8 @@ class CfgVehicles {
         respawnWeapons[] = {"JLTS_E5", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
+        linkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 
 	};
 };

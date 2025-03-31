@@ -57,6 +57,11 @@ class CfgVehicles
 		ls_impulsor_fuelDrain_1=0.00005; // was 0.000099999997;
 		ls_impulsor_fuelDrain_2=0.00010; // was 0.00030000001;
 		armor = 200; //was 100
+
+		smokeLauncherGrenadeCount = 10;      // Number of smoke grenades
+		smokeLauncherVelocity = 30;         // Ejection velocity
+		smokeLauncherOnTurret = 0;          // Not tied to a turret
+		smokeLauncherAngle = 180;           // Coverage angle
 		class HitPoints: HitPoints
 		{
 			class HitAvionics
@@ -100,6 +105,7 @@ class CfgVehicles
 			"ls_laat_DAR",
 			"CMFlareLauncher",
 			"332nd_Dropcrate_PW1",
+			"SmokeLauncher",
 			
 		};
 		magazines[]= // changed from "200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"
@@ -114,7 +120,8 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"Pylon_332nd_Dropcrate_1rnd", 
+			"Pylon_332nd_Dropcrate_1rnd",
+			"SmokeLauncherMag_boat",
 		};
 		hiddenselectionstextures[]=
 		{
