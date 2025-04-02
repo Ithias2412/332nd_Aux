@@ -319,7 +319,7 @@ class 332nd_Uniform_Clone_Seelig: 332nd_Uniform_Clone_CR
 		dlc="332nd";
 		author="Cherryy";
 		scope=2;
-		displayName="[332nd] Clone Trooper Armor (Custom)";
+		displayName="[332nd] Clone Trooper Armor (Seelig)";
 		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
@@ -332,6 +332,25 @@ class 332nd_Uniform_Clone_Seelig: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
+class 332nd_Uniform_Clone_Joker: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Not Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Joker)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Crow_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+
 };
 
 class CfgVehicles
@@ -888,7 +907,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig"};
+				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Joker",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -931,6 +950,12 @@ class XtdGearModels
                 {
                     label = "Seelig";
                     description = "Delayed forever";
+                    //image = "xxx";
+                }; 
+				class Joker
+                {
+                    label = "Joker";
+                    description = "Not the original";
                     //image = "xxx";
                 }; 
             };
@@ -1028,6 +1053,16 @@ class XtdGearInfos
         {
             model = "332nd_Uniform_Extended";
             Customs = "Frankenburg";
+        }; 
+		class 332nd_Uniform_Clone_Seelig
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Seelig";
+        }; 
+		class 332nd_Uniform_Clone_Joker
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Joker";
         }; 
     };
 };
