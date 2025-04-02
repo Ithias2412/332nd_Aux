@@ -344,7 +344,7 @@ class 332nd_Uniform_Clone_Joker: 332nd_Uniform_Clone_CR
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Crow_Veh";
+			uniformClass="332nd_Uniform_Clone_Joker_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -804,6 +804,23 @@ class 332nd_Uniform_Clone_Seelig_Veh: 332nd_Uniform_Clone_CT_Veh
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Seelig.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Seelig.paa",
+		};
+	};
+class 332nd_Uniform_Clone_Joker_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Joker";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Joker.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Joker.paa",
 		};
 	};
 };
