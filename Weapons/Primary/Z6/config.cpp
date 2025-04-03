@@ -24,6 +24,16 @@ class UnderBarrelSlot;
 class FullAuto;
 class WeaponSlotsInfo;
 class JLTS_Z6;
+class CfgRecoils
+{
+	class recoil_default;
+	class Old_IDA_recoil_Z6: recoil_default
+	{
+		muzzleOuter[]={0,0.1,0.40000001,0.40000001};
+		kickBack[]={0.059999999,0.090000004};
+		temporary=0.0060000001;
+	};
+};
 class cfgWeapons 
 {
 
@@ -51,7 +61,7 @@ class cfgWeapons
 		descriptionShort="$STR_JLTS_descs_BlasterRotaryCannon";
 		picture="\MRC\JLTS\weapons\Z6\data\ui\Z6_ui_ca.paa";
 		model="\MRC\JLTS\weapons\Z6\Z6.p3d";
-		recoil="IDA_recoil_Z6";
+		recoil="Old_IDA_recoil_Z6";
 		WBK_UseHeavyWeaponFramework="true";
 		hiddenSelections[]=
 		{

@@ -4,7 +4,7 @@ class CfgAmmo
 	class ShotgunBase;
 	class SubmunitionBase;
 	class IDA_blasterbolt;
-	class IDA_blasterbolt_scatter;
+	//class IDA_blasterbolt_scatter;
 	class R_PG32V_F;
 	class 3AS_R_MK41_AT;
 	class M_Titan_AT;
@@ -206,17 +206,19 @@ class CfgAmmo
 		// B1=4 b2=22
 		hit = 7;
 	};
-	class 332nd_Scattershot_S2: IDA_blasterbolt_scatter
+	class 332nd_Scattershot_S2: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
 	{
 		submunitionAmmo = "332nd_Scattershot_S1_Sub";
 		submunitionConeAngle = 0.50;
 		submunitionConeType[] = {"random",18};
+		triggerTime = 1e-09;
 	};
-	class 332nd_Scattershot_S1: IDA_blasterbolt_scatter
+	class 332nd_Scattershot_S1: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
 	{
 		submunitionAmmo = "332nd_Scattershot_S1_Sub";
 		submunitionConeAngle = 0.50;
 		submunitionConeType[] = {"random",12};
+		triggerTime = 1e-09;
 	};
 	class 332nd_Scattershot_S1_Sub: 332nd_Base_Ammo_IDA
 	{

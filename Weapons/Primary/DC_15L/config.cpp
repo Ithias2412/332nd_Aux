@@ -31,7 +31,7 @@ class cfgWeapons
 		author="Ithias";
 		displayName="[332nd] DC-15L (AR)";
 		//recoil="3AS_recoil_DC15L";
-		recoil="IDA_recoil_Z6";
+		recoil="Old_IDA_recoil_Z6";
 		reloadAction = "GestureReload_JLTS_DC15A";
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15X\DC15X_ui.paa";
 		magazines[] =

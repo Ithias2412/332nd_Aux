@@ -198,6 +198,7 @@ class CfgVehicles
 
 	class 332nd_Backpack_Engineer: SWLB_clone_backpack
 	{
+        ace_fortify_fortifyTool = 1;
 		author="Ithias";
 		displayName="[332nd] Backpack (Engineer)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";

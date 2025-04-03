@@ -488,7 +488,36 @@ class cfgWeapons
 			};
 		};
 	};
-	
+
+//Customs
+	class 332nd_Platoon_Vest_Ithias: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Ithias)";
+		model="\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel="\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_Ithias.paa",
+			"SWLB_clones\data\heavy_accessories_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2"
+			};
+		};
+	};
+
+
+
 /*
 class 332nd_Veteran_Vest: SWLB_clone_recon_armor
 	{

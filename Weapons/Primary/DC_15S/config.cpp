@@ -20,6 +20,17 @@ class UnderBarrelSlot;
 class MuzzleSlot;
 class Mode_FullAuto;
 class Mode_SemiAuto;
+class CfgRecoils
+{
+	class recoil_default;
+	class Old_IDA_recoil_DC23: recoil_default
+	{
+		muzzleOuter[]={0,6,0.80000001,0.40000001};
+		kickBack[]={0.039999999,0.059999999};
+		temporary=0.0080000004;
+	};
+
+};
 class cfgWeapons 
 {
     class ItemInfo;
@@ -35,11 +46,11 @@ class cfgWeapons
 		author="Ithias";
 		displayName="[332nd] DC-15S (RFL)";
 		recoil = "3AS_recoil_DC15S";
-		//reloadAction = "GestureReload_JLTS_DC15S";
-		reloadAction = "GestureReload_IDAReload1";
+		reloadAction = "GestureReload_JLTS_DC15S";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
 		//picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_ui_ca.paa";
-		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15S\DC15S_ui.paa";
 		baseWeapon = "332nd_DC15S_WIP";
+		weaponInfoType="";
 		magazines[] =
 		{
 			"332nd_DC15S_High_Mag",
@@ -73,21 +84,76 @@ class cfgWeapons
 				"StandardSound",
 				"SilencedSound"
 			};
-			class BaseSoundModeType;
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]={};
+			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,1,1800};
-				begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,1.015,1800};
-				begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,0.985,1800};
-				begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,1.01,1800};
-				begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,0.995,1800};
-				beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1,1,400};
-				closure1[] = {};
-				closure2[] = {};
-				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
-				soundBeginWater[] = {"beginwater1",1};
-				soundClosure[] = {};
-				weaponSoundEffect = "";
+				weaponSoundEffect="";
+				begin1[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					1.025,
+					1800
+				};
+				begin3[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					0.94999999,
+					1800
+				};
+				begin4[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					1.05,
+					1800
+				};
+				begin5[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					0.89999998,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.2,
+					"begin2",
+					0.2,
+					"begin3",
+					0.2,
+					"begin4",
+					0.2,
+					"begin5",
+					0.2
+				};
+				beginwater1[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1,
+					1,
+					400
+				};
+				soundBeginWater[]=
+				{
+					"beginwater1",
+					1
+				};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
@@ -116,21 +182,76 @@ class cfgWeapons
 				"StandardSound",
 				"SilencedSound",
 			};
-			class BaseSoundModeType;
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]={};
+			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,1,1800};
-				begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,1.015,1800};
-				begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,0.985,1800};
-				begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,1.01,1800};
-				begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1.25,0.995,1800};
-				beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15s\DC15s.wss",1,1,400};
-				closure1[] = {};
-				closure2[] = {};
-				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
-				soundBeginWater[] = {"beginwater1",1};
-				soundClosure[] = {};
-				weaponSoundEffect = "";
+				weaponSoundEffect="";
+				begin1[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					1.025,
+					1800
+				};
+				begin3[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					0.94999999,
+					1800
+				};
+				begin4[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					1.05,
+					1800
+				};
+				begin5[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1.25,
+					0.89999998,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.2,
+					"begin2",
+					0.2,
+					"begin3",
+					0.2,
+					"begin4",
+					0.2,
+					"begin5",
+					0.2
+				};
+				beginwater1[]=
+				{
+					"\Indecisive_Armoury_Sounds\Republic\DC15S.ogg",
+					1,
+					1,
+					400
+				};
+				soundBeginWater[]=
+				{
+					"beginwater1",
+					1
+				};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
@@ -184,6 +305,7 @@ class cfgWeapons
 		displayName = "[332nd] DC-15S + Shield (ENG)";
 		handAnim[] = {"OFP2_ManSkeleton","Indecisive_Armoury_Anims\Republic\Shield_Rep.rtm"};
 		model = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15S\Model\IDA_DC15S_Shield.p3d";
+		reloadAction = "GestureReload_IDA_Reload_Blaster";
 		magazines[] =
 		{
 			"332nd_DC15S_Low_Mag",
@@ -232,7 +354,7 @@ class cfgWeapons
 				"332nd_SmokeBlue_LauncherGrenade",
 				"332nd_SmokePurple_LauncherGrenade"
 			};
-			recoil="IDA_recoil_DC23";
+			recoil="Old_IDA_recoil_DC23";
 			reloadAction="GestureReloadMXUGL";
 			magazineWell[]={};
 		};
