@@ -205,6 +205,7 @@ class ace_medical_treatment
             incompatibleMedication[] = {};
             viscosityChange = 0;
         };
+		/*
         class 332nd_Franks_Jungle_Juice
         {
             painReduce = 0.5;
@@ -217,7 +218,6 @@ class ace_medical_treatment
             dose = 1;
 			incompatibleMedication[] = {};
 			viscosityChange = 0;
-
         };
         class 332nd_Zagustin
         {
@@ -231,8 +231,8 @@ class ace_medical_treatment
             dose = 1;
 			incompatibleMedication[] = {};
 			viscosityChange = 50
-
         };
+		*/
 	};
 };
 
@@ -240,6 +240,7 @@ class ace_medical_treatment_actions
 {
     class FieldDressing;
 	class Morphine;
+	/*
     class BasicInjector: Morphine
 	{
 		treatmentLocations = 0;
@@ -250,7 +251,7 @@ class ace_medical_treatment_actions
 		consumeItem = 1;
 		medicRequired = 0;
 	};
-
+	*/
 	class 332nd_Acti_Bandage: FieldDressing
 	{
 		displayName="[332nd] Acti Bandage";
@@ -259,6 +260,7 @@ class ace_medical_treatment_actions
 		{
 			"332nd_Acti_Bandage_Weap",
 		};
+		treatmentTime = 8;
 	};
 	class 332nd_Bacta_Spray: 332nd_Acti_Bandage
 	{
@@ -282,6 +284,7 @@ class ace_medical_treatment_actions
 			"332nd_Painkiller_Weap",
 		};
 	};
+	/*
     class 332nd_Franks_Jungle_Juice: BasicInjector
     {
         displayName="[332nd] Frank's Jungle Juice";
@@ -302,6 +305,7 @@ class ace_medical_treatment_actions
             "332nd_Zagustin_Weap",
         };
     };
+	*/
 };
 
 class cfgWeapons
@@ -310,6 +314,7 @@ class cfgWeapons
     class ACE_morphine;
 	class CBA_MiscItem_ItemInfo;
 	class ACE_salineIV;
+	/*
     class 332nd_Franks_Jungle_Juice_Weap: ACE_morphine
     {
         scope=2;
@@ -321,7 +326,6 @@ class cfgWeapons
         {
             mass = 0.5;
         };
-
     };
     class 332nd_Zagustin_Weap: ACE_morphine
     {
@@ -335,6 +339,7 @@ class cfgWeapons
             mass = 0.5;
         };
     };
+	*/
 	class 332nd_Acti_Bandage_Weap: ACE_fieldDressing
 	{
 		scope=2;

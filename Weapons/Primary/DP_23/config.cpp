@@ -33,7 +33,8 @@ class cfgWeapons
 		cursoraim = "CursorAim";
 		author="Ithias";
 		displayName="[332nd] DP-23 (RFL)";
-		reloadAction = "GestureReload_IDAReload1";
+		reloadAction = "GestureReload_JLTS_DC15S";
+		//reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
 		magazines[] =
 		{
 			"332nd_DP23_Mag"

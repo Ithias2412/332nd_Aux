@@ -135,12 +135,12 @@ class cfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11\FA11.ogg",1.25,1,1800};
-				begin2[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11\FA11.ogg",1.25,1.015,1800};
-				begin3[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11\FA11.ogg",1.25,0.985,1800};
-				begin4[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11\FA11.ogg",1.25,1.01,1800};
-				begin5[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11\FA11.ogg",1.25,0.995,1800};
-				beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11\FA11.ogg",1,1,400};
+				begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1,1800};
+				begin2[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1.015,1800};
+				begin3[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,0.985,1800};
+				begin4[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1.01,1800};
+				begin5[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,0.995,1800};
+				beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1,1,400};
 				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
 				soundBeginWater[] = {"beginwater1",1};
 			};

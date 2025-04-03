@@ -32,37 +32,19 @@ class cfgWeapons
 	{
 		cursor = "332nd_Cursor_Block";
 		cursoraim = "332nd_Cursor_Dot";
-		ace_overheating_mrbs=40000;
-		ace_overheating_slowdownFactor=0;
-		ace_overheating_allowSwapBarrel=0;
-		ace_overheating_dispersion=1;
-		ace_overheating_closedBolt=0;
-		ace_overheating_barrelMass=1;
-		IDA_StunWeapon="IDA_E11D_Stun";
-		author="Thatcher";
 		scope=2;
-		inertia=0;
-		canShootInWater=1;
 		baseWeapon="332nd_C_24";
 		displayName="[332nd] C-24 Flame Carbine (ENG)";
 		descriptionShort="TBD.";
-		picture="Indecisive_Armoury_Weapons_IMPERIAL\Data\E11D\E11D_ui.paa";
-		model="Indecisive_Armoury_Weapons_IMPERIAL\Data\E11D\Model\IDA_E11D.p3d";
-		handAnim[]=
+		reloadAction = "3AS_GestureReload_DC17M";
+		reloadMagazineSound[] = 
 		{
-			"OFP2_ManSkeleton",
-			"Indecisive_Armoury_Anims\Imperial\E11D.rtm"
-		};
-		ace_clearJamAction="";
-		reloadAction="3AS_GestureReloadE11";
-		reloadMagazineSound[]=
-		{
-			"\Indecisive_Armoury_Sounds\blaster_reload_5.ogg",
-			5,
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
 			1,
-			10
+			1,
+			30
 		};
-		recoil="IDA_recoil_E11D";
+		recoil="3AS_recoil_DC15S";
 		magazines[]=
 		{
 			"332nd_C_24_Mag"
@@ -72,14 +54,6 @@ class cfgWeapons
 		{
 			"Single",
 			"FullAuto"
-		};
-		fireLightDiffuse[]={1,0,0};
-		drySound[]=
-		{
-			"\Indecisive_Armoury_Sounds\weapon_dry.ogg",
-			5,
-			1,
-			10
 		};
 		muzzles[]=
 		{
@@ -142,37 +116,37 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
 					1,
 					1800
 				};
 				begin2[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
-					1.015,
+					1.025,
 					1800
 				};
 				begin3[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
-					0.98500001,
+					0.94999999,
 					1800
 				};
 				begin4[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
-					1.01,
+					1.05,
 					1800
 				};
 				begin5[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
-					0.995,
+					0.89999998,
 					1800
 				};
 				soundBegin[]=
@@ -190,7 +164,7 @@ class cfgWeapons
 				};
 				beginwater1[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D.ogg",
 					1,
 					1,
 					400
@@ -228,37 +202,37 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
 					1,
 					1800
 				};
 				begin2[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
-					1.015,
+					1.025,
 					1800
 				};
 				begin3[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
-					0.98500001,
+					0.94999999,
 					1800
 				};
 				begin4[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
-					1.01,
+					1.05,
 					1800
 				};
 				begin5[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\Imperial\E11D.ogg",
 					1.25,
-					0.995,
+					0.89999998,
 					1800
 				};
 				soundBegin[]=
@@ -276,7 +250,7 @@ class cfgWeapons
 				};
 				beginwater1[]=
 				{
-					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D\E11D.ogg",
+					"\Indecisive_Armoury_Sounds\IMPERIAL\E11D.ogg",
 					1,
 					1,
 					400
@@ -298,7 +272,7 @@ class cfgWeapons
 		};
 		distanceZoomMin=400;
 		distanceZoomMax=400;
-		weaponInfoType="RscOptics_nightstalker";
+		weaponInfoType="";
 		modelOptics="\Indecisive_Armoury_Weapons_Imperial\Data\LowPower_Scope\IDA_LowPower_Scope_Red.p3d";
 		class OpticsModes
 		{
@@ -352,15 +326,6 @@ class cfgWeapons
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
 				compatibleItems[]={};
-			};
-		};
-		class GunParticles
-		{
-			class FirstEffect
-			{
-				directionName="Konec hlavne";
-				effectName="RifleAssaultCloud";
-				positionName="Usti hlavne";
 			};
 		};
 		class LinkedItems

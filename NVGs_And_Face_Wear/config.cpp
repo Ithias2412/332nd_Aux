@@ -260,6 +260,19 @@ class CfgGlasses
 		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_cc_ca.paa";
 	};
 
+	class 332nd_Facewear_XO_Ithias :332nd_Facewear_Base
+	{
+		scope = 2;
+		displayName = "[332nd] Commander Visor (Ithias)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_Ithias.paa"
+		};
+		model = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+	};
+
 };
 
 class XtdGearModels

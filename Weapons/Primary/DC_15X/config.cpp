@@ -48,14 +48,9 @@ class cfgWeapons
 		model="\MRC\JLTS\weapons\DC15X\DC15X.p3d";
 		baseWeapon="332nd_DC15X";
 		recoil="recoil_mx";
-		reloadAction = "GestureReload_IDAReload1";
-		reloadMagazineSound[] = 
-		{
-			"\Indecisive_Armoury_Sounds\blaster_reload_1.ogg",
-			1.5,
-			1,
-			100
-		};
+		reloadAction = "GestureReload_JLTS_DC15S";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		weaponInfoType="RscOptics_nightstalker";
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -101,8 +96,8 @@ class cfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15x\DC15x.ogg",2.5,1,1800};
-				beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DC-15x\DC15x.ogg",1,1,400};
+				begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\IQA11.ogg",2.5,1,1800};
+				beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\IQA11.ogg",1,1,400};
 				soundBegin[] = {"begin1",1};
 				soundBeginWater[] = {"beginwater1",1};
 				weaponSoundEffect = "";
