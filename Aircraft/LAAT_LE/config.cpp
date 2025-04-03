@@ -115,6 +115,7 @@ class CfgVehicles
 	{
 		displayName = "[332nd] LAAT/LE (3AS)";
 		scope = 2;
+		faction = "332nd_Faction";
 	};
 };
 /*
