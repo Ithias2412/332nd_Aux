@@ -25,7 +25,8 @@ class CfgMagazineWells
             "332nd_SmokeRed_LauncherGrenade",
             "332nd_SmokeGreen_LauncherGrenade",
             "332nd_SmokeBlue_LauncherGrenade",
-            "332nd_SmokePurple_LauncherGrenade"
+            "332nd_SmokePurple_LauncherGrenade",
+			"ACE_HuntIR_M203"
         };
     };
 };
@@ -449,7 +450,8 @@ class cfgWeapons
 				"332nd_SmokeRed_LauncherGrenade",
 				"332nd_SmokeGreen_LauncherGrenade",
 				"332nd_SmokeBlue_LauncherGrenade",
-				"332nd_SmokePurple_LauncherGrenade"
+				"332nd_SmokePurple_LauncherGrenade",
+				"ACE_HuntIR_M203"
 			};
 			magazineWell[] = 
 			{
