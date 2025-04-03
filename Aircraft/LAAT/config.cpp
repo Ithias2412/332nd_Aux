@@ -104,7 +104,6 @@ class CfgVehicles
 			"ls_laat_gun_2",
 			"ls_laat_DAR",
 			"CMFlareLauncher",
-			"332nd_Dropcrate_PW1",
 			"SmokeLauncher",
 			
 		};
@@ -120,7 +119,6 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"Pylon_332nd_Dropcrate_1rnd",
 			"SmokeLauncherMag_boat",
 		};
 		hiddenselectionstextures[]=
@@ -488,6 +486,7 @@ class CfgVehicles
 							"332nd_Hammer_I",
 							"332nd_Anvil_I",
 							"332nd_Anvil_III",
+							"332nd_Dropcrate_PW1",
 						};
 						turret[]={0};
 						UIposition[]={0.1,0.30000001};

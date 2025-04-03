@@ -281,7 +281,7 @@ class CfgMagazines
 	{
 		ammo="332nd_HE_EPL_Grenade";
 		count=3;
-		displayname="3x HE Grenade";
+		displayname="EPL-2 3 Round HE Charge";
 		mass=12.5;
 		//initSpeed = 80;
 		initSpeed = 200;

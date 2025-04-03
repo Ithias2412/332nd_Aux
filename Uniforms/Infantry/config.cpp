@@ -337,7 +337,7 @@ class 332nd_Uniform_Clone_Seelig: 332nd_Uniform_Clone_CR
 		dlc="332nd";
 		author="Cherryy";
 		scope=2;
-		displayName="[332nd] Clone Trooper Armor (Seelig)";
+		displayName="[332nd] Clone Trooper Armor (Custom)";
 		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
@@ -355,7 +355,7 @@ class 332nd_Uniform_Clone_Joker: 332nd_Uniform_Clone_CR
 		dlc="332nd";
 		author="Not Ithias";
 		scope=2;
-		displayName="[332nd] Clone Trooper Armor (Joker)";
+		displayName="[332nd] Clone Trooper Armor (Custom)";
 		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
@@ -363,6 +363,24 @@ class 332nd_Uniform_Clone_Joker: 332nd_Uniform_Clone_CR
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Joker_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+class 332nd_Uniform_Clone_Hicks: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Not Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Custom)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Hicks_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -858,6 +876,24 @@ class 332nd_Uniform_Clone_Joker_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Joker.paa",
 		};
 	};
+class 332nd_Uniform_Clone_Hicks_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Hicks";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Hicks.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Hicks.paa",
+		};
+	};
+
 };
 
 class XtdGearModels
