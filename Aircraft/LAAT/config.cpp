@@ -58,10 +58,13 @@ class CfgVehicles
 		ls_impulsor_fuelDrain_2=0.00010; // was 0.00030000001;
 		armor = 200; //was 100
 
-		smokeLauncherGrenadeCount = 10;      // Number of smoke grenades
-		smokeLauncherVelocity = 30;         // Ejection velocity
-		smokeLauncherOnTurret = 0;          // Not tied to a turret
-		smokeLauncherAngle = 180;           // Coverage angle
+		//getInRadius = 5;
+		
+	//	smokeLauncherGrenadeCount = 16;      // Number of smoke grenades
+	//	smokeLauncherVelocity = 15;         // Ejection velocity
+	//	smokeLauncherOnTurret = 1;          // Not tied to a turret
+	//	smokeLauncherAngle = 360;           // Coverage angle
+		
 		class HitPoints: HitPoints
 		{
 			class HitAvionics
@@ -75,7 +78,6 @@ class CfgVehicles
 				visual="";
 				radius=0.5;
 			};
-
 		};
 		class ace_cargo 
 		{
@@ -104,7 +106,7 @@ class CfgVehicles
 			"ls_laat_gun_2",
 			"ls_laat_DAR",
 			"CMFlareLauncher",
-			"SmokeLauncher",
+		//	"SmokeLauncher",
 			
 		};
 		magazines[]= // changed from "200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"
@@ -119,7 +121,7 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"SmokeLauncherMag_boat",
+		//	"SmokeLauncherMag",
 		};
 		hiddenselectionstextures[]=
 		{

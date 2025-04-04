@@ -17,12 +17,14 @@ class cfgWeapons
 {
     class ItemInfo;
 	class SWLB_clone_binocular;
+	class SWLB_clone_commander_binocular;
 	class Rangefinder;
 
 //Primary
+/*
 	class 332nd_Binocular_Base : Rangefinder
 	{
-		scope = ;
+		scope = 1;
 		author = "Frankie";
 		displayName = "[332nd] Binocular Base";
 		descriptionShort = "Binocular Base";
@@ -52,24 +54,18 @@ class cfgWeapons
         ace_rangefinder_accuracy = 1;         // Higher = more accurate (1 = best)
         ace_rangefinder_compass = 1;          // Enable compass overlay
 	};
+*/
 	class 332nd_Binocular: SWLB_clone_binocular
 	{
 		author="Ithias";
 		displayName="[332nd] Binocular";
-	};
-	class 332nd_Binocular_2: SWLB_clone_binocular
-	{
-		author="Frankie";
-		scope=0;
-		displayName="[332nd] Binocular (NCO)";
-		 // Enable laser designator functionality
-		laserDesignator = 1;
-		laser = 1;
-		ace_laserpointer_enabled = 1;
-		// Disable ammo requirement
-		magazines[] = {}; // No Laserbatteries required
-		magazineReloadTime = 0;
-		reloadAction = "";
 		
 	};
+	/*
+	class 332nd_Laser_Designator: SWLB_clone_commander_binocular
+	{
+		author="Frankie";
+		displayName="[332nd] Laser Designator";
+	};
+	*/
 };

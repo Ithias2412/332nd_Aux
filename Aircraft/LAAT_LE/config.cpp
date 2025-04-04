@@ -39,6 +39,7 @@ class CfgVehicles
 			};
 		};
 	};
+	class 3AS_Patrol_LAAT_Republic;
 	class 332nd_LAAT_LE: ls_heli_laatle
 	{
 		displayname = "[332nd] LAAT/le";
