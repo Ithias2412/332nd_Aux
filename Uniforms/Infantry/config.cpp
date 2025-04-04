@@ -222,24 +222,6 @@ class 332nd_Uniform_Clone_Ithias: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Ithias_New: 332nd_Uniform_Clone_CR
-	{
-		dlc="332nd";
-		author="Ithias";
-		scope=2;
-		displayName="[332nd] Clone Trooper Armor (Custom)";
-		//displayName="[332nd] Clone Trooper Armor (Ithias)";
-		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
-		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Ithias_New_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
 
 class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
 	{
@@ -736,23 +718,6 @@ class 332nd_Uniform_Clone_Ithias_Veh: 332nd_Uniform_Clone_CT_Veh
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ithias.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ithias.paa",
-		};
-	};
-class 332nd_Uniform_Clone_Ithias_New_Veh: 332nd_Uniform_Clone_CT_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Ithias";
-		model="\SWLB_clones\SWLB_clone_uniform.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ithias_New.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ithias_New.paa",
 		};
 	};
 
