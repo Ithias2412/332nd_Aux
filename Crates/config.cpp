@@ -137,10 +137,15 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_SmokePurple_LauncherGrenade";
 			};
-			class 332nd_DC15S_Mag
+			class 332nd_DC15S_Low_Mag
 			{
 				count = 100;
-				magazine = "332nd_DC15S_Mag";
+				magazine = "332nd_DC15S_Low_Mag";
+			};
+			class 332nd_DC15S_High_Mag
+			{
+				count = 100;
+				magazine = "332nd_DC15S_High_Mag";
 			};
 			class 332nd_DC15X_Mag
 			{
@@ -939,10 +944,15 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_SmokePurple_LauncherGrenade";
 			};
-			class 332nd_DC15S_Mag
+			class 332nd_DC15S_Low_Mag
 			{
 				count = 100;
-				magazine = "332nd_DC15S_Mag";
+				magazine = "332nd_DC15S_Low_Mag";
+			};
+			class 332nd_DC15S_High_Mag
+			{
+				count = 100;
+				magazine = "332nd_DC15S_High_Mag";
 			};
 			class 332nd_DC15X_Mag
 			{
