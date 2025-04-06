@@ -491,6 +491,30 @@ class cfgWeapons
 
 
 //Customs
+class 332nd_Cherryy_Custom_Vest: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Cherryy)";
+		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"rank"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Cherryy.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"rank"
+			};
+		};
+	};
 
 
 /*
@@ -1112,7 +1136,7 @@ class XtdGearModels
         {
             label = "332nd Vests";
             author = "Ithias";
-			options[] = { "Rank", "variant", };
+			options[] = { "Rank", "variant", "Custom",};
             class Rank
             {
                 label = "Rank";
@@ -1178,6 +1202,19 @@ class XtdGearModels
                 {
                     label = "5";
                     description = "variant 5";
+                    // image = "xxx";
+                };
+            };
+			class Custom
+            {
+                label = "Customs";
+                values[] = { "Cherryy",};
+                changeingame = 0;
+                alwaysSelectable = 0;
+                class Cherryy
+                {
+                    label = "Cherryy";
+                    description = "Been sittin on this one";
                     // image = "xxx";
                 };
             };
@@ -1275,6 +1312,12 @@ class XtdGearInfos
             model = "332nd_Vest_Extended";
             Rank = "CSM";
             variant = "variant5";
+        };
+		class 332nd_Cherryy_Custom_Vest
+        {
+            model = "332nd_Vest_Extended";
+            Rank = "CS";
+            variant = "Cherryy";
         };
     };
 };
