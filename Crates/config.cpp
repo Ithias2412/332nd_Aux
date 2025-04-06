@@ -1,5 +1,7 @@
-class CfgPatches {
-	class 332nd_Crates {
+class CfgPatches 
+{
+	class 332nd_Crates 
+	{
 		units[] = 
         {
 			"332nd_Ammo_Crate",
