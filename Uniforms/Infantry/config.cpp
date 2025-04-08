@@ -319,7 +319,7 @@ class 332nd_Uniform_Clone_Seelig: 332nd_Uniform_Clone_CR
 		dlc="332nd";
 		author="Cherryy";
 		scope=2;
-		displayName="[332nd] Clone Trooper Armor (Custom)";
+		displayName="[332nd] Clone Trooper Armor (Seelig)";
 		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
@@ -327,6 +327,24 @@ class 332nd_Uniform_Clone_Seelig: 332nd_Uniform_Clone_CR
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Seelig_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+class 332nd_Uniform_Clone_Spectre: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Cherryy";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Spectre)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Spectre_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -806,7 +824,7 @@ class 332nd_Uniform_Clone_Crow_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crow.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crow.paa",
 		};
-	};
+	}; 
 class 332nd_Uniform_Clone_Seelig_Veh: 332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
@@ -822,6 +840,23 @@ class 332nd_Uniform_Clone_Seelig_Veh: 332nd_Uniform_Clone_CT_Veh
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Seelig.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Seelig.paa",
+		};
+	};
+class 332nd_Uniform_Clone_Spectre_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Spectre";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Spectre.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Spectre.paa",
 		};
 	};
 class 332nd_Uniform_Clone_Joker_Veh: 332nd_Uniform_Clone_CT_Veh 
@@ -960,7 +995,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Joker",};
+				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Spectre", "Joker",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -998,11 +1033,17 @@ class XtdGearModels
                     label = "Frankenburg";
                     description = "Aux Mod Slave";
                     //image = "xxx";
-                }; 
+                };  
 				class Seelig
                 {
                     label = "Seelig";
                     description = "Delayed forever";
+                    //image = "xxx";
+                }; 
+				class Spectre
+                {
+                    label = "Spectre";
+                    description = "He's a scary phantom";
                     //image = "xxx";
                 }; 
 				class Joker
@@ -1111,6 +1152,11 @@ class XtdGearInfos
         {
             model = "332nd_Uniform_Extended";
             Customs = "Seelig";
+        }; 
+		class 332nd_Uniform_Clone_Spectre
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Spectre";
         }; 
 		class 332nd_Uniform_Clone_Joker
         {

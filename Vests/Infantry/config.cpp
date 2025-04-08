@@ -1136,7 +1136,7 @@ class XtdGearModels
         {
             label = "332nd Vests";
             author = "Ithias";
-			options[] = { "Rank", "variant", "Custom",};
+			options[] = { "Rank", "variant", "custom",};
             class Rank
             {
                 label = "Rank";
@@ -1205,12 +1205,12 @@ class XtdGearModels
                     // image = "xxx";
                 };
             };
-			class Custom
+			class custom
             {
                 label = "Customs";
                 values[] = { "Cherryy",};
                 changeingame = 0;
-                alwaysSelectable = 0;
+                alwaysSelectable = 1;
                 class Cherryy
                 {
                     label = "Cherryy";
@@ -1316,8 +1316,7 @@ class XtdGearInfos
 		class 332nd_Cherryy_Custom_Vest
         {
             model = "332nd_Vest_Extended";
-            Rank = "CS";
-            variant = "Cherryy";
+			custom = "Cherryy";
         };
     };
 };
