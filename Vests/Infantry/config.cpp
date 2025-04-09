@@ -515,7 +515,30 @@ class 332nd_Cherryy_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-
+class 332nd_Asuka_Custom_Vest: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Asuka)";
+		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"rank"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Asuka.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"rank"
+			};
+		};
+	};
 
 /*
 class 332nd_Veteran_Vest: SWLB_clone_recon_armor
@@ -1208,13 +1231,19 @@ class XtdGearModels
 			class custom
             {
                 label = "Customs";
-                values[] = { "Cherryy",};
+                values[] = { "Cherryy", "Asuka",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
                 {
                     label = "Cherryy";
                     description = "Been sittin on this one";
+                    // image = "xxx";
+                };
+				class Asuka
+                {
+                    label = "Asuka";
+                    description = "Stuck at CSS";
                     // image = "xxx";
                 };
             };
@@ -1317,6 +1346,11 @@ class XtdGearInfos
         {
             model = "332nd_Vest_Extended";
 			custom = "Cherryy";
+        };
+		class 332nd_Asuka_Custom_Vest
+        {
+            model = "332nd_Vest_Extended";
+			custom = "Asuka";
         };
     };
 };
