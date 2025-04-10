@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class 332nd_Main
 	{
-		author="Falx";
+		author="Ithias";
 		requiredAddons[]=
 		{
 			"A3_Data_F_Enoch_Loadorder"

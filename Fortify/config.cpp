@@ -20,9 +20,10 @@ class ACEX_Fortify_Presets
         displayName = "332nd Preset";
         objects[] = 
 		{
-            {"3AS_Barricade_Cover_1_Prop", 15, "Deployable"},
-            {"3AS_Barricade_Cover_2_Prop", 20, "Deployable"},
-			{"land_3as_Ladder5", 15, "Deployable"},
+            {"3AS_Shield_3_Prop", 10, "Deployable"},
+            {"3AS_Shield_5_Prop", 15, "Deployable"},
+            {"3AS_Shield_C_Prop", 20, "Deployable"},
+			{"land_3as_Ladder5", 10, "Deployable"},
 			
 			{"Land_lsb_fob_hBarrier_5", 60, "Buildable"},
 			{"Land_lsb_fob_hBarrierWall_exvertedCorner", 120, "Buildable"},

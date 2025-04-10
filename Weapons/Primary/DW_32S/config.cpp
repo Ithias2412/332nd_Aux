@@ -116,7 +116,7 @@ class cfgWeapons
 			reloadTime=0.1;
 			recoil="recoil_single_mx";
 			recoilProne="recoil_single_prone_mx";
-			dispersion = 0.00018;
+			dispersion=0.00035;
 			minRange=2;
 			minRangeProbab=0.5;
 			midRange=200;
@@ -154,7 +154,7 @@ class cfgWeapons
 				};
 			};
 			reloadTime=0.1;
-			dispersion = 0.00018;
+			dispersion=0.00035;
 			recoil="recoil_auto_mx";
 			recoilProne="recoil_auto_prone_mx";
 			minRange=0;
@@ -293,29 +293,23 @@ class cfgWeapons
 			class NCTALKEP
 			{
 				opticsID=1;
-				opticsDisplayName="WFOV";
 				useModelOptics=1;
-				opticsPPEffects[]=
-				{
-					"OpticsCHAbera1",
-					"OpticsBlur1"
-				};
-				opticsZoomMin=0.0099999998;
-				opticsZoomMax=0.041999999;
-				opticsZoomInit=0.041999999;
-				discreteDistance[]={300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
-				discreteDistanceInitIndex=2;
-				distanceZoomMin=300;
-				distanceZoomMax=2400;
-				discretefov[]={0.041999999,0.0099999998};
+				opticsPPEffects[]={};
+				opticsZoomMin=0.02;
+				opticsZoomMax=0.0625;
+				opticsZoomInit=0.0625;
+				discreteDistance[]={100,300,400,500,600,700,800,900,1000};
+				discreteDistanceInitIndex=1;
+				distanceZoomMin=100;
+				distanceZoomMax=1000;
+				discreteFov[]={0.0625,0.02};
 				discreteInitIndex=0;
 				memoryPointCamera="opticView";
-				modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
 				visionMode[]=
 				{
 					"Normal",
 					"NVG",
-					"TI"
+					"Ti"
 				};
 				opticsFlare=1;
 				opticsDisablePeripherialVision=1;

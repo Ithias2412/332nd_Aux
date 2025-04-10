@@ -303,7 +303,10 @@ class cfgWeapons
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				compatibleItems[]={};
+				compatibleItems[]=
+				{
+					"3AS_Bipod_VK38X_f"
+				};
 			};
 		};
 		class LinkedItems

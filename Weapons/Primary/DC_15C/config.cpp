@@ -54,20 +54,6 @@ class cfgWeapons
 			"Single",
 			//"Burst"
 		};
-		class 3AS_15CGL: UGL_F
-		{
-			magazines[]=
-			{
-				"332nd_HE_LGrenade_Mag",
-				"332nd_Smoke_LauncherGrenade",
-				"332nd_SmokeRed_LauncherGrenade",
-				"332nd_SmokeGreen_LauncherGrenade",
-				"332nd_SmokeBlue_LauncherGrenade",
-				"332nd_SmokePurple_LauncherGrenade",
-				"ACE_HuntIR_M203"
-			};
-			magazineWell[]={};
-		};
 		class OpticsModes
 		{
 			class Ironsights
@@ -264,6 +250,14 @@ class cfgWeapons
 				"ACE_HuntIR_M203"
 			};
 			magazineWell[]={};
+			cameraDir = "OP_look";
+			descriptionShort = "DC15CGL";
+			discreteDistance[] = {50,75,100,150,200,250,300,350,400};
+			discreteDistanceCameraPoint[] = {"OP_eye_50","OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
+			discreteDistanceInitIndex = 1;
+			displayName = "3AS DC15C GL";
+			reloadAction = "GestureReloadMXUGL";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
 		};
 		class FullAuto: Mode_FullAuto
 		{
