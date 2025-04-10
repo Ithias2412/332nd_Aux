@@ -491,7 +491,54 @@ class cfgWeapons
 
 
 //Customs
-
+class 332nd_Cherryy_Custom_Vest: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Cherryy)";
+		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"rank"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Cherryy.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"rank"
+			};
+		};
+	};
+class 332nd_Asuka_Custom_Vest: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Asuka)";
+		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"rank"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Asuka.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"rank"
+			};
+		};
+	};
 
 /*
 class 332nd_Veteran_Vest: SWLB_clone_recon_armor
@@ -1112,7 +1159,7 @@ class XtdGearModels
         {
             label = "332nd Vests";
             author = "Ithias";
-			options[] = { "Rank", "variant", };
+			options[] = { "Rank", "variant", "custom",};
             class Rank
             {
                 label = "Rank";
@@ -1178,6 +1225,25 @@ class XtdGearModels
                 {
                     label = "5";
                     description = "variant 5";
+                    // image = "xxx";
+                };
+            };
+			class custom
+            {
+                label = "Customs";
+                values[] = { "Cherryy", "Asuka",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Cherryy
+                {
+                    label = "Cherryy";
+                    description = "Been sittin on this one";
+                    // image = "xxx";
+                };
+				class Asuka
+                {
+                    label = "Asuka";
+                    description = "Stuck at CSS";
                     // image = "xxx";
                 };
             };
@@ -1275,6 +1341,16 @@ class XtdGearInfos
             model = "332nd_Vest_Extended";
             Rank = "CSM";
             variant = "variant5";
+        };
+		class 332nd_Cherryy_Custom_Vest
+        {
+            model = "332nd_Vest_Extended";
+			custom = "Cherryy";
+        };
+		class 332nd_Asuka_Custom_Vest
+        {
+            model = "332nd_Vest_Extended";
+			custom = "Asuka";
         };
     };
 };
