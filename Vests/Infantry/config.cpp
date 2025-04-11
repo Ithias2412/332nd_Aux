@@ -1165,7 +1165,7 @@ class XtdGearModels
                 label = "Rank";
 				values[] = { "CR", "VCT", "CS", "CSM", };
                 changeingame = 0;
-                alwaysSelectable = 0;
+                alwaysSelectable = 1;
                 class CR
                 {
                     label = "CR+";
