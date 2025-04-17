@@ -11,8 +11,8 @@ private _step = if (playerApertureValue <= 1) then {0.2} else {2};
 playerApertureValue = playerApertureValue - _step;
 
 // Ensure it does not go below min limit
-if (playerApertureValue < 0.6) then { 
-    playerApertureValue = 0.6;
+if (playerApertureValue < 0.4) then { 
+    playerApertureValue = 0.4;
 };
 
 setAperture playerApertureValue;
