@@ -88,5 +88,15 @@ class CfgMagazines
         displayNameShort = "Droid Popper";
         count = 1;
         ammo = "332nd_DroidPopper_ammo";
+		mass = 8;
+		value = 1;
+		model = "\3AS\3AS_Equipment\model\3AS_thermaldet.p3d";
+		picture = "\3AS\3AS_Equipment\UI\Thermal_Detonator_UI_ca.paa";
+		type = 256;
+		initSpeed = 18;
+		nameSound = "handgrenade";
+		maxLeadSpeed = 7;
+		sound[] = {"",0.000316228,1};
+		descriptionShort = "Droid Popper";
     };
 };
