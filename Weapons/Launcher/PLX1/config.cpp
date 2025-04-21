@@ -35,6 +35,7 @@ class cfgWeapons
 		{
 			"Single",
 		};
+		ace_reloadlaunchers_enabled = 1;
 	};
 
 

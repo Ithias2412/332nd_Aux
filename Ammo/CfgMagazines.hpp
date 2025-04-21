@@ -110,6 +110,7 @@ class CfgMagazines
 		displayname = "DLT-15 250 Round Energy Cell";
 		mass = 66.6;
 		scope = 2;
+		ACE_isBelt = 1;
 	};
 	class 332nd_Valken_Mag: 332nd_Base_Mag
 	{

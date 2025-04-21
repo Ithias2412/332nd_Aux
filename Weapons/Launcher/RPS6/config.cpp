@@ -40,6 +40,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Weapons\Launcher\RPS6\Tex\332nd_rps6.paa",
 		};
+		ace_reloadlaunchers_enabled = 1;
 	};
 
 
