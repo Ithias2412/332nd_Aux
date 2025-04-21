@@ -12,6 +12,7 @@ class CfgPatches
         units[] = 
 		{
             "332nd_Droid_B1_Rifleman",
+            "332nd_Droid_B1_Grenadier",
             "332nd_Droid_B1_AT",
             "332nd_Droid_B1_Support",
             "332nd_Droid_B1_Sniper",
@@ -73,6 +74,16 @@ class CfgVehicles {
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+    };
+    class 332nd_Droid_B1_Grenadier: 332nd_Droid_Base 
+	{
+        scope = 2;
+        displayName = "B1 Grenadier";
+        uniformClass = "JLTS_DroidB1"; // Standard Battle Droid uniform
+        weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "3AS_ThermalDetonator", "SmokeShell"};
+        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "3AS_ThermalDetonator", "SmokeShell"};
     };
     class 332nd_Droid_B1_AT: 332nd_Droid_Base 
 	{
@@ -533,7 +544,7 @@ class CfgGroups
                     side = 0;
                     class Unit0 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
+                        vehicle = "332nd_Droid_B1_Commander";
                         rank = "PRIVATE";
                         position[] = {0, 0, 0};
                     };
@@ -546,6 +557,36 @@ class CfgGroups
                     class Unit2 {
                         side = 0;
                         vehicle = "332nd_Droid_B1_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {-5, -5, 0};
+                    };
+                    class Unit3 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Support";
+                        rank = "PRIVATE";
+                        position[] = {10, -10, 0};
+                    };
+                };
+                class 332nd_Grenadier_Team 
+				{
+                    name = "B1 Grenadier Fireteam";
+                    faction = "332nd_CIS_Faction";
+                    side = 0;
+                    class Unit0 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Grenadier";
+                        rank = "PRIVATE";
+                        position[] = {5, -5, 0};
+                    };
+                    class Unit2 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Grenadier";
                         rank = "PRIVATE";
                         position[] = {-5, -5, 0};
                     };
