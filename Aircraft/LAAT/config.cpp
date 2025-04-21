@@ -614,6 +614,22 @@ class CfgVehicles
 					"lsd_vehicles_heli\laati\data\glass_ca.paa"
 				};
 			};
+			class 332nd_Saiko_tex: 332nd_Base_tex
+			{
+				displayname="Saiko";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Body1.paa",
+					"lsd_vehicles_heli\laati\data\332nd_Saiko_Body2.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Doors1.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Doors2.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Doors3.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Wings.paa",
+					"lsd_vehicles_heli\laati\data\missiles_co.paa",
+					"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+					"lsd_vehicles_heli\laati\data\glass_ca.paa"
+				};
+			};
 		};
 		textureList[]=
 		{
@@ -661,6 +677,11 @@ class CfgVehicles
 					{
 						displayName="332nd Asuka";
 						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Body_1_Asuka.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Door_1.paa']; _target setObjectTextureGlobal [3,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Door_2.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'332nd_Aux\Aircraft\LAAT\Tex\332nd_LAAT_I_Wings.paa']; _target setObjectTextureGlobal [6,'lsd_vehicles_heli\laati\data\missiles_co.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 332nd_Saiko: DefaultSkin
+					{
+						displayName="332nd Saiko";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Body1.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Body2.paa']; _target setObjectTextureGlobal [2,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Doors1.paa']; _target setObjectTextureGlobal [3,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Doors2.paa']; _target setObjectTextureGlobal [4,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Doors2.paa']; _target setObjectTextureGlobal [5,'332nd_Aux\Aircraft\LAAT\Tex\332nd_Saiko_Wings.paa']; _target setObjectTextureGlobal [6,'lsd_vehicles_heli\laati\data\missiles_co.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
 					};
 				};
 			};
