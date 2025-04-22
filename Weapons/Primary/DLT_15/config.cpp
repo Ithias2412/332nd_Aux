@@ -83,7 +83,8 @@ class cfgWeapons
 				soundBeginWater[] = {"beginwater1",1};
 			};
 			reloadTime=0.06;
-			dispersion = 0.0045;
+			dispersion = 0.00174;
+			//dispersion = 0.0045;
 			minRange=2;
 			minRangeProbab=0.5;
 			midRange=100;

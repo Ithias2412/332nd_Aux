@@ -38,26 +38,7 @@ class 332nd_Uniform_Marine_CT: SEA_Uniform_GM_Plastic_21
 			mass=40;
 		};
 	};
-	
-class 332nd_Uniform_Marine_NCO: 332nd_Uniform_Marine_CT
-	{
-		dlc="332nd";
-		author="Cherryy + Ithias + Frankenburg";
-		scope=2;
-		displayName="[332nd] Hazardous Environment Armor";
-		//displayName="[332nd] Hazardous Environment Armor (NCO)";
-		//picture="332nd_Aux\Uniforms\Tex\Logo_Uniform.paa";
-		model = "JLTS_AE_GM\SEA_Uniform_GM_plastic.p3d";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Marine_NCO_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-};
+};	
 
 class CfgVehicles
 {
@@ -246,28 +227,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\332nd_Aux\Uniforms\Tex\332nd_Upper_Marine_CT.paa",
-			"\JLTS_AE_GM\data\BaseTextures\Uniform\Plastic\BodyLower_ca.paa",
-			"\JLTS_AE_GM\data\BaseTextures\Uniform\Undersuit_co.paa",
-		};
-	};
-	
-	class 332nd_Uniform_Marine_NCO_Veh: SEA_GM_Base_21_Plastic
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Marine_NCO";
-		model = "JLTS_AE_GM\SEA_Uniform_GM_Plastic.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"Uniform",
-			"insignia",
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_Aux\Uniforms\Tex\332nd_Upper_Marine_NCO.paa",
-			"\JLTS_AE_GM\data\BaseTextures\Uniform\Plastic\BodyLower_ca.paa",
+			"\332nd_Aux\Uniforms\Tex\332nd_Upper_Marine.paa",
+			"\332nd_Aux\Uniforms\Tex\332nd_Lower_Marine.paa",
 			"\JLTS_AE_GM\data\BaseTextures\Uniform\Undersuit_co.paa",
 		};
 	};
@@ -285,19 +246,13 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Trooper", "NCO", };
+				values[] = { "Trooper", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Trooper
                 {
                     label = "Trooper";
                     //description = "Recruit";
-                    //image = "xxx";
-                };
-				class NCO
-                {
-                    label = "NCO";
-                    //description = "Trooper";
                     //image = "xxx";
                 };
             };
@@ -313,11 +268,6 @@ class XtdGearInfos
         {
             model = "332nd_Uniform_Marine_Extended";
             Type = "Trooper";
-        };
-        class 332nd_Uniform_Marine_NCO
-        {
-            model = "332nd_Uniform_Marine_Extended";
-            Type = "NCO";
         };
     };
 };

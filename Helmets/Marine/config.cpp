@@ -71,20 +71,6 @@ class cfgWeapons
 			};
 		};
 	};
-	
-	class 332nd_Helmet_Marine_NCO: 332nd_Helmet_Marine_CT
-	{
-		hiddenSelections[]=
-		{
-			"camo1",
-			"Visor",
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Marine_NCO.paa",
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Marine_NCO.paa",
-		};
-	};
 };
 
 class XtdGearModels
@@ -99,19 +85,13 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Trooper", "NCO",};
+				values[] = { "Trooper", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Trooper
                 {
                     label = "Trooper";
                     //description = "Non NCO";
-                    //image = "xxx";
-                };
-				class NCO
-                {
-                    label = "NCO";
-                    //description = "Non Trooper";
                     //image = "xxx";
                 };
             };
@@ -127,11 +107,6 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_Marine_Extended";
             Type = "Trooper";
-        };
-        class 332nd_Helmet_Marine_NCO
-        {
-            model = "332nd_Helmets_Marine_Extended";
-            Type = "NCO";
         };
 	};
 };
