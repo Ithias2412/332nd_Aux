@@ -83,6 +83,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Medic.paa"
 		};
 	};
+	
 //Customs
 
 	class 332nd_Helmet_P2_Asuka: 332nd_Helmet_P2_CR
@@ -179,6 +180,18 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Kiyler.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Luci: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Luci)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Luci.paa"
 		};
 	};
 	class 332nd_Helmet_P2_Peter: 332nd_Helmet_P2_CR
@@ -333,7 +346,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Denal", "Frankenburg", "Kiyler", "Joker", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
+				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Denal", "Frankenburg", "Kiyler", "Joker", "Luci", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -394,7 +407,13 @@ class XtdGearModels
 					label = "Joker";
 					description = "Cherryy 2.0";
 					//image = "xxx";
-				};	
+				};
+				class Luci
+				{
+					label = "Luci";
+					description = "Tup deserved it";
+					//image = "xxx";
+				};		
 				class Peter
                 {
                     label = "Peter";
@@ -534,6 +553,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Joker";
+        };
+		class 332nd_Helmet_P2_Luci
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Luci";
         };
 		class 332nd_Helmet_P2_Peter
         {
