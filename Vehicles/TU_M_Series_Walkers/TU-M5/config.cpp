@@ -43,7 +43,7 @@ class CfgVehicles
             items[] = {}; 
             editorSubcategory = "EdSubcat_332nd_Techno_Union_Walkers";
             faction = "332nd_CIS_Faction";
-            displayName = "TU-M5 (Strider)";
+            displayName = "TU-M5 (Strider) [WIP]";
             armor = 7;
             magazines[]=
             {
