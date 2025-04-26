@@ -62,16 +62,26 @@ class CfgVehicles
 
 class Extended_PreInit_EventHandlers
 {
-    class WBK_WRS_Mech_PreInit
+    class 332nd_TUM5_PreInit
     {
         init="call compile preprocessFileLineNumbers '332nd_Aux\Vehicles\TU_M_Series_Walkers\XEH_preInit.sqf'";
     };
 };
 
-class Extended_PostInit_EventHandlers 
+/* class Extended_PostInit_EventHandlers 
 {
-    class WBK_WRS_Mech_PostInit 
-    {
+    class 332nd_TUM5_PostInit 
+	{
         init="call compile preprocessFileLineNumbers '332nd_Aux\Vehicles\TU_M_Series_Walkers\XEH_postInit.sqf'";
     };
+}; */
+class CfgSounds
+{
+    sounds[] = {};
+	class TUM5_Main_Gun
+    {
+    name = "TUM5_Main_Gun";
+    sound[] = {"332nd_Aux\Vehicles\TU_M_Series_Walkers\TUM5_Main_Gun.ogg", db+14, 1};
+    titles[]={};
+	};
 };
