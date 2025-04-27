@@ -36,4 +36,8 @@ class CfgEditorSubcategories
     {
         displayName = "Droideka";
     };
+    class EdSubcat_332nd_Techno_Union_Walkers
+    {
+        displayName = "Techno Union Walkers";
+    };
 };
