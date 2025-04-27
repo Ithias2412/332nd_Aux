@@ -29,7 +29,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack: SEA_Backpack_GM_Base
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack";
+		displayName="[332nd] Hazardous Envirement Backpack";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Base.p3d";
 		maximumLoad=100;
 		mass=40;
@@ -46,7 +46,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack_AR: SEA_Backpack_GM_Base
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (Auto-Rifleman)";
+		displayName="[332nd] Hazardous Envirement Backpack (Auto-Rifleman)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Base.p3d";
 		maximumLoad=200;
 		mass=40;
@@ -63,7 +63,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack_AT: SEA_Backpack_GM_Base
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (Anti-Tank)";
+		displayName="[332nd] Hazardous Envirement Backpack (Anti-Tank)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Base.p3d";
 		maximumLoad=200;
 		mass=40;
@@ -80,7 +80,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack_RTO: SEA_Backpack_GM_RTO
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (RTO)";
+		displayName="[332nd] Hazardous Envirement Backpack (RTO)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_RTO.p3d";
 		maximumLoad=285;
 		mass=40;
@@ -107,7 +107,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack_NCO: SEA_Backpack_GM_RTO
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (NCO)";
+		displayName="[332nd] Hazardous Envirement Backpack (NCO)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_RTO.p3d";
 		maximumLoad=200;
 		mass=40;
@@ -134,7 +134,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack_Medic: SEA_Backpack_GM_Medic
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (Medic)";
+		displayName="[332nd] Hazardous Envirement Backpack (Medic)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Medic.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -152,7 +152,7 @@ class CfgVehicles
 	{
         ace_fortify_fortifyTool = 1;
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (Engineer)";
+		displayName="[332nd] Hazardous Envirement Backpack (Engineer)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Base.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -169,7 +169,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack_Ammo_Bearer: SEA_Backpack_GM_Base
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (Ammo Bearer)";
+		displayName="[332nd] Hazardous Envirement Backpack (Ammo Bearer)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Base.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -186,7 +186,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack_GRN: SEA_Backpack_GM_Base
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (Grenadier)";
+		displayName="[332nd] Hazardous Envirement Backpack (Grenadier)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Base.p3d";
 		maximumLoad=150;
 		mass=40;
@@ -203,7 +203,7 @@ class CfgVehicles
 	class 332nd_Marine_Backpack_MRK: SEA_Backpack_GM_Base
 	{
 		author="Ithias";
-		displayName="[332nd] Marine Backpack (Marksman)";
+		displayName="[332nd] Hazardous Envirement Backpack (Marksman)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Base.p3d";
 		maximumLoad=150;
 		mass=40;
@@ -226,7 +226,7 @@ class XtdGearModels
     {
         class 332nd_Marine_Backpack_Extended
         {
-            label = "Hazardes";
+            label = "Hazardous";
             author = "Ithias";
 			options[] = {"Backpacks", };
             class Backpacks

@@ -19,15 +19,62 @@ class CfgVehicles
 {
 	class SWLB_clone_backpack;
 	
-	class 332nd_Backpack;
+//desert
+	class 332nd_Backpack_Desert: SWLB_clone_backpack
+	{
+		scope = 1;
+		author="Ithias";
+		displayName="[332nd] Backpack";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Desert.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
 
-//Base Items
+	class 332nd_Backpack_Desert_AR: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Auto-Rifleman)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Desert_AR.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
 
-	//ARF Start
-	class 332nd_ARF_Backpack_Desert: 332nd_Backpack
+	class 332nd_Backpack_Desert_AT: SWLB_clone_backpack
 	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (Desert)";
+		author="Ithias";
+		displayName="[332nd] Backpack (Anti-Tank)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=200;
 		mass=40;
@@ -42,89 +89,17 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Desert.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Desert_AT.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
 			""
 		};
 	};
-	class 332nd_ARF_Backpack_Urban: 332nd_Backpack
+
+	class 332nd_Backpack_Desert_RTO: SWLB_clone_backpack
 	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (Urban)";
-		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=200;
-		mass=40;
-		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"cover",
-			"heavy",
-			"medic",
-			"RTO"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Urban.paa",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-			"",
-			""
-		};
-	};
-	class 332nd_ARF_Backpack_Woodland: 332nd_Backpack
-	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (Woodland)";
-		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=200;
-		mass=40;
-		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"cover",
-			"heavy",
-			"medic",
-			"RTO"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Woodland.paa",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-			"",
-			""
-		};
-	};
-	class 332nd_ARF_Backpack_Winter: 332nd_Backpack
-	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (Winter)";
-		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=200;
-		mass=40;
-		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"cover",
-			"heavy",
-			"medic",
-			"RTO"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Winter.paa",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-			"",
-			""
-		};
-	};
-	//JTAC
-	class 332nd_ARF_Backpack_JTAC_Desert: SWLB_clone_backpack
-	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (JTAC / Desert)";
+		author="Ithias";
+		displayName="[332nd] Backpack (RTO)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=285;
 		mass=40;
@@ -154,12 +129,13 @@ class CfgVehicles
 		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
-	class 332nd_ARF_Backpack_JTAC_Urban: SWLB_clone_backpack
+
+	class 332nd_Backpack_Desert_NCO: SWLB_clone_backpack
 	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (JTAC / Urban)";
+		author="Ithias";
+		displayName="[332nd] Backpack (NCO)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=285;
+		maximumLoad=200;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
 		hiddenSelections[] = 
@@ -172,7 +148,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Urban.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Desert_Fulcrum.paa",
 			"",
 			"",
 			"",
@@ -187,77 +163,11 @@ class CfgVehicles
 		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
-	class 332nd_ARF_Backpack_JTAC_Woodland: SWLB_clone_backpack
-	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (JTAC / Woodland)";
-		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=285;
-		mass=40;
-		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"cover",
-			"heavy",
-			"medic",
-			"RTO"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Woodland.paa",
-			"",
-			"",
-			"",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
-		};
-		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
-		tf_isolatedAmount=0.64999998;
-		tf_encryptionCode="tf_west_radio_code";
-		tf_dialog="anarc210_radio_dialog";
-		tf_subtype="digital_lr";
-		tf_range=120000;
-		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-	};
-	class 332nd_ARF_Backpack_JTAC_Winter: SWLB_clone_backpack
-	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (JTAC / Winter)";
-		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=285;
-		mass=40;
-		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"cover",
-			"heavy",
-			"medic",
-			"RTO"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Winter.paa",
-			"",
-			"",
-			"",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
-		};
-		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
-		tf_isolatedAmount=0.64999998;
-		tf_encryptionCode="tf_west_radio_code";
-		tf_dialog="anarc210_radio_dialog";
-		tf_subtype="digital_lr";
-		tf_range=120000;
-		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-	};
-	//Medic
-	class 332nd_ARF_Backpack_Medic_Desert: SWLB_clone_backpack
+
+	class 332nd_Backpack_Desert_Medic: SWLB_clone_backpack
 	{
 		author="Ithias";
-		displayName="[332nd] ARF Backpack (Medic / Desert)";
+		displayName="[332nd] Backpack (Medic)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -272,17 +182,19 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Desert.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Desert_Medic.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			""
 		};
 	};
-	class 332nd_ARF_Backpack_Medic_Urban: SWLB_clone_backpack
+
+	class 332nd_Backpack_Desert_Engineer: SWLB_clone_backpack
 	{
+        ace_fortify_fortifyTool = 1;
 		author="Ithias";
-		displayName="[332nd] ARF Backpack (Medic / Urban)";
+		displayName="[332nd] Backpack (Engineer)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -297,68 +209,18 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Urban.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Desert_ENG.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			""
 		};
 	};
-	class 332nd_ARF_Backpack_Medic_Woodland: SWLB_clone_backpack
+
+	class 332nd_Backpack_Desert_Ammo_Bearer: SWLB_clone_backpack
 	{
 		author="Ithias";
-		displayName="[332nd] ARF Backpack (Medic / Woodland)";
-		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=320;
-		mass=40;
-		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"cover",
-			"heavy",
-			"medic",
-			"RTO"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Woodland.paa",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-			"",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-			""
-		};
-	};
-	class 332nd_ARF_Backpack_Medic_Winter: SWLB_clone_backpack
-	{
-		author="Ithias";
-		displayName="[332nd] ARF Backpack (Medic / Winter)";
-		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=320;
-		mass=40;
-		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"cover",
-			"heavy",
-			"medic",
-			"RTO"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Winter.paa",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-			"",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-			""
-		};
-	};
-	//Heavy
-	class 332nd_ARF_Backpack_Heavy_Desert: SWLB_clone_backpack
-	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (Heavy / Desert)";
+		displayName="[332nd] Backpack (Ammo Bearer)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -380,10 +242,156 @@ class CfgVehicles
 			""
 		};
 	};
-	class 332nd_ARF_Backpack_Heavy_Urban: SWLB_clone_backpack
+
+//urban
+	class 332nd_Backpack_urban: SWLB_clone_backpack
 	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (Heavy / Urban)";
+		scope = 1;
+		author="Ithias";
+		displayName="[332nd] Backpack";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_urban.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_urban_AR: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Auto-Rifleman)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_urban_AR.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_urban_AT: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Anti-Tank)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_urban_AT.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_urban_RTO: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (RTO)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=285;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_urban.paa",
+			"",
+			"",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+		};
+		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+
+	class 332nd_Backpack_urban_NCO: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (NCO)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_urban_Fulcrum.paa",
+			"",
+			"",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+		};
+		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+
+	class 332nd_Backpack_urban_Medic: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Medic)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -398,17 +406,19 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Urban.paa",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_urban_Medic.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			""
 		};
 	};
-	class 332nd_ARF_Backpack_Heavy_Woodland: SWLB_clone_backpack
+
+	class 332nd_Backpack_urban_Engineer: SWLB_clone_backpack
 	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (Heavy / Woodland)";
+        ace_fortify_fortifyTool = 1;
+		author="Ithias";
+		displayName="[332nd] Backpack (Engineer)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -423,17 +433,18 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Woodland.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_urban_ENG.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
 			""
 		};
 	};
-	class 332nd_ARF_Backpack_Heavy_Winter: SWLB_clone_backpack
+
+	class 332nd_Backpack_urban_Ammo_Bearer: SWLB_clone_backpack
 	{
-		author="Cherryy";
-		displayName="[332nd] ARF Backpack (Heavy / Winter)";
+		author="Ithias";
+		displayName="[332nd] Backpack (Ammo Bearer)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
 		maximumLoad=320;
 		mass=40;
@@ -448,13 +459,465 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Winter.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_urban.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
 			""
 		};
 	};
+
+
+//winter
+	class 332nd_Backpack_winter: SWLB_clone_backpack
+	{
+		scope = 1;
+		author="Ithias";
+		displayName="[332nd] Backpack";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_winter.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_winter_AR: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Auto-Rifleman)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_winter_AR.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_winter_AT: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Anti-Tank)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_winter_AT.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_winter_RTO: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (RTO)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=285;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_winter.paa",
+			"",
+			"",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+		};
+		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+
+	class 332nd_Backpack_winter_NCO: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (NCO)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_winter_Fulcrum.paa",
+			"",
+			"",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+		};
+		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+
+	class 332nd_Backpack_winter_Medic: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Medic)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=320;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_winter_Medic.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			""
+		};
+	};
+
+	class 332nd_Backpack_winter_Engineer: SWLB_clone_backpack
+	{
+        ace_fortify_fortifyTool = 1;
+		author="Ithias";
+		displayName="[332nd] Backpack (Engineer)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=320;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_winter_ENG.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_winter_Ammo_Bearer: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Ammo Bearer)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=320;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_winter.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+
+//woodland
+	class 332nd_Backpack_woodland: SWLB_clone_backpack
+	{
+		scope = 1;
+		author="Ithias";
+		displayName="[332nd] Backpack";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_woodland.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_woodland_AR: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Auto-Rifleman)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_woodland_AR.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_woodland_AT: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Anti-Tank)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_woodland_AT.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_woodland_RTO: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (RTO)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=285;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_woodland.paa",
+			"",
+			"",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+		};
+		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+
+	class 332nd_Backpack_woodland_NCO: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (NCO)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=200;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_woodland_Fulcrum.paa",
+			"",
+			"",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+		};
+		descriptionShort="AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+
+	class 332nd_Backpack_woodland_Medic: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Medic)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=320;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_woodland_Medic.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			""
+		};
+	};
+
+	class 332nd_Backpack_woodland_Engineer: SWLB_clone_backpack
+	{
+        ace_fortify_fortifyTool = 1;
+		author="Ithias";
+		displayName="[332nd] Backpack (Engineer)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=320;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_woodland_ENG.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+	class 332nd_Backpack_woodland_Ammo_Bearer: SWLB_clone_backpack
+	{
+		author="Ithias";
+		displayName="[332nd] Backpack (Ammo Bearer)";
+		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
+		maximumLoad=320;
+		mass=40;
+		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_woodland.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+
+
 };
 
 class XtdGearModels
@@ -466,6 +929,55 @@ class XtdGearModels
             label = "Backpack ARF";
             author = "Cherryy";
 			options[] = { "Type", "Camo", };
+			class Type
+            {
+                label = "Type";
+                values[] = { "AR", "AT", "RTO", "NCO", "Medic", "ENG", "Ammo",};
+                changeingame = 0;
+                alwaysSelectable = 0;
+                class AR
+                {
+                    label = "AR";
+                    description = "AR";
+                    // image = "xxx";
+                };
+                class AT
+                {
+                    label = "AT";
+                    description = "AT";
+                    // image = "xxx";
+                };
+                class RTO
+                {
+                    label = "RTO";
+                    description = "RTO";
+                    // image = "xxx";
+                };
+                class NCO
+                {
+                    label = "NCO";
+                    description = "NCO";
+                    // image = "xxx";
+                };
+                class Medic
+                {
+                    label = "Medic";
+                    description = "Medic";
+                    // image = "xxx";
+                };
+                class ENG
+                {
+                    label = "ENG";
+                    description = "ENG";
+                    // image = "xxx";
+                };
+                class Ammo
+                {
+                    label = "Ammo-Bearer";
+                    description = "Ammo";
+                    // image = "xxx";
+                };
+            };
 			class Camo
             {
                 label = "Camo";
@@ -497,129 +1009,6 @@ class XtdGearModels
                     // image = "xxx";
                 };
             };
-            class Type
-            {
-                label = "Type";
-				values[] = { "Backpack", "Medic", "JTAC", "Heavy",};
-                changeingame = 0;
-                alwaysSelectable = 1;
-				//Backpack
-				class 332nd_ARF_Backpack_Desert
-                {
-                    label = "Backpack";
-                    description = "AR/AT";
-					camo = "Desert";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Urban
-                {
-                    label = "Backpack";
-                    description = "AR/AT";
-					camo = "Urban";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Woodland
-                {
-                    label = "Backpack";
-                    description = "AR/AT";
-					camo = "Woodland";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Winter
-                {
-                    label = "Backpack";
-                    description = "AR/AT";
-					camo = "Winter";
-                    //image = "xxx";
-                };
-				//Medic Bags
-				class 332nd_ARF_Backpack_Medic_Desert
-                {
-                    label = "Medic";
-                    description = "Medic";
-					camo = "Desert";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Medic_Urban
-                {
-                    label = "Medic";
-                    description = "Medic";
-					camo = "Urban";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Medic_Woodland
-                {
-                    label = "Medic";
-                    description = "Medic";
-					camo = "Woodland";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Medic_Winter
-                {
-                    label = "Medic";
-                    description = "Medic";
-					camo = "Winter";
-                    //image = "xxx";
-                };
-				//JTAC Bags
-				class 332nd_ARF_Backpack_JTAC_Desert
-                {
-                    label = "JTAC";
-                    description = "JTAC";
-					camo = "Desert";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_JTAC_Urban
-                {
-                    label = "JTAC";
-                    description = "JTAC";
-					camo = "Urban";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_JTAC_Woodland
-                {
-                    label = "JTAC";
-                    description = "JTAC";
-					camo = "Woodland";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_JTAC_Winter
-                {
-                    label = "JTAC";
-                    description = "JTAC";
-					camo = "Winter";
-                    //image = "xxx";
-                };
-				//Heavy Bags
-				class 332nd_ARF_Backpack_Heavy_Desert
-                {
-                    label = "Heavy";
-                    description = "ENG/Ammo Bearer";
-					camo = "Desert";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Heavy_Urban
-                {
-                    label = "Heavy";
-                    description = "ENG/Ammo Bearer";
-					camo = "Urban";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Heavy_Woodland
-                {
-                    label = "Heavy";
-                    description = "ENG/Ammo Bearer";
-					camo = "Woodland";
-                    //image = "xxx";
-                };
-				class 332nd_ARF_Backpack_Heavy_Winter
-                {
-                    label = "Heavy";
-                    description = "ENG/Ammo Bearer";
-					camo = "Winter";
-                    //image = "xxx";
-                };
-            };
         };
     };
 };
@@ -628,105 +1017,177 @@ class XtdGearInfos
 {
     class CfgVehicles
     {
-		//ARF Beninig
-		class 332nd_ARF_Backpack_Desert
+		//desert
+		class 332nd_Backpack_Desert_AR
         {
             model = "332nd_ARF_Backpack_Extended";
-            Type = "Backpack";
+            Type = "AR";
 			camo = "Desert";
         };
-		class 332nd_ARF_Backpack_Urban
+		class 332nd_Backpack_Desert_AT
         {
             model = "332nd_ARF_Backpack_Extended";
-            Type = "Backpack";
-			camo = "Urban";
-        };
-		class 332nd_ARF_Backpack_Woodland
-        {
-            model = "332nd_ARF_Backpack_Extended";
-            Type = "Backpack";
-			camo = "Woodland";
-        };
-		class 332nd_ARF_Backpack_Winter
-        {
-            model = "332nd_ARF_Backpack_Extended";
-            Type = "Backpack";
-			camo = "Winter";
-        };
-		//JTAC
-		class 332nd_ARF_Backpack_JTAC_Desert
-        {
-            model = "332nd_ARF_Backpack_Extended";
-            Type = "JTAC";
+            Type = "AT";
 			camo = "Desert";
         };
-		class 332nd_ARF_Backpack_JTAC_Urban
+		class 332nd_Backpack_Desert_RTO
         {
             model = "332nd_ARF_Backpack_Extended";
-            Type = "JTAC";
-			camo = "Urban";
+            Type = "RTO";
+			camo = "Desert";
         };
-		class 332nd_ARF_Backpack_JTAC_Woodland
+		class 332nd_Backpack_Desert_NCO
         {
             model = "332nd_ARF_Backpack_Extended";
-            Type = "JTAC";
-			camo = "Woodland";
+            Type = "NCO";
+			camo = "Desert";
         };
-		class 332nd_ARF_Backpack_JTAC_Winter
-        {
-            model = "332nd_ARF_Backpack_Extended";
-            Type = "JTAC";
-			camo = "Winter";
-        };
-		//Medic
-		class 332nd_ARF_Backpack_Medic_Desert
+		class 332nd_Backpack_Desert_Medic
         {
             model = "332nd_ARF_Backpack_Extended";
             Type = "Medic";
 			camo = "Desert";
         };
-		class 332nd_ARF_Backpack_Medic_Urban
+		class 332nd_Backpack_Desert_Engineer
         {
             model = "332nd_ARF_Backpack_Extended";
-            Type = "Medic";
-			camo = "Urban";
-        };
-		class 332nd_ARF_Backpack_Medic_Woodland
-        {
-            model = "332nd_ARF_Backpack_Extended";
-            Type = "Medic";
-			camo = "Woodland";
-        };
-		class 332nd_ARF_Backpack_Medic_Winter
-        {
-            model = "332nd_ARF_Backpack_Extended";
-            Type = "Medic";
-			camo = "Winter";
-        };
-		//Heavy
-		class 332nd_ARF_Backpack_Heavy_Desert
-        {
-            model = "332nd_ARF_Backpack_Extended";
-            Type = "Heavy";
+            Type = "ENG";
 			camo = "Desert";
         };
-		class 332nd_ARF_Backpack_Heavy_Urban
+		class 332nd_Backpack_Desert_Ammo_Bearer
         {
             model = "332nd_ARF_Backpack_Extended";
-            Type = "Heavy";
+            Type = "Ammo";
+			camo = "Desert";
+        };
+		//Urban
+		class 332nd_Backpack_Urban_AR
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "AR";
 			camo = "Urban";
         };
-		class 332nd_ARF_Backpack_Heavy_Woodland
+		class 332nd_Backpack_Urban_AT
         {
             model = "332nd_ARF_Backpack_Extended";
-            Type = "Heavy";
+            Type = "AT";
+			camo = "Urban";
+        };
+		class 332nd_Backpack_Urban_RTO
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "RTO";
+			camo = "Urban";
+        };
+		class 332nd_Backpack_Urban_NCO
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "NCO";
+			camo = "Urban";
+        };
+		class 332nd_Backpack_Urban_Medic
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "Medic";
+			camo = "Urban";
+        };
+		class 332nd_Backpack_Urban_Engineer
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "ENG";
+			camo = "Urban";
+        };
+		class 332nd_Backpack_Urban_Ammo_Bearer
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "Ammo";
+			camo = "Urban";
+        };
+		//Winter
+		class 332nd_Backpack_Winter_AR
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "AR";
+			camo = "Winter";
+        };
+		class 332nd_Backpack_Winter_AT
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "AT";
+			camo = "Winter";
+        };
+		class 332nd_Backpack_Winter_RTO
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "RTO";
+			camo = "Winter";
+        };
+		class 332nd_Backpack_Winter_NCO
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "NCO";
+			camo = "Winter";
+        };
+		class 332nd_Backpack_Winter_Medic
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "Medic";
+			camo = "Winter";
+        };
+		class 332nd_Backpack_Winter_Engineer
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "ENG";
+			camo = "Winter";
+        };
+		class 332nd_Backpack_Winter_Ammo_Bearer
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "Ammo";
+			camo = "Winter";
+        };
+		//Woodland
+		class 332nd_Backpack_Woodland_AR
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "AR";
 			camo = "Woodland";
         };
-		class 332nd_ARF_Backpack_Heavy_Winter
+		class 332nd_Backpack_Woodland_AT
         {
             model = "332nd_ARF_Backpack_Extended";
-            Type = "Heavy";
-			camo = "Winter";
+            Type = "AT";
+			camo = "Woodland";
+        };
+		class 332nd_Backpack_Woodland_RTO
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "RTO";
+			camo = "Woodland";
+        };
+		class 332nd_Backpack_Woodland_NCO
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "NCO";
+			camo = "Woodland";
+        };
+		class 332nd_Backpack_Woodland_Medic
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "Medic";
+			camo = "Woodland";
+        };
+		class 332nd_Backpack_Woodland_Engineer
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "ENG";
+			camo = "Woodland";
+        };
+		class 332nd_Backpack_Woodland_Ammo_Bearer
+        {
+            model = "332nd_ARF_Backpack_Extended";
+            Type = "Ammo";
+			camo = "Woodland";
         };
     };
 };

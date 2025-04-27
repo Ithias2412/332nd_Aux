@@ -163,9 +163,3 @@ class RscDisplayMain: RscStandardDisplay
 		};
 	};
 };
-
-class cfgMods
-{
-	//author="";
-	timepacked="1689021010";
-};

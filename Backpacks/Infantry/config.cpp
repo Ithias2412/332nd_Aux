@@ -32,6 +32,7 @@ class CfgVehicles
 
 	class 332nd_Backpack: SWLB_clone_backpack
 	{
+		scope = 1;
 		author="Ithias";
 		displayName="[332nd] Backpack";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
@@ -414,15 +415,9 @@ class XtdGearModels
             class Backpacks
             {
                 label = "Backpacks";
-				values[] = { "Backpack", "AR", "AT", "ENG", "Ammo", "JTAC", "Medic", };
+				values[] = {"AR", "AT", "ENG", "Ammo", "JTAC", "Medic", };
                 changeingame = 0;
                 alwaysSelectable = 1;
-				class Backpack
-                {
-                    label = "Backpack";
-					//description = "";
-                    //image = "xxx";
-                };
 				class AR
                 {
                     label = "Auto-Rifleman";
@@ -525,11 +520,6 @@ class XtdGearInfos
 {
     class CfgVehicles
     {
-        class 332nd_Backpack
-        {
-            model = "332nd_Backpack_Extended";
-            Backpacks = "Backpack";
-        };
         class 332nd_Backpack_AR
         {
             model = "332nd_Backpack_Extended";
