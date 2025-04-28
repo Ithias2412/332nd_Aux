@@ -104,12 +104,12 @@ class CfgVehicles
 		};
 	};
 
-	class 332nd_Backpack_JTAC: SWLB_clone_backpack
+	class 332nd_Backpack_RTO: SWLB_clone_backpack
 	{
 		author="Ithias";
-		displayName="[332nd] Backpack (JTAC)";
+		displayName="[332nd] Backpack (RTO)";
 		model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-		maximumLoad=285;
+		maximumLoad=185;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
 		hiddenSelections[] = 
@@ -415,7 +415,7 @@ class XtdGearModels
             class Backpacks
             {
                 label = "Backpacks";
-				values[] = {"AR", "AT", "ENG", "Ammo", "JTAC", "Medic", };
+				values[] = {"AR", "AT", "ENG", "Ammo", "RTO", "Medic", };
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class AR
@@ -442,9 +442,9 @@ class XtdGearModels
 					//description = "";
                     //image = "xxx";
                 };
-				class JTAC
+				class RTO
                 {
-                    label = "JTAC";
+                    label = "RTO";
 					//description = "";
                     //image = "xxx";
                 };
@@ -530,10 +530,10 @@ class XtdGearInfos
             model = "332nd_Backpack_Extended";
             Backpacks = "AT";
         };
-        class 332nd_Backpack_JTAC
+        class 332nd_Backpack_RTO
         {
             model = "332nd_Backpack_Extended";
-            Backpacks = "JTAC";
+            Backpacks = "RTO";
         };
         class 332nd_Bag
         {

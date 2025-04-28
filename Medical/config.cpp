@@ -187,7 +187,6 @@ class ace_medical_treatment
         };
         class 332nd_Bacta_Spray: 332nd_Acti_Bandage 
 		{
-			//NA
 		};
     };
     class Medication
@@ -240,6 +239,8 @@ class ace_medical_treatment_actions
 {
     class FieldDressing;
 	class Morphine;
+	class ApplyTourniquet;
+	class RemoveTourniquet;
 	/*
     class BasicInjector: Morphine
 	{
@@ -254,8 +255,8 @@ class ace_medical_treatment_actions
 	*/
 	class 332nd_Acti_Bandage: FieldDressing
 	{
-		displayName="[332nd] Acti Bandage";
-        displayNameProgress = "STOP THAT BLEED TROOPER!";
+		displayName="Acti Bandage";
+        displayNameProgress = "Wrapping Acti Bandage";
 		items[]=
 		{
 			"332nd_Acti_Bandage_Weap",
@@ -264,25 +265,26 @@ class ace_medical_treatment_actions
 	};
 	class 332nd_Bacta_Spray: 332nd_Acti_Bandage
 	{
-		displayName="[332nd] Bacta Spray";
-        displayNameProgress = "OH MY GOD IM OOOOOOOZING!";
+		displayName="Bacta Spray";
+        displayNameProgress = "Oozing Bacta Spray";
 		medicRequired = 1;
+		consumeItem = 0;
 		items[]=
 		{
 			"332nd_Bacta_Spray_Weap",
-			"332nd_Bacta_Spray_Weap",
-			"332nd_Bacta_Spray_Weap",
 		};
+		treatmentTime = 6;
 	};
 	class 332nd_Painkiller: Morphine
 	{
-		displayName="[332nd] Painkiller";
-        displayNameProgress = "Drugs are great for coping...";
+		displayName="Painkiller";
+        displayNameProgress = "Snorting Painkiller";
         allowedSelections[] = {"Head"};
 		items[]=
 		{
 			"332nd_Painkiller_Weap",
 		};
+		treatmentTime = 6;
 	};
 	/*
     class 332nd_Franks_Jungle_Juice: BasicInjector
@@ -314,6 +316,7 @@ class cfgWeapons
     class ACE_morphine;
 	class CBA_MiscItem_ItemInfo;
 	class ACE_salineIV;
+	class ACE_tourniquet;
 	/*
     class 332nd_Franks_Jungle_Juice_Weap: ACE_morphine
     {
@@ -357,7 +360,7 @@ class cfgWeapons
 		displayName="[332nd] Bacta Spray";
 		class ItemInfo: CBA_MiscItem_ItemInfo 
 		{
-			mass = 0.9;
+			mass = 15;
         };
 	};
 	class 332nd_Painkiller_Weap: ACE_morphine
