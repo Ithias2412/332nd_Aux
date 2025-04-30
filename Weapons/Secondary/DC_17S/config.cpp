@@ -31,7 +31,7 @@ class Right;
 class cfgWeapons 
 {
 	class 3AS_DC17S_F;
-	class 3AS_DC17STest_F;
+	class 3AS_DC17S_Dual_F;
 	class JLTS_stun_muzzle;
 	class SWLW_DC17;
 	class ls_weapon_dualDC17_secondary;
@@ -41,6 +41,7 @@ class cfgWeapons
 	{
 		author="Ithias";
 		displayName="[332nd] DC-17S";
+		baseWeapon = "332nd_DC17S";
 		magazines[] =
 		{
 			"332nd_DC17S_Mag",
@@ -55,9 +56,10 @@ class cfgWeapons
 			};
 		};
 	};
-	class 332nd_DC17S_Dual : 3AS_DC17STest_F
+	class 332nd_DC17S_Dual : 3AS_DC17S_Dual_F
 	{
 		displayName = "[332nd] Dual DC-17S";
+		baseWeapon = "332nd_DC17S_Dual";
 		magazines[] =
 		{
 			"332nd_DC17S_Mag_Dual",

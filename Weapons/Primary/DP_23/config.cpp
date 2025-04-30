@@ -114,8 +114,6 @@ class cfgWeapons
 					"332nd_Mode_C_Zoom_2",
 					"332nd_Mode_D_Zoom_2",
 					"332nd_Mode_Seelig_Point_Zoom_2",
-					"332nd_3AS_C_Reflex",
-					"332nd_3AS_S_Holo",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

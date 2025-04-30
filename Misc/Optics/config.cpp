@@ -1517,19 +1517,8 @@ class cfgWeapons
 	};
 //3AS
 
-	class 3AS_optic_acog_DC15C: ItemCore
-	{
-		class ItemInfo;
-	};
-	class 3AS_optic_reflex_DC15C: ItemCore
-	{
-		class ItemInfo;
-	};
-	class 3AS_optic_holo_DC15S: ItemCore
-	{
-		class ItemInfo;
-	};
-	class 3AS_Optic_VK38X: ItemCore
+
+	class 3AS_optic_VK38X_F: ItemCore
 	{
 		class ItemInfo;
 	};
@@ -1594,79 +1583,17 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_IDA_773_scope: optic_lrps
-	{
-		author="Indecisive Armoury Team";
-		scope=2;
-		displayname="[IDA] 773-FP Scope";
-		picture="\Indecisive_Armoury_Weapons_REPUBLIC\Data\773Scope\773Scope_ui.paa";
-		model="\Indecisive_Armoury_Weapons_REPUBLIC\Data\773Scope\Model\IDA_773_Scope.p3d";
-		memoryPointCamera="eye";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass=10;
-			optics=1;
-			modelOptics="\Indecisive_Armoury_Weapons_REPUBLIC\Data\773Scope\2dScope\IDA_DMR_Scope.p3d";
-			allowedSlots[]={801,701,901};
-			class OpticsModes
-			{
-				class IDA_773_Collimator
-				{
-					distanceZoomMax=200;
-					distanceZoomMin=200;
-					memoryPointCamera="eye";
-					opticsDisablePeripherialVision=0;
-					opticsFlare=0;
-					opticsID=1;
-					opticsPPEffects="[""Default""]";
-					opticsZoomInit=0.75;
-					opticsZoomMax=1.25;
-					opticsZoomMin=0.25;
-					useModelOptics=0;
-					visionMode="[]";
-				};
-				class IDA_773_Scope
-				{
-					opticsID=2;
-					useModelOptics=1;
-					opticsPPEffects[]={};
-					opticsZoomMin=0.02;
-					opticsZoomMax=0.0625;
-					opticsZoomInit=0.0625;
-					discreteDistance[]={100,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex=1;
-					distanceZoomMin=100;
-					distanceZoomMax=1000;
-					discreteFov[]={0.0625,0.02};
-					discreteInitIndex=0;
-					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
-					memoryPointCamera="opticView";
-					visionMode[]=
-					{
-						"Normal",
-						"NVG",
-						"Ti"
-					};
-					thermalMode[]={1,2};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					cameraDir="";
-				};
-			};
-		};
-	};
-	
-	class 332nd_3AS_VK38X: 3AS_Optic_VK38X
+	class 332nd_3AS_VK38X: 3AS_optic_VK38X_F
 	{
 		scope=2;
 		displayName="[3AS] VK-38X Optic";
-		picture="\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
-		model="3AS\3AS_Weapons\Valken38X\3AS_VK38X_Scope_f.p3d";
+		picture = "\A3\Weapons_F_EPB\Acc\Data\UI\gear_acco_sniper02_CA.paa";
+		model = "\3AS\3AS_Weapons\Republic\ACC\3AS_acco_VK38X_Scope_F.p3d";
 		weaponInfoType="RscWeaponZeroing";
 		class ItemInfo: ItemInfo
 		{
-			mass=7;
-			modelOptics="\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+			mass = 14;
+			modelOptics = "\3AS\3AS_Weapons\Republic\ACC\3AS_reticle_VK38X_F";
 			class OpticsModes
 			{
 				class 3AS_VK38X_Optic
@@ -1678,7 +1605,7 @@ class cfgWeapons
 					opticsZoomMax=0.0625;
 					opticsZoomInit=0.0625;
 					discreteDistance[]={100,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex=1;
+					discreteDistanceInitIndex = 0;
 					distanceZoomMin=100;
 					distanceZoomMax=1000;
 					discreteFov[]={0.0625,0.02};
@@ -1696,174 +1623,7 @@ class cfgWeapons
 					opticsDisablePeripherialVision=1;
 					cameraDir="";
 				};
-				class IronOnTopOfMyOptics: 3AS_VK38X_Optic
-				{
-					opticsID=2;
-					useModelOptics=0;
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1.1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="eye";
-					visionMode[]={};
-					discretefov[]={};
-				};
 			};
 		};
 	};
-
-	class 332nd_3AS_C_Acog: 3AS_optic_acog_DC15C
-	{
-		displayName = "[3AS] ACOG";
-		class ItemInfo: ItemInfo
-		{
-			class OpticsModes
-			{
-				class IronOnTopOfMyOptics
-				{
-					cameraDir = "";
-					discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex = 1;
-					discretefov[] = {};
-					discreteInitIndex = 0;
-					distanceZoomMax = 1000;
-					distanceZoomMin = 100;
-					memoryPointCamera = "eye";
-					modelOptics[] = {"\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d"};
-					nFovLimit = 0.07;
-					opticsDisablePeripherialVision = 0;
-					opticsFlare = 0;
-					opticsID = 2;
-					opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
-					opticsZoomInit = 0.75;
-					opticsZoomMax = 1.1;
-					opticsZoomMin = 0.375;
-					useModelOptics = 0;
-					visionMode[] = {"Normal","NVG"};
-				};
-				class Yeszoom
-				{
-					opticsPPEffects[]={};
-					opticsID=1
-					discreteDistanceInitIndex=1;
-					discreteInitIndex = 0;
-					distanceZoomMax = 300;
-					distanceZoomMin = 300;
-					memoryPointCamera = "opticView";
-					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
-					opticsDisablePeripherialVision=1;
-					opticsFlare=1;
-					opticsZoomInit = 0.125;
-					opticsZoomMax = 0.125;
-					opticsZoomMin = 0.125;
-					useModelOptics=1;
-					visionMode[]=
-					{
-						"Normal",
-						"NVG",
-					};
-				};
-			};
-		};
-	};
-
-	class 332nd_3AS_C_Reflex: 3AS_optic_reflex_DC15C
-	{
-		displayName = "[3AS] Reflex";
-		class ItemInfo: ItemInfo
-		{
-			class OpticsModes
-			{
-				class aco
-				{
-					cameraDir = "";
-					distanceZoomMax = 200;
-					distanceZoomMin = 200;
-					memoryPointCamera = "eye";
-					opticsDisablePeripherialVision = 0;
-					opticsFlare = 0;
-					opticsID = 1;
-					opticsPPEffects[] = {"OpticsBlur1"};
-					opticsZoomInit = 0.75;
-					opticsZoomMax = 1.25;
-					opticsZoomMin = 0.25;
-					useModelOptics = 0;
-					visionMode[] = {};
-				};
-				class Yeszoom
-				{
-					opticsPPEffects[]={};
-					opticsID=1
-					discreteDistanceInitIndex=1;
-					discreteInitIndex = 0;
-					distanceZoomMax = 300;
-					distanceZoomMin = 300;
-					memoryPointCamera = "opticView";
-					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
-					opticsDisablePeripherialVision=1;
-					opticsFlare=1;
-					opticsZoomInit = 0.125;
-					opticsZoomMax = 0.125;
-					opticsZoomMin = 0.125;
-					useModelOptics=1;
-					visionMode[]=
-					{
-						"Normal",
-						"NVG",
-					};
-				};
-			};
-		};
-	};
-
-	class 332nd_3AS_S_Holo: 3AS_optic_holo_DC15S
-	{
-		displayName = "[3AS] Holo";
-		class ItemInfo: ItemInfo
-		{
-			class OpticsModes
-			{
-				class aco
-				{
-					cameraDir = "";
-					distanceZoomMax = 200;
-					distanceZoomMin = 200;
-					memoryPointCamera = "eye";
-					opticsDisablePeripherialVision = 0;
-					opticsFlare = 0;
-					opticsID = 1;
-					opticsPPEffects[] = {"Default"};
-					opticsZoomInit = 0.75;
-					opticsZoomMax = 1.25;
-					opticsZoomMin = 0.25;
-					useModelOptics = 0;
-					visionMode[] = {};
-				};
-				class Yeszoom
-				{
-					opticsPPEffects[]={};
-					opticsID=1
-					discreteDistanceInitIndex=1;
-					discreteInitIndex = 0;
-					distanceZoomMax = 300;
-					distanceZoomMin = 300;
-					memoryPointCamera = "opticView";
-					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
-					opticsDisablePeripherialVision=1;
-					opticsFlare=1;
-					opticsZoomInit = 0.125;
-					opticsZoomMax = 0.125;
-					opticsZoomMin = 0.125;
-					useModelOptics=1;
-					visionMode[]=
-					{
-						"Normal",
-						"NVG",
-					};
-				};
-			};
-		};
-	};
-
 };
