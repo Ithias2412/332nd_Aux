@@ -40,6 +40,7 @@ class cfgWeapons
 		recoil="3AS_recoil_DC15S";
 		reloadAction = "3AS_GestureReload_DC17M";
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC23\DC23_ui.paa";
+		baseWeapon = "332nd_DC15C";
 		magazines[] =
 		{
 			"332nd_DC15C_Mag",

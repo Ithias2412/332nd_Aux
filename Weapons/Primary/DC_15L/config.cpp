@@ -34,6 +34,7 @@ class cfgWeapons
 		recoil="Old_IDA_recoil_Z6";
 		reloadAction = "GestureReload_JLTS_DC15A";
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15X\DC15X_ui.paa";
+		baseWeapon = "332nd_DC15L";
 		magazines[] =
 		{
 			"332nd_DC15L_Mag"

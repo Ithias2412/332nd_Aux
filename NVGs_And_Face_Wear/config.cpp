@@ -235,6 +235,15 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa"};
 	};
+	class 332nd_Facewear_XO_Ithias :332nd_Facewear_Base
+	{
+		scope = 2;
+		displayName = "[332nd] Commander Visor (Ithias)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_Ithias.paa"};
+		model = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+	};
 //White
 	class 332nd_Facewear_XO_White :332nd_Facewear_Base
 	{
@@ -389,7 +398,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Cherryy", "Asuka", };
+				values[] = { "Cherryy", "Asuka", "Ithias", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -401,6 +410,12 @@ class XtdGearModels
                 class Asuka
                 {
                     label = "Asuka";
+                    //description = "Not Default";
+                    //image = "xxx";
+                };
+                class Ithias
+                {
+                    label = "Ithias";
                     //description = "Not Default";
                     //image = "xxx";
                 };
@@ -516,5 +531,11 @@ class XtdGearInfos
             Customs = "Asuka";
             Variant = "A";
         };
+		class 332nd_Facewear_XO_Ithias
+		{
+            model = "332nd_Facewear_Extended";
+            Customs = "Ithias";
+            Variant = "A";
+		};
     };
 };

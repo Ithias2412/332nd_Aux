@@ -491,6 +491,27 @@ class cfgWeapons
 
 
 //Customs
+	class 332nd_Ithias_Vest: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Ithias)";
+		model="\SWLB_clones\SWLB_clone_officer_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_Ithias.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_officer_armor.p3d";
+			hiddenSelections[]=
+			{
+				"camo1"
+			};
+		};
+	};
 class 332nd_Cherryy_Custom_Vest: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Cherryy)";
@@ -1231,7 +1252,7 @@ class XtdGearModels
 			class custom
             {
                 label = "Customs";
-                values[] = { "Cherryy", "Asuka",};
+                values[] = { "Cherryy", "Asuka", "Ithias",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -1244,6 +1265,12 @@ class XtdGearModels
                 {
                     label = "Asuka";
                     description = "Stuck at CSS";
+                    // image = "xxx";
+                };
+				class Ithias
+                {
+                    label = "Ithias";
+                    description = "Joe";
                     // image = "xxx";
                 };
             };
@@ -1352,5 +1379,10 @@ class XtdGearInfos
             model = "332nd_Vest_Extended";
 			custom = "Asuka";
         };
+		class 332nd_Ithias_Vest
+		{
+            model = "332nd_Vest_Extended";
+			custom = "Ithias";
+		};
     };
 };

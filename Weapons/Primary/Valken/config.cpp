@@ -37,6 +37,7 @@ class cfgWeapons
 		picture = "\MRC\JLTS\weapons\DW32S\data\ui\DW32S_ui_ca.paa"; 
 		scope = 2;
 		weaponInfoType="RscOptics_nightstalker";
+		baseWeapon = "332nd_Valken";
 		magazines[] =
 		{
 			"332nd_Valken_Mag"
