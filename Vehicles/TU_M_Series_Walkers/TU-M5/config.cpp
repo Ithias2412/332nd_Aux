@@ -1,3 +1,4 @@
+/*
 class CfgPatches {
 	class 332nd_TUM5 {
 		author = "WebKnight & Cherryy";
@@ -75,6 +76,8 @@ class Extended_PreInit_EventHandlers
         init="call compile preprocessFileLineNumbers '332nd_Aux\Vehicles\TU_M_Series_Walkers\XEH_postInit.sqf'";
     };
 }; */
+
+/*
 class CfgSounds
 {
     sounds[] = {};

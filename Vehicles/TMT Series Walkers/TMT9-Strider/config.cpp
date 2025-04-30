@@ -1,3 +1,4 @@
+/*
 class CfgPatches {
 	class 332nd_TUM5 {
 		author = "WebKnight & Cherryy";
