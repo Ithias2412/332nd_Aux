@@ -367,7 +367,7 @@ class cfgWeapons
 			1,
 			10
 		};
-		reloadAction="GestureReload_IDAReload1";
+		reloadAction="GestureReload_JLTS_DC15S";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 60;
