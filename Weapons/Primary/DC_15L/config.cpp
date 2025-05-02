@@ -72,11 +72,11 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_Mode_A_Raised",
-					"332nd_Mode_B_Raised",
-					"332nd_Mode_C_Raised",
-					"332nd_Mode_D_Raised",
-					"332nd_Mode_Seelig_Point_Raised",
+					"332nd_Mode_A_Raised_Forward",
+					"332nd_Mode_B_Raised_Forward",
+					"332nd_Mode_C_Raised_Forward",
+					"332nd_Mode_D_Raised_Forward",
+					"332nd_Mode_Seelig_Point_Raised_Forward",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot
