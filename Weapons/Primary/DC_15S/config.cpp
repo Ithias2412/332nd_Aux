@@ -356,7 +356,7 @@ class cfgWeapons
 				"ACE_HuntIR_M203",
 			};
 			recoil="Old_IDA_recoil_DC23";
-			reloadAction="GestureReloadMXUGL";
+			reloadAction = "GestureReload_JLTS_DC15S";
 			magazineWell[]={};
 		};
 		fireLightDiffuse[]={0.1,0.25,1};

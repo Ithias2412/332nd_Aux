@@ -222,7 +222,8 @@ class cfgWeapons
 		author="Ithias";
 		displayName="[332nd] DC-15C GL (GRN)";
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC23\DC23_ui.paa";
-		reloadAction = "3AS_GestureReload_DC17M";
+		reloadAction = "GestureReload_JLTS_DC15S";
+		baseWeapon = "332nd_DC15C_GL";
 		magazines[] =
 		{
 			"332nd_DC15C_Mag"
@@ -331,13 +332,11 @@ class cfgWeapons
 				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
 				compatibleItems[]=
 				{
-					"332nd_3AS_C_Acog",
-					"332nd_3AS_C_Reflex",
-					"332nd_Mode_A_Zoom_2_Forward",
-					"332nd_Mode_B_Zoom_2_Forward",
-					"332nd_Mode_C_Zoom_2_Forward",
-					"332nd_Mode_D_Zoom_2_Forward",
-					"332nd_Mode_Seelig_Point_Zoom_2"
+					"332nd_Mode_A_Zoom_2_Raised",
+					"332nd_Mode_B_Zoom_2_Raised",
+					"332nd_Mode_C_Zoom_2_Raised",
+					"332nd_Mode_D_Zoom_2_Raised",
+					"332nd_Mode_Seelig_Point_Zoom_2_Raised",
 				};
 			};
 			class MuzzleSlot: MuzzleSlot

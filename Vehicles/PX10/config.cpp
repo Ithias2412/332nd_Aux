@@ -36,7 +36,7 @@ class CfgVehicles
 		};
 	};
 
-	//  ustom Republic Base Variant
+	//  Custom Republic Base Variant
 	class 332nd_PX10_F: 3AS_PX10_REP_F
 	{
 		faction="332nd_Faction";
@@ -44,6 +44,7 @@ class CfgVehicles
 		side = 1;
 		editorSubcategory = "EdSubcat_APCs";
 		//transportSoldier = 4;
+		canFloat = 1;
 		hiddenSelections[] = 
 		{
 			"Camo",
@@ -82,8 +83,17 @@ class CfgWeapons
 		displayName = "[332nd] PX-10 Repeater";
 		magazines[] = {"332nd_PX10_Repeater_Mag"};
 		magazineReloadTime = 30;
-		modes[] = {"player","close","short","medium","far"};
-		class player: Mode_FullAuto
+		modes[] = {"manual","close","short","medium","far_optic1","far_optic2"};
+		waterAngularDampingCoef = 10;
+		waterDamageEngine = 0.2;
+		waterLeakiness = 2.5;
+		waterLinearDampingCoefX = 0;
+		waterLinearDampingCoefY = 0;
+		waterPPInVehicle = 0;
+		waterResistance = 1;
+		waterResistanceCoef = 0.5;
+		waterSpeedFactor = 0.2;
+		class manual: Mode_FullAuto
 		{
 			dispersion = 0.00073;
 			displayName = "Full";
@@ -97,20 +107,83 @@ class CfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\Indecisive_Armoury_Sounds\Republic\DLT-15\DLT15.ogg",1.25,1,1800};
-				begin2[] = {"\Indecisive_Armoury_Sounds\Republic\DLT-15\DLT15.ogg",1.25,1.015,1800};
-				begin3[] = {"\Indecisive_Armoury_Sounds\Republic\DLT-15\DLT15.ogg",1.25,0.985,1800};
-				begin4[] = {"\Indecisive_Armoury_Sounds\Republic\DLT-15\DLT15.ogg",1.25,1.01,1800};
-				begin5[] = {"\Indecisive_Armoury_Sounds\Republic\DLT-15\DLT15.ogg",1.25,0.995,1800};
-				beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\DLT-15\DLT15.ogg",1,1,400};
-				closure1[] = {};
-				closure2[] = {};
+				weaponSoundEffect="";
+				begin1[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1,1800};
+				begin2[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1.025,1800};
+				begin3[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,0.95,1800};
+				begin4[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1.05,1800};
+				begin5[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,0.9,1800};
+				beginwater1[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1,1,400};
 				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
 				soundBeginWater[] = {"beginwater1",1};
-				soundClosure[] = {};
-				weaponSoundEffect = "";
 			};
 		};
+		class close: manual
+		{
+			burst=10;
+			aiRateOfFire=0.5;
+			aiRateOfFireDistance=50;
+			minRange=10;
+			minRangeProbab=0.050000001;
+			midRange=20;
+			midRangeProbab=0.69999999;
+			maxRange=50;
+			maxRangeProbab=0.039999999;
+			showToPlayer=0;
+		};
+		class short: close
+		{
+			burst=8;
+			aiRateOfFire=2;
+			aiRateOfFireDistance=300;
+			minRange=50;
+			minRangeProbab=0.050000001;
+			midRange=150;
+			midRangeProbab=0.69999999;
+			maxRange=300;
+			maxRangeProbab=0.039999999;
+		};
+		class medium: close
+		{
+			burst=7;
+			aiRateOfFire=4;
+			aiRateOfFireDistance=600;
+			minRange=200;
+			minRangeProbab=0.050000001;
+			midRange=300;
+			midRangeProbab=0.69999999;
+			maxRange=500;
+			maxRangeProbab=0.1;
+		};
+		class far_optic1: medium
+		{
+			requiredOpticType=1;
+			showToPlayer=0;
+			burst=3;
+			aiRateOfFire=10;
+			aiRateOfFireDistance=1000;
+			minRange=300;
+			minRangeProbab=0.050000001;
+			midRange=500;
+			midRangeProbab=0.40000001;
+			maxRange=650;
+			maxRangeProbab=0.0099999998;
+		};
+		class far_optic2: far_optic1
+		{
+			burst=3;
+			requiredOpticType=2;
+			minRange=400;
+			minRangeProbab=0.050000001;
+			midRange=750;
+			midRangeProbab=0.69999999;
+			maxRange=900;
+			maxRangeProbab=0.0099999998;
+			aiRateOfFire=10;
+			aiRateOfFireDistance=900;
+		};
+		aiDispersionCoefY=24;
+		aiDispersionCoefX=21;
 	};
 };
 
@@ -119,7 +192,7 @@ class CfgMagazines
 	class 3AS_250Rnd_MK4ES_shells;
 	class 332nd_PX10_Repeater_Mag: 3AS_250Rnd_MK4ES_shells
 	{
-		ammo = "332nd_762x51_Ball";
+		ammo = "332nd_Gas_Level_M1";
 		count = 750;
 		displayName = "750 Round Repeater Energy Block";
 		displayNameShort = "";

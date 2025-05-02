@@ -494,21 +494,26 @@ class cfgWeapons
 	class 332nd_Ithias_Vest: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Ithias)";
-		model="\SWLB_clones\SWLB_clone_officer_armor.p3d";
+		//model="\SWLB_clones\SWLB_clone_officer_armor.p3d";
+		model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
 		hiddenSelections[]=
 		{
-			"camo1"
+			"camo1",
+			"rank",
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"\332nd_Aux\Vests\Tex\332nd_Vest_Officer_Ithias.paa",
+			"\SWLB_clones\data\rank_co.paa",
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\SWLB_clones\SWLB_clone_officer_armor.p3d";
+			//uniformModel="\SWLB_clones\SWLB_clone_officer_armor.p3d";
+			uniformModel="\SWLB_clones\SWLB_clone_commander_armor.p3d";
 			hiddenSelections[]=
 			{
-				"camo1"
+				"camo1",
+				"rank",
 			};
 		};
 	};

@@ -1365,10 +1365,8 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 		};
 
 		SB_332nd_CIS_HMP_Transport_list_insert = [
-		"3AS_HMP_Transport", 
-		"3AS_HMP_Gunship", 
-		"332nd_CIS_HMP_Gunship", 
-		"332nd_CIS_HMP_Transport"
+		"332nd_CIS_HMP_Transport", 
+		"332nd_CIS_MAF_Transport"
 		];
 
 		SB_332nd_CIS_HMP_Transport_list=[];
@@ -1407,13 +1405,20 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 
 		SB_332nd_CIS_HMP_Transport_GV_list_insert = [
 		"332nd_CIS_AAT", 
-		"332nd_CIS_Advanced_DSD", 
-		"332nd_CIS_GAT_Heavy", 
-		"332nd_CIS_GAT_Light", 
-		"332nd_CIS_HAGM", 
-		"332nd_CIS_Hailfire_Tank", 
 		"332nd_CIS_AAT_Heavy", 
-		"332nd_CIS_Assault_Craft"
+		"332nd_CIS_Advanced_DSD", 
+		"332nd_CIS_MTT", 
+		"332nd_CIS_Assault_Craft", 
+		"332nd_CIS_Crab_Droid", 
+		"332nd_CIS_Dwarf_Spider_Droid_MK3", 
+		"332nd_CIS_GAT_Light",
+		"332nd_CIS_GAT_Heavy",
+		"332nd_CIS_Hailfire_Tank",
+		"332nd_CIS_Dwarf_Spider_Droid",
+		"332nd_CIS_Raptor",
+		"332nd_CIS_HAGM",
+		"332nd_CIS_Deka",
+		"332nd_CIS_Deka_Sniper"
 		];
 
 		SB_332nd_CIS_HMP_Transport_GV_list=[];
