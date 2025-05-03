@@ -5,6 +5,7 @@ class CfgPatches
 		units[] = 
         {
             "332nd_CIS_Hailfire_Tank",
+			"332nd_CIS_Hailfire_Tank_AA",
         };
 		weapons[] = 
         {
@@ -18,11 +19,20 @@ class CfgPatches
 class CfgVehicles
 {
 	class 3AS_Hailfire_Rocket;
+	class 3AS_Hailfire_SAM;
 	class 332nd_CIS_Hailfire_Tank: 3AS_Hailfire_Rocket
 	{
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Medium_Vics";
 		displayName="Hailfire Tank";
+		//armor = 60;
+		editorPreview = "";
+	};
+	class 332nd_CIS_Hailfire_Tank_AA: 3AS_Hailfire_SAM
+	{
+		faction="332nd_CIS_Faction";
+		editorSubcategory = "EdSubcat_332nd_Medium_Vics";
+		displayName="Hailfire Tank (AA)";
 		//armor = 60;
 		editorPreview = "";
 	};

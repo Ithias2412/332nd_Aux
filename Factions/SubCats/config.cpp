@@ -40,4 +40,8 @@ class CfgEditorSubcategories
     {
         displayName = "Techno Union Walkers";
     };
+    class EdSubcat_332nd_Emplacements
+    {
+        displayName = "Emplacements";
+    };
 };
