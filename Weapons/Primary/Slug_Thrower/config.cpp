@@ -38,6 +38,7 @@ class cfgWeapons
 		};
 		class AnimationSources;
 	};
+	//Given to by vipor
 	class IDA_DL63: arifle_MX_Base_F
 	{
 		ace_overheating_mrbs=40000;
@@ -368,6 +369,7 @@ class cfgWeapons
 		displayName="[332nd] MK I Slug Thrower (MRK)";
 		descriptionShort="Long range, high power, Slug Thrower.";
 		modelOptics="\332nd_Aux\Misc\Optics\332nd_Zoom.p3d";
+		reloadAction = "GestureReload_JLTS_DC15S";
 		baseWeapon = "332nd_Slug_Thrower";
 		scope=2;
 		class OpticsModes
@@ -520,12 +522,49 @@ class cfgWeapons
 			};
 		};
 	};
-	class muzzle_snds_H;
+	class muzzle_snds_H_MG;
+	class muzzle_snds_H: muzzle_snds_H_MG
+	{
+		class ItemInfo;
+	};
 	class Slug_Thrower_Muzzle: muzzle_snds_H
 	{
 		author = "Ithias";
 		displayName = "Sound Suppressing Barrel Lining";
 		model = "";
 		picture = "";
+		class ItemInfo: ItemInfo
+		{
+			class AmmoCoef
+			{
+				airFriction = 1;
+				//audibleFire = 1;
+				//audibleFireTime = 1;
+				audibleFire = 0;
+				audibleFireTime = 0;
+				cost = 1;
+				hit = 1;
+				typicalSpeed = 1;
+				//visibleFire = 1;
+				//visibleFireTime = 1;
+				visibleFire = 0;
+				visibleFireTime = 0;
+			};
+			class MuzzleCoef
+			{
+				artilleryDispersionCoef = "1.0f";
+				dispersionCoef = "1.0f";
+				//fireLightCoef = "0.5f";
+				fireLightCoef = "0";
+				maxRangeCoef = "1.0f";
+				maxRangeProbabCoef = "1.0f";
+				midRangeCoef = "1.0f";
+				midRangeProbabCoef = "1.0f";
+				minRangeCoef = "1.0f";
+				minRangeProbabCoef = "1.0f";
+				recoilCoef = "1.0f";
+				recoilProneCoef = "1.0f";
+			};
+		};
 	};
 };

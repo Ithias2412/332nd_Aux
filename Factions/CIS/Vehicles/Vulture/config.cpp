@@ -22,10 +22,11 @@ class CfgVehicles
 	class 332nd_CIS_Vulture: 3AS_CIS_Vulture_F
 	{
 		faction="332nd_CIS_Faction";
-		editorSubcategory = "EdSubcat_Planes";
+		editorSubcategory = "EdSubcat_332nd_Planes";
 		displayName="Vulture";
 		//armor = 200;
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Pilot";
 	};
 	class Plane_Fighter_03_base_F;
 	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
@@ -52,10 +53,11 @@ class CfgVehicles
 	class 332nd_CIS_Vulture_Missiles: 3AS_CIS_Vulture_AA_F
 	{
 		faction="332nd_CIS_Faction";
-		editorSubcategory = "EdSubcat_Planes";
+		editorSubcategory = "EdSubcat_332nd_Planes";
 		displayName="Vulture (Advanced)";
 		//armor = 200;
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Pilot";
 		class Components: Components
 		{
 			class TransportPylonsComponent: TransportPylonsComponent

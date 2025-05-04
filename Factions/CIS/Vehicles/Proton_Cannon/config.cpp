@@ -25,5 +25,6 @@ class CfgVehicles
 		displayName="Proton Cannon";
 		//armor = 60;
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Crewman";
 	};
 };

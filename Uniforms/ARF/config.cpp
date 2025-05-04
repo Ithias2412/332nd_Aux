@@ -114,7 +114,7 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Woodland.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Woodland.paa",
 		};
-		camouflage = 0.6;
+		camouflage = 0.1;
 	};
 	class 332nd_Uniform_ARF_Winter_Veh: 332nd_Uniform_ARF_Woodland_Veh
 	{

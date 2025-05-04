@@ -319,6 +319,7 @@ class cfgWeapons
 		scope=2;
 		picture="Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15S\DC15S_UGL_ui.paa";
 		model="Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15S\Model\IDA_DC15S_UGL.p3d";
+		reloadAction = "GestureReload_JLTS_DC15S";
 		muzzles[]=
 		{
 			"This",
@@ -356,7 +357,7 @@ class cfgWeapons
 				"ACE_HuntIR_M203",
 			};
 			recoil="Old_IDA_recoil_DC23";
-			reloadAction = "GestureReload_JLTS_DC15S";
+			reloadAction = "GestureReloadMXUGL";
 			magazineWell[]={};
 		};
 		fireLightDiffuse[]={0.1,0.25,1};
@@ -367,7 +368,6 @@ class cfgWeapons
 			1,
 			10
 		};
-		reloadAction="GestureReload_JLTS_DC15S";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 60;

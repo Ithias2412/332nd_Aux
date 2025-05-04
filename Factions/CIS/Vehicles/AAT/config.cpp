@@ -27,6 +27,7 @@ class CfgVehicles
 		displayName="AAT";
 		//armor = 60;
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Crewman";
 	};
 	class 332nd_CIS_AAT_Heavy: 3AS_AAT_Red
 	{
@@ -35,5 +36,6 @@ class CfgVehicles
 		displayName="AAT (Heavy)";
 		//armor = 60;
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Crewman";
 	};
 };

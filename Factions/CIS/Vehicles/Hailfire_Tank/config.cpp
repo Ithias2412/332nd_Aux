@@ -27,6 +27,7 @@ class CfgVehicles
 		displayName="Hailfire Tank";
 		//armor = 60;
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Crewman";
 	};
 	class 332nd_CIS_Hailfire_Tank_AA: 3AS_Hailfire_SAM
 	{
@@ -35,5 +36,6 @@ class CfgVehicles
 		displayName="Hailfire Tank (AA)";
 		//armor = 60;
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Crewman";
 	};
 };

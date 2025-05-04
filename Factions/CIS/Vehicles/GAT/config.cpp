@@ -32,7 +32,7 @@ class CfgVehicles
 	{
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Medium_Vics";
-		displayName="GAT (Cannon";
+		displayName="GAT (Cannon)";
 		armor = 200;
 		editorPreview = "";
 	};

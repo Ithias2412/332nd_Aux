@@ -18,23 +18,23 @@ class CfgEditorSubcategories
 {
     class EdSubcat_332nd_Light_Vics
     {
-        displayName = "Light";
+        displayName = "[Vics] Light";
     };
     class EdSubcat_332nd_Medium_Vics
     {
-        displayName = "Medium";
+        displayName = "[Vics] Medium";
     };
     class EdSubcat_332nd_Heavy_Vics
     {
-        displayName = "Heavy";
+        displayName = "[Vics] Heavy";
     };
     class EdSubcat_332nd_Artillery
     {
-        displayName = "Artillery";
+        displayName = "[Vics] Artillery";
     };
     class EdSubcat_332nd_Droideka
     {
-        displayName = "Droideka";
+        displayName = "[Misc] Droideka";
     };
     class EdSubcat_332nd_Techno_Union_Walkers
     {
@@ -42,6 +42,26 @@ class CfgEditorSubcategories
     };
     class EdSubcat_332nd_Emplacements
     {
-        displayName = "Emplacements";
+        displayName = "[Misc] Emplacements";
+    };
+    class EdSubcat_332nd_Battle_Droids
+    {
+        displayName = "[Inf] Battle Droids";
+    };
+    class EdSubcat_332nd_Helicopters
+    {
+        displayName = "[Air] Helicopters";
+    };
+    class EdSubcat_332nd_Human_Division
+    {
+        displayName = "[Inf] Human Division";
+    };
+    class EdSubcat_332nd_Planes
+    {
+        displayName = "[Air] Planes";
+    };
+    class EdSubcat_332nd_Special_Operations
+    {
+        displayName = "[Inf] Special Operations";
     };
 };

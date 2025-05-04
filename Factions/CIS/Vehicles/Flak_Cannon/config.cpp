@@ -24,5 +24,6 @@ class CfgVehicles
 		editorSubcategory = "EdSubcat_332nd_Emplacements";
 		displayName="Flak Cannon";
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Crewman";
 	};
 };

@@ -44,18 +44,20 @@ class CfgVehicles
 	class 332nd_CIS_Tri_Fighter: 3AS_Tri_Fighter_DynamicLoadout
 	{
 		faction="332nd_CIS_Faction";
-		editorSubcategory = "EdSubcat_Planes";
+		editorSubcategory = "EdSubcat_332nd_Planes";
 		displayName="Tri Fighter";
 		//armor = 200;
 		//editorPreview = "";
+		crew = "332nd_Droid_B1_Pilot";
 	};
 	class 332nd_CIS_Tri_Fighter_Missiles: 3AS_Tri_Fighter_DynamicLoadout
 	{
 		faction="332nd_CIS_Faction";
-		editorSubcategory = "EdSubcat_Planes";
+		editorSubcategory = "EdSubcat_332nd_Planes";
 		displayName="Tri Fighter (Advanced)";
 		//armor = 200;
 		//editorPreview = "";
+		crew = "332nd_Droid_B1_Pilot";
 		class Components: Components
 		{
 			class TransportPylonsComponent: TransportPylonsComponent

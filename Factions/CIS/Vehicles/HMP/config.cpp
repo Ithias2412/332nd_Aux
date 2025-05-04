@@ -44,9 +44,10 @@ class CfgVehicles
 	class 332nd_CIS_HMP_Gunship: 3AS_HMP_Gunship
 	{
 		faction="332nd_CIS_Faction";
-		editorSubcategory = "EdSubcat_Helicopters";
+		editorSubcategory = "EdSubcat_332nd_Helicopters";
 		displayName="HMP Gunship";
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Pilot";
 		class Components: Components 
 		{
 			class TransportPylonsComponent: TransportPylonsComponent
@@ -108,8 +109,9 @@ class CfgVehicles
 	class 332nd_CIS_HMP_Transport: 3AS_HMP_Transport
 	{
 		faction="332nd_CIS_Faction";
-		editorSubcategory = "EdSubcat_Helicopters";
+		editorSubcategory = "EdSubcat_332nd_Helicopters";
 		displayName="HMP Transport";
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Pilot";
 	};
 };

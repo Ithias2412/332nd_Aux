@@ -25,5 +25,6 @@ class CfgVehicles
 		displayName="Speeder Bike";
 		//armor = 60;
 		editorPreview = "";
+		crew = "332nd_Droid_B1_Rifleman";
 	};
 };

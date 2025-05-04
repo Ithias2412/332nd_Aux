@@ -28,7 +28,8 @@ class CfgVehicles
 		editorSubcategory = "EdSubcat_332nd_Heavy_Vics";
 		displayName="Shield Tank";
 		editorPreview = "";
-		armor = 450;
+		armor = 400;
+		crew = "332nd_Droid_B1_Crewman";
 	};
 	class 332nd_CIS_Flamer: 3AS_Heavy_AAT_Flamer_F
 	{
@@ -36,7 +37,8 @@ class CfgVehicles
 		editorSubcategory = "EdSubcat_332nd_Heavy_Vics";
 		displayName="Flamer Tank";
 		editorPreview = "";
-		armor = 450;
+		armor = 400;
+		crew = "332nd_Droid_B1_Crewman";
 	};
 	class 332nd_CIS_Defoliator: 3AS_Heavy_AAT_Defoliator_F
 	{
@@ -44,7 +46,8 @@ class CfgVehicles
 		editorSubcategory = "EdSubcat_332nd_Heavy_Vics";
 		displayName="Defoliator Tank";
 		editorPreview = "";
-		armor = 450;
+		armor = 400;
+		crew = "332nd_Droid_B1_Crewman";
 	};
 
 };

@@ -337,12 +337,45 @@ class cfgWeapons
 			};
 		};
 	};
-	class muzzle_snds_H;
+	class muzzle_snds_H_MG;
+	class muzzle_snds_H: muzzle_snds_H_MG
+	{
+		class ItemInfo;
+	};
 	class C_24_Muzzle: muzzle_snds_H
 	{
 		author = "Ithias";
 		displayName = "Heat Sink Barrel Insert";
 		model = "";
 		picture = "";
+		class ItemInfo: ItemInfo
+		{
+			class AmmoCoef
+			{
+				airFriction = 1;
+				audibleFire = 1;
+				audibleFireTime = 1;
+				cost = 1;
+				hit = 1;
+				typicalSpeed = 1;
+				visibleFire = 1;
+				visibleFireTime = 1;
+			};
+			class MuzzleCoef
+			{
+				artilleryDispersionCoef = "1.0f";
+				dispersionCoef = "1.0f";
+				//fireLightCoef = "0.5f";
+				fireLightCoef = "0";
+				maxRangeCoef = "1.0f";
+				maxRangeProbabCoef = "1.0f";
+				midRangeCoef = "1.0f";
+				midRangeProbabCoef = "1.0f";
+				minRangeCoef = "1.0f";
+				minRangeProbabCoef = "1.0f";
+				recoilCoef = "1.0f";
+				recoilProneCoef = "1.0f";
+			};
+		};
 	};
 };

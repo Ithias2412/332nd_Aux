@@ -42,6 +42,7 @@ class CfgVehicles {
     class JLTS_Droid_B1_AT;
     class JLTS_Droid_B1_Pilot;
     class JLTS_Droid_B1_Sniper;
+	class JLTS_Droid_B1_Crew;
 	class 3AS_CIS_B2_F;
 	class 3AS_CIS_TS_F;
 	class 3AS_U_CIS_Light;
@@ -56,7 +57,7 @@ class CfgVehicles {
         scope = 0; // Base class (hidden)
         faction = "332nd_CIS_Faction";
         //editorSubcategory = "332nd_Droids_Subcategory";
-        editorSubcategory = "JLTS_droids_normal";
+        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         backpack = "JLTS_B1_backpack";
         weapons[] = {"Throw", "Put"}; // Default for all, overridden by subclasses
         respawnWeapons[] = {"Throw", "Put"};
@@ -112,7 +113,7 @@ class CfgVehicles {
         displayName = "B1 Sniper";
         faction = "332nd_CIS_Faction";
         //editorSubcategory = "332nd_Droids_Subcategory";
-        editorSubcategory = "JLTS_droids_normal";
+        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
@@ -131,13 +132,13 @@ class CfgVehicles {
         magazines[] = {"JLTS_E5_mag", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_RG4D_mag", "SmokeShell"};
         respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
     };
-    class 332nd_Droid_B1_Crewman: JLTS_Droid_B1_Pilot 
+    class 332nd_Droid_B1_Crewman: JLTS_Droid_B1_Crew 
 	{
         scope = 2;
         displayName = "B1 Crewman";
         faction = "332nd_CIS_Faction";
         //editorSubcategory = "332nd_Droids_Subcategory";
-        editorSubcategory = "JLTS_droids_normal";
+        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
@@ -152,7 +153,7 @@ class CfgVehicles {
         displayName = "B1 Security Droid";
         faction = "332nd_CIS_Faction";
         //editorSubcategory = "332nd_Droids_Subcategory";
-        editorSubcategory = "JLTS_droids_normal";
+        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         uniformClass = "JLTS_DroidB1_Security"; // Security uniform
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
@@ -168,7 +169,7 @@ class CfgVehicles {
         displayName = "B1 Pilot";
         faction = "332nd_CIS_Faction";
         //editorSubcategory = "332nd_Droids_Subcategory";
-        editorSubcategory = "JLTS_droids_normal";
+        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         backpack = "JLTS_B1_backpack";
         weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
@@ -184,7 +185,7 @@ class CfgVehicles {
         displayName = "B2 Battledroid";
         uniformClass = "3AS_U_CIS_B2"; // Standard Battle Droid uniform
         faction = "332nd_CIS_Faction";
-        editorSubcategory = "JLTS_droids_normal";
+        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         weapons[] = {"3AS_DWBlaster_F", "Throw", "Put"}; // Default for all, overridden by subclasses
         respawnWeapons[] = {"3AS_DWBlaster_F", "Throw", "Put"};
         magazines[] = {"3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "SmokeShell"};
@@ -202,7 +203,7 @@ class CfgVehicles {
 	class 332nd_Droid_T_Series: 3AS_CIS_TS_F
 	{
         faction = "332nd_CIS_Faction";
-        editorSubcategory = "JLTS_droids_normal";
+        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         displayName = "T-Series Commander Droid";
 		weapons[] = {"Throw","Put"};
         respawnWeapons[] = {"Throw", "Put"};
@@ -217,6 +218,7 @@ class CfgVehicles {
 	{
 		displayName = "CIS Infantry";
 		faction = "332nd_CIS_Faction";
+        editorSubcategory = "EdSubcat_332nd_Human_Division";
 		glassesEnabled = 0;
 		backpack = "";
         uniformClass = "332nd_Uniform_CIS_Human_Light";
@@ -464,6 +466,7 @@ class CfgVehicles {
 	class 332nd_Droid_BX_Melee: WBK_BX_Assasin_1
 	{
 		faction = "332nd_CIS_Faction";
+        editorSubcategory = "EdSubcat_332nd_Special_Operations";
 		displayName = "BX Melee";
         scope = 2;
         weapons[] = {"WBK_Dutch_Vibro", "JLTS_E5", "Throw", "Put"};
@@ -476,6 +479,7 @@ class CfgVehicles {
 	class 332nd_Droid_BX_Range: lsd_cis_bxdroid_specops
 	{
 		faction = "332nd_CIS_Faction";
+        editorSubcategory = "EdSubcat_332nd_Special_Operations";
 		displayName = "BX Commando";
         weapons[] = {"JLTS_E5", "Throw", "Put"};
         respawnWeapons[] = {"JLTS_E5", "Throw", "Put"};
