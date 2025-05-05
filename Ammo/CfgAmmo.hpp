@@ -209,14 +209,14 @@ class CfgAmmo
 	class 332nd_Scattershot_S2: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
 	{
 		submunitionAmmo = "332nd_Scattershot_S1_Sub";
-		submunitionConeAngle = 0.50;
+		submunitionConeAngle = 0.25;
 		submunitionConeType[] = {"random",18};
 		triggerTime = 1e-09;
 	};
 	class 332nd_Scattershot_S1: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
 	{
 		submunitionAmmo = "332nd_Scattershot_S1_Sub";
-		submunitionConeAngle = 0.50;
+		submunitionConeAngle = 0.25;
 		submunitionConeType[] = {"random",12};
 		triggerTime = 1e-09;
 	};
@@ -335,8 +335,8 @@ class CfgAmmo
 	class 332nd_HE_LGrenade: G_40mm_HE
 	{
 		ace_frag_enabled=1;
-		indirectHitRange=5;
-		indirectHit=20;
+		indirectHitRange=10;
+		indirectHit=40;
 		effectflare="FlareShell";
 		effectfly="IDA_BlasterBoltGlow_Blue_Fly";
 		fuseDistance=0;
@@ -350,8 +350,7 @@ class CfgAmmo
 		coefGravity = 0.01;
 		deflecting = 0;
 		airFriction = -0.00018;
-		indirectHit= 10;
-		//typicalspeed = 80;
+		indirectHit= 40;
 		typicalspeed = 200;
 	};
 	class 332nd_UGL_Smoke: smokeshell

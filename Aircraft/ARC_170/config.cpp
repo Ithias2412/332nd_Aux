@@ -89,11 +89,35 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 		};
+		hiddenselections[] = {"camo1","camo2","guns"};
 		hiddenselectionstextures[]=
 		{
 			"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Main.paa",
 			"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Wings.paa",
 			"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Guns.paa",
+		};
+		class TextureSources
+		{
+			class 332nd_Base_tex
+			{
+				displayname="332nd Base";
+				author="Ithias";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Main.paa",
+					"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Wings.paa",
+					"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Guns.paa",
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
+		};
+		textureList[]=
+		{
+			"332nd_Base_tex",
+			1,
 		};
 		class Components: Components //MOTHERFUCKER
 		{
@@ -106,19 +130,19 @@ class CfgVehicles
 						class AirTarget
 						{
 							minRange=500;
-							maxRange=5000;
+							maxRange=6000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=1;
 						};
 						class GroundTarget
 						{
 							minRange=500;
-							maxRange=4000;
+							maxRange=6000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
-						angleRangeHorizontal=50;
-						angleRangeVertical=37;
+						angleRangeHorizontal=90;
+						angleRangeVertical=90;
 						maxTrackableSpeed=100;
 						componentType="IRSensorComponent";
 						typeRecognitionDistance=2000;
@@ -140,19 +164,19 @@ class CfgVehicles
 						class AirTarget
 						{
 							minRange=500;
-							maxRange=4000;
+							maxRange=6000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=1;
 						};
 						class GroundTarget
 						{
 							minRange=500;
-							maxRange=3000;
+							maxRange=6000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
-						angleRangeHorizontal=26;
-						angleRangeVertical=20;
+						angleRangeHorizontal=90;
+						angleRangeVertical=90;
 						maxTrackableSpeed=100;
 						aimDown=1;
 						animDirection="pilotCameraRotY";
@@ -162,21 +186,21 @@ class CfgVehicles
 						componentType="PassiveRadarSensorComponent";
 						class AirTarget
 						{
-							minRange=12000;
-							maxRange=12000;
+							minRange=16000;
+							maxRange=16000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
 						class GroundTarget
 						{
-							minRange=8000;
-							maxRange=8000;
+							minRange=16000;
+							maxRange=16000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
-						typeRecognitionDistance=8000;
-						angleRangeHorizontal=150;
-						angleRangeVertical=90;
+						typeRecognitionDistance=12000;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
 						groundNoiseDistanceCoef=-1;
 						maxGroundNoiseDistance=-1;
 						minSpeedThreshold=0;
@@ -201,14 +225,14 @@ class CfgVehicles
 						};
 						class GroundTarget
 						{
-							minRange=8000;
-							maxRange=8000;
+							minRange=10000;
+							maxRange=10000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
-						typeRecognitionDistance=4000;
-						angleRangeHorizontal=45;
-						angleRangeVertical=45;
+						typeRecognitionDistance=5000;
+						angleRangeHorizontal=90;
+						angleRangeVertical=90;
 						groundNoiseDistanceCoef=0.2;
 					};
 					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
@@ -229,8 +253,8 @@ class CfgVehicles
 						};
 						maxTrackableATL=100;
 						maxTrackableSpeed=60;
-						angleRangeHorizontal=70;
-						angleRangeVertical=60;
+						angleRangeHorizontal=90;
+						angleRangeVertical=90;
 					};
 					class LaserSensorComponent: SensorTemplateLaser
 					{

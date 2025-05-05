@@ -146,7 +146,7 @@ class CfgVehicles
 						aimDown=30;
 						allowsMarking=1;
 						angleRangeHorizontal=180;
-						angleRangeVertical=90;
+						angleRangeVertical=180;
 						animDirection="";
 						color[]={0,1,1,1};
 						componentType="ActiveRadarSensorComponent";
@@ -161,15 +161,15 @@ class CfgVehicles
 						typeRecognitionDistance=3000;
 						class AirTarget
 						{
-							maxRange=8000; //was 5000
-							minRange=5000;
+							minRange=10000;
+							maxRange=10000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
 						class GroundTarget
 						{
-							maxRange=8000; //was 5000
-							minRange=5000;
+							minRange=10000;
+							maxRange=10000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
@@ -178,8 +178,8 @@ class CfgVehicles
 					{
 						aimDown=0;
 						allowsMarking=1;
-						angleRangeHorizontal=90;
-						angleRangeVertical=90;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
 						animDirection="";
 						color[]={0.5,1,0.5,0.5};
 						componentType="PassiveRadarSensorComponent";
@@ -194,15 +194,15 @@ class CfgVehicles
 						typeRecognitionDistance=12000;
 						class AirTarget
 						{
-							maxRange=8000;
-							minRange=8000;
+							maxRange=6000;
+							minRange=6000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
 						class GroundTarget
 						{
-							maxRange=8000;
-							minRange=8000;
+							maxRange=6000;
+							minRange=6000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
@@ -212,19 +212,19 @@ class CfgVehicles
 						class AirTarget
 						{
 							minRange=500;
-							maxRange=5000;
+							maxRange=6000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=1;
 						};
 						class GroundTarget
 						{
 							minRange=500;
-							maxRange=4000;
+							maxRange=6000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
-						angleRangeHorizontal=50;
-						angleRangeVertical=37;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
 						maxTrackableSpeed=100;
 						aimDown=0;
 						allowsMarking=1;
@@ -246,19 +246,19 @@ class CfgVehicles
 						class AirTarget
 						{
 							minRange=500;
-							maxRange=4000;
+							maxRange=6000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=1;
 						};
 						class GroundTarget
 						{
 							minRange=500;
-							maxRange=3000;
+							maxRange=6000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
-						angleRangeHorizontal=50;
-						angleRangeVertical=37;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
 						maxTrackableSpeed=1000; //was 100
 						aimDown=0;
 						animDirection="";

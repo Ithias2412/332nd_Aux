@@ -108,7 +108,7 @@ class CfgVehicles {
 		respawnMagazines[] = {"JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_RG4D_mag","JLTS_RG4D_mag","JLTS_RG4D_mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
     };
     class 332nd_Droid_B1_Sniper: JLTS_Droid_B1_SBB3 
-	{ 
+	{
         scope = 2;
         displayName = "B1 Sniper";
         faction = "332nd_CIS_Faction";

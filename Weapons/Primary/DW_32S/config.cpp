@@ -43,6 +43,7 @@ class cfgWeapons
 		picture="\MRC\JLTS\weapons\DW32S\data\ui\DW32S_ui_ca.paa";
 		model="\MRC\JLTS\weapons\DW32S\DW32S.p3d";
 		reloadAction = "3AS_GestureReload_DC17M";
+		recoil="3AS_recoil_DC15A";
 		hiddenSelections[]=
 		{
 			"camo1"

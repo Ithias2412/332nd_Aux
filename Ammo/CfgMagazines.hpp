@@ -183,16 +183,16 @@ class CfgMagazines
 	class 332nd_DC15S_Low_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_S3";
-		count = 60;
-		displayname = "DC-15S 60 Round Low Power Energy Cell";
-		mass = 6.6; 
+		count = 80;
+		displayname = "DC-15S 80 Round Low Power Energy Cell";
+		mass = 8.3; 
 		scope = 2;
 	};
 	class 332nd_DC15S_High_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_S2";
-		count = 45;
-		displayname = "DC-15S 45 Round High Power Energy Cell";
+		count = 40;
+		displayname = "DC-15S 40 Round High Power Energy Cell";
 		mass = 8.3; 
 		scope = 2;
 	};

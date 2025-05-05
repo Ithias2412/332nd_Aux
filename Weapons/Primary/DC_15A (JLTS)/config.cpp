@@ -93,7 +93,7 @@ class cfgWeapons
 		modes[]=
 		{
 			"Single",
-			"Burst",
+			"FullAuto",
 		};
 		fireLightDiffuse[]={0,0,1};
 		drySound[]=
