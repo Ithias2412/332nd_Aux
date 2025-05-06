@@ -73,7 +73,6 @@ class 332nd_Uniform_Clone_SCT: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-
 class 332nd_Uniform_Clone_VCT: 332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
@@ -381,6 +380,24 @@ class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Denal_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Walkie: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Cherryy";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Walkie)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Walkie_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -892,6 +909,23 @@ class 332nd_Uniform_Clone_Denal_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Denal.paa",
 		};
 	};
+class 332nd_Uniform_Clone_Walkie_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Walkie";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Walkie.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Walkie.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -993,7 +1027,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Spectre", "Joker","Denal",};
+				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Spectre", "Joker","Denal", "Walkie",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -1054,6 +1088,12 @@ class XtdGearModels
                 {
                     label = "Denal";
                     description = "Discovered a new spider";
+                    //image = "xxx";
+                };
+				class Walkie
+                {
+                    label = "Walkie";
+                    description = "Walkie Texas Ranger";
                     //image = "xxx";
                 };
             };
@@ -1171,6 +1211,11 @@ class XtdGearInfos
         {
             model = "332nd_Uniform_Extended";
             Customs = "Denal";
+        }; 
+		class 332nd_Uniform_Clone_Walkie
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Walkie";
         }; 
     };
 };
