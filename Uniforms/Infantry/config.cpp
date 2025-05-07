@@ -403,6 +403,42 @@ class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Cin: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Cherryy";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Cin)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Cin_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+		class 332nd_Uniform_Clone_Peter: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Cherryy";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Peter)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Peter_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -926,6 +962,40 @@ class 332nd_Uniform_Clone_Walkie_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Walkie.paa",
 		};
 	};
+class 332nd_Uniform_Clone_Cin_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Cin";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Cin.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cin.paa",
+		};
+	};
+class 332nd_Uniform_Clone_Peter_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Peter";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Peter.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Peter.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1027,7 +1097,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Spectre", "Joker","Denal", "Walkie",};
+				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Spectre", "Joker","Denal", "Walkie","Cin","Peter",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Ithias
@@ -1094,6 +1164,18 @@ class XtdGearModels
                 {
                     label = "Walkie";
                     description = "Walkie Texas Ranger";
+                    //image = "xxx";
+                };
+				class Cin
+                {
+                    label = "Cin";
+                    description = "Something something 9-Line";
+                    //image = "xxx";
+                };
+				class Peter
+                {
+                    label = "Peter";
+                    description = "Sniper Check";
                     //image = "xxx";
                 };
             };
@@ -1217,5 +1299,14 @@ class XtdGearInfos
             model = "332nd_Uniform_Extended";
             Customs = "Walkie";
         }; 
+		class 332nd_Uniform_Clone_Cin
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Cin";
+        };class 332nd_Uniform_Clone_Peter
+        {
+            model = "332nd_Uniform_Extended";
+            Customs = "Peter";
+        };
     };
 };
