@@ -83,7 +83,58 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Medic.paa"
 		};
 	};
-	
+	class 332nd_P2_Test: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Testing)";
+		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Test.paa"
+		};
+	};
+	class IDA_P2_Helmet;
+	class Rose_Test: IDA_P2_Helmet
+	{
+		author="Indecisive Armoury Team";
+		displayName="Rose IDA";
+		scope=2;
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0;
+		picture="\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\P2_Helmet_UI.paa";
+		model="\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\IDA_Clone_P2_Helmet.p3d";
+		hiddenselections[]=
+		{
+			"Camo",
+			"visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Rose_Test.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Rose_Test.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\IDA_P2_Helmet.rvmat",
+			"\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\IDA_P2_Helmet_Visor.rvmat"
+		};
+		subItems[]={};
+		class Iteminfo: HeadgearItem
+		{
+			uniformModel="\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\IDA_Clone_P2_Helmet.p3d";
+			mass=15;
+			hiddenselections[]=
+			{
+				"Camo",
+				"visor"
+			};
+			allowedSlots[]={801,901,701,605};
+			modelSides[]={6};
+		};
+	};
 //Customs
 
 	class 332nd_Helmet_P2_Asuka: 332nd_Helmet_P2_CR
@@ -302,6 +353,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Weaver.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Lettuce: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Lettuce)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Lettuce.paa"
+		};
+	};
 };
 class XtdGearModels
 {
@@ -346,7 +409,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Denal", "Frankenburg", "Kiyler", "Joker", "Luci", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", };
+				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Denal", "Frankenburg", "Kiyler", "Joker", "Luci", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", "Lettuce",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -472,6 +535,12 @@ class XtdGearModels
 				{
 					label = "Weaver";
 					description = "Sleeps on the Sofa (Wife is angry)";
+					//image = "xxx";
+				};
+				class Lettuce
+				{
+					label = "Lettuce";
+					description = "Makes some banger sandwiches";
 					//image = "xxx";
 				};
             };
@@ -608,6 +677,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Weaver";
+        };
+		class 332nd_Helmet_P2_Lettuce
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Lettuce";
         };
 	};
 };
