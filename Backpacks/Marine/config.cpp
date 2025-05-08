@@ -82,7 +82,7 @@ class CfgVehicles
 		author="Ithias";
 		displayName="[332nd] Hazardous Envirement Backpack (RTO)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_RTO.p3d";
-		maximumLoad=185;
+		maximumLoad=228;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
 		hiddenselections[] = 
@@ -136,7 +136,7 @@ class CfgVehicles
 		author="Ithias";
 		displayName="[332nd] Hazardous Envirement Backpack (Medic)";
 		model = "\JLTS_AE_GM\SEA_Backpack_GM_Medic.p3d";
-		maximumLoad=320;
+		maximumLoad=321;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
 		hiddenSelections[] = 

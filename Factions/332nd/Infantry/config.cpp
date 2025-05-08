@@ -29,7 +29,7 @@ class CfgVehicles
         uniformClass = "lsd_gar_bodyGloveLegArmor_uniform";
 		identityTypes[] = {"LanguageENG_F","Head_LSD_CLONE"};
 		backpack = "";
-		displayName = "[332nd] Spawn Unit";
+		displayName = "[332nd] Trooper";
 		faceType = "Man_A3";
 		items[] = {};
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
