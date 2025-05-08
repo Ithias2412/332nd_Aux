@@ -13,7 +13,15 @@ class CfgPatches
         };
 	};
 };
-
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
 class CfgVehicles
 {
 	class Plane_Fighter_03_base_F;
@@ -51,6 +59,149 @@ class CfgVehicles
 		};
 		class Components: Components
 		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=6000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						maxTrackableSpeed=100;
+						componentType="IRSensorComponent";
+						typeRecognitionDistance=2000;
+						maxFogSeeThrough=0.995;
+						color[]={1,0,0,1};
+						allowsMarking=1;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=0;
+						animDirection="";
+						aimDown=0;
+						minTrackableSpeed=-1e+010;
+						minTrackableATL=-1e+010;
+						maxTrackableATL=1e+010;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=6000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						maxTrackableSpeed=100;
+						aimDown=1;
+						animDirection="pilotCameraRotY";
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+						componentType="PassiveRadarSensorComponent";
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=8000;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=0;
+						animDirection="";
+						aimDown=0;
+						color[]={0.5,1,0.5,0.5};
+						minTrackableSpeed=-1e+010;
+						maxTrackableSpeed=1e+010;
+						minTrackableATL=-1e+010;
+						maxTrackableATL=1e+010;
+						allowsMarking=0;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=10000;
+							maxRange=10000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=10000;
+							maxRange=10000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=4000;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						groundNoiseDistanceCoef=0.2;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=6000;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=6000;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
 			class TransportPylonsComponent: TransportPylonsComponent
 			{
 				UIPicture = "3as\3AS_BTLB\data\ui\pylon_ywing.paa";
