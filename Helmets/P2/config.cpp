@@ -221,18 +221,6 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ithias.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Kiyler: 332nd_Helmet_P2_CR
-	{
-		displayName="[332nd] P2 Helmet (Kiyler)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Kiyler.paa"
-		};
-	};
 	class 332nd_Helmet_P2_Luci: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Luci)";
@@ -409,7 +397,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Denal", "Frankenburg", "Kiyler", "Joker", "Luci", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", "Lettuce",};
+				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", "Lettuce",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -453,12 +441,6 @@ class XtdGearModels
 					label = "Frankenburg";
 					description = "In too many S-Shops";
 				};
-				class Kiyler
-				{
-					label = "Kiyler";
-					description = "High asf";
-					//image = "xxx";
-				};	
 				class Ithias
                 {
                     label = "Ithias";
@@ -607,11 +589,6 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Frankenburg";
-        };
-		class 332nd_Helmet_P2_Kiyler
-        {
-            model = "332nd_Helmets_P2_Extended";
-            Customs = "Kiyler";
         };
         class 332nd_Helmet_P2_Ithias
         {
