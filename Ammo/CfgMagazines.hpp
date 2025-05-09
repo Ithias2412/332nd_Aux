@@ -206,10 +206,10 @@ class CfgMagazines
 	};
 	class 332nd_DC17S_Mag_Dual: 332nd_Base_Mag
 	{
-		ammo = "332nd_Gas_Level_S1";
-		count = 60;
-		displayname = "DC-17S 60 Round Energy Cell";
-		mass = 10;
+		ammo = "332nd_Gas_Level_S1_Dual";
+		count = 30;
+		displayname = "DC-17S 30 Round Energy Cell";
+		mass = 5;
 		scope = 2;
 	};
 	class 332nd_DC17S_Stun_Mag: 332nd_Base_Mag

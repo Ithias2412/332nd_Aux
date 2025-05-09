@@ -13,6 +13,7 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
+
 //#include "xtdGear.hpp"
 class ItemInfo;
 class Mode_SemiAuto;
@@ -39,6 +40,8 @@ class cfgWeapons
 	
 	class 332nd_DC17S: 3AS_DC17S_F
 	{
+		cursor = "332nd_Cursor_Circle";
+		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
 		displayName="[332nd] DC-17S";
 		baseWeapon = "332nd_DC17S";
@@ -47,6 +50,48 @@ class cfgWeapons
 			"332nd_DC17S_Mag",
 		};
 		magazineWell[]={};
+		modes[]=
+		{
+			"Single",
+			"FullAuto",
+		};
+		class Single: Mode_SemiAuto
+		{
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+			dispersion = 0.00174;
+			displayName = "Semi";
+			reloadTime = 0.1;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			recoil = "recoil_pistol_heavy";
+			recoilProne = "recoil_prone_pistol_heavy";
+			reloadTime = 0.1;
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_DC15S_Shot_SoundSet"};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_DC17_Shot_SoundSet"};
+			};
+		};
+		class FullAuto: Single
+		{
+			autoFire = 1;
+			displayName = "Full";
+			textureType = "fullAuto";
+			reloadTime = 0.17142;
+		};
 		muzzles[] = { "this", "Stun" };
 		class Stun: JLTS_stun_muzzle
 		{
@@ -58,14 +103,56 @@ class cfgWeapons
 	};
 	class 332nd_DC17S_Dual : 3AS_DC17S_Dual_F
 	{
-		displayName = "[332nd] Dual DC-17S";
+		displayName = "[332nd] DC-17S Dual";
 		baseWeapon = "332nd_DC17S_Dual";
-		magazines[] =
+		ls_isWeaponType = 1;
+		muzzles[] = {"Right","Left"};
+		class Right: 3AS_DC17S_Dual_F
 		{
-			"332nd_DC17S_Mag_Dual",
+			displayName="Right Hand";
+			magazines[]=
+			{
+				"332nd_DC17S_Mag_Dual",
+				"332nd_DC17S_Stun_Mag"
+			};
+			magazineWell[]={};
+			cursor = "332nd_Cursor_Circle";
+			cursoraim = "332nd_Cursor_Dot";
+			class Single: Mode_SemiAuto
+			{
+				aiRateOfFire = 2;
+				aiRateOfFireDistance = 25;
+				dispersion = 0.00348;
+				displayName = "Semi";
+				reloadTime = 0.1;
+				maxRange = 50;
+				maxRangeProbab = 0.1;
+				midRange = 25;
+				midRangeProbab = 0.6;
+				minRange = 5;
+				minRangeProbab = 0.3;
+				recoil = "recoil_pistol_heavy";
+				recoilProne = "recoil_prone_pistol_heavy";
+				reloadTime = 0.1;
+				sounds[] = {"StandardSound","SilencedSound"};
+				class BaseSoundModeType
+				{
+					
+				};
+				class SilencedSound: BaseSoundModeType
+				{
+					soundSetShot[] = {"3AS_DC15S_Shot_SoundSet"};
+				};
+				class StandardSound: BaseSoundModeType
+				{
+					soundSetShot[] = {"3AS_DC17_Shot_SoundSet"};
+				};
+			};
 		};
-		magazineWell[]={};
-		muzzles[] = { "this", "Stun" };
+		class Left: Right
+		{
+			displayName="Left Hand";
+		};
 		class Stun: JLTS_stun_muzzle
 		{
 			magazines[] = 
@@ -75,98 +162,3 @@ class cfgWeapons
 		};
 	};
 };
-/*
-		class Right: SWLW_DC17_ARC
-		{
-			displayName="Right Hand";
-			magazines[]=
-			{
-				"332nd_DC17S_Mag"
-			};
-			reloadAction="ls_dualPistol_reload";
-			reloadMagazineSound[]=
-			{
-				"\swlb_core\data\sounds\weapons\_reload\dual_reload.ogg",
-				3.5481339,
-				1,
-				10
-			};
-			class Single: Mode_SemiAuto
-			{
-				sounds[]=
-				{
-					"StandardSound"
-				};
-				class BaseSoundModeType
-				{
-					weaponSoundEffect="";
-					closure1[]={};
-					closure2[]={};
-					soundClosure[]={};
-				};
-				class StandardSound: BaseSoundModeType
-				{
-					weaponSoundEffect="";
-					begin1[]=
-					{
-						"SWLW_clones\pistols\dc17\sounds\DC17_1",
-						1,
-						1,
-						1800
-					};
-					begin2[]=
-					{
-						"SWLW_clones\pistols\dc17\sounds\DC17_1",
-						1,
-						1,
-						1800
-					};
-					begin3[]=
-					{
-						"SWLW_clones\pistols\dc17\sounds\DC17_1",
-						1,
-						1,
-						1800
-					};
-					begin4[]=
-					{
-						"SWLW_clones\pistols\dc17\sounds\DC17_1",
-						1,
-						1,
-						1800
-					};
-					soundBegin[]=
-					{
-						"begin1",
-						0.25,
-						"begin2",
-						0.25,
-						"begin3",
-						0.25,
-						"begin4",
-						0.25
-					};
-					closure1[]={};
-					closure2[]={};
-					soundClosure[]={};
-				};
-				recoil="recoil_pistol_heavy";
-				recoilProne="recoil_prone_pistol_heavy";
-				dispersion = 0.00087;
-				reloadTime = 0.1;
-				minRange=5;
-				minRangeProbab=0.30000001;
-				midRange=25;
-				midRangeProbab=0.60000002;
-				maxRange=50;
-				maxRangeProbab=0.1;
-				aiRateOfFire=2;
-				aiRateOfFireDistance=25;
-			};
-		};
-		class Left: Right
-		{
-			displayName="Left Hand";
-			muzzlePos="usti hlavne left";
-			muzzleEnd="konec hlavne left";
-		};

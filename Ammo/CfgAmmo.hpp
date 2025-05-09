@@ -196,6 +196,12 @@ class CfgAmmo
 		// B1=2 B2=12
 		hit = 15;
 	};
+	class 332nd_Gas_Level_S1_Dual: 332nd_Base_Ammo_IDA
+	{
+		// B1=2 B2=12
+		hit = 15;
+		model = "\3AS\3AS_Weapons\Data\tracer_blue_dual.p3d";
+	};
 	class 332nd_Gas_Level_S2: 332nd_Base_Ammo_IDA
 	{
 		// B1=3 B2=20
