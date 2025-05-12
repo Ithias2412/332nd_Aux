@@ -1,13 +1,13 @@
 class CfgPatches {
 	class 332nd_Uniforms {
 		units[] = 
-        {
-            ""
-        };
+		{
+			""
+		};
 		weapons[] = 
-        {
-            ""
-        };
+		{
+			""
+		};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
 	};
@@ -15,8 +15,8 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
-    class UniformItem;
+	class ItemInfo;
+	class UniformItem;
 	class SWLB_clone_uniform;
 	
 // Uniform
@@ -149,7 +149,7 @@ class 332nd_Uniform_Clone_NCO_Medic: 332nd_Uniform_Clone_CR
 		dlc="332nd";
 		author="Ithias";
 		scope=2;
-        displayName = "[332nd] Clone Trooper Armor (NCO / Medic)";
+		displayName = "[332nd] Clone Trooper Armor (NCO / Medic)";
 		//displayName="[332nd] Clone Trooper Armor (NCO / Medic)";
 		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
 		class ItemInfo: UniformItem
@@ -180,26 +180,26 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 		};
 	};
 /*
-    class 332nd_Uniform_Clone_Zeus: 332nd_Uniform_Clone_CR {
-        dlc = "332nd";
-        author = "Ithias";
-        scope = 2;
-        displayName = "[332nd] Clone Trooper Armor (Zeus)";
-        class ItemInfo: UniformItem {
-            uniformClass = "332nd_Uniform_Clone_Zeus_Veh";
-            containerClass = "Supply50";
-            mass = 40;
-        };
-    };
-    class 332nd_Uniform_Clone_NCO_Zeus: 332nd_Uniform_Clone_CR {
-        displayName = "[332nd] Clone Trooper Armor (NCO / Zeus)";
-        class ItemInfo: UniformItem {
-            uniformClass = "332nd_Uniform_Clone_NCO_Zeus_Veh";
+	class 332nd_Uniform_Clone_Zeus: 332nd_Uniform_Clone_CR {
+		dlc = "332nd";
+		author = "Ithias";
+		scope = 2;
+		displayName = "[332nd] Clone Trooper Armor (Zeus)";
+		class ItemInfo: UniformItem {
+			uniformClass = "332nd_Uniform_Clone_Zeus_Veh";
+			containerClass = "Supply50";
+			mass = 40;
+		};
+	};
+	class 332nd_Uniform_Clone_NCO_Zeus: 332nd_Uniform_Clone_CR {
+		displayName = "[332nd] Clone Trooper Armor (NCO / Zeus)";
+		class ItemInfo: UniformItem {
+			uniformClass = "332nd_Uniform_Clone_NCO_Zeus_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
-        };
-    };
+		};
+	};
 */
 //Customs
 
@@ -727,14 +727,14 @@ class 332nd_Uniform_Clone_VCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-    class 332nd_Uniform_Clone_NCO_Veh_Medic: 332nd_Uniform_Clone_CT_Veh 
+	class 332nd_Uniform_Clone_NCO_Veh_Medic: 332nd_Uniform_Clone_CT_Veh 
 	{
-        uniformClass = "332nd_Uniform_Clone_NCO_Medic";
-        hiddenSelectionsTextures[] = {
-            "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_NCO_Medic.paa",
-            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO_Medic.paa"
-        };
-    };
+		uniformClass = "332nd_Uniform_Clone_NCO_Medic";
+		hiddenSelectionsTextures[] = {
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_NCO_Medic.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO_Medic.paa"
+		};
+	};
 
 class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 	{
@@ -755,21 +755,21 @@ class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 	};
 /*
 	class 332nd_Uniform_Clone_Zeus_Veh: 332nd_Uniform_Clone_CT_Veh {
-        scope = 1;
-        uniformClass = "332nd_Uniform_Clone_Zeus";
-        hiddenSelectionsTextures[] = {
-            "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Zeus.paa",
-            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Zeus.paa"
-        };
-    };
+		scope = 1;
+		uniformClass = "332nd_Uniform_Clone_Zeus";
+		hiddenSelectionsTextures[] = {
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Zeus.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Zeus.paa"
+		};
+	};
 
-    class 332nd_Uniform_Clone_NCO_Zeus_Veh: 332nd_Uniform_Clone_CT_Veh {
-        uniformClass = "332nd_Uniform_Clone_NCO_Zeus";
-        hiddenSelectionsTextures[] = {
-            "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_NCO_Zeus.paa",
-            "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO_Zeus.paa"
-        };
-    };
+	class 332nd_Uniform_Clone_NCO_Zeus_Veh: 332nd_Uniform_Clone_CT_Veh {
+		uniformClass = "332nd_Uniform_Clone_NCO_Zeus";
+		hiddenSelectionsTextures[] = {
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_NCO_Zeus.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO_Zeus.paa"
+		};
+	};
 */
 //Customs
 
@@ -1000,81 +1000,81 @@ class 332nd_Uniform_Clone_Cin_Veh: 332nd_Uniform_Clone_CT_Veh
 
 class XtdGearModels
 {
-    class CfgWeapons 
-    {
-        class 332nd_Uniform_Extended
-        {
-            label = "Uniforms";
-            author = "Ithias";
+	class CfgWeapons 
+	{
+		class 332nd_Uniform_Extended
+		{
+			label = "Uniforms";
+			author = "Ithias";
 			options[] = { "Trooper", "Medic", /* "Zeus", */ "Customs", };
-            class Trooper
-            {
-                label = "Trooper";
+			class Trooper
+			{
+				label = "Trooper";
 				values[] = { "CR", "CT", "SCT", "VCT", "NCO", };
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class CR
-                {
-                    label = "CR";
-                    description = "Recruit";
-                    //image = "xxx";
-                };
+				changeingame = 0;
+				alwaysSelectable = 1;
+				class CR
+				{
+					label = "CR";
+					description = "Recruit";
+					//image = "xxx";
+				};
 				class CT
-                {
-                    label = "CT";
-                    description = "Trooper";
-                    //image = "xxx";
-                };
-                class SCT
-                {
-                    label = "SCT";
-                    description = "Senior Trooper";
-                    //image = "xxx";
-                };
-                class VCT
-                {
-                    label = "VCT";
-                    description = "Veteran Trooper";
-                    //image = "xxx";
-                };
-                class NCO
-                {
-                    label = "NCO";
-                    description = "Leadership";
-                    //image = "xxx";
-                };
-            };
-            class Medic
-            {
-                label = "Medic";
-                values[] = { "CT", "SCT", "VCT", "MedicNCO" };
-                changeingame = 0;
-                alwaysSelectable = 1;
+				{
+					label = "CT";
+					description = "Trooper";
+					//image = "xxx";
+				};
+				class SCT
+				{
+					label = "SCT";
+					description = "Senior Trooper";
+					//image = "xxx";
+				};
+				class VCT
+				{
+					label = "VCT";
+					description = "Veteran Trooper";
+					//image = "xxx";
+				};
+				class NCO
+				{
+					label = "NCO";
+					description = "Leadership";
+					//image = "xxx";
+				};
+			};
+			class Medic
+			{
+				label = "Medic";
+				values[] = { "CT", "SCT", "VCT", "MedicNCO" };
+				changeingame = 0;
+				alwaysSelectable = 1;
 				class CT
-                {
-                    label = "CT";
-                    description = "Trooper";
-                    //image = "xxx";
-                };
-                class SCT
-                {
-                    label = "SCT";
-                    description = "Senior Trooper";
-                    //image = "xxx";
-                };
-                class VCT
-                {
-                    label = "VCT";
-                    description = "Veteran Trooper";
-                    //image = "xxx";
-                };
+				{
+					label = "CT";
+					description = "Trooper";
+					//image = "xxx";
+				};
+				class SCT
+				{
+					label = "SCT";
+					description = "Senior Trooper";
+					//image = "xxx";
+				};
+				class VCT
+				{
+					label = "VCT";
+					description = "Veteran Trooper";
+					//image = "xxx";
+				};
 				class MedicNCO
 				{
 					label = "NCO";
 					description = "Leadership";
 					//image = "xxx";
 				};
-            };
+			};
 		/*	class Zeus
 			{
 				label = "Zeus";
@@ -1094,139 +1094,139 @@ class XtdGearModels
 					//image = "xxx";
 				};
 			}; */
-            class Customs
-            {
-                label = "Customs";
+			class Customs
+			{
+				label = "Customs";
 				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Spectre", "Joker","Denal", "Walkie","Cin",};
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class Ithias
-                {
-                    label = "Ithias";
-                    description = "His weiner is 10 ft long";
-                    //image = "xxx";
-                };
+				changeingame = 0;
+				alwaysSelectable = 1;
+				class Ithias
+				{
+					label = "Ithias";
+					description = "His weiner is 10 ft long";
+					//image = "xxx";
+				};
 				class Cherryy
-                {
-                    label = "Cherryy";
-                    description = "Remade his custom 3 times";
-                    //image = "xxx";
-                };
+				{
+					label = "Cherryy";
+					description = "Remade his custom 3 times";
+					//image = "xxx";
+				};
 				class Crow
-                {
-                    label = "Crow";
-                    description = "On a List Somewhere";
-                    //image = "xxx";
-                };
+				{
+					label = "Crow";
+					description = "On a List Somewhere";
+					//image = "xxx";
+				};
 				class Weaver
-                {
-                    label = "Weaver";
-                    description = "IDA Enjoyer";
-                    //image = "xxx";
-                };
+				{
+					label = "Weaver";
+					description = "IDA Enjoyer";
+					//image = "xxx";
+				};
 				class Asuka
-                {
-                    label = "Asuka";
-                    description = "Sucks at Destiny";
-                    //image = "xxx";
-                };
+				{
+					label = "Asuka";
+					description = "Sucks at Destiny";
+					//image = "xxx";
+				};
 				class Frankenburg
-                {
-                    label = "Frankenburg";
-                    description = "Aux Mod Slave";
-                    //image = "xxx";
-                };  
+				{
+					label = "Frankenburg";
+					description = "Aux Mod Slave";
+					//image = "xxx";
+				};  
 				class Seelig
-                {
-                    label = "Seelig";
-                    description = "Delayed forever";
-                    //image = "xxx";
-                }; 
+				{
+					label = "Seelig";
+					description = "Delayed forever";
+					//image = "xxx";
+				}; 
 				class Spectre
-                {
-                    label = "Spectre";
-                    description = "He's a scary phantom";
-                    //image = "xxx";
-                }; 
+				{
+					label = "Spectre";
+					description = "He's a scary phantom";
+					//image = "xxx";
+				}; 
 				class Joker
-                {
-                    label = "Joker";
-                    description = "Not the original";
-                    //image = "xxx";
-                }; 
+				{
+					label = "Joker";
+					description = "Not the original";
+					//image = "xxx";
+				}; 
 				class Denal
-                {
-                    label = "Denal";
-                    description = "Discovered a new spider";
-                    //image = "xxx";
-                };
+				{
+					label = "Denal";
+					description = "Discovered a new spider";
+					//image = "xxx";
+				};
 				class Walkie
-                {
-                    label = "Walkie";
-                    description = "Walkie Texas Ranger";
-                    //image = "xxx";
-                };
+				{
+					label = "Walkie";
+					description = "Walkie Texas Ranger";
+					//image = "xxx";
+				};
 				class Cin
-                {
-                    label = "Cin";
-                    description = "Something something 9-Line";
-                    //image = "xxx";
-                };
+				{
+					label = "Cin";
+					description = "Something something 9-Line";
+					//image = "xxx";
+				};
 				/* class Peter
-                {
-                    label = "Peter";
-                    description = "Sniper Check";
-                    //image = "xxx";
-                }; */
-            };
-        };
-    };
+				{
+					label = "Peter";
+					description = "Sniper Check";
+					//image = "xxx";
+				}; */
+			};
+		};
+	};
 };
 
 class XtdGearInfos
 {
-    class CfgWeapons 
-    {
-        class 332nd_Uniform_Clone_CR
-        {
-            model = "332nd_Uniform_Extended";
-            Trooper = "CR";
-        };
-        class 332nd_Uniform_Clone_CT
-        {
-            model = "332nd_Uniform_Extended";
-            Trooper = "CT";
-        };
-        class 332nd_Uniform_Clone_SCT
-        {
-            model = "332nd_Uniform_Extended";
-            Trooper = "SCT";
-        };
-        class 332nd_Uniform_Clone_VCT
-        {
-            model = "332nd_Uniform_Extended";
-            Trooper = "VCT";
-        };
-        class 332nd_Uniform_Clone_NCO
-        {
-            model = "332nd_Uniform_Extended";
-            Trooper = "NCO";
-        };
-        class 332nd_Uniform_Clone_CT_Medic
-        {
-            model = "332nd_Uniform_Extended";
-            Medic = "CT";
-        };
-        class 332nd_Uniform_Clone_SCT_Medic
-        {
-            model = "332nd_Uniform_Extended";
-            Medic = "SCT";
-        };
-        class 332nd_Uniform_Clone_VCT_Medic
-        {
-            model = "332nd_Uniform_Extended";
-            Medic = "VCT";
-        };
+	class CfgWeapons 
+	{
+		class 332nd_Uniform_Clone_CR
+		{
+			model = "332nd_Uniform_Extended";
+			Trooper = "CR";
+		};
+		class 332nd_Uniform_Clone_CT
+		{
+			model = "332nd_Uniform_Extended";
+			Trooper = "CT";
+		};
+		class 332nd_Uniform_Clone_SCT
+		{
+			model = "332nd_Uniform_Extended";
+			Trooper = "SCT";
+		};
+		class 332nd_Uniform_Clone_VCT
+		{
+			model = "332nd_Uniform_Extended";
+			Trooper = "VCT";
+		};
+		class 332nd_Uniform_Clone_NCO
+		{
+			model = "332nd_Uniform_Extended";
+			Trooper = "NCO";
+		};
+		class 332nd_Uniform_Clone_CT_Medic
+		{
+			model = "332nd_Uniform_Extended";
+			Medic = "CT";
+		};
+		class 332nd_Uniform_Clone_SCT_Medic
+		{
+			model = "332nd_Uniform_Extended";
+			Medic = "SCT";
+		};
+		class 332nd_Uniform_Clone_VCT_Medic
+		{
+			model = "332nd_Uniform_Extended";
+			Medic = "VCT";
+		};
 		class 332nd_Uniform_Clone_NCO_Medic
 		{
 			model = "332nd_Uniform_Extended";
@@ -1244,69 +1244,70 @@ class XtdGearInfos
 			Zeus = "ZeusNCO";
 		};
 		*/
-        class 332nd_Uniform_Clone_Ithias
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Ithias";
-        };
-        class 332nd_Uniform_Clone_Cherryy
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Cherryy";
-        };
+		class 332nd_Uniform_Clone_Ithias
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Ithias";
+		};
+		class 332nd_Uniform_Clone_Cherryy
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Cherryy";
+		};
 		class 332nd_Uniform_Clone_Crow
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Crow";
-        }; 
-        class 332nd_Uniform_Clone_Weaver
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Weaver";
-        };
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Crow";
+		}; 
+		class 332nd_Uniform_Clone_Weaver
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Weaver";
+		};
 		class 332nd_Uniform_Clone_Asuka
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Asuka";
-        };
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Asuka";
+		};
 		class 332nd_Uniform_Clone_Frankenburg
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Frankenburg";
-        }; 
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Frankenburg";
+		}; 
 		class 332nd_Uniform_Clone_Seelig
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Seelig";
-        }; 
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Seelig";
+		}; 
 		class 332nd_Uniform_Clone_Spectre
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Spectre";
-        }; 
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Spectre";
+		}; 
 		class 332nd_Uniform_Clone_Joker
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Joker";
-        }; 
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Joker";
+		}; 
 		class 332nd_Uniform_Clone_Denal
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Denal";
-        }; 
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Denal";
+		}; 
 		class 332nd_Uniform_Clone_Walkie
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Walkie";
-        }; 
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Walkie";
+		}; 
 		class 332nd_Uniform_Clone_Cin
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Cin";
-        /* };class 332nd_Uniform_Clone_Peter
-        {
-            model = "332nd_Uniform_Extended";
-            Customs = "Peter";
-        };
-    }; */
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Cin";
+		};
+	/*	class 332nd_Uniform_Clone_Peter
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Peter";
+		};	*/
+	}; 
 };
