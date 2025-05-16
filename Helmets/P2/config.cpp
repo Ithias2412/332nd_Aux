@@ -96,45 +96,6 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Test.paa"
 		};
 	};
-	class IDA_P2_Helmet;
-	class Rose_Test: IDA_P2_Helmet
-	{
-		author="Indecisive Armoury Team";
-		displayName="Rose IDA";
-		scope=2;
-		ace_hearing_protection=1;
-		ace_hearing_lowerVolume=0;
-		picture="\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\P2_Helmet_UI.paa";
-		model="\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\IDA_Clone_P2_Helmet.p3d";
-		hiddenselections[]=
-		{
-			"Camo",
-			"visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Rose_Test.paa",
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Rose_Test.paa"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\IDA_P2_Helmet.rvmat",
-			"\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\IDA_P2_Helmet_Visor.rvmat"
-		};
-		subItems[]={};
-		class Iteminfo: HeadgearItem
-		{
-			uniformModel="\Indecisive_Armoury_units\REPUBLIC\Clone_P2_Helmet\IDA_Clone_P2_Helmet.p3d";
-			mass=15;
-			hiddenselections[]=
-			{
-				"Camo",
-				"visor"
-			};
-			allowedSlots[]={801,901,701,605};
-			modelSides[]={6};
-		};
-	};
 //Customs
 
 	class 332nd_Helmet_P2_Asuka: 332nd_Helmet_P2_CR
