@@ -237,8 +237,14 @@ class cfgWeapons
 			"FullAuto",
 			"Single"
 		};
-		class 3AS_15CGL: UGL_F
+		muzzles[] = 
 		{
+			"this",
+			"GL_3GL_F"
+		};
+		class GL_3GL_F: UGL_F
+		{
+			cameraDir = "OP_look";
 			magazines[]=
 			{
 				"332nd_HE_LGrenade_Mag",
@@ -250,14 +256,15 @@ class cfgWeapons
 				"ACE_HuntIR_M203"
 			};
 			magazineWell[]={};
-			cameraDir = "OP_look";
 			descriptionShort = "DC15CGL";
 			discreteDistance[] = {50,75,100,150,200,250,300,350,400};
 			discreteDistanceCameraPoint[] = {"OP_eye_50","OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
 			discreteDistanceInitIndex = 1;
-			displayName = "3AS DC15C GL";
+			displayName = "DC15C GL";
 			reloadAction = "GestureReloadMXUGL";
 			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
+			useExternalOptic = 0;
+			useModelOptics = 0;
 		};
 		class FullAuto: Mode_FullAuto
 		{

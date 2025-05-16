@@ -34,6 +34,7 @@ class ACEX_Fortify_Presets
 			
 			{"k_porg", 10, "Friends"},
 			{"TKE_Smelvin2", 10, "Friends"},
+			//add fireplace
         };
     };
 };

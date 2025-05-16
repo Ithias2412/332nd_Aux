@@ -34,6 +34,8 @@ class cfgWeapons
 		displayName="[332nd] Valken (MRK)";
 		recoil="3AS_recoil_DC15A";
 		reloadAction = "3AS_GestureReload_DC17M";
+		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
+		reloadSound[] = {"",1,1};
 		picture = "\MRC\JLTS\weapons\DW32S\data\ui\DW32S_ui_ca.paa"; 
 		scope = 2;
 		weaponInfoType="RscOptics_nightstalker";

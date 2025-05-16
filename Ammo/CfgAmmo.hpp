@@ -341,7 +341,7 @@ class CfgAmmo
 	class 332nd_HE_LGrenade: G_40mm_HE
 	{
 		ace_frag_enabled=1;
-		indirectHitRange=10;
+		indirectHitRange=5;
 		indirectHit=40;
 		effectflare="FlareShell";
 		effectfly="IDA_BlasterBoltGlow_Blue_Fly";

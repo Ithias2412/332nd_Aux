@@ -21,8 +21,9 @@ class CfgVehicles
 	class 332nd_CIS_Dwarf_Spider_Droid_MK3: DBA_DSD3
 	{
 		faction="332nd_CIS_Faction";
-		editorSubcategory = "EdSubcat_332nd_Medium_Vics";
+		editorSubcategory = "EdSubcat_332nd_Light_Vics";
 		displayName="Dwarf Spider Droid MK3";
+		armor = 50;
 		editorPreview = "";
 	};
 };

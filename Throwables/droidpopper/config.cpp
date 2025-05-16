@@ -73,8 +73,8 @@ class cfgAmmo
     {
         droidPopper = 1
         displayName = "[BANNED / 332nd] WIP Droid Popper";
-        indirectHit = 1;
-        indirectHitRange = 15;
+        indirectHit = 0.1;
+        indirectHitRange = 10;
     };
 };
 

@@ -1558,15 +1558,15 @@ class cfgWeapons
 						"OpticsCHAbera1",
 						"OpticsBlur1"
 					};
-					opticsZoomMin=0.0099999998;
-					opticsZoomMax=0.041999999;
-					opticsZoomInit=0.041999999;
+					opticsZoomMin=0.015625;
+					opticsZoomMax=0.03125;
+					opticsZoomInit=0.03125;
 					discreteDistance[]={300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
 					discreteDistanceInitIndex=2;
 					distanceZoomMin=300;
 					distanceZoomMax=2400;
-					discretefov[]={0.041999999,0.0099999998};
-					discreteInitIndex=0;
+					//discretefov[]={0.03125,0.015625};
+					//discreteInitIndex=0;
 					memoryPointCamera="opticView";
 					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
 					visionMode[]=
@@ -1601,15 +1601,15 @@ class cfgWeapons
 					opticsID=1;
 					useModelOptics=1;
 					opticsPPEffects[]={};
-					opticsZoomMin=0.02;
+					opticsZoomMin=0.03125;
 					opticsZoomMax=0.0625;
 					opticsZoomInit=0.0625;
 					discreteDistance[]={100,300,400,500,600,700,800,900,1000};
 					discreteDistanceInitIndex = 0;
 					distanceZoomMin=100;
 					distanceZoomMax=1000;
-					discreteFov[]={0.0625,0.02};
-					discreteInitIndex=0;
+					//discretefov[] = {0.03125,0.0625};
+					//discreteInitIndex=0;
 					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
 					memoryPointCamera="opticView";
 					visionMode[]=
@@ -1618,7 +1618,7 @@ class cfgWeapons
 						"NVG",
 						"Ti"
 					};
-					thermalMode[]={1,2};
+					thermalMode[]={0};
 					opticsFlare=1;
 					opticsDisablePeripherialVision=1;
 					cameraDir="";

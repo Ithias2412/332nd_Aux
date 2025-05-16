@@ -23,7 +23,8 @@ class CfgVehicles
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Light_Vics";
 		displayName="Dwarf Spider Droid";
-		armor = 60;
+		//armor = 60;
+		armor = 100;
 		editorPreview = "";
 	};
 };

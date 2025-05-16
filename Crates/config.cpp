@@ -169,11 +169,6 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_Z6_Mag";
 			};
-			class 1Rnd_HE_Grenade_shell
-			{
-				count = 100;
-				magazine = "1Rnd_HE_Grenade_shell";
-			};
 			class 332nd_DC17S_Mag
 			{
 				count = 100;
@@ -232,22 +227,22 @@ class CfgVehicles
 				count = 25;
 				name = "3AS_SmokeYellow";
 			};
-			class C7_Remote_Mag
+			class 332nd_Remote_Charge_Mag
 			{
 				count = 25;
-				name = "C7_Remote_Mag";
+				name = "332nd_Remote_Charge_Mag";
 			};
-			class C12_Remote_Mag
+			class 332nd_Detonation_pack_Mag
 			{
 				count = 10;
-				name = "C12_Remote_Mag";
+				name = "332nd_Detonation_pack_Mag";
 			};
 		};
 		class TransportWeapons
 		{
 			class 332nd_Dispo_F
 			{
-				count = 25;
+				count = 5;
 				weapon = "332nd_Dispo_F";
 			};
 		};
@@ -389,20 +384,10 @@ class CfgVehicles
 				count = 25;
 				name = "ACE_IR_Strobe_Item";
 			};
-			class ACE_UAVBattery
-			{
-				count = 5;
-				name = "ACE_UAVBattery";
-			};
 			class ItemcTabHCam
 			{
 				count = 10;
 				name = "ItemcTabHCam";
-			};
-			class DRNP_AR2P
-			{
-				count = 5;
-				name = "DRNP_AR2P";
 			};
 		};
 		class TransportWeapons
@@ -417,60 +402,30 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_DC15C";
 			};
-			class 332nd_DC15A_GL
-			{
-				count = 5;
-				weapon = "332nd_DC15A_GL";
-			};
-			class 332nd_DC15C_GL
-			{
-				count = 5;
-				weapon = "332nd_DC15C_GL";
-			};
-			class 332nd_DC15L
-			{
-				count = 5;
-				weapon = "332nd_DC15L";
-			};
 			class 332nd_DC15S
 			{
 				count = 10;
 				weapon = "332nd_DC15S";
-			};
-			class 332nd_DC15X
-			{
-				count = 5;
-				weapon = "332nd_DC15X";
 			};
 			class 332nd_DP23
 			{
 				count = 10;
 				weapon = "332nd_DP23";
 			};
-			class 332nd_Valken
-			{
-				count = 5;
-				weapon = "332nd_Valken";
-			};
-			class 332nd_Z6
-			{
-				count = 5;
-				weapon = "332nd_Z6";
-			};
 			class 332nd_DC17S
 			{
-				count = 25;
+				count = 10;
 				weapon = "332nd_DC17S";
 			};
-			class 332nd_PLX1
+			class 332nd_Mode_A_Zoom_2
 			{
-				count = 5;
-				weapon = "332nd_PLX1";
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2";
 			};
-			class 332nd_RPS6
+			class 332nd_Mode_A_Zoom_2_Raised
 			{
-				count = 5;
-				weapon = "332nd_RPS6";
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2_Raised";
 			};
 			class 332nd_Helmet_P2_CT 
 			{
@@ -647,20 +602,10 @@ class CfgVehicles
 				count = 25;
 				name = "ACE_IR_Strobe_Item";
 			};
-			class ACE_UAVBattery
-			{
-				count = 5;
-				name = "ACE_UAVBattery";
-			};
 			class ItemcTabHCam
 			{
 				count = 10;
 				name = "ItemcTabHCam";
-			};
-			class DRNP_AR2P
-			{
-				count = 5;
-				name = "DRNP_AR2P";
 			};
 			class 3AS_ThermalDetonator
 			{
@@ -702,15 +647,15 @@ class CfgVehicles
 				count = 25;
 				name = "3AS_SmokeYellow";
 			};
-			class C7_Remote_Mag
+			class 332nd_Remote_Charge_Mag
 			{
 				count = 25;
-				name = "C7_Remote_Mag";
+				name = "332nd_Remote_Charge_Mag";
 			};
-			class C12_Remote_Mag
+			class 332nd_Detonation_pack_Mag
 			{
 				count = 10;
-				name = "C12_Remote_Mag";
+				name = "332nd_Detonation_pack_Mag";
 			};
 		};
 		class TransportWeapons
@@ -725,60 +670,30 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_DC15C";
 			};
-			class 332nd_DC15A_GL
-			{
-				count = 5;
-				weapon = "332nd_DC15A_GL";
-			};
-			class 332nd_DC15C_GL
-			{
-				count = 5;
-				weapon = "332nd_DC15C_GL";
-			};
-			class 332nd_DC15L
-			{
-				count = 5;
-				weapon = "332nd_DC15L";
-			};
 			class 332nd_DC15S
 			{
 				count = 10;
 				weapon = "332nd_DC15S";
-			};
-			class 332nd_DC15X
-			{
-				count = 5;
-				weapon = "332nd_DC15X";
 			};
 			class 332nd_DP23
 			{
 				count = 10;
 				weapon = "332nd_DP23";
 			};
-			class 332nd_Valken
-			{
-				count = 5;
-				weapon = "332nd_Valken";
-			};
-			class 332nd_Z6
-			{
-				count = 5;
-				weapon = "332nd_Z6";
-			};
 			class 332nd_DC17S
 			{
-				count = 25;
+				count = 10;
 				weapon = "332nd_DC17S";
 			};
-			class 332nd_PLX1
+			class 332nd_Mode_A_Zoom_2
 			{
-				count = 5;
-				weapon = "332nd_PLX1";
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2";
 			};
-			class 332nd_RPS6
+			class 332nd_Mode_A_Zoom_2_Raised
 			{
-				count = 5;
-				weapon = "332nd_RPS6";
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2_Raised";
 			};
 			class 332nd_Helmet_P2_CT 
 			{

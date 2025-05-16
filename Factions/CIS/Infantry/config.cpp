@@ -12,6 +12,8 @@ class CfgPatches
         units[] = 
 		{
             "332nd_Droid_B1_Rifleman",
+			"332nd_Droid_B1_Scatterblaster",
+			"332nd_Droid_B1_Shield",
             "332nd_Droid_B1_Grenadier",
             "332nd_Droid_B1_AT",
             "332nd_Droid_B1_Support",
@@ -30,6 +32,7 @@ class CfgPatches
 			"332nd_CIS_Hum_Officer",
 			"332nd_Droid_BX_Melee",
 			"332nd_Droid_BX_Range",
+			"332nd_Droid_BX_Shield",
 
         };
     };
@@ -61,8 +64,8 @@ class CfgVehicles {
         backpack = "JLTS_B1_backpack";
         weapons[] = {"Throw", "Put"}; // Default for all, overridden by subclasses
         respawnWeapons[] = {"Throw", "Put"};
-        magazines[] = {"SmokeShell"};
-        respawnMagazines[] = {"SmokeShell"};
+        magazines[] = {};
+        respawnMagazines[] = {};
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
     };
@@ -71,20 +74,40 @@ class CfgVehicles {
         scope = 2;
         displayName = "B1 Rifleman";
         uniformClass = "JLTS_DroidB1"; // Standard Battle Droid uniform
-        weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
+    };
+    class 332nd_Droid_B1_Scatterblaster: 332nd_Droid_Base 
+	{
+        scope = 2;
+        displayName = "B1 Scatterblaster";
+        uniformClass = "JLTS_DroidB1"; // Standard Battle Droid uniform
+        weapons[] = {"332nd_CIS_SBB3", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_SBB3", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "JLTS_RG4D_mag", };
+        respawnMagazines[] = {"332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "332nd_CIS_SBB3_Mag", "JLTS_RG4D_mag", };
+    };
+    class 332nd_Droid_B1_Shield: 332nd_Droid_Base 
+	{
+        scope = 2;
+        displayName = "B1 Shield";
+        uniformClass = "JLTS_DroidB1"; // Standard Battle Droid uniform
+        weapons[] = {"332nd_CIS_E5_Shield", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5_Shield", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
     };
     class 332nd_Droid_B1_Grenadier: 332nd_Droid_Base 
 	{
         scope = 2;
         displayName = "B1 Grenadier";
         uniformClass = "JLTS_DroidB1"; // Standard Battle Droid uniform
-        weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "3AS_ThermalDetonator", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "3AS_ThermalDetonator", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", "3AS_ThermalDetonator", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", "3AS_ThermalDetonator", };
     };
     class 332nd_Droid_B1_AT: 332nd_Droid_Base 
 	{
@@ -92,20 +115,20 @@ class CfgVehicles {
         displayName = "B1 Anti-Tank";
         backpack = "JLTS_B1_backpack_at_predef";
         uniformClass = "JLTS_DroidB1"; // Uses default AT droid uniform
-        weapons[] = {"JLTS_E5", "JLTS_RPS6", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "JLTS_RPS6", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell", "JLTS_RPS6_mag","JLTS_RPS6_mag","JLTS_RPS6_mag"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",  "JLTS_RG4D_mag", "SmokeShell", "JLTS_RPS6_mag","JLTS_RPS6_mag","JLTS_RPS6_mag"};
+        weapons[] = {"332nd_CIS_E5", "JLTS_RPS6", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "JLTS_RPS6", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", , "JLTS_RPS6_mag","JLTS_RPS6_mag","JLTS_RPS6_mag"};
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",  "JLTS_RG4D_mag", , "JLTS_RPS6_mag","JLTS_RPS6_mag","JLTS_RPS6_mag"};
     };
     class 332nd_Droid_B1_Support: 332nd_Droid_Base 
 	{
         scope = 2;
         displayName = "B1 Support Gunner";
         uniformClass = "JLTS_DroidB1"; // Support variant
-        weapons[] = {"JLTS_E5C", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5C", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_RG4D_mag","JLTS_RG4D_mag","JLTS_RG4D_mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
-		respawnMagazines[] = {"JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_E5C_mag","JLTS_RG4D_mag","JLTS_RG4D_mag","JLTS_RG4D_mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
+        weapons[] = {"332nd_CIS_E5C", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5C", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5C_Mag","332nd_CIS_E5C_Mag","332nd_CIS_E5C_Mag","332nd_CIS_E5C_Mag","332nd_CIS_E5C_Mag","JLTS_RG4D_mag","JLTS_RG4D_mag","JLTS_RG4D_mag",,"SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
+		respawnMagazines[] = {"332nd_CIS_E5C_Mag","332nd_CIS_E5C_Mag","332nd_CIS_E5C_Mag","332nd_CIS_E5C_Mag","332nd_CIS_E5C_Mag","JLTS_RG4D_mag","JLTS_RG4D_mag","JLTS_RG4D_mag",,"SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
     };
     class 332nd_Droid_B1_Sniper: JLTS_Droid_B1_SBB3 
 	{
@@ -115,10 +138,10 @@ class CfgVehicles {
         //editorSubcategory = "332nd_Droids_Subcategory";
         editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         backpack = "JLTS_B1_backpack";
-        weapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5S", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5S", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5S", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "JLTS_RG4D_mag", };
+        respawnMagazines[] = {"332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "JLTS_RG4D_mag", };
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};    
     };
@@ -127,10 +150,10 @@ class CfgVehicles {
         scope = 2;
         displayName = "B1 Commander";
         uniformClass = "JLTS_DroidB1_Commander"; // Commander-specific uniform
-        weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
     };
     class 332nd_Droid_B1_Crewman: JLTS_Droid_B1_Crew 
 	{
@@ -140,10 +163,10 @@ class CfgVehicles {
         //editorSubcategory = "332nd_Droids_Subcategory";
         editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         backpack = "JLTS_B1_backpack";
-        weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};    
     };
@@ -156,10 +179,10 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         uniformClass = "JLTS_DroidB1_Security"; // Security uniform
         backpack = "JLTS_B1_backpack";
-        weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_RG4D_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","JLTS_RG4D_mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "JLTS_RG4D_mag", };
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
     };
@@ -171,10 +194,10 @@ class CfgVehicles {
         //editorSubcategory = "332nd_Droids_Subcategory";
         editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         backpack = "JLTS_B1_backpack";
-        weapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "JLTS_RG4D", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_RG4D_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "JLTS_RG4D", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","JLTS_RG4D_mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","332nd_CIS_E5_Mag","JLTS_RG4D_mag", };
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
     };
@@ -186,18 +209,18 @@ class CfgVehicles {
         uniformClass = "3AS_U_CIS_B2"; // Standard Battle Droid uniform
         faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Battle_Droids";
-        weapons[] = {"3AS_DWBlaster_F", "Throw", "Put"}; // Default for all, overridden by subclasses
-        respawnWeapons[] = {"3AS_DWBlaster_F", "Throw", "Put"};
-        magazines[] = {"3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "SmokeShell"};
-        respawnMagazines[] = {"3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_Wrist_Blaster", "Throw", "Put"}; // Default for all, overridden by subclasses
+        respawnWeapons[] = {"332nd_CIS_Wrist_Blaster", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
+        respawnMagazines[] = {"332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch","332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch","332nd_NVG_Chip"};
     };
     class 332nd_Droid_B2_Rockets: 332nd_Droid_B2 
 	{
         displayName = "B2 Battledroid (Rockets)";
-        magazines[] = {"3AS_DWRockets_AT", "3AS_DWRockets_AT", "3AS_DWRockets_AT", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "SmokeShell"};
-        respawnMagazines[] = {"3AS_DWRockets_AT", "3AS_DWRockets_AT", "3AS_DWRockets_AT", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "3AS_500Rnd_EM30_mag", "SmokeShell"};
+        magazines[] = {"3AS_DWRockets_AT", "3AS_DWRockets_AT", "3AS_DWRockets_AT", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
+        respawnMagazines[] = {"3AS_DWRockets_AT", "3AS_DWRockets_AT", "3AS_DWRockets_AT", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
     };
 	// T-Series
 	class 332nd_Droid_T_Series: 3AS_CIS_TS_F
@@ -207,8 +230,8 @@ class CfgVehicles {
         displayName = "T-Series Commander Droid";
 		weapons[] = {"Throw","Put"};
         respawnWeapons[] = {"Throw", "Put"};
-        magazines[] = {"SmokeShell"};
-        respawnMagazines[] = {"SmokeShell"};
+        magazines[] = {};
+        respawnMagazines[] = {};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 
@@ -222,10 +245,10 @@ class CfgVehicles {
 		glassesEnabled = 0;
 		backpack = "";
         uniformClass = "332nd_Uniform_CIS_Human_Light";
-        weapons[] = {"JLTS_E5", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
         linkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"3AS_CIS_Light_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 		model = "\3AS\3AS_CIS_Infantry\Model\CIS_Inf.p3d";
@@ -409,10 +432,10 @@ class CfgVehicles {
 		displayName = "CIS Infantry Anti-Tank";
 		backpack = "332nd_CIS_Hum_AT_Backpack";
         uniformClass = "332nd_Uniform_CIS_Human_Heavy";
-        weapons[] = {"JLTS_RPS6", "JLTS_E5", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_RPS6", "JLTS_E5", "Throw", "Put"};
-        magazines[] = {"JLTS_RPS6_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_RPS6_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
+        weapons[] = {"JLTS_RPS6", "332nd_CIS_E5", "Throw", "Put"};
+        respawnWeapons[] = {"JLTS_RPS6", "332nd_CIS_E5", "Throw", "Put"};
+        magazines[] = {"JLTS_RPS6_mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
+        respawnMagazines[] = {"JLTS_RPS6_mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
 		model = "3AS\3AS_CIS_Infantry\Model\CIS_Heavy.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"3AS\3AS_CIS_Infantry\data\heavy\cis_heavy_texture_armour_co.paa"};
@@ -422,20 +445,20 @@ class CfgVehicles {
 		displayName = "CIS Infantry Support Gunner";
 		backpack = "";
         uniformClass = "332nd_Uniform_CIS_Human_Heavy";
-        weapons[] = {"JLTS_E5C", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5C", "Throw", "Put"};
-        magazines[] = {"JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5C", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5C", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", };
+        respawnMagazines[] = {"332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", };
 	};
 	class 332nd_CIS_Hum_Med: 332nd_CIS_Hum
 	{
 		displayName = "CIS Infantry Medic";
 		backpack = "";
         uniformClass = "332nd_Uniform_CIS_Human_Medical";
-        weapons[] = {"JLTS_E5", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
         linkedItems[] = {"3AS_CIS_Medic_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"3AS_CIS_Medic_helmet", "ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 		RespawnItems[] = {"ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", };
@@ -467,12 +490,12 @@ class CfgVehicles {
 	{
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Special_Operations";
-		displayName = "BX Melee";
+		displayName = "BX Assassin";
         scope = 2;
-        weapons[] = {"WBK_Dutch_Vibro", "JLTS_E5", "Throw", "Put"};
-        respawnWeapons[] = {"WBK_Dutch_Vibro", "JLTS_E5", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
+        weapons[] = {"WBK_Dutch_Vibro", "332nd_CIS_E5", "Throw", "Put"};
+        respawnWeapons[] = {"WBK_Dutch_Vibro", "332nd_CIS_E5", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 	};
@@ -481,10 +504,22 @@ class CfgVehicles {
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Special_Operations";
 		displayName = "BX Commando";
-        weapons[] = {"JLTS_E5", "Throw", "Put"};
-        respawnWeapons[] = {"JLTS_E5", "Throw", "Put"};
-        magazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
-        respawnMagazines[] = {"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "SmokeShell"};
+        weapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
+        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+	};
+	class 332nd_Droid_BX_Shield: lsd_cis_bxdroid_specops
+	{
+		faction = "332nd_CIS_Faction";
+        editorSubcategory = "EdSubcat_332nd_Special_Operations";
+		displayName = "BX Commando (Shield)";
+        weapons[] = {"332nd_CIS_E5_Shield", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5_Shield", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", };
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 	};
@@ -565,6 +600,36 @@ class CfgGroups
                     class Unit3 {
                         side = 0;
                         vehicle = "332nd_Droid_B1_Support";
+                        rank = "PRIVATE";
+                        position[] = {10, -10, 0};
+                    };
+                };
+                class 332nd_CQB
+				{
+                    name = "B1 CQB Team";
+                    faction = "332nd_CIS_Faction";
+                    side = 0;
+                    class Unit0 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Shield";
+                        rank = "PRIVATE";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Shield";
+                        rank = "PRIVATE";
+                        position[] = {5, -5, 0};
+                    };
+                    class Unit2 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Scatterblaster";
+                        rank = "PRIVATE";
+                        position[] = {-5, -5, 0};
+                    };
+                    class Unit3 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Scatterblaster";
                         rank = "PRIVATE";
                         position[] = {10, -10, 0};
                     };
