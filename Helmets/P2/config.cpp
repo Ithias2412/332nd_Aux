@@ -98,7 +98,7 @@ class cfgWeapons
 	};
 //Customs
 
-	class 332nd_Helmet_P2_Asuka: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_Asuka: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Asuka)";
 		hiddenSelections[]=
@@ -109,7 +109,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Asuka.paa"
 		};
-	};
+	}; */
 	class 332nd_Helmet_P2_Body: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Body)";
@@ -194,18 +194,6 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Luci.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Peter: 332nd_Helmet_P2_CR
-	{
-		displayName="[332nd] P2 Helmet (Peter)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Peter.paa"
-		};
-	};
 	class 332nd_Helmet_P2_Roseiry: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Roseiry)";
@@ -242,7 +230,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Sovereign.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Spectre: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_Spectre: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Spectre)";
 		hiddenSelections[]=
@@ -265,7 +253,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Stryker.paa"
 		};
-	};
+	}; */
 	class 332nd_Helmet_P2_Tokyo: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Tokyo)";
@@ -278,7 +266,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Tokyo.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Walkie: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_Walkie: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Walkie)";
 		hiddenSelections[]=
@@ -289,7 +277,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Walkie.paa"
 		};
-	};
+	}; */
 	class 332nd_Helmet_P2_Weaver: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Weaver)";
@@ -312,6 +300,18 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Lettuce.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Ketamine: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Ketamine)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ketamine.paa"
 		};
 	};
 };
@@ -358,15 +358,15 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Body", "Cherryy", "Cin", "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Peter", "Roseiry", "Shark", "Seelig", "Sovereign", "Spectre", "Stryker", "Tokyo", "Walkie", "Weaver", "Lettuce",};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo", /* "Walkie", */ "Weaver", "Lettuce", "Ketamine",};
                 changeingame = 0;
                 alwaysSelectable = 1;
-				class Asuka
+				/* class Asuka
                 {
                     label = "Asuka";
                     description = "Sucks at Destiny";
                     //image = "xxx";
-                };
+                }; */
 				class Body
                 {
                     label = "Body";
@@ -379,12 +379,12 @@ class XtdGearModels
                     description = "Piller of the community";
                     //image = "xxx";
                 };
-				class Cin
+				/* class Cin
                 {
                     label = "Cin";
                     description = "Where's the 9 Line";
                     //image = "xxx";
-                };
+                }; */
 				class Crow
 				{
 					label = "Crow";
@@ -420,12 +420,6 @@ class XtdGearModels
 					description = "Tup deserved it";
 					//image = "xxx";
 				};		
-				class Peter
-                {
-                    label = "Peter";
-                    description = "Hey there CMDR";
-                    //image = "xxx";
-                };
 				class Roseiry
                 {
                     label = "Roseiry";
@@ -450,30 +444,30 @@ class XtdGearModels
 					description = "Dosent know what he wants to do";
 					//image = "xxx";
 				};	
-				class Spectre
+				/* class Spectre
 				{
 					label = "Spectre";
 					description = "Goon Platoon";
 					//image = "xxx";
-				};	
-				class Stryker
+				}; */	
+				/* class Stryker
 				{
 					label = "Stryker";
 					description = "Stryker Eureka";
 					//image = "xxx";
-				};
+				}; */
 				class Tokyo
 				{
 					label = "Tokyo";
 					description = "VR Gamer";
 					//image = "xxx";
 				};
-				class Walkie
+				/* class Walkie
 				{
 					label = "Walkie";
 					description = "Whispers drugs into my system";
 					//image = "xxx";
-				};
+				}; */
 				class Weaver
 				{
 					label = "Weaver";
@@ -484,6 +478,12 @@ class XtdGearModels
 				{
 					label = "Lettuce";
 					description = "Makes some banger sandwiches";
+					//image = "xxx";
+				};
+				class Ketamine
+				{
+					label = "Ketamine";
+					description = "Wears the wrong helmet";
 					//image = "xxx";
 				};
             };
@@ -516,11 +516,11 @@ class XtdGearInfos
             Type = "JTAC";
         };
 		//customs
-		class 332nd_Helmet_P2_Asuka
+		/* class 332nd_Helmet_P2_Asuka
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Asuka";
-        };
+        }; */
 		class 332nd_Helmet_P2_Body
         {
             model = "332nd_Helmets_P2_Extended";
@@ -531,16 +531,16 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Cherryy";
         };
-		class 332nd_Helmet_RTO_Cin
+		/* class 332nd_Helmet_RTO_Cin
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Cin";
-        };
-		class 332nd_Helmet_P2_Crow
+        }; */
+	    class 332nd_Helmet_P2_Crow
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Crow";
-        };
+        }; 
 		class 332nd_Helmet_P2_Denal
         {
             model = "332nd_Helmets_P2_Extended";
@@ -566,11 +566,6 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Luci";
         };
-		class 332nd_Helmet_P2_Peter
-        {
-            model = "332nd_Helmets_P2_Extended";
-            Customs = "Peter";
-        };
         class 332nd_Helmet_P2_Roseiry
         {
             model = "332nd_Helmets_P2_Extended";
@@ -591,7 +586,7 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Sovereign";
         };	
-		class 332nd_Helmet_P2_Spectre
+		/* class 332nd_Helmet_P2_Spectre
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Spectre";
@@ -600,17 +595,17 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Stryker";
-        };
+        }; */
 		class 332nd_Helmet_P2_Tokyo
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Tokyo";
         };
-		class 332nd_Helmet_P2_Walkie
+		/* class 332nd_Helmet_P2_Walkie
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Walkie";
-        };
+        }; */
 		class 332nd_Helmet_P2_Weaver
         {
             model = "332nd_Helmets_P2_Extended";
@@ -620,6 +615,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Lettuce";
+        };
+		class 332nd_Helmet_P2_Ketamine
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Ketamine";
         };
 	};
 };

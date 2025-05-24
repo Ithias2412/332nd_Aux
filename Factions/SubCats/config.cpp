@@ -13,7 +13,6 @@ class CfgPatches {
 	};
 };
 //#include "xtdGear.hpp"
-
 class CfgEditorSubcategories
 {
     class EdSubcat_332nd_Light_Vics
@@ -63,5 +62,9 @@ class CfgEditorSubcategories
     class EdSubcat_332nd_Special_Operations
     {
         displayName = "[Inf] Special Operations";
+    };
+    class EdSubcat_332nd_Arsenals
+    {
+        displayName = "Arsenals";
     };
 };

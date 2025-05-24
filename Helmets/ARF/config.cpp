@@ -136,7 +136,82 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Woodland.paa",
 		};
 	};
-
+	//Customs
+	class 332nd_Helmet_ARF_Asuka: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Asuka)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Asuka.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Asuka.paa",
+		};
+	};
+	class 332nd_Helmet_ARF_Cin: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Cin)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Cin.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Cin.paa",
+		};
+	};
+	class 332nd_Helmet_ARF_Walkie: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Walkie)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Walkie.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Walkie.paa",
+		};
+	};
+	class 332nd_Helmet_ARF_Trick: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Trick)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Trick.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Trick.paa",
+		};
+	};
+	class 332nd_Helmet_ARF_Stryker: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Stryker)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Stryker.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Stryker.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -147,7 +222,7 @@ class XtdGearModels
         {
             label = "ARF";
             author = "Ithias";
-			options[] = { "Default", "Camo", };
+			options[] = { "Default", "Camo", "Customs",};
             class Default
             {
                 label = "Default";
@@ -192,6 +267,43 @@ class XtdGearModels
                     //image = "xxx";
                 };
             };
+			class Customs
+            {
+                label = "Customs";
+				values[] = { "Asuka", "Cin", "Walkie", "Trick", "Stryker",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+				class Asuka
+                {
+                    label = "Asuka";
+                    description = "Sucks at Destiny";
+                    //image = "xxx";
+                };
+				class Cin
+                {
+                    label = "Cin";
+                    description = "Where's the 9 Line";
+                    //image = "xxx";
+                };
+				class Walkie
+                {
+                    label = "Walkie";
+                    description = "Whispers drugs into my system";
+                    //image = "xxx";
+                };
+				class Trick
+                {
+                    label = "Trick";
+                    description = "Goon Platoon";
+                    //image = "xxx";
+                };
+				class Stryker
+                {
+                    label = "Stryker";
+                    description = "Stryker Eureka";
+                    //image = "xxx";
+                };
+            };
         };
     };
 };
@@ -224,6 +336,32 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Camo = "Desert";
+        };
+		//customs
+		 class 332nd_Helmet_ARF_Asuka
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Asuka";
+        };
+		 class 332nd_Helmet_ARF_Cin
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Cin";
+        };
+		 class 332nd_Helmet_ARF_Walkie
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Walkie";
+        };
+		 class 332nd_Helmet_ARF_Trick
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Trick";
+        };
+		 class 332nd_Helmet_ARF_Stryker
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Stryker";
         };
 	};
 };

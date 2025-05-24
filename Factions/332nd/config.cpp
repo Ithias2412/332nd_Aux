@@ -31,4 +31,8 @@ class CfgEditorCategories
 	{
 		displayName="[332nd] Raxshir Company";
 	};
+	class 332nd_Props
+	{
+		displayName = "[332nd] Editor Props"; 
+	};
 };
