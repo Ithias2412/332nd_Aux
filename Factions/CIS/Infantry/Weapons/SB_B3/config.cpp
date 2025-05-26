@@ -76,9 +76,9 @@ class CfgMagazines
 	class 332nd_CIS_SBB3_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_CIS_SBB3_Ammo";
-		count = 25;
-		displayName = "SB-B3 25 Round Energy Cell";
-		mass = 10;
+		count = 20;
+		displayName = "SB-B3 20 Round Energy Cell";
+		mass = 15;
 		scope = 2;
 		model = "\MRC\JLTS\weapons\Core\stun_mag.p3d";
 		modelSpecial = "";

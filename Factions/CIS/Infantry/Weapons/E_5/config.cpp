@@ -155,7 +155,7 @@ class CfgMagazines
 	class 332nd_CIS_E5_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_CIS_E5_Ammo";
-		count = 100;
+		count = 40;
 		displayName = "E-5 100 Round Energy Cell";
 		mass = 10;
 		scope = 2;

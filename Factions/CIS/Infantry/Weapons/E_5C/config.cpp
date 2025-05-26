@@ -77,7 +77,7 @@ class CfgMagazines
 		ammo = "332nd_CIS_E5C_Ammo";
 		count = 150;
 		displayName = "E-5C 150 Round Energy Cell";
-		mass = 4;
+		mass = 50;
 		scope = 2;
 		model = "\MRC\JLTS\weapons\e5c\e5c_mag.p3d";
 		modelSpecial = "";
