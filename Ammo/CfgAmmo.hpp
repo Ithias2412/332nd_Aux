@@ -318,23 +318,23 @@ class CfgAmmo
 	//RPS6 / Dispo
 	class 332nd_RPS6_Ammo_AT: 3AS_R_MK41_AT
 	{
-		ExplosionEffects = "MortarExplosion";
+		//ExplosionEffects = "MortarExplosion";
 		hit=300;
 	};
 	class 332nd_RPS6_Ammo_NLAW: ACE_NLAW 
 	{
-		ExplosionEffects = "MortarExplosion";
+		//ExplosionEffects = "MortarExplosion";
 		hit=300;
 	};
 	class 332nd_Dispo_Ammo_NLAW: ACE_NLAW 
 	{
-		ExplosionEffects = "MortarExplosion";
+		//ExplosionEffects = "MortarExplosion";
 		hit=900;
 	};
 	//PLX1
 	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
 	{
-		ExplosionEffects = "MortarExplosion";
+		//ExplosionEffects = "MortarExplosion";
 		hit=900;
 	};
 	//UGL Grenades & Smokes
