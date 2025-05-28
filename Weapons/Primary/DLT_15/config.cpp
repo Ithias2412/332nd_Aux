@@ -57,6 +57,26 @@ class cfgWeapons
 		{
 			"this"
 		};
+		class OpticsModes
+		{
+			class Iron
+			{
+				discreteDistance[] = {200};
+				discreteDistanceInitIndex = 0;
+				distanceZoomMax = 200;
+				distanceZoomMin = 200;
+				memoryPointCamera = "eye";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 1;
+				opticsPPEffects[] = {"",""};
+				opticsZoomInit = 0.75;
+				opticsZoomMax = 1.25;
+				opticsZoomMin = 0.25;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+		};
 		class FullAuto: Mode_FullAuto
 		{
 			sounds[]=

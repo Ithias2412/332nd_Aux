@@ -27,6 +27,7 @@ class CfgVehicles
 	};
 	class 3AS_PX10_REP_F: 3AS_PX10_F
 	{
+		class ACE_SelfActions;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -43,8 +44,12 @@ class CfgVehicles
 		displayname="[332nd] PX-10 APC";
 		side = 1;
 		editorSubcategory = "EdSubcat_APCs";
-		//transportSoldier = 4;
+		armor = 200; //was 100
+		crew = "JLTS_Clone_P2_DC15S";
+		transportSoldier = 8;
 		canFloat = 1;
+		tas_canBlift = 1;
+        tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
 		hiddenSelections[] = 
 		{
 			"Camo",
@@ -60,6 +65,40 @@ class CfgVehicles
 			"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
 			"3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
 			"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa",
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class TFAR_IntercomChannel
+			{
+				condition = "true";
+				displayName = "Intercom Channel";
+				icon = "";
+				statement = "";
+				class TFAR_IntercomChannel_1
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					displayName = "Infantry";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					displayName = "Crew";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_3
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					displayName = "Command";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_disabled
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					displayName = "Disabled";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+			};
 		};
 		class Turrets: Turrets
 		{

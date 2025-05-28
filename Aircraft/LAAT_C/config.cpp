@@ -6,6 +6,7 @@ class CfgPatches
 		units[] = 
         {
 			"332nd_LAAT_C",
+			"332nd_3AS_LAAT_C",
         };
 		weapons[] = 
         {
@@ -73,6 +74,74 @@ class CfgVehicles
 		displayname = "[332nd] LAAT/C (3AS)";
 		scope = 2;
 		faction = "332nd_Faction";
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 300;
+		ls_impulsor_boostSpeed_2 = 600;
+		ls_impulsor_fuelDrain_1=0.00005; 
+		ls_impulsor_fuelDrain_2=0.00010; 
+		weapons[] = 
+		{
+			"3as_LAAT_Medium_Canon",
+			"CMFlareLauncher"
+		};
+		magazines[] = 
+		{
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"3as_LAAT_1000Rnd_Medium_shells",
+			"3as_LAAT_1000Rnd_Medium_shells",
+			"3as_LAAT_1000Rnd_Medium_shells",
+			"3as_LAAT_1000Rnd_Medium_shells"
+		};
+		class UserActions
+		{
+			class impulse
+			{
+				condition = "isEngineOn this and ls_player == currentPilot this and isTouchingGround this";
+				displayName = "Impulse";
+				onlyforplayer = 0;
+				position = "pilotview";
+				radius = 6;
+				shortcut = "User19";
+				statement = "this call ls_vehicle_fnc_ImpulseJoystick;";
+			};
+			class repulse: impulse
+			{
+				displayName = "Repulse";
+				shortcut = "User20";
+				statement = "this call ls_vehicle_fnc_RepulseJoystick;";
+			};
+			class LoadCargo
+			{
+				condition = "((speed this < TAS_lcLoadSpeed) AND (player == currentPilot vehicle player))";
+				displayName = "Load Vehicle";
+				displayNameDefault = "Load Vehicle";
+				onlyForPlayer = 0;
+				position = "pilotview";
+				priority = 1;
+				radius = 5;
+				showWindow = 0;
+				statement = "0 = [this] spawn TAS_fnc_Maglift;";
+				textToolTip = "Load Vehicle";
+				userActionID = 6;
+			};
+			class UnLoadCargo
+			{
+				condition = "(count(this getVariable [""TAS_Loaded"",[]]) > 0)";
+				displayName = "Unload Vehicles";
+				displayNameDefault = "Unload Vehicles";
+				onlyForPlayer = 0;
+				position = "pilotview";
+				priority = 3;
+				radius = 15;
+				showWindow = 0;
+				statement = "0 = [this] spawn TAS_fnc_MagDrop;";
+				textToolTip = "Unload Vehicles";
+				userActionID = 7;
+			};
+		};
 	};
 };
 
