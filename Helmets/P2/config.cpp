@@ -83,7 +83,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Medic.paa"
 		};
 	};
-	class 332nd_P2_Test: 332nd_Helmet_P2_CR
+	/* class 332nd_P2_Test: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Testing)";
 		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
@@ -95,7 +95,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Test.paa"
 		};
-	};
+	}; */
 //Customs
 
 	/* class 332nd_Helmet_P2_Asuka: 332nd_Helmet_P2_CR
@@ -616,7 +616,7 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Lettuce";
         };
-		class 332nd_Helmet_P2_Ketamine
+		class 332nd_Helmet_P2_Lettuce
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ketamine";
