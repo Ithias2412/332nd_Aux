@@ -616,7 +616,7 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Lettuce";
         };
-		class 332nd_Helmet_P2_Lettuce
+		class 332nd_Helmet_P2_Ketamine
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ketamine";
