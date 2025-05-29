@@ -315,7 +315,7 @@ class XtdGearModels
     {
         class 332nd_AB_Vest_Extended
         {
-            label = "332nd AB Vests";
+            label = "AB Vests";
             author = "Cherryy";
 			options[] = { "Rank", /* "variant", */ };
             class Rank

@@ -327,7 +327,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Recruit", "Trooper", "Medic", "JTAC",};
+				values[] = { "Recruit", "Trooper", "Medic", "RTO",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Recruit
@@ -348,9 +348,9 @@ class XtdGearModels
                     //description = "...";
                     //image = "xxx";
                 };
-                class JTAC
+                class RTO
                 {
-                    label = "JTAC";
+                    label = "RTO";
                     //description = "...";
                     //image = "xxx";
                 };
@@ -513,7 +513,7 @@ class XtdGearInfos
 		class 332nd_Helmet_RTO_CT
         {
             model = "332nd_Helmets_P2_Extended";
-            Type = "JTAC";
+            Type = "RTO";
         };
 		//customs
 		/* class 332nd_Helmet_P2_Asuka

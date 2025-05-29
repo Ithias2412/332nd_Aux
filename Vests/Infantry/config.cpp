@@ -1183,7 +1183,7 @@ class XtdGearModels
     {
         class 332nd_Vest_Extended
         {
-            label = "332nd Vests";
+            label = "Vests";
             author = "Ithias";
 			options[] = { "Rank", "variant", "custom",};
             class Rank

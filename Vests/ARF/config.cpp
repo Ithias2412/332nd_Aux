@@ -238,7 +238,7 @@ class XtdGearModels
     {
 		class 332nd_ARF_Vest_Extended
         {
-            label = "332nd Vests";
+            label = "ARF Vests";
             author = "Ithias & Cherryy";
 			options[] = { "Rank", "variant", "Camo", };
             class Rank
