@@ -57,6 +57,8 @@ class CfgVehicles {
     // B1 Droids
     class 332nd_Droid_Base: JLTS_Droid_B1_E5 
 	{
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";
         scope = 0; // Base class (hidden)
         faction = "332nd_CIS_Faction";
         //editorSubcategory = "332nd_Droids_Subcategory";
@@ -204,6 +206,8 @@ class CfgVehicles {
 	// B2 Droids
     class 332nd_Droid_B2: 3AS_CIS_B2_F 
 	{
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";
         scope = 2; 
         displayName = "B2 Battledroid";
         uniformClass = "3AS_U_CIS_B2"; // Standard Battle Droid uniform
@@ -397,6 +401,8 @@ class CfgVehicles {
 	// T-Series
 	class 332nd_Droid_T_Series: 3AS_CIS_TS_F
 	{
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";
         faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         displayName = "T-Series Commander Droid";
