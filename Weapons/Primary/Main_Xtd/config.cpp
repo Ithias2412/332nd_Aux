@@ -21,7 +21,7 @@ class XtdGearModels
         {
             label = "Weapons";
             author = "Ithias";
-			options[] = { "Rifleman", "AutoRifleman", "Marksman", "Grenadier", "Engineer", "PlatoonAssets", "Material", };
+			options[] = { "Rifleman", "AutoRifleman", "Marksman", "Grenadier", "Engineer", "PlatoonAssets", "Material", "ARF", };
             class Rifleman
             {
                 label = "Rifleman (RFL)";
@@ -191,6 +191,19 @@ class XtdGearModels
                     //image = "xxx";
                 };
             };
+            class ARF
+            {
+                label = "ARF";
+				values[] = { "Slug_Thrower",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Slug_Thrower
+                {
+                    label = "Slug Thrower";
+                    description = "MRK";
+                    //image = "xxx";
+                };
+            };
         };
     };
 };
@@ -302,6 +315,11 @@ class XtdGearInfos
 		{
             model = "332nd_Weapons_Main_Extended";
             PlatoonAssets = "EPL_2";
+		};
+		class 332nd_Slug_Thrower
+		{
+            model = "332nd_Weapons_Main_Extended";
+            ARF = "Slug_Thrower";
 		};
 	};
 };
