@@ -285,9 +285,8 @@ class CfgWeapons
 		magazines[] = {"332nd_Westar_Mag"};
 		magazineWell[]={};
 		modes[] = {"Single","Burst"};
-		muzzles[] = {"this","3AS_WestarM5_GL_F"};
-		selectionFireAnim = "";
-		class 3AS_WestarM5_GL_F: UGL_F
+		muzzles[] = {"this","332nd_WestarM5_GL"};
+		class 332nd_WestarM5_GL: UGL_F
 		{
 			displayName="[3AS] WestarM5-GL";
 			descriptionShort="GL for the WestarM5 Platform";
