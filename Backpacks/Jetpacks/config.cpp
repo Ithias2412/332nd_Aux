@@ -21,35 +21,19 @@ class CfgVehicles
 		maximumLoad=150;
 		tf_hasLRradio=0;
 		tf_range=25000;
-		BNA_KC_jetpacks_isJetpack = 1;  // Enables jetpack functionality (1-yes, 0-no)
-        BNA_KC_jetpacks_speed = 4;  // Horizontal speed for jetpack, rough formula is speed * 21 = speed in km/h
-        BNA_KC_jetpacks_strength = 15;  // Vertical speed for jetpack, rough formula is (speed - 10) * 4.3 = speed in km/h. Strength of <10 will not be able to fly
-        BNA_KC_jetpacks_fuel = 100;  // Amount of fuel this jetpack has, (fuel / 10) = fuel in liters
-        BNA_KC_jetpacks_canHover = 1;  // Enables jetpack hovering (1-yes, 0-no)
-        BNA_KC_jetpacks_effectPoints[] = {
-            "effect_left",  // Can be mixed
-            {0.15051, -0.219357, -0.247619}
-        };
-        BNA_KC_jetpacks_effects[] = {
-            "BNA_KC_cloudlet_jetpackFire_blue",
-            "BNA_KC_cloudlet_jetpackSmoke"
-        };
-        BNA_KC_jetpacks_effectSound = "\ORA\BNA_KC\addons\jetpacks\data\audio\Jetpack_Loop.wss";
-        BNA_KC_jetpacks_lightColor[] = {0, 0.1, 0.9};  // Light color in format [R, G, B]
-        BNA_KC_jetpacks_freefallHeight = 500;  // Freefall height to set on unit when jetpacking
 		//nsm
 		NSM_jumppack_is_jumppack = 1;
 		NSM_jumppack_spam_delay = 1;
-		NSM_jumppack_energy_capacity = 200;
-		NSM_jumppack_recharge = 5;
+		NSM_jumppack_energy_capacity = 15;
+		NSM_jumppack_recharge = 1;
 		NSM_jumppack_jump_types[] = 
 		{
 			{
-				"Jump",// Name of jump
+				"Jump",		// Name of jump
 				{
-					20,		//forward velo  [meters/second] (0)
-					10,		//verticle velo [meters/second] (1)
-					50,		//cost          [no units]      (2)
+					10,		//forward velo  [meters/second] (0)
+					2,		//verticle velo [meters/second] (1)
+					15,		//cost          [no units]      (2)
 					0,		//angle         [degrees]       (3)
 					1,		//directional   [bool, 0 = false, 1 = true] (4)
 					0		//can prone jump [bool, 0 = false, 1 = true] (5)
@@ -108,9 +92,8 @@ class CfgVehicles
 		{
 			"332nd_Aux\Backpacks\tex\332nd_mc.paa"
 		};
-		displayName="[332nd] Pilot Droppack (LR)";
+		displayName="[332nd] Pilot Desent Pack (LR)";
 		model="\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
-		BNA_KC_jetpacks_fuel = 1;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 		tf_hasLRradio=1;
 		tf_encryptionCode="tf_west_radio_code";
@@ -122,12 +105,12 @@ class CfgVehicles
 			{
 				"Jump",// Name of jump
 				{
-					30,		//forward velo  [meters/second] (0)
-					10,		//verticle velo [meters/second] (1)
-					200,	//cost          [no units]      (2)
+					0,		//forward velo  [meters/second] (0)
+					0,		//verticle velo [meters/second] (1)
+					60,		//cost          [no units]      (2)
 					0,		//angle         [degrees]       (3)
-					1,		//directional   [bool, 0 = false, 1 = true] (4)
-					0		//can prone jump [bool, 0 = false, 1 = true] (5)
+					0,		//directional   [bool, 0 = false, 1 = true] (4)
+					1		//can prone jump [bool, 0 = false, 1 = true] (5)
 				}
 			},
 		};
