@@ -29,7 +29,7 @@ class cfgWeapons
 //Primary
 	class 332nd_CIS_E5C: JLTS_E5C_stock
 	{
-		scope = 2;
+		scope = 1;
 		baseWeapon = "332nd_CIS_E5C";
 		displayName = "[CIS] E-5C";
 		magazines[] = {"332nd_CIS_E5C_Mag"};

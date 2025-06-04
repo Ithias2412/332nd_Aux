@@ -30,7 +30,7 @@ class cfgWeapons
 //Primary
 	class 332nd_CIS_E5: JLTS_E5
 	{
-		scope = 2;
+		scope = 1;
 		displayName = "[CIS] E-5";
 		magazines[] = {"332nd_CIS_E5_Mag"};
 		reloadAction = "3AS_GestureReload_DC17M";
@@ -98,7 +98,7 @@ class cfgWeapons
 	};
 	class 332nd_CIS_E5_Shield: 332nd_CIS_E5
 	{
-		scope = 2;
+		scope = 1;
 		displayName = "[CIS] E-5 (shield)";
 		baseWeapon = "332nd_CIS_E5_Shield";
 		handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\E5\anims\E5_shielded_handanim.rtm"};

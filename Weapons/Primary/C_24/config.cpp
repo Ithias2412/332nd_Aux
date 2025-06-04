@@ -350,6 +350,10 @@ class cfgWeapons
 		picture = "";
 		class ItemInfo: ItemInfo
 		{
+			class MagazineCoef
+			{
+				initSpeed = 1;
+			};
 			class AmmoCoef
 			{
 				airFriction = 1;
@@ -365,7 +369,6 @@ class cfgWeapons
 			{
 				artilleryDispersionCoef = "1.0f";
 				dispersionCoef = "1.0f";
-				//fireLightCoef = "0.5f";
 				fireLightCoef = "0";
 				maxRangeCoef = "1.0f";
 				maxRangeProbabCoef = "1.0f";

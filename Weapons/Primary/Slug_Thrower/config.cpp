@@ -535,18 +535,18 @@ class cfgWeapons
 		picture = "";
 		class ItemInfo: ItemInfo
 		{
+			class MagazineCoef
+			{
+				initSpeed = 1;
+			};
 			class AmmoCoef
 			{
 				airFriction = 1;
-				//audibleFire = 1;
-				//audibleFireTime = 1;
 				audibleFire = 0;
 				audibleFireTime = 0;
 				cost = 1;
 				hit = 1;
 				typicalSpeed = 1;
-				//visibleFire = 1;
-				//visibleFireTime = 1;
 				visibleFire = 0;
 				visibleFireTime = 0;
 			};
@@ -554,7 +554,6 @@ class cfgWeapons
 			{
 				artilleryDispersionCoef = "1.0f";
 				dispersionCoef = "1.0f";
-				//fireLightCoef = "0.5f";
 				fireLightCoef = "0";
 				maxRangeCoef = "1.0f";
 				maxRangeProbabCoef = "1.0f";

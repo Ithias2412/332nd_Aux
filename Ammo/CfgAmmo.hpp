@@ -359,6 +359,15 @@ class CfgAmmo
 		indirectHit= 40;
 		typicalspeed = 200;
 	};
+	class 332nd_Westar_Rifle_Grenade: 332nd_HE_LGrenade
+	{
+		coefGravity = 0.01;
+		deflecting = 0;
+		airFriction = -0.00018;
+		indirectHit= 30;
+		hit=50;
+		typicalspeed = 1000;
+	};
 	class 332nd_UGL_Smoke: smokeshell
 	{
 		model="\A3\weapons_f\Ammo\UGL_slug";

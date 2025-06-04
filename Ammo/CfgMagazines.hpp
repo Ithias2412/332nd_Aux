@@ -167,9 +167,9 @@ class CfgMagazines
 	class 332nd_Westar_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_S2";
-		count = 60;
-		displayname = "Westar 60 Round Energy Cell";
-		mass = 8;
+		count = 45;
+		displayname = "Westar 45 Round Energy Cell";
+		mass = 8.3;
 		scope = 2;
 	}
 	class 332nd_Z6_Mag: 332nd_Base_Mag
@@ -286,6 +286,15 @@ class CfgMagazines
 		mass=12.5;
 		//initSpeed = 80;
 		initSpeed = 200;
+	};
+	class 332nd_Westar_Rifle_Grenade_Mag: 332nd_HE_LGrenade_Mag
+	{
+		ammo="332nd_Westar_Rifle_Grenade";
+		count=1;
+		displayname="Westar Rifle Grenade Charge";
+		mass=6;
+		//initSpeed = 80;
+		initSpeed = 1000;
 	};
 	class 332nd_Smoke_LauncherGrenade: 3Rnd_Smoke_Grenade_shell
 	{

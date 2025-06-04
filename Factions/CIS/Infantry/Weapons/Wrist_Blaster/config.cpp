@@ -29,7 +29,7 @@ class cfgWeapons
 //Primary
 	class 332nd_CIS_Wrist_Blaster: 3AS_DWBlaster_F
 	{
-		scope = 2;
+		scope = 1;
 		baseWeapon = "332nd_CIS_Wrist_Blaster";
 		displayName = "[CIS] Wrist Blaster";
 		magazines[] = {"332nd_CIS_Wrist_Blaster_Mag"};

@@ -122,7 +122,7 @@ class CfgWeapons
 	{
 		cursor = "332nd_Cursor_Block";
 		cursoraim = "332nd_Cursor_Dot";
-		displayName = "[332nd] Westar-M5 GL Rifle";
+		displayName = "[332nd] Westar-M5 GL";
 		magazines[] = {"332nd_Westar_Mag"};
 		magazineWell[]={};
 		class 3AS_WestarM5_GL_F: UGL_F
@@ -260,6 +260,125 @@ class CfgWeapons
 			class SilencedSound: BaseSoundModeType
 			{
 				soundSetShot[] = {"3AS_Plasma_Shot_SoundSet"};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[]=
+				{
+					"332nd_Optic_Scope_WestarM5",
+				};
+			};
+		};
+	};
+	class animationSources;
+	class 332nd_Westar_GL_PLT_WP: 3AS_WestarM5_GL
+	{
+		cursor = "332nd_Cursor_Block";
+		cursoraim = "332nd_Cursor_Dot";
+		displayName = "{Test} [332nd] Westar-M5 GL (GRN)";
+		recoil="3AS_recoil_DC15S";
+		reloadAction = "GestureReload_JLTS_DC15S";
+		magazines[] = {"332nd_Westar_Mag"};
+		magazineWell[]={};
+		modes[] = {"Single","Burst"};
+		class 3AS_WestarM5_GL_F: UGL_F
+		{
+			displayName="[3AS] WestarM5-GL";
+			descriptionShort="GL for the WestarM5 Platform";
+			useModelOptics=0;
+			useExternalOptic=1;
+			magazines[]=
+			{
+				"332nd_Westar_Rifle_Grenade_Mag",
+			};
+			magazineWell[]={};
+			cameraDir = "eye";
+			memoryPointCamera = "eye";
+			reloadAction="GestureReloadMXUGL";
+			selectionFireAnim = "";
+			reloadMagazineSound[]=
+			{
+				"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",
+				1,
+				1,
+				10
+			};
+			class Single: Mode_SemiAuto
+			{
+				maxRange = 400;
+				maxRangeProbab = 0.05;
+				midRange = 200;
+				midRangeProbab = 0.7;
+				minRange = 30;
+				minRangeProbab = 0.1;
+				recoil = "M240Recoil";
+				recoilProne = "M240Recoil";
+				class BaseSoundModeType
+				{};
+				class StandardSound: BaseSoundModeType
+				{
+					begin1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32",1.99526,1,1500};
+					soundBegin[] = {"begin1",1};
+					soundSetShot[] = {"Launcher_MRAWS_Shot_SoundSet","Launcher_MRAWS_Tail_SoundSet"};
+				};
+				class SilencedSound
+				{};
+			/*	class StandardSound: BaseSoundModeType
+				{
+					soundSetShot[] = {"Msbs65_01_Ugl_Shot_SoundSet","Msbs65_01_Ugl_Tail_SoundSet","Msbs65_01_Ugl_InteriorTail_SoundSet"};
+				};
+				class SilencedSound
+				{};	*/
+			};
+		};
+		class Single: Mode_SemiAuto
+		{
+			reloadTime=0.12;
+			dispersion=0.00087;
+			minRange=2;
+			minRangeProbab=0.30000001;
+			midRange=150;
+			midRangeProbab=0.69999999;
+			maxRange=350;
+			maxRangeProbab=0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_Plasma_Shot_SoundSet"};
+			};
+		};
+		class Burst: Mode_Burst
+		{
+			reloadTime=0.06;
+			dispersion=0.00087;
+			minRange=0;
+			minRangeProbab=0.89999998;
+			midRange=15;
+			midRangeProbab=0.69999999;
+			maxRange=30;
+			maxRangeProbab=0.1;
+			soundContinuous = 0;
+			soundBurst = 0;
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {""};
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
