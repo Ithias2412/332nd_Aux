@@ -385,7 +385,7 @@ class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Walkie: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Walkie: 332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -403,7 +403,7 @@ class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Cin: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Cin: 332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -421,7 +421,7 @@ class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Body: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Body: 332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -439,7 +439,7 @@ class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Tokyo: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Tokyo: 332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -452,6 +452,24 @@ class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Tokyo_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+class 332nd_Uniform_Clone_Stryker: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Cherryy";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Stryker)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Stryker_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -1031,6 +1049,23 @@ class 332nd_Uniform_Clone_Tokyo_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Tokyo.paa",
 		};
 	}; 
+class 332nd_Uniform_Clone_Stryker_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Stryker";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Stryker.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stryker.paa",
+		};
+	}; 
 };
 
 class XtdGearModels
@@ -1132,7 +1167,7 @@ class XtdGearModels
 			class Customs
 			{
 				label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo",};
+				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker",};
 				changeingame = 0;
 				alwaysSelectable = 1;
 				class Ithias
@@ -1214,9 +1249,15 @@ class XtdGearModels
 					//image = "xxx";
 				};
 				class Tokyo
-				{
+				{ 
 					label = "Tokyo";
 					description = "VR Chat Enthusiast";
+					//image = "xxx";
+				};
+				class Stryker
+				{
+					label = "Stryker";
+					description = "Ithias's E-Kitten";
 					//image = "xxx";
 				};
 			};
@@ -1354,6 +1395,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Tokyo";
+		};
+		class 332nd_Uniform_Clone_Stryker
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Stryker";
 		};
 	}; 
 };
