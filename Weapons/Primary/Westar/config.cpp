@@ -285,6 +285,8 @@ class CfgWeapons
 		magazines[] = {"332nd_Westar_Mag"};
 		magazineWell[]={};
 		modes[] = {"Single","Burst"};
+		muzzles[] = {"this","3AS_WestarM5_GL_F"};
+		selectionFireAnim = "";
 		class 3AS_WestarM5_GL_F: UGL_F
 		{
 			displayName="[3AS] WestarM5-GL";
@@ -299,7 +301,6 @@ class CfgWeapons
 			cameraDir = "eye";
 			memoryPointCamera = "eye";
 			reloadAction="GestureReloadMXUGL";
-			selectionFireAnim = "";
 			reloadMagazineSound[]=
 			{
 				"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",
