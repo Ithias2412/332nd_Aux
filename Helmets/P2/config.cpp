@@ -302,7 +302,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Lettuce.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Ketamine: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_Ketamine: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Ketamine)";
 		hiddenSelections[]=
@@ -312,6 +312,42 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ketamine.paa"
+		};
+	}; */
+	class 332nd_Helmet_P2_Eclipse: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Eclipse)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Eclipse.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Social: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Social)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Social.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Dovah: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Dovah)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Dovah.paa"
 		};
 	};
 };
@@ -358,7 +394,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo", /* "Walkie", */ "Weaver", "Lettuce", "Ketamine",};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo", /* "Walkie", */ "Weaver", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -479,11 +515,29 @@ class XtdGearModels
 					label = "Lettuce";
 					description = "Makes some banger sandwiches";
 					//image = "xxx";
-				};
+				}; 
 				class Ketamine
 				{
 					label = "Ketamine";
 					description = "Wears the wrong helmet";
+					//image = "xxx";
+				};
+				class Eclipse
+				{
+					label = "Eclipse";
+					description = "Recently got their named abbreviated";
+					//image = "xxx";
+				}; 
+				class Social 
+				{
+					label = "Social";
+					description = "Sev enthuasist";
+					//image = "xxx";
+				};
+				class Dovah
+				{
+					label = "Dovah";
+					description = "Dovah Prime";
 					//image = "xxx";
 				};
             };
@@ -576,11 +630,11 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Shark";
         };
-		class 332nd_Helmet_RTO_Seelig
+		/* class 332nd_Helmet_RTO_Seelig
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Seelig";
-        };
+        }; */
 		class 332nd_Helmet_P2_Sovereign
         {
             model = "332nd_Helmets_P2_Extended";
@@ -616,10 +670,25 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Lettuce";
         };
-		class 332nd_Helmet_P2_Ketamine
+		class 332nd_Helmet_RTO_Ketamine
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ketamine";
+        };
+		class 332nd_Helmet_P2_Eclipse
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Eclipse";
+        };
+		class 332nd_Helmet_P2_Social
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Social";
+        };
+		class 332nd_Helmet_P2_Dovah
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Dovah";
         };
 	};
 };

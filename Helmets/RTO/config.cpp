@@ -71,7 +71,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_RTO_CT.paa"
 		};
 	};
-	class 332nd_Helmet_RTO_Seelig: 332nd_Helmet_RTO_Base
+	/* class 332nd_Helmet_RTO_Seelig: 332nd_Helmet_RTO_Base
 	{
 		displayName="[332nd] P2 Radio Helmet (Seelig)";
 		scope=2;
@@ -83,7 +83,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_RTO_Seelig.paa"
 		};
-	};
+	}; */
 	/* class 332nd_Helmet_RTO_Cin: 332nd_Helmet_RTO_Base
 	{
 		displayName="[332nd] P2 Radio Helmet (Cin)";
@@ -108,6 +108,19 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_RTO_Joker.paa"
+		};
+	};
+	class 332nd_Helmet_RTO_Ketamine: 332nd_Helmet_RTO_Base
+	{
+		displayName="[332nd] P2 Radio Helmet (Ketamine)";
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_RTO_Ketamine.paa"
 		};
 	};
 //Customs
