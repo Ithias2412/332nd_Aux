@@ -100,6 +100,8 @@ class CfgVehicles
 		tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
         tf_subtype="digital_lr";
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel";
+		NSM_jumppack_energy_capacity = 60;
+		NSM_jumppack_recharge = 1;
 		NSM_jumppack_jump_types[] = 
 		{
 			{
