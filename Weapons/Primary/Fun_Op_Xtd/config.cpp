@@ -21,26 +21,7 @@ class XtdGearModels
         {
             label = "Fun Ops";
             author = "Ithias";
-			options[] = { "Westar", "DLT",};
-            class Westar
-            {
-                label = "Westar";
-				values[] = { "RFL", "GRN",};
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class RFL
-                {
-                    label = "RFL";
-                    description = "With Zeus Approval";
-                    //image = "xxx";
-                };
-				class GRN
-                {
-                    label = "GRN";
-                    description = "With Zeus Approval";
-                    //image = "xxx";
-                };
-            };
+			options[] = {"DLT",};
             class DLT
             {
                 label = "DLT";
@@ -62,16 +43,6 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Westar
-        {
-            model = "332nd_Weapons_Fun_Ops_Extended";
-            Westar = "RFL";
-        };
-        class 332nd_Westar_GL
-        {
-            model = "332nd_Weapons_Fun_Ops_Extended";
-            Westar = "GRN";
-        };
         class 332nd_DLT19X
         {
             model = "332nd_Weapons_Fun_Ops_Extended";

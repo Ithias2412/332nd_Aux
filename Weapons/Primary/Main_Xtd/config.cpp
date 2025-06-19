@@ -144,7 +144,7 @@ class XtdGearModels
             class PlatoonAssets
             {
                 label = "Platoon Assets (Ask SL)";
-				values[] = { "DC_15S_Shield", "DC_15X", "DLT_15", "EPL_2", };
+				values[] = { "DC_15S_Shield", "DC_15X", "DLT_15", "EPL_2", "Westar",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class DC_15S_Shield
@@ -171,6 +171,12 @@ class XtdGearModels
                     description = "(GRN) Propelled Grenade Launcher";
                     //image = "xxx";
                 };
+				class Westar
+				{
+                    label = "Westar";
+                    description = "(GRN) Equipped With Rifle Grenades";
+                    //image = "xxx";
+				};
             };
             class Material
             {
@@ -315,6 +321,11 @@ class XtdGearInfos
 		{
             model = "332nd_Weapons_Main_Extended";
             PlatoonAssets = "EPL_2";
+		};
+		class 332nd_Westar
+		{
+            model = "332nd_Weapons_Main_Extended";
+            PlatoonAssets = "Westar";
 		};
 		class 332nd_Slug_Thrower
 		{
