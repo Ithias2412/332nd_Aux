@@ -104,7 +104,7 @@ class CfgWeapons
 			uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
 		};
 	};
-	class 332nd_NVG_Visor_Asuka: 332nd_NVG_Visor
+	/* class 332nd_NVG_Visor_Asuka: 332nd_NVG_Visor
 	{
 		displayName = "[332nd] Visor (Asuka)";
 		hiddenSelections[] = 
@@ -116,7 +116,7 @@ class CfgWeapons
 		{
 			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa" 
 		};
-	};
+	}; */
 	class 332nd_NVG_Visor_Cherryy: 332nd_NVG_Visor
 	{
 		displayName = "[332nd] Visor (Cherryy)";
@@ -221,7 +221,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa"};
 	};
-	class 332nd_Facewear_Visor_Asuka: 332nd_Facewear_Visor
+	/* class 332nd_Facewear_Visor_Asuka: 332nd_Facewear_Visor
 	{
 		scope = 2;
 		displayName = "[332nd] Visor (On / Asuka)";
@@ -234,7 +234,7 @@ class CfgGlasses
 		displayName = "[332nd] Visor (Off / Asuka)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa"};
-	};
+	}; */
 	class 332nd_Facewear_XO_Ithias :332nd_Facewear_Base
 	{
 		scope = 2;
@@ -243,6 +243,27 @@ class CfgGlasses
 		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_Ithias.paa"};
 		model = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+	};
+	class 332nd_Asuka_Chops_Facewear :332nd_Facewear_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		author="Cherryy";
+		displayName="Asuka ARF Flaps";
+		model="\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Chops_Asuka.paa",
+			""
+		};
 	};
 //White
 	class 332nd_Facewear_XO_White :332nd_Facewear_Base
@@ -314,19 +335,13 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Cherryy", "Asuka",};
+				values[] = { "Cherryy",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
                 {
                     label = "Cherryy";
                     //description = "Default";
-                    //image = "xxx";
-                };
-				class Asuka
-                {
-                    label = "Asuka";
-                    //description = "SCT+";
                     //image = "xxx";
                 };
             };
@@ -519,13 +534,7 @@ class XtdGearInfos
             Customs = "Cherryy";
             Variant = "A";
         };
-        class 332nd_Facewear_Visor_Asuka
-        {
-            model = "332nd_Facewear_Extended";
-            Customs = "Asuka";
-            Variant = "B";
-        };
-        class 332nd_Facewear_Visor_Asuka_Off
+        class 332nd_Asuka_Chops_Facewear
         {
             model = "332nd_Facewear_Extended";
             Customs = "Asuka";
