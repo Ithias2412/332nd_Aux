@@ -1,6 +1,6 @@
 class CfgPatches 
 {
-	class 332nd_Backpacks 
+	class 332nd_Backpacks_Marine
 	{
 		units[] = 
         {
