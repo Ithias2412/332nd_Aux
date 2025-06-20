@@ -39,7 +39,7 @@ class cfgWeapons
 
 	class 332nd_reconnaissance_Camping_Kit: 332nd_Droid_Voice_Modulator
 	{
-		displayName="[332nd] reconnaissance Camping Kit";
+		displayName="[332nd] Reconnaissance Camping Kit";
 		descriptionShort = "All the supplies needed to stay overnight in an AO";
 		model = "\MRC\JLTS\weapons\Core\repairkit_mini.p3d";
 		picture = "\MRC\JLTS\weapons\Core\data\ui\repairkit_mini_ui_ca.paa";
