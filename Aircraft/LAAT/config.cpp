@@ -13,6 +13,7 @@ class CfgPatches
 		units[] = 
         {
 			"332nd_LAAT",
+			"332nd_3AS_LAAT_I",
         };
 		weapons[] = 
         {
@@ -38,6 +39,18 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 {
 	class components;
 };
+
+class Extended_init_EventHandlers
+{
+	class 332nd_3AS_LAAT_I
+	{
+		class laat_init_eh
+		{
+			init="if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle; }; (_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";
+		};
+	};
+};
+
 
 class CfgVehicles 
 {
@@ -719,5 +732,507 @@ class CfgVehicles
 		};
 	};
 	
-
+	class 3AS_LAAT_Base;
+	class 3AS_LAAT_Mk1: 3AS_LAAT_Base
+	{
+		class Components;
+		class ACE_SelfActions;
+	};
+	class 332nd_3AS_LAAT_I: 3AS_LAAT_Mk1
+	{
+		faction="332nd_Faction"; // Changed from LS_GAR
+		displayname="[332nd] LAAT/i (3AS)"; // Changed from "LAAT/i Gunship (Pylons)"
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 300;
+		ls_impulsor_boostSpeed_2 = 600;
+		ls_impulsor_fuelDrain_1=0.00005; 
+		ls_impulsor_fuelDrain_2=0.00010; 
+	//	smokeLauncherGrenadeCount = 16;	// Number of smoke grenades
+	//	smokeLauncherVelocity = 15;		// Ejection velocity
+	//	smokeLauncherOnTurret = 1;		// Not tied to a turret
+	//	smokeLauncherAngle = 360;		// Coverage angle
+	/*	class HitPoints: HitPoints
+		{
+			class HitAvionics
+			{
+				armor=5; // was 1
+				convexComponent="avionics_hit";
+				explosionShielding=2;
+				material=51;
+				name="avionics_hit";
+				passThrough=1;
+				visual="";
+				radius=0.5;
+			};
+		};	*/
+		class ace_cargo 
+		{
+			class cargo 
+			{
+				class 332nd_Ammo_Crate 
+				{ 
+					type = "332nd_Ammo_Crate";
+					amount = 2;
+				};
+				class 332nd_Medical_Crate 
+				{ 
+					type = "332nd_Medical_Crate";
+					amount = 2;
+				};
+				class 332nd_Equipment_Crate 
+				{ 
+					type = "332nd_Equipment_Crate";
+					amount = 2;
+				};
+			};
+		};
+		weapons[]= 
+		{
+			"3as_LAAT_Medium_Canon",
+			"ls_laat_DAR",
+			"CMFlareLauncher",
+		//	"SmokeLauncher",
+		};
+		magazines[]= // changed from "200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"
+		{
+			"3as_LAAT_1000Rnd_Medium_shells",
+			"3as_LAAT_1000Rnd_Medium_shells",
+			"3as_LAAT_1000Rnd_Medium_shells",
+			"3as_LAAT_1000Rnd_Medium_shells",
+			"12rnd_missiles",
+			"12rnd_missiles",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+		//	"SmokeLauncherMag",
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class activeRadarSenorComponent
+					{
+						aimDown=30;
+						allowsMarking=1;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						animDirection="";
+						color[]={0,1,1,1};
+						componentType="ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						maxSpeedThreshold=1000; // changed from 0
+						maxTrackableATL=1e+010;
+						maxTrackableSpeed=1e+010; //was 125
+						minSpeedThreshold=0;
+						minTrackableATL=-1e+010;
+						minTrackableSpeed=-1e+010;
+						typeRecognitionDistance=3000;
+						class AirTarget
+						{
+							minRange=10000;
+							maxRange=10000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=10000;
+							maxRange=10000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+					};
+					class AntiRadiationSensorComponent
+					{
+						aimDown=0;
+						allowsMarking=1;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						animDirection="";
+						color[]={0.5,1,0.5,0.5};
+						componentType="PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						maxSpeedThreshold=0;
+						maxTrackableATL=1e+010;
+						maxTrackableSpeed=1e+010;
+						minSpeedThreshold=0;
+						minTrackableATL=-1e+010;
+						minTrackableSpeed=-1e+010;
+						typeRecognitionDistance=12000;
+						class AirTarget
+						{
+							maxRange=6000;
+							minRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							maxRange=6000;
+							minRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+					};
+					class IRSensorComponent
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=6000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						maxTrackableSpeed=100;
+						aimDown=0;
+						allowsMarking=1;
+						animDirection="";
+						color[]={1,0,0,1};
+						componentType="IRSensorComponent";
+						groundNoiseDistanceCoef=-1;
+						maxFogSeeThrough=0.995;
+						maxGroundNoiseDistance=-1;
+						maxSpeedThreshold=0;
+						maxTrackableATL=1e+010;
+						minSpeedThreshold=0;
+						minTrackableATL=-1e+010;
+						minTrackableSpeed=-1e+010;
+						typeRecognitionDistance=2000;
+					};
+					class VisualSensorComponent
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=6000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						maxTrackableSpeed=1000; //was 100
+						aimDown=0;
+						animDirection="";
+						allowsMarking=1;
+						color[]={1,1,0.5,0.80000001};
+						componentType="VisualSensorComponent";
+						groundNoiseDistanceCoef=-1;
+						maxFogSeeThrough=0.94;
+						maxGroundNoiseDistance=-1;
+						maxSpeedThreshold=0;
+						maxTrackableATL=1e+010;
+						minSpeedThreshold=0;
+						minTrackableATL=-1e+010;
+						minTrackableSpeed=-1e+010;
+						nightRangeCoef=0;
+						typeRecognitionDistance=2000;
+					};
+					class PassiveRadarSensorComponent
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						aimDown=0;
+						allowsMarking=0;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						animDirection="";
+						color[]={0.5,1,0.5,0.5};
+						componentType="PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						maxSpeedThreshold=0;
+						maxTrackableATL=1e+010;
+						maxTrackableSpeed=1e+010;
+						minSpeedThreshold=0;
+						minTrackableATL=-1e+010;
+						minTrackableSpeed=-1e+010;
+						typeRecognitionDistance=12000;
+					};
+					class LaserSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange=6000;
+							minRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							maxRange=6000;
+							minRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						aimDown=0;
+						allowsMarking=1;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						animDirection="";
+						color[]={1,1,1,0};
+						componentType="LaserSensorComponent";
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						maxSpeedThreshold=0;
+						maxTrackableATL=1e+010;
+						maxTrackableSpeed=1e+010;
+						minSpeedThreshold=0;
+						minTrackableATL=-1e+010;
+						minTrackableSpeed=-1e+010;
+						typeRecognitionDistance=0;
+					};
+					class NVSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange=6000;
+							minRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							maxRange=6000;
+							minRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						aimDown=0;
+						allowsMarking=1;
+						angleRangeHorizontal=180;
+						angleRangeVertical=180;
+						animDirection="";
+						color[]={1,1,1,0};
+						componentType="NVSensorComponent";
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						maxSpeedThreshold=0;
+						maxTrackableATL=1e+010;
+						maxTrackableSpeed=1e+010;
+						minSpeedThreshold=0;
+						minTrackableATL=-1e+010;
+						minTrackableSpeed=-1e+010;
+						typeRecognitionDistance=0;
+					};
+				};
+			};
+			class TransportPylonsComponent
+			{
+				uiPicture="lsd_vehicles_heli\laati\data\ui\laat_icon.paa";
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment="332nd_Hammer_I_Mag";
+						priority=5;
+						hardpoints[]=
+						{
+							"332nd_Hammer_I",
+							"332nd_Anvil_I",
+							"332nd_Anvil_III",
+						};
+						turret[]={0};
+						UIposition[]={0.059999999,0.40000001};
+					};
+					class PylonLeft2: PylonLeft1
+					{
+						attachment="332nd_Anvil_III_Mag";
+						priority=4;
+						hardpoints[]=
+						{
+							"332nd_Hammer_I",
+							"332nd_Anvil_I",
+							"332nd_Anvil_III",
+						};
+						turret[]={0};
+						UIposition[]={0.079999998,0.34999999};
+					};
+					class PylonLeft3: PylonLeft1
+					{
+						attachment="332nd_Anvil_I_Mag";
+						priority=3;
+						hardpoints[]=
+						{
+							"332nd_Hammer_I",
+							"332nd_Anvil_I",
+							"332nd_Anvil_III",
+							"332nd_Dropcrate_PW1",
+						};
+						turret[]={0};
+						UIposition[]={0.1,0.30000001};
+					};
+					class PylonRight3: PylonLeft3
+					{
+						mirroredMissilePos=3;
+						UIposition[]={0.58999997,0.30000001};
+					};
+					class PylonRight2: PylonLeft2
+					{
+						mirroredMissilePos=2;
+						UIposition[]={0.62,0.34999999};
+					};
+					class PylonRight1: PylonLeft1
+					{
+						mirroredMissilePos=1;
+						UIposition[]={0.63999999,0.40000001};
+					};
+				};
+				class Presets
+				{
+					class Empty
+					{
+						displayName="Empty";
+						attachment[]={};
+					};
+					class Default
+					{
+						displayName="Default";
+						attachment[]=
+						{
+							"332nd_Hammer_I_Mag",
+							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_III_Mag",
+							"332nd_Hammer_I_Mag",
+						};
+					};
+					class AT
+					{
+						displayName="CAS";
+						attachment[]=
+						{
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_I_Mag",
+							"332nd_Anvil_I_Mag"
+						};
+					};
+					class CAP
+					{
+						displayName="CAP";
+						attachment[]=
+						{
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag",
+							"332nd_Hammer_I_Mag"
+						};
+					};
+				};
+			};
+		};
+		class UserActions
+		{
+			class impulse
+			{
+				displayName="Impulse";
+				position="pilotview";
+				radius=5;
+				onlyforplayer=0;
+				shortcut="User19";
+				condition="isEngineOn this and ls_player == currentPilot this and isTouchingGround this";
+				statement="this call ls_vehicle_fnc_ImpulseJoystick;";
+			};
+			class repulse: impulse
+			{
+				displayName="Repulse";
+				shortcut="User20";
+				statement="this call ls_vehicle_fnc_RepulseJoystick;";
+			};
+			class rampClose
+			{
+				available = 0;
+				condition = "(player == driver this) AND (this animationphase 'ramp' ==1)";
+				displayName = "Ramp Close";
+				onlyforplayer = 0;
+				position = "pilotview";
+				radius = 9;
+				showWindow = 0;
+				statement = "this animateSource ['ramp',0,1];";
+			};
+			class rampClose
+			{
+				available = 0;
+				condition = "(player == driver this) AND (this animationphase 'ramp' ==0)";
+				displayName = "Ramp Open";
+				onlyforplayer = 0;
+				position = "pilotview";
+				radius = 9;
+				showWindow = 0;
+				statement = "this animateSource ['ramp',1,1];";
+			};
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class TFAR_IntercomChannel
+			{
+				condition = "true";
+				displayName = "Intercom Channel";
+				icon = "";
+				statement = "";
+				class TFAR_IntercomChannel_1
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					displayName = "Infantry";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					displayName = "Crew";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_3
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					displayName = "Command";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_disabled
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					displayName = "Disabled";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+			};
+		};
+	};
 };

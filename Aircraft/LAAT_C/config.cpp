@@ -15,6 +15,17 @@ class CfgPatches
 	};
 };
 
+class Extended_init_EventHandlers
+{
+	class 332nd_3AS_LAAT_C
+	{
+		class laat_init_eh
+		{
+			init="if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle; }; (_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";
+		};
+	};
+};
+
 class CfgVehicles
 {
 	class lsd_heli_laatc;
@@ -99,19 +110,19 @@ class CfgVehicles
 		{
 			class impulse
 			{
-				condition = "isEngineOn this and ls_player == currentPilot this and isTouchingGround this";
-				displayName = "Impulse";
-				onlyforplayer = 0;
-				position = "pilotview";
-				radius = 6;
-				shortcut = "User19";
-				statement = "this call ls_vehicle_fnc_ImpulseJoystick;";
+				displayName="Impulse";
+				position="pilotview";
+				radius=5;
+				onlyforplayer=0;
+				shortcut="User19";
+				condition="isEngineOn this and ls_player == currentPilot this and isTouchingGround this";
+				statement="this call ls_vehicle_fnc_ImpulseJoystick;";
 			};
 			class repulse: impulse
 			{
-				displayName = "Repulse";
-				shortcut = "User20";
-				statement = "this call ls_vehicle_fnc_RepulseJoystick;";
+				displayName="Repulse";
+				shortcut="User20";
+				statement="this call ls_vehicle_fnc_RepulseJoystick;";
 			};
 			class LoadCargo
 			{
