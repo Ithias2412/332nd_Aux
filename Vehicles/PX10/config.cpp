@@ -6,6 +6,7 @@ class CfgPatches
 		units[] = 
 		{
 			"332nd_PX10_F",
+			"332nd_PX10_R3_F",
 		};
 		weapons[] = {};
 	};
@@ -108,6 +109,19 @@ class CfgVehicles
 				weapons[] = {"332nd_PX10_Repeater","SmokeLauncher"};
 			};
 		};
+	};
+
+	class 332nd_PX10_R3_F: 332nd_PX10_F
+	{
+		ace_rearm_defaultSupply = 1200;
+		//transportAmmo = 1e+12;
+		ace_refuel_fuelCargo = 10000;
+		ace_refuel_hooks[] = {{0.5,-3,-0.5},{-0.4,-3,-0.75}}; 
+		//transportFuel = 1e+12;
+		ace_repair_canRepair = 1;
+		//transportRepair = 1e+12; 
+		animationList[] = {"HideAttachmentDozer",0,"HideAttachmentFuel",0,"HideAttachmentPlate",1,"HideAttachmentRepair",0};
+		displayname="[332nd] PX-10 APC (Repair)";
 	};
 };
 

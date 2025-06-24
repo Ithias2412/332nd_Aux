@@ -228,7 +228,7 @@ class CfgAmmo
 	};
 	class 332nd_Scattershot_S1_Sub: 332nd_Base_Ammo_IDA
 	{
-		hit = 6;
+		hit = 10;
 	};
 	class 332nd_Condensedshot_S1: 332nd_Base_Ammo_IDA
 	{
