@@ -372,6 +372,7 @@ class cfgWeapons
 		reloadAction = "GestureReload_JLTS_DC15S";
 		baseWeapon = "332nd_Slug_Thrower";
 		scope=2;
+		weaponInfoType="RscOptics_nightstalker";
 		class OpticsModes
 		{
 			class optic

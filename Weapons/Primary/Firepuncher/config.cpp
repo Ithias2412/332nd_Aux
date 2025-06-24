@@ -6,7 +6,7 @@ class CfgPatches {
         };
 		weapons[] = 
         {
-            "332nd_Valken",
+            "332nd_Firepuncher",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
