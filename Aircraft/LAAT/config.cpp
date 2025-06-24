@@ -772,6 +772,14 @@ class CfgVehicles
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
 	//	smokeLauncherAngle = 360;		// Coverage angle
+		hiddenselectionstextures[]=
+		{
+			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
+			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+			"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
+			"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
+			"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+		};
 		class ace_cargo 
 		{
 			class cargo 
@@ -1206,6 +1214,49 @@ class CfgVehicles
 				showWindow = 0;
 				statement = "this animateSource ['ramp',1,1];";
 			};
+		};
+		class TextureSources
+		{
+			class 332nd_3AS_Base_tex
+			{
+				displayname="332nd Base";
+				author="Cherryy";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
+			class 332nd_3AS_Base_Test
+			{
+				displayname="332nd Base Test";
+				author="Cherryy";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
+		};
+		textureList[]=
+		{
+			"332nd_3AS_Base_tex",
+			"332nd_3AS_Base_Test",
+			1,
 		};
 		class ACE_SelfActions: ACE_SelfActions
 		{
@@ -1240,6 +1291,43 @@ class CfgVehicles
 					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
 				};
 			};
+			class Style_Changer
+			{
+				displayName="Change Camo";
+				exceptions[]=
+				{
+					"isNotInside",
+					"isNotSwimming",
+					"isNotSitting"
+				};
+				condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled=0;
+				priority=2;
+				class DefaultSkin
+				{
+					displayName="332nd Base Skin";
+					exceptions[]=
+					{
+						"isNotInside",
+						"isNotSwimming",
+						"isNotSitting"
+					};
+					condition="!(isNull objectParent player)";
+					statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+					showDisabled=0;
+					runOnHover=0;
+					priority=2.5;
+				};
+				 class 332nd_Skins
+				{
+					displayname="332nd Custom Skins";
+					class 332nd_3AS_Base_Test: DefaultSkin
+					{
+						displayName="332nd Test";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+					};
+				}; 
+			};
 		};
 	};
 	class 332nd_LAAT_Ball: 3AS_LAAT_Mk1
@@ -1255,6 +1343,14 @@ class CfgVehicles
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
 	//	smokeLauncherAngle = 360;		// Coverage angle
+	hiddenselectionstextures[]=
+		{
+			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
+			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+			"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
+			"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
+			"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+		};
 		class ace_cargo 
 		{
 			class cargo 
@@ -1688,6 +1784,120 @@ class CfgVehicles
 				radius = 9;
 				showWindow = 0;
 				statement = "this animateSource ['ramp',1,1];";
+			};
+		};
+		class TextureSources
+		{
+			class 332nd_3AS_Base_tex
+			{
+				displayname="332nd Base";
+				author="Cherryy";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
+			class 332nd_3AS_Base_Test
+			{
+				displayname="332nd Base Test";
+				author="Cherryy";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
+		};
+		textureList[]=
+		{
+			"332nd_3AS_Base_tex",
+			"332nd_3AS_Base_Test",
+			1,
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class TFAR_IntercomChannel
+			{
+				condition = "true";
+				displayName = "Intercom Channel";
+				icon = "";
+				statement = "";
+				class TFAR_IntercomChannel_1
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					displayName = "Infantry";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					displayName = "Crew";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_3
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					displayName = "Command";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_disabled
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					displayName = "Disabled";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+			};
+			class Style_Changer
+			{
+				displayName="Change Camo";
+				exceptions[]=
+				{
+					"isNotInside",
+					"isNotSwimming",
+					"isNotSitting"
+				};
+				condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled=0;
+				priority=2;
+				class DefaultSkin
+				{
+					displayName="332nd Base Skin";
+					exceptions[]=
+					{
+						"isNotInside",
+						"isNotSwimming",
+						"isNotSitting"
+					};
+					condition="!(isNull objectParent player)";
+					statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+					showDisabled=0;
+					runOnHover=0;
+					priority=2.5;
+				};
+				 class 332nd_Skins
+				{
+					displayname="332nd Custom Skins";
+					class 332nd_3AS_Base_Test: DefaultSkin
+					{
+						displayName="332nd Test";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+					};
+				}; 
 			};
 		};
 		class ACE_SelfActions: ACE_SelfActions
