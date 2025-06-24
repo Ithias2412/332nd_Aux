@@ -1318,7 +1318,7 @@ class CfgVehicles
 					runOnHover=0;
 					priority=2.5;
 				};
-				 class 332nd_Skins
+				/*  class 332nd_Skins
 				{
 					displayname="332nd Custom Skins";
 					class 332nd_3AS_Base_Test: DefaultSkin
@@ -1326,7 +1326,7 @@ class CfgVehicles
 						displayName="332nd Test";
 						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
 					};
-				}; 
+				};  */
 			};
 		};
 	};
@@ -1889,7 +1889,7 @@ class CfgVehicles
 					runOnHover=0;
 					priority=2.5;
 				};
-				 class 332nd_Skins
+				/*  class 332nd_Skins
 				{
 					displayname="332nd Custom Skins";
 					class 332nd_3AS_Base_Test: DefaultSkin
@@ -1897,41 +1897,7 @@ class CfgVehicles
 						displayName="332nd Test";
 						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
 					};
-				}; 
-			};
-		};
-		class ACE_SelfActions: ACE_SelfActions
-		{
-			class TFAR_IntercomChannel
-			{
-				condition = "true";
-				displayName = "Intercom Channel";
-				icon = "";
-				statement = "";
-				class TFAR_IntercomChannel_1
-				{
-					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
-					displayName = "Infantry";
-					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
-				};
-				class TFAR_IntercomChannel_2
-				{
-					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
-					displayName = "Crew";
-					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
-				};
-				class TFAR_IntercomChannel_3
-				{
-					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
-					displayName = "Command";
-					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
-				};
-				class TFAR_IntercomChannel_disabled
-				{
-					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
-					displayName = "Disabled";
-					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
-				};
+				}; */ 
 			};
 		};
 	};
