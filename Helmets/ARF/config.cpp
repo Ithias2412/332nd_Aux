@@ -167,7 +167,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Cin.paa",
 		};
 	};
-	class 332nd_Helmet_ARF_Walkie: 332nd_Helmet_ARF_Base
+	/* class 332nd_Helmet_ARF_Walkie: 332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Walkie)";
 		hiddenSelections[]=
@@ -181,7 +181,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Walkie.paa",
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Walkie.paa",
 		};
-	};
+	}; */
 	class 332nd_Helmet_ARF_Trick: 332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Trick)";
@@ -270,7 +270,7 @@ class XtdGearModels
 			class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Cin", "Walkie", "Trick", "Stryker",};
+				values[] = { "Asuka", "Cin", /* "Walkie", */ "Trick", "Stryker",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -285,12 +285,12 @@ class XtdGearModels
                     description = "Where's the 9 Line";
                     //image = "xxx";
                 };
-				class Walkie
+				/* class Walkie
                 {
                     label = "Walkie";
                     description = "Whispers drugs into my system";
                     //image = "xxx";
-                };
+                }; */
 				class Trick
                 {
                     label = "Trick";
@@ -348,11 +348,11 @@ class XtdGearInfos
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Cin";
         };
-		 class 332nd_Helmet_ARF_Walkie
+		/*  class 332nd_Helmet_ARF_Walkie
         {
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Walkie";
-        };
+        }; */
 		 class 332nd_Helmet_ARF_Trick
         {
             model = "332nd_Helmets_ARF_Extended";

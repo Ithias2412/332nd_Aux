@@ -266,7 +266,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Tokyo.paa"
 		};
 	};
-	/* class 332nd_Helmet_P2_Walkie: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Walkie: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Walkie)";
 		hiddenSelections[]=
@@ -277,7 +277,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Walkie.paa"
 		};
-	}; */
+	}; 
 	class 332nd_Helmet_P2_Weaver: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Weaver)";
@@ -394,7 +394,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo", /* "Walkie", */ "Weaver", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah",};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", */ "Weaver", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -498,12 +498,12 @@ class XtdGearModels
 					description = "VR Gamer";
 					//image = "xxx";
 				};
-				/* class Walkie
+				class Walkie
 				{
 					label = "Walkie";
 					description = "Whispers drugs into my system";
 					//image = "xxx";
-				}; */
+				}; 
 				class Weaver
 				{
 					label = "Weaver";
@@ -655,11 +655,11 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Tokyo";
         };
-		/* class 332nd_Helmet_P2_Walkie
+		class 332nd_Helmet_P2_Walkie
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Walkie";
-        }; */
+        }; 
 		class 332nd_Helmet_P2_Weaver
         {
             model = "332nd_Helmets_P2_Extended";

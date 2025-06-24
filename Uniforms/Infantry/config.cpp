@@ -475,6 +475,42 @@ class 332nd_Uniform_Clone_Stryker: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
+class 332nd_Uniform_Clone_Dovah: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Cherryy";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Dovah)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Dovah_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+class 332nd_Uniform_Clone_Shark: 332nd_Uniform_Clone_CR 
+	{
+		dlc="332nd";
+		author="Cherryy";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (Shark)";
+		//displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Shark_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1066,6 +1102,40 @@ class 332nd_Uniform_Clone_Stryker_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stryker.paa",
 		};
 	}; 
+class 332nd_Uniform_Clone_Dovah_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Dovah";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Dovah.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO.paa",
+		};
+	}; 
+class 332nd_Uniform_Clone_Shark_Veh: 332nd_Uniform_Clone_CT_Veh 
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Shark";
+		model="\SWLB_clones\SWLB_clone_uniform.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shark.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shark.paa",
+		};
+	}; 
 };
 
 class XtdGearModels
@@ -1167,7 +1237,7 @@ class XtdGearModels
 			class Customs
 			{
 				label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker",};
+				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker", "Dovah", "Shark",};
 				changeingame = 0;
 				alwaysSelectable = 1;
 				class Ithias
@@ -1258,6 +1328,18 @@ class XtdGearModels
 				{
 					label = "Stryker";
 					description = "Ithias's E-Kitten";
+					//image = "xxx";
+				};
+				class Dovah
+				{
+					label = "Dovah";
+					description = "Proffesional Achoholic";
+					//image = "xxx";
+				};
+				class Shark
+				{
+					label = "Shark";
+					description = "Resident Suicide Squad";
 					//image = "xxx";
 				};
 			};
@@ -1400,6 +1482,16 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Stryker";
+		};
+		class 332nd_Uniform_Clone_Dovah
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Dovah";
+		};
+		class 332nd_Uniform_Clone_Shark
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Shark";
 		};
 	}; 
 };
