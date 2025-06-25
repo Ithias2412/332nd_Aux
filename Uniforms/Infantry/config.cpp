@@ -241,19 +241,19 @@ class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
 		};
 	};
 
-class 332nd_Uniform_Clone_Weaver: 332nd_Uniform_Clone_CR
+class 332nd_Uniform_Clone_Ghost: 332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
 		scope=2;
 		displayName="[332nd] Clone Trooper Armor (Custom)";
-		//displayName="[332nd] Clone Trooper Armor (Weaver)";
+		//displayName="[332nd] Clone Trooper Armor (Ghost)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Weaver_Veh";
+			uniformClass="332nd_Uniform_Clone_Ghost_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -265,7 +265,7 @@ class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
 		author="Ithias";
 		scope=2;
 		displayName="[332nd] Clone Trooper Armor (Custom)";
-		//displayName="[332nd] Clone Trooper Armor (Weaver)";
+		//displayName="[332nd] Clone Trooper Armor (Ghost)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 		model="\SWLB_groundholders\SWLB_clone_uniform_gh.p3d";
 		class ItemInfo: UniformItem
@@ -881,10 +881,10 @@ class 332nd_Uniform_Clone_Cherryy_Veh: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-class 332nd_Uniform_Clone_Weaver_Veh: 332nd_Uniform_Clone_CT_Veh
+class 332nd_Uniform_Clone_Ghost_Veh: 332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
-		uniformClass="332nd_Uniform_Clone_Weaver";
+		uniformClass="332nd_Uniform_Clone_Ghost";
 		model="\SWLB_clones\SWLB_clone_uniform.p3d";
 		hiddenSelections[]=
 		{
@@ -1237,7 +1237,7 @@ class XtdGearModels
 			class Customs
 			{
 				label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Weaver", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker", "Dovah", "Shark",};
+				values[] = { "Ithias", "Cherryy", "Crow", "Ghost", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker", "Dovah", "Shark",};
 				changeingame = 0;
 				alwaysSelectable = 1;
 				class Ithias
@@ -1258,9 +1258,9 @@ class XtdGearModels
 					description = "On a List Somewhere";
 					//image = "xxx";
 				};
-				class Weaver
+				class Ghost
 				{
-					label = "Weaver";
+					label = "Ghost";
 					description = "IDA Enjoyer";
 					//image = "xxx";
 				};
@@ -1423,10 +1423,10 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Customs = "Crow";
 		}; 
-		class 332nd_Uniform_Clone_Weaver
+		class 332nd_Uniform_Clone_Ghost
 		{
 			model = "332nd_Uniform_Extended";
-			Customs = "Weaver";
+			Customs = "Ghost";
 		};
 		class 332nd_Uniform_Clone_Asuka
 		{

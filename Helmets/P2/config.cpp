@@ -278,9 +278,9 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Walkie.paa"
 		};
 	}; 
-	class 332nd_Helmet_P2_Weaver: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Ghost: 332nd_Helmet_P2_CR
 	{
-		displayName="[332nd] P2 Helmet (Weaver)";
+		displayName="[332nd] P2 Helmet (Ghost)";
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -394,7 +394,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", */ "Weaver", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah",};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -468,12 +468,12 @@ class XtdGearModels
 					description = "50/50 RPS-6 Hit Chance";
 					//image = "xxx";
 				};	
-				class Seelig
+				/* class Seelig
                 {
                     label = "Seelig";
                     description = "Flight 5342 Pilot";
                     //image = "xxx";
-                };
+                }; */
 				class Sovereign
 				{
 					label = "Sovereign";
@@ -504,9 +504,9 @@ class XtdGearModels
 					description = "Whispers drugs into my system";
 					//image = "xxx";
 				}; 
-				class Weaver
+				class Ghost
 				{
-					label = "Weaver";
+					label = "Ghost";
 					description = "Sleeps on the Sofa (Wife is angry)";
 					//image = "xxx";
 				};
@@ -660,10 +660,10 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Walkie";
         }; 
-		class 332nd_Helmet_P2_Weaver
+		class 332nd_Helmet_P2_Ghost
         {
             model = "332nd_Helmets_P2_Extended";
-            Customs = "Weaver";
+            Customs = "Ghost";
         };
 		class 332nd_Helmet_P2_Lettuce
         {
