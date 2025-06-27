@@ -17,7 +17,13 @@ class CfgPatches
 	};
 };
 //#include "xtdGear.hpp"
-
+class CfgEditorCategories
+{
+	class 332nd_Crates
+	{
+		displayname="[332nd] Crates";
+	};
+};
 class CfgVehicles 
 {
 	class 3AS_Supply_Large_Prop;
@@ -32,7 +38,8 @@ class CfgVehicles
 		model="3as\3as_props\crates\models\supply_Large.p3d";
 		displayName="[332nd] Supply Crate (Ammo)";
 		//editorCategory="332nd_EditorCategory";
-		editorSubcategory="3AS_EditorSubcategory_Crates";
+		editorCategory="332nd_Crates";
+		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
 		editorPreview="\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Ammo_Prop.jpg";
 		hiddenSelections[]=
 		{
@@ -139,6 +146,11 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_SmokePurple_LauncherGrenade";
 			};
+			class 332nd_Westar_Rifle_Grenade
+			{
+				count = 25;
+				magazine = "332nd_Westar_Rifle_Grenade_Mag";
+			};
 			class 332nd_DC15S_Low_Mag
 			{
 				count = 100;
@@ -232,6 +244,11 @@ class CfgVehicles
 				count = 25;
 				name = "332nd_Remote_Charge_Mag";
 			};
+			class 332nd_Thermal_Detonator_Ammo
+			{
+				count = 25;
+				name = "332nd_Thermal_Detonator";
+			};
 			class 332nd_Detonation_pack_Mag
 			{
 				count = 10;
@@ -255,7 +272,8 @@ class CfgVehicles
 		model="3as\3as_props\crates\models\supply_Large.p3d";
 		displayName="[332nd] Supply Crate (Medical)";
 		//editorCategory="332nd_EditorCategory";
-		editorSubcategory="3AS_EditorSubcategory_Crates";
+		editorCategory="332nd_Crates";
+		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -327,7 +345,8 @@ class CfgVehicles
 		model="3as\3as_props\crates\models\supply_Large.p3d";
 		displayName="[332nd] Supply Crate (Equipment)";
 		//editorCategory="332nd_EditorCategory";
-		editorSubcategory="3AS_EditorSubcategory_Crates";
+		editorCategory="332nd_Crates";
+		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
 		editorPreview="\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Black_Prop.jpg";
 		hiddenSelections[]=
 		{
@@ -496,7 +515,8 @@ class CfgVehicles
 		model="3as\3as_props\crates\models\supply_Large.p3d";
 		displayName="[332nd] Supply Crate";
 		//editorCategory="332nd_EditorCategory";
-		editorSubcategory="3AS_EditorSubcategory_Crates";
+		editorCategory="332nd_Crates";
+		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -646,6 +666,11 @@ class CfgVehicles
 			{
 				count = 25;
 				name = "3AS_SmokeYellow";
+			};
+			class 332nd_Thermal_Detonator_Ammo
+			{
+				count = 25;
+				name = "332nd_Thermal_Detonator";
 			};
 			class 332nd_Remote_Charge_Mag
 			{
@@ -860,6 +885,11 @@ class CfgVehicles
 			{
 				count = 50;
 				magazine = "332nd_SmokePurple_LauncherGrenade";
+			};
+			class 332nd_Westar_Rifle_Grenade
+			{
+				count = 25;
+				magazine = "332nd_Westar_Rifle_Grenade_Mag";
 			};
 			class 332nd_DC15S_Low_Mag
 			{
