@@ -265,6 +265,27 @@ class CfgGlasses
 			""
 		};
 	};
+	class 332nd_Trick_Chops_Facewear :332nd_Facewear_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		author="Cherryy";
+		displayName="Trick ARF Flaps";
+		model="\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Chops_Trick.paa",
+			""
+		};
+	};
 //White
 	class 332nd_Facewear_XO_White :332nd_Facewear_Base
 	{
@@ -413,7 +434,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Cherryy", "Asuka", "Ithias", };
+				values[] = { "Cherryy", "Asuka", "Ithias", "Trick",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -431,6 +452,12 @@ class XtdGearModels
                 class Ithias
                 {
                     label = "Ithias";
+                    //description = "Not Default";
+                    //image = "xxx";
+                };
+				class Trick
+                {
+                    label = "Trick";
                     //description = "Not Default";
                     //image = "xxx";
                 };
@@ -538,6 +565,12 @@ class XtdGearInfos
         {
             model = "332nd_Facewear_Extended";
             Customs = "Asuka";
+            Variant = "A";
+        };
+		class 332nd_Trick_Chops_Facewear
+        {
+            model = "332nd_Facewear_Extended";
+            Customs = "Trick";
             Variant = "A";
         };
 		class 332nd_Facewear_XO_Ithias

@@ -70,22 +70,27 @@ class CfgEditorSubcategories
     //Helmet Props
     class EdSubcat_332nd_Props_Helmets_P2
     {
-        displayName = "Clone Helmets P2";
+        displayName = "[332nd] Clone Helmets P2";
     };
     class EdSubcat_332nd_Props_Helmets_Pilots
     {
-        displayName = "Clone Helmets Pilots";
+        displayName = "[332nd] Clone Helmets Pilots";
     };
      class EdSubcat_332nd_Props_Helmets_ARF
     {
-        displayName = "Clone Helmets ARF";
+        displayName = "[332nd] Clone Helmets ARF";
     };
      class EdSubcat_332nd_Props_Helmets_Fun_OP
     {
-        displayName = "Clone Helmets Fun_OP";
+        displayName = "[332nd] Clone Helmets Fun_OP";
     };
      class EdSubcat_332nd_Props_Helmets_Customs
     {
-        displayName = "Clone Helmets Customs";
+        displayName = "[332nd] Clone Helmets Customs";
+    };
+    //Crates
+    class EdSubcat_332nd_Resupply_Crates
+    {
+        displayName = "[332nd] Resupply Crates";
     };
 };
