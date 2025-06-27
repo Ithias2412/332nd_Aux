@@ -143,7 +143,7 @@ class CfgGlasses
 		ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
 		//ACE_Overlay = "\SWLB_equipment\facewears\data\P2_HUD_ca.paa";
 		ACE_Overlay = "";
-		ACE_OverlayCracked = "\SWLB_equipment\facewears\data\P2_HUD_cracked_ca.paa";
+		ACE_OverlayCracked = "";
 		//ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
 		ACE_OverlayDirt = "";
 		ACE_Protection = 1;

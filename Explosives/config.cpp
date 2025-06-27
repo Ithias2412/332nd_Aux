@@ -77,7 +77,6 @@ class CfgMagazines
 		picture = "\LF_Weapon_Unit_Explosives\typeabc\ui\type_icon.paa";
 		
 	};
-
 };
 
 class CfgWeapons

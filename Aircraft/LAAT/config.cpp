@@ -1343,7 +1343,7 @@ class CfgVehicles
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
 	//	smokeLauncherAngle = 360;		// Coverage angle
-	hiddenselectionstextures[]=
+		hiddenselectionstextures[]=
 		{
 			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
 			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
