@@ -5,7 +5,7 @@ class CfgPatches {
 		units[] = {"332nd_TUM5"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Characters_F","a3_anims_f", "WBK_WRS_Mechs", "cba_main"};
+		requiredAddons[] = {"A3_Characters_F","a3_anims_f", /* "WBK_WRS_Mechs", */ "cba_main"};
 	};
 };
 
