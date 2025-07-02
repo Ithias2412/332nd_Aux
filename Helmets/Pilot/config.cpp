@@ -76,7 +76,7 @@ class cfgWeapons
 
 //Customs
 
-	class 332nd_Helmet_Pilot_Saiko: 332nd_Helmet_Pilot
+	/* class 332nd_Helmet_Pilot_Saiko: 332nd_Helmet_Pilot
 	{
 		scope=2;
 		dlc="332nd Aux";
@@ -96,7 +96,7 @@ class cfgWeapons
 		{
 			""
 		};
-	};
+	}; */
 	class 332nd_Helmet_Pilot_Shadow: 332nd_Helmet_Pilot
 	{
 		scope=2;
@@ -166,15 +166,15 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Saiko", "Shadow", "Lawman",};
+				values[] = { /* "Saiko", */ "Shadow", "Lawman",};
                 changeingame = 0;
                 alwaysSelectable = 1;
-				class Saiko
+				/* class Saiko
                 {
                     label = "Saiko";
                     description = "ARC Enjoyer";
                     //image = "xxx";
-                };
+                }; */
 				class Shadow
                 {
                     label = "Shadow";
@@ -201,11 +201,11 @@ class XtdGearInfos
             model = "332nd_Helmets_Pilot_Extended";
             Type = "Pilot";
         };
-		class 332nd_Helmet_Pilot_Saiko
+		/* class 332nd_Helmet_Pilot_Saiko
         {
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Saiko";
-        };
+        }; */
 		class 332nd_Helmet_Pilot_Shadow
         {
             model = "332nd_Helmets_Pilot_Extended";
