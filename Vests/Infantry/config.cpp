@@ -520,7 +520,7 @@ class cfgWeapons
 class 332nd_Cherryy_Custom_Vest: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Cherryy)";
-		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+		model="\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -533,7 +533,7 @@ class 332nd_Cherryy_Custom_Vest: 332nd_Trooper_Vest
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\SWLB_clones\SWLB_clone_kama_armor.p3d";
+			uniformModel="\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
 			hiddenSelections[]=
 			{
 				"camo1",
