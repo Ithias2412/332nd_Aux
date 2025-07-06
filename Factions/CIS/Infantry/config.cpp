@@ -57,6 +57,7 @@ class CfgVehicles {
     // B1 Droids
     class 332nd_Droid_Base: JLTS_Droid_B1_E5 
 	{
+		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
 		impactEffectsBlood = "ImpactMetal";
 		impactEffectsNoBlood = "ImpactPlastic";
         scope = 0; // Base class (hidden)
@@ -132,20 +133,15 @@ class CfgVehicles {
         magazines[] = {"332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag",};
 		respawnMagazines[] = {"332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag",};
     };
-    class 332nd_Droid_B1_Sniper: JLTS_Droid_B1_SBB3 
+    class 332nd_Droid_B1_Sniper: 332nd_Droid_Base 
 	{
         scope = 2;
         displayName = "B1 Sniper";
-        faction = "332nd_CIS_Faction";
-        //editorSubcategory = "332nd_Droids_Subcategory";
-        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
-        backpack = "JLTS_B1_backpack";
+        uniformClass = "JLTS_DroidB1"; // Standard Battle Droid uniform
         weapons[] = {"332nd_CIS_E5S", "Throw", "Put"};
         respawnWeapons[] = {"332nd_CIS_E5S", "Throw", "Put"};
         magazines[] = {"332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag",};
         respawnMagazines[] = {"332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag", "332nd_CIS_E5S_Mag",};
-        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
-        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};    
     };
     class 332nd_Droid_B1_Commander: 332nd_Droid_Base 
 	{
@@ -170,23 +166,21 @@ class CfgVehicles {
         magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
         respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
-        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};    
+        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+		identityTypes[] = {"SWdroidvoice"}; // Apply the custom identity
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";		
+		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
     };
-    class 332nd_Droid_B1_Security: JLTS_Droid_B1_E5 
+    class 332nd_Droid_B1_Security: 332nd_Droid_Base 
 	{
         scope = 2;
         displayName = "B1 Security Droid";
-        faction = "332nd_CIS_Faction";
-        //editorSubcategory = "332nd_Droids_Subcategory";
-        editorSubcategory = "EdSubcat_332nd_Battle_Droids";
         uniformClass = "JLTS_DroidB1_Security"; // Security uniform
-        backpack = "JLTS_B1_backpack";
         weapons[] = {"332nd_CIS_E5", "Throw", "Put"};
         respawnWeapons[] = {"332nd_CIS_E5", "Throw", "Put"};
         magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
         respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
-        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
-        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
     };
     class 332nd_Droid_B1_Pilot: JLTS_Droid_B1_Pilot 
 	{
@@ -202,6 +196,10 @@ class CfgVehicles {
         respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+		identityTypes[] = {"SWdroidvoice"}; // Apply the custom identity
+		impactEffectsBlood = "ImpactMetal";
+		impactEffectsNoBlood = "ImpactPlastic";
+		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
     };
 	// B2 Droids
     class 332nd_Droid_B2: 3AS_CIS_B2_F 
