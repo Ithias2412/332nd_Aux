@@ -350,6 +350,30 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Dovah.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Saiko: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Saiko)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Saiko.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Arson: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Arson)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Arson.paa"
+		};
+	};
 };
 class XtdGearModels
 {
@@ -394,7 +418,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah",};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson"};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -538,6 +562,18 @@ class XtdGearModels
 				{
 					label = "Dovah";
 					description = "Dovah Prime";
+					//image = "xxx";
+				};
+				class Saiko
+				{
+					label = "Saiko";
+					description = "When Airborne";
+					//image = "xxx";
+				};
+				class Arson
+				{
+					label = "Arson";
+					description = "Flame Thrower Enthusiast";
 					//image = "xxx";
 				};
             };
@@ -689,6 +725,16 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Dovah";
+        };
+		class 332nd_Helmet_P2_Saiko
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Saiko";
+        };
+		class 332nd_Helmet_P2_Arson
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Arson";
         };
 	};
 };
