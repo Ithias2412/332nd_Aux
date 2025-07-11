@@ -214,7 +214,7 @@ class CfgVehicles
 	
 	//AT JLTS_RPS6
 	//Grenadier 3AS_ThermalDetonator
-	//Support Gunner JMSLLTE_M45BlasterRifle
+	//Support Gunner needs backpack with ammo (only carries 2 mags as is)
 	class 332nd_Enia_Support_Gunner: 332nd_Enia_Base
 	{
         displayName = "Support Gunner";
