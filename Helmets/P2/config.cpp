@@ -70,6 +70,19 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_CT.paa"
 		};
 	};
+	/* class 332nd_Helmet_P2_New: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (New Mat)";
+		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_New_Mat.paa"
+		};
+	}; */
 	class 332nd_Helmet_P2_Medic: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Medic)";
@@ -374,6 +387,30 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Arson.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Jiggs: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Jiggs)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Jiggs.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Nightmare: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Nightmare)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Nightmare.paa"
+		};
+	};
 };
 class XtdGearModels
 {
@@ -418,7 +455,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson"};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare"};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -574,6 +611,18 @@ class XtdGearModels
 				{
 					label = "Arson";
 					description = "Flame Thrower Enthusiast";
+					//image = "xxx";
+				};
+				class Jiggs
+				{
+					label = "Jiggs";
+					description = "Twin 1";
+					//image = "xxx";
+				};
+				class Nightmare
+				{
+					label = "Nightmare";
+					description = "Twin 2";
 					//image = "xxx";
 				};
             };
@@ -735,6 +784,16 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Arson";
+        };
+		class 332nd_Helmet_P2_Jiggs
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Jiggs";
+        };
+		class 332nd_Helmet_P2_Nightmare
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Nightmare";
         };
 	};
 };
