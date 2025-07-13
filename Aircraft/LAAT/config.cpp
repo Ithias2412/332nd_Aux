@@ -1063,6 +1063,10 @@ class CfgVehicles
 						typeRecognitionDistance=0;
 					};
 				};
+			};	
+			class TransportCounterMeasuresComponent
+			{
+				// My dick hurt
 			};
 			class TransportPylonsComponent
 			{
@@ -1634,6 +1638,10 @@ class CfgVehicles
 						typeRecognitionDistance=0;
 					};
 				};
+			};
+			class TransportCounterMeasuresComponent
+			{
+				// My dick hurt
 			};
 			class TransportPylonsComponent
 			{

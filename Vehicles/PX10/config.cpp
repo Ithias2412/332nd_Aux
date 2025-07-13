@@ -69,6 +69,20 @@ class CfgVehicles
 		};
 		class ACE_SelfActions: ACE_SelfActions
 		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			class ace_quickmount_ChangeSeat
+			{
+				condition = "call ace_quickmount_fnc_canShowFreeSeats";
+				displayName = "Change seat";
+				icon = "\z\ace\addons\quickmount\UI\Seats_ca.paa";
+				insertChildren = "call ace_quickmount_fnc_addFreeSeatsActions";
+			};
 			class TFAR_IntercomChannel
 			{
 				condition = "true";
