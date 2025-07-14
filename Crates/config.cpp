@@ -199,11 +199,6 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
-			class 3AS_ThermalDetonator
-			{
-				count = 50;
-				name = "3AS_ThermalDetonator";
-			};
 			class 3AS_SmokeWhite
 			{
 				count = 50;
@@ -244,7 +239,7 @@ class CfgVehicles
 				count = 25;
 				name = "332nd_Remote_Charge_Mag";
 			};
-			class 332nd_Thermal_Detonator_Ammo
+			class 332nd_Thermal_Detonator
 			{
 				count = 25;
 				name = "332nd_Thermal_Detonator";
@@ -253,6 +248,16 @@ class CfgVehicles
 			{
 				count = 10;
 				name = "332nd_Detonation_pack_Mag";
+			};
+			class 332nd_Remote_Charge_Throwable
+			{
+				count = 25;
+				name = "332nd_Remote_Charge_Throwable";
+			};
+			class 332nd_Detonation_pack_Throwable
+			{
+				count = 10;
+				name = "332nd_Detonation_pack_Throwable";
 			};
 		};
 		class TransportWeapons
@@ -627,11 +632,6 @@ class CfgVehicles
 				count = 10;
 				name = "ItemcTabHCam";
 			};
-			class 3AS_ThermalDetonator
-			{
-				count = 50;
-				name = "3AS_ThermalDetonator";
-			};
 			class 3AS_SmokeWhite
 			{
 				count = 50;
@@ -667,7 +667,7 @@ class CfgVehicles
 				count = 25;
 				name = "3AS_SmokeYellow";
 			};
-			class 332nd_Thermal_Detonator_Ammo
+			class 332nd_Thermal_Detonator
 			{
 				count = 25;
 				name = "332nd_Thermal_Detonator";
@@ -681,6 +681,16 @@ class CfgVehicles
 			{
 				count = 10;
 				name = "332nd_Detonation_pack_Mag";
+			};
+			class 332nd_Remote_Charge_Throwable
+			{
+				count = 25;
+				name = "332nd_Remote_Charge_Throwable";
+			};
+			class 332nd_Detonation_pack_Throwable
+			{
+				count = 10;
+				name = "332nd_Detonation_pack_Throwable";
 			};
 		};
 		class TransportWeapons

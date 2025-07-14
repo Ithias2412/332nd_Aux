@@ -753,11 +753,13 @@ class CfgVehicles
 	{
 		class Components;
 		class ACE_SelfActions;
+		class HitPoints;
 	};
 	class 3AS_LAAT_Mk1: 3AS_LAAT_Base
 	{
 		class Components;
 		class ACE_SelfActions;
+		class HitPoints;
 	};
 	class 332nd_LAAT: 3AS_LAAT_Mk2
 	{
@@ -772,6 +774,36 @@ class CfgVehicles
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
 	//	smokeLauncherAngle = 360;		// Coverage angle
+		class HitPoints: HitPoints
+		{
+			class HitGlass1
+			{
+				armor = 6; // was 2
+				explosionShielding = 3;
+				name = "HitGlass1";
+				passThrough = 1;
+				radius = 0.4;
+				visual = "";
+			};
+			class HitGlass2
+			{
+				armor = 6; // was 2
+				explosionShielding = 3;
+				name = "HitGlass2";
+				passThrough = 1;
+				radius = 0.4;
+				visual = "";
+			};
+			class HitGlass3
+			{
+				armor = 6; // was 2
+				explosionShielding = 3;
+				name = "HitGlass3";
+				passThrough = 1;
+				radius = 0.4;
+				visual = "";
+			};
+		};
 		hiddenselectionstextures[]=
 		{
 			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",

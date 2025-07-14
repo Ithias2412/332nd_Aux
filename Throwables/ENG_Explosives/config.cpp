@@ -57,7 +57,7 @@ class CfgMagazines
 	class 332nd_Remote_Charge_Throwable: 3AS_ThermalDetonator
 	{
 		ammo = "332nd_Remote_Charge_Ammo_Thrown";
-		displayName = "[332nd] Remote Charge";
+		displayName = "[332nd] Throwable Remote Charge";
 		displayNameShort = "Remote Charge";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
 		mass = 15;
@@ -65,7 +65,7 @@ class CfgMagazines
 	class 332nd_Detonation_pack_Throwable: 3AS_ThermalDetonator
 	{
 		ammo = "332nd_Detonation_pack_Ammo_Thrown";
-		displayName = "[332nd] Detonation Pack";
+		displayName = "[332nd] Throwable Detonation Pack";
 		displayNameShort = "Detonation Pack";
 		picture = "\LF_Weapon_Unit_Explosives\typeabc\ui\type_icon.paa";
 		mass = 30;

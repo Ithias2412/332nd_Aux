@@ -25,12 +25,12 @@ class ACEX_Fortify_Presets
             {"3AS_Shield_C_Prop", 20, "Deployable"},
 			{"land_3as_Ladder5", 10, "Deployable"},
 			
-			{"Land_lsb_fob_hBarrier_5", 60, "Buildable"},
-			{"Land_lsb_fob_hBarrierWall_exvertedCorner", 120, "Buildable"},
-			{"Land_lsb_fob_hBarrierWall_4", 120, "Buildable"},
-			{"Land_lsb_fob_hBarrierWall_invertedCorner", 120, "Buildable"},
-			{"Land_lsb_fob_hBarrierWall_7", 150, "Buildable"},
-			{"Land_lsb_fob_hBarrier_tower", 180, "Buildable"},
+			{"Land_lsb_fob_hBarrier_5", 40, "Buildable"},
+			{"Land_lsb_fob_hBarrierWall_exvertedCorner", 80, "Buildable"},
+			{"Land_lsb_fob_hBarrierWall_4", 80, "Buildable"},
+			{"Land_lsb_fob_hBarrierWall_invertedCorner", 80, "Buildable"},
+			{"Land_lsb_fob_hBarrierWall_7", 100, "Buildable"},
+			{"Land_lsb_fob_hBarrier_tower", 120, "Buildable"},
 			
 			{"k_porg", 10, "Friends"},
 			{"TKE_Smelvin2", 10, "Friends"},
