@@ -9,7 +9,11 @@ class CfgPatches
         units[] = 
 		{
             "332nd_Enia_Base",
+			"332nd_Enia_AT",
+			"332nd_Enia_Grenadier",
 			"332nd_Enia_Support_Gunner",
+			"332nd_Enia_Medic",
+			"332nd_Enia_Officer",
         };
     };
 };
@@ -17,17 +21,17 @@ class CfgVehicles
 {
     class 3AS_U_CIS_Light;
 	class HitPoints;
+	class IDA_Imperial_Backpack;
 
-    // B1 Droids
     class 332nd_Enia_Base: 3AS_U_CIS_Light 
 	{
         scope = 2;
         displayName = "Rifleman";
         faction = "332nd_East_Enia_Faction";
         editorSubcategory = "EdSubcat_332nd_Human_Division";
-        uniformClass = "332nd_Uniform_East_Enian"; // Standard Battle Droid uniform
+        uniformClass = "332nd_Uniform_East_Enian";
         backpack = "IDA_Imperial_Backpack";
-        weapons[] = {"332nd_AD4", "Throw", "Put"}; // Default for all, overridden by subclasses
+        weapons[] = {"332nd_AD4", "Throw", "Put"}; 
         respawnWeapons[] = {"332nd_AD4", "Throw", "Put"};
         magazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", };
         respawnMagazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", };
@@ -213,691 +217,200 @@ class CfgVehicles
 	
 	
 	//AT JLTS_RPS6
+	class 332nd_Enia_AT: 332nd_Enia_Base
+	{
+        displayName = "Anti-Tank";
+		backpack = "332nd_Enia_AT_Backpack";
+        weapons[] = {"332nd_AD4", "JLTS_RPS6", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_AD4", "JLTS_RPS6", "Throw", "Put"};
+        magazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "JLTS_RPS6_mag","JLTS_RPS6_mag","JLTS_RPS6_mag"};
+        respawnMagazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "JLTS_RPS6_mag","JLTS_RPS6_mag","JLTS_RPS6_mag"};
+	};
+	class 332nd_Enia_AT_Backpack: IDA_Imperial_Backpack
+	{
+        scope = 1;
+		displayName = "Enian AT Backpack";
+		class TransportMagazines
+		{
+			class _xx_JLTS_RPS6_mag
+			{
+				count = 2;
+				magazine = "JLTS_RPS6_mag";
+			};
+		};
+	};
 	//Grenadier 3AS_ThermalDetonator
+	class 332nd_Enia_Grenadier: 332nd_Enia_Base
+	{
+        displayName = "Grenadier";
+        weapons[] = {"332nd_AD4", "Throw", "Put"};	
+        respawnWeapons[] = {"332nd_AD4", "Throw", "Put"};		
+        magazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag","332nd_AD4_Mag","332nd_AD4_Mag", "3AS_ThermalDetonator", "3AS_ThermalDetonator",};		
+        respawnMagazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag","332nd_AD4_Mag","332nd_AD4_Mag", "3AS_ThermalDetonator", "3AS_ThermalDetonator",};
+	};
 	//Support Gunner needs backpack with ammo (only carries 2 mags as is)
 	class 332nd_Enia_Support_Gunner: 332nd_Enia_Base
 	{
         displayName = "Support Gunner";
-        weapons[] = {"332nd_AD4_M", "Throw", "Put"}; // Default for all, overridden by subclasses		
+		backpack = "332nd_Enia_AR_Backpack";
+        weapons[] = {"332nd_AD4_M", "Throw", "Put"};	
         respawnWeapons[] = {"332nd_AD4_M", "Throw", "Put"};		
         magazines[] = {"332nd_AD4_M_Mag", "332nd_AD4_M_Mag", "332nd_AD4_M_Mag", "332nd_AD4_M_Mag", "332nd_AD4_M_Mag", "332nd_AD4_M_Mag","332nd_AD4_M_Mag","332nd_AD4_M_Mag",};		
         respawnMagazines[] = {"332nd_AD4_M_Mag", "332nd_AD4_M_Mag", "332nd_AD4_M_Mag", "332nd_AD4_M_Mag", "332nd_AD4_M_Mag", "332nd_AD4_M_Mag","332nd_AD4_M_Mag","332nd_AD4_M_Mag",};
 	};
+	class 332nd_Enia_AR_Backpack: IDA_Imperial_Backpack
+	{
+        scope = 1;
+		displayName = "Enian AR Backpack";
+		class TransportMagazines
+		{
+			class _xx_332nd_AD4_M_Mag
+			{
+				count = 5;
+				magazine = "332nd_AD4_M_Mag";
+			};
+		};
+	};
 	//Medic
-	//Officer
+    class 332nd_Enia_Medic: 332nd_Enia_Base 
+	{
+        displayName = "Medic";
+        weapons[] = {"332nd_AD4", "Throw", "Put"}; 
+        respawnWeapons[] = {"332nd_AD4", "Throw", "Put"};
+        magazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", };
+        respawnMagazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", };
+		RespawnItems[] = {"ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", };
+	};
+	//Officer (Need cap retexture)
+    class 332nd_Enia_Officer: 332nd_Enia_Base 
+	{
+        displayName = "Officer";
+        backpack = "JMSLLTE_back_stcape_dirty";
+        weapons[] = {"332nd_AD4", "Throw", "Put"}; 
+        respawnWeapons[] = {"332nd_AD4", "Throw", "Put"};
+        magazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", };
+        respawnMagazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", };
+        linkedItems[] = {"332nd_Vest_East_Enian_Light", "H_ParadeDressCap_01_US_F", "G_Bandanna_aviator", "ItemMap", "ItemRadio", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"332nd_Vest_East_Enian_Light", "H_ParadeDressCap_01_US_F", "G_Bandanna_aviator", "ItemMap", "ItemRadio", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"}; 
+	};
 };	
-
-/*
 
 class CfgGroups 
 {
     class East 
 	{
-        class 332nd_CIS_Faction 
+        class 332nd_East_Enia_Faction 
 		{
-            name = "332nd Auxiliary Droids";
+            name = "[332nd] East Enia";
 
-            class Droids_Infantry 
+            class Enian_Infantry 
 			{
-                name = "Droids";
+                name = "Enian Guard";
 
-                class 332nd_Patrol 
+                class 332nd_Patrol
 				{
-                    name = "B1 Patrol";
-                    faction = "332nd_CIS_Faction";
+                    name = "Patrol";
+                    faction = "332nd_East_Enia_Faction";
                     side = 0;
                     class Unit0 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {0, 0, 0};
                     };
                     class Unit1 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                };
-                class 332nd_Sniper_Team 
-				{
-                    name = "B1 Sniper Team";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Sniper";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Sniper";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {5, -5, 0};
                     };
                 };
                 class 332nd_Fireteam 
 				{
-                    name = "B1 Fireteam";
-                    faction = "332nd_CIS_Faction";
+                    name = "Fireteam";
+                    faction = "332nd_East_Enia_Faction";
                     side = 0;
                     class Unit0 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {0, 0, 0};
                     };
                     class Unit1 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {5, -5, 0};
                     };
                     class Unit2 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
+                        vehicle = "332nd_Enia_Medic";
                         rank = "PRIVATE";
                         position[] = {-5, -5, 0};
                     };
                     class Unit3 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                };
-                class 332nd_CQB
-				{
-                    name = "B1 CQB Team";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Shield";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Shield";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Scatterblaster";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Scatterblaster";
+                        vehicle = "332nd_Enia_Support_Gunner";
                         rank = "PRIVATE";
                         position[] = {10, -10, 0};
                     };
                 };
                 class 332nd_Grenadier_Team 
 				{
-                    name = "B1 Grenadier Fireteam";
-                    faction = "332nd_CIS_Faction";
+                    name = "Grenadier Fireteam";
+                    faction = "332nd_East_Enia_Faction";
                     side = 0;
                     class Unit0 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {0, 0, 0};
                     };
                     class Unit1 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Grenadier";
+                        vehicle = "332nd_Enia_Grenadier";
                         rank = "PRIVATE";
                         position[] = {5, -5, 0};
                     };
                     class Unit2 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Grenadier";
+                        vehicle = "332nd_Enia_Grenadier";
                         rank = "PRIVATE";
                         position[] = {-5, -5, 0};
                     };
                     class Unit3 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                };
-                class 332nd_Security_Fireteam 
-				{
-                    name = "B1 Security Fireteam";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Security";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Security";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Security";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Security";
+                        vehicle = "332nd_Enia_Support_Gunner";
                         rank = "PRIVATE";
                         position[] = {10, -10, 0};
                     };
                 };
                 class 332nd_AT_Fireteam 
 				{
-                    name = "B1 AT Fireteam";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_AT";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_AT";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                };
-                class 332nd_Weapons_Fireteam 
-				{
-                    name = "B1 Weapons Fireteam";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                };
-                class 332nd_Rifle_Squad 
-				{
-                    name = "B1 Rifle Squad";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                    class Unit4 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-						position[] = {-10, -10, 0};
-                    };
-                    class Unit5 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-						position[] = {15, -15, 0};
-                    };
-                    class Unit6 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-						position[] = {-15, -15, 0};
-                    };
-                    class Unit7 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-						position[] = {20, -20, 0};
-                    };
-                };
-                class 332nd_Defensive_Garrison 
-				{
-                    name = "B1 Defensive Garrison [Rose's Game Crashers]";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Commander";
-                        rank = "LIEUTENANT";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                    class Unit4 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-10, -10, 0};
-                    };
-                    class Unit5 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {15, -15, 0};
-                    };
-                    class Unit6 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-15, -15, 0};
-                    };
-                    class Unit7 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {20, -20, 0};
-                    };
-                    class Unit8 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-20, -20, 0};
-                    };
-                    class Unit9 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {25, -25, 0};
-                    };
-                    class Unit10 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-25, -25, 0};
-                    };
-                    class Unit11 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {30, -30, 0};
-                    };
-                    class Unit12 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-30, -30, 0};
-                    };
-                    class Unit13 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {35, -35, 0};
-                    };
-                    class Unit14 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-35, -35, 0};
-                    };
-                    class Unit15 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {40, -40, 0};
-                    };
-                    class Unit16 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-40, -40, 0};
-                    };
-                    class Unit17 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {45, -45, 0};
-                    };
-                    class Unit18 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-45, -45, 0};
-                    };
-                    class Unit19 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {50, -50, 0};
-                    };
-                    class Unit20 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-50, -50, 0};
-                    };
-                    class Unit21 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {55, -55, 0};
-                    };
-                    class Unit22 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-55, -55, 0};
-                    };
-                    class Unit23 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {60, -60, 0};
-                    };
-                    class Unit24 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-60, -60, 0};
-                    };
-                    class Unit25 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {65, -65, 0};
-                    };
-                    class Unit26 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {-65, -65, 0};
-                    };
-                    class Unit27 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {70, -70, 0};
-                    };
-                    class Unit28 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {-70, -70, 0};
-                    };
-                    class Unit29 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {75, -75, 0};
-                    };
-                    class Unit30 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {-75, -75, 0};
-                    };
-                    class Unit31 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Support";
-                        rank = "PRIVATE";
-                        position[] = {80, -80, 0};
-                    };
-                };
-				class 332nd_B2_Fireteam 
-				{
-                    name = "B2 Fireteam";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B2";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B2";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B2";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B2";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                };
-				class 332nd_T_Series_Escort
-				{
-                    name = "T Series Escort (B1)";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_T_Series";
-                        rank = "LIEUTENANT";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Security";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Security";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Security";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                    class Unit4 {
-                        side = 0;
-                        vehicle = "332nd_Droid_B1_Security";
-                        rank = "PRIVATE";
-                        position[] = {-10, -10, 0};
-                    };
-				};
-			};
-            class Human_Div_Infantry 
-			{
-                name = "Human Division";
-
-                class 332nd_Hum_Patrol 
-				{
-                    name = "Patrol";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                };
-                class 332nd_Hum_AT_Fireteam 
-				{
                     name = "AT Fireteam";
-                    faction = "332nd_CIS_Faction";
+                    faction = "332nd_East_Enia_Faction";
                     side = 0;
-                    class Unit0 
-					{
+                    class Unit0 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {0, 0, 0};
                     };
-                    class Unit1 
-					{
+                    class Unit1 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum";
+                        vehicle = "332nd_Enia_Support_Gunner";
                         rank = "PRIVATE";
                         position[] = {5, -5, 0};
                     };
-                    class Unit2 
-					{
+                    class Unit2 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum_AT";
+                        vehicle = "332nd_Enia_AT";
                         rank = "PRIVATE";
                         position[] = {-5, -5, 0};
                     };
-                    class Unit3 
-					{
+                    class Unit3 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum_AT";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                };
-                class 332nd_Hum_Fireteam 
-				{
-                    name = "Fireteam";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_AR";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_Med";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                };
-                class 332nd_Hum_Weapons_Fireteam 
-				{
-                    name = "Weapons Fireteam";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_AR";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_AR";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_AR";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_Med";
+                        vehicle = "332nd_Enia_AT";
                         rank = "PRIVATE";
                         position[] = {10, -10, 0};
                     };
@@ -905,185 +418,298 @@ class CfgGroups
                 class 332nd_Rifle_Squad 
 				{
                     name = "Rifle Squad";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-                    class Unit3 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {10, -10, 0};
-                    };
-                    class Unit4 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum";
-                        rank = "PRIVATE";
-                        position[] = {-10, -10, 0};
-                    };
-                    class Unit5 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_Med";
-                        rank = "PRIVATE";
-                        position[] = {15, -15, 0};
-                    };
-                    class Unit6 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_AR";
-                        rank = "PRIVATE";
-                        position[] = {-15, -15, 0};
-                    };
-                    class Unit7 
-					{
-                        side = 0;
-                        vehicle = "332nd_CIS_Hum_AR";
-                        rank = "PRIVATE";
-                        position[] = {20, -20, 0};
-                    };
-                };
-				class 332nd_Hum_Commander_Escort
-				{
-                    name = "Commander Escort";
-                    faction = "332nd_CIS_Faction";
+                    faction = "332nd_East_Enia_Faction";
                     side = 0;
                     class Unit0 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum_Officer";
-                        rank = "LIEUTENANT";
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
                         position[] = {0, 0, 0};
                     };
                     class Unit1 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {5, -5, 0};
                     };
                     class Unit2 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum";
+                        vehicle = "332nd_Enia_Support_Gunner";
                         rank = "PRIVATE";
                         position[] = {-5, -5, 0};
                     };
                     class Unit3 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum_Med";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {10, -10, 0};
                     };
                     class Unit4 {
                         side = 0;
-                        vehicle = "332nd_CIS_Hum_AR";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
-                        position[] = {-10, -10, 0};
+						position[] = {-10, -10, 0};
                     };
-				};
-			};
-            class Special_Infantry 
-			{
-                name = "Special Operations";
-				
-				class 332nd_BX_Team_Melee
+                    class Unit5 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+						position[] = {15, -15, 0};
+                    };
+                    class Unit6 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+						position[] = {-15, -15, 0};
+                    };
+                    class Unit7 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+						position[] = {20, -20, 0};
+                    };
+                    class Unit8 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+						position[] = {-20, -20, 0};
+                    };
+                };
+                class 332nd_Defensive_Garrison 
 				{
-                    name = "BX Team (Melee)";
-                    faction = "332nd_CIS_Faction";
+                    name = "Defensive Garrison [Rose's Game Crashers 2]";
+                    faction = "332nd_East_Enia_Faction";
                     side = 0;
                     class Unit0 {
                         side = 0;
-                        vehicle = "332nd_Droid_BX_Melee";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_BX_Melee";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_BX_Melee";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-				};
-				class 332nd_BX_Team
-				{
-                    name = "BX Team";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_BX_Range";
-                        rank = "PRIVATE";
-                        position[] = {0, 0, 0};
-                    };
-                    class Unit1 {
-                        side = 0;
-                        vehicle = "332nd_Droid_BX_Range";
-                        rank = "PRIVATE";
-                        position[] = {5, -5, 0};
-                    };
-                    class Unit2 {
-                        side = 0;
-                        vehicle = "332nd_Droid_BX_Range";
-                        rank = "PRIVATE";
-                        position[] = {-5, -5, 0};
-                    };
-				};
-				class 332nd_BX_T_Series_Escort
-				{
-                    name = "T-Series Escort (BX)";
-                    faction = "332nd_CIS_Faction";
-                    side = 0;
-                    class Unit0 {
-                        side = 0;
-                        vehicle = "332nd_Droid_T_Series";
+                        vehicle = "332nd_Enia_Officer";
                         rank = "LIEUTENANT";
                         position[] = {0, 0, 0};
                     };
                     class Unit1 {
                         side = 0;
-                        vehicle = "332nd_Droid_BX_Range";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {5, -5, 0};
                     };
                     class Unit2 {
                         side = 0;
-                        vehicle = "332nd_Droid_BX_Range";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {-5, -5, 0};
                     };
                     class Unit3 {
                         side = 0;
-                        vehicle = "332nd_Droid_BX_Range";
+                        vehicle = "332nd_Enia_Base";
                         rank = "PRIVATE";
                         position[] = {10, -10, 0};
                     };
+                    class Unit4 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-10, -10, 0};
+                    };
+                    class Unit5 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {15, -15, 0};
+                    };
+                    class Unit6 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-15, -15, 0};
+                    };
+                    class Unit7 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {20, -20, 0};
+                    };
+                    class Unit8 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-20, -20, 0};
+                    };
+                    class Unit9 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {25, -25, 0};
+                    };
+                    class Unit10 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-25, -25, 0};
+                    };
+                    class Unit11 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {30, -30, 0};
+                    };
+                    class Unit12 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-30, -30, 0};
+                    };
+                    class Unit13 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {35, -35, 0};
+                    };
+                    class Unit14 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-35, -35, 0};
+                    };
+                    class Unit15 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {40, -40, 0};
+                    };
+                    class Unit16 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-40, -40, 0};
+                    };
+                    class Unit17 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {45, -45, 0};
+                    };
+                    class Unit18 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-45, -45, 0};
+                    };
+                    class Unit19 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {50, -50, 0};
+                    };
+                    class Unit20 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-50, -50, 0};
+                    };
+                    class Unit21 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {55, -55, 0};
+                    };
+                    class Unit22 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {-55, -55, 0};
+                    };
+                    class Unit23 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {60, -60, 0};
+                    };
+                    class Unit24 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {-60, -60, 0};
+                    };
+                    class Unit25 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {65, -65, 0};
+                    };
+                    class Unit26 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {-65, -65, 0};
+                    };
+                    class Unit27 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {70, -70, 0};
+                    };
+                    class Unit28 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {-70, -70, 0};
+                    };
+                    class Unit29 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {75, -75, 0};
+                    };
+                    class Unit30 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {-75, -75, 0};
+                    };
+                    class Unit31 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {80, -80, 0};
+                    };
                 };
+				class 332nd_Officer_Escort
+				{
+                    name = "Officer Escort";
+                    faction = "332nd_East_Enia_Faction";
+                    side = 0;
+                    class Unit0 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Officer";
+                        rank = "LIEUTENANT";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {5, -5, 0};
+                    };
+                    class Unit2 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Base";
+                        rank = "PRIVATE";
+                        position[] = {-5, -5, 0};
+                    };
+                    class Unit3 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {10, -10, 0};
+                    };
+                    class Unit4 {
+                        side = 0;
+                        vehicle = "332nd_Enia_Support_Gunner";
+                        rank = "PRIVATE";
+                        position[] = {-10, -10, 0};
+                    };
+				};
 			};
-        };
-    };
+		};
+	};
 };

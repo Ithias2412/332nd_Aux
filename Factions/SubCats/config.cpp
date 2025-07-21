@@ -67,6 +67,10 @@ class CfgEditorSubcategories
     {
         displayName = "Arsenals";
     };
+    class EdSubcat_332nd_Drop_Pods
+    {
+        displayName = "[Vics] Drop Pods";
+    };
     //Helmet Props
     class EdSubcat_332nd_Props_Helmets_P2
     {
