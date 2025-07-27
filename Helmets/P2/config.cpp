@@ -411,6 +411,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Nightmare.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Nebel: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Nebel)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Nebel.paa"
+		};
+	};
 };
 class XtdGearModels
 {
@@ -455,7 +467,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare"};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel"};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -623,6 +635,12 @@ class XtdGearModels
 				{
 					label = "Nightmare";
 					description = "Twin 2";
+					//image = "xxx";
+				};
+				class Nebel
+				{
+					label = "Nebel";
+					description = "Keeli Co Visionary";
 					//image = "xxx";
 				};
             };
@@ -794,6 +812,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Nightmare";
+        };
+		class 332nd_Helmet_P2_Nebel
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Nebel";
         };
 	};
 };
