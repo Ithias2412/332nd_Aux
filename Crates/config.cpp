@@ -526,10 +526,7 @@ class CfgVehicles
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[]=
-		{
-			"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"
-		};
+		hiddenSelectionsTextures[] = {};
 		class TransportItems
 		{
 			class 332nd_Acti_Bandage_Weap

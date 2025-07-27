@@ -293,7 +293,11 @@ class CfgVehicles
         linkedItems[] = {"332nd_Vest_East_Enian_Light", "H_ParadeDressCap_01_US_F", "G_Bandanna_aviator", "ItemMap", "ItemRadio", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"332nd_Vest_East_Enian_Light", "H_ParadeDressCap_01_US_F", "G_Bandanna_aviator", "ItemMap", "ItemRadio", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"}; 
 	};
-};	
+	class 332nd_Enia_Delete: 332nd_Enia_Base
+	{
+        displayName = "DELETE";
+	};
+};
 
 class CfgGroups 
 {
