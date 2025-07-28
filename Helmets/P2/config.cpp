@@ -70,6 +70,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_CT.paa"
 		};
 	};
+	//Testing Stuff
 	/* class 332nd_Helmet_P2_New: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (New Mat)";
@@ -82,7 +83,20 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_New_Mat.paa"
 		};
-	}; */
+	}; 
+	class 332nd_Helmet_P2_Testing: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (21st Test)";
+		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Testing.paa"
+		};
+	};  */
 	class 332nd_Helmet_P2_Medic: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Medic)";
@@ -96,19 +110,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Medic.paa"
 		};
 	};
-	/* class 332nd_P2_Test: 332nd_Helmet_P2_CR
-	{
-		displayName="[332nd] P2 Helmet (Testing)";
-		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Test.paa"
-		};
-	}; */
+	
 //Customs
 
 	/* class 332nd_Helmet_P2_Asuka: 332nd_Helmet_P2_CR
@@ -423,6 +425,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Nebel.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Alpha: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Alpha)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Alpha.paa"
+		};
+	};
 };
 class XtdGearModels
 {
@@ -467,7 +481,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel"};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel", "Alpha"};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -641,6 +655,12 @@ class XtdGearModels
 				{
 					label = "Nebel";
 					description = "Keeli Co Visionary";
+					//image = "xxx";
+				};
+				class Alpha
+				{
+					label = "Alpha";
+					description = "Had his name stolen";
 					//image = "xxx";
 				};
             };
@@ -817,6 +837,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Nebel";
+        };
+		class 332nd_Helmet_P2_Alpha
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Alpha";
         };
 	};
 };
