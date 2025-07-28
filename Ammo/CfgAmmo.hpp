@@ -75,6 +75,7 @@ class CfgAmmo
 		bulletFly3[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_3.wss",2.23872,1,100};
 		bulletFly4[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_4.wss",2.23872,1,100};
 		bulletFly5[] = {"\Indecisive_Armoury_Sounds\plasma_flyby_5.wss",2.23872,1,100};
+		soundSetSonicCrack[] = {};
 		caliber = 1;
 		cartridge = "";
 		coefGravity = 0.01;
@@ -137,6 +138,12 @@ class CfgAmmo
 		submunitionConeAngle = 1;
 		submunitionConeType[] = {"poissondisc",1};
 	};
+	class 332nd_FlameRound_Scatter: 332nd_FlameRound
+	{
+		submunitionAmmo = "FlameRound_sub";
+		submunitionConeAngle = 3;
+		submunitionConeType[] = {"random",5};
+	};
 	//Ammo Overhaul x2
 	class 332nd_Slug_Thrower_Round: 332nd_Balistic_Bullet_Base
 	{
@@ -148,9 +155,18 @@ class CfgAmmo
 	class 332nd_Gas_Level_L1: 332nd_Base_Ammo_IDA
 	{
 		// B1=1 B2=2
-		hit = 35;
+		hit = 60;
 		caliber = 3;
 		typicalspeed = 1200;
+	};
+	class 332nd_Gas_Level_L1_P_X: 332nd_Base_Ammo_IDA
+	{
+		// B1=1 B2=2
+		hit = 60;
+		caliber = 25;
+		typicalspeed = 1200;
+		tracerscale = 5;
+		tracerEndTime = 10000;
 	};
 	class 332nd_Gas_Level_L2: 332nd_Base_Ammo_IDA
 	{
@@ -367,6 +383,11 @@ class CfgAmmo
 		indirectHitRange=2.5;
 		indirectHit=40;
 		typicalspeed = 1000;
+		//IDA Rifle Grenade Bellow
+		model = "Indecisive_Armoury_Ammos\Data\RifleGrenade\IDA_RifleGrenade.p3d";
+		effectfly = "IDA_BlasterBoltGlow_Medium_Blue_Fly";
+		effectflare = "FlareShell";
+		Lightcolor[] = {1,0,0};
 	};
 	class 332nd_UGL_Smoke: smokeshell
 	{

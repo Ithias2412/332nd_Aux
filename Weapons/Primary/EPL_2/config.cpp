@@ -36,7 +36,7 @@ class cfgWeapons
 		JLTS_hasEMPProtection=1;
 		JLTS_friedItem="";
 		author="MrClock";
-		scope=2;
+		scope=1; // Hidden in Arsenal
 		displayName="[332nd] EPL-2 (GRN)";
 		descriptionShort="$STR_JLTS_descs_EMPL";
 		picture="\MRC\JLTS\weapons\EPL2\data\ui\EPL2_ui_ca.paa";

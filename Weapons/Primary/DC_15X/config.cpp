@@ -66,7 +66,7 @@ class cfgWeapons
 		};
 		magazines[]=
 		{
-			"332nd_DC15X_Mag"
+			"332nd_DC15X_Mag",
 		};
 		magazineWell[]={};
 		modes[]=
@@ -81,6 +81,59 @@ class cfgWeapons
 			1,
 			10
 		};
+		muzzles[]=
+		{
+			"this",
+			"Charged",
+		};
+		class Charged: arifle_MX_Base_F
+		{
+			displayName="Charged Shot";
+			cursor = "332nd_Cursor_Tri";
+			cursoraim = "332nd_Cursor_Dot";
+			reloadAction = "GestureReload_JLTS_DC15S";
+			magazines[]=
+			{
+				"332nd_DC15X_Charged_Mag",
+			};
+			magazineWell[]={};
+			modes[]=
+			{
+				"Single_Charged"
+			};
+			class Single_Charged: Mode_SemiAuto
+			{
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class BaseSoundModeType
+				{
+					weaponSoundEffect="";
+					closure1[]={};
+					closure2[]={};
+					soundClosure[]={};
+				};
+				class StandardSound: BaseSoundModeType
+				{
+					begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\IQA11.ogg",2.5,1,1800};
+					beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\IQA11.ogg",1,1,400};
+					soundBegin[] = {"begin1",1};
+					soundBeginWater[] = {"beginwater1",1};
+					weaponSoundEffect = "";
+				};
+				reloadTime=0.5;
+				recoil = "recoil_single_primary_3outof10";
+				recoilProne = "recoil_single_primary_prone_3outof10";
+				dispersion=0.00018;
+				minRange=2;
+				minRangeProbab=0.5;
+				midRange=250;
+				midRangeProbab=0.69999999;
+				maxRange=450;
+				maxRangeProbab=0.30000001;
+			};
+		};
 		class Single: Mode_SemiAuto
 		{
 			sounds[]=
@@ -89,18 +142,14 @@ class cfgWeapons
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
+				
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\IQA11.ogg",2.5,1,1800};
-				beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\IQA11.ogg",1,1,400};
-				soundBegin[] = {"begin1",1};
-				soundBeginWater[] = {"beginwater1",1};
-				weaponSoundEffect = "";
+				soundSetShot[] = 
+				{
+					"3AS_DLT19X_Shot_SoundSet"
+				};
 			};
 			reloadTime=0.5;
 			recoil = "recoil_single_primary_3outof10";
@@ -305,7 +354,7 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"3AS_Bipod_VK38X_f"
+					"3AS_bipod_VK38X_F"
 				};
 			};
 		};

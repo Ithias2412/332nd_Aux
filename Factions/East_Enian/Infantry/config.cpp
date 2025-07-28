@@ -40,7 +40,11 @@ class CfgVehicles
 		glassesEnabled = 0;
 		model = "\JMSLLTE_empire_m\officerCoat.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_mudtrooper_co.paa","JMSLLTE_empire\data\body\of_coat_green_co.paa"};
+		hiddenSelectionsTextures[] = 
+		{
+			"JMSLLTE_empire\data\body\of_body_mudtrooper_co.paa",
+			"332nd_Aux\Factions\East_Enian\Infantry\Tex\East_Enian_Uniform.paa"
+		};
 		class HitPoints: HitPoints
 		{
 			class HitFace
@@ -290,8 +294,8 @@ class CfgVehicles
         respawnWeapons[] = {"332nd_AD4", "Throw", "Put"};
         magazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", };
         respawnMagazines[] = {"332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", "332nd_AD4_Mag", };
-        linkedItems[] = {"332nd_Vest_East_Enian_Light", "H_ParadeDressCap_01_US_F", "G_Bandanna_aviator", "ItemMap", "ItemRadio", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
-        respawnLinkedItems[] = {"332nd_Vest_East_Enian_Light", "H_ParadeDressCap_01_US_F", "G_Bandanna_aviator", "ItemMap", "ItemRadio", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"}; 
+        linkedItems[] = {"332nd_Vest_East_Enian_Light", "332nd_Beret_East_Enian", "G_Bandanna_aviator", "ItemMap", "ItemRadio", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"332nd_Vest_East_Enian_Light", "332nd_Beret_East_Enian", "G_Bandanna_aviator", "ItemMap", "ItemRadio", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"}; 
 	};
 	class 332nd_Enia_Delete: 332nd_Enia_Base
 	{

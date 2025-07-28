@@ -308,6 +308,7 @@ class cfgWeapons
 		reloadAction = "GestureReload_IDA_Reload_Blaster";
 		magazines[] =
 		{
+			"332nd_DC15S_High_Mag",
 			"332nd_DC15S_Low_Mag",
 		};
 	};

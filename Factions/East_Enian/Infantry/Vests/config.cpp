@@ -26,6 +26,13 @@ class cfgWeapons
 		dlc="332nd";
 		scope=1;
 		displayName = "[332nd] East Enian Vest";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Factions\East_Enian\Infantry\Tex\East_Enian_Vest.paa",
+			"332nd_Aux\Factions\East_Enian\Infantry\Tex\East_Enian_Vest_Soft.paa",
+			"332nd_Aux\Factions\East_Enian\Infantry\Tex\East_Enian_Vest_Pouches.paa",
+			"",
+		};
 		class ItemInfo: VestItem
 		{
 			containerClass = "Supply120";
@@ -56,8 +63,8 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmour_co.paa",
-			"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa",
+			"332nd_Aux\Factions\East_Enian\Infantry\Tex\East_Enian_Vest.paa",
+			"332nd_Aux\Factions\East_Enian\Infantry\Tex\East_Enian_Vest_Soft.paa",
 		};
 		class ItemInfo: VestItem
 		{
@@ -69,8 +76,8 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[] = 
 			{
-				"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmour_co.paa",
-				"\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa",
+				"332nd_Aux\Factions\East_Enian\Infantry\Tex\East_Enian_Vest.paa",
+				"332nd_Aux\Factions\East_Enian\Infantry\Tex\East_Enian_Vest_Soft.paa",
 			};
 			mass = 25;
 			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";

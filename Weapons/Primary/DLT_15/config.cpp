@@ -32,8 +32,8 @@ class cfgWeapons
 		scope=2;
 		baseWeapon="332nd_DLT15";
 		displayName="[332nd] DLT-15 (AR)";
+		recoil = "3AS_recoil_DC15S";
 		descriptionShort="A large and fast automatic rifle.";
-		//reloadAction="GestureReloadM200"; // !!!!!!
 		reloadAction="GestureReload_JLTS_DC15S";
 		reloadMagazineSound[]=
 		{
@@ -42,10 +42,9 @@ class cfgWeapons
 			1,
 			100
 		};
-		recoil="recoil_mk200";
 		magazines[]=
 		{
-			"332nd_DLT15_Mag"
+			"332nd_DLT15_Mag",
 		};
 		magazineWell[]={};
 		modes[]=
@@ -104,7 +103,6 @@ class cfgWeapons
 			};
 			reloadTime=0.06;
 			dispersion = 0.00174;
-			//dispersion = 0.0045;
 			minRange=2;
 			minRangeProbab=0.5;
 			midRange=100;

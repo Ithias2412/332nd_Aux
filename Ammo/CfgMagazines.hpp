@@ -34,12 +34,21 @@ class CfgMagazines
 		mass = 15;
 		scope = 2;
 	};
+	class 332nd_DC15X_Charged_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_L1_P_X";
+		count = 6;
+		displayname = "DC-15X 6 Round Charged Energy Cell";
+		mass = 13.6;
+		scope = 2;
+		initSpeed = 1200;
+	};
 	class 332nd_DC15X_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_Gas_Level_L1";
-		count = 5;
-		displayname = "DC-15X 5 Round Energy Cell";
-		mass = 15;
+		ammo = "332nd_Gas_Level_L2";
+		count = 20;
+		displayname = "DC-15X 20 Round Energy Cell";
+		mass = 13.6;
 		scope = 2;
 		initSpeed = 1200;
 	};
@@ -95,6 +104,18 @@ class CfgMagazines
 		mass = 8;
 		scope = 2;
 	};
+	class 332nd_ScatterGun_Flamer_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_FlameRound_Scatter";
+		count = 5;
+		displayname = "Flame-Shot 5 Round Cartridge";
+		mass = 8; 
+		scope = 2;
+		//initSpeed = 25;
+		initSpeed = 50;
+		lastRoundsTracer = 999;
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_ammo_flamer.paa";
+	};
 	class 332nd_DC15L_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_M2";
@@ -106,9 +127,9 @@ class CfgMagazines
 	class 332nd_DLT15_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_M1";
-		count = 250;
-		displayname = "DLT-15 250 Round Energy Cell";
-		mass = 66.6;
+		count = 300;
+		displayname = "DLT-15 300 Round Energy Cell";
+		mass = 40;
 		scope = 2;
 		ACE_isBelt = 1;
 	};
