@@ -5,17 +5,26 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = 
 		{
-			"332nd_Mav_3_Base", "332nd_Mav_3_Unarmed", "332nd_Mav_3_Autocannon"
+			"332nd_Mav_3_Base", "332nd_Mav_3_Transport", "332nd_Mav_3_Armed"
 		};
 		weapons[] = {};
 	};
 };
 
-class CfgVehicles
-{
-	class TKE_Ext_Bearcat_BASE;
-	class TKE_Ext_Bearcat_Unarmed;
-	class ACE_SelfActions;
+//Crap
+	class Optics_Armored;
+	class Optics_Commander_01: Optics_Armored
+	{
+		class Wide;
+		class Medium;
+		class Narrow;
+	};
+	class Optics_Gunner_AAA_01: Optics_Armored
+	{
+		class Wide;
+		class Medium;
+		class Narrow;
+	};
 	class UserActions;
 	class Components;
 	class HitTurret;
@@ -78,6 +87,9 @@ class CfgVehicles
 	{
 		class components;
 	};
+//The Actual Code
+class CfgVehicles
+{
 	class All
 	{
 		class ViewCargo;
@@ -206,29 +218,156 @@ class CfgVehicles
 			class Left2: Left{};
 		};
 	};
-	class ViewOptics;
-	class CommanderOptics;
-	class ViewGunner;
-	class Optics_Armored;
-	class Optics_Commander_01: Optics_Armored
+	class Wheeled_Apc_F: Car_F
 	{
-		class Wide;
-		class Medium;
-		class Narrow;
+		class ViewPilot;
+		class HitPoints: HitPoints{};
+		class Exhausts{};
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class ViewOptics;
+				class Components;
+				class Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class Components;
+						class ViewGunner;
+					};
+				};
+			};
+		};
 	};
-	class Optics_Gunner_AAA_01: Optics_Armored
+	class APC_Wheeled_01_base_F: Wheeled_Apc_F
 	{
-		class Wide;
-		class Medium;
-		class Narrow;
+		class ViewPilot;
+		class HitPoints: HitPoints{};
+		class Exhausts{};
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class ViewOptics;
+				class Components;
+				class Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class Components;
+						class ViewGunner;
+					};
+				};
+			};
+		};
 	};
-	class 332nd_Mav_3_Base: TKE_Ext_Bearcat_Unarmed
+	class TKE_Ext_Bearcat_BASE: APC_Wheeled_01_base_F
+	{
+		class TransportItems{};
+		class TransportWeapons{};
+		class TransportMagazines{};
+		class TransportBackpacks{};
+		class HitPoints: HitPoints
+		{
+			class HitHull: HitHull{};
+			class HitEngine: HitEngine
+			{
+				class DestructionEffects
+				{
+					class Engine_Smoke{};
+					class Engine_Fire: Engine_Smoke{};
+				};
+				class HitFuel: HitFuel{};
+				class HitLFWheel: HitLFWheel{};
+				class HitLF2Wheel: HitLF2Wheel{};
+				class HitLF3Wheel: HitLF2Wheel{};
+				class HitRFWheel: HitRFWheel{};
+				class HitRF2Wheel: HitRF2Wheel{};
+				class HitRF3Wheel: HitRF2Wheel{};
+			};
+		};
+		class sounds{};
+		class ACE_SelfActions;
+	};
+	class TKE_Ext_Bearcat_Unarmed: TKE_Ext_Bearcat_BASE
+	{
+		class Turrets
+		{
+			class CommanderOptics: CommanderOptics
+			{
+				class ViewGunner: ViewGunner{};
+				class Viewoptics: ViewOptics{};
+				class OpticsIn
+				{
+					class Wide: Viewoptics{};
+					class Medium: Wide{};
+					class Narrow: Wide{};
+				};
+				class HitPoints{};
+			};
+		};
+	};
+	class TKE_Ext_Bearcat_Autocannon: TKE_Ext_Bearcat_BASE
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics{};
+				};
+				class OpticsIn
+				{
+					class Wide: Viewoptics{};
+					class Medium: Wide{};
+					class Narrow: Wide{};
+				};
+				class ViewOptics: ViewOptics{};
+				class ViewGunner: ViewOptics{};
+				class HitPoints: HitPoints
+				{
+					class HitTurret: HitTurret{};
+					class HitGun: HitGun{};
+				};
+			};
+		};
+	};
+	class TKE_Ext_Bearcat_AA: TKE_Ext_Bearcat_Autocannon
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn: Optics_Commander_01
+						{
+							class Wide: Wide{};
+							class Medium: Medium{};
+							class Narrow: Narrow{};
+						};
+					};
+				};
+				class OpticsIn: Optics_Gunner_AAA_01
+				{
+					class Wide: Wide{};
+					class Medium: Medium{};
+					class Narrow: Narrow{};
+				};
+			};
+		};
+	};
+	class 332nd_Mav_3_Base: TKE_Ext_Bearcat_BASE
 	{
 		scope = 1;
 		scopeCurator = 1;
 		author = "Cherryy & Luca";
 		model = "\TKE_Ext_APC\data\apc.p3d";
-		displayName = "[332nd] Mav 3 (Morruck Transport)";
+		displayName = "[332nd] Mav 3 (Morruck Base)";
 		faction="332nd_Faction";
 		editorSubcategory = "EdSubcat_APCs";
 		crew = "JLTS_Clone_P2_DC15S";
@@ -236,8 +375,6 @@ class CfgVehicles
 		armor = 500;
 		armorStructural = 5;
 		brakeDistance = 3;
-		maxSpeed = 350;
-		enginePower = 9001;
 		canFloat = 1;
 		tas_canBlift = 1;
         tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
@@ -414,94 +551,94 @@ class CfgVehicles
 			};
 		}; */
 	};
-	class 332nd_Mav_3_Unarmed: 332nd_Mav_3_Base
+	class 332nd_Mav_3_Transport: TKE_Ext_Bearcat_BASE
 	{
 		scope = 2;
 		scopeCurator = 2;
 		author = "Cherryy & Luca";
 		displayName = "[332nd] Mav 3 (Morruck Transport)";
-		faction="332nd_Faction";
+		editorPreview = "";
+		faction = "332nd_Faction";
 		editorSubcategory = "EdSubcat_APCs";
 		crew = "JLTS_Clone_P2_DC15S";
-		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};  
+		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+		armor = 500;
+		armorStructural = 5;
+		brakeDistance = 3;
+		canFloat = 1;
+		tas_canBlift = 1;
+        tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			class ace_quickmount_ChangeSeat
+			{
+				condition = "call ace_quickmount_fnc_canShowFreeSeats";
+				displayName = "Change seat";
+				icon = "\z\ace\addons\quickmount\UI\Seats_ca.paa";
+				insertChildren = "call ace_quickmount_fnc_addFreeSeatsActions";
+			};
+			class TFAR_IntercomChannel
+			{
+				condition = "true";
+				displayName = "Intercom Channel";
+				icon = "";
+				statement = "";
+				class TFAR_IntercomChannel_1
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					displayName = "Infantry";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					displayName = "Crew";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_3
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					displayName = "Command";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_disabled
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					displayName = "Disabled";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+			};
+		};
+		class TextureSources
+		{
+			class Camo
+			{
+				displayName = "The Base Skin";
+				author = "Cherryy";
+				textures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+				factions[] = {"332nd_Faction"};
+			};
+		};
+		textureList[] = {"Camo",1}; 
 	};
-	class 332nd_Mav_3_Autocannon: 332nd_Mav_3_Base
+	class 332nd_Mav_3_Armed: TKE_Ext_Bearcat_Autocannon
 	{
 		scope = 2;
 		scopeCurator = 2;
 		author = "Cherryy & Luca";
 		displayName = "[332nd] Mav 3 (Morruck Armed)";
-		model = "\TKE_Ext_APC\data\apc_a.p3d";
-		faction="332nd_Faction";
+		editorPreview = "";
+		faction = "332nd_Faction";
 		editorSubcategory = "EdSubcat_APCs";
 		crew = "JLTS_Clone_P2_DC15S";
-		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"}; 
-		class Reflectors
-		{
-			class LightCarHeadL01
-			{
-				color[] = {1900,1800,1700};
-				ambient[] = {5,5,5};
-				position = "LightCarHeadL01";
-				direction = "LightCarHeadL01_end";
-				hitpoint = "Light_L";
-				selection = "Light_L";
-				size = 1;
-				innerAngle = 100;
-				outerAngle = 179;
-				coneFadeCoef = 10;
-				intensity = 1;
-				useFlare = 1;
-				dayLight = 0;
-				flareSize = 1;
-				class Attenuation
-				{
-					start = 0;
-					constant = 0;
-					linear = 1;
-					quadratic = 1;
-					hardLimitStart = 100;
-					hardLimitEnd = 200;
-				};
-			};
-			class LightCarHeadR01: LightCarHeadL01
-			{
-				position = "LightCarHeadR01";
-				direction = "LightCarHeadR01_end";
-				hitpoint = "Light_R";
-				selection = "Light_R";
-			};
-			class LightCarHeadL01_T: LightCarHeadL01
-			{
-				position = "LightCarHeadL01_T";
-				direction = "LightCarHeadL01_end_T";
-				hitpoint = "Light_L_T";
-				selection = "Light_L_T";
-				innerAngle = 60;
-				outerAngle = 100;
-				class Attenuation
-				{
-					start = 0;
-					constant = 0;
-					linear = 1;
-					quadratic = 1;
-					hardLimitStart = 150;
-					hardLimitEnd = 300;
-				};
-			};
-			class LightCarHeadR01_T: LightCarHeadL01_T
-			{
-				position = "LightCarHeadR01_T";
-				direction = "LightCarHeadR01_end_T";
-				hitpoint = "Light_R_T";
-				selection = "Light_R_T";
-			};
-		};
-		smokeLauncherGrenadeCount = 8;
-		smokeLauncherVelocity = 13;
-		smokeLauncherOnTurret = 1;
-		smokeLauncherAngle = 125;
-		enableManualFire = 1;
+		transportSoldier = 8;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -609,13 +746,13 @@ class CfgVehicles
 				gun = "mainGun";
 				gunBeg = "usti hlavne";
 				gunEnd = "konec hlavne";
-				weapons[] = {"332nd_PX10_Repeater","SmokeLauncher"};
 				magazines[] = {"332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","SmokeLauncherMag"};
+				weapons[] = {"332nd_MAV_3_Auto_Cannon","SmokeLauncher"};
 				gunnerForceOptics = 1;
 				memoryPointGun = "usti hlavne1";
 				selectionFireAnim = "zasleh";
-				maxHorizontalRotSpeed = 1.4;
-				maxVerticalRotSpeed = 1.6;
+				maxHorizontalRotSpeed = 1.0;
+				maxVerticalRotSpeed = 1.2;
 				soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",0.398107,1,30};
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner_vertical",0.398107,1,30};
 				gunnerAction = "driver_hemtt";
@@ -720,196 +857,102 @@ class CfgVehicles
 		};
 		class AnimationSources: AnimationSources
 		{
-			/* class muzzle_rot1
+			class muzzle_rot1
 			{
 				source = "ammorandom";
-				weapon = "TKE_Ext_MG_Coax";
-			}; */
+				weapon = "332nd_MAV_3_Auto_Cannon";
+			};
 			class recoil_source
 			{
 				source = "reload";
-				weapon = "332nd_PX10_Repeater";
+				weapon = "332nd_MAV_3_Auto_Cannon";
 			};
 		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			class ace_quickmount_ChangeSeat
+			{
+				condition = "call ace_quickmount_fnc_canShowFreeSeats";
+				displayName = "Change seat";
+				icon = "\z\ace\addons\quickmount\UI\Seats_ca.paa";
+				insertChildren = "call ace_quickmount_fnc_addFreeSeatsActions";
+			};
+			class TFAR_IntercomChannel
+			{
+				condition = "true";
+				displayName = "Intercom Channel";
+				icon = "";
+				statement = "";
+				class TFAR_IntercomChannel_1
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					displayName = "Infantry";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					displayName = "Crew";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_3
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					displayName = "Command";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_disabled
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					displayName = "Disabled";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+			};
+		};
+		class TextureSources
+		{
+			class Camo
+			{
+				displayName = "The Base Skin";
+				author = "Cherryy";
+				textures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+				factions[] = {"332nd_Faction"};
+			};
+		};
+		textureList[] = {"Camo",1}; 
 	};
-	class 332nd_Mav_3_Autocannon_2: 332nd_Mav_3_Base
+};
+class Mode_FullAuto;
+class CfgWeapons
+{
+	class 3AS_MK4ES_Medium_Cannon;
+	class 332nd_PX10_Repeater: 3AS_MK4ES_Medium_Cannon{};
+	class 332nd_MAV_3_Auto_Cannon: 332nd_PX10_Repeater
 	{
-		scope = 2;
-		scopeCurator = 2;
-		author = "Cherryy & Luca";
-		displayName = "[332nd] Mav 3 (Morruck Armed / 2)";
-		faction="332nd_Faction";
-		editorSubcategory = "EdSubcat_APCs";
-		crew = "JLTS_Clone_P2_DC15S";
-		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"}; 
-		model = "\TKE_Ext_APC\data\apc_aa.p3d";
-		transportSoldier = 12;
-		getInAction = "GetInLow";
-		getOutAction = "GetOutLow";
-		cargoGetInAction[] = {"GetInLow"};
-		cargoGetOutAction[] = {"GetOutLow"};
-		cargoAction[] = {"passenger_flatground_leanleft","passenger_flatground_generic01","passenger_flatground_generic02","passenger_flatground_generic03","passenger_flatground_generic04","passenger_flatground_generic05"};
-		class Reflectors
+		displayName = "[332nd] MAV-3 Auto Cannon";
+		magazines[] = {"332nd_PX10_Repeater_Mag"};
+		magazineReloadTime = 15;
+		class manual: Mode_FullAuto
 		{
-			class LightCarHeadL01
+			class BaseSoundModeType{};
+			class StandardSound: BaseSoundModeType
 			{
-				color[] = {1900,1800,1700};
-				ambient[] = {5,5,5};
-				position = "LightCarHeadL01";
-				direction = "LightCarHeadL01_end";
-				hitpoint = "Light_L";
-				selection = "Light_L";
-				size = 1;
-				innerAngle = 100;
-				outerAngle = 179;
-				coneFadeCoef = 10;
-				intensity = 1;
-				useFlare = 1;
-				dayLight = 0;
-				flareSize = 1;
-				class Attenuation
-				{
-					start = 0;
-					constant = 0;
-					linear = 1;
-					quadratic = 1;
-					hardLimitStart = 100;
-					hardLimitEnd = 200;
-				};
-			};
-			class LightCarHeadR01: LightCarHeadL01
-			{
-				position = "LightCarHeadR01";
-				direction = "LightCarHeadR01_end";
-				hitpoint = "Light_R";
-				selection = "Light_R";
-			};
-		};
-		smokeLauncherGrenadeCount = 8;
-		smokeLauncherVelocity = 13;
-		smokeLauncherOnTurret = 0;
-		smokeLauncherAngle = 105;
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class Turrets: Turrets
-				{
-					class CommanderOptics: CommanderOptics
-					{
-						class OpticsIn: Optics_Commander_01
-						{
-							class Wide: Wide{};
-							class Medium: Medium{};
-							class Narrow: Narrow{};
-						};
-						turretInfoType = "RscOptics_MBT_01_commander";
-						class Components
-						{
-							class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander
-							{
-								class Components: components
-								{
-									class SensorDisplay
-									{
-										componentType = "SensorsDisplayComponent";
-										range[] = {10000,5000,2000};
-										resource = "RscCustomInfoSensors";
-									};
-								};
-							};
-							class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander
-							{
-								defaultDisplay = "SensorDisplay";
-								class Components: components
-								{
-									class SensorDisplay
-									{
-										componentType = "SensorsDisplayComponent";
-										range[] = {10000,5000,2000};
-										resource = "RscCustomInfoSensors";
-									};
-								};
-							};
-						};
-					};
-				};
-				weapons[] = {"332nd_PX10_Repeater"};
-				magazines[] = {"332nd_PX10_Repeater_Mag"};
-				memoryPointGun[] = {"usti hlavne","usti hlavne1"};
-				minElev = -12;
-				maxElev = 75;
-				maxHorizontalRotSpeed = 1.1;
-				maxVerticalRotSpeed = 1.2;
-				class OpticsIn: Optics_Gunner_AAA_01
-				{
-					class Wide: Wide{};
-					class Medium: Medium{};
-					class Narrow: Narrow{};
-				};
-				turretInfoType = "RscOptics_APC_Tracked_01_gunner";
-				class Components
-				{
-					class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftGunner
-					{
-						class Components: components
-						{
-							class SensorDisplay
-							{
-								componentType = "SensorsDisplayComponent";
-								range[] = {10000,5000,2000};
-								resource = "RscCustomInfoSensors";
-							};
-						};
-					};
-					class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightGunner
-					{
-						defaultDisplay = "SensorDisplay";
-						class Components: components
-						{
-							class SensorDisplay
-							{
-								componentType = "SensorsDisplayComponent";
-								range[] = {10000,5000,2000};
-								resource = "RscCustomInfoSensors";
-							};
-						};
-					};
-				};
-			};
-		};
-		class Components: Components
-		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
-					{
-						class AirTarget
-						{
-							minRange = 10000;
-							maxRange = 10000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = -1;
-						};
-						class GroundTarget
-						{
-							minRange = 6000;
-							maxRange = 6000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = -1;
-						};
-						typeRecognitionDistance = 5000;
-						angleRangeHorizontal = 160;
-						angleRangeVertical = 160;
-						aimDown = -45;
-						minSpeedThreshold = 30;
-						maxSpeedThreshold = 90;
-						animDirection = "mainTurret";
-					};
-					class DataLinkSensorComponent: SensorTemplateDataLink{};
-				};
+				weaponSoundEffect="";
+				begin1[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,1,1800};
+				begin2[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,1.025,1800};
+				begin3[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,0.95,1800};
+				begin4[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,1.05,1800};
+				begin5[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,0.9,1800};
+				beginwater1[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1,1,400};
+				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+				soundBeginWater[] = {"beginwater1",1};
 			};
 		};
 	};
