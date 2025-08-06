@@ -746,8 +746,8 @@ class CfgVehicles
 				gun = "mainGun";
 				gunBeg = "usti hlavne";
 				gunEnd = "konec hlavne";
+				weapons[] = {"332nd_PX10_Repeater","SmokeLauncher"};
 				magazines[] = {"332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","SmokeLauncherMag"};
-				weapons[] = {"332nd_MAV_3_Auto_Cannon","SmokeLauncher"};
 				gunnerForceOptics = 1;
 				memoryPointGun = "usti hlavne1";
 				selectionFireAnim = "zasleh";
@@ -860,12 +860,12 @@ class CfgVehicles
 			class muzzle_rot1
 			{
 				source = "ammorandom";
-				weapon = "332nd_MAV_3_Auto_Cannon";
+				weapon = "332nd_PX10_Repeater";
 			};
 			class recoil_source
 			{
 				source = "reload";
-				weapon = "332nd_MAV_3_Auto_Cannon";
+				weapon = "332nd_PX10_Repeater";
 			};
 		};
 		class ACE_SelfActions: ACE_SelfActions
@@ -928,32 +928,88 @@ class CfgVehicles
 		};
 		textureList[] = {"Camo",1}; 
 	};
-};
-class Mode_FullAuto;
-class CfgWeapons
-{
-	class 3AS_MK4ES_Medium_Cannon;
-	class 332nd_PX10_Repeater: 3AS_MK4ES_Medium_Cannon{};
-	class 332nd_MAV_3_Auto_Cannon: 332nd_PX10_Repeater
+	class 332nd_Mav_3_SHORAD: 332nd_Mav_3_Armed
 	{
-		displayName = "[332nd] MAV-3 Auto Cannon";
-		magazines[] = {"332nd_PX10_Repeater_Mag"};
-		magazineReloadTime = 15;
-		class manual: Mode_FullAuto
+		scope = 2;
+		scopeCurator = 2;
+		author = "Cherryy & Luca";
+		displayName = "[332nd] Mav-3 (Morruck Shorad)";
+		editorPreview = "";
+		faction = "332nd_Faction";
+		crew = "JLTS_Clone_P2_DC15S";
+		model = "\TKE_Ext_APC\data\apc_aa.p3d";
+		editorSubcategory = "EdSubcat_APCs";
+		transportSoldier = 6;
+		class Turrets: Turrets
 		{
-			class BaseSoundModeType{};
-			class StandardSound: BaseSoundModeType
+			class MainTurret: MainTurret
 			{
-				weaponSoundEffect="";
-				begin1[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,1,1800};
-				begin2[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,1.025,1800};
-				begin3[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,0.95,1800};
-				begin4[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,1.05,1800};
-				begin5[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1.25,0.9,1800};
-				beginwater1[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\sounds\M41.ogg",1,1,400};
-				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
-				soundBeginWater[] = {"beginwater1",1};
+				weapons[] = {"332nd_PX10_Repeater", "332nd_Hammer_I"};
+				magazines[] = {"332nd_PX10_Repeater_Mag", "332nd_Hammer_I_Mag", "332nd_Hammer_I_Mag", "332nd_Hammer_I_Mag", "332nd_Hammer_I_Mag"};
+				memoryPointGun[] = {"usti hlavne","usti hlavne1"};
+
 			};
 		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class ACE_Passengers
+			{
+				condition = "alive _target";
+				displayName = "Passengers";
+				insertChildren = "call ace_interaction_fnc_addPassengersActions";
+				statement = "";
+			};
+			class ace_quickmount_ChangeSeat
+			{
+				condition = "call ace_quickmount_fnc_canShowFreeSeats";
+				displayName = "Change seat";
+				icon = "\z\ace\addons\quickmount\UI\Seats_ca.paa";
+				insertChildren = "call ace_quickmount_fnc_addFreeSeatsActions";
+			};
+			class TFAR_IntercomChannel
+			{
+				condition = "true";
+				displayName = "Intercom Channel";
+				icon = "";
+				statement = "";
+				class TFAR_IntercomChannel_1
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					displayName = "Infantry";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					displayName = "Crew";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_3
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					displayName = "Command";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_disabled
+				{
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					displayName = "Disabled";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+			};
+		};
+		class TextureSources
+		{
+			class Camo
+			{
+				displayName = "The Base Skin";
+				author = "Cherryy";
+				textures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+				factions[] = {"332nd_Faction"};
+			};
+		};
+		textureList[] = {"Camo",1};
 	};
 };
+class Mode_FullAuto;
+//merge your mother
