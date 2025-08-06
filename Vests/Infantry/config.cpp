@@ -565,6 +565,138 @@ class 332nd_Asuka_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
+class 332nd_Joker_Custom_Vest: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Joker)";
+		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SWLB_clones\data\light_accessories_co.paa",
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Joker.paa",
+			"SWLB_clones\data\heavy_accessories_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+		};
+	};
+class 332nd_Body_Custom_Vest: 332nd_Trooper_Vest 
+	{
+		displayName="[332nd] Vest (Body)";
+		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SWLB_clones\data\light_accessories_co.paa",
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Body.paa",
+			"SWLB_clones\data\heavy_accessories_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+		};
+	};
+class 332nd_Crow_Custom_Vest: 332nd_Trooper_Vest 
+	{
+		displayName="[332nd] Vest (Crow)";
+		model="\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\SWLB_clones\data\heavy_accessories_co.paa",
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Crow.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2"
+			};
+		};
+	};
+class 332nd_Frankenburg_Custom_Vest: 332nd_Trooper_Vest 
+	{
+		displayName="[332nd] Vest (Frankenburg)";
+		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SWLB_clones\data\light_accessories_co.paa",
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Frankenburg.paa",
+			"SWLB_clones\data\heavy_accessories_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+		};
+	};
+/* class 332nd_Walkie_Custom_Vest: 332nd_Trooper_Vest 
+	{
+		displayName="[332nd] Vest (Walkie)";
+		model="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"pauldron"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_Aux\Vests\Tex\332nd_Vest_Walkie.paa",
+			"SWLB_clones\data\light_accessories_co.paa",
+			"SWLB_clones\data\heavy_accessories_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"pauldron"
+			};
+		};
+	}; */
 
 /*
 class 332nd_Veteran_Vest: SWLB_clone_recon_armor
@@ -1257,7 +1389,7 @@ class XtdGearModels
 			class custom
             {
                 label = "Customs";
-                values[] = { "Cherryy", "Asuka", "Ithias",};
+                values[] = { "Cherryy", "Asuka", "Ithias", "Joker", "Body", "Crow", "Frankenburg", /* "Walkie" */};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -1278,6 +1410,36 @@ class XtdGearModels
                     description = "Joe";
                     // image = "xxx";
                 };
+				class Joker
+                {
+                    label = "Joker";
+                    description = "The prodigal son returns";
+                    // image = "xxx";
+                };
+				class Body
+                {
+                    label = "Body";
+                    description = "Sir Lego Himself";
+                    // image = "xxx";
+                };
+				class Crow
+                {
+                    label = "Crow";
+                    description = "Attendence Enthusiast";
+                    // image = "xxx";
+                };
+				class Frankenburg
+                {
+                    label = "Frankenburg";
+                    description = "Tier 1 Rage Baiter";
+                    // image = "xxx";
+                };
+				/* class Walkie
+                {
+                    label = "Walkie";
+                    description = "We hate the French";
+                    // image = "xxx";
+                }; */
             };
         };
     };
@@ -1286,14 +1448,14 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-		//CR
+//CR
         class 332nd_Trooper_Vest
         {
             model = "332nd_Vest_Extended";
             Rank = "CR";
             variant = "variant1";
         };
-		//VCT
+//VCT
         class 332nd_Veteran_Vest_variant_1
         {
             model = "332nd_Vest_Extended";
@@ -1318,7 +1480,7 @@ class XtdGearInfos
             Rank = "VCT";
             variant = "variant4";
         };
-		//CS
+//CS
         class 332nd_Sergeant_Vest_variant_1
         {
             model = "332nd_Vest_Extended";
@@ -1343,7 +1505,7 @@ class XtdGearInfos
             Rank = "CS";
             variant = "variant4";
         };
-		//CSM
+//CSM
         class 332nd_Platoon_Vest_variant_1
         {
             model = "332nd_Vest_Extended";
@@ -1374,6 +1536,7 @@ class XtdGearInfos
             Rank = "CSM";
             variant = "variant5";
         };
+//Customs
 		class 332nd_Cherryy_Custom_Vest
         {
             model = "332nd_Vest_Extended";
@@ -1389,5 +1552,30 @@ class XtdGearInfos
             model = "332nd_Vest_Extended";
 			custom = "Ithias";
 		};
+		class 332nd_Joker_Custom_Vest
+		{
+            model = "332nd_Vest_Extended";
+			custom = "Joker";
+		};
+		class 332nd_Body_Custom_Vest
+		{
+            model = "332nd_Vest_Extended";
+			custom = "Body";
+		};
+		class 332nd_Crow_Custom_Vest
+		{
+            model = "332nd_Vest_Extended";
+			custom = "Crow";
+		};
+		class 332nd_Frankenburg_Custom_Vest
+		{
+            model = "332nd_Vest_Extended";
+			custom = "Frankenburg";
+		};
+		/* class 332nd_Walkie_Custom_Vest
+		{
+            model = "332nd_Vest_Extended";
+			custom = "Walkie";
+		}; */
     };
 };
