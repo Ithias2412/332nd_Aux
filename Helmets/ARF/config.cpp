@@ -136,6 +136,21 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Woodland.paa",
 		};
 	};
+	/* class 332nd_Helmet_ARF_New_Mat: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (New Mat)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_New_Mat.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_New_Mat.paa",
+		}; 
+	}; */
 	//Customs
 	class 332nd_Helmet_ARF_Asuka: 332nd_Helmet_ARF_Base
 	{
@@ -210,6 +225,21 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Stryker.paa",
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Stryker.paa",
+		};
+	};
+	class 332nd_Helmet_ARF_Smoke: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Smoke)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Smoke.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Smoke.paa",
 		};
 	};
 };
