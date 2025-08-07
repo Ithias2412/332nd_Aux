@@ -23,6 +23,7 @@ class CfgVehicles
 		editorSubcategory = "EdSubcat_332nd_Planes";
 		faction = "332nd_East_Enia_Faction";
 		crew = "332nd_Enia_Base";
+		armor = 200;
 		hiddenselectionstextures[] =
 		{
 			"332nd_Aux\Factions\East_Enian\Vehicles\Tex\East_Enian_Gozanti.paa",
