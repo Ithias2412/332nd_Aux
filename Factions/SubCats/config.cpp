@@ -13,6 +13,15 @@ class CfgPatches {
 	};
 };
 //#include "xtdGear.hpp"
+class CfgEditorCategories
+{
+	class 332nd_Enia
+	{
+		displayname="[332nd] Enia";
+	};
+};
+
+
 class CfgEditorSubcategories
 {
     class EdSubcat_332nd_Light_Vics
