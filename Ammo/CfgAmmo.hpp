@@ -1,3 +1,4 @@
+class SensorTemplateIR;
 class CfgAmmo 
 {
 	class BulletBase;
@@ -336,6 +337,9 @@ class CfgAmmo
 	{
 		//ExplosionEffects = "MortarExplosion";
 		hit=300;
+		effectsMissile = "3AS_Rocket_effect_Blue_fly";
+		indirectHit = 20;
+		indirectHitRange = 2;
 	};
 	class 332nd_RPS6_Ammo_NLAW: ACE_NLAW 
 	{
@@ -346,12 +350,17 @@ class CfgAmmo
 	{
 		//ExplosionEffects = "MortarExplosion";
 		hit=900;
+		initTime = 0;
+		effectsMissile = "3AS_Rocket_effect_Blue_fly";
 	};
 	//PLX1
 	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
 	{
 		//ExplosionEffects = "MortarExplosion";
 		hit=900;
+		effectsMissile = "3AS_Rocket_effect_Blue_fly";
+		indirectHit = 20;
+		indirectHitRange = 2;
 	};
 	//UGL Grenades & Smokes
 	class 332nd_HE_LGrenade: G_40mm_HE
