@@ -300,7 +300,7 @@ class XtdGearModels
 			class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Cin", /* "Walkie", */ "Trick", "Stryker",};
+				values[] = { "Asuka", "Cin", /* "Walkie", */ "Trick", "Stryker", "Smoke"};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -331,6 +331,12 @@ class XtdGearModels
                 {
                     label = "Stryker";
                     description = "Stryker Eureka";
+                    //image = "xxx";
+                };
+				class Smoke
+                {
+                    label = "Smoke";
+                    description = "Smokey Mountain Range";
                     //image = "xxx";
                 };
             };
@@ -392,6 +398,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Stryker";
+        };
+		 class 332nd_Helmet_ARF_Smoke
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Smoke";
         };
 	};
 };

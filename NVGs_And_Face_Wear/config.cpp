@@ -18,7 +18,7 @@ class CfgWeapons
 	class OPTRE_NVG;
 	class ItemInfo;
 	class lsd_gar_rangefinder_nvg;
-	
+	class lsd_gar_tanker_nvg;
 	class 332nd_NVG_Chip: OPTRE_NVG
 	{
 		displayName = "[332nd] NVG Chip";
@@ -50,6 +50,38 @@ class CfgWeapons
 			uniformModel = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
 		};
 	};
+	class 332nd_Tanker_NVG: lsd_gar_tanker_nvg
+	{
+		scope = 2;
+		displayName = "[332nd] Tanker NVG";
+		visionMode[] = {"Normal","NVG"};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Tanker_NVG.paa"};
+		class ItemInfo: ItemInfo
+		{
+			type = 616;
+			uniformModel = "\lsd_equipment_bluefor\accessories\gar\tanker\lsd_gar_tanker_nvg";
+			modelOff = "\lsd_equipment_bluefor\accessories\gar\tanker\lsd_gar_tanker_nvg";
+			mass = 20;
+			hiddenSelections[] = {"camo1"};
+		};
+	};
+	/* class 332nd_Tanker_NVG_NCO: 332nd_Tanker_NVG
+	{
+		scope = 2;
+		displayName = "[332nd] Tanker NVG NCO";
+		visionMode[] = {"Normal","NVG"};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Tanker_NVG_NCO.paa"};
+		class ItemInfo: ItemInfo
+		{
+			type = 616;
+			uniformModel = "\lsd_equipment_bluefor\accessories\gar\tanker\lsd_gar_tanker_nvg";
+			modelOff = "\lsd_equipment_bluefor\accessories\gar\tanker\lsd_gar_tanker_nvg";
+			mass = 20;
+			hiddenSelections[] = {"camo1"};
+		};
+	}; */
 	class 332nd_NVG_Visor: OPTRE_NVG
 	{
 		displayName = "[332nd] Visor";
@@ -128,6 +160,19 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa" 
+		};
+	};
+	class 332nd_NVG_Visor_Walkie: 332nd_NVG_Visor
+	{
+		displayName = "[332nd] Visor (Walkie)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Walkie_NVG.paa" 
 		};
 	};
 };
@@ -325,7 +370,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", };
+				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", "ArmorPlating"};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Chip
@@ -352,11 +397,17 @@ class XtdGearModels
                     description = "SCT+";
                     //image = "xxx";
                 };
+				class ArmorPlating
+                {
+                    label = "Armor Plating";
+                    description = "Fun OPS";
+                    //image = "xxx";
+                };
             };
             class Customs
             {
                 label = "Customs";
-				values[] = { "Cherryy",};
+				values[] = { "Cherryy", "Walkie"};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -365,7 +416,32 @@ class XtdGearModels
                     //description = "Default";
                     //image = "xxx";
                 };
+				class Walkie
+                {
+                    label = "Walkie";
+                    //description = "Default";
+                    //image = "xxx";
+                };
             };
+			class Variant
+            {
+                label = "Variant";
+				values[] = { "A", "B", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Tanker
+                {
+                    label = "Tanker";
+                    //description = "Default";
+                    //image = "xxx";
+                };
+                /* class NCO
+                {
+                    label = "NCO";
+                    //description = "Not Default";
+                    //image = "xxx";
+                }; */
+			};
         };
     };
     class CfgGlasses 
@@ -490,6 +566,18 @@ class XtdGearInfos
             model = "332nd_NVG_Extended";
             Type = "Visor_Inverted";
         };
+		class 332nd_Tanker_NVG  
+        {
+            model = "332nd_NVG_Extended";
+            Type = "ArmorPlating";
+			Variant = "Tanker";
+        };
+		/* class 332nd_Tanker_NVG_NCO 
+        {
+            model = "332nd_NVG_Extended";
+            Type = "ArmorPlating";
+			Variant = "NCO";
+        }; */
         class 332nd_NVG_Visor_Cherryy
         {
             model = "332nd_NVG_Extended";
@@ -499,6 +587,11 @@ class XtdGearInfos
         {
             model = "332nd_NVG_Extended";
             Customs = "Asuka";
+        };
+		class 332nd_NVG_Visor_Walkie
+        {
+            model = "332nd_NVG_Extended";
+            Customs = "Walkie";
         };
     };
     class CfgGlasses 

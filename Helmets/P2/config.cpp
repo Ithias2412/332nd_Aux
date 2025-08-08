@@ -70,7 +70,6 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_CT.paa"
 		};
 	};
-	//Testing Stuff
 	/* class 332nd_Helmet_P2_New: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (New Mat)";
@@ -82,7 +81,9 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_New_Mat.paa"
+			
 		};
+		hiddenSelectionsMaterials[] = {"332nd_Aux\Helmets\P2\332nd_Plastic_RV.rvmat"};
 	}; 
 	class 332nd_Helmet_P2_Testing: 332nd_Helmet_P2_CR
 	{
@@ -96,7 +97,8 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Testing.paa"
 		};
-	};  */
+	}; */
+
 	class 332nd_Helmet_P2_Medic: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Medic)";
@@ -437,6 +439,30 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Alpha.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Seelig: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Seelig)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Seelig.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Aqua: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Aqua)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Aqua.paa"
+		};
+	};
 };
 class XtdGearModels
 {
@@ -481,7 +507,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", /* "Seelig", */ "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel", "Alpha"};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel", "Alpha", "Aqua"};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -555,12 +581,12 @@ class XtdGearModels
 					description = "50/50 RPS-6 Hit Chance";
 					//image = "xxx";
 				};	
-				/* class Seelig
+				class Seelig
                 {
                     label = "Seelig";
                     description = "Flight 5342 Pilot";
                     //image = "xxx";
-                }; */
+                }; 
 				class Sovereign
 				{
 					label = "Sovereign";
@@ -663,6 +689,12 @@ class XtdGearModels
 					description = "Had his name stolen";
 					//image = "xxx";
 				};
+				class Aqua
+				{
+					label = "Aqua";
+					description = "40k Fanatic";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -753,11 +785,11 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Shark";
         };
-		/* class 332nd_Helmet_RTO_Seelig
+		class 332nd_Helmet_P2_Seelig
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Seelig";
-        }; */
+        }; 
 		class 332nd_Helmet_P2_Sovereign
         {
             model = "332nd_Helmets_P2_Extended";
@@ -842,6 +874,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_P2_Extended";
             Customs = "Alpha";
+        };
+		class 332nd_Helmet_P2_Aqua
+        {
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Aqua";
         };
 	};
 };

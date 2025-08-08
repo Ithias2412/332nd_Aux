@@ -372,7 +372,7 @@ class CfgVehicles
 		faction="332nd_Faction";
 		editorSubcategory = "EdSubcat_APCs";
 		crew = "JLTS_Clone_P2_DC15S";
-		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV-3\tex\332nd_Morruck_co.paa"};
 		armor = 500;
 		armorStructural = 5;
 		brakeDistance = 3;
@@ -433,7 +433,7 @@ class CfgVehicles
 			{
 				displayName = "The Base Skin";
 				author = "Cherryy";
-				textures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+				textures[] = {"332nd_Aux\Vehicles\MAV-3\tex\332nd_Morruck_co.paa"};
 				factions[] = {"332nd_Faction"};
 			};
 		};
@@ -562,7 +562,7 @@ class CfgVehicles
 		faction = "332nd_Faction";
 		editorSubcategory = "EdSubcat_APCs";
 		crew = "JLTS_Clone_P2_DC15S";
-		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV-3\tex\332nd_Morruck_co.paa"};
 		armor = 500;
 		armorStructural = 5;
 		brakeDistance = 3;
@@ -623,7 +623,7 @@ class CfgVehicles
 			{
 				displayName = "The Base Skin";
 				author = "Cherryy";
-				textures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+				textures[] = {"332nd_Aux\Vehicles\MAV-3\tex\332nd_Morruck_co.paa"};
 				factions[] = {"332nd_Faction"};
 			};
 		};
@@ -923,7 +923,7 @@ class CfgVehicles
 			{
 				displayName = "The Base Skin";
 				author = "Cherryy";
-				textures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+				textures[] = {"332nd_Aux\Vehicles\MAV-3\tex\332nd_Morruck_co.paa"};
 				factions[] = {"332nd_Faction"};
 			};
 		};
@@ -1005,7 +1005,7 @@ class CfgVehicles
 			{
 				displayName = "The Base Skin";
 				author = "Cherryy";
-				textures[] = {"332nd_Aux\Vehicles\MAV-3_Morruck\tex\332nd_Morruck_co.paa"};
+				textures[] = {"332nd_Aux\Vehicles\MAV-3\tex\332nd_Morruck_co.paa"};
 				factions[] = {"332nd_Faction"};
 			};
 		};
