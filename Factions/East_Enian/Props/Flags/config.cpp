@@ -21,6 +21,7 @@ class CfgVehicles
 	{
 		displayName = "Flag (Enian Guard)";
 		editorCategory = "332nd_Enia";
+		CfgEditorSubcategories = "EdSubcat_332nd_Enian_Flags";
 		class EventHandlers
 		{
 			init = "(_this select 0) setFlagTexture '332nd_Aux\Factions\East_Enian\Props\Tex\Enian_Guard_Flag.paa'";
@@ -30,6 +31,7 @@ class CfgVehicles
 	{
 		displayName = "Flag (Enian Guard / Damaged)";
 		editorCategory = "332nd_Enia";
+		CfgEditorSubcategories = "EdSubcat_332nd_Enian_Flags";
 		class EventHandlers
 		{
 			init = "(_this select 0) setFlagTexture '332nd_Aux\Factions\East_Enian\Props\Tex\Enian_Guard_Flag_Dmg.paa'";

@@ -1,4 +1,4 @@
-class CfgPatches
+/* class CfgPatches
 {
 	class 3AS_SaberTank
 	{
@@ -563,7 +563,7 @@ class CfgVehicles
 
 		};
 	};
-};
+}; */
 /* class CfgAmmo 
 {
     class 332nd_Saber_Missile 
