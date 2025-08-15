@@ -592,7 +592,7 @@ class 332nd_Joker_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-class 332nd_Body_Custom_Vest: 332nd_Trooper_Vest 
+/* class 332nd_Body_Custom_Vest: 332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Body)";
 		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -618,7 +618,7 @@ class 332nd_Body_Custom_Vest: 332nd_Trooper_Vest
 				"camo3"
 			};
 		};
-	};
+	}; */
 class 332nd_Crow_Custom_Vest: 332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Crow)";
