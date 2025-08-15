@@ -6,7 +6,7 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = 
 		{
-			"332nd_Mav_3_Base", "332nd_Mav_3_Transport", "332nd_Mav_3_Armed"
+			"332nd_Mav_3_Transport", "332nd_Mav_3_Armed"
 		};
 		weapons[] = {};
 	};
@@ -362,196 +362,6 @@ class CfgVehicles
 			};
 		};
 	};
-	class 332nd_Mav_3_Base: TKE_Ext_Bearcat_BASE
-	{
-		scope = 1;
-		scopeCurator = 1;
-		author = "Cherryy & Luca";
-		model = "\TKE_Ext_APC\data\apc.p3d";
-		displayName = "[332nd] Mav 3 (Morruck Base)";
-		faction="332nd_Faction";
-		editorSubcategory = "EdSubcat_APCs";
-		crew = "JLTS_Clone_P2_DC15S";
-		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\MAV3\tex\332nd_Morruck_co.paa"};
-		armor = 500;
-		armorStructural = 5;
-		brakeDistance = 3;
-		canFloat = 1;
-		tas_canBlift = 1;
-        tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
-		class ACE_SelfActions: ACE_SelfActions
-		{
-			class ACE_Passengers
-			{
-				condition = "alive _target";
-				displayName = "Passengers";
-				insertChildren = "call ace_interaction_fnc_addPassengersActions";
-				statement = "";
-			};
-			class ace_quickmount_ChangeSeat
-			{
-				condition = "call ace_quickmount_fnc_canShowFreeSeats";
-				displayName = "Change seat";
-				icon = "\z\ace\addons\quickmount\UI\Seats_ca.paa";
-				insertChildren = "call ace_quickmount_fnc_addFreeSeatsActions";
-			};
-			class TFAR_IntercomChannel
-			{
-				condition = "true";
-				displayName = "Intercom Channel";
-				icon = "";
-				statement = "";
-				class TFAR_IntercomChannel_1
-				{
-					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
-					displayName = "Infantry";
-					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
-				};
-				class TFAR_IntercomChannel_2
-				{
-					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
-					displayName = "Crew";
-					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
-				};
-				class TFAR_IntercomChannel_3
-				{
-					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
-					displayName = "Command";
-					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
-				};
-				class TFAR_IntercomChannel_disabled
-				{
-					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
-					displayName = "Disabled";
-					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
-				};
-			};
-		};
-		class TextureSources
-		{
-			class Camo
-			{
-				displayName = "The Base Skin";
-				author = "Cherryy";
-				textures[] = {"332nd_Aux\Vehicles\MAV3\tex\332nd_Morruck_co.paa"};
-				factions[] = {"332nd_Faction"};
-			};
-		};
-		textureList[] = {"Camo",1}; 
-		/* class HitPoints: HitPoints
-		{
-			class HitHull: HitHull
-			{
-				name = "hull";
-				visual = "body";
-				armor = 1;
-				material = -1;
-				passThrough = 0.5;
-				minimalHit = 0.2;
-				explosionShielding = 0.6;
-				radius = 0.25;
-			};
-			class HitEngine: HitEngine
-			{
-				class DestructionEffects
-				{
-					ammoExplosionEffect = "";
-					class Engine_Smoke
-					{
-						simulation = "particles";
-						type = "SmallWreckSmoke";
-						position = "engine_fire";
-						intensity = 0.5;
-						interval = 1;
-						lifeTime = 60;
-					};
-					class Engine_Fire: Engine_Smoke
-					{
-						type = "SmallFireFPlace";
-					};
-				};
-				name = "engine";
-				visual = "";
-			};
-			class HitFuel: HitFuel
-			{
-				name = "palivo";
-				visual = "";
-			};
-			class HitLFWheel: HitLFWheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-				passThrough = 0;
-				material = -1;
-				minimalHit = -0.016;
-				armorComponent = "wheel_1_1_hide";
-				name = "wheel_1_1_steering";
-				visual = "wheel_1_1_hide";
-			};
-			class HitLF2Wheel: HitLF2Wheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-				passThrough = 0;
-				material = -1;
-				minimalHit = -0.016;
-				armorComponent = "wheel_1_2_hide";
-				name = "wheel_1_2_steering";
-				visual = "wheel_1_2_hide";
-			};
-			class HitLF3Wheel: HitLF2Wheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-				passThrough = 0;
-				material = -1;
-				minimalHit = -0.016;
-				armorComponent = "wheel_1_3_hide";
-				name = "wheel_1_3_steering";
-				visual = "wheel_1_3_hide";
-			};
-			class HitRFWheel: HitRFWheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-				passThrough = 0;
-				material = -1;
-				minimalHit = -0.016;
-				armorComponent = "wheel_2_1_hide";
-				name = "wheel_2_1_steering";
-				visual = "wheel_2_1_hide";
-			};
-			class HitRF2Wheel: HitRF2Wheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-				passThrough = 0;
-				material = -1;
-				minimalHit = -0.016;
-				armorComponent = "wheel_2_2_hide";
-				name = "wheel_2_2_steering";
-				visual = "wheel_2_2_hide";
-			};
-			class HitRF3Wheel: HitRF2Wheel
-			{
-				armor = 0.5;
-				explosionShielding = 4;
-				radius = 0.33;
-				passThrough = 0;
-				material = -1;
-				minimalHit = -0.016;
-				armorComponent = "wheel_2_3_hide";
-				name = "wheel_2_3_steering";
-				visual = "wheel_2_3_hide";
-			};
-		}; */ 
-	};
 	class 332nd_Mav_3_Transport: TKE_Ext_Bearcat_BASE
 	{
 		scope = 2;
@@ -569,6 +379,42 @@ class CfgVehicles
 		canFloat = 1;
 		tas_canBlift = 1;
         tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
+		class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                class Turrets: Turrets
+                {
+                    class CommanderOptics: CommanderOptics
+                    {
+                        class ViewGunner: ViewGunner{};
+                        class ViewOptics: ViewOptics
+                        {};
+                        class OpticsIn
+                        {
+                            class Wide: ViewOptics{};
+                            class Medium: Wide{};
+                            class Narrow: Wide{};
+                        };
+                        class HitPoints{};
+                    };
+                };
+                class OpticsIn
+                {
+                    class Wide: ViewOptics{};
+                    class Medium: Wide{};
+                    class Narrow: Wide{};
+                };
+                class ViewOptics: ViewOptics{};
+                class ViewGunner: ViewOptics{};
+                class HitPoints: HitPoints
+                {
+                    class HitTurret: HitTurret{};
+                    class HitGun: HitGun{};
+                };
+                gunnerDoor = "";
+            };
+        };
 		class ACE_SelfActions: ACE_SelfActions
 		{
 			class ACE_Passengers
