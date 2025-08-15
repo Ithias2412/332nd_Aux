@@ -1,4 +1,4 @@
-/*
+
 class CfgPatches
 {
 	class 332nd_MAV_3
@@ -550,7 +550,7 @@ class CfgVehicles
 				name = "wheel_2_3_steering";
 				visual = "wheel_2_3_hide";
 			};
-		}; */ /*
+		}; */ 
 	};
 	class 332nd_Mav_3_Transport: TKE_Ext_Bearcat_BASE
 	{
@@ -1013,4 +1013,3 @@ class CfgVehicles
 	};
 };
 class Mode_FullAuto;
-//merge your mother
