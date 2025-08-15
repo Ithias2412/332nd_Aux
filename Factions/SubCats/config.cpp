@@ -106,9 +106,4 @@ class CfgEditorSubcategories
     {
         displayName = "[332nd] Resupply Crates";
     };
-    //Flags
-    class EdSubcat_332nd_Enian_Flags
-    {
-        displayName = "[332nd] East Enian Flags";
-    };
 };
