@@ -57,6 +57,7 @@ class CfgVehicles {
     // B1 Droids
     class 332nd_Droid_Base: JLTS_Droid_B1_E5 
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
 		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
 		impactEffectsBlood = "ImpactMetal";
 		impactEffectsNoBlood = "ImpactPlastic";
@@ -155,6 +156,7 @@ class CfgVehicles {
     };
     class 332nd_Droid_B1_Crewman: JLTS_Droid_B1_Crew 
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
         scope = 2;
         displayName = "B1 Crewman";
         faction = "332nd_CIS_Faction";
@@ -184,6 +186,7 @@ class CfgVehicles {
     };
     class 332nd_Droid_B1_Pilot: JLTS_Droid_B1_Pilot 
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
         scope = 2;
         displayName = "B1 Pilot";
         faction = "332nd_CIS_Faction";
@@ -204,6 +207,7 @@ class CfgVehicles {
 	// B2 Droids
     class 332nd_Droid_B2: 3AS_CIS_B2_F 
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
 		impactEffectsBlood = "ImpactMetal";
 		impactEffectsNoBlood = "ImpactPlastic";
         scope = 2; 
@@ -399,6 +403,7 @@ class CfgVehicles {
 	// T-Series
 	class 332nd_Droid_T_Series: 3AS_CIS_TS_F
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
 		impactEffectsBlood = "ImpactMetal";
 		impactEffectsNoBlood = "ImpactPlastic";
         faction = "332nd_CIS_Faction";
@@ -415,6 +420,7 @@ class CfgVehicles {
 	//Human CIS
 	class 332nd_CIS_Hum: 3AS_U_CIS_Light
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
 		displayName = "CIS Infantry";
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Human_Division";
@@ -664,6 +670,7 @@ class CfgVehicles {
 	//BX Droids
 	class 332nd_Droid_BX_Melee: WBK_BX_Assasin_1
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Special_Operations";
 		displayName = "BX Assassin";
@@ -849,6 +856,7 @@ class CfgVehicles {
 	};
 	class 332nd_Droid_BX_Range: lsd_cis_bxdroid_specops
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Special_Operations";
 		displayName = "BX Commando";
@@ -1033,6 +1041,7 @@ class CfgVehicles {
 	};
 	class 332nd_Droid_BX_Shield: lsd_cis_bxdroid_specops
 	{
+		items[] = {"WBK_HeadLampItem_Narrow"};
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Special_Operations";
 		displayName = "BX Commando (Shield)";
