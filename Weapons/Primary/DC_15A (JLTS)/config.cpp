@@ -14,22 +14,7 @@ class CfgPatches {
 	};
 };
 //#include "xtdGear.hpp"
-class CfgMagazineWells
-{
-    class 332nd_UGL_MagWell
-    {
-        MAGAZINES[] =
-        {
-            "332nd_HE_LGrenade_Mag",
-            "332nd_Smoke_LauncherGrenade",
-            "332nd_SmokeRed_LauncherGrenade",
-            "332nd_SmokeGreen_LauncherGrenade",
-            "332nd_SmokeBlue_LauncherGrenade",
-            "332nd_SmokePurple_LauncherGrenade",
-			"ACE_HuntIR_M203"
-        };
-    };
-};
+
 
 class CowsSlot;
 class UnderBarrelSlot;
@@ -445,18 +430,11 @@ class cfgWeapons
 			discreteDistanceInitIndex=0;
 			magazines[]=
 			{
-				"332nd_HE_LGrenade_Mag",
-				"332nd_Smoke_LauncherGrenade",
-				"332nd_SmokeRed_LauncherGrenade",
-				"332nd_SmokeGreen_LauncherGrenade",
-				"332nd_SmokeBlue_LauncherGrenade",
-				"332nd_SmokePurple_LauncherGrenade",
-				"ACE_HuntIR_M203"
+				
 			};
 			magazineWell[] = 
 			{
-				//"UGL_40x36",
-				//"332nd_UGL_MagWell"
+				"332nd_UGL_MagWell"
 			};
 		};
 		irLaserPos="";

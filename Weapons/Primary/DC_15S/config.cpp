@@ -349,17 +349,14 @@ class cfgWeapons
 			discreteDistanceInitIndex=0;
 			magazines[]=
 			{
-				"332nd_HE_LGrenade_Mag",
-				"332nd_Smoke_LauncherGrenade",
-				"332nd_SmokeRed_LauncherGrenade",
-				"332nd_SmokeGreen_LauncherGrenade",
-				"332nd_SmokeBlue_LauncherGrenade",
-				"332nd_SmokePurple_LauncherGrenade",
-				"ACE_HuntIR_M203",
+				
+			};
+			magazineWell[] = 
+			{
+				"332nd_UGL_MagWell"
 			};
 			recoil="Old_IDA_recoil_DC23";
 			reloadAction = "GestureReloadMXUGL";
-			magazineWell[]={};
 		};
 		fireLightDiffuse[]={0.1,0.25,1};
 		drySound[]=

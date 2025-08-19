@@ -247,15 +247,12 @@ class cfgWeapons
 			cameraDir = "OP_look";
 			magazines[]=
 			{
-				"332nd_HE_LGrenade_Mag",
-				"332nd_Smoke_LauncherGrenade",
-				"332nd_SmokeRed_LauncherGrenade",
-				"332nd_SmokeGreen_LauncherGrenade",
-				"332nd_SmokeBlue_LauncherGrenade",
-				"332nd_SmokePurple_LauncherGrenade",
-				"ACE_HuntIR_M203"
+				
 			};
-			magazineWell[]={};
+			magazineWell[] = 
+			{
+				"332nd_UGL_MagWell"
+			};
 			descriptionShort = "DC15CGL";
 			discreteDistance[] = {50,75,100,150,200,250,300,350,400};
 			discreteDistanceCameraPoint[] = {"OP_eye_50","OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
