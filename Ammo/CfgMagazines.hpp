@@ -46,8 +46,8 @@ class CfgMagazines
 	class 332nd_DC15X_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_L2";
-		count = 20;
-		displayname = "DC-15X 20 Round Energy Cell";
+		count = 15;
+		displayname = "DC-15X 15 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
 		initSpeed = 1200;
@@ -371,4 +371,5 @@ class CfgMagazines
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_purple_CA.paa";
 		mass=2;
 	};
+
 };
