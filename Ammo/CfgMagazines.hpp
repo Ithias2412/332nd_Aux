@@ -371,5 +371,27 @@ class CfgMagazines
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_purple_CA.paa";
 		mass=2;
 	};
-
+	class 332nd_SmokeYellow_LauncherGrenade: 332nd_Smoke_LauncherGrenade
+	{
+		author="Viper";
+		count=1;
+		displayName="332nd Impact Smoke (Yellow)";
+		displayNameShort="Yellow Smoke";
+		descriptionShort="Yellow Impact Smoke grenade";
+		ammo="332nd_UGL_Smoke_Yellow";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
+		mass=2;
+	};
+	class 332nd_SmokeOrange_LauncherGrenade: 332nd_Smoke_LauncherGrenade
+	{
+		author="Viper";
+		count=1;
+		displayName="332nd Impact Smoke (Orange)";
+		displayNameShort="Orange Smoke";
+		descriptionShort="Orange Impact Smoke grenade";
+		ammo="332nd_UGL_Smoke_Orange";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_orange_CA.paa";
+		mass=2;
+	};
 };
+
