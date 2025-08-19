@@ -1532,3 +1532,211 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 		};
 }; 
 
+
+
+
+    ["[332nd] East Enian", "Light Insertion pod",
+        {
+            params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
+            
+           _options = ["Rifleman", "Grenadier", "Medic", "Anti-Tank", "Support Gunner", "Officer"];
+            
+            ["spawn Insertion pod", [
+                ["sideS", ["Side select (ONLY ONE!)", "The side the dropped unit will be on."], [east]],
+                ["toOLBOX", ["Type select", "What type of unit to spawn."], [1, 2, 3, _options, nil]]
+                ], {
+                    params["_values", "_arguments"];
+                    _dropside=_values select 0;
+                    _selection=_values select 1;
+                    
+                    _position=_arguments select 0;
+                    
+					[_position, _dropside,_selection] call RC_fnc_Enian_DropPod;
+                   
+                }, {}, [_pos]] call zen_dialog_fnc_create;
+            }, "\PHAN_ScifiSupportPlus\data\EliteDroppod.paa"] call zen_custom_modules_fnc_register;
+
+
+
+
+                RC_fnc_Enian_DropPod = {
+                    params ["_position", "_dropside","_selection"];
+ 
+                    _position= (ASLtoATL _position);
+                    
+                    _spawnpos = _position vectorAdd [random [-175, 0, 175], random [-175, 0, 175], 1000];
+                    
+                    _mainprojectile=createvehicle ["Sh_125mm_APFSDS", _spawnpos, [], 0, "NONE"];
+					_mainprojectile setShotParents [player, player];
+                    
+                    _angle = [(_position vectorFromTo _spawnpos)#0, (_position vectorFromTo _spawnpos)#1, ((_position vectorFromTo _spawnpos)#2)];
+
+                    _projectile = createvehicle ["332nd_East_Enia_Drop_Pod", [0, 0, 0], [], 0, "NONE"];
+					_RandomDirNumber = (random 360);
+					_projectile setDir _RandomDirNumber;
+					_projectile setPos getPos _projectile;
+                    _projectile setPosATL (getPosATL _mainprojectile);
+                    [_projectile, _mainprojectile] call BIS_fnc_attachtorelative;
+                    _projectile allowdamage false;
+                    
+                     [_mainprojectile, _position,_projectile] spawn {
+                        params ["_mainprojectile", "_position","_projectile"];
+                        while {alive _mainprojectile} do {
+                            _mainprojectile setvelocity ((_position vectorFromTo (getPosATL _mainprojectile)) vectorMultiply -150);
+                        };
+                    };
+                    
+					_mainprojectile say3D ["Cov_DropPod_Thruster", 2000, random [20, 30, 40]];
+
+					[[_projectile], {
+                        params ["_projectile"];
+
+                        if (!(hasInterface) or (isDedicated)) exitWith {};
+
+                        _FloodLight = "#lightpoint" createvehiclelocal [0, 0, 0];
+                        _FloodLight attachto [_projectile, [0, 0, 0]];
+                        _FloodLight setLightColor [0,0.2,1];
+                        _FloodLight setLightAmbient [0,0.2,1];
+                        _FloodLight setLightBrightness 1;
+                        _FloodLight setLightDayLight true;
+                        
+                        waitUntil {
+                            !alive _projectile
+                        };
+                        deletevehicle _floodLight;
+
+                    }] remoteExec ["spawn"];
+
+					[[_projectile],{
+					params ["_projectile"];
+                    
+                    if (!(hasInterface) or (isDedicated)) exitWith {};
+
+					_ray = "#particlesource" createVehicleLocal (getPosATL _projectile);
+					_ray setParticleCircle [0, [0, 0, -3]];
+					_ray setParticleRandom [0, [0.25, 0.25, 0], [0.175, 0.175, 0], 0, 0.25, [5, 5, 5, 0], 0, 0];
+					_ray setParticleParams [["\A3\data_f\cl_exp", 1, 0, 1], "", "Billboard", 1, 1, [0, 0, 0], [0, 0, 0], 13, 10, 3, 0, [5,11,7,4], [[235, 81, 17, 1]], [0.08], 1, 0, "", "", _ray];
+					_ray setDropInterval 0.01;
+					_ray attachTo [_projectile, [0,0,1.27]];
+					[_ray,_projectile] spawn {params ['_ray','_projectile']; sleep 6; deleteVehicle _ray;};
+					}] remoteExec ["spawn"];
+                    
+                    
+                    [_mainprojectile, _position, _dropside, _projectile, _selection,_RandomDirNumber] spawn {
+                        params ["_mainprojectile", "_position", "_dropside", "_projectile", "_selection","_RandomDirNumber"];
+                        
+                        _positionATL=_position;
+                        waitUntil {
+                            if (alive _mainprojectile) then {
+                                _positionATL=getPosATL _mainprojectile;
+                            };
+                            !alive _mainprojectile;
+                        };
+                        
+                        [[_positionATL], {
+                            params ['_position'];
+                            _positionATL = _position;
+                            _positionATL set [2, 2];
+
+                            if (!(hasInterface) or (isDedicated)) exitWith {};
+                            
+                            private _ps1 = "#particlesource" createvehiclelocal _positionATL;
+                            _ps1 setParticleParams [
+                                "\A3\Data_F\ParticleEffects\Pstone\Pstone", "", "SpaceObject",
+                                1, 10, [0, 0, 0], [0, 0, 10], 1, 20, 1, 0.2, [0.1, 1],
+                                [[1, 1, 1, 1]],
+                            [0, 1], 1, 0, "", "", _ps1];
+                            _ps1 setParticleRandom [0, [5, 5, 0], [5, 5, 5], 0, 1.5, [0, 0, 0, 0], 0, 0];
+                            _ps1 setParticleCircle [5, [0, 5, 5]];
+                            _ps1 setDropInterval 0.01;
+                            
+                            _ps1 spawn {
+                                sleep 1;
+                                deletevehicle _this;
+                            };
+                        }] remoteExec ["spawn"];
+                        
+                        _craterpos = _positionATL;
+                        _craterpos set [2, 0];
+
+						deleteVehicle _projectile;
+						_projectile = createvehicle ["332nd_East_Enia_Drop_Pod", _craterpos, [], 0, "CAN_COLLIDE"];
+						_projectile setDir _RandomDirNumber;
+						_projectile setPos getPos _projectile;
+						_projectile setVectorUp surfaceNormal position _projectile;
+						_projectile setPosATL [(_craterpos #0),( _craterpos #1),0];
+                        _projectile enableSimulationGlobal false;
+                        _LightpodCrater = createvehicle ["Land_ShellCrater_01_F", _craterpos, [], 0, "CAN_COLLIDE"];
+						_LightpodCrater setVectorUp surfaceNormal position _LightpodCrater;
+						_LightpodCrater setPosATL [(_craterpos #0),( _craterpos #1),0];
+
+						_projectile say3D ["Cov_DropPod_Door", 1000, random [1, 2, 3]];
+
+						//door
+						_DistanceNumber = (10 + (random 20));
+						_DropPodDoorSpawn = _projectile modelToWorld [_DistanceNumber,0,-1.5];
+						_DropPodDoorCraterSpawn = _projectile modelToWorld [_DistanceNumber,0,-1.5];
+
+
+						[[_projectile], {
+							params ["_projectile"];
+
+                            if (!(hasInterface) or (isDedicated)) exitWith {};
+
+							_FloodLight = "#lightpoint" createvehiclelocal [0, 0, 0];
+							_FloodLight attachto [_projectile, [0, 0, 0]];
+							_FloodLight setLightColor [0, 0.2, 1];
+							_FloodLight setLightAmbient [0, 0.2, 1];
+							_FloodLight setLightBrightness 0.25;
+							_FloodLight setLightDayLight true;
+							
+							waitUntil {
+								!alive _projectile
+							};
+							deletevehicle _floodLight;
+						}] remoteExec ["spawn"];
+						
+                        _position = _CraterPos;
+                        
+						_SpawnForward = _projectile modelToWorld [2,0,0];
+                        _spawn = _SpawnForward;
+
+                        _side = (_dropside select 0);
+                        _list = [];
+                        // Check if "meu_main" exists in the specified path
+    
+                        _list = [
+                            ["332nd_Enia_Base"],
+                            ["332nd_Enia_Grenadier"],
+                            ["332nd_Enia_Medic"],
+
+                            ["332nd_Enia_AT"],
+                            ["332nd_Enia_Support_Gunner"],
+                            ["332nd_Enia_Officer"]
+                        ] # _selection;
+
+                        _list;
+
+                        
+                        _class = selectRandom _list;
+
+						_listout=[];
+                        for "_i" from 1 to 1 do{
+                            _listout pushBack (selectRandom _list);
+                        };
+
+						[_spawn, _side, _listout,_projectile] spawn {
+                            params ["_spawn", "_side", "_listout","_projectile"];
+
+                            sleep 0.1;
+
+                            _EliteUnit = [_spawn, _side, _listout] call BIS_fnc_spawngroup;
+                            _EliteUnit deleteGroupWhenEmpty true;
+							
+							_randomPosAroundPlayer = [[[(getPosATL _projectile), 50]], []] call BIS_fnc_randomPos;
+							(leader _EliteUnit) domove (_randomPosAroundPlayer);
+                            [{ _projectile = (_this#0); deleteVehicleCrew _projectile; deleteVehicle _projectile; }, [_projectile], ScifiSupportPlus_AutoDeleteTimer] call CBA_fnc_waitAndExecute;
+                        };
+
+                    };
+};
