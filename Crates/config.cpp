@@ -161,6 +161,11 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DC15S_High_Mag";
 			};
+			class 332nd_DC15X_Charged_Mag
+			{
+				count = 100;
+				magazine = "332nd_DC15X_Charged_Mag";
+			};
 			class 332nd_DC15X_Mag
 			{
 				count = 100;
@@ -946,4 +951,5 @@ class CfgVehicles
 		};
 	};
 };
+
 	
