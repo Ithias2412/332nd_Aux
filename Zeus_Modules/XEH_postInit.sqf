@@ -441,7 +441,8 @@ player spawn {
 
 
 
-            _this addForce [_this vectorModelToWorld _velocity, [1,0,0], false];
+            
+			[_this, [_this vectorModelToWorld _velocity, [1,0,0], false]] remoteExec ["addForce"];
 			};
 
 	}, ""] call zen_custom_modules_fnc_register;	
