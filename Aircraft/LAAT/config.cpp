@@ -1239,7 +1239,7 @@ class CfgVehicles
 				showWindow = 0;
 				statement = "this animateSource ['ramp',0,1];";
 			};
-			class rampClose
+			class rampOpen
 			{
 				available = 0;
 				condition = "(player == driver this) AND (this animationphase 'ramp' ==0)";
@@ -1814,7 +1814,7 @@ class CfgVehicles
 				showWindow = 0;
 				statement = "this animateSource ['ramp',0,1];";
 			};
-			class rampClose
+			class rampOpen
 			{
 				available = 0;
 				condition = "(player == driver this) AND (this animationphase 'ramp' ==0)";

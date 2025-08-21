@@ -67,6 +67,7 @@ class CfgVehicles
 			"3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
 			"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa",
 		};
+		fuelCapacity = 132;
 		class ACE_SelfActions: ACE_SelfActions
 		{
 			class ACE_Passengers
@@ -160,6 +161,14 @@ class CfgWeapons
 		waterResistance = 1;
 		waterResistanceCoef = 0.5;
 		waterSpeedFactor = 0.2;
+		class GunParticles
+		{
+			class FirstEffect {
+				directionName = "Konec hlavne";
+				effectName = "RifleAssaultCloud";
+				positionName = "Usti hlavne";
+			};
+		};
 		class manual: Mode_FullAuto
 		{
 			dispersion = 0.00073;

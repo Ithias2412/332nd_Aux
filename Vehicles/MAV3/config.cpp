@@ -6,7 +6,7 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = 
 		{
-			"332nd_Mav_3_Transport", "332nd_Mav_3_Armed"
+			"332nd_Mav_3_Transport", "332nd_Mav_3_Armed","332nd_Mav_3_SHORAD"
 		};
 		weapons[] = {};
 	};
@@ -379,42 +379,132 @@ class CfgVehicles
 		canFloat = 1;
 		tas_canBlift = 1;
         tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
-		class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
-                class Turrets: Turrets
-                {
-                    class CommanderOptics: CommanderOptics
-                    {
-                        class ViewGunner: ViewGunner{};
-                        class ViewOptics: ViewOptics
-                        {};
-                        class OpticsIn
-                        {
-                            class Wide: ViewOptics{};
-                            class Medium: Wide{};
-                            class Narrow: Wide{};
-                        };
-                        class HitPoints{};
-                    };
-                };
-                class OpticsIn
-                {
-                    class Wide: ViewOptics{};
-                    class Medium: Wide{};
-                    class Narrow: Wide{};
-                };
-                class ViewOptics: ViewOptics{};
-                class ViewGunner: ViewOptics{};
-                class HitPoints: HitPoints
-                {
-                    class HitTurret: HitTurret{};
-                    class HitGun: HitGun{};
-                };
-                gunnerDoor = "";
-            };
-        };
+		fuelCapacity = 132;
+		class Turrets
+		{
+			class CommanderOptics: CommanderOptics
+			{
+				body="obsTurret";
+				gun="CommanderPeriscope";
+				memoryPointGunnerOutOptics="commanderview";
+				memoryPointGunnerOptics="commanderview";
+				minElev=-10;
+				maxElev=20;
+				initElev=0;
+				minTurn=-360;
+				maxTurn=360;
+				initTurn=0;
+				minCamElev=-90;
+				maxCamElev=90;
+				weapons[]={};
+				magazines[]={};
+				soundServo[]=
+				{
+					"A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP01",
+					0.17782794,
+					1,
+					10
+				};
+				soundServoVertical[]=
+				{
+					"A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP01",
+					0.17782794,
+					1,
+					10
+				};
+				forceHideGunner=1;
+				gunnerAction="driver_hemtt";
+				gunnerInAction="Driver_APC_Wheeled_03_cannon_F_in";
+				gunnerGetInAction="GetInLow";
+				gunnerGetOutAction="GetOutLow";
+				gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
+				gunnerOutOpticsModel="";
+				gunnerOpticsEffect[]={};
+				isPersonTurret=0;
+				outGunnerMayFire=0;
+				inGunnerMayFire=1;
+				personTurretAction="vehicle_turnout_2";
+				minOutElev=-45;
+				maxOutElev=65;
+				initOutElev=0;
+				minOutTurn=-90;
+				maxOutTurn=90;
+				initOutTurn=0;
+				gunnerForceOptics=1;
+				class ViewGunner: ViewGunner
+				{
+				};
+				class ViewOptics: ViewOptics
+				{
+					initAngleX=0;
+					minAngleX=-30;
+					maxAngleX=30;
+					initAngleY=0;
+					minAngleY=-100;
+					maxAngleY=100;
+					initFov=0.60000002;
+					minFov=0.60000002;
+					maxFov=0.60000002;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"TI"
+					};
+					thermalMode[]={0,1};
+				};
+				class OpticsIn
+				{
+					class Wide: ViewOptics
+					{
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.60000002;
+						minFov=0.60000002;
+						maxFov=0.60000002;
+						visionMode[]=
+						{
+							"Normal",
+							"NVG",
+							"TI"
+						};
+						thermalMode[]={0,1};
+						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Commander_01_w_F.p3d";
+						gunnerOpticsEffect[]={};
+					};
+					class Medium: Wide
+					{
+						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Commander_01_m_F.p3d";
+						initFov=0.07;
+						minFov=0.07;
+						maxFov=0.07;
+					};
+					class Narrow: Wide
+					{
+						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Commander_01_n_F.p3d";
+						initFov=0.028000001;
+						minFov=0.028000001;
+						maxFov=0.028000001;
+					};
+				};
+				turretInfoType="RscOptics_MBT_01_commander";
+				usePip=1;
+				showCrewAim=1;
+				startEngine=0;
+				class HitPoints
+				{
+				};
+				stabilizedInAxes=3;
+				maxHorizontalRotSpeed=4;
+				maxVerticalRotSpeed=4;
+				gunnerHasFlares=0;
+				viewGunnerInExternal=1;
+			};
+		};
 		class ACE_SelfActions: ACE_SelfActions
 		{
 			class ACE_Passengers
@@ -486,6 +576,7 @@ class CfgVehicles
 		editorSubcategory = "EdSubcat_APCs";
 		crew = "JLTS_Clone_P2_DC15S";
 		transportSoldier = 8;
+		fuelCapacity = 132;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -593,7 +684,7 @@ class CfgVehicles
 				gun = "mainGun";
 				gunBeg = "usti hlavne";
 				gunEnd = "konec hlavne";
-				weapons[] = {"332nd_PX10_Repeater","SmokeLauncher"};
+				weapons[] = {"332nd_MAV3_Repeater","SmokeLauncher"};
 				magazines[] = {"332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","SmokeLauncherMag"};
 				gunnerForceOptics = 1;
 				memoryPointGun = "usti hlavne1";
@@ -707,12 +798,12 @@ class CfgVehicles
 			class muzzle_rot1
 			{
 				source = "ammorandom";
-				weapon = "332nd_PX10_Repeater";
+				weapon = "332nd_MAV3_Repeater";
 			};
 			class recoil_source
 			{
 				source = "reload";
-				weapon = "332nd_PX10_Repeater";
+				weapon = "332nd_MAV3_Repeater";
 			};
 		};
 		class ACE_SelfActions: ACE_SelfActions
@@ -791,7 +882,7 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {"332nd_PX10_Repeater", "332nd_Hammer_I"};
+				weapons[] = {"332nd_MAV3_Repeater", "332nd_Hammer_I"};
 				magazines[] = {"332nd_PX10_Repeater_Mag", "332nd_Hammer_I_Mag", "332nd_Hammer_I_Mag", "332nd_Hammer_I_Mag", "332nd_Hammer_I_Mag"};
 				memoryPointGun[] = {"usti hlavne","usti hlavne1"};
 
@@ -859,3 +950,126 @@ class CfgVehicles
 	};
 };
 class Mode_FullAuto;
+
+
+
+class CfgWeapons
+{
+	class 3AS_MK4ES_Medium_Cannon;
+	
+	class 332nd_MAV3_Repeater: 3AS_MK4ES_Medium_Cannon
+	{
+		displayName = "[332nd] MAV3 Repeater";
+		magazines[] = {"332nd_PX10_Repeater_Mag"};
+		magazineReloadTime = 30;
+		modes[] = {"manual","close","short","medium","far_optic1","far_optic2"};
+		waterAngularDampingCoef = 10;
+		waterDamageEngine = 0.2;
+		waterLeakiness = 2.5;
+		waterLinearDampingCoefX = 0;
+		waterLinearDampingCoefY = 0;
+		waterPPInVehicle = 0;
+		waterResistance = 1;
+		waterResistanceCoef = 0.5;
+		waterSpeedFactor = 0.2;
+		class GunParticles
+		{
+			class FirstEffect {
+				directionName = "Konec hlavne";
+				effectName = "RifleAssaultCloud";
+				positionName = "Usti hlavne";
+			};
+		};
+		class manual: Mode_FullAuto
+		{
+			dispersion = 0.00073;
+			displayName = "Full";
+			reloadTime = 0.3;
+			class BaseSoundModeType
+			{
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
+				weaponSoundEffect = "";
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				begin1[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1,1800};
+				begin2[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1.025,1800};
+				begin3[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,0.95,1800};
+				begin4[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1.05,1800};
+				begin5[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,0.9,1800};
+				beginwater1[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1,1,400};
+				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+				soundBeginWater[] = {"beginwater1",1};
+			};
+		};
+		class close: manual
+		{
+			burst=10;
+			aiRateOfFire=0.5;
+			aiRateOfFireDistance=50;
+			minRange=10;
+			minRangeProbab=0.050000001;
+			midRange=20;
+			midRangeProbab=0.69999999;
+			maxRange=50;
+			maxRangeProbab=0.039999999;
+			showToPlayer=0;
+		};
+		class short: close
+		{
+			burst=8;
+			aiRateOfFire=2;
+			aiRateOfFireDistance=300;
+			minRange=50;
+			minRangeProbab=0.050000001;
+			midRange=150;
+			midRangeProbab=0.69999999;
+			maxRange=300;
+			maxRangeProbab=0.039999999;
+		};
+		class medium: close
+		{
+			burst=7;
+			aiRateOfFire=4;
+			aiRateOfFireDistance=600;
+			minRange=200;
+			minRangeProbab=0.050000001;
+			midRange=300;
+			midRangeProbab=0.69999999;
+			maxRange=500;
+			maxRangeProbab=0.1;
+		};
+		class far_optic1: medium
+		{
+			requiredOpticType=1;
+			showToPlayer=0;
+			burst=3;
+			aiRateOfFire=10;
+			aiRateOfFireDistance=1000;
+			minRange=300;
+			minRangeProbab=0.050000001;
+			midRange=500;
+			midRangeProbab=0.40000001;
+			maxRange=650;
+			maxRangeProbab=0.0099999998;
+		};
+		class far_optic2: far_optic1
+		{
+			burst=3;
+			requiredOpticType=2;
+			minRange=400;
+			minRangeProbab=0.050000001;
+			midRange=750;
+			midRangeProbab=0.69999999;
+			maxRange=900;
+			maxRangeProbab=0.0099999998;
+			aiRateOfFire=10;
+			aiRateOfFireDistance=900;
+		};
+		aiDispersionCoefY=24;
+		aiDispersionCoefX=21;
+	};
+};

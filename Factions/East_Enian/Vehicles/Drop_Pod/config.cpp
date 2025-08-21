@@ -328,7 +328,6 @@ class CfgVehicles
 	
 	
 	
-	class TKE_Drop_Pod;
 	class 332nd_East_Enia_Drop_Pod: TKE_Drop_Pod
 	{
 		author = "Ithias";

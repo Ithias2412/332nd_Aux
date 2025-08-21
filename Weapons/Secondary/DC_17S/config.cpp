@@ -70,7 +70,6 @@ class cfgWeapons
 			minRangeProbab = 0.3;
 			recoil = "recoil_pistol_heavy";
 			recoilProne = "recoil_prone_pistol_heavy";
-			reloadTime = 0.1;
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
 			{
@@ -133,7 +132,6 @@ class cfgWeapons
 				minRangeProbab = 0.3;
 				recoil = "recoil_pistol_heavy";
 				recoilProne = "recoil_prone_pistol_heavy";
-				reloadTime = 0.1;
 				sounds[] = {"StandardSound","SilencedSound"};
 				class BaseSoundModeType
 				{

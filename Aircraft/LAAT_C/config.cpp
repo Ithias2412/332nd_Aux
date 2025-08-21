@@ -37,7 +37,6 @@ class CfgVehicles
 	};
 
 	class lsd_heli_laatc;
-	class 3AS_LAATC;
 	class 332nd_LAAT_C_Old: lsd_heli_laatc
 	{
 		displayname = "[332nd] LAAT/c (Old)";
