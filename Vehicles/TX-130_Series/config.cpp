@@ -296,13 +296,22 @@ class CfgMagazines
 class CfgWeapons
 {
 	class CMFlareLauncher;
-	class Missiles_DAGR;
 	class 3AS_CMFlareLauncher: CMFlareLauncher
 	{
 		magazines[] = {"3AS_60Rnd_CMFlare_Chaff_Magazine"};
 	};
+	class RocketPods;
+	class Missiles_DAGR: RocketPods
+	{
+		class Burst: RocketPods {};
+	};
     class 332nd_Saber_Missile_Launcher: Missiles_DAGR
     {
 		magazines[] = {"332nd_Saber_Missile_Pack"};
+		reloadTime = 1.5;
+		class Burst: Burst 
+		{
+			reloadTime = 1.5;
+		};
 	};
 }; 

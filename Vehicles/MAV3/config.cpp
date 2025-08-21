@@ -984,7 +984,7 @@ class CfgWeapons
 		{
 			dispersion = 0.00073;
 			displayName = "Full";
-			reloadTime = 0.3;
+			reloadTime = 0.075;
 			class BaseSoundModeType
 			{
 				closure1[] = {};
