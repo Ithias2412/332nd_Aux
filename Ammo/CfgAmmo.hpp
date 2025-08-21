@@ -432,4 +432,30 @@ class CfgAmmo
 		smokeColor[]={0.66970003,0.22750001,0.10053,1};
 		effectsSmoke="SmokeShellOrangeEffect";
 	};
+	class Sh_155mm_AMOS;
+	class 3AS_82mm_HE_Mortar;
+	class 3AS_230mm_fly;
+	class 332nd_HAGM_Shell_Harmless: Sh_155mm_AMOS
+	{
+		model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Red.p3d";
+		effectfly = "IDA_BlasterBoltGlow_Large_Red_Fly";
+		hit=0;
+		indirectHit=0;
+		indirectHitRange=30;
+		ace_frag_enabled = 0;
+	};
+	class 332nd_82mm_Shell_Harmless: 3AS_82mm_HE_Mortar
+	{
+		hit=0;
+		indirectHit=0;
+		indirectHitRange=30;
+		ace_frag_enabled = 0;
+	};
+	class 332nd_Hailfire_Rocket_Harmless: 3AS_230mm_fly
+	{
+		hit=0;
+		indirectHit=0;
+		indirectHitRange=30;
+		ace_frag_enabled = 0;
+	};
 };
