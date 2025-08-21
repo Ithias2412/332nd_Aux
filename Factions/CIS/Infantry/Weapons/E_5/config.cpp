@@ -36,6 +36,7 @@ class cfgWeapons
 		reloadAction = "3AS_GestureReload_DC17M";
 		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
 		reloadSound[] = {"",1,1};
+		modes[] = {"Single","FullAuto","fullauto_medium"};
 		class FullAuto: Mode_FullAuto
 		{
 			aiRateOfFire = 1e-06;
