@@ -685,7 +685,7 @@ class CfgVehicles
 				gunBeg = "usti hlavne";
 				gunEnd = "konec hlavne";
 				weapons[] = {"332nd_MAV3_Repeater","SmokeLauncher"};
-				magazines[] = {"332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","SmokeLauncherMag"};
+				magazines[] = {"332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","332nd_PX10_Repeater_Mag","SmokeLauncherMag"};
 				gunnerForceOptics = 1;
 				memoryPointGun = "usti hlavne1";
 				selectionFireAnim = "zasleh";
