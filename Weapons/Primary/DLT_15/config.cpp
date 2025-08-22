@@ -34,6 +34,8 @@ class cfgWeapons
 		displayName="[332nd] DLT-15 (AR)";
 		recoil = "3AS_recoil_DC15S";
 		descriptionShort="A large and fast automatic rifle.";
+		IDA_StunWeapon = "";
+		IDA_AltWeapon="";
 		reloadAction="GestureReload_JLTS_DC15S";
 		reloadMagazineSound[]=
 		{

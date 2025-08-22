@@ -774,6 +774,22 @@ class CfgVehicles
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
 	//	smokeLauncherAngle = 360;		// Coverage angle
+		class TransportMagazines
+		{
+			
+		};
+		class TransportItems
+		{
+			
+		};
+		class TransportWeapons
+		{
+			
+		};
+		class TransportBackpacks
+		{
+			
+		};
 		class HitPoints: HitPoints
 		{
 			class HitGlass1

@@ -37,6 +37,8 @@ class cfgWeapons
 		displayName="[332nd] C-24 Flame Carbine (ENG)";
 		descriptionShort="TBD.";
 		reloadAction = "3AS_GestureReload_DC17M";
+		IDA_StunWeapon = "";
+		IDA_AltWeapon="";
 		reloadMagazineSound[] = 
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",

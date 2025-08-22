@@ -37,6 +37,8 @@ class cfgWeapons
 		baseWeapon="332nd_Firepuncher";
 		weaponInfoType="RscOptics_nightstalker";
 		scope=2;
+		IDA_StunWeapon = "";
+		IDA_AltWeapon="";
 		magazines[]=
 		{
 			"332nd_Firepuncher_Mag"

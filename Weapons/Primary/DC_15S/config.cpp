@@ -51,6 +51,8 @@ class cfgWeapons
 		//picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_ui_ca.paa";
 		baseWeapon = "332nd_DC15S_WIP";
 		weaponInfoType="";
+		IDA_StunWeapon = "";
+		IDA_AltWeapon="";
 		magazines[] =
 		{
 			"332nd_DC15S_High_Mag",

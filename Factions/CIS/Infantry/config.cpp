@@ -24,6 +24,7 @@ class CfgPatches
             "332nd_Droid_B1_Pilot",
 			"332nd_Droid_T_Series",
 			"332nd_Droid_B2_Rockets",
+			"332nd_Droid_B2_Flamer",
 			"332nd_Droid_B2",
 			"332nd_CIS_Hum",
 			"332nd_CIS_Hum_AT",
@@ -395,6 +396,14 @@ class CfgVehicles {
         displayName = "B2 Battledroid (Rockets)";
         magazines[] = {"3AS_DWRockets_AT", "3AS_DWRockets_AT", "3AS_DWRockets_AT", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
         respawnMagazines[] = {"3AS_DWRockets_AT", "3AS_DWRockets_AT", "3AS_DWRockets_AT", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
+    };
+    class 332nd_Droid_B2_Flamer: 332nd_Droid_B2 
+	{
+        weapons[] = {"332nd_CIS_Wrist_Blaster_Flame", "Throw", "Put"}; // Default for all, overridden by subclasses
+        respawnWeapons[] = {"332nd_CIS_Wrist_Blaster_Flame", "Throw", "Put"};
+        displayName = "B2 Battledroid (Flamer)";
+        magazines[] = {"332nd_FlamerFuel_B2", "332nd_FlamerFuel_B2", "332nd_FlamerFuel_B2", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
+        respawnMagazines[] = {"332nd_FlamerFuel_B2", "332nd_FlamerFuel_B2", "332nd_FlamerFuel_B2", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
     };
 	// T-Series
 	class 332nd_Droid_T_Series: 3AS_CIS_TS_F

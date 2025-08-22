@@ -139,6 +139,22 @@ class CfgVehicles
 		ls_impulsor_boostSpeed_2 = 600;
 		ls_impulsor_fuelDrain_1=0.00005; 
 		ls_impulsor_fuelDrain_2=0.00010; 
+		class TransportMagazines
+		{
+			
+		};
+		class TransportItems
+		{
+			
+		};
+		class TransportWeapons
+		{
+			
+		};
+		class TransportBackpacks
+		{
+			
+		};
 		weapons[] = 
 		{
 			"3as_LAAT_Medium_Canon",
