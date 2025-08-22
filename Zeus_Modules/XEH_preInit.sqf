@@ -140,7 +140,7 @@ fnc_SB_DroidPopper = {
     _projectile addEventHandler ["Explode", { 
         params ["_projectile", "_position", "_velocity"]; 
         systemchat "Grenade Exploded";
-        _units = _position nearEntities [["332nd_Droid_B1_Rifleman","332nd_Droid_B2","332nd_Droid_BX_Range"], 10];
+        _units = _position nearEntities [["332nd_Droid_B1_AT", "332nd_Droid_B1_Commander", "332nd_Droid_B1_Crewman", "332nd_Droid_B1_Grenadier", "332nd_Droid_B1_Pilot", "332nd_Droid_B1_Rifleman", "332nd_Droid_B1_Scatterblaster", "332nd_Droid_B1_Security", "332nd_Droid_B1_Shield", "332nd_Droid_B1_Sniper", "332nd_Droid_B1_Support"], 10];
         {
             _x setDamage 1;
             systemchat ("Killed: " + (str typeOf _x));
