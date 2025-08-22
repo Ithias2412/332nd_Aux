@@ -377,7 +377,7 @@ class CfgVehicles
 		armorStructural = 5;
 		brakeDistance = 3;
 		canFloat = 1;
-		tas_canBlift = 1;
+		tas_canBlift = 2;
         tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
 		fuelCapacity = 132;
 		class Turrets
@@ -577,6 +577,8 @@ class CfgVehicles
 		crew = "JLTS_Clone_P2_DC15S";
 		transportSoldier = 8;
 		fuelCapacity = 132;
+		tas_canBlift = 2;
+		tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -878,6 +880,8 @@ class CfgVehicles
 		model = "\TKE_Ext_APC\data\apc_aa.p3d";
 		editorSubcategory = "EdSubcat_APCs";
 		transportSoldier = 6;
+		tas_canBlift = 2;
+		tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
