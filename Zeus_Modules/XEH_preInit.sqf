@@ -92,32 +92,44 @@ RC_fnc_ToggleLowLight =
 };
 
 ["332nd Aux", "RC_LowLight_Toggle", ["Toggle Low-Light", "Press to toggle Low-Light"], {
-    hint "Low Light Toggled";
-    [] call RC_fnc_ToggleLowLight;
+	_helmet = headgear player;
+	_HelmetCompatible = getNumber (configFile >> "CfgWeapons" >> _helmet >> "332nd_Has_Lowlight");
+	if (_helmetCompatible == 1) then {
+		hint "Low Light Toggled";
+		[] call RC_fnc_ToggleLowLight;
+	};
 }, {}, [DIK_L, [true, false, false]]] call CBA_fnc_addKeybind;
 
 ["332nd Aux", "RC_LowLight_Raise", ["Increase Low-Light Percentage", "Press to increase Low-Light Percentage"], {
-    _apature = player getVariable ["RC_LowLight_Apature", 50];
-    if(_apature == 100) exitWith {};
-    _apature = _apature + 5;
-    player setVariable ["RC_LowLight_Apature", _apature];
-    hint ((str _apature) + "%");
-    if (RC_LowLight) then {
-        private _Setaperture = apertureParams select 2;
-        _Setaperture = ((_Setaperture - 0.1) * (1 - (_apature/100))) + 0.1;
-        setAperture (_Setaperture);
-    };
+	_helmet = headgear player;
+	_HelmetCompatible = getNumber (configFile >> "CfgWeapons" >> _helmet >> "332nd_Has_Lowlight");
+	if (_helmetCompatible == 1) then {
+		_apature = player getVariable ["RC_LowLight_Apature", 50];
+		if(_apature == 100) exitWith {};
+		_apature = _apature + 5;
+		player setVariable ["RC_LowLight_Apature", _apature];
+		hint ((str _apature) + "%");
+		if (RC_LowLight) then {
+			private _Setaperture = apertureParams select 2;
+			_Setaperture = ((_Setaperture - 0.1) * (1 - (_apature/100))) + 0.1;
+			setAperture (_Setaperture);
+		};
+	};
 }, {}, [DIK_ADD, [false, false, false]]] call CBA_fnc_addKeybind;
 
 ["332nd Aux", "RC_LowLight_Lower", ["Decrease Low-Light Percentage", "Press to decrease Low-Light Percentage"], {
-    _apature = player getVariable ["RC_LowLight_Apature", 50];
-    if(_apature == 5) exitWith {};
-    _apature = _apature - 5;
-    hint ((str _apature) + "%");
-    player setVariable ["RC_LowLight_Apature", _apature];
-    if (RC_LowLight) then {
-        private _Setaperture = apertureParams select 2;
-        _Setaperture = ((_Setaperture - 0.1) * (1 - (_apature/100))) + 0.1;
-        setAperture (_Setaperture);
-    };
+	_helmet = headgear player;
+	_HelmetCompatible = getNumber (configFile >> "CfgWeapons" >> _helmet >> "332nd_Has_Lowlight");
+	if (_helmetCompatible == 1) then {
+		_apature = player getVariable ["RC_LowLight_Apature", 50];
+		if(_apature == 5) exitWith {};
+		_apature = _apature - 5;
+		hint ((str _apature) + "%");
+		player setVariable ["RC_LowLight_Apature", _apature];
+		if (RC_LowLight) then {
+			private _Setaperture = apertureParams select 2;
+			_Setaperture = ((_Setaperture - 0.1) * (1 - (_apature/100))) + 0.1;
+			setAperture (_Setaperture);
+		};
+	};
 }, {}, [DIK_SUBTRACT, [false, false, false]]] call CBA_fnc_addKeybind;
