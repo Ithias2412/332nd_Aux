@@ -27,4 +27,15 @@ class CfgVehicles
 		editorPreview = "";
 		crew = "332nd_Droid_B1_Crewman";
 	};
+	class 332nd_CIS_Proton_Cannon_Flak: 332nd_CIS_Proton_Cannon
+	{
+		displayName="Proton Cannon (Flak)";
+        class EventHandlers
+		{
+			class SB_Flak
+			{
+				fired="_unit = _this select 0; if (local _unit) then {_this spawn fnc_SB_Flak};";
+			};
+		}; 
+	};
 };
