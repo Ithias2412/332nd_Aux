@@ -17,35 +17,6 @@ class CfgPatches
         };
     };
 };
-
-class CfgFunctions
-{
-    class AuxMod_332nd_DroidPopper
-    {
-        tag = "AuxMod_332nd_DroidPopper"; // This must match when calling the function
-
-        class Functions
-        {
-            file = "\332nd_Aux\functions"; // Adjusted to reference the PBO's file structure
-
-            class DroidPopper
-            {
-                description = "Handles Droid Popper grenade effects.";
-                recompile = 1; // Optional for development
-            };
-        };
-    };
-};
-
-
-class Extended_HitPart_EventHandlers
-{
-    class Man
-    {
-        332nd_hitPart = "(_this select 0) call AuxMod_332nd_DroidPopper_fnc_DroidPopper";
-    };
-};
-
 class cfgWeapons
 {
     class GrenadeLauncher;
@@ -71,10 +42,20 @@ class cfgAmmo
     class GrenadeHand;
     class 332nd_DroidPopper_ammo: GrenadeHand
     {
-        droidPopper = 1
         displayName = "[BANNED / 332nd] WIP Droid Popper";
-        indirectHit = 0.1;
+        model = "\Indecisive_Armoury_Ammos\Data\Thermal_Detonator\IDA_Thermal_Detonator.p3d";
+        hit=0;
+        ace_frag_enabled = 0;
+        ace_frag_skip = 1;
+        indirectHit = 0;
         indirectHitRange = 10;
+		dangerRadiusHit=5;
+		suppressionRadiusHit=5;
+        ExplosionEffects = "WNZ_EMPGrenadeExplosion";
+        SoundSetExplosion[] = {"EMP_Sparks_SoundSet_GL"};
+        class EventHandlers {
+            Fired="_unit = _this select 0; if (local _unit) then {_this spawn fnc_SB_DroidPopper};"
+        };
     };
 };
 

@@ -133,3 +133,17 @@ RC_fnc_ToggleLowLight =
 		};
 	};
 }, {}, [DIK_SUBTRACT, [false, false, false]]] call CBA_fnc_addKeybind;
+
+fnc_SB_DroidPopper = {
+    params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+    systemchat "Grenade Thrown";
+    _projectile addEventHandler ["Explode", { 
+        params ["_projectile", "_position", "_velocity"]; 
+        systemchat "Grenade Exploded";
+        _units = _position nearEntities [["332nd_Droid_B1_Rifleman","332nd_Droid_B2","332nd_Droid_BX_Range"], 10];
+        {
+            _x setDamage 1;
+            systemchat ("Killed: " + (str typeOf _x));
+        } forEach _units;
+    }];
+};
