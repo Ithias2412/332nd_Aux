@@ -69,36 +69,44 @@ class CfgVehicles
 			{
 				weapons[]=
 				{
-					"332nd_CIS_A2A_Missile"
+					"332nd_Git_Missile_Launcher"
 				};
 				magazines[]=
 				{
-					"332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag",
-                    "332nd_CIS_A2A_Missile_Mag"
-                    
+					"332nd_GIT_Missile_Pack",
+                    "332nd_GIT_Missile_Pack",
 				};
             };
         };
     };
 
+ 
 
+};
+class CfgAmmo 
+{
+	class 332nd_CIS_A2A_Missile_Ammo;
+    class 332nd_GIT_Missile: 332nd_CIS_A2A_Missile_Ammo
+    {
+		effectsMissile = "332nd_Effect_CIS_A2A";
+    };
+}; 
+class CfgMagazines
+{
 
+	class 332nd_CIS_A2A_Missile_Mag;
+    class 332nd_GIT_Missile_Pack: 332nd_CIS_A2A_Missile_Mag
+    {
+		ammo = "332nd_GIT_Missile";
+        count = 12;
+	};
+}; 
+class CfgWeapons 
+{ 
+	class 332nd_CIS_A2A_Missile;
+    class 332nd_Git_Missile_Launcher: 332nd_CIS_A2A_Missile
+    {
+		magazines[] = {"332nd_Git_Missile_Pack"};
+		reloadTime = 1.5;
+	};
 };
