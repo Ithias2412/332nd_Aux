@@ -150,13 +150,13 @@ SB_fnc_Init_JumpPack = {
 
 	_unit = _this select 0;
 
-	_searchRange = 250;// Range to look for targets in
+	_searchRange = 500;// Range to look for targets in
 	_cooldown = 10; // jump pack cooldown in seconds
 	_cooldownMove = 2; // jump pack cooldown in seconds
 
 	// will jump towards target when within these values in meters
 	_jumpDistMin = 10;
-	_jumpDistMax = 200;
+	_jumpDistMax = 500;
 
 	_jumpTime = -10;
 	_oldPos = "";
