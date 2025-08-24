@@ -286,7 +286,7 @@ SB_fnc_JumpPack = {
     _damage = getDammage _unit;
 
     // no reason to protect unit from falldamage if the jumppack malfunctions
-    waitUntil {sleep 0.1; ((getPosATL _unit) select 2) < 4};
+    waitUntil {sleep 0.1; ((getPos _unit) select 2) < 4};
 
     _unit allowDamage false;
     sleep 1;
