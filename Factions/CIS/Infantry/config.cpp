@@ -1,3 +1,4 @@
+class CBA_Extended_EventHandlers_base;
 class CfgPatches 
 {
     class 332nd_CIS_Faction_Infantry 
@@ -22,6 +23,7 @@ class CfgPatches
             "332nd_Droid_B1_Crewman",
             "332nd_Droid_B1_Security",
             "332nd_Droid_B1_Pilot",
+			"332nd_Droid_B1_Rocket",
 			"332nd_Droid_T_Series",
 			"332nd_Droid_B2_Rockets",
 			"332nd_Droid_B2_Flamer",
@@ -202,6 +204,24 @@ class CfgVehicles {
 		impactEffectsNoBlood = "ImpactPlastic";
 		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
     };
+	class 332nd_Droid_B1_Rocket: 332nd_Droid_Base 
+	{
+        scope = 2;
+        displayName = "Rocket B1";
+        uniformClass = "JLTS_DroidB1_Rocket";
+		backpack = "JLTS_B1_jetpack_Rocket";
+        weapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
+		class Eventhandlers
+		{
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base
+			{
+			};
+			init="_unit = _this select 0; if (local _unit) then {[_this select 0] spawn SB_fnc_Init_JumpPack};";
+		};
+	};
 	// B2 Droids
     class 332nd_Droid_B2: 3AS_CIS_B2_F 
 	{

@@ -144,3 +144,173 @@ fnc_SB_DroidPopper = {
         } forEach _units;
     }];
 };
+
+SB_fnc_Init_JumpPack = {
+	params ["_unit", "_backpackStr", "_searchRange", "_target", "_cooldown", "_jumpDistMin", "_jumpDistMax", "_jumpTime", "_oldPos", "_posTargetNew", "_newPos", "_diffTime"];
+
+	_unit = _this select 0;
+
+	_searchRange = 250;// Range to look for targets in
+	_cooldown = 10; // jump pack cooldown in seconds
+	_cooldownMove = 2; // jump pack cooldown in seconds
+
+	// will jump towards target when within these values in meters
+	_jumpDistMin = 10;
+	_jumpDistMax = 200;
+
+	_jumpTime = -10;
+	_oldPos = "";
+
+
+
+	if (!is3DEN) then {
+
+		// possible to set these variables in 3den:
+			// ex: missionNamespace setVariable ["TIOW40k_Ork_JumpPack_cooldown",1];
+
+		// lets missionmakers set jump parameters
+		if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_searchRange"}) then {
+			_searchRange = missionNamespace getVariable "TIOW40k_Ork_JumpPack_searchRange";
+		};
+		if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_cooldown"}) then {
+			_cooldown = missionNamespace getVariable "TIOW40k_Ork_JumpPack_cooldown";
+		};
+		if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_minDist"}) then {
+			_jumpDistMin = missionNamespace getVariable "TIOW40k_Ork_JumpPack_minDist";
+		};
+		if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_maxDist"}) then {
+			_jumpDistMax = missionNamespace getVariable "TIOW40k_Ork_JumpPack_maxDist";
+		};
+
+		// hintSilent str _cooldown;
+
+		if (isPlayer _unit) then {
+			//#include "\OrkBoyz\Scripts\stormboyz\addJumpAction.sqf";
+			// #include "\OrkBoyz\Scripts\stormboyz\addFireRocketsAction.sqf";
+		} else {
+			// AI chase + jump script
+			if (isServer) then {
+				while {alive _unit} do {
+					if (isPlayer _unit) exitWith {
+						//#include "\OrkBoyz\Scripts\stormboyz\addJumpAction.sqf";
+					};
+
+					_target = _unit findNearestEnemy _unit;
+
+					if ((_unit distance _target <= _searchRange) && (_unit knowsAbout _target > 0) && (alive _target)) then {
+
+						_unit SetUnitPos "Up";
+						_unit SetSpeedMode "Full";
+						// _unit SetBehaviour "Careless"; // makes man shoot single shots
+						// _unit SetCombatMode "Red"; // makes man look for firing position
+
+						_posTargetNew = getPosATL _target;
+						_newPos = ((_posTargetNew select 0) + (_posTargetNew select 1) + (_posTargetNew select 2)) toFixed 0;
+
+						// only give new move order if target position has changed
+						if (_newPos != _oldPos) then {
+							_unit doMove getPos _target;
+						};
+
+						sleep 2;
+
+						_diffTime = time - _jumpTime;
+
+						if (_diffTime > _cooldown) then {
+							if (_unit distance _target > _jumpDistMin && _unit distance _target < _jumpDistMax) then {
+								_jumpTime = [_unit, "", _cooldown] call SB_fnc_JumpPack;
+								//#include "\OrkBoyz\Scripts\stormboyz\jumpAction.inc.sqf";
+								_jumpTime = time;
+							};
+						};
+
+						_oldPos = _newPos;
+					} else {
+						sleep 2;
+					};
+				};
+			};
+		};
+	};
+};
+
+SB_fnc_JumpPack = {
+    params ["_unit", "_id"];
+    private ["_x", "_y", "_z", "_i", "_section", "_backpack", "_damage", "_height", "_damageNew", "_diffDmg", "_cooldown", "_explode", "_malfunction", "_ranDir", "_bomb", "_crazyVel", "_cooldown", "_explodeChance", "_malfunctionChance"];
+
+    _cooldown = 10; // jump pack cooldown in seconds
+    _explodeChance = 0; // chance of jumppack exploding (1 in n)
+    _malfunctionChance = 0; // chance of jumppack malfunction (1 in n)
+
+    // possible to set these variables in 3den:
+        // ex: missionNamespace setVariable ["TIOW40k_Ork_JumpPack_cooldown",1];
+
+    if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_cooldown"}) then {
+        _cooldown = missionNamespace getVariable "TIOW40k_Ork_JumpPack_cooldown";
+    };
+    if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_explodeChance"}) then {
+        _explodeChance = missionNamespace getVariable "TIOW40k_Ork_JumpPack_explodeChance";
+    };
+    if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_malfunctionChance"}) then {
+        _malfunctionChance = missionNamespace getVariable "TIOW40k_Ork_JumpPack_malfunctionChance";
+    };
+
+    if (isPlayer _unit) then {
+        _unit removeAction _id;
+    };
+
+    // with orks, shit should be random
+    _x = selectRandom [-4,-3,-2,-1,0,1,2,3,4];
+    _y = selectRandom [15,16,17,18,19,20,21,22,23,24,25];
+    _z = selectRandom [15,16,17,18,19,20,21,22,23,24,25];
+
+    // a certain percent chance of rocket failure
+    _explode = 1;
+    _malfunction = 1;
+
+    //_unit say3D "ork_jumppack_waaagh_" + str (floor(random 3));
+
+    // if (isServer) then {
+    //     playSound3D ["OrkBoyz\sounds\ork_jumppack_waaagh_" + str (floor(random 3)) + ".ogg", _unit, false, getPosASL _unit, 2];
+    // };
+
+    _unit setVelocityModelSpace [_x,_y,_z];
+
+    [_unit,unitBackpack _unit,40] spawn JLTS_fnc_jumpEffects;
+    sleep 2;
+    // _bomb = "R_80mm_HE" createVehicle (_unit modelToWorld [0,0,5]);
+    private _smokeEffects = _unit getVariable ["JLTS_jumppack_var_smokeSources",[]];
+    {
+        deleteVehicle _x;
+    } forEach _smokeEffects;
+    _damage = getDammage _unit;
+
+    // no reason to protect unit from falldamage if the jumppack malfunctions
+    waitUntil {sleep 0.1; ((getPosATL _unit) select 2) < 4};
+
+    _unit allowDamage false;
+    sleep 1;
+    _unit allowDamage true;
+
+    // AI should not have cooldown since it sleeps the chase script
+    if (isPlayer _unit) then {
+        // initiate cooldown
+        _i = _cooldown;
+        while{_i > 0} do {
+            if (isPlayer _unit) then {
+                _cooldown = "Jump Pack ready in: " + str _i;
+                systemChat _cooldown;
+            };
+            sleep 1;
+            _i = _i - 1;
+        };
+        systemChat "Jump Pack ready!";
+
+        //#include "\OrkBoyz\Scripts\stormboyz\addJumpAction.sqf";
+    };
+
+    // returns time (for use with AI cooldown)
+    time
+
+
+};
