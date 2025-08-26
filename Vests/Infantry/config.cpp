@@ -592,7 +592,7 @@ class 332nd_Joker_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-/* class 332nd_Body_Custom_Vest: 332nd_Trooper_Vest 
+class 332nd_Body_Custom_Vest: 332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Body)";
 		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -618,7 +618,7 @@ class 332nd_Joker_Custom_Vest: 332nd_Trooper_Vest
 				"camo3"
 			};
 		};
-	}; */
+	};
 class 332nd_Crow_Custom_Vest: 332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Crow)";
@@ -670,7 +670,7 @@ class 332nd_Frankenburg_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-/* class 332nd_Walkie_Custom_Vest: 332nd_Trooper_Vest 
+class 332nd_Walkie_Custom_Vest: 332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Walkie)";
 		model="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
@@ -696,7 +696,7 @@ class 332nd_Frankenburg_Custom_Vest: 332nd_Trooper_Vest
 				"pauldron"
 			};
 		};
-	}; */
+	};
 
 /*
 class 332nd_Veteran_Vest: SWLB_clone_recon_armor
@@ -1389,7 +1389,7 @@ class XtdGearModels
 			class custom
             {
                 label = "Customs";
-                values[] = { "Cherryy", "Asuka", "Ithias", "Joker", "Body", "Crow", "Frankenburg", /* "Walkie" */};
+                values[] = { "Cherryy", "Asuka", "Ithias", "Joker", "Body", "Crow", "Frankenburg", "Walkie"};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -1434,12 +1434,12 @@ class XtdGearModels
                     description = "Tier 1 Rage Baiter";
                     // image = "xxx";
                 };
-				/* class Walkie
+				class Walkie
                 {
                     label = "Walkie";
                     description = "We hate the French";
                     // image = "xxx";
-                }; */
+                };
             };
         };
     };
@@ -1572,10 +1572,10 @@ class XtdGearInfos
             model = "332nd_Vest_Extended";
 			custom = "Frankenburg";
 		};
-		/* class 332nd_Walkie_Custom_Vest
+		class 332nd_Walkie_Custom_Vest
 		{
             model = "332nd_Vest_Extended";
 			custom = "Walkie";
-		}; */
+		};
     };
 };
