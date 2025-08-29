@@ -23,7 +23,8 @@ class CfgPatches
             "332nd_Droid_B1_Crewman",
             "332nd_Droid_B1_Security",
             "332nd_Droid_B1_Pilot",
-			"332nd_Droid_B1_Rocket",
+			"332nd_Droid_B1_Rifleman_Jump",
+			"332nd_Droid_B1_Support_Jump",
 			"332nd_Droid_T_Series",
 			"332nd_Droid_B2_Rockets",
 			"332nd_Droid_B2_Flamer",
@@ -204,10 +205,10 @@ class CfgVehicles {
 		impactEffectsNoBlood = "ImpactPlastic";
 		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
     };
-	class 332nd_Droid_B1_Rocket: 332nd_Droid_Base 
+	class 332nd_Droid_B1_Rifleman_Jump: 332nd_Droid_Base 
 	{
         scope = 2;
-        displayName = "Rocket B1";
+        displayName = "B1 Rifleman (Jump)";
         uniformClass = "JLTS_DroidB1_Rocket";
 		backpack = "JLTS_B1_jetpack_Rocket";
         weapons[] = {"332nd_CIS_E5", "Throw", "Put"};
@@ -222,6 +223,24 @@ class CfgVehicles {
 			init="_unit = _this select 0; if (local _unit) then {[_this select 0] spawn SB_fnc_Init_JumpPack};";
 		};
 	};
+    class 332nd_Droid_B1_Support_Jump: 332nd_Droid_Base 
+	{
+        scope = 2;
+        displayName = "B1 Support Gunner (Jump)";
+        uniformClass = "JLTS_DroidB1_Rocket";
+		backpack = "JLTS_B1_jetpack_Rocket";
+        weapons[] = {"332nd_CIS_E5C", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5C", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag",};
+		respawnMagazines[] = {"332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag", "332nd_CIS_E5C_Mag",};
+		class Eventhandlers
+		{
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base
+			{
+			};
+			init="_unit = _this select 0; if (local _unit) then {[_this select 0] spawn SB_fnc_Init_JumpPack};";
+		};
+    };
 	// B2 Droids
     class 332nd_Droid_B2: 3AS_CIS_B2_F 
 	{
@@ -1475,7 +1494,7 @@ class CfgGroups
                         position[] = {10, -10, 0};
                     };
                 };
-                class 332nd_Rifle_Squad 
+                class 332nd_Rifle_Squad
 				{
                     name = "B1 Rifle Squad";
                     faction = "332nd_CIS_Faction";
@@ -1525,6 +1544,60 @@ class CfgGroups
                     class Unit7 {
                         side = 0;
                         vehicle = "332nd_Droid_B1_Support";
+                        rank = "PRIVATE";
+						position[] = {20, -20, 0};
+                    };
+                };
+                class 332nd_Rifle_Squad_Jump
+				{
+                    name = "B1 Rifle Squad (Jump)";
+                    faction = "332nd_CIS_Faction";
+                    side = 0;
+                    class Unit0 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman_Jump";
+                        rank = "PRIVATE";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman_Jump";
+                        rank = "PRIVATE";
+                        position[] = {5, -5, 0};
+                    };
+                    class Unit2 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman_Jump";
+                        rank = "PRIVATE";
+                        position[] = {-5, -5, 0};
+                    };
+                    class Unit3 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman_Jump";
+                        rank = "PRIVATE";
+                        position[] = {10, -10, 0};
+                    };
+                    class Unit4 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman_Jump";
+                        rank = "PRIVATE";
+						position[] = {-10, -10, 0};
+                    };
+                    class Unit5 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman_Jump";
+                        rank = "PRIVATE";
+						position[] = {15, -15, 0};
+                    };
+                    class Unit6 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Support_Jump";
+                        rank = "PRIVATE";
+						position[] = {-15, -15, 0};
+                    };
+                    class Unit7 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Support_Jump";
                         rank = "PRIVATE";
 						position[] = {20, -20, 0};
                     };
