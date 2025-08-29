@@ -122,7 +122,7 @@ class RscDisplayMain: RscStandardDisplay
 			text="Ace Arsenal";
 			tooltip="Barbie Time";
 			style=2;
-			onbuttonclick = "playMission ['', '\z\ace\addons\arsenal\missions\Arsenal.VR']";
+			onbuttonclick = "playMission ['', configFile >> 'CfgMissions' >> 'Missions' >> '332nd_Arsenal']";
 			colorBackground[]={0,0,0,0.5};
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
@@ -132,6 +132,7 @@ class RscDisplayMain: RscStandardDisplay
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
+
 		class ConnectDiscord: RscButton
 		{
 			idc=-1;
@@ -160,6 +161,18 @@ class RscDisplayMain: RscStandardDisplay
 			h="SafeZoneH + 0.001";
 			w="SafeZoneW + 0.001";
 			text="\332nd_Aux\Main_Menu\Logo.paa";
+		};
+	};
+};
+
+class CfgMissions
+{
+	class Missions	
+	{
+		class 332nd_Arsenal
+		{
+            briefingName = "Ace Arsenal";
+            directory = "332nd_Aux\Main_Menu\missions\332nd_Arsenal.Winthera3";
 		};
 	};
 };

@@ -1,0 +1,26 @@
+author = "ACE-Team";
+briefing = 0;
+debriefing = 0;
+dev = "commy2";
+doneKeys[] = {"BIS_Arsenal.Map_VR_done"};
+enableDebugConsoleSP = 1;
+onLoadName = "ACE Arsenal";
+onPauseScript[] = {"ace_arsenal_fnc_onPause"};
+overviewPicture = "logo_ca.paa";
+overviewText = "Try weapons and equipment and create your own loadouts.";
+
+class Extended_PostInit_EventHandlers
+{
+	class ace_arsenal
+	{
+		init = "call compile preprocessFileLineNumbers 'XEH_postInit.sqf'";
+	};
+};
+
+class Extended_PreInit_EventHandlers
+{
+	class ace_arsenal
+	{
+		init = "call compile preprocessFileLineNumbers 'XEH_preInit.sqf'";
+	};
+};
