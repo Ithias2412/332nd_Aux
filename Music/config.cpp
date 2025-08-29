@@ -128,6 +128,113 @@ class CfgMusic
 		musicClass = "332nd_Music_PW";
     };
 
+	//BattleTech
+	class BT_BileAndVenom
+    {
+        name = "Bile And Venom";
+		sound[] = {"332nd_Aux\music\music\BattleTech\BileAndVenom.ogg",1,1};
+		duration = 330;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_GrimSybil
+    {
+        name = "Grim Sybil";
+		sound[] = {"332nd_Aux\music\music\BattleTech\GrimSybil.ogg",1,1};
+		duration = 274;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_MeatIsCheap
+    {
+        name = "Meat Is Cheap";
+		sound[] = {"332nd_Aux\music\music\BattleTech\MeatIsCheap.ogg",1,1};
+		duration = 424;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_SaveTheMetal
+    {
+        name = "Save The Metal";
+		sound[] = {"332nd_Aux\music\music\BattleTech\SaveTheMetal.ogg",1,1};
+		duration = 136;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_ThatsABigMech
+    {
+        name = "Thats A Big Mech";
+		sound[] = {"332nd_Aux\music\music\BattleTech\ThatsABigMech.ogg",1,1};
+		duration = 180;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_WolfAtTheDoor
+    {
+        name = "Wolf At The Door";
+		sound[] = {"332nd_Aux\music\music\BattleTech\WolfAtTheDoor.ogg",1,1};
+		duration = 432;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_ForTheReach
+    {
+        name = "For The Reach";
+		sound[] = {"332nd_Aux\music\music\BattleTech\ForTheReach.ogg",1,1};
+		duration = 270;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_Ruin
+    {
+        name = "Ruin";
+		sound[] = {"332nd_Aux\music\music\BattleTech\Ruin.ogg",1,1};
+		duration = 66;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_AWelcomeRespite
+    {
+        name = "A Welcome Respite";
+		sound[] = {"332nd_Aux\music\music\BattleTech\AWelcomeRespite.ogg",1,1};
+		duration = 255;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_DangerClose
+    {
+        name = "Danger Close";
+		sound[] = {"332nd_Aux\music\music\BattleTech\DangerClose.ogg",1,1};
+		duration = 361;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_CoronationDay
+    {
+        name = "Coronation Day";
+		sound[] = {"332nd_Aux\music\music\BattleTech\CoronationDay.ogg",1,1};
+		duration = 176;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_FanOut
+    {
+        name = "Fan Out";
+		sound[] = {"332nd_Aux\music\music\BattleTech\FanOut.ogg",1,1};
+		duration = 169;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_FirstStrike
+    {
+        name = "First Strike";
+		sound[] = {"332nd_Aux\music\music\BattleTech\FirstStrike.ogg",1,1};
+		duration = 286;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_MechBayCantata
+    {
+        name = "Mech Bay Cantata";
+		sound[] = {"332nd_Aux\music\music\BattleTech\MechBayCantata.ogg",1,1};
+		duration = 392;
+		musicClass = "332nd_Music_BT";
+    };
+	class BT_OchreWall
+    {
+        name = "Ochre Wall";
+		sound[] = {"332nd_Aux\music\music\BattleTech\OchreWall.ogg",1,1};
+		duration = 176;
+		musicClass = "332nd_Music_BT";
+    };
+
 	//Misc
 	class Republic_Commando_Vode_An
     {
@@ -145,6 +252,10 @@ class CfgMusicClasses
 	class 332nd_Music_PW
 	{
 		displayName = "[332nd] Project Wingman";
+	};
+	class 332nd_Music_BT
+	{
+		displayName = "[332nd] BattleTech";
 	};
 	class 332nd_Music_Rock
 	{
