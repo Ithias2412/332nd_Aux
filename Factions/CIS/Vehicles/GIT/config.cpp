@@ -14,7 +14,31 @@ class CfgPatches
 		requiredAddons[] = {};
 	};
 };
-
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsTemplateLeftGunner: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class VehicleSystemsTemplateRightGunner: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
 class CfgVehicles
 {
 	class LandVehicle;
@@ -39,8 +63,18 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
+				class Components;
             };
         };
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+				};
+			};
+		};
     };
     class 3AS_DF9_Rocket: 3AS_DF9_Base
     {
@@ -63,6 +97,35 @@ class CfgVehicles
 		{
 			"3AS\3as_static\DF9\Data\DF9_RK_CO.paa"
 		};
+		class Components: Components
+		{
+			class SensorsManagerComponent: SensorsManagerComponent
+			{
+				class Components: Components
+				{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=8000;
+							maxRange=8000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=8000;
+							maxRange=8000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						animDirection="mainGun";
+						typeRecognitionDistance=8000;
+						maxTrackableSpeed=1388.89;
+					};
+				};
+			};
+		};
         class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -75,6 +138,60 @@ class CfgVehicles
 				{
 					"332nd_GIT_Missile_Pack",
                     "332nd_GIT_Missile_Pack",
+				};
+				class Components: Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+					{
+						class Components
+						{
+							class EmptyDisplay
+							{
+								componentType="EmptyDisplayComponent";
+							};
+							class MinimapDisplay
+							{
+								componentType="MinimapDisplayComponent";
+								resource="RscCustomInfoMiniMap";
+							};
+							class UAVDisplay
+							{
+								componentType="UAVFeedDisplayComponent";
+							};
+							class SensorDisplay
+							{
+								componentType="SensorsDisplayComponent";
+								range[]={8000,4000,2000,1000};
+								resource="RscCustomInfoSensors";
+							};
+						};
+					};
+					class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+					{
+						defaultDisplay="SensorDisplay";
+						class Components
+						{
+							class EmptyDisplay
+							{
+								componentType="EmptyDisplayComponent";
+							};
+							class MinimapDisplay
+							{
+								componentType="MinimapDisplayComponent";
+								resource="RscCustomInfoMiniMap";
+							};
+							class UAVDisplay
+							{
+								componentType="UAVFeedDisplayComponent";
+							};
+							class SensorDisplay
+							{
+								componentType="SensorsDisplayComponent";
+								range[]={8000,4000,2000,1000};
+								resource="RscCustomInfoSensors";
+							};
+						};
+					};
 				};
             };
         };
