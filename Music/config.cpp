@@ -13,7 +13,7 @@ class CfgPatches
 };
 class CfgMusic
 {
-	//Rock
+//Rock
     class Brain_Stew
     {
         name = "Brain Stew";
@@ -56,7 +56,7 @@ class CfgMusic
 		duration = 190;
 		musicClass = "332nd_Music_Rock";
     };
-	//Project Wingman
+//Project Wingman
 	class PW_Calamity
     {
         name = "Calamity";
@@ -128,7 +128,7 @@ class CfgMusic
 		musicClass = "332nd_Music_PW";
     };
 
-	//BattleTech
+//BattleTech
 	class BT_BileAndVenom
     {
         name = "Bile And Venom";
@@ -235,13 +235,21 @@ class CfgMusic
 		musicClass = "332nd_Music_BT";
     };
 
-	//Misc
+//Misc
 	class Republic_Commando_Vode_An
     {
         name = "Republic Commando - Vode An";
 		sound[] = {"332nd_Aux\music\music\Misc\Republic Commando Vode An.ogg",1,1};
 		duration = 184;
 		musicClass = "332nd_Music_Misc";
+    };
+//Sexy ERP
+	class Kitsune_ERP
+    {
+        name = "[F4M] Caught by a Dominant Kitsune In Heat [FDom] [Kidnapping] [Your scent.. intoxicating~]";
+		sound[] = {"332nd_Aux\music\music\Misc\Kitsune_ERP.ogg",1,1};
+		duration = 841;
+		musicClass = "332nd_Music_ERP";
     };
 };
 
@@ -264,6 +272,10 @@ class CfgMusicClasses
 	class 332nd_Music_Misc
 	{
 		displayName = "[332nd] Misc";
+	};
+	class 332nd_Music_ERP
+	{
+		displayName = "[332nd] ERP";
 	};
 
 };
