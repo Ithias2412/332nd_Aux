@@ -335,6 +335,9 @@ class CfgVehicles
 			};
 		};
 	};
+	class TKE_Ext_Bearcat_Cannon: TKE_Ext_Bearcat_Autocannon
+	{
+	};
 	class TKE_Ext_Bearcat_AA: TKE_Ext_Bearcat_Autocannon
 	{
 		class Turrets: Turrets
@@ -868,6 +871,34 @@ class CfgVehicles
 		};
 		textureList[] = {"Camo",1}; 
 	};
+	class 332nd_Mav_3_Armed_AutoCannon: 332nd_Mav_3_Armed
+	{
+		displayName = "[332nd] Mav 3 (Morruck IFV)";
+		model="\TKE_Ext_APC\data\apc_c.p3d";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"332nd_MAV3_AutoCannon","SmokeLauncher"};
+				magazines[] = {"332nd_MAV3_AutoCannon_Mag","332nd_MAV3_AutoCannon_Mag","SmokeLauncherMag"};
+				maxHorizontalRotSpeed=0.80000001;
+				maxVerticalRotSpeed=1;
+			};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class muzzle_rot1
+			{
+				source = "ammorandom";
+				weapon = "332nd_MAV3_AutoCannon";
+			};
+			class recoil_source
+			{
+				source = "reload";
+				weapon = "332nd_MAV3_AutoCannon";
+			};
+		};
+	};
 	class 332nd_Mav_3_SHORAD: 332nd_Mav_3_Armed
 	{
 		scope = 2;
@@ -960,7 +991,11 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 	class 3AS_MK4ES_Medium_Cannon;
-	
+	class 332nd_MAV3_AutoCannon: 3AS_MK4ES_Medium_Cannon
+	{
+		displayName = "[332nd] MAV3 Auto-Cannon";
+		magazines[] = {"332nd_MAV3_AutoCannon_Mag"};
+	};
 	class 332nd_MAV3_Repeater: 3AS_MK4ES_Medium_Cannon
 	{
 		displayName = "[332nd] MAV3 Repeater";
@@ -1075,5 +1110,42 @@ class CfgWeapons
 		};
 		aiDispersionCoefY=24;
 		aiDispersionCoefX=21;
+	};
+};
+
+class CfgMagazines
+{
+	class 1Rnd_HE_Grenade_shell;
+	class 332nd_MAV3_AutoCannon_Mag: 1Rnd_HE_Grenade_shell
+	{
+		author="Viperg";
+		scope=2;
+		modelSpecial="";
+		modelSpecialIsProxy=0;
+		picture="\MRC\JLTS\weapons\EPL2\data\ui\EPL2_mag_ui_ca.paa";
+		model="\MRC\JLTS\weapons\EPL2\EPL2_mag.p3d";
+		count=150;
+		displayName="150Rnd Thermal coil";
+		displayNameShort="Thermal Coil";
+		descriptionShort="Fires Thermal Shells.";
+		ammo="332nd_MAV3_ThermalShell";
+		tracersEvery=1;
+		initSpeed=800;
+		mass=20;
+	};
+};
+
+class CfgAmmo 
+{
+	class 3AS_ATTE_30mm_MP;
+	class 332nd_MAV3_ThermalShell: 3AS_ATTE_30mm_MP
+	{
+		aiAmmoUsageFlags="64 + 128 + 256 + 512";
+		allowAgainstInfantry=1;
+		model="\3AS\3AS_Weapons\Data\tracer_blue";
+		tracerScale=2.5;
+		tracerStartTime=0;
+		tracerEndTime=10;
+		effectfly="IDA_BlasterBoltGlow_Large_Blue_Fly";
 	};
 };

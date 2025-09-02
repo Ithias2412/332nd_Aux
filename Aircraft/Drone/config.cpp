@@ -29,19 +29,52 @@ class CfgWeapons
 
 class CfgVehicles
 {
-	class ACE_Actions;
-	class ACE_MainActions;
-	class UAV_01_base_F;
-	class JLTS_UAV_prowler_base: UAV_01_base_F
+	class Air;
+	class Helicopter: Air
 	{
 		class Turrets;
+		class HitPoints;
+        class ACE_Actions {
+            class ACE_MainActions {};
+        };
 	};
-	class JLTS_UAV_prowler_gar: JLTS_UAV_prowler_base
+	class Helicopter_Base_F: Helicopter
 	{
+        class ACE_Actions: ACE_Actions{
+            class ACE_MainActions: ACE_MainActions {};
+        };
 		class Turrets: Turrets
 		{
 			class MainTurret;
 		};
+		class HitPoints: HitPoints
+		{
+			class HitHRotor;
+			class HitHull;
+		};
+		class AnimationSources;
+		class EventHandlers;
+		class ViewOptics;
+		class ViewPilot;
+		class Components;
+	};
+	class UAV_01_base_F: Helicopter_Base_F
+	{
+        class ACE_Actions: ACE_Actions {
+            class ACE_MainActions: ACE_MainActions {};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+			};
+		};
+	};
+	class JLTS_UAV_prowler_base: UAV_01_base_F
+	{
+	};
+	class JLTS_UAV_prowler_gar: JLTS_UAV_prowler_base
+	{
 	};	
 	class 332nd_Prowler_Drone: JLTS_UAV_prowler_gar
 	{
