@@ -4,7 +4,7 @@ class CfgPatches
     {
         units[] = 
 		{
-			"",
+			"332nd_Prowler_Drone",
 		};
         weapons[] = 
 		{
@@ -82,7 +82,7 @@ class CfgVehicles
 		faction = "332nd_Faction";
 		hiddenSelectionsTextures[] = {"\MRC\JLTS\drones\prowler1000\data\prowler_cis_co.paa"};
 		textureList[] = {"Blufor",1};
-		fuelCapacity = 5;
+		fuelCapacity = 2.5;
 		class assembleInfo 
 		{
 			primary = 1;
@@ -118,6 +118,7 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
+				weapons[] = {""};
 				class OpticsIn
 				{
 					class Wide
