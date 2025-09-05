@@ -1745,43 +1745,51 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 ["[332nd] Support Modules", "Hailfire Missile", 
 	{
 		params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
-		_Incoming_SoundFX = call FSPLUS_fnc_SelectMortarSFX;
-		[_pos, "3AS_230mm_fly", 1, 1, 10, {false}, 0, 500, 150] spawn BIS_fnc_fireSupportVirtual;
+		_pos set [2,500];
+		_round = "3AS_230mm_fly" createVehicle _pos; 
+		_round setVelocity [0,0,-150]; 
+		_round setVectorDirAndUp ([[vectorDir _round, vectorUp _round], 0, -90, 0] call BIS_fnc_transformVectorDirAndUp);
 }, "\PHAN\data\Rocket.paa"] call zen_custom_modules_fnc_register;	
 
 ["[332nd] Support Modules", "HAGM Shell", 
 	{
 		params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
-		_Incoming_SoundFX = call FSPLUS_fnc_SelectMortarSFX;
-		[_pos, "Sh_155mm_AMOS", 1, 1, 10, {false}, 0, 500, 150] spawn BIS_fnc_fireSupportVirtual;
+		_pos set [2,500];
+		_round = "Sh_155mm_AMOS" createVehicle _pos; 
+		_round setVelocity [0,0,-150]; 
+		_round setVectorDirAndUp ([[vectorDir _round, vectorUp _round], 0, -90, 0] call BIS_fnc_transformVectorDirAndUp);
 }, "\PHAN\data\Rocket.paa"] call zen_custom_modules_fnc_register;	
 
 ["[332nd] Support Modules", "82mm Mortar", 
 	{
 		params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
-		_Incoming_SoundFX = call FSPLUS_fnc_SelectMortarSFX;
-		[_pos, "3AS_82mm_HE_Mortar", 1, 1, 10, {false}, 0, 500, 150] spawn BIS_fnc_fireSupportVirtual;
+		_round = "3AS_82mm_HE_Mortar" createVehicle _pos; 
+		_round setVelocity [0,0,-150]; 
+		_round setVectorDirAndUp ([[vectorDir _round, vectorUp _round], 0, -90, 0] call BIS_fnc_transformVectorDirAndUp);
 }, "\PHAN\data\Rocket.paa"] call zen_custom_modules_fnc_register;	
 
 ["[332nd] Support Modules", "Hailfire Missile (Harmless)", 
 	{
 		params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
-		_Incoming_SoundFX = call FSPLUS_fnc_SelectMortarSFX;
-		[_pos, "332nd_Hailfire_Rocket_Harmless", 1, 1, 10, {false}, 0, 500, 150] spawn BIS_fnc_fireSupportVirtual;
+		_round = "332nd_Hailfire_Rocket_Harmless" createVehicle _pos; 
+		_round setVelocity [0,0,-150]; 
+		_round setVectorDirAndUp ([[vectorDir _round, vectorUp _round], 0, -90, 0] call BIS_fnc_transformVectorDirAndUp);
 }, "\PHAN\data\Rocket.paa"] call zen_custom_modules_fnc_register;	
 
 ["[332nd] Support Modules", "HAGM Shell (Harmless)", 
 	{
 		params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
-		_Incoming_SoundFX = call FSPLUS_fnc_SelectMortarSFX;
-		[_pos, "332nd_HAGM_Shell_Harmless", 1, 1, 10, {false}, 0, 500, 150] spawn BIS_fnc_fireSupportVirtual;
+		_round = "332nd_HAGM_Shell_Harmless" createVehicle _pos; 
+		_round setVelocity [0,0,-150]; 
+		_round setVectorDirAndUp ([[vectorDir _round, vectorUp _round], 0, -90, 0] call BIS_fnc_transformVectorDirAndUp);
 }, "\PHAN\data\Rocket.paa"] call zen_custom_modules_fnc_register;	
 
 ["[332nd] Support Modules", "82mm Mortar (Harmless)", 
 	{
 		params [["_pos",[0,0,0],[[]],3], ["_logic",objNull,[objNull]]];
-		_Incoming_SoundFX = call FSPLUS_fnc_SelectMortarSFX;
-		[_pos, "332nd_82mm_Shell_Harmless", 1, 1, 10, {false}, 0, 500, 150] spawn BIS_fnc_fireSupportVirtual;
+		_round = "332nd_82mm_Shell_Harmless" createVehicle _pos; 
+		_round setVelocity [0,0,-150]; 
+		_round setVectorDirAndUp ([[vectorDir _round, vectorUp _round], 0, -90, 0] call BIS_fnc_transformVectorDirAndUp);
 }, "\PHAN\data\Rocket.paa"] call zen_custom_modules_fnc_register;	
 
 
