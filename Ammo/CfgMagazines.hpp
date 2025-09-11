@@ -327,6 +327,16 @@ class CfgMagazines
 		ammo="IDA_smoke_Impact";
 		mass=4;
 	};
+	class 332nd_Smoke_LauncherGrenade_3GL: 3Rnd_Smoke_Grenade_shell
+	{
+		author="Cherryy";
+		count=3;
+		displayName="332nd Impact Smoke (White)";
+		displayNameShort="White Smoke";
+		descriptionShort="Impact Smoke grenade";
+		ammo="IDA_smoke_Impact";
+		mass=12;
+	};
 	class 332nd_SmokeRed_LauncherGrenade: IDA_Smoke_LauncherGrenade
 	{
 		author="Cherryy";

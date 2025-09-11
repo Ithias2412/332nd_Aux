@@ -232,7 +232,7 @@ class CfgAmmo
 	class 332nd_Scattershot_S2: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
 	{
 		submunitionAmmo = "332nd_Scattershot_S1_Sub";
-		submunitionConeAngle = 0.25;
+		submunitionConeAngle = 0.50;
 		submunitionConeType[] = {"random",18};
 		triggerTime = 1e-09;
 	};
