@@ -148,8 +148,8 @@ class CfgAmmo
 	//Ammo Overhaul x2
 	class 332nd_Slug_Thrower_Round: 332nd_Balistic_Bullet_Base
 	{
-		// B1=1 B2=2
-		hit = 35;
+		// B1=2 B2=6
+		hit = 20;
 		caliber = 3;
 		typicalspeed = 1200;
 	};

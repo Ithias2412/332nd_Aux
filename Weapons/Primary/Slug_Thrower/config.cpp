@@ -367,7 +367,7 @@ class cfgWeapons
 		author = "Vipor + Ithias";
 		IDA_StunWeapon = "";
 		displayName="[332nd] MK I Slug Thrower (MRK)";
-		descriptionShort="Long range, high power, Slug Thrower.";
+		descriptionShort="Suppressed Rifle.";
 		modelOptics="\332nd_Aux\Misc\Optics\332nd_Zoom.p3d";
 		reloadAction = "GestureReload_JLTS_DC15S";
 		baseWeapon = "332nd_Slug_Thrower";
@@ -433,7 +433,7 @@ class cfgWeapons
 			1,
 			10,
 		};
-		recoil = "recoil_mx";
+		recoil="3AS_recoil_DC15A";
 		modes[]=
 		{
 			"Single",
@@ -476,8 +476,8 @@ class cfgWeapons
 					"DMR02_silencerInteriorTail_SoundSet",
 				};
 			};
-			reloadTime = 0.5;
-			dispersion = 0.00018;
+			reloadTime = 0.1;
+			dispersion = 0.00035;
 			minRange=2;
 			minRangeProbab=0.5;
 			midRange=100;
@@ -499,10 +499,7 @@ class cfgWeapons
 			};
 			class PointerSlot: PointerSlot
 			{
-				compatibleItems[]=
-				{
-					"acc_flashlight"
-				};
+				compatibleItems[]={};
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{

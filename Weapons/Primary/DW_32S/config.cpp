@@ -154,7 +154,7 @@ class cfgWeapons
 					1
 				};
 			};
-			reloadTime=0.1;
+			reloadTime = 0.17142;
 			dispersion=0.00035;
 			recoil="recoil_auto_mx";
 			recoilProne="recoil_auto_prone_mx";
