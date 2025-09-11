@@ -331,7 +331,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=3;
-		displayName="332nd Impact Smoke (White)";
+		displayName="332nd Impact Smoke (White) x3";
 		displayNameShort="White Smoke";
 		descriptionShort="Impact Smoke grenade";
 		ammo="IDA_smoke_Impact";
