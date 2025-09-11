@@ -325,7 +325,7 @@ class CfgMagazines
 		displayNameShort="White Smoke";
 		descriptionShort="Impact Smoke grenade";
 		ammo="IDA_smoke_Impact";
-		mass=2;
+		mass=4;
 	};
 	class 332nd_SmokeRed_LauncherGrenade: IDA_Smoke_LauncherGrenade
 	{
@@ -336,7 +336,7 @@ class CfgMagazines
 		descriptionShort="Red Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Red";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_red_CA.paa";
-		mass=2;
+		mass=4;
 	};
 	class 332nd_SmokeGreen_LauncherGrenade: 332nd_Smoke_LauncherGrenade
 	{
@@ -347,7 +347,7 @@ class CfgMagazines
 		descriptionShort="Green Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Green";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_green_CA.paa";
-		mass=2;
+		mass=4;
 	};
 	class 332nd_SmokeBlue_LauncherGrenade: 332nd_Smoke_LauncherGrenade
 	{
@@ -358,7 +358,7 @@ class CfgMagazines
 		descriptionShort="Blue Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Blue";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
-		mass=2;
+		mass=4;
 	};
 	class 332nd_SmokePurple_LauncherGrenade: 332nd_Smoke_LauncherGrenade
 	{
@@ -369,7 +369,7 @@ class CfgMagazines
 		descriptionShort="Purple Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Purple";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_purple_CA.paa";
-		mass=2;
+		mass=4;
 	};
 	class 332nd_SmokeYellow_LauncherGrenade: 332nd_Smoke_LauncherGrenade
 	{
@@ -380,7 +380,7 @@ class CfgMagazines
 		descriptionShort="Yellow Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Yellow";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
-		mass=2;
+		mass=4;
 	};
 	class 332nd_SmokeOrange_LauncherGrenade: 332nd_Smoke_LauncherGrenade
 	{
@@ -391,7 +391,7 @@ class CfgMagazines
 		descriptionShort="Orange Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Orange";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_orange_CA.paa";
-		mass=2;
+		mass=4;
 	};
 };
 
