@@ -71,7 +71,7 @@ class CfgMagazines
 		mass = 8;
 		value = 1;
 		model = "\A3\Structures_F_Heli\Furniture\RattanChair_01_F.p3d";
-		picture = "\3AS\3AS_Equipment\UI\Thermal_Detonator_UI_ca.paa";
+		picture = "\z\ace\addons\tripod\UI\w_sniper_tripod_ca.paa";
 		type = 256;
 		initSpeed = 18;
 		nameSound = "handgrenade";
