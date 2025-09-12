@@ -324,7 +324,7 @@ class cfgWeapons
 		reloadAction = "GestureReload_JLTS_DC15S";
 		muzzles[]=
 		{
-			"This",
+			"this",
 			"EGLM"
 		};
 		modes[]=

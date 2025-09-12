@@ -201,6 +201,11 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DC17S_Mag";
 			};
+			class 332nd_Sidearm_Stun_Mag
+			{
+				count = 100;
+				magazine = "332nd_Sidearm_Stun_Mag";
+			};
 			class 332nd_RPS6_Mag
 			{
 				count = 25;
@@ -853,11 +858,6 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_EPL_2_Mag";
 			};
-			class 332nd_HE_EPL_Mag
-			{
-				count = 25;
-				magazine = "332nd_HE_EPL_Mag";
-			};
 			class 332nd_Firepuncher_Mag
 			{
 				count = 100;
@@ -868,6 +868,11 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_ScatterGun_Scattershot_Mag";
 			};
+			class 332nd_ScatterGun_Condensedshot_Mag 
+			{ 
+				count = 100; 
+				magazine = "332nd_ScatterGun_Condensedshot_Mag"; 
+			}; 
 			class 332nd_Slug_Thrower_Mag
 			{
 				count = 100;
@@ -883,11 +888,21 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_HE_LGrenade_Mag";
 			};
+			class ACE_HuntIR_M203 
+			{ 
+				count = 50; 
+				magazine = "ACE_HuntIR_M203"; 
+			}; 
 			class 332nd_Smoke_LauncherGrenade
 			{
 				count = 50;
 				magazine = "332nd_Smoke_LauncherGrenade";
 			};
+			class 332nd_Smoke_LauncherGrenade_3GL 
+			{ 
+				count = 50; 
+				magazine = "332nd_Smoke_LauncherGrenade_3GL"; 
+			}; 
 			class 332nd_SmokeRed_LauncherGrenade
 			{
 				count = 50;
@@ -947,6 +962,11 @@ class CfgVehicles
 			{
 				count = 100;
 				magazine = "332nd_DC17S_Mag";
+			};
+			class 332nd_Sidearm_Stun_Mag
+			{
+				count = 100;
+				magazine = "332nd_Sidearm_Stun_Mag";
 			};
 			class 332nd_RPS6_Mag
 			{

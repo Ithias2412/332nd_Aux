@@ -1,4 +1,3 @@
-/*
 class CfgPatches {
 	class 332nd_DC15SA {
 		units[] = 
@@ -14,57 +13,89 @@ class CfgPatches {
 	};
 };
 //#include "xtdGear.hpp"
+class Mode_SemiAuto;
+
 class cfgWeapons 
 {
     class ItemInfo;
 	class 3AS_pistol_DC15SA_F;
-	class SWLW_DC15SA;
+	class JLTS_stun_muzzle;
 
 //Primary
 	class 332nd_DC15SA: 3AS_pistol_DC15SA_F
 	{
+		cursor = "332nd_Cursor_Circle";
+		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
 		displayName="[332nd] DC-15SA";
 		magazines[] =
 		{
 			"332nd_DC15SA_Mag"
 		};
-		magazineWell[]=
-		{
-			
-		};
+		magazineWell[]={};
 		modes[]=
 		{
 			"Single",
+			"FullAuto",
 		};
-	};
-
-};
-class CfgAmmo
-{
-	class 332nd_Base_Ammo;
-	class 332nd_DC15SA_Ammo_45ACP: 332nd_Base_Ammo
-	{
-		ACE_bulletLength = 17.272;
-		ACE_bulletMass = 14.904;
-        ACE_caliber = 11.481;
-		hit=5;
-		caliber=1.4;
-		typicalspeed=800;
-	};
-
-};
-class CfgMagazines
-{
-	class 332nd_Base_Mag;
-	class 332nd_DC15SA_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_DC15SA_Ammo_45ACP";
-		count = 15;
-		descriptionShort = "";
-		displayname = "DC-15SA 10 Round Energy Cell";
-		displayNameShort = "";
-		mass = 8;
-		scope = 2;
+		recoil = "3as_recoil_med";
+		//recoil = "3as_recoil_heavy";
+		class Single: Mode_SemiAuto
+		{
+			dispersion = 0.00174;
+			displayName = "Semi";
+			reloadTime = 0.25;
+			maxRange = 500;
+			maxRangeProbab = 0.04;
+			midRange = 150;
+			midRangeProbab = 0.58;
+			minRange = 1;
+			minRangeProbab = 0.3;
+			recoil = "recoil_pistol_heavy";
+			recoilProne = "recoil_prone_pistol_heavy";
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType
+			{
+				
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_DC15SA_Shot_SoundSet"};
+				//soundSetShot[] = {"3AS_Arkanian_SoundSet"};
+			};
+		};
+		class FullAuto: Single
+		{
+			autoFire = 1;
+			displayName = "Full";
+			textureType = "fullAuto";
+			reloadTime = 0.17142;
+		};
+		class OpticsModes
+		{
+			class Ironsights
+			{
+				distanceZoomMax = 400;
+				distanceZoomMin = 400;
+				memoryPointCamera = "eye";
+				opticsDisablePeripherialVision = 0.67;
+				opticsFlare = "true";
+				opticsID = 2;
+				opticsPPEffects[] = {};
+				opticsZoomInit = 0.75;
+				opticsZoomMax = 1.25;
+				opticsZoomMin = 0.25;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+		};
+		muzzles[] = { "this", "Stun" };
+		class Stun: JLTS_stun_muzzle
+		{
+			magazines[] = 
+			{
+				"332nd_Sidearm_Stun_Mag",
+			};
+		};
 	};
 };

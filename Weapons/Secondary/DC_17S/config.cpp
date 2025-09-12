@@ -96,7 +96,7 @@ class cfgWeapons
 		{
 			magazines[] = 
 			{
-				"332nd_DC17S_Stun_Mag",
+				"332nd_Sidearm_Stun_Mag",
 			};
 		};
 	};
@@ -112,7 +112,7 @@ class cfgWeapons
 			magazines[]=
 			{
 				"332nd_DC17S_Mag_Dual",
-				"332nd_DC17S_Stun_Mag"
+				"332nd_Sidearm_Stun_Mag"
 			};
 			magazineWell[]={};
 			cursor = "332nd_Cursor_Circle";
@@ -155,7 +155,7 @@ class cfgWeapons
 		{
 			magazines[] = 
 			{
-				"332nd_DC17S_Stun_Mag",
+				"332nd_Sidearm_Stun_Mag",
 			};
 		};
 	};

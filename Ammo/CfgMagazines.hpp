@@ -217,9 +217,17 @@ class CfgMagazines
 		mass = 8.3; 
 		scope = 2;
 	};
-	class 332nd_DC17S_Mag: 332nd_Base_Mag
+	class 332nd_DC15SA_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_S1";
+		count = 20;
+		displayname = "DC-15SA 20 Round Energy Cell";
+		mass = 5;
+		scope = 2;
+	};
+	class 332nd_DC17S_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_S2";
 		count = 30;
 		displayname = "DC-17S 30 Round Energy Cell";
 		mass = 5;
@@ -233,11 +241,11 @@ class CfgMagazines
 		mass = 5;
 		scope = 2;
 	};
-	class 332nd_DC17S_Stun_Mag: 332nd_Base_Mag
+	class 332nd_Sidearm_Stun_Mag: 332nd_Base_Mag
 	{
 		ammo = "JLTS_bullet_stun";
 		count = 5;
-		displayname = "DC-17S 5 Round Stun Cell";
+		displayname = "5 Round Stun Cell";
 		mass = 8;
 		scope = 2;
 		JLTS_stunDuration = 15;
