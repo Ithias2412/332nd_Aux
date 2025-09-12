@@ -286,15 +286,16 @@ class CfgAmmo
 	class 332nd_Hammer_I_Ammo: M_Air_AA
 	{
 		effectsMissile = "332nd_Effect_Hammer";
+		proximityExplosionDistance = 7;
 	};
 	class 332nd_CIS_A2A_Missile_Ammo: 332nd_Hammer_I_Ammo
 	{
 		effectsMissile = "332nd_Effect_CIS_A2A";
 	};
-
 	class 332nd_Hammer_II_Ammo: M_Zephyr
 	{
 		effectsMissile = "332nd_Effect_Hammer";
+		proximityExplosionDistance = 12;
 	};
 	class 332nd_Anvil_I_Ammo: Missile_AGM_02_F
 	{
