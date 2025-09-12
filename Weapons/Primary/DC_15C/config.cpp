@@ -202,11 +202,7 @@ class cfgWeapons
 			class PointerSlot: PointerSlot
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[]=
-				{
-					"acc_flashlight",
-					"acc_pointer_IR"
-				};
+				compatibleItems[]={};
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
@@ -353,11 +349,7 @@ class cfgWeapons
 			class PointerSlot: PointerSlot
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[]=
-				{
-					"acc_flashlight",
-					"acc_pointer_IR"
-				};
+				compatibleItems[]={};
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{

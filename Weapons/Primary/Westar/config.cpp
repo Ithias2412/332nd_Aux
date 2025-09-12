@@ -17,6 +17,7 @@ class Mode_Burst;
 class Mode_FullAuto;
 class SlotInfo;
 class CowsSlot;
+
 class MuzzleSlot;
 class PointerSlot;
 class UnderBarrelSlot;
@@ -146,6 +147,11 @@ class CfgWeapons
 				{
 					"332nd_Optic_Scope_WestarM5",
 				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[]={};
 			};
 		};
 	};

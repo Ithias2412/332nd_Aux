@@ -42,7 +42,7 @@ class cfgAmmo
     class GrenadeHand;
     class 332nd_DroidPopper_ammo: GrenadeHand
     {
-        displayName = "[BANNED / 332nd] WIP Droid Popper";
+        displayName = "[332nd] Droid Popper";
         model = "\Indecisive_Armoury_Ammos\Data\Thermal_Detonator\IDA_Thermal_Detonator.p3d";
         hit=0;
         ace_frag_enabled = 0;
@@ -65,11 +65,11 @@ class CfgMagazines
     class 332nd_DroidPopper_x1_mag: HandGrenade
     {
         author = "332nd";
-        displayName = "[BANNED / 332nd] WIP Droid Popper";
+        displayName = "[332nd] Droid Popper";
         displayNameShort = "Droid Popper";
         count = 1;
         ammo = "332nd_DroidPopper_ammo";
-		mass = 8;
+		mass = 16;
 		value = 1;
 		model = "\3AS\3AS_Equipment\model\3AS_thermaldet.p3d";
 		picture = "\3AS\3AS_Equipment\UI\Thermal_Detonator_UI_ca.paa";

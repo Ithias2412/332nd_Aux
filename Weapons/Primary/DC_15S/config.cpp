@@ -320,7 +320,6 @@ class cfgWeapons
 		recoil = "3AS_recoil_DC15S";
 		displayName="[332nd] DC-15S GL (GRN)";
 		scope=2;
-		picture="Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15S\DC15S_UGL_ui.paa";
 		model="Indecisive_Armoury_Weapons_REPUBLIC\Data\DC15S\Model\IDA_DC15S_UGL.p3d";
 		reloadAction = "GestureReload_JLTS_DC15S";
 		muzzles[]=
