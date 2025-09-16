@@ -122,7 +122,13 @@ class CfgVehicles
 		};
 	};
 	class Wreck_Base_F;
-    class 3AS_ATTE_Base;
+    class 3AS_ATTE_Base: APC_Wheeled_01_base_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurretTop;
+		};
+	};
     class 332nd_ATTE: 3AS_ATTE_Base
     {
 		faction="332nd_Faction";
@@ -148,6 +154,55 @@ class CfgVehicles
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
 			"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 		};
+		class Turrets: Turrets
+		{
+			class MainTurretTop: MainTurretTop
+			{
+				weapons[] = 
+				{
+					"332nd_Mass_Driver_Cannon",
+					"SmokeLauncher"
+				};
+				magazines[] = 
+				{
+					"332nd_30Rnd_Mass_Driver_shells",
+					"332nd_30Rnd_Mass_Driver_shells",
+					"332nd_30Rnd_Mass_Driver_shells",
+					"SmokeLauncherMag"
+				};
+			};
+		};
 	};
 
+};
+
+class CfgWeapons
+{
+	class 3AS_Mass_Driver_Cannon;
+	class 332nd_Mass_Driver_Cannon: 3AS_Mass_Driver_Cannon
+	{
+		displayName = "[332nd] Mass Driver Cannon";
+		magazines[] = 
+		{
+			"332nd_30Rnd_Mass_Driver_shells"
+		};
+	};
+};
+
+class CfgMagazines
+{
+	class 3AS_30Rnd_Mass_Driver_shells;
+	class 332nd_30Rnd_Mass_Driver_shells :3AS_30Rnd_Mass_Driver_shells
+	{
+		ammo = "332nd_Mass_Driver_Shell";
+	};
+};
+
+class CfgAmmo
+{
+	class 3AS_Mass_Driver_Shell;
+	class 332nd_Mass_Driver_Shell: 3AS_Mass_Driver_Shell
+	{
+		hit = 550; //was 800
+	};
 };
