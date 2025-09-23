@@ -18,9 +18,43 @@ class cfgWeapons
 	class ItemInfo;
 	class UniformItem;
 	class SWLB_clone_uniform;
+	class JLTS_CloneArmor;
 	
 // Uniform
-class 332nd_Uniform_Clone_CR: SWLB_clone_uniform
+
+	class 332nd_Uniform_Clone_CT_JLTS: JLTS_CloneArmor
+	{
+		dlc="332nd";
+		author="Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (JLTS)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_CT_JLTS_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_SCT_JLTS: JLTS_CloneArmor
+	{
+		dlc="332nd";
+		author="Ithias";
+		scope=2;
+		displayName="[332nd] Clone Trooper Armor (JLTS)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_SCT_JLTS_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_CR: SWLB_clone_uniform
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -39,7 +73,7 @@ class 332nd_Uniform_Clone_CR: SWLB_clone_uniform
 		};
 	};
 
-class 332nd_Uniform_Clone_CT: 332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_CT: 332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -56,7 +90,7 @@ class 332nd_Uniform_Clone_CT: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_SCT: 332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_SCT: 332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -73,7 +107,7 @@ class 332nd_Uniform_Clone_SCT: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_VCT: 332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_VCT: 332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -589,6 +623,41 @@ class CfgVehicles
 {
 	class SWLB_clone_base_P2;
 	class HitPoints;
+	class JLTS_Clone_P2_DC15A;
+	class 332nd_Uniform_Clone_CT_JLTS_Veh: JLTS_Clone_P2_DC15A
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_CT_JLTS";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_SCT_JLTS_Veh: JLTS_Clone_P2_DC15A
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_SCT_JLTS";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
+		};
+	};
 	class 332nd_Uniform_Clone_CR_Veh: SWLB_clone_base_P2
 	{
 		scope=1;

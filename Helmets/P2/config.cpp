@@ -18,7 +18,19 @@ class cfgWeapons
     class ItemInfo;
 	class HeadgearItem;
 	class SWLB_clone_P2_helmet;
-
+	class JLTS_CloneHelmetP2;
+	class 332nd_Helmet_P2_CT_JLTS: JLTS_CloneHelmetP2
+	{
+		displayName="[332nd] P2 Helmet (JLTS)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_CT_JLTS.paa"
+		};
+	};
 	class 332nd_Helmet_P2_CR: SWLB_clone_P2_helmet
 	{
 		author="Ithias";

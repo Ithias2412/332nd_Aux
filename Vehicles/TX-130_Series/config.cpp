@@ -3,7 +3,11 @@ class CfgPatches
 	class 332nd_TX130
 	{
 		requiredAddons[] = {"3AS_SaberTank"};
-		units[] = {"332nd_Saber_Tank"};
+		units[] = 
+		{
+			"332nd_Saber_Tank",
+			"332nd_Saber_Tank_New"
+		};
 		weapons[] = {};
 		author = "Viper";
 		magazines[] = {};
@@ -259,6 +263,20 @@ class cfgvehicles
 			class Mainturret_top: Mainturret_top
 			{
 			};
+		};
+	};
+	class 332nd_Saber_Tank_New: 3AS_Saber_01_Base
+	{
+		scope=2;
+		scopecurator=2;
+		scopearsenal=2;
+		side=1;
+        faction="332nd_Faction";		
+		displayname = "[332nd] TX-130 (New)";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vehicles\TX-130_Series\tex\332nd_Saber_Tank.paa",
+			"3AS\3AS_Saber\data\Saber_weapons_co.paa"
 		};
 	};
 };
