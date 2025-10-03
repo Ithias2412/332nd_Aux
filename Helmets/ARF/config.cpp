@@ -76,6 +76,61 @@ class cfgWeapons
 			};
 		};
 	};
+	class ls_gar_phase1Arf_helmet;
+	class 332nd_Helmet_ARF_JLTS: ls_gar_phase1Arf_helmet
+	{
+		author="Ithias";
+		dlc="332nd Aux";
+		displayName="[332nd] ARF Helmet (JLTS)";
+		332nd_Has_Lowlight = 1;
+		subItems[] = {};
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+			"visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Base_JLTS.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Base_JLTS.paa",
+		};
+		model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+		class ItemInfo: HeadgearItem
+		{
+			mass=1;
+			uniformModel = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2",
+				"visor"
+			};
+			modelSides[] = {6};
+            class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 10;
+					hitpointName="HitFace";
+					passThrough=0.1;
+				};
+				class Head
+				{
+					armor = 10;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					armor = 10;
+					hitpointName="HitNeck";
+					passThrough=0.1;
+				};
+			};
+		};		
+	};
 	class 332nd_Helmet_ARF_Desert: 332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Desert)";

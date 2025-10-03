@@ -201,6 +201,11 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DC17S_Mag";
 			};
+			class 332nd_DC17S_Mag_Dual
+			{
+				count = 100;
+				magazine = "332nd_DC17S_Mag_Dual";
+			};
 			class 332nd_Sidearm_Stun_Mag
 			{
 				count = 100;
@@ -962,6 +967,11 @@ class CfgVehicles
 			{
 				count = 100;
 				magazine = "332nd_DC17S_Mag";
+			};
+			class 332nd_DC17S_Mag_Dual
+			{
+				count = 100;
+				magazine = "332nd_DC17S_Mag_Dual";
 			};
 			class 332nd_Sidearm_Stun_Mag
 			{

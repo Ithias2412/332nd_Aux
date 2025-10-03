@@ -16,6 +16,7 @@ class CfgPatches {
 class cfgWeapons 
 {
     class ItemInfo;
+	class JLTS_CloneBinocular;
 	class SWLB_clone_binocular;
 	class SWLB_clone_commander_binocular;
 	class Rangefinder;
@@ -55,7 +56,7 @@ class cfgWeapons
         ace_rangefinder_compass = 1;          // Enable compass overlay
 	};
 */
-	class 332nd_Binocular: SWLB_clone_binocular
+	class 332nd_Binocular: JLTS_CloneBinocular
 	{
 		author="Ithias";
 		displayName="[332nd] Binocular";
