@@ -177,7 +177,7 @@ class CfgVehicles
 	{
 		author="Ithias";
 		displayName="New! [332nd] Rifleman Bags";
-		model = "";
+		model = "\a3\weapons_f\empty.p3d";
 		maximumLoad=100;
 		mass=40;
 	};
