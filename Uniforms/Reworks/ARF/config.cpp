@@ -1,5 +1,5 @@
 class CfgPatches {
-	class SUGMA_332nd_Uniforms_ARF {
+	class 332nd_Uniforms_ARF {
 		units[] = 
         {
             ""
@@ -17,52 +17,52 @@ class cfgWeapons
 {
     class ItemInfo;
     class UniformItem;
-	class SUGMA_332nd_Uniform_Clone_CR;
+	class 332nd_Uniform_Clone_CR;
 	
 // Uniform
-	class SUGMA_332nd_Uniform_ARF_Desert: SUGMA_332nd_Uniform_Clone_CR
+	class 332nd_Uniform_ARF_Desert: 332nd_Uniform_Clone_CR
 	{
 		displayName="New! [332nd] ARF Trooper Armor (Desert)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_ARF_Desert_Veh";
+			uniformClass="332nd_Uniform_ARF_Desert_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class SUGMA_332nd_Uniform_ARF_Urban: SUGMA_332nd_Uniform_Clone_CR
+	class 332nd_Uniform_ARF_Urban: 332nd_Uniform_Clone_CR
 	{
 		displayName="New! [332nd] ARF Trooper Armor (Urban)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_ARF_Urban_Veh";
+			uniformClass="332nd_Uniform_ARF_Urban_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class SUGMA_332nd_Uniform_ARF_Winter: SUGMA_332nd_Uniform_Clone_CR
+	class 332nd_Uniform_ARF_Winter: 332nd_Uniform_Clone_CR
 	{
 		displayName="New! [332nd] ARF Trooper Armor (Winter)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_ARF_Winter_Veh";
+			uniformClass="332nd_Uniform_ARF_Winter_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class SUGMA_332nd_Uniform_ARF_Woodland: SUGMA_332nd_Uniform_Clone_CR
+	class 332nd_Uniform_ARF_Woodland: 332nd_Uniform_Clone_CR
 	{
 		displayName="New! [332nd] ARF Trooper Armor (Woodland)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_ARF_Woodland_Veh";
+			uniformClass="332nd_Uniform_ARF_Woodland_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -73,11 +73,11 @@ class cfgWeapons
 
 class CfgVehicles
 {
-	class SUGMA_332nd_Uniform_Clone_CR_Veh;
-	class SUGMA_332nd_Uniform_ARF_Desert_Veh: SUGMA_332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_Clone_CR_Veh;
+	class 332nd_Uniform_ARF_Desert_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_ARF_Desert";
+		uniformClass="332nd_Uniform_ARF_Desert";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -92,10 +92,10 @@ class CfgVehicles
 		};
 		camouflage = 0.1;
 	};
-	class SUGMA_332nd_Uniform_ARF_Urban_Veh: SUGMA_332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_ARF_Urban_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_ARF_Urban";
+		uniformClass="332nd_Uniform_ARF_Urban";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -110,10 +110,10 @@ class CfgVehicles
 		};
 		camouflage = 0.1;
 	};
-	class SUGMA_332nd_Uniform_ARF_Winter_Veh: SUGMA_332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_ARF_Winter_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_ARF_Winter";
+		uniformClass="332nd_Uniform_ARF_Winter";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -128,10 +128,10 @@ class CfgVehicles
 		};
 		camouflage = 0.1;
 	};
-	class SUGMA_332nd_Uniform_ARF_Woodland_Veh: SUGMA_332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_ARF_Woodland_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_ARF_Woodland";
+		uniformClass="332nd_Uniform_ARF_Woodland";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -153,7 +153,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Uniform_ARF_Extended
+        class 332nd_Uniform_ARF_Extended
         {
             label = "ARF";
             author = "Ithias";
@@ -197,24 +197,24 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Uniform_ARF_Desert
+        class 332nd_Uniform_ARF_Desert
         {
-            model = "SUGMA_332nd_Uniform_ARF_Extended";
+            model = "332nd_Uniform_ARF_Extended";
             Camo = "Desert";
         };
-        class SUGMA_332nd_Uniform_ARF_Urban
+        class 332nd_Uniform_ARF_Urban
         {
-            model = "SUGMA_332nd_Uniform_ARF_Extended";
+            model = "332nd_Uniform_ARF_Extended";
             Camo = "Urban";
         };
-        class SUGMA_332nd_Uniform_ARF_Winter
+        class 332nd_Uniform_ARF_Winter
         {
-            model = "SUGMA_332nd_Uniform_ARF_Extended";
+            model = "332nd_Uniform_ARF_Extended";
             Camo = "Winter";
         };
-        class SUGMA_332nd_Uniform_ARF_Woodland
+        class 332nd_Uniform_ARF_Woodland
         {
-            model = "SUGMA_332nd_Uniform_ARF_Extended";
+            model = "332nd_Uniform_ARF_Extended";
             Camo = "Woodland";
         };
     };
