@@ -1,5 +1,5 @@
 class CfgPatches {
-	class SUGMA_332nd_Helmets_P2 {
+	class 332nd_Helmets_P2 {
 		units[] = 
         {
 			""
@@ -18,7 +18,7 @@ class cfgWeapons
     class ItemInfo;
 	class HeadgearItem;
 	class JLTS_CloneHelmetP2;
-	class SUGMA_332nd_Helmet_P2_CR: JLTS_CloneHelmetP2
+	class 332nd_Helmet_P2_CR: JLTS_CloneHelmetP2
 	{
 		author="Ithias";
 		dlc="332nd Aux";
@@ -55,7 +55,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class SUGMA_332nd_Helmet_P2_CT: SUGMA_332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_CT: 332nd_Helmet_P2_CR
 	{
 		displayName="New! [332nd] P2 Helmet (CT)";
 		hiddenSelections[]=
@@ -72,7 +72,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Helmets_P2_Extended
+        class 332nd_Helmets_P2_Extended
         {
             label = "Phase 2";
             author = "Ithias";
@@ -308,20 +308,15 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Helmet_P2_CR
+        class 332nd_Helmet_P2_CR
         {
-            model = "SUGMA_332nd_Helmets_P2_Extended";
+            model = "332nd_Helmets_P2_Extended";
             Type = "Recruit";
         };
-        class SUGMA_332nd_Helmet_P2_CT
+        class 332nd_Helmet_P2_CT
         {
-            model = "SUGMA_332nd_Helmets_P2_Extended";
+            model = "332nd_Helmets_P2_Extended";
             Type = "Trooper";
-        };
-		class SUGMA_332nd_Helmet_P2_Medic
-		{
-            model = "SUGMA_332nd_Helmets_P2_Extended";
-            Type = "Medic";
         };
 	};
 };

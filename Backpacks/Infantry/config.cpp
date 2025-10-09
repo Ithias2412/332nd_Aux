@@ -1,6 +1,6 @@
 class CfgPatches 
 {
-	class 332nd_Backpacks 
+	class Old_332nd_Backpacks 
 	{
 		units[] = 
         {
@@ -30,7 +30,7 @@ class CfgVehicles
 //Base Items
 
 
-	class 332nd_Backpack: SWLB_clone_backpack
+	class Old_332nd_Backpack: SWLB_clone_backpack
 	{
 		scope = 1;
 		author="Ithias";
@@ -79,7 +79,7 @@ class CfgVehicles
 			""
 		};
 	};
-	class 332nd_Backpack_AT: SWLB_clone_backpack
+	class Old_332nd_Backpack_AT: SWLB_clone_backpack
 	{
 		author="Ithias";
 		displayName="[332nd] Backpack (Anti-Tank)";
@@ -104,7 +104,7 @@ class CfgVehicles
 		};
 	};
 
-	class 332nd_Backpack_RTO: SWLB_clone_backpack
+	class Old_332nd_Backpack_RTO: SWLB_clone_backpack
 	{
 		author="Ithias";
 		displayName="[332nd] Backpack (RTO)";
@@ -171,7 +171,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 	};
 
-	class 332nd_Backpack_Medic: SWLB_clone_backpack
+	class Old_332nd_Backpack_Medic: SWLB_clone_backpack
 	{
 		author="Ithias";
 		displayName="[332nd] Backpack (Medic)";
@@ -197,7 +197,7 @@ class CfgVehicles
 		};
 	};
 
-	class 332nd_Backpack_Engineer: SWLB_clone_backpack
+	class Old_332nd_Backpack_Engineer: SWLB_clone_backpack
 	{
         ace_fortify_fortifyTool = 1;
 		author="Ithias";
@@ -382,7 +382,7 @@ class XtdGearModels
 {
     class CfgVehicles
     {
-        class 332nd_Backpack_Extended
+        class Old_332nd_Backpack_Extended
         {
             label = "Backpack";
             author = "Ithias";
@@ -522,82 +522,82 @@ class XtdGearInfos
     {
         class 332nd_Backpack_AR
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Backpacks = "AR";
         };
-        class 332nd_Backpack_AT
+        class Old_332nd_Backpack_AT
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Backpacks = "AT";
         };
-        class 332nd_Backpack_RTO
+        class Old_332nd_Backpack_RTO
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Backpacks = "RTO";
         };
         class 332nd_Bag
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Bags = "Rifleman";
         };
         class 332nd_Leg_Bag
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Bags = "Grenadier";
         };
         class 332nd_Leg
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Bags = "Marksman";
         };
-        class 332nd_Backpack_Medic
+        class Old_332nd_Backpack_Medic
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Backpacks = "Medic";
         };
-        class 332nd_Backpack_Engineer
+        class Old_332nd_Backpack_Engineer
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Backpacks = "ENG";
         };
         class 332nd_Backpack_Ammo_Bearer
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Backpacks = "Ammo";
         };
         class 332nd_Radio
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             NCO = "White";
         };
         class 332nd_Radio_Black
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             NCO = "Black";
         };
         class 332nd_Radio_Orange
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             NCO = "Orange";
         };
         class 332nd_Backpack_NCO
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             NCO = "Backpack";
         };
         class 332nd_JT12
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Jumppack = "JT12";
         };
         class 332nd_JT12_LR
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Jumppack = "JT12_LR";
         };
         class 332nd_MC
         {
-            model = "332nd_Backpack_Extended";
+            model = "Old_332nd_Backpack_Extended";
             Jumppack = "Pilot";
         };
     };

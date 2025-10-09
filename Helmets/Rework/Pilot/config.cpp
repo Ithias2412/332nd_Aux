@@ -1,5 +1,5 @@
 class CfgPatches {
-	class SUGMA_332nd_Helmets_Pilot {
+	class 332nd_Helmets_Pilot {
 		units[] = 
         {
 			""
@@ -20,7 +20,7 @@ class cfgWeapons
 	class SWLB_clone_pilot_P2_helmet;
 
 //Base Start
-	class SUGMA_332nd_Helmet_Pilot: SWLB_clone_pilot_P2_helmet
+	class 332nd_Helmet_Pilot: SWLB_clone_pilot_P2_helmet
 	{
 		scope=2;
 		dlc="332nd Aux";
@@ -79,7 +79,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Helmets_Pilot_Extended
+        class 332nd_Helmets_Pilot_Extended
         {
             label = "Pilot";
             author = "Ithias";
@@ -136,9 +136,9 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Helmet_Pilot
+        class 332nd_Helmet_Pilot
         {
-            model = "SUGMA_332nd_Helmets_Pilot_Extended";
+            model = "332nd_Helmets_Pilot_Extended";
             Type = "Pilot";
         };
 	};

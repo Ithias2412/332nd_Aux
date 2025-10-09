@@ -1,5 +1,5 @@
 class CfgPatches {
-	class SUGMA_332nd_Facewear {
+	class 332nd_Facewear {
 		units[] = 
         {
 			""
@@ -17,12 +17,12 @@ class CfgWeapons
 {
 	class OPTRE_NVG;
 	class ItemInfo;
-	class SUGMA_332nd_NVG_Chip: OPTRE_NVG
+	class 332nd_NVG_Chip: OPTRE_NVG
 	{
 		displayName = "New! [332nd] NVG Chip";
 		picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 	};
-	class SUGMA_332nd_NVG_Marshal_Commander: OPTRE_NVG
+	class 332nd_NVG_Marshal_Commander: OPTRE_NVG
 	{
 		displayName = "New! [332nd] Marshal Commander";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGMC.p3d";
@@ -49,7 +49,7 @@ class CfgWeapons
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGMC.p3d";
 		};
 	};
-	class SUGMA_332nd_NVG_Commander: OPTRE_NVG
+	class 332nd_NVG_Commander: OPTRE_NVG
 	{
 		displayName = "New! [332nd] Commander";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGCC.p3d";
@@ -76,7 +76,7 @@ class CfgWeapons
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGCC.p3d";
 		};
 	};
-	class SUGMA_332nd_NVG_Rangefinder: OPTRE_NVG
+	class 332nd_NVG_Rangefinder: OPTRE_NVG
 	{
 		displayName = "New! [332nd] Rangefinder";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
@@ -103,7 +103,7 @@ class CfgWeapons
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
 		};
 	};
-	class SUGMA_332nd_NVG_Visor: OPTRE_NVG
+	class 332nd_NVG_Visor: OPTRE_NVG
 	{
 		displayName = "New! [332nd] Visor";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
@@ -130,7 +130,7 @@ class CfgWeapons
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
 		};
 	};
-	class SUGMA_332nd_NVG_Inverted_Visor: OPTRE_NVG
+	class 332nd_NVG_Inverted_Visor: OPTRE_NVG
 	{
 		displayName = "New! [332nd] Visor (Inverted)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
@@ -163,7 +163,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_NVG_Extended
+        class 332nd_NVG_Extended
         {
             label = "Night Vision";
             author = "Ithias";
@@ -257,34 +257,34 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_NVG_Chip
+        class 332nd_NVG_Chip
         {
-            model = "SUGMA_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Chip";
         };
-        class SUGMA_332nd_NVG_Rangefinder
+        class 332nd_NVG_Rangefinder
         {
-            model = "SUGMA_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Rangefinder";
         };
-        class SUGMA_332nd_NVG_Visor
+        class 332nd_NVG_Visor
         {
-            model = "SUGMA_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Visor";
         };
-		class SUGMA_332nd_NVG_Inverted_Visor
+		class 332nd_NVG_Inverted_Visor
         {
-            model = "SUGMA_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Visor_Inverted";
         };
-        class SUGMA_332nd_NVG_Commander
+        class 332nd_NVG_Commander
         {
-            model = "SUGMA_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Commander";
         };
-        class SUGMA_332nd_NVG_Marshal_Commander
+        class 332nd_NVG_Marshal_Commander
         {
-            model = "SUGMA_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Marshal_Commander";
         };
     };

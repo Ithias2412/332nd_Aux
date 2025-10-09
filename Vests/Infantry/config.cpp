@@ -50,7 +50,7 @@ class cfgWeapons
 	class SWLB_clone_officer_armor;
 
 
-	class 332nd_Trooper_Vest: SWLB_clone_basic_armor
+	class Old_332nd_Trooper_Vest: SWLB_clone_basic_armor
 	{
 		author="Ithias";
 		displayName = "[332nd] Vest (Trooper)";
@@ -149,7 +149,7 @@ class cfgWeapons
 
 //Veteran Start
 
-	class 332nd_Veteran_Vest_variant_1: 332nd_Trooper_Vest
+	class 332nd_Veteran_Vest_variant_1: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (VCT+ / variant 1)";
 		model="\SWLB_clones\SWLB_clone_recon_armor.p3d";
@@ -179,7 +179,7 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_Veteran_Vest_variant_2: 332nd_Trooper_Vest
+	class 332nd_Veteran_Vest_variant_2: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (VCT+ / variant 2)";
 		model="\SWLB_clones\SWLB_clone_specialist_armor.p3d";
@@ -204,7 +204,7 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_Veteran_Vest_variant_3: 332nd_Trooper_Vest
+	class 332nd_Veteran_Vest_variant_3: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (VCT+ / variant 3)";
 		model="\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
@@ -232,7 +232,7 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_Veteran_Vest_variant_4: 332nd_Trooper_Vest
+	class 332nd_Veteran_Vest_variant_4: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (VCT+ / variant 4)";
 		model="\SWLB_clones\SWLB_clone_cfr_armor.p3d";
@@ -255,7 +255,7 @@ class cfgWeapons
 	};
 //Sergeant Start
 
-	class 332nd_Sergeant_Vest_variant_1: 332nd_Trooper_Vest
+	class 332nd_Sergeant_Vest_variant_1: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CS+ / variant 1)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -281,7 +281,7 @@ class cfgWeapons
 	};
 
 	
-	class 332nd_Sergeant_Vest_variant_2: 332nd_Trooper_Vest
+	class 332nd_Sergeant_Vest_variant_2: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CS+ / variant 2)";
 		model="\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
@@ -306,7 +306,7 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_Sergeant_Vest_variant_3: 332nd_Trooper_Vest
+	class 332nd_Sergeant_Vest_variant_3: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CS+ / variant 3)";
 		model="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
@@ -334,7 +334,7 @@ class cfgWeapons
 		};
 	};
 	
-	class 332nd_Sergeant_Vest_variant_4: 332nd_Trooper_Vest
+	class 332nd_Sergeant_Vest_variant_4: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CS+ / variant 4)";
 		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -364,7 +364,7 @@ class cfgWeapons
 	
 
 //CSM Start
-	class 332nd_Platoon_Vest_variant_1: 332nd_Trooper_Vest
+	class 332nd_Platoon_Vest_variant_1: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CSM+ / variant 1)";
 		model="\SWLB_clones\SWLB_clone_officer_armor.p3d";
@@ -386,7 +386,7 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_Platoon_Vest_variant_2: 332nd_Trooper_Vest
+	class 332nd_Platoon_Vest_variant_2: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CSM+ / variant 2)";
 		model="\SWLB_clones\SWLB_clone_commander_armor.p3d";
@@ -411,7 +411,7 @@ class cfgWeapons
 		};
 	};
 	
-	class 332nd_Platoon_Vest_variant_3: 332nd_Trooper_Vest
+	class 332nd_Platoon_Vest_variant_3: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CSM+ / variant 3)";
 		model="\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
@@ -437,7 +437,7 @@ class cfgWeapons
 		};
 	};
 	
-	class 332nd_Platoon_Vest_variant_4: 332nd_Trooper_Vest
+	class 332nd_Platoon_Vest_variant_4: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CSM+ / variant 4)";
 		model="\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
@@ -463,7 +463,7 @@ class cfgWeapons
 		};
 	};
 	
-	class 332nd_Platoon_Vest_variant_5: 332nd_Trooper_Vest
+	class 332nd_Platoon_Vest_variant_5: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CSM+ / variant 5)";
 		model="\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
@@ -491,7 +491,7 @@ class cfgWeapons
 
 
 //Customs
-	class 332nd_Ithias_Vest: 332nd_Trooper_Vest
+	class 332nd_Ithias_Vest: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Ithias)";
 		//model="\SWLB_clones\SWLB_clone_officer_armor.p3d";
@@ -517,7 +517,7 @@ class cfgWeapons
 			};
 		};
 	};
-class 332nd_Cherryy_Custom_Vest: 332nd_Trooper_Vest
+class 332nd_Cherryy_Custom_Vest: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Cherryy)";
 		model="\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
@@ -541,7 +541,7 @@ class 332nd_Cherryy_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-class 332nd_Asuka_Custom_Vest: 332nd_Trooper_Vest
+class 332nd_Asuka_Custom_Vest: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Asuka)";
 		model="\SWLB_clones\SWLB_clone_kama_armor.p3d";
@@ -565,7 +565,7 @@ class 332nd_Asuka_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-class 332nd_Joker_Custom_Vest: 332nd_Trooper_Vest
+class 332nd_Joker_Custom_Vest: Old_332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Joker)";
 		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -592,7 +592,7 @@ class 332nd_Joker_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-class 332nd_Body_Custom_Vest: 332nd_Trooper_Vest 
+class 332nd_Body_Custom_Vest: Old_332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Body)";
 		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -619,7 +619,7 @@ class 332nd_Body_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-class 332nd_Crow_Custom_Vest: 332nd_Trooper_Vest 
+class 332nd_Crow_Custom_Vest: Old_332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Crow)";
 		model="\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
@@ -643,7 +643,7 @@ class 332nd_Crow_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-class 332nd_Frankenburg_Custom_Vest: 332nd_Trooper_Vest 
+class 332nd_Frankenburg_Custom_Vest: Old_332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Frankenburg)";
 		model="\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -670,7 +670,7 @@ class 332nd_Frankenburg_Custom_Vest: 332nd_Trooper_Vest
 			};
 		};
 	};
-class 332nd_Walkie_Custom_Vest: 332nd_Trooper_Vest 
+class 332nd_Walkie_Custom_Vest: Old_332nd_Trooper_Vest 
 	{
 		displayName="[332nd] Vest (Walkie)";
 		model="\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
@@ -1313,7 +1313,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 332nd_Vest_Extended
+        class Old_332nd_Vest_Extended
         {
             label = "Vests";
             author = "Ithias";
@@ -1449,132 +1449,132 @@ class XtdGearInfos
     class CfgWeapons 
     {
 //CR
-        class 332nd_Trooper_Vest
+        class Old_332nd_Trooper_Vest
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CR";
             variant = "variant1";
         };
 //VCT
         class 332nd_Veteran_Vest_variant_1
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "VCT";
             variant = "variant1";
         };
         class 332nd_Veteran_Vest_variant_2
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "VCT";
             variant = "variant2";
         };
         class 332nd_Veteran_Vest_variant_3
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "VCT";
             variant = "variant3";
         };
         class 332nd_Veteran_Vest_variant_4
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "VCT";
             variant = "variant4";
         };
 //CS
         class 332nd_Sergeant_Vest_variant_1
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CS";
             variant = "variant1";
         };
         class 332nd_Sergeant_Vest_variant_2
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CS";
             variant = "variant2";
         };
         class 332nd_Sergeant_Vest_variant_3
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CS";
             variant = "variant3";
         };
         class 332nd_Sergeant_Vest_variant_4
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CS";
             variant = "variant4";
         };
 //CSM
         class 332nd_Platoon_Vest_variant_1
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CSM";
             variant = "variant1";
         };
         class 332nd_Platoon_Vest_variant_2
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CSM";
             variant = "variant2";
         };
         class 332nd_Platoon_Vest_variant_3
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CSM";
             variant = "variant3";
         };
         class 332nd_Platoon_Vest_variant_4
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CSM";
             variant = "variant4";
         };
         class 332nd_Platoon_Vest_variant_5
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
             Rank = "CSM";
             variant = "variant5";
         };
 //Customs
 		class 332nd_Cherryy_Custom_Vest
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
 			custom = "Cherryy";
         };
 		class 332nd_Asuka_Custom_Vest
         {
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
 			custom = "Asuka";
         };
 		class 332nd_Ithias_Vest
 		{
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
 			custom = "Ithias";
 		};
 		class 332nd_Joker_Custom_Vest
 		{
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
 			custom = "Joker";
 		};
 		class 332nd_Body_Custom_Vest
 		{
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
 			custom = "Body";
 		};
 		class 332nd_Crow_Custom_Vest
 		{
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
 			custom = "Crow";
 		};
 		class 332nd_Frankenburg_Custom_Vest
 		{
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
 			custom = "Frankenburg";
 		};
 		class 332nd_Walkie_Custom_Vest
 		{
-            model = "332nd_Vest_Extended";
+            model = "Old_332nd_Vest_Extended";
 			custom = "Walkie";
 		};
     };

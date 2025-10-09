@@ -1,5 +1,7 @@
-class CfgPatches {
-	class SUGMA_332nd_Vests {
+class CfgPatches 
+{
+	class 332nd_Vests 
+	{
 		units[] = 
         {
 			""
@@ -23,7 +25,7 @@ class cfgWeapons
 
 
 
-	class SUGMA_332nd_Trooper_Vest: JLTS_CloneVestHolster
+	class 332nd_Trooper_Vest: JLTS_CloneVestHolster
 	{
 		author="Ithias";
 		displayName = "New! [332nd] Vest (Trooper)";
@@ -118,7 +120,7 @@ class cfgWeapons
 		};
 	};
 
-	class SUGMA_332nd_CSP_Vest: SUGMA_332nd_Trooper_Vest
+	class 332nd_CSP_Vest: 332nd_Trooper_Vest
 	{
 		displayName="New! [332nd] Vest (CSP)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestSuspender.p3d";
@@ -140,7 +142,7 @@ class cfgWeapons
 		};
 	};
 
-	class SUGMA_332nd_CP_Vest: SUGMA_332nd_Trooper_Vest
+	class 332nd_CP_Vest: 332nd_Trooper_Vest
 	{
 		displayName="New! [332nd] Vest (CP)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
@@ -162,7 +164,7 @@ class cfgWeapons
 		};
 	};
 
-	class SUGMA_332nd_CS_Vest: SUGMA_332nd_Trooper_Vest
+	class 332nd_CS_Vest: 332nd_Trooper_Vest
 	{
 		displayName="New! [332nd] Vest (CS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
@@ -184,7 +186,7 @@ class cfgWeapons
 		};
 	};
 
-	class SUGMA_332nd_CSS_Vest: SUGMA_332nd_Trooper_Vest
+	class 332nd_CSS_Vest: 332nd_Trooper_Vest
 	{
 		displayName="New! [332nd] Vest (CSS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
@@ -209,7 +211,7 @@ class cfgWeapons
 		};
 	};
 
-	class SUGMA_332nd_CSM_Vest: SUGMA_332nd_Trooper_Vest
+	class 332nd_CSM_Vest: 332nd_Trooper_Vest
 	{
 		displayName="New! [332nd] Vest (CSM)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
@@ -231,7 +233,7 @@ class cfgWeapons
 		};
 	};
 
-	class SUGMA_332nd_CC_Vest: SUGMA_332nd_Trooper_Vest
+	class 332nd_CC_Vest: 332nd_Trooper_Vest
 	{
 		displayName="New! [332nd] Vest (CC)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
@@ -260,7 +262,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Vest_Extended
+        class 332nd_Vest_Extended
         {
             label = "Vests";
             author = "Ithias";
@@ -376,39 +378,39 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Trooper_Vest
+        class 332nd_Trooper_Vest
         {
-            model = "SUGMA_332nd_Vest_Extended";
+            model = "332nd_Vest_Extended";
             Rank = "CR";
         };
-        class SUGMA_332nd_CSP_Vest
+        class 332nd_CSP_Vest
         {
-            model = "SUGMA_332nd_Vest_Extended";
+            model = "332nd_Vest_Extended";
             Rank = "CSP";
         };
-        class SUGMA_332nd_CP_Vest
+        class 332nd_CP_Vest
         {
-            model = "SUGMA_332nd_Vest_Extended";
+            model = "332nd_Vest_Extended";
             Rank = "CP";
         };
-        class SUGMA_332nd_CS_Vest
+        class 332nd_CS_Vest
         {
-            model = "SUGMA_332nd_Vest_Extended";
+            model = "332nd_Vest_Extended";
             Rank = "CS";
         };
-        class SUGMA_332nd_CSS_Vest
+        class 332nd_CSS_Vest
         {
-            model = "SUGMA_332nd_Vest_Extended";
+            model = "332nd_Vest_Extended";
             Rank = "CSS";
         };
-        class SUGMA_332nd_CSM_Vest
+        class 332nd_CSM_Vest
         {
-            model = "SUGMA_332nd_Vest_Extended";
+            model = "332nd_Vest_Extended";
             Rank = "CSM";
         };
-        class SUGMA_332nd_CC_Vest
+        class 332nd_CC_Vest
         {
-            model = "SUGMA_332nd_Vest_Extended";
+            model = "332nd_Vest_Extended";
             Rank = "CC";
         };
 	};

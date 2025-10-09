@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 332nd_Uniforms {
+	class Old_332nd_Uniforms {
 		units[] = 
 		{
 			""
@@ -22,7 +22,7 @@ class cfgWeapons
 	
 // Uniform
 
-	class 332nd_Uniform_Clone_CR: SWLB_clone_uniform
+	class Old_332nd_Uniform_Clone_CR: SWLB_clone_uniform
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -34,14 +34,14 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_CR_Veh";
+			uniformClass="Old_332nd_Uniform_Clone_CR_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
 
-	class 332nd_Uniform_Clone_CT: 332nd_Uniform_Clone_CR
+	class Old_332nd_Uniform_Clone_CT: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -52,13 +52,13 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_CT_Veh";
+			uniformClass="Old_332nd_Uniform_Clone_CT_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_SCT: 332nd_Uniform_Clone_CR
+	class Old_332nd_Uniform_Clone_SCT: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -69,13 +69,13 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_SCT_Veh";
+			uniformClass="Old_332nd_Uniform_Clone_SCT_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_VCT: 332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_VCT: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -93,7 +93,7 @@ class cfgWeapons
 		};
 	};
 
-class 332nd_Uniform_Clone_CT_Medic: 332nd_Uniform_Clone_CR
+class Old_332nd_Uniform_Clone_CT_Medic: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -104,13 +104,13 @@ class 332nd_Uniform_Clone_CT_Medic: 332nd_Uniform_Clone_CR
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_CT_Veh_Medic";
+			uniformClass="Old_332nd_Uniform_Clone_CT_Veh_Medic";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_SCT_Medic: 332nd_Uniform_Clone_CR
+class Old_332nd_Uniform_Clone_SCT_Medic: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -121,14 +121,14 @@ class 332nd_Uniform_Clone_SCT_Medic: 332nd_Uniform_Clone_CR
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_SCT_Veh_Medic";
+			uniformClass="Old_332nd_Uniform_Clone_SCT_Veh_Medic";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
 
-class 332nd_Uniform_Clone_VCT_Medic: 332nd_Uniform_Clone_CR
+class 332nd_Uniform_Clone_VCT_Medic: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -146,7 +146,7 @@ class 332nd_Uniform_Clone_VCT_Medic: 332nd_Uniform_Clone_CR
 		};
 	};
 
-class 332nd_Uniform_Clone_NCO_Medic: 332nd_Uniform_Clone_CR
+class 332nd_Uniform_Clone_NCO_Medic: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -164,7 +164,7 @@ class 332nd_Uniform_Clone_NCO_Medic: 332nd_Uniform_Clone_CR
 		};
 	};
 
-class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
+class 332nd_Uniform_Clone_NCO: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -182,7 +182,7 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 		};
 	};
 /*
-	class 332nd_Uniform_Clone_Zeus: 332nd_Uniform_Clone_CR {
+	class 332nd_Uniform_Clone_Zeus: Old_332nd_Uniform_Clone_CR {
 		dlc = "332nd";
 		author = "Ithias";
 		scope = 2;
@@ -193,7 +193,7 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 			mass = 40;
 		};
 	};
-	class 332nd_Uniform_Clone_NCO_Zeus: 332nd_Uniform_Clone_CR {
+	class 332nd_Uniform_Clone_NCO_Zeus: Old_332nd_Uniform_Clone_CR {
 		displayName = "[332nd] Clone Trooper Armor (NCO / Zeus)";
 		class ItemInfo: UniformItem {
 			uniformClass = "332nd_Uniform_Clone_NCO_Zeus_Veh";
@@ -205,7 +205,7 @@ class 332nd_Uniform_Clone_NCO: 332nd_Uniform_Clone_CR
 */
 //Customs
 
-class 332nd_Uniform_Clone_Ithias: 332nd_Uniform_Clone_CR
+class 332nd_Uniform_Clone_Ithias: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -224,7 +224,7 @@ class 332nd_Uniform_Clone_Ithias: 332nd_Uniform_Clone_CR
 		};
 	};
 
-class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
+class 332nd_Uniform_Clone_Cherryy: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -243,7 +243,7 @@ class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
 		};
 	};
 
-class 332nd_Uniform_Clone_Ghost: 332nd_Uniform_Clone_CR
+class 332nd_Uniform_Clone_Ghost: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -261,7 +261,7 @@ class 332nd_Uniform_Clone_Ghost: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
+class 332nd_Uniform_Clone_Asuka: Old_332nd_Uniform_Clone_CR
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -279,7 +279,7 @@ class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Frankenburg: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Frankenburg: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -297,7 +297,7 @@ class 332nd_Uniform_Clone_Frankenburg: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Crow: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Crow: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Not Ithias";
@@ -315,7 +315,7 @@ class 332nd_Uniform_Clone_Crow: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Seelig: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Seelig: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -333,7 +333,7 @@ class 332nd_Uniform_Clone_Seelig: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Trick: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Trick: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -351,7 +351,7 @@ class 332nd_Uniform_Clone_Trick: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Joker: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Joker: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Not Ithias";
@@ -369,7 +369,7 @@ class 332nd_Uniform_Clone_Joker: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Denal: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy & Denal";
@@ -387,7 +387,7 @@ class 332nd_Uniform_Clone_Denal: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Walkie: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Walkie: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -405,7 +405,7 @@ class 332nd_Uniform_Clone_Walkie: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Cin: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Cin: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -423,7 +423,7 @@ class 332nd_Uniform_Clone_Cin: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Body: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Body: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -441,7 +441,7 @@ class 332nd_Uniform_Clone_Body: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Tokyo: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Tokyo: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -459,7 +459,7 @@ class 332nd_Uniform_Clone_Tokyo: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Stryker: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Stryker: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -477,7 +477,7 @@ class 332nd_Uniform_Clone_Stryker: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Dovah: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Dovah: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -495,7 +495,7 @@ class 332nd_Uniform_Clone_Dovah: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Shark: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Shark: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -513,7 +513,7 @@ class 332nd_Uniform_Clone_Shark: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-/* class 332nd_Uniform_Clone_New_Mat: 332nd_Uniform_Clone_CR 
+/* class 332nd_Uniform_Clone_New_Mat: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -531,7 +531,7 @@ class 332nd_Uniform_Clone_Shark: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	}; */
-class 332nd_Uniform_Clone_Aqua: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Aqua: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -549,7 +549,7 @@ class 332nd_Uniform_Clone_Aqua: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Ketamine: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Ketamine: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -567,7 +567,7 @@ class 332nd_Uniform_Clone_Ketamine: 332nd_Uniform_Clone_CR
 			mass=40;
 		};
 	};
-class 332nd_Uniform_Clone_Lettuce: 332nd_Uniform_Clone_CR 
+class 332nd_Uniform_Clone_Lettuce: Old_332nd_Uniform_Clone_CR 
 	{
 		dlc="332nd";
 		author="Cherryy";
@@ -592,10 +592,10 @@ class CfgVehicles
 	class SWLB_clone_base_P2;
 	class HitPoints;
 	class JLTS_Clone_P2_DC15A;
-	class 332nd_Uniform_Clone_CR_Veh: SWLB_clone_base_P2
+	class Old_332nd_Uniform_Clone_CR_Veh: SWLB_clone_base_P2
 	{
 		scope=1;
-		uniformClass="332nd_Uniform_Clone_CR";
+		uniformClass="Old_332nd_Uniform_Clone_CR";
 		model="\SWLB_clones\SWLB_clone_uniform.p3d";
 		class HitPoints: HitPoints
 		{
@@ -768,10 +768,10 @@ class CfgVehicles
 		};
 	};
 
-class 332nd_Uniform_Clone_CT_Veh: 332nd_Uniform_Clone_CR_Veh
+class Old_332nd_Uniform_Clone_CT_Veh: Old_332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="332nd_Uniform_Clone_CT";
+		uniformClass="Old_332nd_Uniform_Clone_CT";
 		model="\SWLB_clones\SWLB_clone_uniform.p3d";
 		hiddenSelections[]=
 		{
@@ -785,10 +785,10 @@ class 332nd_Uniform_Clone_CT_Veh: 332nd_Uniform_Clone_CR_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
 		};
 	};
-class 332nd_Uniform_Clone_SCT_Veh: 332nd_Uniform_Clone_CT_Veh
+class Old_332nd_Uniform_Clone_SCT_Veh: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
-		uniformClass="332nd_Uniform_Clone_SCT";
+		uniformClass="Old_332nd_Uniform_Clone_SCT";
 		model="\SWLB_clones\SWLB_clone_uniform.p3d";
 		hiddenSelections[]=
 		{
@@ -803,7 +803,7 @@ class 332nd_Uniform_Clone_SCT_Veh: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-class 332nd_Uniform_Clone_VCT_Veh: 332nd_Uniform_Clone_CT_Veh
+class 332nd_Uniform_Clone_VCT_Veh: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_VCT";
@@ -821,10 +821,10 @@ class 332nd_Uniform_Clone_VCT_Veh: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-class 332nd_Uniform_Clone_CT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
+class Old_332nd_Uniform_Clone_CT_Veh_Medic: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
-		uniformClass="332nd_Uniform_Clone_CT_Medic";
+		uniformClass="Old_332nd_Uniform_Clone_CT_Medic";
 		model="\SWLB_clones\SWLB_clone_uniform.p3d";
 		hiddenSelections[]=
 		{
@@ -838,10 +838,10 @@ class 332nd_Uniform_Clone_CT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_Medic.paa",
 		};
 	};
-class 332nd_Uniform_Clone_SCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
+class Old_332nd_Uniform_Clone_SCT_Veh_Medic: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
-		uniformClass="332nd_Uniform_Clone_SCT_Medic";
+		uniformClass="Old_332nd_Uniform_Clone_SCT_Medic";
 		model="\SWLB_clones\SWLB_clone_uniform.p3d";
 		hiddenSelections[]=
 		{
@@ -856,7 +856,7 @@ class 332nd_Uniform_Clone_SCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-class 332nd_Uniform_Clone_VCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
+class 332nd_Uniform_Clone_VCT_Veh_Medic: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_VCT_Medic";
@@ -874,7 +874,7 @@ class 332nd_Uniform_Clone_VCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-	class 332nd_Uniform_Clone_NCO_Veh_Medic: 332nd_Uniform_Clone_CT_Veh 
+	class 332nd_Uniform_Clone_NCO_Veh_Medic: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		uniformClass = "332nd_Uniform_Clone_NCO_Medic";
 		hiddenSelectionsTextures[] = {
@@ -883,7 +883,7 @@ class 332nd_Uniform_Clone_VCT_Veh_Medic: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
+class 332nd_Uniform_Clone_NCO_Veh: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_NCO";
@@ -901,7 +901,7 @@ class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 /*
-	class 332nd_Uniform_Clone_Zeus_Veh: 332nd_Uniform_Clone_CT_Veh {
+	class 332nd_Uniform_Clone_Zeus_Veh: Old_332nd_Uniform_Clone_CT_Veh {
 		scope = 1;
 		uniformClass = "332nd_Uniform_Clone_Zeus";
 		hiddenSelectionsTextures[] = {
@@ -910,7 +910,7 @@ class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-	class 332nd_Uniform_Clone_NCO_Zeus_Veh: 332nd_Uniform_Clone_CT_Veh {
+	class 332nd_Uniform_Clone_NCO_Zeus_Veh: Old_332nd_Uniform_Clone_CT_Veh {
 		uniformClass = "332nd_Uniform_Clone_NCO_Zeus";
 		hiddenSelectionsTextures[] = {
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_NCO_Zeus.paa",
@@ -920,7 +920,7 @@ class 332nd_Uniform_Clone_NCO_Veh: 332nd_Uniform_Clone_CT_Veh
 */
 //Customs
 
-class 332nd_Uniform_Clone_Ithias_Veh: 332nd_Uniform_Clone_CT_Veh
+class 332nd_Uniform_Clone_Ithias_Veh: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Ithias";
@@ -938,7 +938,7 @@ class 332nd_Uniform_Clone_Ithias_Veh: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-class 332nd_Uniform_Clone_Cherryy_Veh: 332nd_Uniform_Clone_CT_Veh
+class 332nd_Uniform_Clone_Cherryy_Veh: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Cherryy";
@@ -956,7 +956,7 @@ class 332nd_Uniform_Clone_Cherryy_Veh: 332nd_Uniform_Clone_CT_Veh
 		};
 	};
 
-class 332nd_Uniform_Clone_Ghost_Veh: 332nd_Uniform_Clone_CT_Veh
+class 332nd_Uniform_Clone_Ghost_Veh: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Ghost";
@@ -973,7 +973,7 @@ class 332nd_Uniform_Clone_Ghost_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Weaver.paa",
 		};
 	};
-class 332nd_Uniform_Clone_Asuka_Veh: 332nd_Uniform_Clone_CT_Veh
+class 332nd_Uniform_Clone_Asuka_Veh: Old_332nd_Uniform_Clone_CT_Veh
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Asuka";
@@ -990,7 +990,7 @@ class 332nd_Uniform_Clone_Asuka_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
 		};
 	};
-class 332nd_Uniform_Clone_Frankenburg_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Frankenburg_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Frankenburg";
@@ -1007,7 +1007,7 @@ class 332nd_Uniform_Clone_Frankenburg_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Frankenburg.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Crow_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Crow_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Crow";
@@ -1024,7 +1024,7 @@ class 332nd_Uniform_Clone_Crow_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crow.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Seelig_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Seelig_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Seelig";
@@ -1041,7 +1041,7 @@ class 332nd_Uniform_Clone_Seelig_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Seelig.paa",
 		};
 	};
-class 332nd_Uniform_Clone_Trick_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Trick_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Trick";
@@ -1058,7 +1058,7 @@ class 332nd_Uniform_Clone_Trick_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Trick.paa",
 		};
 	};
-class 332nd_Uniform_Clone_Joker_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Joker_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Joker";
@@ -1075,7 +1075,7 @@ class 332nd_Uniform_Clone_Joker_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Joker.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Denal_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Denal_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Denal";
@@ -1092,7 +1092,7 @@ class 332nd_Uniform_Clone_Denal_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Denal.paa",
 		};
 	};
-class 332nd_Uniform_Clone_Walkie_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Walkie_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Walkie";
@@ -1109,7 +1109,7 @@ class 332nd_Uniform_Clone_Walkie_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Walkie.paa",
 		};
 	};
-class 332nd_Uniform_Clone_Cin_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Cin_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Cin";
@@ -1126,7 +1126,7 @@ class 332nd_Uniform_Clone_Cin_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cin.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Body_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Body_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Body";
@@ -1143,7 +1143,7 @@ class 332nd_Uniform_Clone_Body_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Body.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Tokyo_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Tokyo_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Tokyo";
@@ -1160,7 +1160,7 @@ class 332nd_Uniform_Clone_Tokyo_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Tokyo.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Stryker_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Stryker_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Stryker";
@@ -1177,7 +1177,7 @@ class 332nd_Uniform_Clone_Stryker_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stryker.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Dovah_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Dovah_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Dovah";
@@ -1194,7 +1194,7 @@ class 332nd_Uniform_Clone_Dovah_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Shark_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Shark_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Shark";
@@ -1211,7 +1211,7 @@ class 332nd_Uniform_Clone_Shark_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shark.paa",
 		};
 	}; 
-/* class 332nd_Uniform_Clone_New_Mat_Veh: 332nd_Uniform_Clone_CT_Veh 
+/* class 332nd_Uniform_Clone_New_Mat_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_New_Mat";
@@ -1228,7 +1228,7 @@ class 332nd_Uniform_Clone_Shark_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_New_Mat.paa",
 		};
 	};  */
-class 332nd_Uniform_Clone_Aqua_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Aqua_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Aqua";
@@ -1245,7 +1245,7 @@ class 332nd_Uniform_Clone_Aqua_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_NCO.paa",
 		};
 	}; 
-class 332nd_Uniform_Clone_Ketamine_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Ketamine_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Ketamine";
@@ -1262,7 +1262,7 @@ class 332nd_Uniform_Clone_Ketamine_Veh: 332nd_Uniform_Clone_CT_Veh
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ketamine.paa",
 		};
 	};
-class 332nd_Uniform_Clone_Lettuce_Veh: 332nd_Uniform_Clone_CT_Veh 
+class 332nd_Uniform_Clone_Lettuce_Veh: Old_332nd_Uniform_Clone_CT_Veh 
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_Lettuce";
@@ -1286,7 +1286,7 @@ class XtdGearModels
 {
 	class CfgWeapons 
 	{
-		class 332nd_Uniform_Extended
+		class Old_332nd_Uniform_Extended
 		{
 			label = "Uniforms";
 			author = "Ithias";
@@ -1513,161 +1513,161 @@ class XtdGearInfos
 {
 	class CfgWeapons 
 	{
-		class 332nd_Uniform_Clone_CR
+		class Old_332nd_Uniform_Clone_CR
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Trooper = "CR";
 		};
-		class 332nd_Uniform_Clone_CT
+		class Old_332nd_Uniform_Clone_CT
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Trooper = "CT";
 		};
-		class 332nd_Uniform_Clone_SCT
+		class Old_332nd_Uniform_Clone_SCT
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Trooper = "SCT";
 		};
 		class 332nd_Uniform_Clone_VCT
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Trooper = "VCT";
 		};
 		class 332nd_Uniform_Clone_NCO
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Trooper = "NCO";
 		};
-		class 332nd_Uniform_Clone_CT_Medic
+		class Old_332nd_Uniform_Clone_CT_Medic
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Medic = "CT";
 		};
-		class 332nd_Uniform_Clone_SCT_Medic
+		class Old_332nd_Uniform_Clone_SCT_Medic
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Medic = "SCT";
 		};
 		class 332nd_Uniform_Clone_VCT_Medic
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Medic = "VCT";
 		};
 		class 332nd_Uniform_Clone_NCO_Medic
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Medic = "MedicNCO";
 		};
 		/*
 		class 332nd_Uniform_Clone_Zeus
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Zeus = "Zeus";
 		};
 		class 332nd_Uniform_Clone_NCO_Zeus
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Zeus = "ZeusNCO";
 		};
 		*/
 		class 332nd_Uniform_Clone_Ithias
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Ithias";
 		};
 		class 332nd_Uniform_Clone_Cherryy
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Cherryy";
 		};
 		class 332nd_Uniform_Clone_Crow
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Crow";
 		}; 
 		class 332nd_Uniform_Clone_Ghost
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Ghost";
 		};
 		class 332nd_Uniform_Clone_Asuka
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Asuka";
 		};
 		class 332nd_Uniform_Clone_Frankenburg
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Frankenburg";
 		}; 
 		class 332nd_Uniform_Clone_Seelig
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Seelig";
 		}; 
 		class 332nd_Uniform_Clone_Trick
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Trick";
 		}; 
 		class 332nd_Uniform_Clone_Joker
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Joker";
 		}; 
 		class 332nd_Uniform_Clone_Denal
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Denal";
 		}; 
 		class 332nd_Uniform_Clone_Walkie
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Walkie";
 		}; 
 		class 332nd_Uniform_Clone_Cin
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Cin";
 		};	
 		class 332nd_Uniform_Clone_Body
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Body";
 		};
 		class 332nd_Uniform_Clone_Tokyo
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Tokyo";
 		};
 		class 332nd_Uniform_Clone_Stryker
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Stryker";
 		};
 		class 332nd_Uniform_Clone_Dovah
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Dovah";
 		};
 		class 332nd_Uniform_Clone_Shark
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Shark";
 		};
 		class 332nd_Uniform_Clone_Aqua
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Aqua";
 		};
 		class 332nd_Uniform_Clone_Ketamine
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Ketamine";
 		};
 		class 332nd_Uniform_Clone_Lettuce
 		{
-			model = "332nd_Uniform_Extended";
+			model = "Old_332nd_Uniform_Extended";
 			Customs = "Lettuce";
 		};
 	}; 

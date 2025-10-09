@@ -1,5 +1,5 @@
 class CfgPatches {
-	class SUGMA_332nd_Uniforms {
+	class 332nd_Uniforms {
 		units[] = 
 		{
 			""
@@ -20,7 +20,7 @@ class cfgWeapons
 	class JLTS_CloneArmor;
 	
 // Uniform
-	class SUGMA_332nd_Uniform_Clone_CR: JLTS_CloneArmor
+	class 332nd_Uniform_Clone_CR: JLTS_CloneArmor
 	{
 		dlc="332nd";
 		author="Ithias";
@@ -30,55 +30,55 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_Clone_CR_Veh";
+			uniformClass="332nd_Uniform_Clone_CR_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class SUGMA_332nd_Uniform_Clone_CT: SUGMA_332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_CT: 332nd_Uniform_Clone_CR
 	{
 		displayName="New! [332nd] Clone Trooper Armor (JLTS)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_Clone_CT_Veh";
+			uniformClass="332nd_Uniform_Clone_CT_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class SUGMA_332nd_Uniform_Clone_SCT: SUGMA_332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_SCT: 332nd_Uniform_Clone_CR
 	{
 		displayName="New! [332nd] Clone Trooper Armor (JLTS)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_Clone_SCT_Veh";
+			uniformClass="332nd_Uniform_Clone_SCT_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class SUGMA_332nd_Uniform_Clone_CT_Medic: SUGMA_332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_CT_Medic: 332nd_Uniform_Clone_CR
 	{
 		displayName="New! [332nd] Clone Trooper Armor (JLTS / Medic)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_Clone_CT_Medic_Veh";
+			uniformClass="332nd_Uniform_Clone_CT_Medic_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
 		};
 	};
-	class SUGMA_332nd_Uniform_Clone_SCT_Medic: SUGMA_332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_SCT_Medic: 332nd_Uniform_Clone_CR
 	{
 		displayName="New! [332nd] Clone Trooper Armor (JLTS / Medic)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="SUGMA_332nd_Uniform_Clone_SCT_Medic_Veh";
+			uniformClass="332nd_Uniform_Clone_SCT_Medic_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -91,10 +91,10 @@ class CfgVehicles
 {
 	class HitPoints;
 	class JLTS_Clone_P2_DC15A;
-	class SUGMA_332nd_Uniform_Clone_CR_Veh: JLTS_Clone_P2_DC15A
+	class 332nd_Uniform_Clone_CR_Veh: JLTS_Clone_P2_DC15A
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_Clone_CR";
+		uniformClass="332nd_Uniform_Clone_CR";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		class HitPoints: HitPoints
 		{
@@ -266,10 +266,10 @@ class CfgVehicles
 			};
 		};
 	};
-	class SUGMA_332nd_Uniform_Clone_CT_Veh: SUGMA_332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_Clone_CT_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_Clone_CT";
+		uniformClass="332nd_Uniform_Clone_CT";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] = 
 		{
@@ -283,10 +283,10 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
 		};
 	};
-	class SUGMA_332nd_Uniform_Clone_SCT_Veh: SUGMA_332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_Clone_SCT_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_Clone_SCT";
+		uniformClass="332nd_Uniform_Clone_SCT";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] = 
 		{
@@ -300,10 +300,10 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
 		};
 	};
-	class SUGMA_332nd_Uniform_Clone_CT_Medic_Veh: SUGMA_332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_Clone_CT_Medic_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_Clone_CT_Medic";
+		uniformClass="332nd_Uniform_Clone_CT_Medic";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] = 
 		{
@@ -317,10 +317,10 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
 		};
 	};
-	class SUGMA_332nd_Uniform_Clone_SCT_Medic_Veh: SUGMA_332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_Clone_SCT_Medic_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="SUGMA_332nd_Uniform_Clone_SCT_Medic";
+		uniformClass="332nd_Uniform_Clone_SCT_Medic";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[] = 
 		{
@@ -341,7 +341,7 @@ class XtdGearModels
 {
 	class CfgWeapons 
 	{
-		class SUGMA_332nd_Uniform_Extended
+		class 332nd_Uniform_Extended
 		{
 			label = "Uniforms";
 			author = "Ithias";
@@ -568,29 +568,29 @@ class XtdGearInfos
 {
 	class CfgWeapons 
 	{
-		class SUGMA_332nd_Uniform_Clone_CR
+		class 332nd_Uniform_Clone_CR
 		{
-			model = "SUGMA_332nd_Uniform_Extended";
+			model = "332nd_Uniform_Extended";
 			Trooper = "CR";
 		};
-		class SUGMA_332nd_Uniform_Clone_CT
+		class 332nd_Uniform_Clone_CT
 		{
-			model = "SUGMA_332nd_Uniform_Extended";
+			model = "332nd_Uniform_Extended";
 			Trooper = "CT";
 		};
-		class SUGMA_332nd_Uniform_Clone_SCT
+		class 332nd_Uniform_Clone_SCT
 		{
-			model = "SUGMA_332nd_Uniform_Extended";
+			model = "332nd_Uniform_Extended";
 			Trooper = "SCT";
 		};
-		class SUGMA_332nd_Uniform_Clone_CT_Medic
+		class 332nd_Uniform_Clone_CT_Medic
 		{
-			model = "SUGMA_332nd_Uniform_Extended";
+			model = "332nd_Uniform_Extended";
 			Medic = "CT";
 		};
-		class SUGMA_332nd_Uniform_Clone_SCT_Medic
+		class 332nd_Uniform_Clone_SCT_Medic
 		{
-			model = "SUGMA_332nd_Uniform_Extended";
+			model = "332nd_Uniform_Extended";
 			Medic = "SCT";
 		};
 	}; 

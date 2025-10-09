@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 332nd_Helmets_Pilot {
+	class Old_332nd_Helmets_Pilot {
 		units[] = 
         {
 			""
@@ -20,7 +20,7 @@ class cfgWeapons
 	class SWLB_clone_pilot_P2_helmet;
 
 //Base Start
-	class 332nd_Helmet_Pilot: SWLB_clone_pilot_P2_helmet
+	class Old_332nd_Helmet_Pilot: SWLB_clone_pilot_P2_helmet
 	{
 		scope=2;
 		dlc="332nd Aux";
@@ -97,7 +97,7 @@ class cfgWeapons
 			""
 		};
 	}; */
-	class 332nd_Helmet_Pilot_Shadow: 332nd_Helmet_Pilot
+	class 332nd_Helmet_Pilot_Shadow: Old_332nd_Helmet_Pilot
 	{
 		scope=2;
 		dlc="332nd Aux";
@@ -118,7 +118,7 @@ class cfgWeapons
 			""
 		};
 	};
-	class 332nd_Helmet_Pilot_Lawman: 332nd_Helmet_Pilot
+	class 332nd_Helmet_Pilot_Lawman: Old_332nd_Helmet_Pilot
 	{
 		scope=2;
 		dlc="332nd Aux";
@@ -139,7 +139,7 @@ class cfgWeapons
 			""
 		};
 	};
-	class 332nd_Helmet_Pilot_Jorge: 332nd_Helmet_Pilot
+	class 332nd_Helmet_Pilot_Jorge: Old_332nd_Helmet_Pilot
 	{
 		scope=2;
 		dlc="332nd Aux";
@@ -166,7 +166,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 332nd_Helmets_Pilot_Extended
+        class Old_332nd_Helmets_Pilot_Extended
         {
             label = "Pilot";
             author = "Ithias";
@@ -223,7 +223,7 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Helmet_Pilot
+        class Old_332nd_Helmet_Pilot
         {
             model = "332nd_Helmets_Pilot_Extended";
             Type = "Pilot";

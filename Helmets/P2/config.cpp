@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 332nd_Helmets_P2 {
+	class Old_332nd_Helmets_P2 {
 		units[] = 
         {
 			""
@@ -19,7 +19,7 @@ class cfgWeapons
 	class HeadgearItem;
 	class SWLB_clone_P2_helmet;
 	class JLTS_CloneHelmetP2;
-	class 332nd_Helmet_P2_CR: SWLB_clone_P2_helmet
+	class Old_332nd_Helmet_P2_CR: SWLB_clone_P2_helmet
 	{
 		author="Ithias";
 		dlc="332nd Aux";
@@ -57,7 +57,7 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_Helmet_P2_CT: 332nd_Helmet_P2_CR
+	class Old_332nd_Helmet_P2_CT: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (CT)";
 		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
@@ -70,7 +70,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_CT.paa"
 		};
 	};
-	/* class 332nd_Helmet_P2_New: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_New: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (New Mat)";
 		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
@@ -85,7 +85,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsMaterials[] = {"332nd_Aux\Helmets\P2\332nd_Plastic_RV.rvmat"};
 	}; 
-	class 332nd_Helmet_P2_Testing: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Testing: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (21st Test)";
 		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
@@ -99,7 +99,7 @@ class cfgWeapons
 		};
 	}; */
 
-	class 332nd_Helmet_P2_Medic: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Medic: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Medic)";
 		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
@@ -115,7 +115,7 @@ class cfgWeapons
 	
 //Customs
 
-	/* class 332nd_Helmet_P2_Asuka: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_Asuka: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Asuka)";
 		hiddenSelections[]=
@@ -127,7 +127,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Asuka.paa"
 		};
 	}; */
-	class 332nd_Helmet_P2_Body: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Body: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Body)";
 		hiddenSelections[]=
@@ -139,7 +139,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Body.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Cherryy: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Cherryy: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Cherryy)";
 		hiddenSelections[]=
@@ -151,7 +151,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Cherryy.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Crow: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Crow: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Crow)";
 		hiddenSelections[]=
@@ -163,7 +163,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crow.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Denal: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Denal: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Denal)";
 		hiddenSelections[]=
@@ -175,7 +175,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Denal.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Frankenburg: 332nd_Helmet_P2_CR	
+	class 332nd_Helmet_P2_Frankenburg: Old_332nd_Helmet_P2_CR	
 	{
 		displayName="[332nd] P2 Helmet (Frankenburg)";
 		hiddenSelections[]=
@@ -187,7 +187,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Frankenburg.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Ithias: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Ithias: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Ithias)";
 		hiddenSelections[]=
@@ -199,7 +199,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ithias.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Luci: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Luci: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Luci)";
 		hiddenSelections[]=
@@ -211,7 +211,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Luci.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Roseiry: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Roseiry: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Roseiry)";
 		hiddenSelections[]=
@@ -223,7 +223,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Roseiry.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Shark: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Shark: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Shark)";
 		hiddenSelections[]=
@@ -235,7 +235,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Shark.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Sovereign: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Sovereign: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Sovereign)";
 		hiddenSelections[]=
@@ -247,7 +247,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Sovereign.paa"
 		};
 	};
-	/* class 332nd_Helmet_P2_Spectre: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_Spectre: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Spectre)";
 		hiddenSelections[]=
@@ -259,7 +259,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Spectre.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Stryker: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Stryker: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Stryker)";
 		hiddenSelections[]=
@@ -271,7 +271,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Stryker.paa"
 		};
 	}; */
-	class 332nd_Helmet_P2_Tokyo: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Tokyo: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Tokyo)";
 		hiddenSelections[]=
@@ -283,7 +283,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Tokyo.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Walkie: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Walkie: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Walkie)";
 		hiddenSelections[]=
@@ -295,7 +295,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Walkie.paa"
 		};
 	}; 
-	class 332nd_Helmet_P2_Ghost: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Ghost: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Ghost)";
 		hiddenSelections[]=
@@ -307,7 +307,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Weaver.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Lettuce: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Lettuce: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Lettuce)";
 		hiddenSelections[]=
@@ -319,7 +319,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Lettuce.paa"
 		};
 	};
-	/* class 332nd_Helmet_P2_Ketamine: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_Ketamine: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Ketamine)";
 		hiddenSelections[]=
@@ -331,7 +331,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ketamine.paa"
 		};
 	}; */
-	class 332nd_Helmet_P2_Eclipse: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Eclipse: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Eclipse)";
 		hiddenSelections[]=
@@ -343,7 +343,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Eclipse.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Social: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Social: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Social)";
 		hiddenSelections[]=
@@ -355,7 +355,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Social.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Dovah: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Dovah: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Dovah)";
 		hiddenSelections[]=
@@ -367,7 +367,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Dovah.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Saiko: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Saiko: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Saiko)";
 		hiddenSelections[]=
@@ -379,7 +379,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Saiko.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Arson: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Arson: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Arson)";
 		hiddenSelections[]=
@@ -391,7 +391,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Arson.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Jiggs: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Jiggs: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Jiggs)";
 		hiddenSelections[]=
@@ -403,7 +403,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Jiggs.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Nightmare: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Nightmare: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Nightmare)";
 		hiddenSelections[]=
@@ -415,7 +415,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Nightmare.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Nebel: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Nebel: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Nebel)";
 		hiddenSelections[]=
@@ -427,7 +427,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Nebel.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Alpha: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Alpha: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Alpha)";
 		hiddenSelections[]=
@@ -439,7 +439,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Alpha.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Seelig: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Seelig: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Seelig)";
 		hiddenSelections[]=
@@ -451,7 +451,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Seelig.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Aqua: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Aqua: Old_332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Aqua)";
 		hiddenSelections[]=
@@ -468,7 +468,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 332nd_Helmets_P2_Extended
+        class Old_332nd_Helmets_P2_Extended
         {
             label = "Phase 2";
             author = "Ithias";
@@ -704,180 +704,180 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Helmet_P2_CR
+        class Old_332nd_Helmet_P2_CR
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Type = "Recruit";
         };
-        class 332nd_Helmet_P2_CT
+        class Old_332nd_Helmet_P2_CT
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Type = "Trooper";
         };
 		class 332nd_Helmet_P2_Medic
 		{
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Type = "Medic";
         };
 		class 332nd_Helmet_RTO_CT
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Type = "RTO";
         };
 		//customs
 		/* class 332nd_Helmet_P2_Asuka
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Asuka";
         }; */
 		class 332nd_Helmet_P2_Body
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Body";
         };
 		class 332nd_Helmet_P2_Cherryy
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Cherryy";
         };
 		/* class 332nd_Helmet_RTO_Cin
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Cin";
         }; */
 	    class 332nd_Helmet_P2_Crow
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Crow";
         }; 
 		class 332nd_Helmet_P2_Denal
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Denal";
         };
 		class 332nd_Helmet_P2_Frankenburg
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Frankenburg";
         };
         class 332nd_Helmet_P2_Ithias
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Ithias";
         };
 		class 332nd_Helmet_RTO_Joker
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Joker";
         };
 		class 332nd_Helmet_P2_Luci
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Luci";
         };
         class 332nd_Helmet_P2_Roseiry
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Roseiry";
         };
 		class 332nd_Helmet_P2_Shark
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Shark";
         };
 		class 332nd_Helmet_P2_Seelig
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Seelig";
         }; 
 		class 332nd_Helmet_P2_Sovereign
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Sovereign";
         };	
 		/* class 332nd_Helmet_P2_Spectre
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Spectre";
         };
 		class 332nd_Helmet_P2_Stryker
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Stryker";
         }; */
 		class 332nd_Helmet_P2_Tokyo
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Tokyo";
         };
 		class 332nd_Helmet_P2_Walkie
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Walkie";
         }; 
 		class 332nd_Helmet_P2_Ghost
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Ghost";
         };
 		class 332nd_Helmet_P2_Lettuce
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Lettuce";
         };
 		class 332nd_Helmet_RTO_Ketamine
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Ketamine";
         };
 		class 332nd_Helmet_P2_Eclipse
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Eclipse";
         };
 		class 332nd_Helmet_P2_Social
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Social";
         };
 		class 332nd_Helmet_P2_Dovah
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Dovah";
         };
 		class 332nd_Helmet_P2_Saiko
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Saiko";
         };
 		class 332nd_Helmet_P2_Arson
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Arson";
         };
 		class 332nd_Helmet_P2_Jiggs
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Jiggs";
         };
 		class 332nd_Helmet_P2_Nightmare
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Nightmare";
         };
 		class 332nd_Helmet_P2_Nebel
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Nebel";
         };
 		class 332nd_Helmet_P2_Alpha
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Alpha";
         };
 		class 332nd_Helmet_P2_Aqua
         {
-            model = "332nd_Helmets_P2_Extended";
+            model = "Old_332nd_Helmets_P2_Extended";
             Customs = "Aqua";
         };
 	};

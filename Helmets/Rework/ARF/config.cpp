@@ -1,5 +1,5 @@
 class CfgPatches {
-	class SUGMA_332nd_Helmets_ARF {
+	class 332nd_Helmets_ARF {
 		units[] = 
         {
 			""
@@ -20,7 +20,7 @@ class cfgWeapons
 	class ls_gar_phase1Arf_helmet;
 
 //Base Start
-	class SUGMA_332nd_Helmet_ARF_Base: ls_gar_phase1Arf_helmet
+	class 332nd_Helmet_ARF_Base: ls_gar_phase1Arf_helmet
 	{
 		author="Ithias";
 		dlc="332nd Aux";
@@ -74,7 +74,7 @@ class cfgWeapons
 			};
 		};		
 	};
-	class SUGMA_332nd_Helmet_ARF_Desert: SUGMA_332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Desert: 332nd_Helmet_ARF_Base
 	{
 		displayName="New! [332nd] ARF Helmet (JLTS / Desert)";
 		hiddenSelectionsTextures[]=
@@ -84,7 +84,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Desert_JLTS.paa",
 		};
 	};
-	class SUGMA_332nd_Helmet_ARF_Urban: SUGMA_332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Urban: 332nd_Helmet_ARF_Base
 	{
 		displayName="New! [332nd] ARF Helmet (JLTS / Urban)";
 		hiddenSelectionsTextures[]=
@@ -94,7 +94,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Urban_JLTS.paa",
 		};
 	};
-	class SUGMA_332nd_Helmet_ARF_Winter: SUGMA_332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Winter: 332nd_Helmet_ARF_Base
 	{
 		displayName="New! [332nd] ARF Helmet (JLTS / Winter)";
 		hiddenSelectionsTextures[]=
@@ -104,7 +104,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Winter_JLTS.paa",
 		};
 	};
-	class SUGMA_332nd_Helmet_ARF_Woodland: SUGMA_332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Woodland: 332nd_Helmet_ARF_Base
 	{
 		displayName="New! [332nd] ARF Helmet (JLTS / Woodland)";
 		hiddenSelectionsTextures[]=
@@ -120,7 +120,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Helmets_ARF_Extended
+        class 332nd_Helmets_ARF_Extended
         {
             label = "ARF";
             author = "Ithias";
@@ -220,29 +220,29 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class SUGMA_332nd_Helmet_ARF_Base
+        class 332nd_Helmet_ARF_Base
         {
-            model = "SUGMA_332nd_Helmets_ARF_Extended";
+            model = "332nd_Helmets_ARF_Extended";
             Default = "Trooper";
         };
-        class SUGMA_332nd_Helmet_ARF_Desert
+        class 332nd_Helmet_ARF_Desert
         {
-            model = "SUGMA_332nd_Helmets_ARF_Extended";
+            model = "332nd_Helmets_ARF_Extended";
             Camo = "Desert";
         };
-        class SUGMA_332nd_Helmet_ARF_Urban
+        class 332nd_Helmet_ARF_Urban
         {
-            model = "SUGMA_332nd_Helmets_ARF_Extended";
+            model = "332nd_Helmets_ARF_Extended";
             Camo = "Urban";
         };
-        class SUGMA_332nd_Helmet_ARF_Winter
+        class 332nd_Helmet_ARF_Winter
         {
-            model = "SUGMA_332nd_Helmets_ARF_Extended";
+            model = "332nd_Helmets_ARF_Extended";
             Camo = "Winter";
         };
-        class SUGMA_332nd_Helmet_ARF_Woodland
+        class 332nd_Helmet_ARF_Woodland
         {
-            model = "SUGMA_332nd_Helmets_ARF_Extended";
+            model = "332nd_Helmets_ARF_Extended";
             Camo = "Woodland";
         };
 	};

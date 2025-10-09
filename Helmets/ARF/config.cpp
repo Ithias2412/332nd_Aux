@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 332nd_Helmets_ARF {
+	class Old_332nd_Helmets_ARF {
 		units[] = 
         {
 			""
@@ -20,7 +20,7 @@ class cfgWeapons
 	class SWLB_clone_ARF_P1_helmet;
 
 //Base Start
-	class 332nd_Helmet_ARF_Base: SWLB_clone_ARF_P1_helmet
+	class Old_332nd_Helmet_ARF_Base: SWLB_clone_ARF_P1_helmet
 	{
 		author="Ithias";
 		dlc="332nd Aux";
@@ -76,62 +76,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class ls_gar_phase1Arf_helmet;
-	class 332nd_Helmet_ARF_JLTS: ls_gar_phase1Arf_helmet
-	{
-		author="Ithias";
-		dlc="332nd Aux";
-		displayName="[332nd] ARF Helmet (JLTS)";
-		332nd_Has_Lowlight = 1;
-		subItems[] = {};
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-			"visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Base_JLTS.paa",
-			"",
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Base_JLTS.paa",
-		};
-		model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
-		class ItemInfo: HeadgearItem
-		{
-			mass=1;
-			uniformModel = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2",
-				"visor"
-			};
-			modelSides[] = {6};
-            class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor = 10;
-					hitpointName="HitFace";
-					passThrough=0.1;
-				};
-				class Head
-				{
-					armor = 10;
-					hitPointName="HitHead";
-					passThrough=0.1;
-				};
-				class Neck
-				{
-					armor = 10;
-					hitpointName="HitNeck";
-					passThrough=0.1;
-				};
-			};
-		};		
-	};
-	class 332nd_Helmet_ARF_Desert: 332nd_Helmet_ARF_Base
+	class Old_332nd_Helmet_ARF_Desert: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Desert)";
 		hiddenSelections[]=
@@ -146,7 +91,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Desert.paa",
 		};
 	};
-	class 332nd_Helmet_ARF_Urban: 332nd_Helmet_ARF_Base
+	class Old_332nd_Helmet_ARF_Urban: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Urban)";
 		hiddenSelections[]=
@@ -161,7 +106,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Urban.paa",
 		};
 	};
-	class 332nd_Helmet_ARF_Winter: 332nd_Helmet_ARF_Base
+	class Old_332nd_Helmet_ARF_Winter: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Winter)";
 		hiddenSelections[]=
@@ -176,7 +121,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Winter.paa",
 		};
 	};
-	class 332nd_Helmet_ARF_Woodland: 332nd_Helmet_ARF_Base
+	class Old_332nd_Helmet_ARF_Woodland: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Woodland)";
 		hiddenSelections[]=
@@ -207,7 +152,7 @@ class cfgWeapons
 		}; 
 	}; */
 	//Customs
-	class 332nd_Helmet_ARF_Asuka: 332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Asuka: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Asuka)";
 		hiddenSelections[]=
@@ -222,7 +167,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Asuka.paa",
 		};
 	};
-	class 332nd_Helmet_ARF_Cin: 332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Cin: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Cin)";
 		hiddenSelections[]=
@@ -237,7 +182,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Cin.paa",
 		};
 	};
-	/* class 332nd_Helmet_ARF_Walkie: 332nd_Helmet_ARF_Base
+	/* class 332nd_Helmet_ARF_Walkie: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Walkie)";
 		hiddenSelections[]=
@@ -252,7 +197,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Walkie.paa",
 		};
 	}; */
-	class 332nd_Helmet_ARF_Trick: 332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Trick: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Trick)";
 		hiddenSelections[]=
@@ -267,7 +212,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Trick.paa",
 		};
 	};
-	class 332nd_Helmet_ARF_Stryker: 332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Stryker: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Stryker)";
 		hiddenSelections[]=
@@ -282,7 +227,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Stryker.paa",
 		};
 	};
-	class 332nd_Helmet_ARF_Smoke: 332nd_Helmet_ARF_Base
+	class 332nd_Helmet_ARF_Smoke: Old_332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Smoke)";
 		hiddenSelections[]=
@@ -303,7 +248,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 332nd_Helmets_ARF_Extended
+        class Old_332nd_Helmets_ARF_Extended
         {
             label = "ARF";
             author = "Ithias";
@@ -403,40 +348,40 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Helmet_ARF_Base
+        class Old_332nd_Helmet_ARF_Base
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Default = "Trooper";
         };
-        class 332nd_Helmet_ARF_Woodland
+        class Old_332nd_Helmet_ARF_Woodland
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Camo = "Woodland";
         };
-        class 332nd_Helmet_ARF_Winter
+        class Old_332nd_Helmet_ARF_Winter
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Camo = "Winter";
         };
-        class 332nd_Helmet_ARF_Urban
+        class Old_332nd_Helmet_ARF_Urban
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Camo = "Urban";
         };
-        class 332nd_Helmet_ARF_Desert
+        class Old_332nd_Helmet_ARF_Desert
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Camo = "Desert";
         };
 		//customs
 		 class 332nd_Helmet_ARF_Asuka
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Customs = "Asuka";
         };
 		 class 332nd_Helmet_ARF_Cin
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Customs = "Cin";
         };
 		/*  class 332nd_Helmet_ARF_Walkie
@@ -446,17 +391,17 @@ class XtdGearInfos
         }; */
 		 class 332nd_Helmet_ARF_Trick
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Customs = "Trick";
         };
 		 class 332nd_Helmet_ARF_Stryker
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Customs = "Stryker";
         };
 		 class 332nd_Helmet_ARF_Smoke
         {
-            model = "332nd_Helmets_ARF_Extended";
+            model = "Old_332nd_Helmets_ARF_Extended";
             Customs = "Smoke";
         };
 	};

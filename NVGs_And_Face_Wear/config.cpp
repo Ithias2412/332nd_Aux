@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 332nd_Facewear {
+	class Old_332nd_Facewear {
 		units[] = 
         {
 			""
@@ -19,12 +19,12 @@ class CfgWeapons
 	class ItemInfo;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_tanker_nvg;
-	class 332nd_NVG_Chip: OPTRE_NVG
+	class Old_332nd_NVG_Chip: OPTRE_NVG
 	{
 		displayName = "[332nd] NVG Chip";
 		picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 	};
-	class 332nd_NVG_Rangefinder: OPTRE_NVG
+	class Old_332nd_NVG_Rangefinder: OPTRE_NVG
 	{
 		displayName = "[332nd] Rangefinder";
 		model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_rangefinder_nvg_on.p3d";
@@ -82,7 +82,7 @@ class CfgWeapons
 			hiddenSelections[] = {"camo1"};
 		};
 	}; */
-	class 332nd_NVG_Visor: OPTRE_NVG
+	class Old_332nd_NVG_Visor: OPTRE_NVG
 	{
 		displayName = "[332nd] Visor";
 		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
@@ -109,7 +109,7 @@ class CfgWeapons
 			uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
 		};
 	};
-	class 332nd_NVG_Inverted_Visor: OPTRE_NVG
+	class Old_332nd_NVG_Inverted_Visor: OPTRE_NVG
 	{
 		displayName = "[332nd] Visor (Inverted)";
 		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
@@ -149,7 +149,7 @@ class CfgWeapons
 			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa" 
 		};
 	}; */
-	class 332nd_NVG_Visor_Cherryy: 332nd_NVG_Visor
+	class 332nd_NVG_Visor_Cherryy: Old_332nd_NVG_Visor
 	{
 		displayName = "[332nd] Visor (Cherryy)";
 		hiddenSelections[] = 
@@ -162,7 +162,7 @@ class CfgWeapons
 			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa" 
 		};
 	};
-	class 332nd_NVG_Visor_Walkie: 332nd_NVG_Visor
+	class 332nd_NVG_Visor_Walkie: Old_332nd_NVG_Visor
 	{
 		displayName = "[332nd] Visor (Walkie)";
 		hiddenSelections[] = 
@@ -362,7 +362,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 332nd_NVG_Extended
+        class Old_332nd_NVG_Extended
         {
             label = "Night Vision";
             author = "Ithias";
@@ -546,51 +546,51 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_NVG_Chip
+        class Old_332nd_NVG_Chip
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Type = "Chip";
         };
-        class 332nd_NVG_Rangefinder
+        class Old_332nd_NVG_Rangefinder
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Type = "Rangefinder";
         };
-        class 332nd_NVG_Visor
+        class Old_332nd_NVG_Visor
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Type = "Visor";
         };
-		class 332nd_NVG_Inverted_Visor
+		class Old_332nd_NVG_Inverted_Visor
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Type = "Visor_Inverted";
         };
 		class 332nd_Tanker_NVG  
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Type = "ArmorPlating";
 			Variant = "Tanker";
         };
 		/* class 332nd_Tanker_NVG_NCO 
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Type = "ArmorPlating";
 			Variant = "NCO";
         }; */
         class 332nd_NVG_Visor_Cherryy
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Customs = "Cherryy";
         };
         class 332nd_NVG_Visor_Asuka  
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Customs = "Asuka";
         };
 		class 332nd_NVG_Visor_Walkie
         {
-            model = "332nd_NVG_Extended";
+            model = "Old_332nd_NVG_Extended";
             Customs = "Walkie";
         };
     };
