@@ -233,6 +233,8 @@ class CfgVehicles
 	class 332nd_Enia_AT_Backpack: IDA_Imperial_Backpack
 	{
         scope = 1;
+		scopearsenal = 1;
+		scopecurator = 1;
 		displayName = "Enian AT Backpack";
 		class TransportMagazines
 		{
@@ -265,6 +267,8 @@ class CfgVehicles
 	class 332nd_Enia_AR_Backpack: IDA_Imperial_Backpack
 	{
         scope = 1;
+		scopearsenal = 1;
+		scopecurator = 1;
 		displayName = "Enian AR Backpack";
 		class TransportMagazines
 		{

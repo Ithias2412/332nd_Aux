@@ -19,12 +19,12 @@ class CfgPatches
 //#include "xtdGear.hpp"
 class CfgVehicles
 {
-	class 332nd_Radio;
+	class 332nd_Back_Radio;
 
 //Base Items
 
 
-	class 332nd_Zeus_Backpack: 332nd_Radio
+	class 332nd_Zeus_Backpack: 332nd_Back_Radio
 	{
 		displayName="[332nd] Naval Radio Pouches";
 		model = "3AS\3AS_Characters_Imperial\Vests\Model\3AS_Stormtrooper_vest_addons.p3d";

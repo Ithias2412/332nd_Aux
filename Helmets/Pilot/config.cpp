@@ -1,5 +1,5 @@
 class CfgPatches {
-	class Old_332nd_Helmets_Pilot {
+	class 332nd_Helmets_Pilot {
 		units[] = 
         {
 			""
@@ -20,20 +20,19 @@ class cfgWeapons
 	class SWLB_clone_pilot_P2_helmet;
 
 //Base Start
-	class Old_332nd_Helmet_Pilot: SWLB_clone_pilot_P2_helmet
+	class 332nd_Helmet_Pilot: SWLB_clone_pilot_P2_helmet
 	{
 		scope=2;
 		dlc="332nd Aux";
 		author="Ithias";
-		displayName="[332nd] Pilot Helmet";
-		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
+		displayName="New! [332nd] Pilot Helmet";
 		hiddenSelections[]=
 		{
 			"camo1",
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_JLTS.paa",
 		};
 		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
 		subItems[]=
@@ -74,99 +73,13 @@ class cfgWeapons
 		};
 	};
 
-//Customs
-
-	/* class 332nd_Helmet_Pilot_Saiko: 332nd_Helmet_Pilot
-	{
-		scope=2;
-		dlc="332nd Aux";
-		author="Ithias";
-		displayName="[332nd] Pilot Helmet (Saiko)";
-		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
-		hiddenSelections[]=
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Saiko.paa",
-		};
-		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
-		subItems[]=
-		{
-			""
-		};
-	}; */
-	class 332nd_Helmet_Pilot_Shadow: Old_332nd_Helmet_Pilot
-	{
-		scope=2;
-		dlc="332nd Aux";
-		author="Wasnt pookie Ithias";
-		displayName="[332nd] Pilot Helmet (Shadow)";
-		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
-		hiddenSelections[]=
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Shadow.paa",
-		};
-		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
-		subItems[]=
-		{
-			""
-		};
-	};
-	class 332nd_Helmet_Pilot_Lawman: Old_332nd_Helmet_Pilot
-	{
-		scope=2;
-		dlc="332nd Aux";
-		author="Wasnt pookie Ithias";
-		displayName="[332nd] Pilot Helmet (Lawman)";
-		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
-		hiddenSelections[]=
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Lawman.paa",
-		};
-		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
-		subItems[]=
-		{
-			""
-		};
-	};
-	class 332nd_Helmet_Pilot_Jorge: Old_332nd_Helmet_Pilot
-	{
-		scope=2;
-		dlc="332nd Aux";
-		author="Cherryy";
-		displayName="[332nd] Pilot Helmet (Jorge)";
-		picture="332nd_Aux\Helmets\Tex\Logo_Helmet.paa";
-		hiddenSelections[]=
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Jorge.paa",
-		};
-		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
-		subItems[]=
-		{
-			""
-		};
-	};
 };
 
 class XtdGearModels
 {
     class CfgWeapons 
     {
-        class Old_332nd_Helmets_Pilot_Extended
+        class 332nd_Helmets_Pilot_Extended
         {
             label = "Pilot";
             author = "Ithias";
@@ -223,30 +136,10 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class Old_332nd_Helmet_Pilot
+        class 332nd_Helmet_Pilot
         {
             model = "332nd_Helmets_Pilot_Extended";
             Type = "Pilot";
-        };
-		/* class 332nd_Helmet_Pilot_Saiko
-        {
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Saiko";
-        }; */
-		class 332nd_Helmet_Pilot_Shadow
-        {
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Shadow";
-        };
-		class 332nd_Helmet_Pilot_Lawman
-        {
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Lawman";
-        };
-		class 332nd_Helmet_Pilot_Jorge
-        {
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Jorge";
         };
 	};
 };

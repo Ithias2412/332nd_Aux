@@ -1,5 +1,5 @@
 class CfgPatches {
-	class Old_332nd_Facewear {
+	class 332nd_Facewear {
 		units[] = 
         {
 			""
@@ -17,352 +17,153 @@ class CfgWeapons
 {
 	class OPTRE_NVG;
 	class ItemInfo;
-	class lsd_gar_rangefinder_nvg;
-	class lsd_gar_tanker_nvg;
-	class Old_332nd_NVG_Chip: OPTRE_NVG
+	class 332nd_NVG_Chip: OPTRE_NVG
 	{
-		displayName = "[332nd] NVG Chip";
+		displayName = "New! [332nd] NVG Chip";
 		picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 	};
-	class Old_332nd_NVG_Rangefinder: OPTRE_NVG
+	class 332nd_NVG_Marshal_Commander: OPTRE_NVG
 	{
-		displayName = "[332nd] Rangefinder";
-		model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_rangefinder_nvg_on.p3d";
-		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_clone_rangefinder_ca.paa";
+		displayName = "New! [332nd] Marshal Commander";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGMC.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_mc_visor_ui_ca.paa";
 		hiddenSelections[] = 
 		{
-			"camo1",
+			"camo1"
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\lsd_equipment_bluefor\accessories\gar\visor\data\swlb_clone_nvg_co.paa",
-		};		
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_JLTS.paa"
+		};
 		visionMode[] = 
 		{
-			"Normal","NVG",
+			"Normal",
+			"NVG",
 		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = {"camo1"};
 			mass = 5;
-			modelOff = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGMC.p3d";
 			type = 616;
-			uniformModel = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGMC.p3d";
 		};
 	};
-	class 332nd_Tanker_NVG: lsd_gar_tanker_nvg
+	class 332nd_NVG_Commander: OPTRE_NVG
 	{
-		scope = 2;
-		displayName = "[332nd] Tanker NVG";
-		visionMode[] = {"Normal","NVG"};
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Tanker_NVG.paa"};
-		class ItemInfo: ItemInfo
-		{
-			type = 616;
-			uniformModel = "\lsd_equipment_bluefor\accessories\gar\tanker\lsd_gar_tanker_nvg";
-			modelOff = "\lsd_equipment_bluefor\accessories\gar\tanker\lsd_gar_tanker_nvg";
-			mass = 20;
-			hiddenSelections[] = {"camo1"};
-		};
-	};
-	/* class 332nd_Tanker_NVG_NCO: 332nd_Tanker_NVG
-	{
-		scope = 2;
-		displayName = "[332nd] Tanker NVG NCO";
-		visionMode[] = {"Normal","NVG"};
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Tanker_NVG_NCO.paa"};
-		class ItemInfo: ItemInfo
-		{
-			type = 616;
-			uniformModel = "\lsd_equipment_bluefor\accessories\gar\tanker\lsd_gar_tanker_nvg";
-			modelOff = "\lsd_equipment_bluefor\accessories\gar\tanker\lsd_gar_tanker_nvg";
-			mass = 20;
-			hiddenSelections[] = {"camo1"};
-		};
-	}; */
-	class Old_332nd_NVG_Visor: OPTRE_NVG
-	{
-		displayName = "[332nd] Visor";
-		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
-		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_ca.paa";
+		displayName = "New! [332nd] Commander";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGCC.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_cc_visor_ui_ca.paa";
 		hiddenSelections[] = 
 		{
-			"camo1",
-			"camo2"
+			"camo1"
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG.paa"
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_JLTS.paa"
 		};
 		visionMode[] = 
 		{
-			"Normal","NVG",
+			"Normal",
+			"NVG",
 		};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelections[] = {"camo1"};
 			mass = 5;
-			modelOff = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGCC.p3d";
 			type = 616;
-			uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGCC.p3d";
 		};
 	};
-	class Old_332nd_NVG_Inverted_Visor: OPTRE_NVG
+	class 332nd_NVG_Rangefinder: OPTRE_NVG
 	{
-		displayName = "[332nd] Visor (Inverted)";
-		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
-		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_ca.paa";
+		displayName = "New! [332nd] Rangefinder";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_range_ui_ca.paa";
 		hiddenSelections[] = 
 		{
-			"camo1",
-			"camo2"
+			"camo1"
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted.paa"
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_nvg_range_co.paa"
 		};
 		visionMode[] = 
 		{
-			"Normal","NVG",
+			"Normal",
+			"NVG",
 		};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelections[] = {"camo1"};
 			mass = 5;
-			modelOff = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
 			type = 616;
-			uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
 		};
 	};
-	/* class 332nd_NVG_Visor_Asuka: 332nd_NVG_Visor
+	class 332nd_NVG_Visor: OPTRE_NVG
 	{
-		displayName = "[332nd] Visor (Asuka)";
+		displayName = "New! [332nd] Visor";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
 		hiddenSelections[] = 
 		{
-			"camo1",
-			"camo2"
+			"camo1"
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa" 
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_nvg_co.paa"
 		};
-	}; */
-	class 332nd_NVG_Visor_Cherryy: Old_332nd_NVG_Visor
+		visionMode[] = 
+		{
+			"Normal",
+			"NVG",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+		};
+	};
+	class 332nd_NVG_Inverted_Visor: OPTRE_NVG
 	{
-		displayName = "[332nd] Visor (Cherryy)";
+		displayName = "New! [332nd] Visor (Inverted)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
 		hiddenSelections[] = 
 		{
-			"camo1",
-			"camo2"
+			"camo1"
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa" 
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted_JLTS.paa"
 		};
-	};
-	class 332nd_NVG_Visor_Walkie: Old_332nd_NVG_Visor
-	{
-		displayName = "[332nd] Visor (Walkie)";
-		hiddenSelections[] = 
+		visionMode[] = 
 		{
-			"camo1",
-			"camo2"
+			"Normal",
+			"NVG",
 		};
-		hiddenSelectionsTextures[] = 
+		class ItemInfo: ItemInfo
 		{
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Walkie_NVG.paa" 
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
 		};
 	};
-};
-class CfgGlasses
-{
-	class G_Combat;
-
-//Primary
-	class 332nd_Facewear_Base: G_Combat
-	{
-		_generalMacro = "G_Combat";
-		ACE_Color[] = {0,0,0};
-		ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
-		//ACE_Overlay = "\SWLB_equipment\facewears\data\P2_HUD_ca.paa";
-		ACE_Overlay = "";
-		ACE_OverlayCracked = "";
-		//ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
-		ACE_OverlayDirt = "";
-		ACE_Protection = 1;
-		ACE_Resistance = 1;
-		ACE_TintAmount = 0;
-		author = "SW Legion Studios";
-		displayName = "332nd Facewear Base";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {};
-		identityTypes[] = {};
-		mass = 2;
-		model = "\SWLB_clones\SWLB_clone_rangefinder_off.p3d";
-		name = "None";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
-		scope = 1;
-	};
-	class SWLB_clone_P2_HUD;
-	class 332nd_Clone_HelmetInterior_P2: SWLB_clone_P2_HUD
-	{
-		scope = 2;
-		author = "Frankie";
-		displayName = "[332nd] P2 Helmet Interior";
-	};
-	class 332nd_Facewear_Rangefinder :332nd_Facewear_Base
-	{
-		scope = 2;
-		displayName = "[332nd] Range Finder";
-	};
-	class 332nd_Facewear_Visor :332nd_Facewear_Base
-	{
-		scope = 2;
-		displayName = "[332nd] Visor (On)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG.paa"};
-		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
-		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_ca.paa";
-	};
-	class 332nd_Facewear_Visor_Off :332nd_Facewear_Visor
-	{
-		scope = 2;
-		displayName = "[332nd] Visor (Off)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG.paa"};
-		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
-	};
-	class 332nd_Facewear_Visor_Inverted :332nd_Facewear_Base
-	{
-		scope = 2;
-		displayName = "[332nd] Visor Inverted (On)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted.paa"};
-		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_on.p3d";
-		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_ca.paa";
-	};
-	class 332nd_Facewear_Visor_Off_Inverted :332nd_Facewear_Visor
-	{
-		scope = 2;
-		displayName = "[332nd] Visor Inverted (Off)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted.paa"};
-		model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_visor_nvg_off.p3d";
-	};
-//Customs
-	class 332nd_Facewear_Visor_Cherryy: 332nd_Facewear_Visor
-	{
-		scope = 2;
-		displayName = "[332nd] Visor (On / Cherryy)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa"};
-	};
-	class 332nd_Facewear_Visor_Cherryy_Off: 332nd_Facewear_Visor_Off
-	{
-		scope = 2;
-		displayName = "[332nd] Visor (Off / Cherryy)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Cherryy_NVG.paa"};
-	};
-	/* class 332nd_Facewear_Visor_Asuka: 332nd_Facewear_Visor
-	{
-		scope = 2;
-		displayName = "[332nd] Visor (On / Asuka)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa"};
-	};
-	class 332nd_Facewear_Visor_Asuka_Off: 332nd_Facewear_Visor_Off
-	{
-		scope = 2;
-		displayName = "[332nd] Visor (Off / Asuka)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Asuka_NVG.paa"};
-	}; */
-	class 332nd_Facewear_XO_Ithias :332nd_Facewear_Base
-	{
-		scope = 2;
-		displayName = "[332nd] Commander Visor (Ithias)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_Ithias.paa"};
-		model = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
-	};
-	class 332nd_Asuka_Chops_Facewear :332nd_Facewear_Base
-	{
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		author="Cherryy";
-		displayName="Asuka ARF Flaps";
-		model="\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"",
-			"332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Chops_Asuka.paa",
-			""
-		};
-	};
-	class 332nd_Trick_Chops_Facewear :332nd_Facewear_Base
-	{
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		author="Cherryy";
-		displayName="Trick ARF Flaps";
-		model="\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"",
-			"332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_Chops_Trick.paa",
-			""
-		};
-	};
-//White
-	class 332nd_Facewear_XO_White :332nd_Facewear_Base
-	{
-		scope = 2;
-		displayName = "[332nd] Commander Visor (XO)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_White.paa"};
-		model = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
-	};
-	class 332nd_Facewear_CO_White :332nd_Facewear_Base
-	{
-		scope = 2;
-		displayName = "[332nd] Commander Visor (CO)";
-		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_White.paa",
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_White.paa",
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Commander_White.paa",
-		};
-		model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
-		picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_cc_ca.paa";
-	};
-
 };
 
 class XtdGearModels
 {
     class CfgWeapons 
     {
-        class Old_332nd_NVG_Extended
+        class 332nd_NVG_Extended
         {
             label = "Night Vision";
             author = "Ithias";
@@ -370,7 +171,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", "ArmorPlating"};
+				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", "Commander", "Marshal_Commander"};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Chip
@@ -382,25 +183,31 @@ class XtdGearModels
 				class Visor
                 {
                     label = "Visor";
-                    description = "SCT+";
+                    description = "VCT+";
                     //image = "xxx";
                 };
 				class Visor_Inverted
                 {
                     label = "Visor Inverted";
-                    description = "SCT+";
+                    description = "VCT+";
                     //image = "xxx";
                 };
 				class Rangefinder
                 {
                     label = "Rangefinder";
-                    description = "SCT+";
+                    description = "VCT+";
                     //image = "xxx";
                 };
-				class ArmorPlating
+				class Commander
                 {
-                    label = "Armor Plating";
-                    description = "Fun OPS";
+                    label = "Commander";
+                    description = "CL+";
+                    //image = "xxx";
+                };
+				class Marshal_Commander
+                {
+                    label = "Marshal Commander";
+                    description = "CC+";
                     //image = "xxx";
                 };
             };
@@ -444,233 +251,41 @@ class XtdGearModels
 			};
         };
     };
-    class CfgGlasses 
-    {
-        class 332nd_Facewear_Extended
-        {
-            label = "Facewear";
-            author = "Ithias";
-			options[] = { "Type", "Variant", "Customs",};
-            class Type
-            {
-                label = "Type";
-				values[] = { "Visor", "Visor_Inverted", "Rangefinder", "Commander", "Overlay", };
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class Commander
-                {
-                    label = "Commander";
-                    description = "CL+";
-                    //image = "xxx";
-                };
-				class Visor
-                {
-                    label = "Visor";
-                    description = "SCT+";
-                    //image = "xxx";
-                };
-				class Visor_Inverted
-                {
-                    label = "Visor Inverted";
-                    description = "SCT+";
-                    //image = "xxx";
-                };
-				class Rangefinder
-                {
-                    label = "Rangefinder";
-                    description = "SCT+";
-                    //image = "xxx";
-                };
-				class Overlay
-                {
-                    label = "Overlay";
-                    description = "First Person P2 Overlay";
-                    //image = "xxx";
-                };
-            };
-            class Variant
-            {
-                label = "Variant";
-				values[] = { "A", "B", };
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class A
-                {
-                    label = "A";
-                    //description = "Default";
-                    //image = "xxx";
-                };
-                class B
-                {
-                    label = "B";
-                    //description = "Not Default";
-                    //image = "xxx";
-                };
-			};
-            class Customs
-            {
-                label = "Customs";
-				values[] = { "Cherryy", "Asuka", "Ithias", "Trick",};
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class Cherryy
-                {
-                    label = "Cherryy";
-                    //description = "Default";
-                    //image = "xxx";
-                };
-                class Asuka
-                {
-                    label = "Asuka";
-                    //description = "Not Default";
-                    //image = "xxx";
-                };
-                class Ithias
-                {
-                    label = "Ithias";
-                    //description = "Not Default";
-                    //image = "xxx";
-                };
-				class Trick
-                {
-                    label = "Trick";
-                    //description = "Not Default";
-                    //image = "xxx";
-                };
-			};
-        };
-    };
 };
 
 class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class Old_332nd_NVG_Chip
+        class 332nd_NVG_Chip
         {
-            model = "Old_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Chip";
         };
-        class Old_332nd_NVG_Rangefinder
+        class 332nd_NVG_Rangefinder
         {
-            model = "Old_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Rangefinder";
         };
-        class Old_332nd_NVG_Visor
+        class 332nd_NVG_Visor
         {
-            model = "Old_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Visor";
         };
-		class Old_332nd_NVG_Inverted_Visor
+		class 332nd_NVG_Inverted_Visor
         {
-            model = "Old_332nd_NVG_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Visor_Inverted";
         };
-		class 332nd_Tanker_NVG  
+        class 332nd_NVG_Commander
         {
-            model = "Old_332nd_NVG_Extended";
-            Type = "ArmorPlating";
-			Variant = "Tanker";
-        };
-		/* class 332nd_Tanker_NVG_NCO 
-        {
-            model = "Old_332nd_NVG_Extended";
-            Type = "ArmorPlating";
-			Variant = "NCO";
-        }; */
-        class 332nd_NVG_Visor_Cherryy
-        {
-            model = "Old_332nd_NVG_Extended";
-            Customs = "Cherryy";
-        };
-        class 332nd_NVG_Visor_Asuka  
-        {
-            model = "Old_332nd_NVG_Extended";
-            Customs = "Asuka";
-        };
-		class 332nd_NVG_Visor_Walkie
-        {
-            model = "Old_332nd_NVG_Extended";
-            Customs = "Walkie";
-        };
-    };
-    class CfgGlasses 
-    {
-        class 332nd_Facewear_Rangefinder
-        {
-            model = "332nd_Facewear_Extended";
-            Type = "Rangefinder";
-        };
-        class 332nd_Facewear_Visor
-        {
-            model = "332nd_Facewear_Extended";
-            Type = "Visor";
-            Variant = "B";
-        };
-        class 332nd_Facewear_Visor_Off
-        {
-            model = "332nd_Facewear_Extended";
-            Type = "Visor";
-            Variant = "A";
-        };
-		class 332nd_Facewear_Visor_Inverted
-        {
-            model = "332nd_Facewear_Extended";
-            Type = "Visor_Inverted";
-            Variant = "B";
-        };
-        class 332nd_Facewear_Visor_Off_Inverted
-        {
-           model = "332nd_Facewear_Extended";
-            Type = "Visor_Inverted";
-            Variant = "A";
-        };
-        class 332nd_Facewear_XO_White
-        {
-            model = "332nd_Facewear_Extended";
+            model = "332nd_NVG_Extended";
             Type = "Commander";
-            Variant = "A";
         };
-        class 332nd_Facewear_CO_White
+        class 332nd_NVG_Marshal_Commander
         {
-            model = "332nd_Facewear_Extended";
-            Type = "Commander";
-            Variant = "B";
+            model = "332nd_NVG_Extended";
+            Type = "Marshal_Commander";
         };
-		class 332nd_Clone_HelmetInterior_P2
-		{
-            model = "332nd_Facewear_Extended";
-            Type = "Overlay";
-		};
-        class 332nd_Facewear_Visor_Cherryy
-        {
-            model = "332nd_Facewear_Extended";
-            Customs = "Cherryy";
-            Variant = "B";
-        };
-        class 332nd_Facewear_Visor_Cherryy_Off
-        {
-            model = "332nd_Facewear_Extended";
-            Customs = "Cherryy";
-            Variant = "A";
-        };
-        class 332nd_Asuka_Chops_Facewear
-        {
-            model = "332nd_Facewear_Extended";
-            Customs = "Asuka";
-            Variant = "A";
-        };
-		class 332nd_Trick_Chops_Facewear
-        {
-            model = "332nd_Facewear_Extended";
-            Customs = "Trick";
-            Variant = "A";
-        };
-		class 332nd_Facewear_XO_Ithias
-		{
-            model = "332nd_Facewear_Extended";
-            Customs = "Ithias";
-            Variant = "A";
-		};
     };
 };
