@@ -67,7 +67,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_CT_JLTS.paa"
 		};
 	};
-	class Sugma_332nd_Helmet_P2_Body: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Body: 332nd_Helmet_P2_CR
 	{
 		displayName="New! [332nd] P2 Helmet (Body)";
 		hiddenSelections[]=
@@ -77,6 +77,18 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Body_JLTS.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Frankenburg: 332nd_Helmet_P2_CR
+	{
+		displayName="New! [332nd] P2 Helmet (Frankenburg)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Frankenburg.paa"
 		};
 	};
 };
@@ -330,10 +342,15 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Type = "Trooper";
         };
-		class Sugma_332nd_Helmet_P2_Body
+		class 332nd_Helmet_P2_Body
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Body";
+		};
+		class 332nd_Helmet_P2_Frankenburg
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Frankenburg";
 		};
 	};
 };
