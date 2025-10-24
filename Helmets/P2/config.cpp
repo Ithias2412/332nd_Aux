@@ -22,7 +22,7 @@ class cfgWeapons
 	{
 		author="Ithias";
 		dlc="332nd Aux";
-		displayName="New! [332nd] P2 Helmet (CR)";
+		displayName="[332nd] P2 Helmet (CR)";
 		class ItemInfo: HeadgearItem
 		{
 			mass=1;
@@ -57,7 +57,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_P2_CT: 332nd_Helmet_P2_CR
 	{
-		displayName="New! [332nd] P2 Helmet (CT)";
+		displayName="[332nd] P2 Helmet (CT)";
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -69,7 +69,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_P2_Body: 332nd_Helmet_P2_CR
 	{
-		displayName="New! [332nd] P2 Helmet (Body)";
+		displayName="[332nd] P2 Helmet (Body)";
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -81,7 +81,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_P2_Frankenburg: 332nd_Helmet_P2_CR
 	{
-		displayName="New! [332nd] P2 Helmet (Frankenburg)";
+		displayName="[332nd] P2 Helmet (Frankenburg)";
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -89,6 +89,30 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Frankenburg.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Dovah: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Dovah)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Dovah.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Grim: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Grim)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Grim.paa"
 		};
 	};
 };
@@ -135,7 +159,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel", "Alpha", "Aqua"};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel", "Alpha", "Aqua", "Grim"};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -323,6 +347,12 @@ class XtdGearModels
 					description = "40k Fanatic";
 					//image = "xxx";
 				};
+				class Grim
+				{
+					label = "Grim";
+					description = "Artificially Intelligent";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -351,6 +381,16 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Frankenburg";
+		};
+		class 332nd_Helmet_P2_Dovah
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Dovah";
+		};
+		class 332nd_Helmet_P2_Grim
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Grim";
 		};
 	};
 };
