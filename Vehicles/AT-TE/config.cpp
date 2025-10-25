@@ -126,7 +126,9 @@ class CfgVehicles
 	{
 		class Turrets: Turrets
 		{
-			class MainTurretTop;
+			class MainTurretTop: MainTurret {};
+			class MainTurretFront: MainTurretTop {};
+			class MainTurretBack: MainTurretFront {};
 		};
 	};
     class 332nd_ATTE: 3AS_ATTE_Base
@@ -170,6 +172,14 @@ class CfgVehicles
 					"332nd_30Rnd_Mass_Driver_shells",
 					"SmokeLauncherMag"
 				};
+			};
+			class MainTurretFront: MainTurretFront
+			{
+
+			};
+			class MainTurretBack: MainTurretBack
+			{
+
 			};
 		};
 	};

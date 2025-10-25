@@ -1944,6 +1944,23 @@ fnc_SB_DroidPopper = {
     }];
 };
 
+WBK_ResetArmourHitPart = {
+				_this removeAllEventHandlers "HitPart";
+				_this addEventHandler [
+					"HitPart",
+					{
+						(_this select 0) params ["_target","_shooter","_bullet","_position","_velocity","_selection","_ammo","_direction","_radius","_surface","_direct"];
+						if !(alive _target) exitWith {};
+						_new_vv = (_target getVariable "VPR_DroidHealth") - (_ammo select 0);
+						if (_new_vv <= 0) exitWith {
+							_target setDamage 1;
+							_target removeAllEventHandlers "HitPart";
+						};
+						_target setVariable ["VPR_DroidHealth",_new_vv,true];
+					}
+				];
+};
+
 SB_fnc_Init_JumpPack = {
 	params ["_unit", "_backpackStr", "_searchRange", "_target", "_cooldown", "_jumpDistMin", "_jumpDistMax", "_jumpTime", "_oldPos", "_posTargetNew", "_newPos", "_diffTime"];
 
@@ -1982,6 +1999,13 @@ SB_fnc_Init_JumpPack = {
 		if (isPlayer _unit) then {
 
 		} else {
+
+
+
+				[_unit, false] remoteExec ["allowDamage", 0];
+				_unit setVariable ["VPR_DroidHealth", 5, true];
+                _unit remoteExecCall ["WBK_ResetArmourHitPart",0,true];
+
 
 				while {alive _unit} do {
 					if (isPlayer _unit) exitWith {
@@ -2069,9 +2093,6 @@ SB_fnc_JumpPack = {
 
     waitUntil {sleep 0.1; ((getPos _unit) select 2) < 4};
 
-	[_unit, false] remoteExec ["allowDamage"];
-    sleep 1;
-	[_unit, true] remoteExec ["allowDamage"];
 
 
 
