@@ -185,6 +185,7 @@ class cfgvehicles
 	};
 	class 332nd_Saber_Tank: 3AS_Saber_01_Base
 	{
+		armor = 300;
 		author = "Cherryy & 3AS";
 		scope=2;
 		scopecurator=2;
@@ -256,8 +257,8 @@ class cfgvehicles
 			};
 			class MainTurret_bottom: MainTurret_bottom
 			{
-				weapons[] = {"3AS_Sabre_Cannons","SmokeLauncher","332nd_Saber_Missile_Launcher"};
-				magazines[] = {"3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","3AS_50Rnd_Sabre_Mag","332nd_Saber_Missile_Pack"};
+				weapons[] = {"332nd_Sabre_Cannons","SmokeLauncher","332nd_Saber_Missile_Launcher"};
+				magazines[] = {"332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_50Rnd_Sabre_mag","332nd_Saber_Missile_Pack"};
 				
 			};
 			class Mainturret_top: Mainturret_top
@@ -296,6 +297,13 @@ class CfgAmmo
 		effectsSmoke = "CounterMeasureChaff";
 		weaponLockSystem = "2 + 8+ 16";
 	};
+	class 3AS_Sabre_HE;
+	class 332nd_Sabre_HE: 3AS_Sabre_HE
+	{
+		hit = 750;
+		indirectHit = 8;
+		indirectHitRange = 3;
+	};
 }; 
 class CfgMagazines
 {
@@ -309,6 +317,11 @@ class CfgMagazines
     {
 		ammo = "332nd_Saber_Missile";
         count = 12;
+	};
+	class 3AS_50Rnd_Sabre_mag;
+	class 332nd_50Rnd_Sabre_mag: 3AS_50Rnd_Sabre_mag
+	{
+		ammo="332nd_Sabre_HE";
 	};
 }; 
 class CfgWeapons
@@ -331,5 +344,10 @@ class CfgWeapons
 		{
 			reloadTime = 1.5;
 		};
+	};
+	class 3AS_Sabre_Cannons;
+	class 332nd_Sabre_Cannons: 3AS_Sabre_Cannons
+	{
+		magazines[] = {"332nd_50Rnd_Sabre_mag"};
 	};
 }; 
