@@ -6,7 +6,6 @@ class CfgPatches
 		units[] = 
 		{
 			"332nd_Saber_Tank",
-			"332nd_Saber_Tank_New"
 		};
 		weapons[] = {};
 		author = "Viper";
@@ -196,7 +195,11 @@ class cfgvehicles
 		hiddenSelections[] = {"Camo1","Camo2"};
 		editorPreview = "\3AS\3AS_Saber\images\3AS_Saber_M1.jpg";
 		model="3AS\3AS_Saber\model\tcw_tx130";
-		hiddenSelectionsTextures[] = {"332nd_Aux\Vehicles\TX-130_Series\tex\332nd_Saber_Tank.paa","3AS\3AS_Saber\data\Saber_weapons_co.paa"};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vehicles\TX-130_Series\tex\332nd_Saber_Tank.paa",
+			"3AS\3AS_Saber\data\Saber_weapons_co.paa"
+		};
 		crew = "JLTS_Clone_P2_DC15S";
 		class Turrets: Turrets
 		{
@@ -264,20 +267,6 @@ class cfgvehicles
 			class Mainturret_top: Mainturret_top
 			{
 			};
-		};
-	};
-	class 332nd_Saber_Tank_New: 3AS_Saber_01_Base
-	{
-		scope=2;
-		scopecurator=2;
-		scopearsenal=2;
-		side=1;
-        faction="332nd_Faction";		
-		displayname = "[332nd] TX-130 (New)";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vehicles\TX-130_Series\tex\332nd_Saber_Tank.paa",
-			"3AS\3AS_Saber\data\Saber_weapons_co.paa"
 		};
 	};
 };
