@@ -213,6 +213,6 @@ class CfgAmmo
 	class 3AS_Mass_Driver_Shell;
 	class 332nd_Mass_Driver_Shell: 3AS_Mass_Driver_Shell
 	{
-		hit = 550; //was 800
+		hit = 1000; //was 800
 	};
 };

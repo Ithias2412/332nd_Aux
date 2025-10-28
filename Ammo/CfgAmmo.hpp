@@ -349,7 +349,7 @@ class CfgAmmo
 	class 332nd_Dispo_Ammo_NLAW: ACE_NLAW 
 	{
 		//ExplosionEffects = "MortarExplosion";
-		hit=900;
+		hit=300;
 		initTime = 0;
 		effectsMissile = "3AS_Rocket_effect_Blue_fly";
 	};

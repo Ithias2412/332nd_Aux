@@ -185,7 +185,7 @@ class cfgvehicles
 	class 332nd_Saber_Tank: 3AS_Saber_01_Base
 	{
 		armor = 300;
-		author = "Cherryy & 3AS";
+		author = "Ithias & 3AS";
 		scope=2;
 		scopecurator=2;
 		scopearsenal=2;
@@ -197,8 +197,8 @@ class cfgvehicles
 		model="3AS\3AS_Saber\model\tcw_tx130";
 		hiddenSelectionsTextures[] = 
 		{
-			"332nd_Aux\Vehicles\TX-130_Series\tex\332nd_Saber_Tank.paa",
-			"3AS\3AS_Saber\data\Saber_weapons_co.paa"
+			"332nd_Aux\Vehicles\TX-130_Series\tex\332nd_Saber_Tank_Test.paa",
+			"332nd_Aux\Vehicles\TX-130_Series\tex\332nd_Saber_Tank_Guns.paa"
 		};
 		crew = "JLTS_Clone_P2_DC15S";
 		class Turrets: Turrets
@@ -275,6 +275,7 @@ class CfgAmmo
 	class M_PG_AT;
     class 332nd_Saber_Missile: M_PG_AT
     {
+		hit = 1200;
         airLock=1;
         fuseDistance=1;
 		thrustTime=200;
@@ -289,7 +290,7 @@ class CfgAmmo
 	class 3AS_Sabre_HE;
 	class 332nd_Sabre_HE: 3AS_Sabre_HE
 	{
-		hit = 750;
+		hit = 350;
 		indirectHit = 8;
 		indirectHitRange = 3;
 	};
@@ -305,7 +306,7 @@ class CfgMagazines
     class 332nd_Saber_Missile_Pack: 12Rnd_PG_Missiles
     {
 		ammo = "332nd_Saber_Missile";
-        count = 12;
+        count = 4;
 	};
 	class 3AS_50Rnd_Sabre_mag;
 	class 332nd_50Rnd_Sabre_mag: 3AS_50Rnd_Sabre_mag
