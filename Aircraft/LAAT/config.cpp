@@ -754,6 +754,7 @@ class CfgVehicles
 		class Components;
 		class ACE_SelfActions;
 		class HitPoints;
+		class AnimationSources;
 	};
 	class 3AS_LAAT_Mk1: 3AS_LAAT_Base
 	{
@@ -1379,6 +1380,88 @@ class CfgVehicles
 						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
 					};
 				};  */
+			};
+		};
+	};
+	class 332nd_LAAT_Lamps: 332nd_LAAT
+	{
+		displayName="[332nd] LAAT/i (Lamps)";
+		class Reflectors
+		{
+			class Left
+			{
+				color[]={7000,7500,10000};
+				ambient[]={70,75,100};
+				intensity=250;
+				size=5;
+				innerAngle=15;
+				outerAngle=200;
+				coneFadeCoef=10;
+				position="Light_L_Pos";
+				direction="Light_L_Dir";
+				hitpoint="Light_b_hitpoint";
+				selection="Light_L_Lamp";
+				useFlare=1;
+				flareSize=5;
+				flareMaxDistance=1000;
+				dayLight=0;
+				class Attenuation
+				{
+					start=0;
+					constant=0;
+					linear=1;
+					quadratic=1;
+					hardLimitStart=300;
+					hardLimitEnd=400;
+				};
+			};
+			class Right
+			{
+				color[]={7000,7500,10000};
+				ambient[]={70,75,100};
+				intensity=250;
+				size=5;
+				innerAngle=15;
+				outerAngle=200;
+				coneFadeCoef=10;
+				position="Light_R_Pos";
+				direction="Light_R_Dir";
+				hitpoint="Light_b_hitpoint";
+				selection="Light_R_Lamp";
+				useFlare=1;
+				flareSize=5;
+				flareMaxDistance=1000;
+				dayLight=0;
+				class Attenuation
+				{
+					start=0;
+					constant=0;
+					linear=1;
+					quadratic=1;
+					hardLimitStart=300;
+					hardLimitEnd=400;
+				};
+			};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class Doors
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+			class Lamps
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=1;
+			};
+			class Turrets
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
 			};
 		};
 	};
