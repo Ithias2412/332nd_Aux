@@ -1,10 +1,10 @@
 class CfgPatches 
 {
-    class 332nd_CIS_Faction_Vehicles_GIT
+    class 332nd_CIS_Faction_Vehicles_JIT
 	{
 		units[] = 
         {
-            "332nd_CIS_GIT",
+            "332nd_CIS_JIT",
         };
 		weapons[] = 
         {
@@ -85,17 +85,17 @@ class CfgVehicles
             };
         };
     };
-    class 332nd_CIS_GIT: 3AS_DF9_Rocket
+    class 332nd_CIS_JIT: 3AS_DF9_Rocket
     {
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Emplacements";
-		displayName="GIT";
+		displayName="JIT-10";
 		//armor = 60;
 		editorPreview = "";
 		crew = "332nd_Droid_B1_Rifleman";
         hiddenSelectionsTextures[]=
 		{
-			"3AS\3as_static\DF9\Data\DF9_RK_CO.paa"
+			"332nd_Aux\Factions\CIS\Vehicles\JIT\332nd_JIT.paa"
 		};
 		class Components: Components
 		{
@@ -132,12 +132,14 @@ class CfgVehicles
 			{
 				weapons[]=
 				{
-					"332nd_Git_Missile_Launcher"
+					"332nd_JIT_Missile_Launcher"
 				};
 				magazines[]=
 				{
-					"332nd_GIT_Missile_Pack",
-                    "332nd_GIT_Missile_Pack",
+					"332nd_JIT_Missile_Pack",
+                    "332nd_JIT_Missile_Pack",
+					"332nd_JIT_Missile_Pack",
+                    "332nd_JIT_Missile_Pack",
 				};
 				class Components: Components
 				{
@@ -203,7 +205,7 @@ class CfgVehicles
 class CfgAmmo 
 {
 	class 332nd_CIS_A2A_Missile_Ammo;
-    class 332nd_GIT_Missile: 332nd_CIS_A2A_Missile_Ammo
+    class 332nd_JIT_Missile: 332nd_CIS_A2A_Missile_Ammo
     {
 		effectsMissile = "332nd_Effect_CIS_A2A";
     };
@@ -212,18 +214,18 @@ class CfgMagazines
 {
 
 	class 332nd_CIS_A2A_Missile_Mag;
-    class 332nd_GIT_Missile_Pack: 332nd_CIS_A2A_Missile_Mag
+    class 332nd_JIT_Missile_Pack: 332nd_CIS_A2A_Missile_Mag
     {
-		ammo = "332nd_GIT_Missile";
+		ammo = "332nd_JIT_Missile";
         count = 12;
 	};
 }; 
 class CfgWeapons 
 { 
 	class 332nd_CIS_A2A_Missile;
-    class 332nd_Git_Missile_Launcher: 332nd_CIS_A2A_Missile
+    class 332nd_JIT_Missile_Launcher: 332nd_CIS_A2A_Missile
     {
-		magazines[] = {"332nd_Git_Missile_Pack"};
+		magazines[] = {"332nd_JIT_Missile_Pack"};
 		reloadTime = 1.5;
 	};
 };
