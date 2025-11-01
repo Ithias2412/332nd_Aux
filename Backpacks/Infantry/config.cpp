@@ -41,7 +41,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_JLTS.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack.paa",
 		};
 	};
 	
@@ -57,7 +57,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_AT_JLTS.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_AT.paa",
 		};
 	};
 
@@ -73,7 +73,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_JLTS.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack.paa",
 		};
 		tf_isolatedAmount=0.64999998;
 		tf_encryptionCode="tf_west_radio_code";
@@ -96,7 +96,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Medic_JLTS.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Medic.paa",
 		};
 	};
 
@@ -113,7 +113,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Engineer_JLTS.paa",
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Engineer.paa",
 		};
 	};
 	
@@ -193,7 +193,7 @@ class XtdGearModels
         {
             label = "Backpack";
             author = "Ithias";
-			options[] = { "Bags", "Backpacks", "NCO", "Jumppack", };
+			options[] = { "Bags", "Backpacks", "NCO", "Jumppack", "Camo",};
             class Bags
             {
                 label = "Bags";
@@ -301,6 +301,37 @@ class XtdGearModels
                     //image = "xxx";
                 };
             };
+            class Camo
+            {
+                label = "Camo";
+				values[] = { "Woodland", "Winter", "Urban", "Desert",};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Woodland
+                {
+                    label = "Woodland";
+                    //description = "White";
+                    //image = "xxx";
+                };
+				class Winter
+                {
+                    label = "Winter";
+                    //description = "Orange";
+                    //image = "xxx";
+                };
+				class Urban
+                {
+                    label = "Urban";
+                    //description = "Black";
+                    //image = "xxx";
+                };
+				class Desert
+                {
+                    label = "Desert";
+                    //description = "Black";
+                    //image = "xxx";
+                };
+            };
         };
 	};
 };
@@ -373,6 +404,126 @@ class XtdGearInfos
         {
             model = "332nd_Backpack_Extended";
             Jumppack = "Pilot";
+        };
+        class 332nd_Backpack_Woodland
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "AMMO";
+			Camo = "Woodland";
+        };
+        class 332nd_Backpack_Winter
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "AMMO";
+			Camo = "Winter";
+        };
+        class 332nd_Backpack_Urban
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "AMMO";
+			Camo = "Urban";
+        };
+        class 332nd_Backpack_Desert
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "AMMO";
+			Camo = "Desert";
+        };
+        class 332nd_Backpack_AT_Woodland
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "AT";
+			Camo = "Woodland";
+        };
+        class 332nd_Backpack_AT_Winter
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "AT";
+			Camo = "Winter";
+        };
+        class 332nd_Backpack_AT_Urban
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "AT";
+			Camo = "Urban";
+        };
+        class 332nd_Backpack_AT_Desert
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "AT";
+			Camo = "Desert";
+        };
+        class 332nd_Backpack_RTO_Woodland
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "RTO";
+			Camo = "Woodland";
+        };
+        class 332nd_Backpack_RTO_Winter
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "RTO";
+			Camo = "Winter";
+        };
+        class 332nd_Backpack_RTO_Urban
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "RTO";
+			Camo = "Urban";
+        };
+        class 332nd_Backpack_RTO_Desert
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "RTO";
+			Camo = "Desert";
+        };
+        class 332nd_Backpack_Engineer_Woodland
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "ENG";
+			Camo = "Woodland";
+        };
+        class 332nd_Backpack_Engineer_Winter
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "ENG";
+			Camo = "Winter";
+        };
+        class 332nd_Backpack_Engineer_Urban
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "ENG";
+			Camo = "Urban";
+        };
+        class 332nd_Backpack_Engineer_Desert
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "ENG";
+			Camo = "Desert";
+        };
+        class 332nd_Back_NCO_Woodland
+        {
+            model = "332nd_Backpack_Extended";
+            NCO = "Qual";
+			Camo = "Woodland";
+        };
+        class 332nd_Back_NCO_Winter
+        {
+            model = "332nd_Backpack_Extended";
+            NCO = "Qual";
+			Camo = "Winter";
+        };
+        class 332nd_Back_NCO_Urban
+        {
+            model = "332nd_Backpack_Extended";
+            NCO = "Qual";
+			Camo = "Urban";
+        };
+        class 332nd_Back_NCO_Desert
+        {
+            model = "332nd_Backpack_Extended";
+            NCO = "Qual";
+			Camo = "Desert";
         };
     };
 };
