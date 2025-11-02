@@ -59,14 +59,6 @@ class Extended_init_EventHandlers
 	};
 };
 
-class CfgWeapons
-{
-	class ls_laat_DAR;
-	class 332nd_Hydra_Missiles: ls_laat_DAR
-	{
-		showAimCursorInternal = 0;
-	};
-};
 
 class CfgVehicles 
 {
@@ -853,7 +845,7 @@ class CfgVehicles
 		weapons[]= 
 		{
 			"3as_LAAT_Medium_Canon",
-			"332nd_Hydra_Missiles",
+			"332nd_Anvil_X_S",
 			"CMFlareLauncher",
 			//"SmokeLauncher",
 		};
@@ -861,10 +853,9 @@ class CfgVehicles
 		{
 			"3as_LAAT_1000Rnd_Medium_shells",
 			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"12rnd_missiles",
-			"12rnd_missiles",
+			//"3as_LAAT_1000Rnd_Medium_shells",
+			//"3as_LAAT_1000Rnd_Medium_shells",
+			"332nd_Anvil_X_S_Mag",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
@@ -1124,13 +1115,14 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment="332nd_Anvil_III_Mag";
+						attachment="332nd_Anvil_IV";
 						priority=5;
 						hardpoints[]=
 						{
 							"332nd_Hammer_I",
 							"332nd_Anvil_I",
-							"332nd_Anvil_III",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_X_S",
 						};
 						turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
@@ -1148,7 +1140,8 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Anvil_I",
-							"332nd_Anvil_III",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_X_S",
 						};
 						turret[]={0};
 						UIposition[]={0.079999998,0.34999999};
@@ -1166,7 +1159,8 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Anvil_I",
-							"332nd_Anvil_III",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_X_S",
 							"332nd_Dropcrate_PW1",
 						};
 						turret[]={0};

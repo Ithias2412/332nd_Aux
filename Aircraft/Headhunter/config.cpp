@@ -205,6 +205,7 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Hammer_II",
+							"332nd_Hammer_II_L",
 						};
 						turret[]={0};
 						UIposition[] = {0.6,0.45};
@@ -222,6 +223,7 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Hammer_II",
+							"332nd_Hammer_II_L",
 						};
 						turret[]={0};
 						UIposition[] = {0.55,0.35};
@@ -239,6 +241,7 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Hammer_II",
+							"332nd_Hammer_II_L",
 						};
 						turret[]={0};
 						UIposition[] = {0.5,0.25};

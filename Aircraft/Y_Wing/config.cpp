@@ -310,6 +310,17 @@ class CfgVehicles
 						mirroredMissilePos = 7;
 						UIposition[] = {0.2,0.4};
 					};
+					class Pylon9: Pylon1
+					{
+						attachment="332nd_Forge_X_N_Mag";
+						priority = 6;
+						hardpoints[]=
+						{
+							"332nd_Forge_X_N",
+						};
+						turret[]={0};
+						UIposition[] = {0.325,0.5};
+					};
 				};
 			};
 		};
