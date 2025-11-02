@@ -282,6 +282,7 @@ class CfgAmmo
 	class M_Zephyr;
 	class Missile_AGM_02_F;
 	class ace_maverick_L;
+	class ammo_Penetrator_AGM_02;
 	
 	class 332nd_Hammer_I_Ammo: M_Air_AA
 	{
@@ -300,12 +301,19 @@ class CfgAmmo
 	class 332nd_Anvil_I_Ammo: Missile_AGM_02_F
 	{
 		effectsMissile = "332nd_Effect_Anvil";
+		submunitionAmmo = "332nd_Anvil_I_Ammo_Penetrator";
+		hit = 400;
+	};
+	class 332nd_Anvil_I_Ammo_Penetrator: ammo_Penetrator_AGM_02
+	{
+		hit = 400;
 	};
 	class 332nd_CIS_ATG_Missile_Ammo: 332nd_Anvil_I_Ammo
 	{
+		hit = 1100;
 		effectsMissile = "332nd_Effect_CIS_ATG";
+		submunitionAmmo = "ammo_Penetrator_AGM_02";
 	};
-
 	class 332nd_Anvil_III_Ammo: ace_maverick_L
 	{
 		effectsMissile = "332nd_Effect_Anvil";
