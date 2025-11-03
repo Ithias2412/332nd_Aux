@@ -73,7 +73,7 @@ class CfgVehicles
 		scopeCurator=2;
 		faction="332nd_Faction";
 		//editorPreview="";
-		maxSpeed=800; // changed from 615
+		maxSpeed = 600;
 		weapons[]=
 		{
 			"3AS_ARC_Light_Canon",
@@ -85,7 +85,6 @@ class CfgVehicles
 			"3AS_ARC_500Rnd_Light_Shells",
 			"3AS_ARC_500Rnd_Light_Shells",
 			"Laserbatteries",
-			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 		};
@@ -346,7 +345,7 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Hammer_II",
-							"332nd_Anvil_III",
+							"332nd_Anvil_I",
 							"332nd_Forge_III",
 						};
 						attachment="332nd_Forge_III_Mag";
@@ -365,7 +364,7 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Hammer_II",
-							"332nd_Anvil_III",
+							"332nd_Anvil_I",
 							"332nd_Forge_III",
 						};
 						attachment="332nd_Hammer_II_Mag";
@@ -384,7 +383,7 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Hammer_II",
-							"332nd_Anvil_III",
+							"332nd_Anvil_I",
 							"332nd_Forge_III",
 						};
 						attachment="332nd_Hammer_II_Mag";
@@ -423,10 +422,10 @@ class CfgVehicles
 						displayName="CAS";
 						attachment[]=
 						{
-							"332nd_Forge_III_Mag",
-							"332nd_Forge_III_Mag",
-							"332nd_Anvil_III",
-							"332nd_Anvil_III",
+							"332nd_Forge_III",
+							"332nd_Forge_III",
+							"332nd_Anvil_I",
+							"332nd_Anvil_I",
 							"332nd_Hammer_II",
 							"332nd_Hammer_II"
 						};

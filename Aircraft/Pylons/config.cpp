@@ -33,6 +33,7 @@ class CfgMagazines
 	class PylonRack_Bomb_SDB_x4; // Forge I
 	class FSNB_B61_4_Timed_M; // Forge X-N
 	class PylonRack_12Rnd_missiles;
+	class 4Rnd_BombCluster_01_F;
 
 	class 332nd_Hammer_I_Mag: PylonMissile_1Rnd_AAA_missiles
 	{
@@ -101,7 +102,7 @@ class CfgMagazines
 	class 332nd_Anvil_X_S_Mag: PylonRack_12Rnd_missiles
 	{
 		ammo = "332nd_Anvil_X_S_Ammo";
-		count = 36;
+		count = 12;
 		descriptionShort = "Unguided rockets with a smaller-explosive warhead";
 		displayName = "[332nd] Anvil X-S";
 		displayNameShort = "HE";
@@ -171,10 +172,9 @@ class CfgMagazines
 		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_x1_F";
 		pylonWeapon = "332nd_Anvil_III";
 	};
-	
 	class 332nd_Forge_III_Mag: ace_missile_gbu_gbu12
 	{
-		ammo = "ace_missile_gbu_12";
+		ammo = "332nd_Forge_III_Ammo";
 		author = "Ithias";
 		count = 2;
 		descriptionShort = "500lb, high-explosive, laser-guided bomb";
@@ -191,7 +191,7 @@ class CfgMagazines
 	};
 	class 332nd_Forge_I_Mag: PylonRack_Bomb_SDB_x4
 	{
-		ammo = "ammo_Bomb_SDB";
+		ammo = "332nd_Forge_I_Ammo";
 		author = "Ithias";
 		count = 2;
 		descriptionShort = "250lb, explosive, infrared-guided bomb";
@@ -221,6 +221,22 @@ class CfgMagazines
 		pylonWeapon = "332nd_Forge_X_N";
 		weight = 0;
 	};
+	class 332nd_Forge_X_C_Mag: 4Rnd_BombCluster_01_F
+	{
+		ammo = "332nd_Forge_X_C_Ammo";
+		author = "Ithias";
+		count = 2;
+		descriptionShort = "750lb, un-guided cluster bomb";
+		displayName = "[332nd] Forge X-C";
+		displayNameShort = "LGB-C";
+		hardpoints[] = 
+		{
+			"332nd_Forge_X_C",
+		};
+		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Bomb_GBU12_04_x1_F";
+		pylonWeapon = "332nd_Forge_X_C";
+		weight = 0;
+	};
 };
 
 class CfgWeapons
@@ -233,6 +249,7 @@ class CfgWeapons
 	class weapon_SDBLauncher; // Forge I
 	class FSNB_B61_4_Timed_W; // Forge X-N
 	class missiles_DAR;
+	class Mk82BombLauncher;
 
 	
 	class 332nd_Hammer_I: missiles_ASRAAM
@@ -340,7 +357,14 @@ class CfgWeapons
 			//"FSNB_YIELD_50000",
 		};
 	};
-
+	class 332nd_Forge_X_C: Mk82BombLauncher
+	{
+		displayName = "[332nd] Forge X-C";
+		magazines[] = 
+		{
+			"332nd_Forge_X_C_Mag",
+		};
+	};
 };
 
 class CfgAmmo
@@ -351,6 +375,9 @@ class CfgAmmo
 	class ace_maverick_L;
 	class ammo_Penetrator_AGM_02;
 	class M_AT;
+	class BombCluster_01_Ammo_F;
+	class ammo_Bomb_SDB;
+	class ace_missile_gbu_12;
 	
 	class 332nd_Hammer_I_Ammo: M_Air_AA
 	{
@@ -408,6 +435,24 @@ class CfgAmmo
 	{
 		effectsMissile = "332nd_Effect_Anvil";
 		fuseDistance = 5;
+	};
+	class 332nd_Forge_X_C_Ammo: BombCluster_01_Ammo_F
+	{
+		submunitionAmmo[] = 
+		{
+			"Mo_cluster_Bomb_01_F",
+		/*	0.93,
+			"BombCluster_01_UXO_deploy",
+			0.07	*/
+		};
+	};
+	class 332nd_Forge_I_Ammo: ammo_Bomb_SDB
+	{
+		
+	};
+	class 332nd_Forge_III_Ammo: ace_missile_gbu_12
+	{
+		
 	};
 };
 

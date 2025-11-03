@@ -2,7 +2,10 @@ class CfgPatches
 {
 	class 332nd_Headhunter
 	{
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"3AS_Z95_base",
+		};
 		units[] = 
         {
 			"332nd_Headhunter",
@@ -24,20 +27,57 @@ class SensorTemplateNV;
 class SensorTemplateDataLink;
 class CfgVehicles
 {
-	class 3AS_Z95_VTOL_Dynamic_Base_F;
-	class 3AS_Z95_Republic: 3AS_Z95_VTOL_Dynamic_Base_F
+	class Plane_Base_F;
+	class VTOL_Base_F: Plane_Base_F
 	{
 		class Components; 
+	};
+	class 3AS_Z95_VTOL_Base_F: VTOL_Base_F
+	{
+		class Components: Components
+		{
+			
+		};
+	};
+	class 3AS_Z95_VTOL_Dynamic_Base_F: 3AS_Z95_VTOL_Base_F
+	{
+		class Components: Components
+		{
+			
+		};
+	};
+	class 3AS_Z95_Republic: 3AS_Z95_VTOL_Dynamic_Base_F
+	{
+		class Components: Components
+		{
+			
+		};
 	};
 	class 332nd_Headhunter: 3AS_Z95_Republic
 	{
 		displayname = "[332nd] Z-95 Headhunter";
 		faction = "332nd_Faction";
+		maxSpeed = 1000;
 		hiddenselectionstextures[] = 
 		{
 			"3AS\3AS_Z95\Data\orange_co.paa",
 			"3AS\3AS_Z95\Data\cockpit_co.paa",
 			"3AS\3AS_Z95\data\glass\glass_ca"
+		};
+		magazines[] = 
+		{
+			"3AS_Z95_750Rnd_Light_shells",
+			"3AS_Z95_750Rnd_Light_shells",
+			//"Laserbatteries",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			"300Rnd_CMFlare_Chaff_Magazine",
+		};
+		weapons[] = 
+		{
+			"3AS_Z95_Light_Cannon",
+			"CMFlareLauncher",
+			//"Laserdesignator_pilotCamera"
 		};
 		class Components: Components
 		{
@@ -204,7 +244,6 @@ class CfgVehicles
 						hardpoints[]=
 						{
 							"332nd_Hammer_I",
-							"332nd_Hammer_II",
 							"332nd_Hammer_II_L",
 						};
 						turret[]={0};
@@ -222,7 +261,6 @@ class CfgVehicles
 						hardpoints[]=
 						{
 							"332nd_Hammer_I",
-							"332nd_Hammer_II",
 							"332nd_Hammer_II_L",
 						};
 						turret[]={0};
@@ -240,7 +278,6 @@ class CfgVehicles
 						hardpoints[]=
 						{
 							"332nd_Hammer_I",
-							"332nd_Hammer_II",
 							"332nd_Hammer_II_L",
 						};
 						turret[]={0};

@@ -22,6 +22,22 @@ class MuzzleSlot;
 class PointerSlot;
 class UnderBarrelSlot;
 class WeaponSlotsInfo;
+
+class CfgSoundSets
+{
+	class Launcher_Westar_Shot_SoundSet
+	{
+		distanceFilter = "explosionDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		sound3DProcessingType = "Launcher3DProcessingType";
+		soundShaders[] = {"Launcher_MRAWS_closeShot1_SoundShader","Launcher_MRAWS_closeShot1_SoundShader","Launcher_MRAWS_closeShot2_SoundShader","Launcher_MRAWS_closeShot2_SoundShader","Launcher_Vorona_closeShot1_SoundShader","Launcher_Adds_Kick_SoundShader","Launcher_Adds_Metal_SoundShader","Launcher_MRAWS_distShot_SoundShader"};
+		spatial = 1;
+		volumeCurve = "LinearCurve";
+		volumeFactor = 2;
+	};
+};
+
 class CfgWeapons 
 {
 	class 3AS_WestarM5_Base_F;
@@ -80,7 +96,11 @@ class CfgWeapons
 				{
 					begin1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32",1.99526,1,1500};
 					soundBegin[] = {"begin1",1};
-					soundSetShot[] = {"Launcher_MRAWS_Shot_SoundSet","Launcher_MRAWS_Tail_SoundSet"};
+					soundSetShot[] = 
+					{
+						"Launcher_Westar_Shot_SoundSet",
+						"Launcher_MRAWS_Tail_SoundSet"
+					};
 				};
 				class SilencedSound
 				{};

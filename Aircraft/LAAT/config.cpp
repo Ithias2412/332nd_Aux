@@ -856,7 +856,7 @@ class CfgVehicles
 			//"3as_LAAT_1000Rnd_Medium_shells",
 			//"3as_LAAT_1000Rnd_Medium_shells",
 			"332nd_Anvil_X_S_Mag",
-			"300Rnd_CMFlare_Chaff_Magazine",
+			"332nd_Anvil_X_S_Mag",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
