@@ -6,6 +6,7 @@ class CfgPatches
 		units[] = 
         {
 			"332nd_Y_Wing",
+			"332nd_Y_Wing_New",
         };
 		weapons[] = 
         {
