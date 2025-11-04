@@ -60,7 +60,7 @@ class CfgVehicles
 		maxSpeed = 1000;
 		hiddenselectionstextures[] = 
 		{
-			"3AS\3AS_Z95\Data\orange_co.paa",
+			"332nd_Aux\Aircraft\Headhunter\Tex\332nd_Z95.paa",
 			"3AS\3AS_Z95\Data\cockpit_co.paa",
 			"3AS\3AS_Z95\data\glass\glass_ca"
 		};

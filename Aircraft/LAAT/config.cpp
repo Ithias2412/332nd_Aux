@@ -840,6 +840,11 @@ class CfgVehicles
 					type = "332nd_Equipment_Crate";
 					amount = 2;
 				};
+				class 332nd_Refueling_Barrel
+				{
+					type = "332nd_Refueling_Barrel";
+					amount = 1;
+				};
 			};
 		};
 		weapons[]= 
@@ -1115,7 +1120,7 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment="332nd_Anvil_IV";
+						attachment="332nd_Anvil_IV_Mag";
 						priority=5;
 						hardpoints[]=
 						{
