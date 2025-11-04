@@ -7,7 +7,7 @@ class CfgPatches
 			"332nd_Ammo_Crate",
 			"332nd_Medical_Crate",
 			"332nd_Equipment_Crate",
-			"332nd_Refuel_Barrel",
+			"332nd_Refueling_Barrel",
         };
 		weapons[] = 
         {
@@ -990,11 +990,11 @@ class CfgVehicles
 		};
 	};
 
-	class 332nd_Refuel_Barrel: 3AS_Small_Fuel_Barrel
+	class 332nd_Refueling_Barrel: 3AS_Small_Fuel_Barrel
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName="[332nd] Refuel Barrel";
+		displayName="[332nd] Refueling Barrel";
 		editorCategory="332nd_Crates";
 		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
 	};
