@@ -1944,49 +1944,6 @@ fnc_SB_DroidPopper = {
     }];
 };
 
-fnc_SB_EplStun =
-{
-    params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
-
-    _projectile addEventHandler ["HitPart",
-    {
-        params ["_projectile", "_shooter", "_position", "_velocity", "_selection", "_ammo", "_direction", "_radius", "_surfaceType", "_isDirect", "_target"];
-        
-        if (!isNull _target) then {
-            private _droidClasses = [
-                "332nd_Droid_B1_AT",
-                "332nd_Droid_B1_Commander",
-                "332nd_Droid_B1_Crewman",
-                "332nd_Droid_B1_Grenadier",
-                "332nd_Droid_B1_Pilot",
-                "332nd_Droid_B1_Rifleman",
-                "332nd_Droid_B1_Scatterblaster",
-                "332nd_Droid_B1_Security",
-                "332nd_Droid_B1_Shield",
-                "332nd_Droid_B1_Sniper",
-                "332nd_Droid_B1_Support"
-            ];
-
-            if ((typeOf _target) in _droidClasses && {alive _target}) then {
-                [_target] spawn {
-                    params ["_u"];
-                    _u disableAI "MOVE";
-                    _u disableAI "ANIM";
-                    _u disableAI "TARGET";
-                    _u disableAI "AUTOTARGET";
-                    _u setVelocity [0,0,0];
-                    sleep 1;
-                    _u enableAI "MOVE";
-                    _u enableAI "ANIM";
-                    _u enableAI "TARGET";
-                    _u enableAI "AUTOTARGET";
-                };
-            };
-        };
-    }];
-};
-
-
 
 WBK_ResetArmourHitPart = {
 				_this removeAllEventHandlers "HitPart";
