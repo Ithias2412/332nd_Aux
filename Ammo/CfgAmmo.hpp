@@ -53,8 +53,8 @@ class CfgAmmo
 		initTime = 0;
 		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
 		muzzleEffect = "";
-		suppressionRadiusBulletClose = 6;
-		suppressionRadiusHit = 8;
+		suppressionRadiusBulletClose = -1; // was 6
+		suppressionRadiusHit = -1; // was 8
 		timeToLive = 10;
 		tracerEndTime = 10;
 		tracerScale = 0.975;
@@ -96,8 +96,8 @@ class CfgAmmo
 		initTime = 0;
 		model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Blue.p3d";
 		muzzleEffect = "";
-		suppressionRadiusBulletClose = 6;
-		suppressionRadiusHit = 8;
+		//suppressionRadiusBulletClose = 6;
+		//suppressionRadiusHit = 8;
 		timeToLive = 10;
 		tracerEndTime = 10;
 		tracerScale = 1;
@@ -196,17 +196,32 @@ class CfgAmmo
 		hit = 20;
 		caliber = 2;
 	};
+	class 332nd_Gas_Level_M1_S: 332nd_Gas_Level_M1
+	{
+		suppressionRadiusBulletClose = 4;
+		suppressionRadiusHit = 4;
+	};
 	class 332nd_Gas_Level_M2: 332nd_Base_Ammo_IDA
 	{
 		// B1=2 B2=12
 		hit = 15;
 		caliber = 2;
 	};
+	class 332nd_Gas_Level_M2_S: 332nd_Gas_Level_M2
+	{
+		suppressionRadiusBulletClose = 4;
+		suppressionRadiusHit = 4;
+	};
 	class 332nd_Gas_Level_M3: 332nd_Base_Ammo_IDA
 	{
 		// B1=3 B2=18
 		hit = 10;
 		caliber = 2;
+	};
+	class 332nd_Gas_Level_M3_S: 332nd_Gas_Level_M3
+	{
+		suppressionRadiusBulletClose = 4;
+		suppressionRadiusHit = 4;
 	};
 	class 332nd_Gas_Level_S1: 332nd_Base_Ammo_IDA
 	{
@@ -252,85 +267,6 @@ class CfgAmmo
 		hit = 35;
 	};
 
-	//Rifle Ammo 
-	class 332nd_950mm_Ball: 332nd_Base_Ammo_IDA
-	{
-		ACE_caliber = 24.1;
-		ACE_bulletLength = 70;
-		ACE_bulletMass = 233.276;
-		hit = 120;
-		indirectHit = 10;
-		caliber = 20;
-		indirectHitRange = 5; 
-		deflecting = -1;
-	};
-	class 332nd_50_BMG_Ball: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 58.674;
-		ACE_bulletMass = 41.9256;
-        ACE_caliber = 12.954;
-		hit = 30;
-		caliber = 2.6;
-		typicalspeed = 1200;
-	};
-	class 332nd_Slug_Thrower_Ammo: 332nd_Balistic_Bullet_Base
-	{
-		ACE_bulletLength = 58.674;
-		ACE_bulletMass = 41.9256;
-        ACE_caliber = 12.954;
-		hit = 30;
-		caliber = 2.6;
-		typicalspeed = 1200;
-	};
-	class 332nd_762x51_Ball: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 28.956;
-		ACE_bulletMass = 9.4608;
-        ACE_caliber = 7.823;
-		hit = 11.6;
-		caliber = 1.6;
-	};
-	class 332nd_338_Lapua_Ball: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 39.573;
-		ACE_bulletMass = 16.2;
-        ACE_caliber = 8.585;
-		hit = 16;
-		caliber = 2.07;
-	};
-	class 332nd_762x39_Ball: 332nd_Base_Ammo_IDA
-	{
-		ACE_bulletLength = 28.956;
-		ACE_bulletMass = 7.9704;
-        ACE_caliber = 7.823;
-		hit=11;
-		caliber=1.2;
-	};
-	class 332nd_556x45_Ball: 332nd_Base_Ammo_IDA
-	{
-		ACE_caliber = 5.69;
-		ACE_bulletLength = 23.012;
-        ACE_bulletMass = 4.0176;
-		hit = 10;
-		caliber = 1;
-	};
-	class 332nd_45ACP: 332nd_Base_Ammo_IDA
-	{
-		ACE_caliber = 11.481;
-        ACE_bulletLength = 17.272;
-        ACE_bulletMass = 14.904;
-		caliber = 2.6;
-		hit = 7;
-	};
-	class 332nd_45ACP_Dual: 332nd_Base_Ammo_IDA
-	{
-		model = "\3AS\3AS_Weapons\Data\tracer_blue_dual.p3d";
-		ACE_caliber = 11.481;
-        ACE_bulletLength = 17.272;
-        ACE_bulletMass = 14.904;
-		caliber = 2.6;
-		hit = 7;
-	};
 	//AT Ammo
 	//RPS6 / Dispo
 	class 332nd_RPS6_Ammo_AT: 3AS_R_MK41_AT
@@ -375,14 +311,6 @@ class CfgAmmo
 		CraterEffects="GrenadeCrater";
 		lightcolor[]={0,0,1};
 		model="Indecisive_Armoury_Ammos\Data\40mm_Grenade\IDA_40mm_Grenade.p3d";
-	};
-	class 332nd_HE_EPL_Grenade: 332nd_HE_LGrenade
-	{
-		coefGravity = 0.01;
-		deflecting = 0;
-		airFriction = -0.00018;
-		indirectHit= 40;
-		typicalspeed = 200;
 	};
 	class 332nd_Westar_Rifle_Grenade: 332nd_HE_LGrenade
 	{

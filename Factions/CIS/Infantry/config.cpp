@@ -1265,6 +1265,14 @@ class CfgVehicles {
 	};
 };
 
+class CfgWeapons
+{
+	class U_I_CombatUniform;
+	class JLTS_DroidB1: U_I_CombatUniform
+	{
+		JLTS_isDroid = 0;
+	};
+};
 
 class CfgGroups 
 {

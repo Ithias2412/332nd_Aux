@@ -1,10 +1,11 @@
 class CfgPatches 
 {
-    class 332nd_CIS_Faction_Vehicles_Tri_Droid
+    class 332nd_CIS_Faction_Vehicles_Octuptarra
 	{
 		units[] = 
         {
-            "332nd_CIS_Tri_Droid",
+            "332nd_CIS_Octuptarra",
+			"332nd_CIS_Octuptarra_Missiles",
         };
 		weapons[] = 
         {
@@ -17,13 +18,20 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class DBA_OctoStatic;
-	class 332nd_CIS_Tri_Droid: DBA_OctoStatic
+	class 3AS_Octuptarra_Combat_F;
+	class 3AS_Octuptarra_Torpedo_F;
+	class 332nd_CIS_Octuptarra: 3AS_Octuptarra_Combat_F
 	{
 		faction="332nd_CIS_Faction";
-		editorSubcategory = "EdSubcat_332nd_Medium_Vics";
-		displayName="Tri-Droid";
-		//armor = 60;
-		editorPreview = "";
+		editorSubcategory = "EdSubcat_332nd_Heavy_Vics";
+		displayName="Octuptarra";
+		armor = 100;
+	};
+	class 332nd_CIS_Octuptarra_Missiles: 3AS_Octuptarra_Torpedo_F
+	{
+		faction="332nd_CIS_Faction";
+		editorSubcategory = "EdSubcat_332nd_Heavy_Vics";
+		displayName="Octuptarra (Missiles)";
+		armor = 100;
 	};
 };

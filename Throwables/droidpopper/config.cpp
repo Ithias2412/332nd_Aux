@@ -69,7 +69,7 @@ class CfgMagazines
         displayNameShort = "Droid Popper";
         count = 1;
         ammo = "332nd_DroidPopper_ammo";
-		mass = 16;
+		mass = 8;
 		value = 1;
 		model = "\3AS\3AS_Equipment\model\3AS_thermaldet.p3d";
 		picture = "\3AS\3AS_Equipment\UI\Thermal_Detonator_UI_ca.paa";

@@ -125,7 +125,7 @@ class XtdGearModels
             class Engineer
             {
                 label = "Engineer (ENG)";
-				values[] = { "Scattergun", "C_24", };
+				values[] = { "Scattergun", "C_24", "EPL_2",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Scattergun
@@ -140,11 +140,17 @@ class XtdGearModels
                     description = "Experimental Flame Carbine";
                     //image = "xxx";
                 };
+				class EPL_2
+                {
+                    label = "EPL-2";
+                    description = "Electric Pulse Launcher";
+                    //image = "xxx";
+                };
             };
             class PlatoonAssets
             {
                 label = "Platoon Assets (Ask SL)";
-				values[] = { "DC_15S_Shield", "DC_15X", "DLT_15", "EPL_2", "Westar",};
+				values[] = { "DC_15S_Shield", "DC_15X", "DLT_15", "Westar",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class DC_15S_Shield
@@ -163,12 +169,6 @@ class XtdGearModels
                 {
                     label = "DLT-15";
                     description = "(AR) High Powered Clone MMG";
-                    //image = "xxx";
-                };
-				class EPL_2
-                {
-                    label = "EPL-2";
-                    description = "(GRN) Propelled Grenade Launcher";
                     //image = "xxx";
                 };
 				class Westar
@@ -320,7 +320,7 @@ class XtdGearInfos
 		class 332nd_EPL_2
 		{
             model = "332nd_Weapons_Main_Extended";
-            PlatoonAssets = "EPL_2";
+            Engineer = "EPL_2";
 		};
 		class 332nd_Westar
 		{

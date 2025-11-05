@@ -97,9 +97,9 @@ class RscDisplayMain: RscStandardDisplay
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
-			//x="SafeZoneXAbs + 0.425 * SafeZoneW";
-			x="SafeZoneXAbs + 0.032 * SafeZoneW";
-			y="0.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			x="SafeZoneXAbs + 0.427 * SafeZoneW";
+			//x="SafeZoneXAbs + 0.032 * SafeZoneW";
+			y="9.75 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
@@ -110,8 +110,8 @@ class RscDisplayMain: RscStandardDisplay
 			colorBackgroundActive[]={1,0,0,0,2};
 			text="$STR_A3_RscDisplayMain_ButtonEditor";
 			tooltip="We love our mission builders";
-			x="SafeZoneXAbs + 0.032 * SafeZoneW";
-			y="1.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			x="SafeZoneXAbs + 0.427 * SafeZoneW";
+			y="10.75 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			onbuttonclick="";
@@ -127,8 +127,8 @@ class RscDisplayMain: RscStandardDisplay
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
-			x="SafeZoneXAbs + 0.032 * SafeZoneW";
-			y="2.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			x="SafeZoneXAbs + 0.427 * SafeZoneW";
+			y="11.75 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
@@ -143,8 +143,8 @@ class RscDisplayMain: RscStandardDisplay
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
-			x="SafeZoneXAbs + 0.032 * SafeZoneW";
-			y="10 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			x="SafeZoneXAbs + 0.427 * SafeZoneW";
+			y="12.75 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
@@ -159,8 +159,8 @@ class RscDisplayMain: RscStandardDisplay
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
-			x="SafeZoneXAbs + 0.032 * SafeZoneW";
-			y="3.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
+			x="SafeZoneXAbs + 0.427 * SafeZoneW";
+			y="13.75 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))";
 			w="12 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h="((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};

@@ -115,6 +115,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Grim.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Walkie: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Walkie)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Walkie.paa"
+		};
+	};
 };
 class XtdGearModels
 {
@@ -392,6 +404,10 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Grim";
 		};
+		class 332nd_Helmet_P2_Walkie
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Walkie";
+		};
 	};
 };
-
