@@ -36,7 +36,7 @@ class cfgWeapons
 		JLTS_hasEMPProtection=1;
 		JLTS_friedItem="";
 		author="MrClock";
-		scope = 1;
+		scope = 2;
 		displayName="[332nd] EPL-2 (ENG)";
 		descriptionShort="$STR_JLTS_descs_EMPL";
 		picture="\MRC\JLTS\weapons\EPL2\data\ui\EPL2_ui_ca.paa";
@@ -60,15 +60,14 @@ class cfgWeapons
 		muzzles[]=
 		{
 			"this",
-			//"UGL"
+			"UGL"
 		};
-		/*
 		class UGL: JLTS_EPL2
 		{
-			displayName="Integrated GL";
+			displayName="Integrated AT";
 			magazines[]=
 			{
-				"332nd_Stun_EPL_Mag",
+				"332nd_EPL_AT_Mag",
 			};
 			modes[]=
 			{
@@ -82,15 +81,15 @@ class cfgWeapons
 				};
 				class BaseSoundModeType
 				{
-					closure1[] = {"A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL",1,1,10};
-					soundClosure[] = {"closure1",1};
+					closure1[] = {};
+					closure2[] = {};
+					soundClosure[] = {"closure1",0.5,"closure2",0.5};
+					weaponSoundEffect = "DefaultRifle";
 				};
 				class StandardSound: BaseSoundModeType
 				{
-					begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
-					begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
-					soundBegin[] = {"begin1",0.5,"begin2",0.5};
-					soundSetShot[] = {"Msbs65_01_Ugl_Shot_SoundSet","Msbs65_01_Ugl_Tail_SoundSet","Msbs65_01_Ugl_InteriorTail_SoundSet"};
+					begin1[] = {"\OPTRE_FC_Weapons\Railgun\Data\sounds\Railgun.wss",1,1,2000};
+					soundBegin[] = {"begin1",2};
 				};
 				reloadTime=1;
 				recoil="recoil_single_mx";
@@ -104,7 +103,6 @@ class cfgWeapons
 				maxRangeProbab=0.30000001;
 			};
 		};
-		*/
 		magazines[]=
 		{
 			"332nd_EPL_Mag"
@@ -139,19 +137,14 @@ class cfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
-					1,
-					1,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
+				begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1,1800};
+				begin2[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1.015,1800};
+				begin3[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,0.985,1800};
+				begin4[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1.01,1800};
+				begin5[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,0.995,1800};
+				beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1,1,400};
+				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+				soundBeginWater[] = {"beginwater1",1};
 			};
 			reloadTime=0.18;
 			recoil="recoil_single_primary_3outof10";
@@ -222,19 +215,14 @@ class cfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
-					1,
-					1,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
+				begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1,1800};
+				begin2[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1.015,1800};
+				begin3[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,0.985,1800};
+				begin4[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1.01,1800};
+				begin5[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,0.995,1800};
+				beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1,1,400};
+				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+				soundBeginWater[] = {"beginwater1",1};
 			};
 			//reloadTime=0.12;
 			reloadTime = 0.17142;

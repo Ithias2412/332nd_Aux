@@ -266,7 +266,27 @@ class CfgAmmo
 	{
 		hit = 35;
 	};
-
+	class 332nd_EPL_AT: 332nd_Base_Ammo_IDA
+	{
+		//caliber = 1;
+		hit = 600;
+		indirectHit = 20;
+		indirectHitRange = 2;
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
+		explosionEffects = "ATMissileExplosion";
+		submunitionAmmo = "3AS_ammo_Penetrator_MK41";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitialOffset[] = {0,0,-0.2};
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0;
+		typicalspeed = 1000;
+		EffectFly = "ArtilleryTrails";
+		explosive = 1;
+		soundHit[] = {"A3\Sounds_F\weapons\Rockets\explosion_missile_02",2.51189,1,2500};
+		soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",2.51189,1,1800};
+		soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",2.51189,1,1800};
+		soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",2.51189,1,1800};
+	};
 	//AT Ammo
 	//RPS6 / Dispo
 	class 332nd_RPS6_Ammo_AT: 3AS_R_MK41_AT

@@ -251,7 +251,15 @@ class CfgMagazines
 		JLTS_stunDuration = 15;
 		initSpeed = 50;
 	};
-
+	class 332nd_EPL_AT_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_EPL_AT";
+		count = 1;
+		displayname = "EPL-2 Anti-Tank Cell";
+		mass = 11.1;
+		scope = 2;
+		initSpeed = 1000;
+	};
 
 	//AT Mags
 	class 332nd_RPS6_Mag: JLTS_RPS6_mag

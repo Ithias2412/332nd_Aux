@@ -304,9 +304,15 @@ class XtdGearModels
             class Camo
             {
                 label = "Camo";
-				values[] = { "Woodland", "Winter", "Urban", "Desert",};
+				values[] = { "Default", "Woodland", "Winter", "Urban", "Desert",};
                 changeingame = 0;
                 alwaysSelectable = 1;
+				class Default
+				{
+                    label = "Default";
+                    //description = "White";
+                    //image = "xxx";
+				};
                 class Woodland
                 {
                     label = "Woodland";
@@ -344,16 +350,19 @@ class XtdGearInfos
         {
             model = "332nd_Backpack_Extended";
             Backpacks = "AMMO";
+			Camo = "Default";
         };
         class 332nd_Backpack_AT
         {
             model = "332nd_Backpack_Extended";
             Backpacks = "AT";
+			Camo = "Default";
         };
         class 332nd_Backpack_RTO
         {
             model = "332nd_Backpack_Extended";
             Backpacks = "RTO";
+			Camo = "Default";
         };
         class 332nd_Backpack_Medic
         {
@@ -364,6 +373,7 @@ class XtdGearInfos
         {
             model = "332nd_Backpack_Extended";
             Backpacks = "ENG";
+			Camo = "Default";
         };
         class 332nd_Back
         {
@@ -389,6 +399,7 @@ class XtdGearInfos
         {
             model = "332nd_Backpack_Extended";
             NCO = "Qual";
+			Camo = "Default";
         };
         class 332nd_JT12
         {
