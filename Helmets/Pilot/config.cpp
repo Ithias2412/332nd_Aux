@@ -32,7 +32,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_JLTS.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot.paa",
 		};
 		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
 		subItems[]=
@@ -72,7 +72,6 @@ class cfgWeapons
 			};
 		};
 	};
-
 };
 
 class XtdGearModels

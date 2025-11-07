@@ -118,7 +118,7 @@ class CfgMagazines
 	};
 	class 332nd_DC15L_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_Gas_Level_M2";
+		ammo = "332nd_Gas_Level_M2_S";
 		count = 200;
 		displayname = "DC-15L 200 Round Energy Cell";
 		mass = 40;
@@ -126,7 +126,7 @@ class CfgMagazines
 	};
 	class 332nd_DLT15_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_Gas_Level_M1";
+		ammo = "332nd_Gas_Level_M1_S";
 		count = 300;
 		displayname = "DLT-15 300 Round Energy Cell";
 		mass = 40;
@@ -150,7 +150,15 @@ class CfgMagazines
 		mass = 10;
 		scope = 2;
 	};
-	class 332nd_EPL_2_Mag: 332nd_Base_Mag
+	class 332nd_DC15LE_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_M2_S";
+		count = 100;
+		displayname = "DC-15LE 100 Round Energy Cell";
+		mass = 10;
+		scope = 2;
+	};
+	class 332nd_EPL_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_S1";
 		count = 30;
@@ -195,7 +203,7 @@ class CfgMagazines
 	}
 	class 332nd_Z6_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_Gas_Level_M3";
+		ammo = "332nd_Gas_Level_M3_S";
 		count = 400;
 		displayname = "Z-6 400 Round Energy Cell";
 		mass = 40;
@@ -246,12 +254,20 @@ class CfgMagazines
 		ammo = "JLTS_bullet_stun";
 		count = 5;
 		displayname = "5 Round Stun Cell";
-		mass = 8;
+		mass = 25;
 		scope = 2;
 		JLTS_stunDuration = 15;
 		initSpeed = 50;
 	};
-
+	class 332nd_EPL_AT_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_EPL_AT";
+		count = 1;
+		displayname = "EPL-2 Anti-Tank Cell";
+		mass = 8.3;
+		scope = 2;
+		initSpeed = 1000;
+	};
 
 	//AT Mags
 	class 332nd_RPS6_Mag: JLTS_RPS6_mag
@@ -306,15 +322,6 @@ class CfgMagazines
 		displayNameShort="";
 		mass=4;
 		scope=2;
-	};
-	class 332nd_HE_EPL_Mag: 332nd_HE_LGrenade_Mag
-	{
-		ammo="332nd_HE_EPL_Grenade";
-		count=3;
-		displayname="EPL-2 3 Round HE Charge";
-		mass=12.5;
-		//initSpeed = 80;
-		initSpeed = 200;
 	};
 	class 332nd_Westar_Rifle_Grenade_Mag: 332nd_HE_LGrenade_Mag
 	{
@@ -412,4 +419,3 @@ class CfgMagazines
 		mass=4;
 	};
 };
-

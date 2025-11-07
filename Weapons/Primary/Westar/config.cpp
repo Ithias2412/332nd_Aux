@@ -22,6 +22,22 @@ class MuzzleSlot;
 class PointerSlot;
 class UnderBarrelSlot;
 class WeaponSlotsInfo;
+
+class CfgSoundSets
+{
+	class Launcher_Westar_Shot_SoundSet
+	{
+		distanceFilter = "explosionDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		sound3DProcessingType = "Launcher3DProcessingType";
+		soundShaders[] = {"Launcher_MRAWS_closeShot1_SoundShader","Launcher_MRAWS_closeShot1_SoundShader","Launcher_MRAWS_closeShot2_SoundShader","Launcher_MRAWS_closeShot2_SoundShader","Launcher_Vorona_closeShot1_SoundShader","Launcher_Adds_Kick_SoundShader","Launcher_Adds_Metal_SoundShader","Launcher_MRAWS_distShot_SoundShader"};
+		spatial = 1;
+		volumeCurve = "LinearCurve";
+		volumeFactor = 2;
+	};
+};
+
 class CfgWeapons 
 {
 	class 3AS_WestarM5_Base_F;
@@ -80,7 +96,11 @@ class CfgWeapons
 				{
 					begin1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32",1.99526,1,1500};
 					soundBegin[] = {"begin1",1};
-					soundSetShot[] = {"Launcher_MRAWS_Shot_SoundSet","Launcher_MRAWS_Tail_SoundSet"};
+					soundSetShot[] = 
+					{
+						"Launcher_Westar_Shot_SoundSet",
+						"Launcher_MRAWS_Tail_SoundSet"
+					};
 				};
 				class SilencedSound
 				{};
@@ -157,56 +177,4 @@ class CfgWeapons
 	};
 	class ItemCore;
 	class InventoryOpticsItem_Base_F;
-	class 3AS_Optic_Scope_WestarM5;
-	class 332nd_Optic_Scope_WestarM5: 3AS_Optic_Scope_WestarM5
-	{
-		scope=2;
-		displayName="[332nd] Long Optic";
-		picture="\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
-		model="\3AS\3AS_Weapons\WestarM5\3AS_Westar_Scope_F.p3d";
-		weaponInfoType="RscWeaponZeroing";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass=7;
-			modelOptics="\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
-			class OpticsModes
-			{
-				class 3AS_Scope_Optics
-				{
-					opticsPPEffects[]={};
-					opticsID=1
-					discreteDistanceInitIndex=1;
-					discreteInitIndex = 0;
-					distanceZoomMax = 300;
-					distanceZoomMin = 300;
-					memoryPointCamera = "opticView";
-					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
-					opticsDisablePeripherialVision=1;
-					opticsFlare=1;
-					opticsZoomInit = 0.125;
-					opticsZoomMax = 0.125;
-					opticsZoomMin = 0.125;
-					useModelOptics=1;
-					visionMode[]=
-					{
-						"Normal",
-						"NVG",
-					};
-				};
-				class 3AS_OverSights_Optic: 3AS_Scope_Optics
-				{
-					opticsID=2;
-					useModelOptics=0;
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1.1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="eye";
-					visionMode[]={};
-					discretefov[]={};
-				};
-			};
-		};
-	};
 };

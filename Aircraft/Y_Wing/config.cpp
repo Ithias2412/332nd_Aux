@@ -6,6 +6,7 @@ class CfgPatches
 		units[] = 
         {
 			"332nd_Y_Wing",
+			"332nd_Y_Wing_New",
         };
 		weapons[] = 
         {
@@ -50,12 +51,30 @@ class CfgVehicles
 	{
 		displayname = "[332nd] Y-Wing";
 		faction = "332nd_Faction";
+		maxSpeed = 550;
 		hiddenselectionstextures[] = 
 		{
 			"332nd_Aux\Aircraft\Y_Wing\Tex\332nd_Y_Wing_Chasis.paa",
 			"3as\3AS_btlb\data\detail_co.paa",
 			"3as\3AS_btlb\data\interior_co.paa",
 			"#(argb,8,8,3)color(0.75,0.75,0.75,1,ca)"
+		};
+		magazines[] = 
+		{
+			"3AS_BTLB_450Rnd_Heavy_Shells",
+			"3AS_BTLB_450Rnd_Heavy_Shells",
+			//"Laserbatteries",
+			"300Rnd_CMFlare_Chaff_Magazine",
+			//"120Rnd_CMFlare_Chaff_Magazine",
+			//"120Rnd_CMFlare_Chaff_Magazine",
+			//"120Rnd_CMFlare_Chaff_Magazine",
+			//"120Rnd_CMFlare_Chaff_Magazine"
+		};
+		weapons[] = 
+		{
+			"3AS_BTLB_Heavy_Cannon",
+			"CMFlareLauncher",
+			//"Laserdesignator_pilotCamera"
 		};
 		class Components: Components
 		{
@@ -232,14 +251,13 @@ class CfgVehicles
 				{
 					class Pylon1
 					{
-						attachment="332nd_Anvil_I_Mag";
+						attachment="332nd_Forge_III_Mag";
 						priority=10;
 						hardpoints[]=
 						{
-							"332nd_Anvil_I",
-							"332nd_Anvil_III",
-							"332nd_Forge_I",
+							//"332nd_Forge_I",
 							"332nd_Forge_III",
+							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
 						turret[]={0};
@@ -252,14 +270,13 @@ class CfgVehicles
 					};
 					class Pylon3: Pylon1
 					{
-						attachment="332nd_Anvil_III_Mag";
+						attachment="332nd_Forge_III_Mag";
 						priority = 9;
 						hardpoints[]=
 						{
-							"332nd_Anvil_I",
-							"332nd_Anvil_III",
-							"332nd_Forge_I",
+							//"332nd_Forge_I",
 							"332nd_Forge_III",
+							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
 						turret[]={0};
@@ -276,10 +293,9 @@ class CfgVehicles
 						priority = 7;
 						hardpoints[]=
 						{
-							"332nd_Anvil_I",
-							"332nd_Anvil_III",
 							"332nd_Forge_I",
 							"332nd_Forge_III",
+							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
 						turret[]={0};
@@ -296,10 +312,9 @@ class CfgVehicles
 						priority = 9;
 						hardpoints[]=
 						{
-							"332nd_Anvil_I",
-							"332nd_Anvil_III",
 							"332nd_Forge_I",
 							"332nd_Forge_III",
+							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
 						turret[]={0};
@@ -310,6 +325,19 @@ class CfgVehicles
 						mirroredMissilePos = 7;
 						UIposition[] = {0.2,0.4};
 					};
+					/*
+					class Pylon9: Pylon1
+					{
+						attachment="332nd_Forge_X_N_Mag";
+						priority = 6;
+						hardpoints[]=
+						{
+							"332nd_Forge_X_N",
+						};
+						turret[]={0};
+						UIposition[] = {0.325,0.5};
+					};
+					*/
 				};
 			};
 		};

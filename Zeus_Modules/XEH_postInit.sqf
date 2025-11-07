@@ -1948,6 +1948,7 @@ fnc_SB_DroidPopper = {
     }];
 };
 
+
 WBK_ResetArmourHitPart = {
 				_this removeAllEventHandlers "HitPart";
 				_this addEventHandler [

@@ -36,11 +36,12 @@ class cfgWeapons
 		JLTS_hasEMPProtection=1;
 		JLTS_friedItem="";
 		author="MrClock";
-		scope=1; // Hidden in Arsenal
-		displayName="[332nd] EPL-2 (GRN)";
+		scope = 2;
+		displayName="[332nd] EPL-2 (AT)";
 		descriptionShort="$STR_JLTS_descs_EMPL";
 		picture="\MRC\JLTS\weapons\EPL2\data\ui\EPL2_ui_ca.paa";
 		model="\MRC\JLTS\weapons\EPL2\EPL2.p3d";
+		recoil="3AS_recoil_DC15C";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -63,10 +64,10 @@ class cfgWeapons
 		};
 		class UGL: JLTS_EPL2
 		{
-			displayName="Integrated GL";
+			displayName="Integrated AT";
 			magazines[]=
 			{
-				"332nd_HE_EPL_Mag",
+				"332nd_EPL_AT_Mag",
 			};
 			modes[]=
 			{
@@ -80,15 +81,15 @@ class cfgWeapons
 				};
 				class BaseSoundModeType
 				{
-					closure1[] = {"A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL",1,1,10};
-					soundClosure[] = {"closure1",1};
+					closure1[] = {};
+					closure2[] = {};
+					soundClosure[] = {"closure1",0.5,"closure2",0.5};
+					weaponSoundEffect = "DefaultRifle";
 				};
 				class StandardSound: BaseSoundModeType
 				{
-					begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
-					begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
-					soundBegin[] = {"begin1",0.5,"begin2",0.5};
-					soundSetShot[] = {"Msbs65_01_Ugl_Shot_SoundSet","Msbs65_01_Ugl_Tail_SoundSet","Msbs65_01_Ugl_InteriorTail_SoundSet"};
+					begin1[] = {"\OPTRE_FC_Weapons\Railgun\Data\sounds\Railgun.wss",1,1,2000};
+					soundBegin[] = {"begin1",2};
 				};
 				reloadTime=1;
 				recoil="recoil_single_mx";
@@ -104,7 +105,7 @@ class cfgWeapons
 		};
 		magazines[]=
 		{
-			"332nd_EPL_2_Mag"
+			"332nd_EPL_Mag"
 		};
 		magazineWell[]={};
 		fireLightDiffuse[]={0,0,1};
@@ -117,7 +118,8 @@ class cfgWeapons
 		};
 		modes[]=
 		{
-			"Single"
+			"Single",
+			"FullAuto",
 		};
 		memoryPointCamera="eye";
 		class Single: Mode_SemiAuto
@@ -155,7 +157,7 @@ class cfgWeapons
 			maxRange=450;
 			maxRangeProbab=0.30000001;
 		};
-		class FullAuto: Mode_FullAuto
+		class Burst: Single
 		{
 			sounds[]=
 			{
@@ -173,7 +175,7 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"MRC\JLTS\weapons\EPL2\sounds\EPL2_fire",
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
 					1,
 					1800
@@ -184,10 +186,49 @@ class cfgWeapons
 					1
 				};
 			};
-			reloadTime=0.096000001;
-			dispersion=0.00086999999;
-			recoil="recoil_auto_mx";
-			recoilProne="recoil_auto_prone_mx";
+			//reloadTime=0.12;
+			reloadTime = 0.17142;
+			burst = 3;
+			textureType = "burst";
+			recoil="recoil_auto_primary_3outof10";
+			recoilProne="recoil_auto_primary_prone_3outof10";
+			dispersion=0.00073000003;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=250;
+			midRangeProbab=0.69999999;
+			maxRange=450;
+			maxRangeProbab=0.30000001;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1,1800};
+				begin2[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1.015,1800};
+				begin3[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,0.985,1800};
+				begin4[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,1.01,1800};
+				begin5[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1.25,0.995,1800};
+				beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\FA11.ogg",1,1,400};
+				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+				soundBeginWater[] = {"beginwater1",1};
+			};
+			//reloadTime=0.12;
+			reloadTime = 0.17142;
+			recoil="recoil_auto_primary_3outof10";
+			recoilProne="recoil_auto_primary_prone_3outof10";
+			dispersion=0.00073000003;
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;
@@ -214,7 +255,7 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"MRC\JLTS\weapons\EPL2\sounds\EPL2_fire",
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
 					1,
 					1800
@@ -225,6 +266,7 @@ class cfgWeapons
 					1
 				};
 			};
+			dispersion=0.00073000003;
 			showToPlayer=0;
 			burst=3;
 			aiBurstTerminable=1;
@@ -255,7 +297,7 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"MRC\JLTS\weapons\EPL2\sounds\EPL2_fire",
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
 					1,
 					1800
@@ -266,13 +308,13 @@ class cfgWeapons
 					1
 				};
 			};
+			dispersion=0.00073000003;
 			requiredOpticType=1;
-			showToPlayer=0;
 			minRange=2;
 			minRangeProbab=0.2;
 			midRange=450;
 			midRangeProbab=0.69999999;
-			maxRange=600;
+			maxRange=650;
 			maxRangeProbab=0.2;
 			aiRateOfFire=6;
 			aiRateOfFireDistance=600;
@@ -295,7 +337,7 @@ class cfgWeapons
 				weaponSoundEffect="";
 				begin1[]=
 				{
-					"MRC\JLTS\weapons\EPL2\sounds\EPL2_fire",
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
 					1,
 					1800
@@ -306,16 +348,16 @@ class cfgWeapons
 					1
 				};
 			};
+			dispersion=0.00073000003;
 			requiredOpticType=2;
-			showToPlayer=0;
 			minRange=100;
-			minRangeProbab=0.1;
-			midRange=500;
-			midRangeProbab=0.60000002;
-			maxRange=700;
+			minRangeProbab=0.2;
+			midRange=550;
+			midRangeProbab=0.69999999;
+			maxRange=800;
 			maxRangeProbab=0.050000001;
 			aiRateOfFire=8;
-			aiRateOfFireDistance=700;
+			aiRateOfFireDistance=800;
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{

@@ -32,13 +32,15 @@ class CfgMagazines
 	class ace_maverick_L_magazine_x1;
 	class PylonRack_Bomb_SDB_x4; // Forge I
 	class FSNB_B61_4_Timed_M; // Forge X-N
+	class PylonRack_12Rnd_missiles;
+	class 4Rnd_BombCluster_01_F;
 
 	class 332nd_Hammer_I_Mag: PylonMissile_1Rnd_AAA_missiles
 	{
 		ammo = "332nd_Hammer_I_Ammo";
 		author = "Ithias";
 		count = 3;
-		descriptionShort = "Short-range, infrared-guided, air-to-air missile with high-explosive warhead";
+		descriptionShort = "Short-range, infrared-guided, air-to-air missile with explosive warhead";
 		displayName = "[332nd] Hammer I";
 		displayNameShort = "IR AA";
 		hardpoints[] = 
@@ -70,7 +72,7 @@ class CfgMagazines
 		ammo = "332nd_Hammer_II_Ammo";
 		author = "Ithias";
 		count = 2;
-		descriptionShort = "Medium-range, radar-guided, air-to-air missile with high-explosive warhead";
+		descriptionShort = "Medium-range, radar-guided, air-to-air missile with explosive warhead";
 		displayName = "[332nd] Hammer II";
 		displayNameShort = "Radar AA";
 		hardpoints[] = 
@@ -86,13 +88,36 @@ class CfgMagazines
 		pylonWeapon = "332nd_Hammer_II";
 		weight = 0;
 	};
-
+	class 332nd_Hammer_II_L_Mag: 332nd_Hammer_II_Mag
+	{
+		ammo = "332nd_Hammer_II_L_Ammo";
+		descriptionShort = "Medium-range, radar-guided, air-to-air missile with high-explosive warhead";
+		displayName = "[332nd] Hammer II-L";
+		hardpoints[] = 
+		{
+			"332nd_Hammer_II_L",
+		};
+		pylonWeapon = "332nd_Hammer_II_L";
+	};
+	class 332nd_Anvil_X_S_Mag: PylonRack_12Rnd_missiles
+	{
+		ammo = "332nd_Anvil_X_S_Ammo";
+		count = 12;
+		descriptionShort = "Unguided rockets with a smaller-explosive warhead";
+		displayName = "[332nd] Anvil X-S";
+		displayNameShort = "HE";
+		hardpoints[] = 
+		{
+			"332nd_Anvil_X_S",
+		};
+		pylonWeapon = "332nd_Anvil_X_S";
+	};
 	class 332nd_Anvil_I_Mag: PylonRack_Missile_AGM_02_x1
 	{
 		ammo = "332nd_Anvil_I_Ammo";
 		author = "Ithias";
 		count = 2;
-		descriptionShort = "Short-range, infrared-guided, air-to-surface missile with high-explosive anti-tank warhead";
+		descriptionShort = "Short-range, infrared-guided, air-to-surface missile with explosive anti-tank warhead";
 		displayName = "[332nd] Anvil I";
 		displayNameShort = "IR AG";
 		hardpoints[] = 
@@ -102,6 +127,23 @@ class CfgMagazines
 		mass = 90;
 		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_Rail_x1_F";
 		pylonWeapon = "332nd_Anvil_I";
+		weight = 0;
+	};
+	class 332nd_Anvil_IV_Mag: PylonRack_Missile_AGM_02_x1
+	{
+		ammo = "332nd_Anvil_IV_Ammo";
+		author = "Ithias";
+		count = 2;
+		descriptionShort = "Short-range, wire-guided, air-to-surface missile with explosive anti-tank warhead";
+		displayName = "[332nd] Anvil IV";
+		displayNameShort = "Wire AG";
+		hardpoints[] = 
+		{
+			"332nd_Anvil_IV",
+		};
+		mass = 90;
+		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_Rail_x1_F";
+		pylonWeapon = "332nd_Anvil_IV";
 		weight = 0;
 	};
 	class 332nd_CIS_ATG_Missile_Mag: 332nd_Anvil_I_Mag
@@ -120,7 +162,7 @@ class CfgMagazines
 		ammo = "332nd_Anvil_III_Ammo";
 		author = "Ithias";
 		count = 1;
-		descriptionShort = "Short-range, laser Guided, air-to-surface missile with high-explosive anti-tank warhead";
+		descriptionShort = "Short-range, laser Guided, air-to-surface missile with explosive anti-tank warhead";
 		displayName = "[332nd] Anvil III";
 		displayNameShort = "LGM";
 		hardpoints[] = 
@@ -130,10 +172,9 @@ class CfgMagazines
 		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_x1_F";
 		pylonWeapon = "332nd_Anvil_III";
 	};
-	
 	class 332nd_Forge_III_Mag: ace_missile_gbu_gbu12
 	{
-		ammo = "ace_missile_gbu_12";
+		ammo = "332nd_Forge_III_Ammo";
 		author = "Ithias";
 		count = 2;
 		descriptionShort = "500lb, high-explosive, laser-guided bomb";
@@ -150,10 +191,10 @@ class CfgMagazines
 	};
 	class 332nd_Forge_I_Mag: PylonRack_Bomb_SDB_x4
 	{
-		ammo = "ammo_Bomb_SDB";
+		ammo = "332nd_Forge_I_Ammo";
 		author = "Ithias";
 		count = 2;
-		descriptionShort = "250lb, high-explosive, infrared-guided bomb";
+		descriptionShort = "250lb, explosive, infrared-guided bomb";
 		displayName = "[332nd] Forge I";
 		displayNameShort = "IR Bomb";
 		hardpoints[] = 
@@ -180,8 +221,22 @@ class CfgMagazines
 		pylonWeapon = "332nd_Forge_X_N";
 		weight = 0;
 	};
-
-
+	class 332nd_Forge_X_C_Mag: 4Rnd_BombCluster_01_F
+	{
+		ammo = "332nd_Forge_X_C_Ammo";
+		author = "Ithias";
+		count = 2;
+		descriptionShort = "750lb, un-guided cluster bomb";
+		displayName = "[332nd] Forge X-C";
+		displayNameShort = "LGB-C";
+		hardpoints[] = 
+		{
+			"332nd_Forge_X_C",
+		};
+		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Bomb_GBU12_04_x1_F";
+		pylonWeapon = "332nd_Forge_X_C";
+		weight = 0;
+	};
 };
 
 class CfgWeapons
@@ -193,6 +248,9 @@ class CfgWeapons
 	class ace_maverick_L_Launcher;
 	class weapon_SDBLauncher; // Forge I
 	class FSNB_B61_4_Timed_W; // Forge X-N
+	class missiles_DAR;
+	class Mk82BombLauncher;
+
 	
 	class 332nd_Hammer_I: missiles_ASRAAM
 	{
@@ -218,6 +276,23 @@ class CfgWeapons
 			"332nd_Hammer_II_Mag",
 		};
 	};
+	class 332nd_Hammer_II_L: 332nd_Hammer_II
+	{
+		displayName = "[332nd] Hammer II-L";
+		magazines[] = 
+		{
+			"332nd_Hammer_II_L_Mag",
+		};
+	};
+	class 332nd_Anvil_X_S: missiles_DAR
+	{
+		displayName = "[332nd] Anvil X-S";
+		showAimCursorInternal = 0;
+		magazines[] = 
+		{
+			"332nd_Anvil_X_S_Mag",
+		};
+	};
 	class 332nd_Anvil_I: weapon_AGM_65Launcher
 	{
 		displayName = "[332nd] Anvil I";
@@ -225,6 +300,15 @@ class CfgWeapons
 		{
 			"332nd_Anvil_I_Mag",
 		};
+	};
+	class 332nd_Anvil_IV: 332nd_Anvil_I
+	{
+		displayName = "[332nd] Anvil IV";
+		magazines[] = 
+		{
+			"332nd_Anvil_IV_Mag",
+		};
+		canLock = 1;
 	};
 	class 332nd_CIS_ATG_Missile: 332nd_Anvil_I
 	{
@@ -273,7 +357,14 @@ class CfgWeapons
 			//"FSNB_YIELD_50000",
 		};
 	};
-
+	class 332nd_Forge_X_C: Mk82BombLauncher
+	{
+		displayName = "[332nd] Forge X-C";
+		magazines[] = 
+		{
+			"332nd_Forge_X_C_Mag",
+		};
+	};
 };
 
 class CfgAmmo
@@ -282,33 +373,86 @@ class CfgAmmo
 	class M_Zephyr;
 	class Missile_AGM_02_F;
 	class ace_maverick_L;
+	class ammo_Penetrator_AGM_02;
+	class M_AT;
+	class BombCluster_01_Ammo_F;
+	class ammo_Bomb_SDB;
+	class ace_missile_gbu_12;
 	
 	class 332nd_Hammer_I_Ammo: M_Air_AA
 	{
 		effectsMissile = "332nd_Effect_Hammer";
 		proximityExplosionDistance = 7;
+		fuseDistance = 5;
 	};
 	class 332nd_CIS_A2A_Missile_Ammo: 332nd_Hammer_I_Ammo
 	{
 		effectsMissile = "332nd_Effect_CIS_A2A";
+		fuseDistance = 5;
 	};
 	class 332nd_Hammer_II_Ammo: M_Zephyr
 	{
 		effectsMissile = "332nd_Effect_Hammer";
 		proximityExplosionDistance = 12;
+		fuseDistance = 5;
+	};
+	class 332nd_Hammer_II_L_Ammo: M_Zephyr
+	{
+		effectsMissile = "332nd_Effect_Hammer";
+		hit = 750;
+		indirectHit = 750;
+	};
+	class 332nd_Anvil_X_S_Ammo: M_AT
+	{
+		effectsMissile = "332nd_Effect_Hydra";
+		fuseDistance = 5;
 	};
 	class 332nd_Anvil_I_Ammo: Missile_AGM_02_F
 	{
 		effectsMissile = "332nd_Effect_Anvil";
+		submunitionAmmo = "332nd_Anvil_I_Ammo_Penetrator";
+		hit = 400;
+		fuseDistance = 5;
+	};
+	class 332nd_Anvil_IV_Ammo: 332nd_Anvil_I_Ammo
+	{
+		manualControl = 1;
+		maxControlRange = 500;
+		weaponLockSystem = "0";
+	};
+	class 332nd_Anvil_I_Ammo_Penetrator: ammo_Penetrator_AGM_02
+	{
+		hit = 400;
 	};
 	class 332nd_CIS_ATG_Missile_Ammo: 332nd_Anvil_I_Ammo
 	{
+		hit = 1100;
 		effectsMissile = "332nd_Effect_CIS_ATG";
+		submunitionAmmo = "ammo_Penetrator_AGM_02";
+		fuseDistance = 5;
 	};
-
 	class 332nd_Anvil_III_Ammo: ace_maverick_L
 	{
 		effectsMissile = "332nd_Effect_Anvil";
+		fuseDistance = 5;
+	};
+	class 332nd_Forge_X_C_Ammo: BombCluster_01_Ammo_F
+	{
+		submunitionAmmo[] = 
+		{
+			"Mo_cluster_Bomb_01_F",
+		/*	0.93,
+			"BombCluster_01_UXO_deploy",
+			0.07	*/
+		};
+	};
+	class 332nd_Forge_I_Ammo: ammo_Bomb_SDB
+	{
+		
+	};
+	class 332nd_Forge_III_Ammo: ace_missile_gbu_12
+	{
+		
 	};
 };
 
@@ -358,7 +502,6 @@ class 332nd_Effect_CIS_A2A
 	};
 };
 
-
 class 332nd_Effect_Anvil
 {
 	class 332nd_Light_Anvil
@@ -377,6 +520,29 @@ class 332nd_Effect_Anvil
 		lifeTime = 1; 
 		position[] = {0, 0, 0}; 
 		qualityLevel = 2;
+		simulation = "particles";
+		type = "332nd_Missile_Green_Smoke";
+	};
+};
+
+class 332nd_Effect_Hydra
+{
+	class 332nd_Light_Hydra
+	{
+		intensity = 0.01;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0,0,0};
+		simulation = "light";
+		type = "332nd_Missile_Green_Light";
+	};
+	class 332nd_Smoke_Hydra
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1; 
+		position[] = {0, 0, 0}; 
+		qualityLevel = 1;
 		simulation = "particles";
 		type = "332nd_Missile_Green_Smoke";
 	};

@@ -1265,7 +1265,6 @@ class CfgVehicles {
 	};
 };
 
-
 class CfgGroups 
 {
     class East 

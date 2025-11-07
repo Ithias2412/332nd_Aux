@@ -23,7 +23,7 @@ class CfgVehicles
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Light_Vics";
 		displayName="Crab Droid";
-		armor = 125;
+		armor = 50;
 		editorPreview = "";
 	};
 };
