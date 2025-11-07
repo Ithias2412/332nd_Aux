@@ -273,7 +273,10 @@ class CfgAmmo
 		indirectHit = 20;
 		indirectHitRange = 2;
 		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
-		explosionEffects = "ATMissileExplosion";
+		CraterEffects = "HEShellCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		multiSoundHit[] = {"soundHit1",0.13,"soundHit2",0.13,"soundHit3",0.13,"soundHit4",0.13,"soundHit5",0.12,"soundHit6",0.12,"soundHit7",0.12,"soundHit8",0.12};
+		ExplosionEffects = "HEShellExplosion";
 		submunitionAmmo = "3AS_ammo_Penetrator_MK41";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitialOffset[] = {0,0,-0.2};
@@ -282,10 +285,14 @@ class CfgAmmo
 		typicalspeed = 1000;
 		EffectFly = "ArtilleryTrails";
 		explosive = 1;
-		soundHit[] = {"A3\Sounds_F\weapons\Rockets\explosion_missile_02",2.51189,1,2500};
-		soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",2.51189,1,1800};
-		soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",2.51189,1,1800};
-		soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",2.51189,1,1800};
+		soundHit1[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_1",3.16228,1,2000};
+		soundHit2[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_2",3.16228,1,2000};
+		soundHit3[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_3",3.16228,1,2000};
+		soundHit4[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_4",3.16228,1,2000};
+		soundHit5[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_5",3.16228,1,2000};
+		soundHit6[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_6",3.16228,1,2000};
+		soundHit7[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_7",3.16228,1,2000};
+		soundHit8[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_8",3.16228,1,2000};
 	};
 	//AT Ammo
 	//RPS6 / Dispo

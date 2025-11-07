@@ -683,6 +683,58 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_Mode_A_Zoom_2_Raised_Forward_2: optic_Yorris
+	{
+		displayName="[332nd] Mode A (2x)";
+		model="332nd_Aux\Misc\Optics\332nd_Mode_A_Raised_Forward_2.p3d";
+		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass=1;
+			optics=1;
+			class OpticsModes
+			{
+				class Nozoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					distanceZoomMax=600;
+					distanceZoomMin=100;
+					memoryPointCamera="eye";
+					modelOptics="\A3\Weapons_F\empty";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode[]={};
+				};
+				class Yeszoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
+		};
+	};
 	class 332nd_Mode_B_Zoom_2: optic_Yorris
 	{
 		displayName="[332nd] Mode B (2x)";
@@ -843,6 +895,58 @@ class cfgWeapons
 	{
 		displayName="[332nd] Mode B (2x)";
 		model="332nd_Aux\Misc\Optics\332nd_Mode_B_Raised_2.p3d";
+		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass=1;
+			optics=1;
+			class OpticsModes
+			{
+				class Nozoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					distanceZoomMax=600;
+					distanceZoomMin=100;
+					memoryPointCamera="eye";
+					modelOptics="\A3\Weapons_F\empty";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode[]={};
+				};
+				class Yeszoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
+		};
+	};
+	class 332nd_Mode_B_Zoom_2_Raised_Forward_2: optic_Yorris
+	{
+		displayName="[332nd] Mode B (2x)";
+		model="332nd_Aux\Misc\Optics\332nd_Mode_B_Raised_Forward_2.p3d";
 		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
 		class ItemInfo: ItemInfo
 		{
@@ -1099,6 +1203,58 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_Mode_C_Zoom_2_Raised_Forward_2: optic_Yorris
+	{
+		displayName="[332nd] Mode C (2x)";
+		model="332nd_Aux\Misc\Optics\332nd_Mode_C_Raised_Forward_2.p3d";
+		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass=1;
+			optics=1;
+			class OpticsModes
+			{
+				class Nozoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					distanceZoomMax=600;
+					distanceZoomMin=100;
+					memoryPointCamera="eye";
+					modelOptics="\A3\Weapons_F\empty";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode[]={};
+				};
+				class Yeszoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
+		};
+	};
 	class 332nd_Mode_D_Zoom_2: optic_Yorris
 	{
 		displayName="[332nd] Mode D (2x)";
@@ -1259,6 +1415,58 @@ class cfgWeapons
 	{
 		displayName="[332nd] Mode D (2x)";
 		model="332nd_Aux\Misc\Optics\332nd_Mode_D_Raised_2.p3d";
+		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass=1;
+			optics=1;
+			class OpticsModes
+			{
+				class Nozoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					distanceZoomMax=600;
+					distanceZoomMin=100;
+					memoryPointCamera="eye";
+					modelOptics="\A3\Weapons_F\empty";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode[]={};
+				};
+				class Yeszoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
+		};
+	};
+	class 332nd_Mode_D_Zoom_2_Raised_Forward_2: optic_Yorris
+	{
+		displayName="[332nd] Mode D (2x)";
+		model="332nd_Aux\Misc\Optics\332nd_Mode_D_Raised_Forward_2.p3d";
 		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
 		class ItemInfo: ItemInfo
 		{
@@ -1515,6 +1723,58 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_Mode_Seelig_Point_Zoom_2_Raised_Forward_2: optic_Yorris
+	{
+		displayName="[332nd] Seelig Point (2x)";
+		model="332nd_Aux\Misc\Optics\Seelig_Point_Raised_Forward_2.p3d";
+		picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		class ItemInfo: ItemInfo
+		{
+			mass=1;
+			optics=1;
+			class OpticsModes
+			{
+				class Nozoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					distanceZoomMax=600;
+					distanceZoomMin=100;
+					memoryPointCamera="eye";
+					modelOptics="\A3\Weapons_F\empty";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode[]={};
+				};
+				class Yeszoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
+		};
+	};
 //3AS
 
 
@@ -1622,6 +1882,97 @@ class cfgWeapons
 					opticsFlare=1;
 					opticsDisablePeripherialVision=1;
 					cameraDir="";
+				};
+			};
+		};
+	};
+	
+	class 3AS_optic_DC15LE_F;
+	class 332nd_3AS_DC15LE: 3AS_optic_DC15LE_F
+	{
+		scope=2;
+		displayName="[332nd] DC-15LE Optic";
+		picture="\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		weaponInfoType="RscWeaponZeroing";
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			mass = 30;
+			modelOptics = "\3AS\3AS_Weapons\Republic\ACC\3AS_reticle_DC15X_F";
+			class OpticsModes
+			{
+				class 3AS_Scope_Optics
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
+		};
+	};
+	class 3AS_Optic_Scope_WestarM5;
+	class 332nd_Optic_Scope_WestarM5: 3AS_Optic_Scope_WestarM5
+	{
+		scope=2;
+		displayName="[332nd] Long Optic";
+		picture="\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		model="\3AS\3AS_Weapons\WestarM5\3AS_Westar_Scope_F.p3d";
+		weaponInfoType="RscWeaponZeroing";
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			mass=7;
+			modelOptics="\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+			class OpticsModes
+			{
+				class 3AS_Scope_Optics
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+				class 3AS_OverSights_Optic: 3AS_Scope_Optics
+				{
+					opticsID=2;
+					useModelOptics=0;
+					opticsFlare=0;
+					opticsDisablePeripherialVision=0;
+					opticsZoomMin=0.375;
+					opticsZoomMax=1.1;
+					opticsZoomInit=0.75;
+					memoryPointCamera="eye";
+					visionMode[]={};
+					discretefov[]={};
 				};
 			};
 		};

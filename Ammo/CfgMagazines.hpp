@@ -150,6 +150,14 @@ class CfgMagazines
 		mass = 10;
 		scope = 2;
 	};
+	class 332nd_DC15LE_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_M2_S";
+		count = 100;
+		displayname = "DC-15LE 100 Round Energy Cell";
+		mass = 10;
+		scope = 2;
+	};
 	class 332nd_EPL_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_S1";
@@ -256,7 +264,7 @@ class CfgMagazines
 		ammo = "332nd_EPL_AT";
 		count = 1;
 		displayname = "EPL-2 Anti-Tank Cell";
-		mass = 11.1;
+		mass = 8.3;
 		scope = 2;
 		initSpeed = 1000;
 	};

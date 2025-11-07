@@ -21,7 +21,7 @@ class XtdGearModels
         {
             label = "Weapons";
             author = "Ithias";
-			options[] = { "Rifleman", "AutoRifleman", "Marksman", "Grenadier", "Engineer", "PlatoonAssets", "Material", "ARF", };
+			options[] = { "Rifleman", "AutoRifleman", "Marksman", "AT", "Grenadier", "Engineer", "PlatoonAssets", "Material", "ARF", };
             class Rifleman
             {
                 label = "Rifleman (RFL)";
@@ -56,7 +56,7 @@ class XtdGearModels
             class AutoRifleman
             {
                 label = "Auto Rifleman (AR)";
-				values[] = { "Z_6", "DC_15L", };
+				values[] = { "Z_6", "DC_15L", "DC_15LE", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Z_6
@@ -69,6 +69,12 @@ class XtdGearModels
                 {
                     label = "DC-15L";
                     description = "Clone MMG";
+                    //image = "xxx";
+                };
+                class DC_15LE
+                {
+                    label = "DC-15LE";
+                    description = "Clone SAW";
                     //image = "xxx";
                 };
             };
@@ -97,6 +103,19 @@ class XtdGearModels
                     //image = "xxx";
                 };
             };
+			class AT
+			{
+                label = "Anti-Tank (AT)";
+				values[] = { "EPL_2", };
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class EPL_2
+                {
+                    label = "EPL-2";
+                    description = "Integrated Anti-Tank Blaster";
+                    //image = "xxx";
+                };
+			};
             class Grenadier
             {
                 label = "Grenadier (GRN)";
@@ -125,7 +144,7 @@ class XtdGearModels
             class Engineer
             {
                 label = "Engineer (ENG)";
-				values[] = { "Scattergun", "C_24", "EPL_2",};
+				values[] = { "Scattergun", "C_24",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Scattergun
@@ -138,12 +157,6 @@ class XtdGearModels
                 {
                     label = "C-24";
                     description = "Experimental Flame Carbine";
-                    //image = "xxx";
-                };
-				class EPL_2
-                {
-                    label = "EPL-2";
-                    description = "Electric Pulse Launcher";
                     //image = "xxx";
                 };
             };
@@ -320,7 +333,7 @@ class XtdGearInfos
 		class 332nd_EPL_2
 		{
             model = "332nd_Weapons_Main_Extended";
-            Engineer = "EPL_2";
+            AT = "EPL_2";
 		};
 		class 332nd_Westar
 		{
@@ -331,6 +344,11 @@ class XtdGearInfos
 		{
             model = "332nd_Weapons_Main_Extended";
             ARF = "Slug_Thrower";
+		};
+		class 332nd_DC15A_LE
+		{
+            model = "332nd_Weapons_Main_Extended";
+            AutoRifleman = "DC_15LE";
 		};
 	};
 };

@@ -37,7 +37,7 @@ class cfgWeapons
 		JLTS_friedItem="";
 		author="MrClock";
 		scope = 2;
-		displayName="[332nd] EPL-2 (ENG)";
+		displayName="[332nd] EPL-2 (AT)";
 		descriptionShort="$STR_JLTS_descs_EMPL";
 		picture="\MRC\JLTS\weapons\EPL2\data\ui\EPL2_ui_ca.paa";
 		model="\MRC\JLTS\weapons\EPL2\EPL2.p3d";
