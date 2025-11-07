@@ -1939,7 +1939,11 @@ fnc_SB_DroidPopper = {
         params ["_projectile", "_position", "_velocity"]; 
         _units = _position nearEntities [["332nd_Droid_B1_AT", "332nd_Droid_B1_Commander", "332nd_Droid_B1_Crewman", "332nd_Droid_B1_Grenadier", "332nd_Droid_B1_Pilot", "332nd_Droid_B1_Rifleman", "332nd_Droid_B1_Scatterblaster", "332nd_Droid_B1_Security", "332nd_Droid_B1_Shield", "332nd_Droid_B1_Sniper", "332nd_Droid_B1_Support"], 10];
         {
-            _x setDamage 1;
+			_x spawn {
+				[_this, "A_PlayerDeathAnim_Electric"] switchMove ["switchMove"];
+				sleep 4;
+				_x setDamage 1;
+			};
         } forEach _units;
     }];
 };

@@ -15,6 +15,7 @@ class CfgPatches
 			"332nd_LAAT",
 			"332nd_LAAT_Ball",
 			"332nd_LAAT_Old",
+			"332nd_LAAT_Lamps"
         };
 		weapons[] = 
         {
