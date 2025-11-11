@@ -23,7 +23,7 @@ class CfgVehicles
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Heavy_Vics";
 		displayName="Advanced DSD (Walking)";
-		armor = 400;
+		armor = 800;
 		editorPreview = "";
 		crew = "332nd_Droid_B1_Crewman";
 	};

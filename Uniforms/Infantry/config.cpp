@@ -96,6 +96,19 @@ class CfgVehicles
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_CR";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		/*
+		hiddenSelectionsMaterials[] = 
+		{
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_clean.rvmat",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_clean.rvmat",
+		};
+		*/
 		class HitPoints: HitPoints
 		{
 			class HitFace
@@ -270,13 +283,6 @@ class CfgVehicles
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_CT";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_JLTS.paa",
@@ -287,13 +293,6 @@ class CfgVehicles
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_SCT";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_JLTS.paa",
@@ -304,13 +303,6 @@ class CfgVehicles
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_CT_Medic";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_Medic_JLTS.paa",
@@ -321,13 +313,6 @@ class CfgVehicles
 	{
 		scope=1;
 		uniformClass="332nd_Uniform_Clone_SCT_Medic";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_Medic_JLTS.paa",

@@ -21,7 +21,7 @@ class XtdGearModels
         {
             label = "Weapons";
             author = "Ithias";
-			options[] = { "Rifleman", "AutoRifleman", "Marksman", "AT", "Grenadier", "Engineer", "PlatoonAssets", "Material", "ARF", };
+			options[] = { "Rifleman", "AutoRifleman", "Marksman", "AT", "Grenadier", "Engineer", "PlatoonAssets", "ARF", };
             class Rifleman
             {
                 label = "Rifleman (RFL)";
@@ -191,25 +191,6 @@ class XtdGearModels
                     //image = "xxx";
 				};
             };
-            class Material
-            {
-                label = "Material";
-				values[] = { "Default", "Wood", };
-                changeingame = 0;
-                alwaysSelectable = 0;
-                class Default
-                {
-                    label = "Default";
-                    description = "For normal people";
-                    //image = "xxx";
-                };
-				class Wood
-                {
-                    label = "Wood";
-                    description = "Weirdo";
-                    //image = "xxx";
-                };
-            };
             class ARF
             {
                 label = "ARF";
@@ -235,13 +216,6 @@ class XtdGearInfos
         {
             model = "332nd_Weapons_Main_Extended";
             Rifleman = "DC_15A";
-			Material = "Default";
-        };
-        class 332nd_DC15A_Wood
-        {
-            model = "332nd_Weapons_Main_Extended";
-            Rifleman = "DC_15A";
-			Material = "Wood";
         };
         class 332nd_DC15C
         {
@@ -287,13 +261,6 @@ class XtdGearInfos
 		{
             model = "332nd_Weapons_Main_Extended";
             Grenadier = "DC15A_GL";
-			Material = "Default";
-		};
-		class 332nd_DC15A_GL_Wood
-		{
-            model = "332nd_Weapons_Main_Extended";
-            Grenadier = "DC15A_GL";
-			Material = "Wood";
 		};
 		class 332nd_DC15C_GL
 		{
