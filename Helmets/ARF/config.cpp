@@ -15,7 +15,6 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
 	class HeadgearItem;
 	class ls_gar_phase1Arf_helmet;
 

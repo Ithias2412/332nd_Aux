@@ -1,3 +1,5 @@
+/*
+
 class CfgPatches {
 	class 332nd_Backpacks_Commando {
 		units[] = 

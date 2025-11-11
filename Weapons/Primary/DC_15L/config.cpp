@@ -20,7 +20,6 @@ class UnderBarrelSlot;
 class MuzzleSlot;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_DC15L_F;
 	class FullAuto;
 //Primary

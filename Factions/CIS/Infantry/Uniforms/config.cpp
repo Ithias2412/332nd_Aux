@@ -17,7 +17,6 @@ class CfgPatches
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
     class UniformItem;
 	class 3AS_U_CIS_Light_Armor;
 	class 3AS_U_CIS_Heavy_Armor;

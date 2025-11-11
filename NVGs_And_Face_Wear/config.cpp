@@ -15,8 +15,11 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class CfgWeapons
 {
-	class OPTRE_NVG;
-	class ItemInfo;
+	class NVGoggles;
+	class OPTRE_NVG: NVGoggles
+	{
+		class ItemInfo;
+	};
 	class 332nd_NVG_Chip: OPTRE_NVG
 	{
 		displayName = "New! [332nd] NVG Chip";
@@ -47,6 +50,7 @@ class CfgWeapons
 			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGMC.p3d";
 			type = 616;
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGMC.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
 	class 332nd_NVG_Commander: OPTRE_NVG
@@ -74,6 +78,7 @@ class CfgWeapons
 			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGCC.p3d";
 			type = 616;
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGCC.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
 	class 332nd_NVG_Rangefinder: OPTRE_NVG
@@ -101,6 +106,7 @@ class CfgWeapons
 			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
 			type = 616;
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
 	class 332nd_NVG_Visor: OPTRE_NVG
@@ -128,6 +134,7 @@ class CfgWeapons
 			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
 			type = 616;
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
 	class 332nd_NVG_Inverted_Visor: OPTRE_NVG
@@ -155,6 +162,7 @@ class CfgWeapons
 			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
 			type = 616;
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
 };

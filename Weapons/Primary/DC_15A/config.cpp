@@ -25,7 +25,6 @@ class WeaponSlotsInfo;
 class GunParticles;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_DC15A_F;
 	class UGL_F;
 //Primary

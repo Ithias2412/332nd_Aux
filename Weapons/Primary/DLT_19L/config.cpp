@@ -22,7 +22,6 @@ class MuzzleSlot;
 class Mode_FullAuto;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class arifle_MX_Base_F;
 	class FullAuto;
 //Primary

@@ -22,7 +22,6 @@ class Mode_SemiAuto;
 class GunParticles;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class Rifle_Base_F;
 	class 3AS_ScatterGun_F;
 

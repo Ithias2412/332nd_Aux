@@ -16,7 +16,6 @@ class CfgPatches {
 class cfgWeapons 
 {
     class ItemCore;
-	class ItemInfo;
 	class optic_Yorris: ItemCore
 	{
 		class ItemInfo;
@@ -1841,6 +1840,11 @@ class cfgWeapons
 				};
 			};
 		};
+	};
+
+	class 3AS_optic_VK38X_F: ItemCore
+	{
+		class ItemInfo;
 	};
 
 	class 332nd_3AS_VK38X: 3AS_optic_VK38X_F

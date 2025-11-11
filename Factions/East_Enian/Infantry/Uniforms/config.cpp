@@ -17,7 +17,6 @@ class CfgPatches
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
     class UniformItem;
 	class JMSLLTE_EmpOfficerCoat_green_F_CombatUniform;
 	

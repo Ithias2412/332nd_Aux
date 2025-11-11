@@ -24,7 +24,6 @@ class GunParticles;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class JLTS_DW32S;
 	class JLTS_stun_muzzle;
 

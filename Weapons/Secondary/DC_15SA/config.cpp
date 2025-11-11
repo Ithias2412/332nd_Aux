@@ -17,7 +17,6 @@ class Mode_SemiAuto;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_pistol_DC15SA_F;
 	class JLTS_stun_muzzle;
 

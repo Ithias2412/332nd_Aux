@@ -1,3 +1,5 @@
+/*
+
 class CfgPatches {
 	class 332nd_Uniforms_Commando {
 		units[] = 
@@ -15,7 +17,6 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
     class UniformItem;
 	class 3AS_U_Rep_Katarn_Armor;
 	

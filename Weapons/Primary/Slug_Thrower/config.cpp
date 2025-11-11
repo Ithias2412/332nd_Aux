@@ -25,7 +25,6 @@ class Mode_FullAuto;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class WeaponSlotsInfo;
 	class Rifle_Base_F;
 	class arifle_MX_Base_F: Rifle_Base_F

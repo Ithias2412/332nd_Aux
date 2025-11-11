@@ -15,7 +15,6 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
 	class HeadgearItem;
 	class JLTS_CloneHelmetP2;
 	class 332nd_Helmet_P2_CR: JLTS_CloneHelmetP2

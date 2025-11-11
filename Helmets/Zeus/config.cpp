@@ -15,7 +15,6 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
 	class HeadgearItem;
 	class JMSLLTE_EmpOfficerCap2_green_helmet;
 

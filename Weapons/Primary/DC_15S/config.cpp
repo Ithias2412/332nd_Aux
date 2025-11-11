@@ -33,7 +33,6 @@ class CfgRecoils
 };
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_DC15S_F;
 	class IDA_DC15S;
 	class UGL_F;

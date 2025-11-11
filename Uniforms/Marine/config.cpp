@@ -15,7 +15,6 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
     class UniformItem;
 	class SEA_Uniform_GM_Plastic_21;
 	

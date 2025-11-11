@@ -15,7 +15,6 @@ class CfgPatches {
 };
 
 //#include "xtdGear.hpp"
-class ItemInfo;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;

@@ -23,7 +23,6 @@ class WeaponSlotsInfo;
 class GunParticles;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class optic_lrps;
 	class InventoryOpticsItem_Base_F;
 	class JLTS_DC15X_scope;

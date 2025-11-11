@@ -25,7 +25,6 @@ class Mode_Burst;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_DC15C_F;
 	class 3AS_DC15C_GL;
 	class UGL_F;

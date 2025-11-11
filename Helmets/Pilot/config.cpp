@@ -15,7 +15,6 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
 	class HeadgearItem;
 	class SWLB_clone_pilot_P2_helmet;
 

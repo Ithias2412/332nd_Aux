@@ -24,7 +24,6 @@ class GunParticles;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class JLTS_EPL2;
 
 //Primary
@@ -88,7 +87,7 @@ class cfgWeapons
 				};
 				class StandardSound: BaseSoundModeType
 				{
-					begibegin1[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,1,1800};
+					begin1[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,1,1800};
 					begin2[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,1.025,1800};
 					begin3[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,0.95,1800};
 					begin4[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,1.05,1800};

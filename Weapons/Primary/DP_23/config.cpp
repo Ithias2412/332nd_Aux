@@ -21,7 +21,6 @@ class MuzzleSlot;
 class Mode_SemiAuto;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class JLTS_DP23;
 	class DBA_DP23_Shotgun;
 
@@ -161,7 +160,6 @@ class MuzzleSlot;
 class Mode_SemiAuto;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_DP23_F;
 	class UGL_F;
 

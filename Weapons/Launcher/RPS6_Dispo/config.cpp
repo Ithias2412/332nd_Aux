@@ -23,7 +23,6 @@ class CBA_DisposableLaunchers
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_RPS6_Base;
 	class WeaponSlotsInfo;
 	

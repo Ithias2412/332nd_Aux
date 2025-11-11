@@ -23,7 +23,6 @@ class Mode_FullAuto;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class JLTS_E5S;
 
 //Primary

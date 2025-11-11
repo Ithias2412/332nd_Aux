@@ -24,7 +24,6 @@ class GunParticles;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class IDA_773Firepuncher;
 
 //Primary

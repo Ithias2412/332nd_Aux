@@ -15,7 +15,6 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
 	class JLTS_CloneBinocular;
 	class SWLB_clone_binocular;
 	class SWLB_clone_commander_binocular;

@@ -21,7 +21,6 @@ class MuzzleSlot;
 class Mode_FullAuto;
 class cfgWeapons 
 {
-    class ItemInfo;
 	class IDA_DLT19;
 	class FullAuto;
 //Primary

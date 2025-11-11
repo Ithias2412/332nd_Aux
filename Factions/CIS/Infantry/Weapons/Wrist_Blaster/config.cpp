@@ -23,7 +23,6 @@ class Mode_FullAuto;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_DWBlaster_F;
 	class UGL_F;
 

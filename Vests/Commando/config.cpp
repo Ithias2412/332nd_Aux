@@ -1,3 +1,5 @@
+/*
+
 class CfgPatches {
 	class 332nd_Vests_Commando {
 		units[] = 
@@ -15,16 +17,26 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
 	class VestItem;
 	class Hands;
 	class Pelvis;
-	class 332nd_Trooper_Vest;
-
+	class JLTS_CloneVestHolster;
+	
+	class 332nd_Trooper_Vest: JLTS_CloneVestHolster
+	{
+		class ItemInfo: VestItem
+		{
+			
+		};
+	};
 
 	class 332nd_Commando_Vest: 332nd_Trooper_Vest
 	{
 		displayName = "[332nd] Commando Armor Plating";
+		class ItemInfo: ItemInfo
+		{
+			
+		};
 	};
 
 	class 332nd_Commando_Vest_Demolitions: 332nd_Commando_Vest
@@ -104,5 +116,4 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-
 };

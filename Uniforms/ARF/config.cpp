@@ -15,7 +15,6 @@ class CfgPatches {
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
     class UniformItem;
 	class 332nd_Uniform_Clone_CR;
 	

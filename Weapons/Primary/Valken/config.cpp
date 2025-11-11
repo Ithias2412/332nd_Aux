@@ -22,7 +22,6 @@ class PointerSlot;
 
 class cfgWeapons 
 {
-    class ItemInfo;
 	class 3AS_Valken38X_F;
 
 //Primary

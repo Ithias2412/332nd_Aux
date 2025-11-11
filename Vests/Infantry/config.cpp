@@ -17,7 +17,6 @@ class CfgPatches
 //#include "xtdGear.hpp"
 class cfgWeapons 
 {
-    class ItemInfo;
 	class VestItem;
 	class Hands;
 	class Pelvis;
