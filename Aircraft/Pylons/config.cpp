@@ -237,6 +237,37 @@ class CfgMagazines
 		pylonWeapon = "332nd_Forge_X_C";
 		weight = 0;
 	};
+
+	//Cannon 
+	class 3as_LAAT_1000Rnd_Medium_shells;
+	class 3AS_BTLB_450Rnd_Heavy_Shells;
+	class 3as_Z95_750Rnd_Light_shells;
+	class 3as_ARC_500Rnd_Light_Shells;
+	class 332nd_LAAT_Cannon_20mm_Mag: 3as_LAAT_1000Rnd_Medium_shells
+	{
+		ammo = "332nd_LAAT_Cannon_20mm_Ammo";
+		count = 500;
+		displayname = "20mm Energy Cell";
+	};
+	class 332nd_Y_Wing_Cannon_40mm_Mag: 3AS_BTLB_450Rnd_Heavy_Shells
+	{
+		ammo = "332nd_Y_Wing_Cannon_40mm_Ammo";
+		count = 500;
+		displayname = "40mm Energy Cell";
+	};
+	class 332nd_Z95_Cannon_20mm_Mag: 3as_Z95_750Rnd_Light_shells
+	{
+		ammo = "332nd_Z95_Cannon_20mm_Ammo";
+		count = 500;
+		displayname = "20mm Energy Cell";
+	};
+	class 332nd_ARC_Cannon_30mm_Mag: 3as_ARC_500Rnd_Light_Shells
+	{
+		ammo = "332nd_ARC_Cannon_30mm_Ammo";
+		count = 500;
+		displayname = "30mm Energy Cell";
+	};
+
 };
 
 class CfgWeapons
@@ -365,6 +396,44 @@ class CfgWeapons
 			"332nd_Forge_X_C_Mag",
 		};
 	};
+	
+	//cannon
+	class 3as_LAAT_Medium_Canon;
+	class 3AS_BTLB_Heavy_Cannon;
+	class 3AS_Z95_Light_Cannon;
+	class 3AS_ARC_Light_Canon;
+	class 332nd_LAAT_Cannon: 3as_LAAT_Medium_Canon
+	{
+		displayName = "[332nd] Energy Cannon";
+		magazines[] = 
+		{
+			"332nd_LAAT_Cannon_20mm_Mag",
+		};
+	};
+	class 332nd_Y_Wing_Cannon: 3AS_BTLB_Heavy_Cannon
+	{
+		displayName = "[332nd] Energy Cannon";
+		magazines[] = 
+		{
+			"332nd_Y_Wing_Cannon_40mm_Mag",
+		};
+	};
+	class 332nd_Z95_Cannon: 3AS_Z95_Light_Cannon
+	{
+		displayName = "[332nd] Energy Cannon";
+		magazines[] = 
+		{
+			"332nd_Z95_Cannon_20mm_Mag",
+		};
+	};
+	class 332nd_ARC_Cannon: 3AS_ARC_Light_Canon
+	{
+		displayName = "[332nd] Energy Cannon";
+		magazines[] = 
+		{
+			"332nd_ARC_Cannon_30mm_Mag",
+		};
+	};
 };
 
 class CfgAmmo
@@ -453,6 +522,40 @@ class CfgAmmo
 	class 332nd_Forge_III_Ammo: ace_missile_gbu_12
 	{
 		
+	};
+	
+	//cannon
+	class 3as_LAAT_Medium_Energy_shell;
+	class 3AS_BTLB_Heavy_Energy_Shells;
+	class 3as_Z95_Light_Energy_shell;
+	class 3as_Arc_Light_Energy_shell;
+	class 332nd_LAAT_Cannon_20mm_Ammo: 3as_LAAT_Medium_Energy_shell
+	{
+		hit = 20;
+		caliber = 1.4;
+		indirecthit = 12;
+		indirecthitrange = 2;
+	};
+	class 332nd_Y_Wing_Cannon_40mm_Ammo: 3AS_BTLB_Heavy_Energy_Shells
+	{
+		hit = 70;
+		caliber = 4.6;
+		indirecthit = 8;
+		indirecthitrange = 4;
+	};
+	class 332nd_Z95_Cannon_20mm_Ammo: 3as_Z95_Light_Energy_shell
+	{
+		hit = 20;
+		caliber = 1.4;
+		indirecthit = 12;
+		indirecthitrange = 2;
+	};
+	class 332nd_ARC_Cannon_30mm_Ammo: 3as_Arc_Light_Energy_shell
+	{
+		hit = 30;
+		caliber = 1.4;
+		indirecthit = 8;
+		indirecthitrange = 3;
 	};
 };
 

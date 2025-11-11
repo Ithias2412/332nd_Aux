@@ -76,14 +76,14 @@ class CfgVehicles
 		maxSpeed = 600;
 		weapons[]=
 		{
-			"3AS_ARC_Light_Canon",
+			"332nd_ARC_Cannon",
 			"CMFlareLauncher",
 			//"Laserdesignator_pilotCamera"
 		};
 		magazines[]=
 		{
-			"3AS_ARC_500Rnd_Light_Shells",
-			"3AS_ARC_500Rnd_Light_Shells",
+			"332nd_ARC_Cannon_30mm_Mag",
+			"332nd_ARC_Cannon_30mm_Mag",
 			"Laserbatteries",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",

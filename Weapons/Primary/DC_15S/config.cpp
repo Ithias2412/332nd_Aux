@@ -70,10 +70,10 @@ class cfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			reloadTime=0.09;
+			reloadTime=0.0857;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
-			dispersion=0.00174;
+			dispersion=0.00262;
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;
@@ -168,10 +168,10 @@ class cfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime=0.09;
+			reloadTime=0.0857;
 			recoil = "recoil_single_primary_3outof10";
 			recoilProne = "recoil_single_primary_prone_3outof10";
-			dispersion=0.00174;
+			dispersion=0.00262;
 			minRange=2;
 			minRangeProbab=0.30000001;
 			midRange=150;
@@ -443,10 +443,10 @@ class cfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			reloadTime=0.09;
+			reloadTime=0.0857;
 			recoil = "recoil_auto_primary_3outof10";
 			recoilProne = "recoil_auto_primary_prone_3outof10";
-			dispersion=0.00174;
+			dispersion=0.00262;
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;
@@ -541,10 +541,10 @@ class cfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime=0.09;
+			reloadTime=0.0857;
 			recoil = "recoil_single_primary_3outof10";
 			recoilProne = "recoil_single_primary_prone_3outof10";
-			dispersion=0.00174;
+			dispersion=0.00262;
 			minRange=2;
 			minRangeProbab=0.30000001;
 			midRange=150;

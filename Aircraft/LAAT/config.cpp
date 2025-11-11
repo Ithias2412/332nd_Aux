@@ -850,17 +850,17 @@ class CfgVehicles
 		};
 		weapons[]= 
 		{
-			"3as_LAAT_Medium_Canon",
+			"332nd_LAAT_Cannon",
 			"332nd_Anvil_X_S",
 			"CMFlareLauncher",
 			//"SmokeLauncher",
 		};
 		magazines[]=
 		{
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			//"3as_LAAT_1000Rnd_Medium_shells",
-			//"3as_LAAT_1000Rnd_Medium_shells",
+			"332nd_LAAT_Cannon_20mm_Mag",
+			"332nd_LAAT_Cannon_20mm_Mag",
+			"332nd_LAAT_Cannon_20mm_Mag",
+			"332nd_LAAT_Cannon_20mm_Mag",
 			"332nd_Anvil_X_S_Mag",
 			"332nd_Anvil_X_S_Mag",
 			"300Rnd_CMFlare_Chaff_Magazine",

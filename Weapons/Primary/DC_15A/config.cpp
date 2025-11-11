@@ -147,7 +147,7 @@ class cfgWeapons
 			reloadTime = 0.17142;
 			recoil="recoil_auto_primary_3outof10";
 			recoilProne="recoil_auto_primary_prone_3outof10";
-			dispersion=0.00073000003;
+			dispersion=0.00058;
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;

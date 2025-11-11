@@ -25,7 +25,7 @@ class CfgVehicles
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Medium_Vics";
 		displayName="GAT";
-		armor = 200;
+		armor = 150;
 		editorPreview = "";
 	};
 	class 332nd_CIS_GAT_Heavy: 3AS_GAT
@@ -33,7 +33,7 @@ class CfgVehicles
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Medium_Vics";
 		displayName="GAT (Cannon)";
-		armor = 200;
+		armor = 150;
 		editorPreview = "";
 	};
 

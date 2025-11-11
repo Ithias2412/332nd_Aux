@@ -61,8 +61,8 @@ class CfgVehicles
 		};
 		magazines[] = 
 		{
-			"3AS_BTLB_450Rnd_Heavy_Shells",
-			"3AS_BTLB_450Rnd_Heavy_Shells",
+			"332nd_Y_Wing_Cannon_40mm_Mag",
+			"332nd_Y_Wing_Cannon_40mm_Mag",
 			//"Laserbatteries",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			//"120Rnd_CMFlare_Chaff_Magazine",
@@ -72,7 +72,7 @@ class CfgVehicles
 		};
 		weapons[] = 
 		{
-			"3AS_BTLB_Heavy_Cannon",
+			"332nd_Y_Wing_Cannon",
 			"CMFlareLauncher",
 			//"Laserdesignator_pilotCamera"
 		};

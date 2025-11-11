@@ -66,8 +66,9 @@ class CfgVehicles
 		};
 		magazines[] = 
 		{
-			"3AS_Z95_750Rnd_Light_shells",
-			"3AS_Z95_750Rnd_Light_shells",
+			"332nd_Z95_Cannon_20mm_Mag",
+			"332nd_Z95_Cannon_20mm_Mag",
+			"332nd_Z95_Cannon_20mm_Mag",
 			//"Laserbatteries",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
@@ -75,7 +76,7 @@ class CfgVehicles
 		};
 		weapons[] = 
 		{
-			"3AS_Z95_Light_Cannon",
+			"332nd_Z95_Cannon",
 			"CMFlareLauncher",
 			//"Laserdesignator_pilotCamera"
 		};

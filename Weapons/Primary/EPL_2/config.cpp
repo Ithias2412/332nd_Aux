@@ -83,13 +83,20 @@ class cfgWeapons
 				{
 					closure1[] = {};
 					closure2[] = {};
-					soundClosure[] = {"closure1",0.5,"closure2",0.5};
-					weaponSoundEffect = "DefaultRifle";
+					soundClosure[] = {};
+					weaponSoundEffect = "";
 				};
 				class StandardSound: BaseSoundModeType
 				{
-					begin1[] = {"\OPTRE_FC_Weapons\Railgun\Data\sounds\Railgun.wss",1,1,2000};
-					soundBegin[] = {"begin1",2};
+					begibegin1[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,1,1800};
+					begin2[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,1.025,1800};
+					begin3[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,0.95,1800};
+					begin4[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,1.05,1800};
+					begin5[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1.25,0.9,1800};
+					beginwater1[] = {"\Indecisive_Armoury_Sounds\Republic\T15.ogg",1,1,400};
+					soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+					soundBeginWater[] = {"beginwater1",1};
+					weaponSoundEffect = "";
 				};
 				reloadTime=1;
 				recoil="recoil_single_mx";
