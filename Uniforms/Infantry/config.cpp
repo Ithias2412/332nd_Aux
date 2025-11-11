@@ -25,7 +25,7 @@ class cfgWeapons
 		dlc="332nd";
 		author="Ithias";
 		scope=2;
-		displayName="New! [332nd] Clone Trooper Armor (JLTS)";
+		displayName="[332nd] Clone Trooper Armor (JLTS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		class ItemInfo: UniformItem
 		{
@@ -38,7 +38,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_CT: 332nd_Uniform_Clone_CR
 	{
-		displayName="New! [332nd] Clone Trooper Armor (JLTS)";
+		displayName="[332nd] Clone Trooper Armor (JLTS)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
@@ -50,7 +50,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_SCT: 332nd_Uniform_Clone_CR
 	{
-		displayName="New! [332nd] Clone Trooper Armor (JLTS)";
+		displayName="[332nd] Clone Trooper Armor (JLTS)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
@@ -62,7 +62,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_CT_Medic: 332nd_Uniform_Clone_CR
 	{
-		displayName="New! [332nd] Clone Trooper Armor (JLTS / Medic)";
+		displayName="[332nd] Clone Trooper Armor (JLTS / Medic)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
@@ -74,11 +74,23 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_SCT_Medic: 332nd_Uniform_Clone_CR
 	{
-		displayName="New! [332nd] Clone Trooper Armor (JLTS / Medic)";
+		displayName="[332nd] Clone Trooper Armor (JLTS / Medic)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_SCT_Medic_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Body: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Body)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Body_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -319,7 +331,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
 		};
 	};
-
+	class 332nd_Uniform_Clone_Body_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Body";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Body.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Body.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -330,7 +351,7 @@ class XtdGearModels
 		{
 			label = "Uniforms";
 			author = "Ithias";
-			options[] = { "Trooper", "Medic", /* "Zeus", */ "Customs", };
+			options[] = { "Trooper", "Medic", "Customs", };
 			class Trooper
 			{
 				label = "Trooper";
@@ -399,25 +420,6 @@ class XtdGearModels
 					//image = "xxx";
 				};
 			};
-		/*	class Zeus
-			{
-				label = "Zeus";
-				values[] = { "Zeus","ZeusNCO", };
-				changeingame = 0;
-				alwaysSelectable = 1;
-				class Zeus
-				{
-					label = "CPO";
-					description = "Zeus";
-					//image = "xxx";
-				};
-				class ZeusNCO
-				{
-					label = "CMDR";
-					description = "Zeus";
-					//image = "xxx";
-				};
-			}; */
 			class Customs
 			{
 				label = "Customs";
@@ -577,6 +579,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Medic = "SCT";
+		};
+		class 332nd_Uniform_Clone_Body
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Body";
 		};
 	}; 
 };
