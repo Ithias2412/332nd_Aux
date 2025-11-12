@@ -86,8 +86,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Desert_JLTS.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Desert_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Desert.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Desert.paa",
 		};
 		camouflage = 0.1;
 	};
@@ -104,8 +104,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Urban_JLTS.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Urban_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Urban.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Urban.paa",
 		};
 		camouflage = 0.1;
 	};
@@ -122,8 +122,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Winter_JLTS.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Winter_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Winter.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Winter.paa",
 		};
 		camouflage = 0.1;
 	};
@@ -140,8 +140,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Woodland_JLTS.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Woodland_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Woodland.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Woodland.paa",
 		};
 		camouflage = 0.1;
 	};

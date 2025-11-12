@@ -296,8 +296,8 @@ class CfgVehicles
 		uniformClass="332nd_Uniform_Clone_CT";
 		hiddenSelectionsTextures[] = 
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_JLTS.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
 		};
 	};
 	class 332nd_Uniform_Clone_SCT_Veh: 332nd_Uniform_Clone_CR_Veh
@@ -306,8 +306,8 @@ class CfgVehicles
 		uniformClass="332nd_Uniform_Clone_SCT";
 		hiddenSelectionsTextures[] = 
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_JLTS.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
 		};
 	};
 	class 332nd_Uniform_Clone_CT_Medic_Veh: 332nd_Uniform_Clone_CR_Veh
@@ -316,8 +316,8 @@ class CfgVehicles
 		uniformClass="332nd_Uniform_Clone_CT_Medic";
 		hiddenSelectionsTextures[] = 
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_Medic_JLTS.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_Medic.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
 		};
 	};
 	class 332nd_Uniform_Clone_SCT_Medic_Veh: 332nd_Uniform_Clone_CR_Veh
@@ -326,8 +326,8 @@ class CfgVehicles
 		uniformClass="332nd_Uniform_Clone_SCT_Medic";
 		hiddenSelectionsTextures[] = 
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_Medic_JLTS.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT_JLTS.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_Medic.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
 		};
 	};
 	class 332nd_Uniform_Clone_Body_Veh: 332nd_Uniform_Clone_CR_Veh
