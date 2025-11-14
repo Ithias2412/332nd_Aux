@@ -95,7 +95,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-
+	class 332nd_Uniform_Clone_Grim: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Grim)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Grim_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -340,6 +351,17 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Body.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Grim_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Grim";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Grim.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Grim.paa",
+		};
+	};
+
 };
 
 class XtdGearModels
@@ -422,7 +444,7 @@ class XtdGearModels
 			class Customs
 			{
 				label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Ghost", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker", "Dovah", "Shark", "Aqua", "Ketamine", "Lettuce"};
+				values[] = { "Ithias", "Cherryy", "Crow", "Ghost", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker", "Dovah", "Shark", "Aqua", "Ketamine", "Lettuce", "Grim"};
 				changeingame = 0;
 				alwaysSelectable = 1;
 				class Ithias
@@ -545,6 +567,12 @@ class XtdGearModels
 					description = "Cardboard Desk";
 					//image = "xxx";
 				};
+				class Grim
+				{
+					label = "Grim";
+					description = "Named Ghoul";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -583,6 +611,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Body";
+		};
+		class 332nd_Uniform_Clone_Grim
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Grim";
 		};
 	}; 
 };
