@@ -17,6 +17,7 @@ class CfgPatches
 			"332nd_Droid_B1_Shield",
             "332nd_Droid_B1_Grenadier",
             "332nd_Droid_B1_AT",
+            "332nd_Droid_B1_AA",
             "332nd_Droid_B1_Support",
             "332nd_Droid_B1_Sniper",
             "332nd_Droid_B1_Commander",
@@ -126,6 +127,29 @@ class CfgVehicles {
         respawnWeapons[] = {"332nd_CIS_E5", "JLTS_RPS6", "Throw", "Put"};
         magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RPS6_mag","JLTS_RPS6_mag","JLTS_RPS6_mag"};
         respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "JLTS_RPS6_mag","JLTS_RPS6_mag","JLTS_RPS6_mag"};
+    };
+	class JLTS_B1_backpack_at_predef;
+	class 332nd_B1_backpack_AA_predef: JLTS_B1_backpack_at_predef
+	{
+		class TransportMagazines
+		{
+			class _xx_332nd_CIS_E60R_Mag
+			{
+				count = 2;
+				magazine = "332nd_CIS_E60R_Mag";
+			};
+		};
+	};
+    class 332nd_Droid_B1_AA: 332nd_Droid_Base 
+	{
+        scope = 2;
+        displayName = "B1 Anti-Air";
+        backpack = "332nd_B1_backpack_AA_predef";
+        uniformClass = "JLTS_DroidB1";
+        weapons[] = {"332nd_CIS_E5", "332nd_CIS_E60R_AA", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "332nd_CIS_E60R_AA", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E60R_Mag","332nd_CIS_E60R_Mag","332nd_CIS_E60R_Mag"};
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E60R_Mag","332nd_CIS_E60R_Mag","332nd_CIS_E60R_Mag"};
     };
     class 332nd_Droid_B1_Support: 332nd_Droid_Base 
 	{
@@ -1459,6 +1483,36 @@ class CfgGroups
                     class Unit3 {
                         side = 0;
                         vehicle = "332nd_Droid_B1_AT";
+                        rank = "PRIVATE";
+                        position[] = {10, -10, 0};
+                    };
+                };
+                class 332nd_AA_Fireteam 
+				{
+                    name = "B1 AA Fireteam";
+                    faction = "332nd_CIS_Faction";
+                    side = 0;
+                    class Unit0 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {5, -5, 0};
+                    };
+                    class Unit2 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_AA";
+                        rank = "PRIVATE";
+                        position[] = {-5, -5, 0};
+                    };
+                    class Unit3 {
+                        side = 0;
+                        vehicle = "332nd_Droid_B1_AA";
                         rank = "PRIVATE";
                         position[] = {10, -10, 0};
                     };

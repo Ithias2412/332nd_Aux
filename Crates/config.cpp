@@ -30,9 +30,6 @@ class CfgVehicles
 	class 3AS_Supply_Large_Prop;
 	class 3AS_Small_Fuel_Barrel;
 
-
-//
-
 	class 332nd_Ammo_Crate: 3AS_Supply_Large_Prop
 	{
 		scope = 2;
@@ -68,6 +65,11 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DC15L_Mag";
 			};
+			class 332nd_DC15LE_Mag
+			{
+				count = 100;
+				magazine = "332nd_DC15LE_Mag";
+			};
 			class 332nd_C_24_Mag
 			{
 				count = 100;
@@ -77,6 +79,16 @@ class CfgVehicles
 			{
 				count = 50;
 				magazine = "332nd_C_24_Flamer_Mag";
+			};
+			class 332nd_EPL_Mag
+			{
+				count = 100;
+				magazine = "332nd_EPL_Mag";
+			};
+			class 332nd_EPL_AT_Mag
+			{
+				count = 50;
+				magazine = "332nd_EPL_AT_Mag";
 			};
 			class 332nd_DLT15_Mag
 			{
@@ -203,6 +215,11 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DC17S_Mag";
 			};
+			class 332nd_DC15SA_Mag
+			{
+				count = 100;
+				magazine = "332nd_DC15SA_Mag";
+			};
 			class 332nd_DC17S_Mag_Dual
 			{
 				count = 100;
@@ -271,6 +288,11 @@ class CfgVehicles
 				count = 25;
 				name = "332nd_Thermal_Detonator";
 			};
+			class 332nd_DroidPopper_x1_mag
+			{
+				count = 25;
+				name = "332nd_DroidPopper_x1_mag";
+			};
 			class 332nd_Detonation_pack_Mag
 			{
 				count = 10;
@@ -320,6 +342,11 @@ class CfgVehicles
 			{
 				count = 250;
 				name = "332nd_Acti_Bandage_Weap";
+			};
+			class 332nd_Bacta_Spray_Weap
+			{
+				count = 10;
+				name = "332nd_Bacta_Spray_Weap";
 			};
 			class 332nd_Painkiller_Weap
 			{
@@ -558,6 +585,11 @@ class CfgVehicles
 				count = 250;
 				name = "332nd_Acti_Bandage_Weap";
 			};
+			class 332nd_Bacta_Spray_Weap
+			{
+				count = 10;
+				name = "332nd_Bacta_Spray_Weap";
+			};
 			class 332nd_Painkiller_Weap
 			{
 				count = 100;
@@ -692,6 +724,11 @@ class CfgVehicles
 			{
 				count = 25;
 				name = "332nd_Thermal_Detonator";
+			};
+			class 332nd_DroidPopper_x1_mag
+			{
+				count = 25;
+				name = "332nd_DroidPopper_x1_mag";
 			};
 			class 332nd_Remote_Charge_Mag
 			{
@@ -998,4 +1035,5 @@ class CfgVehicles
 		editorCategory="332nd_Crates";
 		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
 	};
+
 };

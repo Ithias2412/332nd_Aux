@@ -538,8 +538,8 @@ class CfgAmmo
 	};
 	class 332nd_Y_Wing_Cannon_40mm_Ammo: 3AS_BTLB_Heavy_Energy_Shells
 	{
-		hit = 70;
-		caliber = 4.6;
+		hit = 70; //150
+		caliber = 4.6; //8
 		indirecthit = 8;
 		indirecthitrange = 4;
 	};
@@ -552,8 +552,8 @@ class CfgAmmo
 	};
 	class 332nd_ARC_Cannon_30mm_Ammo: 3as_Arc_Light_Energy_shell
 	{
-		hit = 30;
-		caliber = 1.4;
+		hit = 80;
+		caliber = 4.2;
 		indirecthit = 8;
 		indirecthitrange = 3;
 	};

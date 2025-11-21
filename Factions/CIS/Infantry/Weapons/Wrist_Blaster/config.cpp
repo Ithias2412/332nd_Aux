@@ -36,6 +36,30 @@ class cfgWeapons
 		reloadAction = "3AS_GestureReload_DC17M";
 		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
 		reloadSound[] = {"",1,1};
+		muzzles[] = 
+		{
+			"this",
+			"3AS_DWRocket_F"
+		};
+		class 3AS_DWRocket_F: UGL_F
+		{
+			cameraDir = "";
+			descriptionShort = "DWRockets";
+			discreteDistance[] = {};
+			discreteDistanceCameraPoint[] = {};
+			discreteDistanceInitIndex = 0;
+			displayName = "[332nd] Dual Wrist Rocket Launcher";
+			magazines[] = 
+			{
+				"332nd_DWRockets_AT",
+			};
+			magazineWell[] = {};
+			picture = "\3AS\3AS_Weapons\DWBlaster\Data\UI\3as_b2arm.paa";
+			reloadAction = "GestureReloadMXUGL";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
+			useExternalOptic = 0;
+			useModelOptics = 0;
+		};
 	};
 	class 332nd_CIS_Wrist_Blaster_Flame: 332nd_CIS_Wrist_Blaster
 	{
@@ -91,6 +115,8 @@ class CfgMagazines
 {
 	class 332nd_Base_Mag;
 	class 3AS_FlamerFuel;
+	class 3AS_DWRockets_AT;
+	
 	class 332nd_CIS_Wrist_Blaster_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_CIS_Wrist_Blaster_Ammo";
@@ -106,15 +132,27 @@ class CfgMagazines
 		count = 5;
 		displayName = "B2 Flamer Fuel";
 	};
+	class 332nd_DWRockets_AT: 3AS_DWRockets_AT
+	{
+		ammo = "332nd_DWRockets_AT_Ammo";
+		displayName = "[332nd] 3 Rnd AT DW Rockets";
+	};
 };
 
 class CfgAmmo
 {
 	class 332nd_Base_Ammo_IDA;
+	class 3AS_R_DWRockets_AT;
+	
 	class 332nd_CIS_Wrist_Blaster_Ammo: 332nd_Base_Ammo_IDA
 	{
 		hit = 10;
 		effectfly = "IDA_BlasterBoltGlow_Red_Fly";
 		model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Red.p3d";
+	};
+	class 332nd_DWRockets_AT_Ammo: 3AS_R_DWRockets_AT
+	{
+		indirectHit = 15;
+		indirectHitRange = 4;
 	};
 };

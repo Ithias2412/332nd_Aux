@@ -126,7 +126,80 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Walkie.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Warthog: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Warthog)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Warthog.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Rat: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Rat)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Rat.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Joker: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Joker)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Joker.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Aztec: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Aztec)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Aztec.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Aqua: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Aqua)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Aqua.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Nate: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Nate)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Nate.paa"
+		};
+	};
 };
+
 class XtdGearModels
 {
     class CfgWeapons 
@@ -170,7 +243,7 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel", "Alpha", "Aqua", "Grim"};
+				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel", "Alpha", "Aqua", "Grim", "Warthog", "Rat", "Aztec", "Nate", };
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
@@ -364,6 +437,31 @@ class XtdGearModels
 					description = "Artificially Intelligent";
 					//image = "xxx";
 				};
+				// Kill Roseiry
+				class Warthog
+				{
+					label = "Warthog";
+					description = "E-Dater";
+					//image = "xxx";
+				};
+				class Rat
+				{
+					label = "Rat";
+					description = "So big and inflated";
+					//image = "xxx";
+				};
+				class Aztec
+				{
+					label = "Aztec";
+					description = "Brazilian or something idk";
+					//image = "xxx";
+				};
+				class Nate
+				{
+					label = "Nate";
+					description = "Hates Everyone in 1-3";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -407,6 +505,37 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Walkie";
+		};
+		// Kill Roseiry
+		class 332nd_Helmet_P2_Warthog
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Warthog";
+		};
+		class 332nd_Helmet_P2_Rat
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Rat";
+		};
+		class 332nd_Helmet_P2_Joker
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Joker";
+		};
+		class 332nd_Helmet_P2_Aztec
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Aztec";
+		};
+		class 332nd_Helmet_P2_Nate
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Nate";
+		};
+		class 332nd_Helmet_P2_Aqua
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Aqua";
 		};
 	};
 };

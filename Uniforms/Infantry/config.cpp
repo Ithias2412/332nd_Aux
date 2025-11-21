@@ -107,6 +107,54 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Warthog: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Warthog)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Warthog_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Nate: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Nate)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Nate_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Dovah: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Dovah)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Dovah_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Aqua: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Aqua)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Aqua_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -361,6 +409,46 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Grim.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Warthog_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Warthog";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Warthog.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Warthog.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Nate_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Nate";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Nate.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Nate.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Dovah_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Dovah";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Dovah.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Dovah.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Aqua_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Aqua";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Aqua.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aqua.paa",
+		};
+	};
 
 };
 
@@ -444,7 +532,7 @@ class XtdGearModels
 			class Customs
 			{
 				label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Ghost", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker", "Dovah", "Shark", "Aqua", "Ketamine", "Lettuce", "Grim"};
+				values[] = { "Ithias", "Cherryy", "Crow", "Ghost", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker", "Dovah", "Shark", "Aqua", "Ketamine", "Lettuce", "Grim", "Warthog", "Nate"};
 				changeingame = 0;
 				alwaysSelectable = 1;
 				class Ithias
@@ -573,6 +661,18 @@ class XtdGearModels
 					description = "Named Ghoul";
 					//image = "xxx";
 				};
+				class Warthog
+				{
+					label = "Warthog";
+					description = "Khorn Enthusiast";
+					//image = "xxx";
+				};
+				class Nate
+				{
+					label = "Nate";
+					description = "Warthog's #1 Hater";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -616,6 +716,26 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Grim";
+		};
+		class 332nd_Uniform_Clone_Warthog
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Warthog";
+		};
+		class 332nd_Uniform_Clone_Nate
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Nate";
+		};
+		class 332nd_Uniform_Clone_Dovah
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Dovah";
+		};
+		class 332nd_Uniform_Clone_Aqua
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Aqua";
 		};
 	}; 
 };

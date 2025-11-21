@@ -195,6 +195,7 @@ class cfgvehicles
 		hiddenSelections[] = {"Camo1","Camo2"};
 		editorPreview = "\3AS\3AS_Saber\images\3AS_Saber_M1.jpg";
 		model="3AS\3AS_Saber\model\tcw_tx130";
+		terrainCoef = 0;
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Vehicles\TX-130_Series\tex\332nd_Saber_Tank_Test.paa",

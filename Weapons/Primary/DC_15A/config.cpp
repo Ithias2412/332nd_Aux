@@ -196,6 +196,7 @@ class cfgWeapons
 	{
 		displayName="[332nd] DC-15LE (AR)";
 		baseWeapon = "332nd_DC15A_LE";
+		recoil="Old_IDA_recoil_Z6";
 		magazines[] =
 		{
 			"332nd_DC15LE_Mag"
