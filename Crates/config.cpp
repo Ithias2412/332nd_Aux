@@ -365,12 +365,12 @@ class CfgVehicles
 			};
 			class ACE_plasmaIV
 			{
-				count = 10;
+				count = 25;
 				name = "ACE_plasmaIV";
 			};
 			class ACE_plasmaIV_250
 			{
-				count = 50;
+				count = 25;
 				name = "ACE_plasmaIV_250";
 			};
 			class ACE_plasmaIV_500
@@ -470,6 +470,11 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
+			class JLTS_clone_comlink
+			{
+				count = 10;
+				weapon = "JLTS_clone_comlink";
+			};
 			class 332nd_DC15A
 			{
 				count = 10;
@@ -495,6 +500,21 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_DC17S";
 			};
+			class 332nd_Mode_A_Raised
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Raised";
+			};
+			class 332nd_Mode_A_Raised_Forward
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Raised_Forward";
+			};
+			class 332nd_Mode_A_Raised_2
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Raised_2";
+			};
 			class 332nd_Mode_A_Zoom_2
 			{
 				count = 10;
@@ -504,6 +524,21 @@ class CfgVehicles
 			{
 				count = 10;
 				weapon = "332nd_Mode_A_Zoom_2_Raised";
+			};
+			class 332nd_Mode_A_Zoom_2_Forward
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2_Forward";
+			};
+			class 332nd_Mode_A_Zoom_2_Raised_2
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2_Raised_2";
+			};
+			class 332nd_Mode_A_Zoom_2_Raised_Forward_2
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2_Raised_Forward_2";
 			};
 			class 332nd_Helmet_P2_CT 
 			{
@@ -607,12 +642,12 @@ class CfgVehicles
 			};
 			class ACE_plasmaIV
 			{
-				count = 10;
+				count = 25;
 				name = "ACE_plasmaIV";
 			};
 			class ACE_plasmaIV_250
 			{
-				count = 50;
+				count = 25;
 				name = "ACE_plasmaIV_250";
 			};
 			class ACE_plasmaIV_500
@@ -753,6 +788,11 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
+			class JLTS_clone_comlink
+			{
+				count = 10;
+				weapon = "JLTS_clone_comlink";
+			};
 			class 332nd_DC15A
 			{
 				count = 10;
@@ -778,6 +818,21 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_DC17S";
 			};
+			class 332nd_Mode_A_Raised
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Raised";
+			};
+			class 332nd_Mode_A_Raised_Forward
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Raised_Forward";
+			};
+			class 332nd_Mode_A_Raised_2
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Raised_2";
+			};
 			class 332nd_Mode_A_Zoom_2
 			{
 				count = 10;
@@ -787,6 +842,21 @@ class CfgVehicles
 			{
 				count = 10;
 				weapon = "332nd_Mode_A_Zoom_2_Raised";
+			};
+			class 332nd_Mode_A_Zoom_2_Forward
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2_Forward";
+			};
+			class 332nd_Mode_A_Zoom_2_Raised_2
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2_Raised_2";
+			};
+			class 332nd_Mode_A_Zoom_2_Raised_Forward_2
+			{
+				count = 10;
+				weapon = "332nd_Mode_A_Zoom_2_Raised_Forward_2";
 			};
 			class 332nd_Helmet_P2_CT 
 			{

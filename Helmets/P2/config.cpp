@@ -198,6 +198,66 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Nate.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Thym: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Thym)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Thym.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Shovie: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Shovie)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Shovie.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Luci: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Luci)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Luci.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Arson: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Arson)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Arson.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Charger: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Charger)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Charger.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -243,15 +303,54 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Asuka",*/ "Body", "Cherryy", /* "Cin",*/ "Crow", "Denal", "Frankenburg", "Joker", "Luci", "Ithias", "Roseiry", "Shark", "Seelig", "Sovereign", /* "Spectre", */ /* "Stryker",*/ "Tokyo",  "Walkie", "Ghost", "Lettuce", "Ketamine", "Eclipse", "Social", "Dovah", "Saiko", "Arson", "Jiggs", "Nightmare", "Nebel", "Alpha", "Aqua", "Grim", "Warthog", "Rat", "Aztec", "Nate", };
+				values[] = 
+				{
+					// "Asuka",
+					"Body", 
+					"Cherryy", 
+					// "Cin",
+					"Crow", 
+					"Denal", 
+					"Frankenburg", 
+					"Joker", 
+					"Luci", 
+					"Ithias", 
+					"Roseiry", 
+					"Shark", 
+					"Seelig", 
+					"Sovereign", 
+					"Tokyo",  
+					"Walkie", 
+					"Ghost", 
+					"Lettuce", 
+					"Ketamine", 
+					"Eclipse", 
+					"Social", 
+					"Dovah", 
+					"Saiko", 
+					"Arson", 
+					"Jiggs", 
+					"Nightmare", 
+					"Nebel", 
+					"Alpha", 
+					"Aqua", 
+					"Grim", 
+					"Warthog", 
+					"Rat", 
+					"Aztec", 
+					"Nate", 
+					"Thym",
+					"Shovie",
+					"Charger",
+				};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Asuka
-                {
-                    label = "Asuka";
-                    description = "Sucks at Destiny";
-                    //image = "xxx";
-                }; */
+				{
+					label = "Asuka";
+					description = "Sucks at Destiny";
+					//image = "xxx";
+				}; */
 				class Body
                 {
                     label = "Body";
@@ -265,11 +364,11 @@ class XtdGearModels
                     //image = "xxx";
                 };
 				/* class Cin
-                {
-                    label = "Cin";
-                    description = "Where's the 9 Line";
-                    //image = "xxx";
-                }; */
+				{
+					label = "Cin";
+					description = "Where's the 9 Line";
+					//image = "xxx";
+				}; */
 				class Crow
 				{
 					label = "Crow";
@@ -302,7 +401,7 @@ class XtdGearModels
 				class Luci
 				{
 					label = "Luci";
-					description = "Tup deserved it";
+					description = "CAG / JSOC Inspired";
 					//image = "xxx";
 				};		
 				class Roseiry
@@ -329,18 +428,6 @@ class XtdGearModels
 					description = "Dosent know what he wants to do";
 					//image = "xxx";
 				};	
-				/* class Spectre
-				{
-					label = "Spectre";
-					description = "Goon Platoon";
-					//image = "xxx";
-				}; */	
-				/* class Stryker
-				{
-					label = "Stryker";
-					description = "Stryker Eureka";
-					//image = "xxx";
-				}; */
 				class Tokyo
 				{
 					label = "Tokyo";
@@ -462,6 +549,25 @@ class XtdGearModels
 					description = "Hates Everyone in 1-3";
 					//image = "xxx";
 				};
+				class Thym
+				{
+					label = "Thym";
+					description = "Operation Feedback Novelist";
+					//image = "xxx";
+				};
+				class Shovie
+				{
+					label = "Shovie";
+					description = "Cross Country Dox Specialist";
+					//image = "xxx";
+				};
+				class Charger
+				{
+					label = "Charger";
+					description = "Engrish";
+					//image = "xxx";
+
+				};
             };
         };
     };
@@ -536,6 +642,31 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Aqua";
+		};
+		class 332nd_Helmet_P2_Thym
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Thym";
+		};
+		class 332nd_Helmet_P2_Shovie
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Shovie";
+		};
+		class 332nd_Helmet_P2_Luci
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Luci";
+		};
+		class 332nd_Helmet_P2_Arson
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Arson";
+		};
+		class 332nd_Helmet_P2_Charger
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Charger";
 		};
 	};
 };

@@ -14,7 +14,7 @@ class cfgFactionClasses
 {
     class 332nd_Umbara_Faction 
 	{
-        displayName = "[332nd] Auxiliary Umbara";
+        displayName = "[332nd] Umbarans";
         priority = 2;
         side = 0; // OPFOR
     };
@@ -24,6 +24,6 @@ class CfgEditorSubcategories
 {
     class 332nd_Umbara_Subcategory 
 	{
-        displayName = "[332nd] Auxiliary Umbarans";  // This will appear in the Eden Editor under the Units section
+        displayName = "[332nd] Umbarans";  // This will appear in the Eden Editor under the Units section
     };
 };

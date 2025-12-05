@@ -113,6 +113,16 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Woodland_JLTS.paa",
 		};
 	};
+	class 332nd_Helmet_ARF_Asuka: 332nd_Helmet_ARF_Base
+	{
+		displayName="New! [332nd] ARF Helmet (Asuka)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Asuka.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Asuka.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -177,7 +187,7 @@ class XtdGearModels
 				class Asuka
                 {
                     label = "Asuka";
-                    description = "Sucks at Destiny";
+                    description = "6k dollars into SC";
                     //image = "xxx";
                 };
 				class Cin
@@ -243,6 +253,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Camo = "Woodland";
+        };
+        class 332nd_Helmet_ARF_Asuka
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Asuka";
         };
 	};
 };

@@ -51,8 +51,8 @@ class cfgAmmo
         indirectHitRange = 10;
 		dangerRadiusHit=5;
 		suppressionRadiusHit=5;
-        ExplosionEffects = "WNZ_EMPGrenadeExplosion";
-        SoundSetExplosion[] = {"EMP_Sparks_SoundSet_GL"};
+        //ExplosionEffects = "WNZ_EMPGrenadeExplosion"; // Maybe causes EMP on radio 
+        SoundSetExplosion[] = {"EMP_Sparks_SoundSet_GL"}; // Maybe causes EMP on radio 
         class EventHandlers {
             Fired="_unit = _this select 0; if (local _unit) then {_this spawn fnc_SB_DroidPopper};"
         };

@@ -34,7 +34,7 @@ class CfgAmmo
 		indirectHitRange = 5;
 		mineModelDisabled = "ls_weapons\explosives\detPack\ls_explosives_detpack_armed";
 		model = "ls_weapons\explosives\detPack\ls_explosives_detpack_armed";
-		explosionTime = 10;
+		explosionTime = 7;
 	};
 	class 332nd_Detonation_pack_Ammo_Thrown: ACE_DemoCharge_Remote_Ammo_Thrown
 	{
@@ -47,7 +47,7 @@ class CfgAmmo
 		mineModelDisabled = "LF_Weapon_Unit_Explosives\typeabc\typea.p3d";
 		model = "LF_Weapon_Unit_Explosives\typeabc\typea.p3d";
 		explosionType = "bomb";
-		explosionTime = 14;
+		explosionTime = 7;
 	};
 
 };

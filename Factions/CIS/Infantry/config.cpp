@@ -1295,7 +1295,7 @@ class CfgGroups
 	{
         class 332nd_CIS_Faction 
 		{
-            name = "[332nd] Auxiliary CIS";
+            name = "[332nd] CIS";
 
             class Droids_Infantry 
 			{

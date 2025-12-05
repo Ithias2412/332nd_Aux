@@ -155,6 +155,54 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Luci: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Luci)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Luci_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Arson: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Arson)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Arson_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Inu: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Inu)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Inu_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Asuka)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Asuka_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -449,12 +497,52 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aqua.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Luci_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Luci";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Luci.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Luci.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Arson_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Arson";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Arson.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Arson.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Inu_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Inu";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Inu.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Inu.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Asuka_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Asuka";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Asuka.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
+		};
+	};
 
 };
 
 class XtdGearModels
 {
-	class CfgWeapons 
+	class CfgWeapons
 	{
 		class 332nd_Uniform_Extended
 		{
@@ -532,7 +620,35 @@ class XtdGearModels
 			class Customs
 			{
 				label = "Customs";
-				values[] = { "Ithias", "Cherryy", "Crow", "Ghost", "Asuka", "Frankenburg", "Seelig", "Trick", "Joker","Denal", "Walkie","Cin", "Body", "Tokyo", "Stryker", "Dovah", "Shark", "Aqua", "Ketamine", "Lettuce", "Grim", "Warthog", "Nate"};
+				values[] = 
+				{
+					"Ithias", 
+					"Cherryy", 
+					"Crow", 
+					"Ghost", 
+					"Asuka", 
+					"Frankenburg", 
+					"Seelig",
+					"Trick", 
+					"Joker",
+					"Denal", 
+					"Walkie",
+					"Cin", 
+					"Body", 
+					"Tokyo", 
+					"Stryker", 
+					"Dovah", 
+					"Shark", 
+					"Aqua", 
+					"Ketamine",
+					"Lettuce",
+					"Grim", 
+					"Warthog", 
+					"Nate",
+					"Luci",
+					"Arson",
+					"Inu",
+				};
 				changeingame = 0;
 				alwaysSelectable = 1;
 				class Ithias
@@ -562,7 +678,7 @@ class XtdGearModels
 				class Asuka
 				{
 					label = "Asuka";
-					description = "Sucks at Destiny";
+					description = "Not Broke";
 					//image = "xxx";
 				};
 				class Frankenburg
@@ -673,6 +789,24 @@ class XtdGearModels
 					description = "Warthog's #1 Hater";
 					//image = "xxx";
 				};
+				class Luci
+				{
+					label = "Luci";
+					description = "DC-15LE Enjoyer";
+					//image = "xxx";
+				};
+				class Arson
+				{
+					label = "Arson";
+					description = "Abtholutely dethpicable";
+					//image = "xxx";
+				};
+				class Inu
+				{
+					label = "Inu";
+					description = "RAHHHHHHHHHHHHHH I LOVE WAR";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -736,6 +870,26 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Aqua";
+		};
+		class 332nd_Uniform_Clone_Luci
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Luci";
+		};
+		class 332nd_Uniform_Clone_Arson
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Arson";
+		};
+		class 332nd_Uniform_Clone_Inu
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Inu";
+		};
+		class 332nd_Uniform_Clone_Asuka
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Asuka";
 		};
 	}; 
 };
