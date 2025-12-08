@@ -23,7 +23,7 @@ class cfgWeapons
 	{
 		author="Ithias";
 		dlc="332nd Aux";
-		displayName="New! [332nd] ARF Helmet (JLTS)";
+		displayName="[332nd] ARF Helmet (JLTS)";
 		332nd_Has_Lowlight = 1;
 		subItems[] = {};
 		hiddenSelections[] = 
@@ -75,7 +75,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Desert: 332nd_Helmet_ARF_Base
 	{
-		displayName="New! [332nd] ARF Helmet (JLTS / Desert)";
+		displayName="[332nd] ARF Helmet (JLTS / Desert)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Desert_JLTS.paa",
@@ -85,7 +85,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Urban: 332nd_Helmet_ARF_Base
 	{
-		displayName="New! [332nd] ARF Helmet (JLTS / Urban)";
+		displayName="[332nd] ARF Helmet (JLTS / Urban)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Urban_JLTS.paa",
@@ -95,7 +95,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Winter: 332nd_Helmet_ARF_Base
 	{
-		displayName="New! [332nd] ARF Helmet (JLTS / Winter)";
+		displayName="[332nd] ARF Helmet (JLTS / Winter)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Winter_JLTS.paa",
@@ -105,7 +105,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Woodland: 332nd_Helmet_ARF_Base
 	{
-		displayName="New! [332nd] ARF Helmet (JLTS / Woodland)";
+		displayName="[332nd] ARF Helmet (JLTS / Woodland)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Woodland_JLTS.paa",
@@ -115,7 +115,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Asuka: 332nd_Helmet_ARF_Base
 	{
-		displayName="New! [332nd] ARF Helmet (Asuka)";
+		displayName="[332nd] ARF Helmet (Asuka)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Asuka.paa",
@@ -123,6 +123,17 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Asuka.paa",
 		};
 	};
+	class 332nd_Helmet_ARF_Cin: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Cin)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Cin.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Cin.paa",
+		};
+	};
+
 };
 
 class XtdGearModels
@@ -258,6 +269,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Asuka";
+        };
+        class 332nd_Helmet_ARF_Cin
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Cin";
         };
 	};
 };

@@ -203,6 +203,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Ketamine: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Ketamine)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Ketamine_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -535,6 +547,16 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Asuka.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Ketamine_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Ketamine";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ketamine.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ketamine.paa",
 		};
 	};
 
@@ -890,6 +912,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Asuka";
+		};
+		class 332nd_Uniform_Clone_Ketamine
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Ketamine";
 		};
 	}; 
 };

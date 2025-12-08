@@ -258,6 +258,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Charger.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Ketamine: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Ketamine)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ketamine.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -667,6 +679,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Charger";
+		};
+		class 332nd_Helmet_P2_Ketamine
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Ketamine";
 		};
 	};
 };
