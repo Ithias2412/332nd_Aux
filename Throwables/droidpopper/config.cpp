@@ -53,7 +53,8 @@ class cfgAmmo
 		suppressionRadiusHit=5;
         ExplosionEffects = "Droid_Popper_GrenadeExplosion"; 
         SoundSetExplosion[] = {"Droidpopper_Soundset"}; 
-        class EventHandlers {
+        class EventHandlers 
+		{
             Fired="_unit = _this select 0; if (local _unit) then {_this spawn fnc_SB_DroidPopper};"
         };
     };

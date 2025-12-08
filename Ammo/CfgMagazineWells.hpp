@@ -4,7 +4,8 @@ class CfgMagazineWells
     {
         MAGAZINES[] =
         {
-            "332nd_HE_LGrenade_Mag",
+            "332nd_HE_UGLGrenade_Mag",
+			"332nd_Droidpopper_UGLGrenade_Mag",
 			"332nd_Smoke_LauncherGrenade_3GL",
             "332nd_Smoke_LauncherGrenade",
             "332nd_SmokeRed_LauncherGrenade",

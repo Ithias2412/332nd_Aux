@@ -1937,12 +1937,13 @@ fnc_SB_DroidPopper = {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
     _projectile addEventHandler ["Explode", { 
         params ["_projectile", "_position", "_velocity"]; 
-        _units = _position nearEntities [["332nd_Droid_B1_AT", "332nd_Droid_B1_Commander", "332nd_Droid_B1_Crewman", "332nd_Droid_B1_Grenadier", "332nd_Droid_B1_Pilot", "332nd_Droid_B1_Rifleman", "332nd_Droid_B1_Scatterblaster", "332nd_Droid_B1_Security", "332nd_Droid_B1_Shield", "332nd_Droid_B1_Sniper", "332nd_Droid_B1_Support"], 10];
+        _units = _position nearEntities [["JLTS_Droid_B1_E5"], 10];
         {
 			_x spawn {
 				[_this, "A_PlayerDeathAnim_Electric"] switchMove ["switchMove"];
+				systemchat str _this;
 				sleep 4;
-				_x setDamage 1;
+				_this setDamage 1;
 			};
         } forEach _units;
     }];

@@ -326,7 +326,7 @@ class CfgAmmo
 		indirectHitRange = 2;
 	};
 	//UGL Grenades & Smokes
-	class 332nd_HE_LGrenade: G_40mm_HE
+	class 332nd_HE_UGLGrenade: G_40mm_HE
 	{
 		ace_frag_enabled=1;
 		indirectHitRange=5;
@@ -339,7 +339,29 @@ class CfgAmmo
 		lightcolor[]={0,0,1};
 		model="Indecisive_Armoury_Ammos\Data\40mm_Grenade\IDA_40mm_Grenade.p3d";
 	};
-	class 332nd_Westar_Rifle_Grenade: 332nd_HE_LGrenade
+	class 332nd_DroidPopper_UGLGrenade: 332nd_HE_UGLGrenade
+	{
+		ace_frag_enabled=0;
+		indirectHitRange=10;
+        hit=0;
+		indirectHit=0;
+        ace_frag_skip = 1;
+		dangerRadiusHit=5;
+		suppressionRadiusHit=5;
+        ExplosionEffects = "Droid_Popper_GrenadeExplosion"; 
+        SoundSetExplosion[] = {"Droidpopper_Soundset"}; 
+        class EventHandlers 
+		{
+            Fired="_unit = _this select 0; if (local _unit) then {_this spawn fnc_SB_DroidPopper};"
+        };
+		effectflare="FlareShell";
+		effectfly="IDA_BlasterBoltGlow_Blue_Fly";
+		fuseDistance=0;
+		CraterEffects="GrenadeCrater";
+		lightcolor[]={0,0,1};
+		model="Indecisive_Armoury_Ammos\Data\40mm_Grenade\IDA_40mm_Grenade.p3d";
+	};
+	class 332nd_Westar_Rifle_Grenade: 332nd_HE_UGLGrenade
 	{
 		coefGravity = 0.01;
 		deflecting = 0;

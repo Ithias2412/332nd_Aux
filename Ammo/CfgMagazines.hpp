@@ -313,9 +313,9 @@ class CfgMagazines
 
 
 	//UGL Grenades & Smokes Mags
-	class 332nd_HE_LGrenade_Mag: 1Rnd_HE_Grenade_shell
+	class 332nd_HE_UGLGrenade_Mag: 1Rnd_HE_Grenade_shell
 	{
-		ammo="332nd_HE_LGrenade";
+		ammo="332nd_HE_UGLGrenade";
 		count=1;
 		descriptionShort="";
 		displayname="332nd 1 Round HE";
@@ -323,7 +323,17 @@ class CfgMagazines
 		mass=4;
 		scope=2;
 	};
-	class 332nd_Westar_Rifle_Grenade_Mag: 332nd_HE_LGrenade_Mag
+	class 332nd_Droidpopper_UGLGrenade_Mag: 332nd_HE_UGLGrenade_Mag
+	{
+		ammo="332nd_DroidPopper_UGLGrenade";
+		count=1;
+		descriptionShort="";
+		displayname="332nd 1 Round Droid Popper";
+		displayNameShort="";
+		mass=4;
+		scope=2;
+	};
+	class 332nd_Westar_Rifle_Grenade_Mag: 332nd_HE_UGLGrenade_Mag
 	{
 		ammo="332nd_Westar_Rifle_Grenade";
 		count=1;
