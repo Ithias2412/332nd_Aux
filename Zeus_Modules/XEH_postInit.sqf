@@ -1940,8 +1940,7 @@ fnc_SB_DroidPopper = {
         _units = _position nearEntities [["JLTS_Droid_B1_E5"], 10];
         {
 			_x spawn {
-				[_this, "A_PlayerDeathAnim_Electric"] switchMove ["switchMove"];
-				systemchat str _this;
+				[_this, "A_PlayerDeathAnim_Electric"] remoteExec ["switchMove"];
 				sleep 4;
 				_this setDamage 1;
 			};
