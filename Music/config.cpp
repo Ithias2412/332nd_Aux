@@ -13,11 +13,48 @@ class CfgPatches
 };
 class CfgMusic
 {
+//Movie
+	class Boss_Nass
+    {
+        name = "The Trip to the Naboo Temple and The Audience with Boss Nass";
+		sound[] = {"332nd_Aux\music\music\movie\bossnass.ogg",1,1};
+		duration = 190;
+		musicClass = "332nd_Music_MV";
+    };
+	class Droid_Invasion
+	{
+        name = "The Droid Invasion and The Appearance of Darth Maul";
+		sound[] = {"332nd_Aux\music\music\movie\droidinvasion.ogg",1,1};
+		duration = 190;
+		musicClass = "332nd_Music_MV";
+    };
+	class Nobel_End
+    {
+        name = "Qui Gons Noble End";
+		sound[] = {"332nd_Aux\music\music\movie\nobelend.ogg",1,1};
+		duration = 190;
+		musicClass = "332nd_Music_MV";
+    };
+	class Panaka
+    {
+        name = "Panaka and the Queens Protectors";
+		sound[] = {"332nd_Aux\music\music\movie\panaka.ogg",1,1};
+		duration = 190;
+		musicClass = "332nd_Music_MV";
+    };
+	class Sith_SpaceCraft
+    {
+        name = "The Sith Spacecraft and the Droid Battle";
+		sound[] = {"332nd_Aux\music\music\movie\sithsapcecraft.ogg",1,1};
+		duration = 190;
+		musicClass = "332nd_Music_MV";
+    };
+
 //Rock
     class Brain_Stew
     {
         name = "Brain Stew";
-		sound[] = {"332nd_Aux\music\music\Rock\brain_Stew.ogg",1,1};
+		sound[] = {"332nd_Aux\music\music\movie\brain_Stew.ogg",1,1};
 		duration = 190;
 		musicClass = "332nd_Music_Rock";
     };
@@ -254,7 +291,6 @@ class CfgMusic
 };
 
 
-
 class CfgMusicClasses
 {
 	class 332nd_Music_PW
@@ -276,6 +312,10 @@ class CfgMusicClasses
 	class 332nd_Music_ERP
 	{
 		displayName = "[332nd] ERP";
+	};
+		class 332nd_Music_MV
+	{
+		displayName = "[332nd] Movie Music";
 	};
 
 };
