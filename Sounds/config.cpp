@@ -30,6 +30,22 @@ class CfgSFX
         };
         empty[] = {"",0,0,0,0,0,0,0};
     };
+    class 332nd_Sound_Battlefield_2
+    {
+        name = "[332nd] Battlefield 2";
+        sounds[] = {"sfxsound"};
+        sfxsound[] = {
+            "332nd_Aux\Sounds\Battlefield\battlemusic1.ogg",			
+            6, //Volume
+			1, //Pitch
+			15, //Max Distance
+			1, //Probabililty
+			1, //Min Delay
+			1, //Mid Delay
+			0  //Max Delay
+        };
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
 }
 class CfgVehicles
 {
@@ -55,5 +71,13 @@ class CfgVehicles
         scope = 2;
         sound = "332nd_Sound_Battlefield_1";
         displayName = "[332nd] Battlefield 1";
+    };
+    class 332nd_Sound_Battlefield2: Sound
+    {
+        author = "Frankie";
+        _generalMacro = "332nd_Sound_Battlefield_2";
+        scope = 2;
+        sound = "332nd_Sound_Battlefield_2";
+        displayName = "[332nd] Battlefield 2";
     };
 };
