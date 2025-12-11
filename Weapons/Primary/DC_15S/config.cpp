@@ -405,7 +405,6 @@ class cfgWeapons
 		};
 	};
 
-	class 3AS_DC15S_F;
 	class 332nd_DC15S_3AS: 3AS_DC15S_F
 	{
 		cursor = "332nd_Cursor_Circle";
