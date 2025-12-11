@@ -888,11 +888,6 @@ class CfgVehicles
 				count = 10;
 				weapon = "ItemcTab";
 			};
-			class JLTS_clone_comlink 
-			{
-				count = 10;
-				weapon = "JLTS_clone_comlink";
-			};
 			class ItemCompass 
 			{
 				count = 10;
