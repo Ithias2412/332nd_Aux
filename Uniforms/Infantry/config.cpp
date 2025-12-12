@@ -215,13 +215,37 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Frankenburg: 332nd_Uniform_Clone_CR
+	class 332nd_Uniform_Clone_Walkie: 332nd_Uniform_Clone_CR
 	{
-		displayName="[332nd] Clone Trooper Armor (Frankenburg)";
+		displayName="[332nd] Clone Trooper Armor (Walkie)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Frankenburg_Veh";
+			uniformClass="332nd_Uniform_Clone_Walkie_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Rat: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Rat)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Rat_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Mouse: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Mouse)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Mouse_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -571,14 +595,34 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ketamine.paa",
 		};
 	};
-	class 332nd_Uniform_Clone_Frankenburg_Veh: 332nd_Uniform_Clone_CR_Veh
+	class 332nd_Uniform_Clone_Walkie_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="332nd_Uniform_Clone_Frankenburg";
+		uniformClass="332nd_Uniform_Clone_Walkie";
 		hiddenSelectionsTextures[] = 
 		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Frankenburg.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Frankenburg.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Walkie.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Walkie.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Rat_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Rat";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rat.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rat.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Mouse_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Mouse";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Mouse.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Mouse.paa",
 		};
 	};
 
@@ -692,6 +736,8 @@ class XtdGearModels
 					"Luci",
 					"Arson",
 					"Inu",
+					"Rat",
+					"Mouse",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -851,6 +897,18 @@ class XtdGearModels
 					description = "RAHHHHHHHHHHHHHH I LOVE WAR";
 					//image = "xxx";
 				};
+				class Rat
+				{
+					label = "Rat";
+					description = "SATURDAY IS DRINKING DAY!!!";
+					//image = "xxx";
+				};
+				class Mouse
+				{
+					label = "Mouse";
+					description = "Hates Quebec";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -940,10 +998,20 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Customs = "Ketamine";
 		};
-		class 332nd_Uniform_Clone_Frankenburg
+		class 332nd_Uniform_Clone_Walkie
 		{
 			model = "332nd_Uniform_Extended";
-			Customs = "Frankenburg";
+			Customs = "Walkie";
+		};
+		class 332nd_Uniform_Clone_Rat
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Rat";
+		};
+		class 332nd_Uniform_Clone_Mouse
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Mouse";
 		};
 	}; 
 };

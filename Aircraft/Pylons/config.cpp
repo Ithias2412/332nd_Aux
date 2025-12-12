@@ -273,13 +273,12 @@ class CfgMagazines
 		count = 500;
 		displayname = "Energy Cell";
 	};
-	
 	class 3as_PylonWeapon_Z95_240Rnd_Heavy_Shells;
 	class 332nd_Z95_Cannon_Heavy_Mag: 3as_PylonWeapon_Z95_240Rnd_Heavy_Shells
 	{
 		ammo = "332nd_Z95_Cannon_Heavy_Ammo";
 		count = 1500;
-		displayname = "[332nd] Energy Cannon";
+		displayname = "[332nd] Heavy Energy Cannon";
 		initSpeed = 1360;
 		hardpoints[] = 
 		{
@@ -510,7 +509,7 @@ class CfgAmmo
 	};
 	class 332nd_Hammer_II_L_Ammo: M_Zephyr
 	{
-		effectsMissile = "332nd_Effect_Hammer";
+		effectsMissile = "332nd_Effect_Hammer_II";
 		hit = 750;
 		indirectHit = 750;
 	};

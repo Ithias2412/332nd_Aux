@@ -270,6 +270,30 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ketamine.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Inu: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Inu)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Inu.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Mouse: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Mouse)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Mouse.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -354,6 +378,7 @@ class XtdGearModels
 					"Thym",
 					"Shovie",
 					"Charger",
+					"Inu",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -578,7 +603,18 @@ class XtdGearModels
 					label = "Charger";
 					description = "Engrish";
 					//image = "xxx";
-
+				};
+				class Inu
+				{
+					label = "Inu";
+					description = "A Handsome Guy";
+					//image = "xxx";
+				};
+				class Mouse
+				{
+					label = "Mouse";
+					description = "Havok's Boy Toy";
+					//image = "xxx";
 				};
             };
         };
@@ -684,6 +720,16 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ketamine";
+		};
+		class 332nd_Helmet_P2_Inu
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Inu";
+		};
+		class 332nd_Helmet_P2_Mouse
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Mouse";
 		};
 	};
 };

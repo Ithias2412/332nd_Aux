@@ -1509,20 +1509,19 @@ class CfgVehicles
 		};
 		weapons[]= 
 		{
-			"3as_LAAT_Medium_Canon",
-			"332nd_Hydra_Missiles",
+			"332nd_LAAT_Cannon",
+			"332nd_Anvil_X_S",
 			"CMFlareLauncher",
 			//"SmokeLauncher",
 		};
 		magazines[]=
 		{
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"12rnd_missiles",
-			"12rnd_missiles",
-			"300Rnd_CMFlare_Chaff_Magazine",
+			"332nd_LAAT_Cannon_Mag",
+			"332nd_LAAT_Cannon_Mag",
+			"332nd_LAAT_Cannon_Mag",
+			"332nd_LAAT_Cannon_Mag",
+			"332nd_Anvil_X_S_Mag",
+			"332nd_Anvil_X_S_Mag",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
@@ -1769,7 +1768,7 @@ class CfgVehicles
 						typeRecognitionDistance=0;
 					};
 				};
-			};
+			};	
 			class TransportCounterMeasuresComponent
 			{
 				// My dick hurt
@@ -1781,13 +1780,14 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment="332nd_Anvil_III_Mag";
+						attachment="332nd_Anvil_IV_Mag";
 						priority=5;
 						hardpoints[]=
 						{
 							"332nd_Hammer_I",
 							"332nd_Anvil_I",
-							"332nd_Anvil_III",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_X_S",
 						};
 						turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
@@ -1805,7 +1805,8 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Anvil_I",
-							"332nd_Anvil_III",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_X_S",
 						};
 						turret[]={0};
 						UIposition[]={0.079999998,0.34999999};
@@ -1823,7 +1824,8 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I",
 							"332nd_Anvil_I",
-							"332nd_Anvil_III",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_X_S",
 							"332nd_Dropcrate_PW1",
 						};
 						turret[]={0};
@@ -2036,7 +2038,7 @@ class CfgVehicles
 						displayName="332nd Test";
 						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
 					};
-				}; */ 
+				};  */
 			};
 		};
 	};

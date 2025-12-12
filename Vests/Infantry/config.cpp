@@ -254,6 +254,31 @@ class cfgWeapons
 		};
 	};
 
+	class 332nd_CSS_Vest_Walkie: 332nd_Trooper_Vest
+	{
+		displayName="New! [332nd] Vest (Walkie)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Walkie.paa",
+			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_Walkie.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"
+			};
+		};
+	};
+
 };
 
 
@@ -265,7 +290,7 @@ class XtdGearModels
         {
             label = "Vests";
             author = "Ithias";
-			options[] = { "Rank", "custom",};
+			options[] = { "Rank", "Custom",};
             class Rank
             {
                 label = "Rank";
@@ -315,7 +340,7 @@ class XtdGearModels
                     //image = "xxx";
                 };
             };
-			class custom
+			class Custom
             {
                 label = "Customs";
                 values[] = { "Cherryy", "Asuka", "Ithias", "Joker", "Body", "Crow", "Frankenburg", "Walkie"};
@@ -411,6 +436,11 @@ class XtdGearInfos
         {
             model = "332nd_Vest_Extended";
             Rank = "CC";
+        };
+        class 332nd_CSS_Vest_Walkie
+        {
+            model = "332nd_Vest_Extended";
+            Custom = "Walkie";
         };
 	};
 };
