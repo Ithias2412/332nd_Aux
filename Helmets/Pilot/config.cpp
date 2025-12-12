@@ -79,6 +79,14 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Jorge.paa",
 		};
 	};
+	class 332nd_Helmet_Pilot_Cosmos: 332nd_Helmet_Pilot
+	{
+		displayName="[332nd] Pilot Helmet (Cosmos)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Cosmos.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -106,7 +114,14 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { /* "Saiko", */ "Shadow", "Lawman", "Jorge"};
+				values[] = 
+				{
+					/* "Saiko", */ 
+					"Shadow", 
+					"Lawman", 
+					"Jorge", 
+					"Cosmos"
+				};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				/* class Saiko
@@ -133,6 +148,12 @@ class XtdGearModels
                     description = "J-052";
                     //image = "xxx";
                 };
+				class Cosmos
+                {
+                    label = "Cosmos";
+                    description = "Cosmo's*";
+                    //image = "xxx";
+                };
             };
         };
     };
@@ -151,6 +172,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Jorge";
+		};
+		class 332nd_Helmet_Pilot_Cosmos
+		{
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Cosmos";
 		};
 	};
 };

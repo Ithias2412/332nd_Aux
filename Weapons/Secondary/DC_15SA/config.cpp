@@ -14,6 +14,11 @@ class CfgPatches {
 };
 //#include "xtdGear.hpp"
 class Mode_SemiAuto;
+class WeaponSlotsInfo;
+class CowsSlot;
+class UnderBarrelSlot;
+class MuzzleSlot;
+class PointerSlot;
 
 class cfgWeapons 
 {
@@ -52,7 +57,11 @@ class cfgWeapons
 			minRangeProbab = 0.3;
 			recoil = "recoil_pistol_heavy";
 			recoilProne = "recoil_prone_pistol_heavy";
-			sounds[] = {"StandardSound"};
+			sounds[] = 
+			{
+				"StandardSound",
+				"SilencedSound",
+			};
 			class BaseSoundModeType
 			{
 				
@@ -61,6 +70,13 @@ class cfgWeapons
 			{
 				soundSetShot[] = {"3AS_DC15SA_Shot_SoundSet"};
 				//soundSetShot[] = {"3AS_Arkanian_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[] = 
+				{
+					"332nd_DC15SA_Suppressed_Shot_SoundSet",
+				};
 			};
 		};
 		class FullAuto: Single
@@ -89,6 +105,29 @@ class cfgWeapons
 			};
 		};
 		muzzles[] = { "this", "Stun" };
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=40;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]={};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[]=
+				{
+					"DC15SA_Muzzle",
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]={};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[]={};
+			};
+		};
 		class Stun: JLTS_stun_muzzle
 		{
 			magazines[] = 
@@ -96,5 +135,67 @@ class cfgWeapons
 				"332nd_Sidearm_Stun_Mag",
 			};
 		};
+	};
+	class muzzle_snds_H_MG;
+	class muzzle_snds_H: muzzle_snds_H_MG
+	{
+		class ItemInfo;
+	};
+	class DC15SA_Muzzle: muzzle_snds_H
+	{
+		author = "Ithias";
+		displayName = "NFA/Cali Compliant Suppressor";
+		model = "\3AS\3AS_Weapons\Republic\ACC\3AS_acca_DC17S_Muzzle_F";
+		picture = "";
+		class ItemInfo: ItemInfo
+		{
+			class MagazineCoef
+			{
+				initSpeed = 1;
+			};
+			class AmmoCoef
+			{
+				airFriction = 1;
+				audibleFire = 0;
+				audibleFireTime = 0;
+				cost = 1;
+				hit = 0.5;
+				typicalSpeed = 1;
+				visibleFire = 0;
+				visibleFireTime = 0;
+			};
+			class MuzzleCoef
+			{
+				artilleryDispersionCoef = "1.0f";
+				dispersionCoef = "1.0f";
+				fireLightCoef = "0";
+				maxRangeCoef = "1.0f";
+				maxRangeProbabCoef = "1.0f";
+				midRangeCoef = "1.0f";
+				midRangeProbabCoef = "1.0f";
+				minRangeCoef = "1.0f";
+				minRangeProbabCoef = "1.0f";
+				recoilCoef = "1.0f";
+				recoilProneCoef = "1.0f";
+			};
+		};
+	};
+};
+
+class CfgSoundSets
+{
+	class 332nd_DC15SA_Suppressed_Shot_SoundSet
+	{
+		distanceFilter = "weaponShotDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponMediumShot3DProcessingType";
+		soundShaders[] = {"3AS_DC15SA_Shot_SoundShader"};
+		spatial = 1;
+		volumeCurve = "InverseSquare2Curve";
+		//volumeFactor = 1;
+		volumeFactor = 0.20;
 	};
 };

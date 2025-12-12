@@ -61,8 +61,8 @@ class CfgVehicles
 		};
 		magazines[] = 
 		{
-			"332nd_Y_Wing_Cannon_40mm_Mag",
-			"332nd_Y_Wing_Cannon_40mm_Mag",
+			"332nd_Y_Wing_Cannon_Mag",
+			"332nd_Y_Wing_Cannon_Mag",
 			//"Laserbatteries",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			//"120Rnd_CMFlare_Chaff_Magazine",

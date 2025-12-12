@@ -82,8 +82,8 @@ class CfgVehicles
 		};
 		magazines[]=
 		{
-			"332nd_ARC_Cannon_30mm_Mag",
-			"332nd_ARC_Cannon_30mm_Mag",
+			"332nd_ARC_Cannon_Mag",
+			"332nd_ARC_Cannon_Mag",
 			"Laserbatteries",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",

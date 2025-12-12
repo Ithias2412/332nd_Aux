@@ -857,10 +857,10 @@ class CfgVehicles
 		};
 		magazines[]=
 		{
-			"332nd_LAAT_Cannon_20mm_Mag",
-			"332nd_LAAT_Cannon_20mm_Mag",
-			"332nd_LAAT_Cannon_20mm_Mag",
-			"332nd_LAAT_Cannon_20mm_Mag",
+			"332nd_LAAT_Cannon_Mag",
+			"332nd_LAAT_Cannon_Mag",
+			"332nd_LAAT_Cannon_Mag",
+			"332nd_LAAT_Cannon_Mag",
 			"332nd_Anvil_X_S_Mag",
 			"332nd_Anvil_X_S_Mag",
 			"300Rnd_CMFlare_Chaff_Magazine",
