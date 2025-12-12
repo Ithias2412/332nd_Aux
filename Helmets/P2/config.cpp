@@ -294,6 +294,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Mouse.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Fusion: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Fusion)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Fusion.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -379,6 +391,8 @@ class XtdGearModels
 					"Shovie",
 					"Charger",
 					"Inu",
+					"Mouse",
+					"Fusion",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -616,6 +630,12 @@ class XtdGearModels
 					description = "Havok's Boy Toy";
 					//image = "xxx";
 				};
+				class Fusion
+				{
+					label = "Fusion";
+					description = "Loading...";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -730,6 +750,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Mouse";
+		};
+		class 332nd_Helmet_P2_Fusion
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Fusion";
 		};
 	};
 };
