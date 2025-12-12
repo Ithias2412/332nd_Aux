@@ -444,6 +444,7 @@ class CfgVehicles
 	class 332nd_Bag_AR_AI_DC15L: 332nd_Bag_AR
 	{
 		scope = 1;
+		scopearsenal = 1;
 		displayName="New! [332nd] Backpack (Auto-Rifleman)";
 		class TransportMagazines
 		{
@@ -457,6 +458,7 @@ class CfgVehicles
 	class 332nd_Bag_AR_AI_Z6: 332nd_Bag_AR
 	{
 		scope = 1;
+		scopearsenal = 1;
 		displayName="New! [332nd] Backpack (Auto-Rifleman)";
 		class TransportMagazines
 		{

@@ -263,6 +263,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Crow: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Crow)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Crow_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 
 };
 
@@ -646,6 +658,16 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Frankenburg.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Frankenburg.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Crow_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Crow";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crow.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crow.paa",
 		};
 	};
 };
@@ -1039,6 +1061,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Frankenburg";
+		};
+		class 332nd_Uniform_Clone_Crow
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Crow";
 		};
 	}; 
 };
