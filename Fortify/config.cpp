@@ -34,7 +34,8 @@ class ACEX_Fortify_Presets
 			
 			{"k_porg", 10, "Friends"},
 			{"TKE_Smelvin2", 10, "Friends"},
-			{"Land_FirePlace_F", 10, "Camping"},
+			{"Campfire_burning_F", 10, "Camping"},
+			{"Land_CampingChair_V1_F", 10, "Camping"},
         };
     };
 };
