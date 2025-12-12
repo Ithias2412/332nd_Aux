@@ -11,43 +11,45 @@ class CfgPatches
         };
 		weapons[] = 
         {
-            "",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
 	};
 };
 //#include "xtdGear.hpp"
+
 class CfgEditorCategories
 {
 	class 332nd_Crates
 	{
-		displayname="[332nd] Crates";
+		displayname = "[332nd] Crates";
 	};
 };
+
 class CfgVehicles 
 {
 	class 3AS_Supply_Large_Prop;
 	class 3AS_Small_Fuel_Barrel;
 
+	// AMMO CRATE
 	class 332nd_Ammo_Crate: 3AS_Supply_Large_Prop
 	{
 		scope = 2;
 		scopeCurator = 2;
-		model="3as\3as_props\crates\models\supply_Large.p3d";
-		displayName="[332nd] Supply Crate (Ammo)";
-		//editorCategory="332nd_EditorCategory";
-		editorCategory="332nd_Crates";
-		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
-		editorPreview="\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Ammo_Prop.jpg";
-		hiddenSelections[]=
+		model = "3as\3as_props\crates\models\supply_Large.p3d";
+		displayName = "[332nd] Supply Crate (Ammo)";
+		editorCategory = "332nd_Crates";
+		editorSubcategory = "EdSubcat_332nd_Resupply_Crates";
+		editorPreview = "\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Ammo_Prop.jpg";
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"
 		};
+
 		class TransportMagazines
 		{
 			class 332nd_DC15A_Mag
@@ -240,64 +242,68 @@ class CfgVehicles
 				count = 25;
 				magazine = "332nd_PLX1_Mag";
 			};
-		};
-		class TransportItems
-		{
+
+			// moved from TransportItems – these are mags/grenades
 			class 3AS_SmokeWhite
 			{
 				count = 50;
-				name = "3AS_SmokeWhite";
+				magazine = "3AS_SmokeWhite";
 			};
 			class 3AS_SmokeBlue
 			{
 				count = 25;
-				name = "3AS_SmokeBlue";
+				magazine = "3AS_SmokeBlue";
 			};
 			class 3AS_SmokeGreen
 			{
 				count = 25;
-				name = "3AS_SmokeGreen";
+				magazine = "3AS_SmokeGreen";
 			};
 			class 3AS_SmokeOrange
 			{
 				count = 25;
-				name = "3AS_SmokeOrange";
+				magazine = "3AS_SmokeOrange";
 			};
 			class 3AS_SmokePurple
 			{
 				count = 25;
-				name = "3AS_SmokePurple";
+				magazine = "3AS_SmokePurple";
 			};
 			class 3AS_SmokeRed
 			{
 				count = 25;
-				name = "3AS_SmokeRed";
+				magazine = "3AS_SmokeRed";
 			};
 			class 3AS_SmokeYellow
 			{
 				count = 25;
-				name = "3AS_SmokeYellow";
+				magazine = "3AS_SmokeYellow";
 			};
 			class 332nd_Remote_Charge_Mag
 			{
 				count = 25;
-				name = "332nd_Remote_Charge_Mag";
+				magazine = "332nd_Remote_Charge_Mag";
 			};
 			class 332nd_Thermal_Detonator
 			{
 				count = 25;
-				name = "332nd_Thermal_Detonator";
+				magazine = "332nd_Thermal_Detonator";
 			};
 			class 332nd_DroidPopper_x1_mag
 			{
 				count = 25;
-				name = "332nd_DroidPopper_x1_mag";
+				magazine = "332nd_DroidPopper_x1_mag";
 			};
 			class 332nd_Detonation_pack_Mag
 			{
 				count = 10;
-				name = "332nd_Detonation_pack_Mag";
+				magazine = "332nd_Detonation_pack_Mag";
 			};
+		};
+
+		class TransportItems
+		{
+			// keep the throwable “items” here
 			class 332nd_Remote_Charge_Throwable
 			{
 				count = 25;
@@ -309,6 +315,7 @@ class CfgVehicles
 				name = "332nd_Detonation_pack_Throwable";
 			};
 		};
+
 		class TransportWeapons
 		{
 			class 332nd_Dispo_F
@@ -319,23 +326,24 @@ class CfgVehicles
 		};
 	};
 
+	// MEDICAL CRATE
 	class 332nd_Medical_Crate: 3AS_Supply_Large_Prop
 	{
 		scope = 2;
 		scopeCurator = 2;
-		model="3as\3as_props\crates\models\supply_Large.p3d";
-		displayName="[332nd] Supply Crate (Medical)";
-		//editorCategory="332nd_EditorCategory";
-		editorCategory="332nd_Crates";
-		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
-		hiddenSelections[]=
+		model = "3as\3as_props\crates\models\supply_Large.p3d";
+		displayName = "[332nd] Supply Crate (Medical)";
+		editorCategory = "332nd_Crates";
+		editorSubcategory = "EdSubcat_332nd_Resupply_Crates";
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"
 		};
+
 		class TransportItems
 		{
 			class 332nd_Acti_Bandage_Weap
@@ -393,28 +401,28 @@ class CfgVehicles
 				count = 25;
 				name = "ACE_tourniquet";
 			};
-	
 		};
 	};
 
+	// EQUIPMENT CRATE
 	class 332nd_Equipment_Crate: 3AS_Supply_Large_Prop
 	{
 		scope = 2;
 		scopeCurator = 2;
-		model="3as\3as_props\crates\models\supply_Large.p3d";
-		displayName="[332nd] Supply Crate (Equipment)";
-		//editorCategory="332nd_EditorCategory";
-		editorCategory="332nd_Crates";
-		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
-		editorPreview="\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Black_Prop.jpg";
-		hiddenSelections[]=
+		model = "3as\3as_props\crates\models\supply_Large.p3d";
+		displayName = "[332nd] Supply Crate (Equipment)";
+		editorCategory = "332nd_Crates";
+		editorSubcategory = "EdSubcat_332nd_Resupply_Crates";
+		editorPreview = "\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Black_Prop.jpg";
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"3AS\3AS_Props\Crates\Data\Supply_Large_orange\Supply_Large_orange_co.paa"
 		};
+
 		class TransportItems
 		{
 			class ACE_DefusalKit
@@ -467,14 +475,55 @@ class CfgVehicles
 				count = 10;
 				name = "ItemcTabHCam";
 			};
-		};
-		class TransportWeapons
-		{
 			class JLTS_clone_comlink
 			{
 				count = 10;
-				weapon = "JLTS_clone_comlink";
+				name = "JLTS_clone_comlink";
 			};
+			class ItemMap 
+			{
+				count = 10;
+				name = "ItemMap";
+			};
+			class ItemcTab 
+			{
+				count = 10;
+				name = "ItemcTab";
+			};
+			class ItemCompass 
+			{
+				count = 10;
+				name = "ItemCompass";
+			};
+			class ACE_Altimeter 
+			{
+				count = 10;
+				name = "ACE_Altimeter";
+			};
+			class 332nd_NVG_Chip 
+			{
+				count = 10;
+				name = "332nd_NVG_Chip";
+			};
+			class 332nd_Helmet_P2_CT 
+			{
+				count = 5;
+				name = "332nd_Helmet_P2_CT";
+			};
+			class 332nd_Trooper_Vest 
+			{
+				count = 5;
+				name = "332nd_Trooper_Vest";
+			};
+			class 332nd_Uniform_Clone_CT 
+			{
+				count = 5;
+				name = "332nd_Uniform_Clone_CT";
+			};
+		};
+
+		class TransportWeapons
+		{
 			class 332nd_DC15A
 			{
 				count = 10;
@@ -500,6 +549,8 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_DC17S";
 			};
+
+			// Optics / attachments still treated as weapons (CfgWeapons)
 			class 332nd_Mode_A_Raised
 			{
 				count = 10;
@@ -540,52 +591,13 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_Mode_A_Zoom_2_Raised_Forward_2";
 			};
-			class 332nd_Helmet_P2_CT 
-			{
-				count = 5;
-				weapon = "332nd_Helmet_P2_CT";
-			};
-			class 332nd_Uniform_Clone_CT 
-			{
-				count = 5;
-				weapon = "332nd_Uniform_Clone_CT";
-			};
-			class 332nd_Trooper_Vest 
-			{
-				count = 5;
-				weapon = "332nd_Trooper_Vest";
-			};
-			class 332nd_NVG_Chip 
-			{
-				count = 10;
-				weapon = "332nd_NVG_Chip";
-			};
 			class SWLB_clone_binocular 
 			{
 				count = 10;
 				weapon = "SWLB_clone_binocular";
 			};
-			class ItemMap 
-			{
-				count = 10;
-				weapon = "ItemMap";
-			};
-			class ItemcTab 
-			{
-				count = 10;
-				weapon = "ItemcTab";
-			};
-			class ItemCompass 
-			{
-				count = 10;
-				weapon = "ItemCompass";
-			};
-			class ACE_Altimeter 
-			{
-				count = 10;
-				weapon = "ACE_Altimeter";
-			};
 		};
+
 		class TransportBackpacks
 		{
 			class 332nd_Bag
@@ -596,20 +608,22 @@ class CfgVehicles
 		};
 	};
 
+	// GENERAL RESUPPLY CRATE
 	class 332nd_Resupply_Crate: 3AS_Supply_Large_Prop
 	{
 		scope = 2;
 		scopeCurator = 2;
 		_generalMacro = "332nd_Resupply_Crate";
-		model="3as\3as_props\crates\models\supply_Large.p3d";
-		displayName="[332nd] Supply Crate";
-		//editorCategory="332nd_EditorCategory";
-		editorCategory="332nd_Crates";
-		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
+		model = "3as\3as_props\crates\models\supply_Large.p3d";
+		displayName = "[332nd] Supply Crate";
+		editorCategory = "332nd_Crates";
+		editorSubcategory = "EdSubcat_332nd_Resupply_Crates";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
+
 		class TransportItems
 		{
+			// MEDICAL
 			class 332nd_Acti_Bandage_Weap
 			{
 				count = 250;
@@ -665,6 +679,8 @@ class CfgVehicles
 				count = 25;
 				name = "ACE_tourniquet";
 			};
+
+			// TOOLS / GEAR
 			class ACE_DefusalKit
 			{
 				count = 5;
@@ -715,61 +731,8 @@ class CfgVehicles
 				count = 10;
 				name = "ItemcTabHCam";
 			};
-			class 3AS_SmokeWhite
-			{
-				count = 50;
-				name = "3AS_SmokeWhite";
-			};
-			class 3AS_SmokeBlue
-			{
-				count = 25;
-				name = "3AS_SmokeBlue";
-			};
-			class 3AS_SmokeGreen
-			{
-				count = 25;
-				name = "3AS_SmokeGreen";
-			};
-			class 3AS_SmokeOrange
-			{
-				count = 25;
-				name = "3AS_SmokeOrange";
-			};
-			class 3AS_SmokePurple
-			{
-				count = 25;
-				name = "3AS_SmokePurple";
-			};
-			class 3AS_SmokeRed
-			{
-				count = 25;
-				name = "3AS_SmokeRed";
-			};
-			class 3AS_SmokeYellow
-			{
-				count = 25;
-				name = "3AS_SmokeYellow";
-			};
-			class 332nd_Thermal_Detonator
-			{
-				count = 25;
-				name = "332nd_Thermal_Detonator";
-			};
-			class 332nd_DroidPopper_x1_mag
-			{
-				count = 25;
-				name = "332nd_DroidPopper_x1_mag";
-			};
-			class 332nd_Remote_Charge_Mag
-			{
-				count = 25;
-				name = "332nd_Remote_Charge_Mag";
-			};
-			class 332nd_Detonation_pack_Mag
-			{
-				count = 10;
-				name = "332nd_Detonation_pack_Mag";
-			};
+
+			// THROWABLE “ITEM” VARIANTS
 			class 332nd_Remote_Charge_Throwable
 			{
 				count = 25;
@@ -780,14 +743,52 @@ class CfgVehicles
 				count = 10;
 				name = "332nd_Detonation_pack_Throwable";
 			};
-		};
-		class TransportWeapons
-		{
+
+			// MAP / NAV / COMMS / WEARABLES
+			class ItemMap 
+			{
+				count = 10;
+				name = "ItemMap";
+			};
+			class ItemcTab 
+			{
+				count = 10;
+				name = "ItemcTab";
+			};
+			class ItemCompass 
+			{
+				count = 10;
+				name = "ItemCompass";
+			};
+			class ACE_Altimeter 
+			{
+				count = 10;
+				name = "ACE_Altimeter";
+			};
 			class JLTS_clone_comlink
 			{
 				count = 10;
-				weapon = "JLTS_clone_comlink";
+				name = "JLTS_clone_comlink";
 			};
+			class 332nd_Helmet_P2_CT 
+			{
+				count = 5;
+				name = "332nd_Helmet_P2_CT";
+			};
+			class 332nd_Uniform_Clone_CT 
+			{
+				count = 5;
+				name = "332nd_Uniform_Clone_CT";
+			};
+			class 332nd_Trooper_Vest 
+			{
+				count = 5;
+				name = "332nd_Trooper_Vest";
+			};
+		};
+
+		class TransportWeapons
+		{
 			class 332nd_DC15A
 			{
 				count = 10;
@@ -813,6 +814,7 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_DC17S";
 			};
+
 			class 332nd_Mode_A_Raised
 			{
 				count = 10;
@@ -853,21 +855,7 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_Mode_A_Zoom_2_Raised_Forward_2";
 			};
-			class 332nd_Helmet_P2_CT 
-			{
-				count = 5;
-				weapon = "332nd_Helmet_P2_CT";
-			};
-			class 332nd_Uniform_Clone_CT 
-			{
-				count = 5;
-				weapon = "332nd_Uniform_Clone_CT";
-			};
-			class 332nd_Trooper_Vest 
-			{
-				count = 5;
-				weapon = "332nd_Trooper_Vest";
-			};
+
 			class 332nd_NVG_Chip 
 			{
 				count = 10;
@@ -878,32 +866,13 @@ class CfgVehicles
 				count = 10;
 				weapon = "SWLB_clone_binocular";
 			};
-			class ItemMap 
-			{
-				count = 10;
-				weapon = "ItemMap";
-			};
-			class ItemcTab 
-			{
-				count = 10;
-				weapon = "ItemcTab";
-			};
-			class ItemCompass 
-			{
-				count = 10;
-				weapon = "ItemCompass";
-			};
-			class ACE_Altimeter 
-			{
-				count = 10;
-				weapon = "ACE_Altimeter";
-			};
 			class 332nd_Dispo_F
 			{
 				count = 25;
 				weapon = "332nd_Dispo_F";
 			};
 		};
+
 		class TransportBackpacks
 		{
 			class 332nd_Bag
@@ -912,6 +881,7 @@ class CfgVehicles
 				backpack = "332nd_Bag";
 			};
 		};
+
 		class TransportMagazines
 		{
 			class 332nd_DC15A_Mag
@@ -944,11 +914,6 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DLT15_Mag";
 			};
-			/* class 332nd_DLT19L_Mag
-			{
-				count = 100;
-				magazine = "332nd_DLT19L_Mag";
-			}; */
 			class 332nd_DW_32S_Mag
 			{
 				count = 100;
@@ -1084,16 +1049,73 @@ class CfgVehicles
 				count = 25;
 				magazine = "332nd_PLX1_Mag";
 			};
+
+			// moved from Items – grenade/mag variants
+			class 3AS_SmokeWhite
+			{
+				count = 50;
+				magazine = "3AS_SmokeWhite";
+			};
+			class 3AS_SmokeBlue
+			{
+				count = 25;
+				magazine = "3AS_SmokeBlue";
+			};
+			class 3AS_SmokeGreen
+			{
+				count = 25;
+				magazine = "3AS_SmokeGreen";
+			};
+			class 3AS_SmokeOrange
+			{
+				count = 25;
+				magazine = "3AS_SmokeOrange";
+			};
+			class 3AS_SmokePurple
+			{
+				count = 25;
+				magazine = "3AS_SmokePurple";
+			};
+			class 3AS_SmokeRed
+			{
+				count = 25;
+				magazine = "3AS_SmokeRed";
+			};
+			class 3AS_SmokeYellow
+			{
+				count = 25;
+				magazine = "3AS_SmokeYellow";
+			};
+			class 332nd_Thermal_Detonator
+			{
+				count = 25;
+				magazine = "332nd_Thermal_Detonator";
+			};
+			class 332nd_DroidPopper_x1_mag
+			{
+				count = 25;
+				magazine = "332nd_DroidPopper_x1_mag";
+			};
+			class 332nd_Remote_Charge_Mag
+			{
+				count = 25;
+				magazine = "332nd_Remote_Charge_Mag";
+			};
+			class 332nd_Detonation_pack_Mag
+			{
+				count = 10;
+				magazine = "332nd_Detonation_pack_Mag";
+			};
 		};
 	};
 
+	// REFUEL BARREL
 	class 332nd_Refueling_Barrel: 3AS_Small_Fuel_Barrel
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName="[332nd] Refueling Barrel";
-		editorCategory="332nd_Crates";
-		editorSubcategory="EdSubcat_332nd_Resupply_Crates";
+		displayName = "[332nd] Refueling Barrel";
+		editorCategory = "332nd_Crates";
+		editorSubcategory = "EdSubcat_332nd_Resupply_Crates";
 	};
-
 };
