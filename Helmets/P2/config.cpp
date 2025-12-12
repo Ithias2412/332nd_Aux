@@ -306,6 +306,30 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Fusion.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Cherryy: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Cherryy)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Cherryy.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Shuck: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Shuck)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Shuck.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -392,7 +416,8 @@ class XtdGearModels
 					"Charger",
 					"Inu",
 					"Mouse",
-					"Fusion",
+					//"Fusion",
+					"Shuck",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -630,10 +655,18 @@ class XtdGearModels
 					description = "Havok's Boy Toy";
 					//image = "xxx";
 				};
+				/*
 				class Fusion
 				{
 					label = "Fusion";
 					description = "Loading...";
+					//image = "xxx";
+				};
+				*/
+				class Shuck
+				{
+					label = "Shuck";
+					description = "Waited 3 months for this";
 					//image = "xxx";
 				};
             };
@@ -751,10 +784,22 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Mouse";
 		};
+		/*
 		class 332nd_Helmet_P2_Fusion
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Fusion";
+		};
+		*/
+		class 332nd_Helmet_P2_Cherryy
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Cherryy";
+		};
+		class 332nd_Helmet_P2_Shuck
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Shuck";
 		};
 	};
 };
