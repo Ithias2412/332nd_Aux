@@ -288,6 +288,18 @@ class CfgVehicles
 
 
 // Items for AI Units
+	class 332nd_Backpack_AT;
+	class 332nd_Backpack_Engineer;
+	class 332nd_Backpack_Medic;
+	class 332nd_Backpack;
+	class 332nd_Bag_AR;
+	class 332nd_Bag_GRN_MRK;
+	class 332nd_Back_NCO;
+	class 332nd_Back_Radio;
+	class 332nd_Back;
+	class 332nd_Backpack_RTO;
+	
+
 	class 332nd_Backpack_AT_AI: 332nd_Backpack_AT
 	{
 		scope = 1;

@@ -108,6 +108,10 @@ class CfgCloudlets
     {
         color[] = {{0,0,1,0.07},{0,0,1,0.07},{0,0,1,0.07},{0,0,0.75,0.004},{0,0,0,0.003}};
     };
+    class 332nd_smoke_Purple: 332nd_smoke_Base
+    {
+        color[] = {{0.5,0.0,1,1},{0.5,0.0,1,0}};
+    };
     class 332nd_smoke_Teal: 332nd_smoke_Base
     {
         color[] = {{0.0, 0.5, 0.5, 0.07}, {0.0, 0.6, 0.6, 0.09}, {0.0, 0.7, 0.7, 0.05}, {0.0, 0.3, 0.3, 0.004}, {0.0, 0.2, 0.2, 0.003}};
@@ -129,7 +133,6 @@ class CfgCloudlets
 	{
         color[] = {{0,1,0,0.07}};
 	};
-
 };
 
 class CfgLights
@@ -231,5 +234,28 @@ class CfgLights
 			start = 0;
 		};
 	};
-
+	class 332nd_Missile_Purple_Light: RocketLight
+	{
+		ambient[] = {0,0,0};
+		blinking = 0;
+		//brightness = "100";
+		color[] = {0.5,0.0,1};
+		dayLight = 1;
+		diffuse[] = {1,0.25,0.05};
+		drawLight = 0;
+		flareMaxDistance = 12000;
+		flareSize = 2;
+		intensity = 25000;
+		size = 1;
+		useFlare = 1;
+		class Attenuation
+		{
+			constant = 0;
+			hardLimitEnd = 200;
+			hardLimitStart = 100;
+			linear = 0;
+			quadratic = 1;
+			start = 0;
+		};
+	};
 };

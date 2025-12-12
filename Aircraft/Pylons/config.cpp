@@ -504,7 +504,7 @@ class CfgAmmo
 	};
 	class 332nd_Hammer_II_Ammo: M_Zephyr
 	{
-		effectsMissile = "332nd_Effect_Hammer";
+		effectsMissile = "332nd_Effect_Hammer_II";
 		proximityExplosionDistance = 12;
 		fuseDistance = 5;
 	};
@@ -631,6 +631,29 @@ class 332nd_Effect_Hammer
 		qualityLevel = 2;
 		simulation = "particles";
 		type = "332nd_Missile_Blue_Smoke";
+	};
+};
+
+class 332nd_Effect_Hammer_II
+{
+	class 332nd_Light_Hammer
+	{
+		intensity = 0.01;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0,0,0};
+		simulation = "light";
+		type = "332nd_Missile_Purple_Light";
+	};
+	class 332nd_Smoke_Hammer
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1; 
+		position[] = {0,0,0}; 
+		qualityLevel = 2;
+		simulation = "particles";
+		type = "332nd_Missile_Purple_Smoke";
 	};
 };
 
