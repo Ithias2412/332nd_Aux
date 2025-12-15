@@ -424,6 +424,7 @@ class CfgWeapons
 	class 332nd_LAAT_Cannon: 3as_LAAT_Medium_Canon
 	{
 		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
 		magazines[] = 
 		{
 			"332nd_LAAT_Cannon_Mag",
@@ -432,6 +433,7 @@ class CfgWeapons
 	class 332nd_Y_Wing_Cannon: 3AS_BTLB_Heavy_Cannon
 	{
 		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
 		magazines[] = 
 		{
 			"332nd_Y_Wing_Cannon_Mag",
@@ -440,6 +442,7 @@ class CfgWeapons
 	class 332nd_Z95_Cannon: 3AS_Z95_Light_Cannon
 	{
 		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
 		magazines[] = 
 		{
 			"332nd_Z95_Cannon_Mag",
@@ -448,6 +451,7 @@ class CfgWeapons
 	class 332nd_ARC_Cannon: 3AS_ARC_Light_Canon
 	{
 		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
 		magazines[] = 
 		{
 			"332nd_ARC_Cannon_Mag",
