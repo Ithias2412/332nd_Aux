@@ -155,7 +155,7 @@ class CfgMagazines
 		ammo = "332nd_Gas_Level_M3_S";
 		count = 100;
 		displayname = "DC-15LE 100 Round Energy Cell";
-		mass = 10;
+		mass = 13.3;
 		scope = 2;
 	};
 	class 332nd_EPL_Mag: 332nd_Base_Mag
