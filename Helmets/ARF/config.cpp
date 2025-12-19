@@ -133,7 +133,17 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Cin.paa",
 		};
 	};
-
+	class 332nd_Helmet_ARF_Trick: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Trick)";
+		scope = 1
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Trick.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Trick.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -208,11 +218,11 @@ class XtdGearModels
                     //image = "xxx";
                 };
 				/* class Walkie
-                {
-                    label = "Walkie";
-                    description = "Whispers drugs into my system";
-                    //image = "xxx";
-                }; */
+				{
+					label = "Walkie";
+					description = "Whispers drugs into my system";
+					//image = "xxx";
+				}; */
 				class Trick
                 {
                     label = "Trick";
@@ -274,6 +284,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Cin";
+        };
+        class 332nd_Helmet_ARF_Trick
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Trick";
         };
 	};
 };

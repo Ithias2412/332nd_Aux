@@ -330,6 +330,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Shuck.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Crow: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Crow)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crow.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -796,6 +808,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Fusion";
+		};
+		class 332nd_Helmet_P2_Crow
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Crow";
 		};
 	};
 };

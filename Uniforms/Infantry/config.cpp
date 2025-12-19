@@ -275,7 +275,42 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-
+	class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Cherryy)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Cherryy_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Shuck: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Shuck)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Shuck_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Trick: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Trick)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Trick_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -670,6 +705,36 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crow.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Cherryy_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Cherryy";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Cherryy.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cherryy.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Shuck_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Shuck";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shuck.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shuck.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Trick_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Trick";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Trick.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Trick.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -782,6 +847,7 @@ class XtdGearModels
 					"Inu",
 					"Rat",
 					"Mouse",
+					"Shuck",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -794,13 +860,13 @@ class XtdGearModels
 				class Cherryy
 				{
 					label = "Cherryy";
-					description = "Remade his custom 3 times";
+					description = "Remade his custom 4 times";
 					//image = "xxx";
 				};
 				class Crow
 				{
 					label = "Crow";
-					description = "On a List Somewhere";
+					description = "On a List Somewhere 2x";
 					//image = "xxx";
 				};
 				class Ghost
@@ -953,6 +1019,12 @@ class XtdGearModels
 					description = "Hates Quebec";
 					//image = "xxx";
 				};
+				class Shuck
+				{
+					label = "Shuck";
+					description = "Unc Status";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1066,6 +1138,16 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Crow";
+		};
+		class 332nd_Uniform_Clone_Cherryy
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Cherryy";
+		};
+		class 332nd_Uniform_Clone_Shuck
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Shuck";
 		};
 	}; 
 };
