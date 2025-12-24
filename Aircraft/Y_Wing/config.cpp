@@ -238,10 +238,10 @@ class CfgVehicles
 						{
 							"332nd_Forge_I_Mag",
 							"332nd_Forge_I_Mag",
-							"332nd_Forge_III_Mag",
-							"332nd_Forge_III_Mag",
-							"332nd_Forge_III_Mag",
-							"332nd_Forge_III_Mag",
+							"332nd_Forge_III_Mag_Y",
+							"332nd_Forge_III_Mag_Y",
+							"332nd_Forge_III_Mag_Y",
+							"332nd_Forge_III_Mag_Y",
 							"332nd_Forge_I_Mag",
 							"332nd_Forge_I_Mag",
 						};
@@ -251,12 +251,12 @@ class CfgVehicles
 				{
 					class Pylon1
 					{
-						attachment="332nd_Forge_III_Mag";
+						attachment="332nd_Forge_III_Mag_Y";
 						priority=10;
 						hardpoints[]=
 						{
 							//"332nd_Forge_I",
-							"332nd_Forge_III",
+							"332nd_Forge_III_Y",
 							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
@@ -270,12 +270,12 @@ class CfgVehicles
 					};
 					class Pylon3: Pylon1
 					{
-						attachment="332nd_Forge_III_Mag";
+						attachment="332nd_Forge_III_Mag_Y";
 						priority = 9;
 						hardpoints[]=
 						{
 							//"332nd_Forge_I",
-							"332nd_Forge_III",
+							"332nd_Forge_III_Y",
 							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
@@ -294,7 +294,7 @@ class CfgVehicles
 						hardpoints[]=
 						{
 							"332nd_Forge_I",
-							"332nd_Forge_III",
+							"332nd_Forge_III_Y",
 							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
@@ -308,12 +308,12 @@ class CfgVehicles
 					};
 					class Pylon7: Pylon1
 					{
-						attachment="332nd_Forge_III_Mag";
+						attachment="332nd_Forge_III_Mag_Y";
 						priority = 9;
 						hardpoints[]=
 						{
 							"332nd_Forge_I",
-							"332nd_Forge_III",
+							"332nd_Forge_III_Y",
 							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};

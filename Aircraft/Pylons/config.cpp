@@ -12,6 +12,7 @@ class CfgPatches {
             "332nd_Anvil_I",
 			"332nd_Anvil_III",
 			"332nd_Forge_III",
+			"332nd_Forge_III_Y",
 			"332nd_Forge_I",
 			"332nd_Forge_X_N",
 			"332nd_CIS_A2A_Missile",
@@ -188,6 +189,16 @@ class CfgMagazines
 		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Bomb_GBU12_04_x1_F";
 		pylonWeapon = "332nd_Forge_III";
 		weight = 0;
+	};
+	class 332nd_Forge_III_Mag_Y: 332nd_Forge_III_Mag
+	{
+		ammo = "332nd_Forge_III_Ammo_Y";
+		count = 4;
+		hardpoints[] = 
+		{
+			"332nd_Forge_III_Y",
+		};
+		pylonWeapon = "332nd_Forge_III_Y";
 	};
 	class 332nd_Forge_I_Mag: PylonRack_Bomb_SDB_x4
 	{
@@ -384,6 +395,13 @@ class CfgWeapons
 			"332nd_Forge_III_Mag",
 		};
 	};
+	class 332nd_Forge_III_Y: 332nd_Forge_III
+	{
+		magazines[] = 
+		{
+			"332nd_Forge_III_Mag_Y",
+		};
+	};
 	class 332nd_Forge_I: weapon_SDBLauncher
 	{
 		displayName = "[332nd] Forge I";
@@ -532,7 +550,7 @@ class CfgAmmo
 	class 332nd_Anvil_IV_Ammo: 332nd_Anvil_I_Ammo
 	{
 		manualControl = 1;
-		maxControlRange = 500;
+		maxControlRange = 2000;
 		weaponLockSystem = "0";
 	};
 	class 332nd_Anvil_I_Ammo_Penetrator: ammo_Penetrator_AGM_02
@@ -569,7 +587,11 @@ class CfgAmmo
 	{
 		
 	};
-	
+	class 332nd_Forge_III_Ammo_Y: 332nd_Forge_III_Ammo
+	{
+		
+	};
+
 	//cannon
 	class 3as_LAAT_Medium_Energy_shell;
 	class 3AS_BTLB_Heavy_Energy_Shells;
