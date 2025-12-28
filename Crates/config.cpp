@@ -132,10 +132,10 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_Westar_Mag";
 			};
-			class 332nd_HE_LGrenade_Mag
+			class 332nd_HE_UGLGrenade_Mag
 			{
 				count = 50;
-				magazine = "332nd_HE_LGrenade_Mag";
+				magazine = "332nd_HE_UGLGrenade_Mag";
 			};
 			class ACE_HuntIR_M203
 			{
@@ -320,7 +320,7 @@ class CfgVehicles
 		{
 			class 332nd_Dispo_F
 			{
-				count = 5;
+				count = 6;
 				weapon = "332nd_Dispo_F";
 			};
 		};
@@ -434,6 +434,11 @@ class CfgVehicles
 			{
 				count = 10;
 				name = "ACE_EntrenchingTool";
+			};
+			class ACE_HuntIR_monitor
+			{
+				count = 5;
+				name = "ACE_HuntIR_monitor";
 			};
 			class ACE_M26_Clacker
 			{
@@ -691,6 +696,11 @@ class CfgVehicles
 				count = 10;
 				name = "ACE_EntrenchingTool";
 			};
+			class ACE_HuntIR_monitor
+			{
+				count = 5;
+				name = "ACE_HuntIR_monitor";
+			};
 			class ACE_M26_Clacker
 			{
 				count = 5;
@@ -868,7 +878,7 @@ class CfgVehicles
 			};
 			class 332nd_Dispo_F
 			{
-				count = 25;
+				count = 6;
 				weapon = "332nd_Dispo_F";
 			};
 		};
@@ -949,10 +959,10 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_Westar_Mag";
 			};
-			class 332nd_HE_LGrenade_Mag
+			class 332nd_HE_UGLGrenade_Mag
 			{
 				count = 50;
-				magazine = "332nd_HE_LGrenade_Mag";
+				magazine = "332nd_HE_UGLGrenade_Mag";
 			};
 			class ACE_HuntIR_M203 
 			{ 

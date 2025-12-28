@@ -485,7 +485,7 @@ class CfgVehicles
 							"332nd_Anvil_I",
 							"332nd_Anvil_III",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
 					};
 					class PylonLeft2: PylonLeft1
@@ -498,7 +498,7 @@ class CfgVehicles
 							"332nd_Anvil_I",
 							"332nd_Anvil_III",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.079999998,0.34999999};
 					};
 					class PylonLeft3: PylonLeft1
@@ -512,7 +512,7 @@ class CfgVehicles
 							"332nd_Anvil_III",
 							"332nd_Dropcrate_PW1",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.1,0.30000001};
 					};
 					class PylonRight3: PylonLeft3
@@ -1130,7 +1130,7 @@ class CfgVehicles
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
 					};
 					class PylonRight1: PylonLeft1
@@ -1149,7 +1149,7 @@ class CfgVehicles
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.079999998,0.34999999};
 					};
 					class PylonRight2: PylonLeft2
@@ -1169,7 +1169,7 @@ class CfgVehicles
 							"332nd_Anvil_X_S",
 							"332nd_Dropcrate_PW1",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.1,0.30000001};
 					};
 					class PylonRight3: PylonLeft3
@@ -1192,8 +1192,8 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I_Mag",
 							"332nd_Hammer_I_Mag",
-							"332nd_Anvil_III_Mag",
-							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_IV",
 							"332nd_Anvil_I_Mag",
 							"332nd_Anvil_I_Mag",
 						};
@@ -1207,8 +1207,8 @@ class CfgVehicles
 							"332nd_Anvil_I_Mag",
 							"332nd_Anvil_I_Mag",
 							"332nd_Anvil_I_Mag",
-							"332nd_Anvil_III_Mag",
-							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_IV",
 						};
 					};
 					class CAP
@@ -1780,7 +1780,7 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment="332nd_Anvil_IV_Mag";
+						attachment="";
 						priority=5;
 						hardpoints[]=
 						{
@@ -1789,7 +1789,7 @@ class CfgVehicles
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
 					};
 					class PylonRight1: PylonLeft1
@@ -1808,7 +1808,7 @@ class CfgVehicles
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.079999998,0.34999999};
 					};
 					class PylonRight2: PylonLeft2
@@ -1828,7 +1828,7 @@ class CfgVehicles
 							"332nd_Anvil_X_S",
 							"332nd_Dropcrate_PW1",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[]={0.1,0.30000001};
 					};
 					class PylonRight3: PylonLeft3
@@ -1851,8 +1851,8 @@ class CfgVehicles
 						{
 							"332nd_Hammer_I_Mag",
 							"332nd_Hammer_I_Mag",
-							"332nd_Anvil_III_Mag",
-							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_IV",
 							"332nd_Anvil_I_Mag",
 							"332nd_Anvil_I_Mag",
 						};
@@ -1866,8 +1866,8 @@ class CfgVehicles
 							"332nd_Anvil_I_Mag",
 							"332nd_Anvil_I_Mag",
 							"332nd_Anvil_I_Mag",
-							"332nd_Anvil_III_Mag",
-							"332nd_Anvil_III_Mag",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_IV",
 						};
 					};
 					class CAP

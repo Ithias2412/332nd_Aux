@@ -236,8 +236,8 @@ class CfgVehicles
 						displayName = "Bombs";
 						attachment[] = 
 						{
-							"332nd_Forge_I_Mag",
-							"332nd_Forge_I_Mag",
+							"332nd_Forge_X_C",
+							"332nd_Forge_X_C",
 							"332nd_Forge_III_Mag_Y",
 							"332nd_Forge_III_Mag_Y",
 							"332nd_Forge_III_Mag_Y",
@@ -260,7 +260,7 @@ class CfgVehicles
 							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[] = {0.5,0.25};
 					};
 					class Pylon2: Pylon1
@@ -279,7 +279,7 @@ class CfgVehicles
 							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[] = {0.55,0.35};
 					};
 					class Pylon4: Pylon3
@@ -298,7 +298,7 @@ class CfgVehicles
 							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[] = {0.6,0.45};
 					};
 					class Pylon6: Pylon5
@@ -317,7 +317,7 @@ class CfgVehicles
 							"332nd_Forge_X_C",
 							//"332nd_Forge_X_N",
 						};
-						turret[]={0};
+						//turret[]={0};
 						UIposition[] = {0.45,0.4};
 					};
 					class Pylon8: Pylon7
