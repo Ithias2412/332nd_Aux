@@ -17,7 +17,18 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class 101st_Crab_Droid;
+	class StaticWeapon;
+	class StaticMGWeapon: StaticWeapon
+	{
+		class Turrets;
+	};
+	class 101st_Crab_Droid: StaticMGWeapon
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
 	class 332nd_CIS_Crab_Droid: 101st_Crab_Droid
 	{
 		faction="332nd_CIS_Faction";
@@ -25,5 +36,61 @@ class CfgVehicles
 		displayName="Crab Droid";
 		armor = 50;
 		editorPreview = "";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = 
+				{
+					"332nd_25mw_H96C_AC"
+				};
+				magazines[] = 
+				{
+					"332nd_25mm_UB5_x50_mag",
+					"332nd_25mm_UB5_x50_mag",
+					"332nd_25mm_UB5_x50_mag",
+					"332nd_25mm_UB5_x50_mag",
+					"332nd_25mm_UB5_x50_mag",
+					"332nd_25mm_UB5_x50_mag",
+					"332nd_25mm_UB5_x50_mag",
+					"332nd_25mm_UB5_x50_mag",
+				};
+			};
+		};
+	};
+};
+
+class CfgWeapons
+{
+	class DBA_25mw_H96C_AC;
+	class 332nd_25mw_H96C_AC: DBA_25mw_H96C_AC
+	{
+		magazines[] = 
+		{
+			"332nd_25mm_UB5_x50_mag"
+		};
+	};
+};
+
+class CfgMagazines
+{
+	class DBA_25mm_UB5_x50_mag;
+	class 332nd_25mm_UB5_x50_mag: DBA_25mm_UB5_x50_mag
+	{
+		ammo = "332nd_25mm_UB5_HEI";
+	};
+};
+
+class CfgAmmo
+{
+	class DBA_25mm_UB5_HEI;
+	class 332nd_25mm_UB5_HEI: DBA_25mm_UB5_HEI
+	{
+		hit = 10;
+		indirectHit = 15;
+		indirectHitRange = 4;
+		caliber = 1;
+		typicalSpeed = 900;
+		submunitionAmmo = "";
 	};
 };

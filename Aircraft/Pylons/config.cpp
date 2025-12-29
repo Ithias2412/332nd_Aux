@@ -559,9 +559,9 @@ class CfgAmmo
 	};
 	class 332nd_CIS_ATG_Missile_Ammo: 332nd_Anvil_I_Ammo
 	{
-		hit = 1100;
 		effectsMissile = "332nd_Effect_CIS_ATG";
 		submunitionAmmo = "ammo_Penetrator_AGM_02";
+		hit = 400;
 		fuseDistance = 5;
 	};
 	class 332nd_Anvil_III_Ammo: ace_maverick_L
