@@ -87,6 +87,14 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Cosmos.paa",
 		};
 	};
+	class 332nd_Helmet_Pilot_Gizmo: 332nd_Helmet_Pilot
+	{
+		displayName="[332nd] Pilot Helmet (Gizmo)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Gizmo.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -116,32 +124,12 @@ class XtdGearModels
                 label = "Customs";
 				values[] = 
 				{
-					/* "Saiko", */ 
-					"Shadow", 
-					"Lawman", 
 					"Jorge", 
-					"Cosmos"
+					"Cosmos",
+					"Gizmo",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
-				/* class Saiko
-                {
-                    label = "Saiko";
-                    description = "ARC Enjoyer";
-                    //image = "xxx";
-                }; */
-				class Shadow
-                {
-                    label = "Shadow";
-                    description = "Angel who?";
-                    //image = "xxx";
-                };
-				class Lawman
-                {
-                    label = "Lawman";
-                    description = "Is my custom in yet?";
-                    //image = "xxx";
-                };
 				class Jorge
                 {
                     label = "Jorge";
@@ -154,6 +142,12 @@ class XtdGearModels
                     description = "Cosmo's*";
                     //image = "xxx";
                 };
+				class Gizmo
+				{
+                    label = "Gizmo";
+                    description = "Condemned to changing a million pixels to grey";
+                    //image = "xxx";
+				};
             };
         };
     };
@@ -177,6 +171,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Cosmos";
+		};
+		class 332nd_Helmet_Pilot_Gizmo
+		{
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Gizmo";
 		};
 	};
 };
