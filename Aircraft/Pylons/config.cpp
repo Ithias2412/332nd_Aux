@@ -24,6 +24,228 @@ class CfgPatches {
 };
 //#include "xtdGear.hpp"
 
+class CfgWeapons
+{
+	class missiles_ASRAAM;
+	class weapon_AGM_65Launcher;
+	class ace_missile_gbu_12;
+	class missiles_Zephyr;
+	class ace_maverick_L_Launcher;
+	class weapon_SDBLauncher; // Forge I
+	class FSNB_B61_4_Timed_W; // Forge X-N
+	class missiles_DAR;
+	class Mk82BombLauncher;
+
+	
+	class 332nd_Hammer_I: missiles_ASRAAM
+	{
+		displayName = "[332nd] Hammer I";
+		magazines[] = 
+		{
+			"332nd_Hammer_I_Mag",
+		};
+	};
+	class 332nd_CIS_A2A_Missile: 332nd_Hammer_I
+	{
+		displayName = "[332nd] CIS A2A Missile";
+		magazines[] = 
+		{
+			"332nd_CIS_A2A_Missile_Mag",
+		};
+	};
+	class 332nd_Hammer_II: missiles_Zephyr //weapon_AMRAAMLauncher
+	{
+		displayName = "[332nd] Hammer II";
+		magazines[] = 
+		{
+			"332nd_Hammer_II_Mag",
+		};
+	};
+	class 332nd_Hammer_II_L: 332nd_Hammer_II
+	{
+		displayName = "[332nd] Hammer II-L";
+		magazines[] = 
+		{
+			"332nd_Hammer_II_L_Mag",
+		};
+	};
+	class 332nd_Anvil_X_S: missiles_DAR
+	{
+		displayName = "[332nd] Anvil X-S";
+		showAimCursorInternal = 0;
+		magazines[] = 
+		{
+			"332nd_Anvil_X_S_Mag",
+		};
+	};
+	class 332nd_Anvil_I: weapon_AGM_65Launcher
+	{
+		displayName = "[332nd] Anvil I";
+		magazines[] = 
+		{
+			"332nd_Anvil_I_Mag",
+		};
+	};
+	class 332nd_Anvil_IV: 332nd_Anvil_I
+	{
+		displayName = "[332nd] Anvil IV";
+		magazines[] = 
+		{
+			"332nd_Anvil_IV_Mag",
+		};
+		canLock = 1;
+	};
+	class 332nd_CIS_ATG_Missile: 332nd_Anvil_I
+	{
+		displayName = "[332nd] CIS ATG Missile";
+		magazines[] = 
+		{
+			"332nd_CIS_ATG_Missile_Mag",
+		};
+	};
+	class 332nd_Anvil_III: ace_maverick_L_Launcher
+	{
+		displayName = "[332nd] Anvil III";
+		magazines[] = 
+		{
+			"332nd_Anvil_III_Mag",
+		};
+	};
+	class 332nd_Forge_III: ace_missile_gbu_12
+	{
+		displayName = "[332nd] Forge III";
+		magazines[] = 
+		{
+			"332nd_Forge_III_Mag",
+		};
+	};
+	class 332nd_Forge_III_Y: 332nd_Forge_III
+	{
+		magazines[] = 
+		{
+			"332nd_Forge_III_Mag_Y",
+		};
+	};
+	class 332nd_Forge_I: weapon_SDBLauncher
+	{
+		displayName = "[332nd] Forge I";
+		magazines[] = 
+		{
+			"332nd_Forge_I_Mag",
+		};
+	};
+	class 332nd_Forge_X_N: FSNB_B61_4_Timed_W
+	{
+		displayName = "[332nd] Forge X-N";
+		magazines[] = 
+		{
+			"332nd_Forge_X_N_Mag",
+		};
+		modes[] = 
+		{
+			"FSNB_YIELD_300",
+			//"FSNB_YIELD_1500",
+			//"FSNB_YIELD_10000",
+			//"FSNB_YIELD_50000",
+		};
+	};
+	class 332nd_Forge_X_C: Mk82BombLauncher
+	{
+		displayName = "[332nd] Forge X-C";
+		magazines[] = 
+		{
+			"332nd_Forge_X_C_Mag",
+		};
+	};
+	
+	//cannon
+	class 3as_LAAT_Medium_Canon;
+	class 3AS_BTLB_Heavy_Cannon;
+	class 3AS_Z95_Light_Cannon;
+	class 3AS_ARC_Light_Canon;
+	class LMG_M200;
+	class ParticleBeamCannon_Nu: LMG_M200
+	{
+		class HE;
+	};
+	
+	class 332nd_LAAT_Cannon: 3as_LAAT_Medium_Canon
+	{
+		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
+		magazines[] = 
+		{
+			"332nd_LAAT_Cannon_Mag",
+		};
+	};
+	class 332nd_Y_Wing_Cannon: 3AS_BTLB_Heavy_Cannon
+	{
+		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
+		magazines[] = 
+		{
+			"332nd_Y_Wing_Cannon_Mag",
+		};
+	};
+	class 332nd_Z95_Cannon: 3AS_Z95_Light_Cannon
+	{
+		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
+		magazines[] = 
+		{
+			"332nd_Z95_Cannon_Mag",
+		};
+	};
+	class 332nd_ARC_Cannon: 3AS_ARC_Light_Canon
+	{
+		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
+		magazines[] = 
+		{
+			"332nd_ARC_Cannon_Mag",
+		};
+	};
+	class 332nd_Rho_Cannon: ParticleBeamCannon_Nu
+	{
+		displayName = "[332nd] Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
+		magazines[] = 
+		{
+			"332nd_Rho_Cannon_Mag",
+		};
+		class HE: HE
+		{
+			magazines[] = 
+			{
+				"332nd_Rho_Cannon_Mag"
+			};
+		};
+	};
+	//Cosmos Gun
+	class CannonCore;
+	class Cannon_30mm_Plane_CAS_02_F: CannonCore
+	{
+		class LowROF;
+	};
+	class 3as_Z95_Heavy_Cannon: Cannon_30mm_Plane_CAS_02_F
+	{
+		class LowROF: LowROF {};
+	};
+	class 332nd_Z95_Cannon_Heavy: 3as_Z95_Heavy_Cannon
+	{
+		displayName = "[332nd] Heavy Energy Cannon";
+		ballisticsComputer="4 + 2 + 8";
+		magazines[]=
+		{
+			"332nd_Z95_Cannon_Heavy_Mag"
+		};
+		class LowROF: LowROF 
+		{
+			reloadTime=0.2;
+		};
+	};
+};
+
 class CfgMagazines
 {
 	class PylonMissile_1Rnd_AAA_missiles;
@@ -254,6 +476,8 @@ class CfgMagazines
 	class 3AS_BTLB_450Rnd_Heavy_Shells;
 	class 3as_Z95_750Rnd_Light_shells;
 	class 3as_ARC_500Rnd_Light_Shells;
+	class 3AS_Nu_5000Rnd_HE;
+	
 	class 332nd_LAAT_Cannon_Mag: 3as_LAAT_1000Rnd_Medium_shells
 	{
 		ammo = "332nd_LAAT_Cannon_Ammo";
@@ -284,6 +508,12 @@ class CfgMagazines
 		count = 500;
 		displayname = "Energy Cell";
 	};
+	class 332nd_Rho_Cannon_Mag: 3AS_Nu_5000Rnd_HE
+	{
+		ammo = "332nd_Rho_Cannon_Ammo";
+		count = 500;
+		displayname = "Energy Cell";
+	};
 	class 3as_PylonWeapon_Z95_240Rnd_Heavy_Shells;
 	class 332nd_Z95_Cannon_Heavy_Mag: 3as_PylonWeapon_Z95_240Rnd_Heavy_Shells
 	{
@@ -297,206 +527,6 @@ class CfgMagazines
 		};
 		descriptionShort = "A Z-95 Cannon with a slower fire rate and faster velocity";
 		pylonWeapon = "332nd_Z95_Cannon_Heavy";
-	};
-};
-
-class CfgWeapons
-{
-	class missiles_ASRAAM;
-	class weapon_AGM_65Launcher;
-	class ace_missile_gbu_12;
-	class missiles_Zephyr;
-	class ace_maverick_L_Launcher;
-	class weapon_SDBLauncher; // Forge I
-	class FSNB_B61_4_Timed_W; // Forge X-N
-	class missiles_DAR;
-	class Mk82BombLauncher;
-
-	
-	class 332nd_Hammer_I: missiles_ASRAAM
-	{
-		displayName = "[332nd] Hammer I";
-		magazines[] = 
-		{
-			"332nd_Hammer_I_Mag",
-		};
-	};
-	class 332nd_CIS_A2A_Missile: 332nd_Hammer_I
-	{
-		displayName = "[332nd] CIS A2A Missile";
-		magazines[] = 
-		{
-			"332nd_CIS_A2A_Missile_Mag",
-		};
-	};
-	class 332nd_Hammer_II: missiles_Zephyr //weapon_AMRAAMLauncher
-	{
-		displayName = "[332nd] Hammer II";
-		magazines[] = 
-		{
-			"332nd_Hammer_II_Mag",
-		};
-	};
-	class 332nd_Hammer_II_L: 332nd_Hammer_II
-	{
-		displayName = "[332nd] Hammer II-L";
-		magazines[] = 
-		{
-			"332nd_Hammer_II_L_Mag",
-		};
-	};
-	class 332nd_Anvil_X_S: missiles_DAR
-	{
-		displayName = "[332nd] Anvil X-S";
-		showAimCursorInternal = 0;
-		magazines[] = 
-		{
-			"332nd_Anvil_X_S_Mag",
-		};
-	};
-	class 332nd_Anvil_I: weapon_AGM_65Launcher
-	{
-		displayName = "[332nd] Anvil I";
-		magazines[] = 
-		{
-			"332nd_Anvil_I_Mag",
-		};
-	};
-	class 332nd_Anvil_IV: 332nd_Anvil_I
-	{
-		displayName = "[332nd] Anvil IV";
-		magazines[] = 
-		{
-			"332nd_Anvil_IV_Mag",
-		};
-		canLock = 1;
-	};
-	class 332nd_CIS_ATG_Missile: 332nd_Anvil_I
-	{
-		displayName = "[332nd] CIS ATG Missile";
-		magazines[] = 
-		{
-			"332nd_CIS_ATG_Missile_Mag",
-		};
-	};
-	class 332nd_Anvil_III: ace_maverick_L_Launcher
-	{
-		displayName = "[332nd] Anvil III";
-		magazines[] = 
-		{
-			"332nd_Anvil_III_Mag",
-		};
-	};
-	class 332nd_Forge_III: ace_missile_gbu_12
-	{
-		displayName = "[332nd] Forge III";
-		magazines[] = 
-		{
-			"332nd_Forge_III_Mag",
-		};
-	};
-	class 332nd_Forge_III_Y: 332nd_Forge_III
-	{
-		magazines[] = 
-		{
-			"332nd_Forge_III_Mag_Y",
-		};
-	};
-	class 332nd_Forge_I: weapon_SDBLauncher
-	{
-		displayName = "[332nd] Forge I";
-		magazines[] = 
-		{
-			"332nd_Forge_I_Mag",
-		};
-	};
-	class 332nd_Forge_X_N: FSNB_B61_4_Timed_W
-	{
-		displayName = "[332nd] Forge X-N";
-		magazines[] = 
-		{
-			"332nd_Forge_X_N_Mag",
-		};
-		modes[] = 
-		{
-			"FSNB_YIELD_300",
-			//"FSNB_YIELD_1500",
-			//"FSNB_YIELD_10000",
-			//"FSNB_YIELD_50000",
-		};
-	};
-	class 332nd_Forge_X_C: Mk82BombLauncher
-	{
-		displayName = "[332nd] Forge X-C";
-		magazines[] = 
-		{
-			"332nd_Forge_X_C_Mag",
-		};
-	};
-	
-	//cannon
-	class 3as_LAAT_Medium_Canon;
-	class 3AS_BTLB_Heavy_Cannon;
-	class 3AS_Z95_Light_Cannon;
-	class 3AS_ARC_Light_Canon;
-	class 332nd_LAAT_Cannon: 3as_LAAT_Medium_Canon
-	{
-		displayName = "[332nd] Energy Cannon";
-		ballisticsComputer="4 + 2 + 8";
-		magazines[] = 
-		{
-			"332nd_LAAT_Cannon_Mag",
-		};
-	};
-	class 332nd_Y_Wing_Cannon: 3AS_BTLB_Heavy_Cannon
-	{
-		displayName = "[332nd] Energy Cannon";
-		ballisticsComputer="4 + 2 + 8";
-		magazines[] = 
-		{
-			"332nd_Y_Wing_Cannon_Mag",
-		};
-	};
-	class 332nd_Z95_Cannon: 3AS_Z95_Light_Cannon
-	{
-		displayName = "[332nd] Energy Cannon";
-		ballisticsComputer="4 + 2 + 8";
-		magazines[] = 
-		{
-			"332nd_Z95_Cannon_Mag",
-		};
-	};
-	class 332nd_ARC_Cannon: 3AS_ARC_Light_Canon
-	{
-		displayName = "[332nd] Energy Cannon";
-		ballisticsComputer="4 + 2 + 8";
-		magazines[] = 
-		{
-			"332nd_ARC_Cannon_Mag",
-		};
-	};
-	//Cosmos Gun
-	class CannonCore;
-	class Cannon_30mm_Plane_CAS_02_F: CannonCore
-	{
-		class LowROF;
-	};
-	class 3as_Z95_Heavy_Cannon: Cannon_30mm_Plane_CAS_02_F
-	{
-		class LowROF: LowROF {};
-	};
-	class 332nd_Z95_Cannon_Heavy: 3as_Z95_Heavy_Cannon
-	{
-		displayName = "[332nd] Heavy Energy Cannon";
-		ballisticsComputer="4 + 2 + 8";
-		magazines[]=
-		{
-			"332nd_Z95_Cannon_Heavy_Mag"
-		};
-		class LowROF: LowROF 
-		{
-			reloadTime=0.2;
-		};
 	};
 };
 
@@ -597,6 +627,8 @@ class CfgAmmo
 	class 3AS_BTLB_Heavy_Energy_Shells;
 	class 3as_Z95_Light_Energy_shell;
 	class 3as_Arc_Light_Energy_shell;
+	class 3AS_Nu_HE;
+	
 	class 332nd_LAAT_Cannon_Ammo: 3as_LAAT_Medium_Energy_shell
 	{
 		hit = 25;
@@ -625,7 +657,13 @@ class CfgAmmo
 		indirecthit = 50;
 		indirecthitrange = 3;
 	};
-	
+	class 332nd_Rho_Cannon_Ammo: 3AS_Nu_HE
+	{
+		hit = 25;
+		caliber = 1;
+		indirecthit = 50;
+		indirecthitrange = 3;
+	};
 	class 3as_Z95_Heavy_Energy_shell;
 	class 332nd_Z95_Cannon_Heavy_Ammo: 3as_Z95_Heavy_Energy_shell
 	{
