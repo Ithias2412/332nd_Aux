@@ -136,7 +136,6 @@ class cfgWeapons
 	class 332nd_Helmet_ARF_Trick: 332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Trick)";
-		scope = 1
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Trick.paa",

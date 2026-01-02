@@ -342,6 +342,42 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crow.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Rode: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Rode)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Rode.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Rimuru: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Rimuru)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Rimuru.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Clari: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Clari)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Clari.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -430,6 +466,9 @@ class XtdGearModels
 					"Mouse",
 					"Shuck",
 					"Fusion",
+					"Rode",
+					"Rimuru",
+					"Clari",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -679,6 +718,24 @@ class XtdGearModels
 					description = "Awaiting Rimuru DM";
 					//image = "xxx";
 				};
+				class Rode
+				{
+					label = "Rode";
+					description = "Aye Lance Corporal!";
+					//image = "xxx";
+				};
+				class Rimuru
+				{
+					label = "Rimuru";
+					description = "They're right behind me, arent they";
+					//image = "xxx";
+				};
+				class Clari
+				{
+					label = "Clari";
+					description = "bīngqílín";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -813,6 +870,21 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Crow";
+		};
+		class 332nd_Helmet_P2_Rode
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Rode";
+		};
+		class 332nd_Helmet_P2_Rimuru
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Rimuru";
+		};
+		class 332nd_Helmet_P2_Clari
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Clari";
 		};
 	};
 };
