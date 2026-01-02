@@ -285,6 +285,7 @@ class CfgAmmo
 		typicalspeed = 1000;
 		EffectFly = "ArtilleryTrails";
 		explosive = 1;
+		fuseDistance = 5;
 		soundHit1[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_1",3.16228,1,2000};
 		soundHit2[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_2",3.16228,1,2000};
 		soundHit3[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_3",3.16228,1,2000};
@@ -303,11 +304,13 @@ class CfgAmmo
 		effectsMissile = "3AS_Rocket_effect_Blue_fly";
 		indirectHit = 20;
 		indirectHitRange = 2;
+		fuseDistance = 5;
 	};
 	class 332nd_RPS6_Ammo_NLAW: ACE_NLAW 
 	{
 		//ExplosionEffects = "MortarExplosion";
 		hit=300;
+		fuseDistance = 5;
 	};
 	class 332nd_Dispo_Ammo_NLAW: ACE_NLAW 
 	{
@@ -315,6 +318,7 @@ class CfgAmmo
 		hit=300;
 		initTime = 0;
 		effectsMissile = "3AS_Rocket_effect_Blue_fly";
+		fuseDistance = 5;
 	};
 	//PLX1
 	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT
@@ -324,6 +328,7 @@ class CfgAmmo
 		effectsMissile = "3AS_Rocket_effect_Blue_fly";
 		indirectHit = 20;
 		indirectHitRange = 2;
+		fuseDistance = 5;
 	};
 	//UGL Grenades & Smokes
 	class 332nd_HE_UGLGrenade: G_40mm_HE
@@ -333,7 +338,7 @@ class CfgAmmo
 		indirectHit=40;
 		effectflare="FlareShell";
 		effectfly="IDA_BlasterBoltGlow_Blue_Fly";
-		fuseDistance=0;
+		fuseDistance = 5;
 		ExplosionEffects="GrenadeExplosion";
 		CraterEffects="GrenadeCrater";
 		lightcolor[]={0,0,1};
@@ -356,7 +361,6 @@ class CfgAmmo
         };
 		effectflare="FlareShell";
 		effectfly="IDA_BlasterBoltGlow_Blue_Fly";
-		fuseDistance=0;
 		CraterEffects="GrenadeCrater";
 		lightcolor[]={0,0,1};
 		model="Indecisive_Armoury_Ammos\Data\40mm_Grenade\IDA_40mm_Grenade.p3d";
