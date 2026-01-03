@@ -164,7 +164,7 @@ class CfgVehicles
 	{
 		faction="332nd_Faction";
 		displayName = "[332nd] Rho Crate (Transport) [WIP]";
-		armor = 400;
+		armor = 1000;
 		transportSoldier=34;
 		class ACE_SelfActions: ACE_SelfActions
 		{
