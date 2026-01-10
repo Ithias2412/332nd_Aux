@@ -187,7 +187,7 @@ class CfgMissions
 		class 332nd_Arsenal
 		{
             briefingName = "Ace Arsenal";
-            directory = "332nd_Aux\Main_Menu\missions\332nd_Arsenal.Winthera3";
+            directory = "332nd_Aux\Main_Menu\missions\332nd_ArsenalNEW.archie_w";
 		};
 	};
 };
