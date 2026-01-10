@@ -14,6 +14,7 @@ class CfgAmmo
 	class G_40mm_HE;
 	class smokeshell;
 	class FlameRound;
+	class 3as_LAAT_Medium_Energy_shell;
 
 
 
