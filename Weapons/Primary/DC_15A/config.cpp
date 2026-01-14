@@ -102,7 +102,7 @@ class cfgWeapons
 					1
 				};
 			};
-			reloadTime=0.18;
+			reloadTime = 0.17142;
 			recoil="recoil_single_primary_3outof10";
 			recoilProne="recoil_single_primary_prone_3outof10";
 			dispersion=0.00058;

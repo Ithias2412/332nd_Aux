@@ -14,6 +14,7 @@ class CfgAmmo
 	class G_40mm_HE;
 	class smokeshell;
 	class FlameRound;
+	class FlameRound_sub;
 	class 3as_LAAT_Medium_Energy_shell;
 
 
@@ -136,15 +137,21 @@ class CfgAmmo
 		//submunitionAmmo = "FlameRound_sub";
 		//submunitionConeAngle = 4;
 		//submunitionConeType[] = {"poissondisc",4};
-		submunitionAmmo = "FlameRound_sub";
+		submunitionAmmo = "332nd_FlameRound_sub";
 		submunitionConeAngle = 1;
 		submunitionConeType[] = {"poissondisc",1};
+		explosionEffects = "332nd_Flame_Explosion";
 	};
 	class 332nd_FlameRound_Scatter: 332nd_FlameRound
 	{
-		submunitionAmmo = "FlameRound_sub";
+		submunitionAmmo = "332nd_FlameRound_sub";
 		submunitionConeAngle = 3;
 		submunitionConeType[] = {"random",5};
+		explosionEffects = "332nd_Flame_Explosion";
+	};
+	class 332nd_FlameRound_sub: FlameRound_sub
+	{
+		explosionEffects = "332nd_Flame_Explosion";
 	};
 	//Ammo Overhaul x2
 	class 332nd_Slug_Thrower_Round: 332nd_Balistic_Bullet_Base
@@ -439,5 +446,96 @@ class CfgAmmo
 		indirectHit=0;
 		indirectHitRange=30;
 		ace_frag_enabled = 0;
+	};
+};
+
+class CfgCloudlets
+{
+	class ExploAmmoSmoke;
+	class 332nd_flamesExplosion: ExploAmmoSmoke
+	{
+		interval="0.015";
+		circleRadius=0.1;
+		circleVelocity[]={0,0,0};
+		particleShape="\a3\data_f\ParticleEffects\Universal\Universal";
+		particleFSNtieth=16;
+		particleFSIndex=10;
+		particleFSFrameCount=32;
+		particleFSLoop=1;
+		angleVar=1;
+		animationName="";
+		particleType="Billboard";
+		timerPeriod=3;
+		lifeTime=3;
+		moveVelocity[]={0,0.050000001,0};
+		rotationVelocity=0;
+		weight=0.075000003;
+		volume=0.050000001;
+		rubbing=0.050000001;
+		size[]={0.5,0.5,0.5,0.5};
+		sizeCoef=2.5;
+		color[]=
+		{
+			{0.69999999,1,0.60000002,0.60000002},
+			{0.69999999,1,0.60000002,0.40000001},
+			{0.69999999,1,0.60000002,0.22},
+			{0.69999999,1,0.60000002,0.1},
+			{0.69999999,1,0.60000002,0}
+		};
+		colorCoef[]={0.69999999,1,0.60000002,1};
+		animationSpeed[]={1.7,0.60000002,0.40000001,0.30000001,0.30000001};
+		randomDirectionPeriod=0.2;
+		randomDirectionIntensity=0.050000001;
+		onTimerScript="";
+		lifeTimeVar=1.7;
+		positionVar[]=
+		{
+			"1 + 1.1 * intensity",
+			0.30000001,
+			"1 + 1.1 * intensity"
+		};
+		moveVelocityVar[]={0.1,0.1,0.1};
+		rotationVelocityVar=0;
+		sizeVar=0.050000001;
+		colorVar[]={0.1,0.1,0.1,0};
+		randomDirectionPeriodVar=0;
+		randomDirectionIntensityVar=0;
+		constantDistance=1.6;
+		//Fire Damage
+		damageType="Fire";
+		damageTime=0.1;
+		coreIntensity = 2;
+		coreDistance = 5.0;
+	};
+};
+
+class 332nd_Flame_Explosion
+{
+	class flame_Light
+	{
+		simulation="light";
+		type="FiredLightMed";
+		position="destructionEffect1";
+		intensity=1;
+		interval=1;
+		lifeTime=10;
+	};
+	class Flame_sound
+	{
+		simulation="sound";
+		type="Fire";
+		position[]={0,0,0};
+		intensity=1;
+		interval=1;
+		lifeTime=10;
+	};
+	class 332nd_flamesExplosion
+	{
+		simulation="particles";
+		type="BigDestructionFire";
+		position[]={0,0,0};
+		intensity=1;
+		interval=1;
+		lifeTime=20;
 	};
 };
