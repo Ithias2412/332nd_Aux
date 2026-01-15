@@ -2122,3 +2122,156 @@ SB_fnc_JumpPack = {
 
 
 };
+
+
+
+
+SB_fnc_Init_FlyPack = {
+	params ["_unit", "_backpackStr", "_searchRange", "_target", "_cooldown", "_jumpDistMin", "_jumpDistMax", "_jumpTime", "_oldPos", "_posTargetNew", "_newPos", "_diffTime"];
+
+	_unit = _this select 0;
+
+	_searchRange = 500;
+	_cooldown = 10;
+	_cooldownMove = 2;
+
+
+	_jumpDistMin = 10;
+	_jumpDistMax = 500;
+
+	_jumpTime = -10;
+	_oldPos = "";
+
+
+
+	if (!is3DEN) then {
+
+
+		if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_searchRange"}) then {
+			_searchRange = missionNamespace getVariable "TIOW40k_Ork_JumpPack_searchRange";
+		};
+		if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_cooldown"}) then {
+			_cooldown = missionNamespace getVariable "TIOW40k_Ork_JumpPack_cooldown";
+		};
+		if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_minDist"}) then {
+			_jumpDistMin = missionNamespace getVariable "TIOW40k_Ork_JumpPack_minDist";
+		};
+		if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_maxDist"}) then {
+			_jumpDistMax = missionNamespace getVariable "TIOW40k_Ork_JumpPack_maxDist";
+		};
+
+
+		if (isPlayer _unit) then {
+
+		} else {
+
+
+
+				[_unit, false] remoteExec ["allowDamage", 0];
+				_unit setVariable ["VPR_DroidHealth", 50, true];
+                _unit remoteExecCall ["WBK_ResetArmourHitPart",0,true];
+
+
+				while {alive _unit} do {
+					if (isPlayer _unit) exitWith {
+
+					};
+
+					_target = _unit findNearestEnemy _unit;
+
+					if ((_unit distance _target <= _searchRange) && (_unit knowsAbout _target > 0) && (alive _target)) then {
+
+						_unit SetUnitPos "Up";
+						_unit SetSpeedMode "Full";
+
+						_posTargetNew = getPosATL _target;
+						_newPos = ((_posTargetNew select 0) + (_posTargetNew select 1) + (_posTargetNew select 2)) toFixed 0;
+
+
+						if (_newPos != _oldPos) then {
+							_unit doMove getPos _target;
+						};
+
+						sleep 2;
+
+						_diffTime = time - _jumpTime;
+
+						if (_diffTime > _cooldown) then {
+							if (_unit distance _target > _jumpDistMin && _unit distance _target < _jumpDistMax) then {
+								_jumpTime = [_unit, "", _cooldown] call SB_fnc_FlyPack;
+
+								_jumpTime = time;
+							};
+						};
+
+						_oldPos = _newPos;
+					} else {
+						sleep 2;
+					};
+			};
+		};
+	};
+};
+
+SB_fnc_FlyPack = {
+    params ["_unit", "_id"];
+    private ["_x", "_y", "_z", "_i", "_section", "_backpack", "_damage", "_height", "_damageNew", "_diffDmg", "_cooldown", "_explode", "_malfunction", "_ranDir", "_bomb", "_crazyVel", "_cooldown", "_explodeChance", "_malfunctionChance"];
+
+    _cooldown = 10;
+    _explodeChance = 0;
+    _malfunctionChance = 0; 
+
+
+    if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_cooldown"}) then {
+        _cooldown = missionNamespace getVariable "TIOW40k_Ork_JumpPack_cooldown";
+    };
+    if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_explodeChance"}) then {
+        _explodeChance = missionNamespace getVariable "TIOW40k_Ork_JumpPack_explodeChance";
+    };
+    if (!isNil {missionNamespace getVariable "TIOW40k_Ork_JumpPack_malfunctionChance"}) then {
+        _malfunctionChance = missionNamespace getVariable "TIOW40k_Ork_JumpPack_malfunctionChance";
+    };
+
+    if (isPlayer _unit) then {
+        _unit removeAction _id;
+    };
+
+    _x = selectRandom [-4,-3,-2,-1,0,1,2,3,4];
+    _y = selectRandom [15,16,17,18,19,20,21,22,23,24,25];
+    _z = selectRandom [15,16,17,18,19,20,21,22,23,24,25];
+
+    _explode = 1;
+    _malfunction = 1;
+
+
+	[_unit, [_x,_y,_z]] remoteExec ["setVelocityModelSpace"];
+
+
+    sleep 2;
+
+    waitUntil {sleep 0.1; ((getPos _unit) select 2) < 4};
+
+
+
+
+    if (isPlayer _unit) then {
+
+        _i = _cooldown;
+        while{_i > 0} do {
+            if (isPlayer _unit) then {
+                _cooldown = "Jump Pack ready in: " + str _i;
+                systemChat _cooldown;
+            };
+            sleep 1;
+            _i = _i - 1;
+        };
+
+
+
+    };
+
+
+    time
+
+
+};

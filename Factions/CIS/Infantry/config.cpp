@@ -265,6 +265,25 @@ class CfgVehicles {
 			init="_unit = _this select 0; if (local _unit) then {[_this select 0] spawn SB_fnc_Init_JumpPack};";
 		};
     };
+
+	class 332nd_Droid_B1_Rifleman_Fly: 332nd_Droid_Base 
+	{
+        scope = 2;
+        displayName = "B1 Rifleman (Fly)";
+        uniformClass = "JLTS_DroidB1_Rocket";
+		backpack = "JLTS_B1_jetpack_Rocket";
+        weapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        respawnWeapons[] = {"332nd_CIS_E5", "Throw", "Put"};
+        magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
+        respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
+		class Eventhandlers
+		{
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base
+			{
+			};
+			init="_unit = _this select 0; if (local _unit) then {[_this select 0] spawn SB_fnc_Init_FlyPack};";
+		};
+	};
 	// B2 Droids
     class 332nd_Droid_B2: 3AS_CIS_B2_F 
 	{
