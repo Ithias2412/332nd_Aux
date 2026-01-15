@@ -156,6 +156,51 @@ class CfgVehicles
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
 			"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 		};
+		class TextureSources
+		{
+			class 332nd_Base_Tex
+			{
+				displayname="332nd Base";
+				author = "Ithias";
+				textures[]=
+				{
+					"332nd_Aux\Vehicles\AT-TE\tex\332nd_ATTE_Shell.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"332nd_Aux\Vehicles\AT-TE\tex\332nd_ATTE_Legs.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
+			class 332nd_3AS_Base_Tex
+			{
+				displayname="3AS Base";
+				author = "Ithias";
+				textures[] = 
+				{
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
+		};
+		textureList[]=
+		{
+			"332nd_Base_Tex",
+			"332nd_3AS_Base_Tex",
+			1,
+		};
 		class Turrets: Turrets
 		{
 			class MainTurretTop: MainTurretTop
