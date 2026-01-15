@@ -57,19 +57,19 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_P1_Sgt: 332nd_Helmet_P1_Base
 	{
-		displayName="[332nd] P1 Helmet (Sergeant)";
+		displayName="[332nd] P1 Helmet (Squad Lead)";
 		hiddenSelections[] = {"Camo1","Visor"};
 		hiddenSelectionsTextures[] = {"\JLTS_EA_Units\data\Phase1\Helmet_Sergeant.paa","\JLTS_EA_Units\data\Phase1\Helmet_Sergeant.paa"};
 	};
 	class 332nd_Helmet_P1_Lt: 332nd_Helmet_P1_Base
 	{
-		displayName="[332nd] P1 Helmet (Lieutenant)";
+		displayName="[332nd] P1 Helmet (Platoon Staff)";
 		hiddenSelections[] = {"Camo1","Visor"};
 		hiddenSelectionsTextures[] = {"\JLTS_EA_Units\data\Phase1\Helmet_Lieutenant.paa","\JLTS_EA_Units\data\Phase1\Helmet_Lieutenant.paa"};
 	};
 	class 332nd_Helmet_P1_Cpt: 332nd_Helmet_P1_Base
 	{
-		displayName="[332nd] P1 Helmet (Captain)";
+		displayName="[332nd] P1 Helmet (Company Staff)";
 		hiddenSelections[] = {"Camo1","Visor"};
 		hiddenSelectionsTextures[] = {"\JLTS_EA_Units\data\Phase1\Helmet_Captain.paa","\JLTS_EA_Units\data\Phase1\Helmet_Captain.paa"};
 	};
@@ -138,7 +138,7 @@ class XtdGearModels
             class Early
             {
                 label = "Early P1";
-				values[] = { "Trooper", "CS", "CL", "CC", "Pilot",};
+				values[] = { "Trooper", "SL", "PL", "CO", "Pilot",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Trooper
@@ -147,22 +147,22 @@ class XtdGearModels
                     description = "CR+";
                     //image = "xxx";
                 };
-				class CS
+				class SL
                 {
-                    label = "CS";
-                    description = "CS+";
+                    label = "SL";
+                    description = "Squad Leader";
                     //image = "xxx";
                 };
-                class CL
+                class PL
                 {
-                    label = "CL";
-                    description = "CL+";
+                    label = "PL";
+                    description = "Platoon Staff";
                     //image = "xxx";
                 };
-                class CC
+                class CO
                 {
-                    label = "CC";
-                    description = "CC+";
+                    label = "CO";
+                    description = "Company Staff";
                     //image = "xxx";
                 };
 				class Pilot

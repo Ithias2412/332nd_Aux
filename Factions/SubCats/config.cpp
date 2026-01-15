@@ -12,6 +12,7 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
+
 //#include "xtdGear.hpp"
 class CfgEditorCategories
 {
@@ -20,7 +21,6 @@ class CfgEditorCategories
 		displayname="[332nd] Enia";
 	};
 };
-
 
 class CfgEditorSubcategories
 {
@@ -79,27 +79,6 @@ class CfgEditorSubcategories
     class EdSubcat_332nd_Drop_Pods
     {
         displayName = "[Vics] Drop Pods";
-    };
-    //Helmet Props
-    class EdSubcat_332nd_Props_Helmets_P2
-    {
-        displayName = "[332nd] Clone Helmets P2";
-    };
-    class EdSubcat_332nd_Props_Helmets_Pilots
-    {
-        displayName = "[332nd] Clone Helmets Pilots";
-    };
-     class EdSubcat_332nd_Props_Helmets_ARF
-    {
-        displayName = "[332nd] Clone Helmets ARF";
-    };
-     class EdSubcat_332nd_Props_Helmets_Fun_OP
-    {
-        displayName = "[332nd] Clone Helmets Fun_OP";
-    };
-     class EdSubcat_332nd_Props_Helmets_Customs
-    {
-        displayName = "[332nd] Clone Helmets Customs";
     };
     //Crates
     class EdSubcat_332nd_Resupply_Crates
