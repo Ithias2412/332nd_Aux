@@ -378,6 +378,80 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Clari.paa"
 		};
 	};
+	/*
+	class 332nd_Helmet_P2_Lettuce: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Lettuce)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Lettuce.paa"
+		};
+	};
+	*/
+	class 332nd_Helmet_P2_Mark: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Mark)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Mark.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Whoops: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Whoops)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Whoops.paa"
+		};
+	};
+	class 332nd_Helmet_P2_VB: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (VB)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_VB.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Crota: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Crota)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crota.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Ghoul: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Ghoul)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ghoul.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -469,6 +543,11 @@ class XtdGearModels
 					"Rode",
 					"Rimuru",
 					"Clari",
+					"Mark",
+					"Whoops",
+					"VB",
+					"Crota",
+					"Ghoul",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -736,6 +815,36 @@ class XtdGearModels
 					description = "bīngqílín";
 					//image = "xxx";
 				};
+				class Mark
+				{
+					label = "Mark";
+					description = "Goodnight 332nd";
+					//image = "xxx";
+				};
+				class Whoops
+				{
+					label = "Whoops";
+					description = "Your next";
+					//image = "xxx";
+				};
+				class VB
+				{
+					label = "VB";
+					description = "YO in Aurebesh";
+					//image = "xxx";
+				};
+				class Crota
+				{
+					label = "Crota";
+					description = "Son of Oryx";
+					//image = "xxx";
+				};
+				class Ghoul
+				{
+					label = "Ghoul";
+					description = "Ithias' Son";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -885,6 +994,36 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Clari";
+		};
+		class 332nd_Helmet_P2_Lettuce
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Lettuce";
+		};
+		class 332nd_Helmet_P2_Mark
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Mark";
+		};
+		class 332nd_Helmet_P2_Whoops
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Whoops";
+		};
+		class 332nd_Helmet_P2_VB
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "VB";
+		};
+		class 332nd_Helmet_P2_Crota
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Crota";
+		};
+		class 332nd_Helmet_P2_Ghoul
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Ghoul";
 		};
 	};
 };

@@ -143,6 +143,16 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Trick.paa",
 		};
 	};
+	class 332nd_Helmet_ARF_Stryker: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Stryker)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Stryker.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Stryker.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -201,7 +211,7 @@ class XtdGearModels
 			class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Cin", /* "Walkie", */ "Trick", "Stryker", "Smoke"};
+				values[] = { "Asuka", "Cin", /* "Walkie", */ "Trick", "Stryker", "Smoke",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -288,6 +298,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Trick";
+        };
+        class 332nd_Helmet_ARF_Stryker
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Stryker";
         };
 	};
 };

@@ -335,6 +335,44 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	/*
+	class 332nd_Uniform_Clone_Lettuce: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Lettuce)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Lettuce_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	*/
+	class 332nd_Uniform_Clone_Whoops: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Whoops)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Whoops_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Stryker: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Stryker)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Stryker_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -779,6 +817,38 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aztec.paa",
 		};
 	};
+	/*
+	class 332nd_Uniform_Clone_Lettuce_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Lettuce";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Lettuce.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Lettuce.paa",
+		};
+	};
+	*/
+	class 332nd_Uniform_Clone_Whoops_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Whoops";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Whoops.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Whoops.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Stryker_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Stryker";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Stryker.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stryker.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -894,6 +964,7 @@ class XtdGearModels
 					"Shuck",
 					"Shovie",
 					"Aztec",
+					"Whoops",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1083,6 +1154,12 @@ class XtdGearModels
 					description = "Men Impregnater";
 					//image = "xxx";
 				};
+				class Whoops
+				{
+					label = "Whoops";
+					description = "Will friendly fire you";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1221,6 +1298,21 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Trick";
+		};
+		class 332nd_Uniform_Clone_Lettuce
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Lettuce";
+		};
+		class 332nd_Uniform_Clone_Whoops
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Whoops";
+		};
+		class 332nd_Uniform_Clone_Stryker
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Stryker";
 		};
 	};
 };
