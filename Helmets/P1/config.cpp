@@ -63,7 +63,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_P1_Lt: 332nd_Helmet_P1_Base
 	{
-		displayName="[332nd] P1 Helmet (Platoon Staff)";
+		displayName="[332nd] P1 Helmet (Platoon Leader)";
 		hiddenSelections[] = {"Camo1","Visor"};
 		hiddenSelectionsTextures[] = {"\JLTS_EA_Units\data\Phase1\Helmet_Lieutenant.paa","\JLTS_EA_Units\data\Phase1\Helmet_Lieutenant.paa"};
 	};
@@ -119,6 +119,24 @@ class cfgWeapons
 		};
 	};
 
+	class 332nd_Helmet_ARF_Base;
+	class 332nd_Helmet_P1_ARF: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] P1 Helmet (ARF)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+			"visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_White.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_White.paa",
+		};
+	};
+
 };
 
 class XtdGearModels
@@ -138,7 +156,7 @@ class XtdGearModels
             class Early
             {
                 label = "Early P1";
-				values[] = { "Trooper", "SL", "PL", "CO", "Pilot",};
+				values[] = { "Trooper", "SL", "PL", "CO", "ARF", "Pilot",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Trooper
@@ -156,7 +174,7 @@ class XtdGearModels
                 class PL
                 {
                     label = "PL";
-                    description = "Platoon Staff";
+                    description = "Platoon Leader";
                     //image = "xxx";
                 };
                 class CO
@@ -165,6 +183,12 @@ class XtdGearModels
                     description = "Company Staff";
                     //image = "xxx";
                 };
+				class ARF
+				{
+                    label = "ARF";
+                    //description = "CR+";
+                    //image = "xxx";
+				};
 				class Pilot
 				{
                     label = "Pilot";
@@ -219,17 +243,17 @@ class XtdGearInfos
         class 332nd_Helmet_P1_Sgt
         {
             model = "332nd_Helmets_P1_Extended";
-            Early = "CS";
+            Early = "SL";
         };
         class 332nd_Helmet_P1_Lt
         {
             model = "332nd_Helmets_P1_Extended";
-            Early = "CL";
+            Early = "PL";
         };
         class 332nd_Helmet_P1_Cpt
         {
             model = "332nd_Helmets_P1_Extended";
-            Early = "CC";
+            Early = "CO";
         };
 		class 332nd_Helmet_P1_Pilot
 		{
@@ -240,6 +264,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P1_Extended";
             Late = "Trooper";
+		};
+		class 332nd_Helmet_P1_ARF
+		{
+            model = "332nd_Helmets_P1_Extended";
+            Early = "ARF";
 		};
 	};
 };

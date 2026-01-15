@@ -37,7 +37,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Sgt: 332nd_Uniform_Clone_CT_P1
 	{
-		displayName="[332nd] Clone Trooper Armor (Sgt)";
+		displayName="[332nd] Clone Trooper Armor (Squad Leader)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
@@ -49,7 +49,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Lt: 332nd_Uniform_Clone_CT_P1
 	{
-		displayName="[332nd] Clone Trooper Armor (Lt)";
+		displayName="[332nd] Clone Trooper Armor (Platoon Leader)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
@@ -61,7 +61,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Cpt: 332nd_Uniform_Clone_CT_P1
 	{
-		displayName="[332nd] Clone Trooper Armor (Cpt)";
+		displayName="[332nd] Clone Trooper Armor (Company Staff)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
@@ -310,7 +310,7 @@ class XtdGearModels
 			class P1
 			{
 				label = "Phase 1";
-				values[] = { "CT", "CS", "CL", "CC",};
+				values[] = { "CT", "SL", "PL", "CO",};
 				changeingame = 0;
 				alwaysSelectable = 1;
 				class CT
@@ -319,22 +319,22 @@ class XtdGearModels
 					description = "CR+";
 					//image = "xxx";
 				};
-				class CS
+				class SL
 				{
-					label = "CS";
-					description = "CS+";
+					label = "SL";
+					description = "Squad Leader";
 					//image = "xxx";
 				};
-				class CL
+				class PL
 				{
-					label = "CL";
-					description = "CL+";
+					label = "PL";
+					description = "Platoon Leader";
 					//image = "xxx";
 				};
-				class CC
+				class CO
 				{
-					label = "CC";
-					description = "CC+";
+					label = "CO";
+					description = "Company Staff";
 					//image = "xxx";
 				};
 			};
@@ -354,17 +354,17 @@ class XtdGearInfos
 		class 332nd_Uniform_Clone_Sgt
 		{
 			model = "332nd_Uniform_P1_Extended";
-			P1 = "CS";
+			P1 = "SL";
 		};
 		class 332nd_Uniform_Clone_Lt
 		{
 			model = "332nd_Uniform_P1_Extended";
-			P1 = "CL";
+			P1 = "PL";
 		};
 		class 332nd_Uniform_Clone_Cpt
 		{
 			model = "332nd_Uniform_P1_Extended";
-			P1 = "CC";
+			P1 = "CO";
 		};
 	}; 
 };

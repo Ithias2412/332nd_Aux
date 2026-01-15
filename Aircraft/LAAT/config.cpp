@@ -1270,7 +1270,7 @@ class CfgVehicles
 		};
 		class TextureSources
 		{
-			class 332nd_3AS_Base_tex
+			class 332nd_Base_Tex
 			{
 				displayname="332nd Base";
 				author="Cherryy";
@@ -1287,17 +1287,17 @@ class CfgVehicles
 					"332nd_Faction"
 				};
 			};
-			class 332nd_3AS_Base_Test
+			class 332nd_3AS_Base_Tex
 			{
-				displayname="332nd Base Test";
+				displayname="3AS Base";
 				author="Cherryy";
 				textures[]=
 				{
-					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
-					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+					"3AS\3AS_Laat\LAATI\data\Hull_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Wings_CO.paa",
 					"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
 					"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
-					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa"
 				};
 				factions[]=
 				{
@@ -1307,8 +1307,8 @@ class CfgVehicles
 		};
 		textureList[]=
 		{
-			"332nd_3AS_Base_tex",
-			"332nd_3AS_Base_Test",
+			"332nd_Base_Tex",
+			"332nd_3AS_Base_Tex",
 			1,
 		};
 		class ACE_SelfActions: ACE_SelfActions
@@ -1929,7 +1929,7 @@ class CfgVehicles
 		};
 		class TextureSources
 		{
-			class 332nd_3AS_Base_tex
+			class 332nd_Base_Tex
 			{
 				displayname="332nd Base";
 				author="Cherryy";
@@ -1946,17 +1946,17 @@ class CfgVehicles
 					"332nd_Faction"
 				};
 			};
-			class 332nd_3AS_Base_Test
+			class 332nd_3AS_Base_Tex
 			{
-				displayname="332nd Base Test";
+				displayname="3AS Base";
 				author="Cherryy";
 				textures[]=
 				{
-					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
-					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+					"3AS\3AS_Laat\LAATI\data\Hull_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Wings_CO.paa",
 					"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
 					"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
-					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa"
 				};
 				factions[]=
 				{
@@ -1966,8 +1966,8 @@ class CfgVehicles
 		};
 		textureList[]=
 		{
-			"332nd_3AS_Base_tex",
-			"332nd_3AS_Base_Test",
+			"332nd_Base_Tex",
+			"332nd_3AS_Base_Tex",
 			1,
 		};
 		class ACE_SelfActions: ACE_SelfActions
