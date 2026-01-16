@@ -318,6 +318,18 @@ params ["_obj"];
 "332nd_Uniform_Clone_Shovie",
 "332nd_Uniform_Clone_Aztec",
 "B_UavTerminal",
+"332nd_CSW_Heavy_Repeater_Baseplate_W",
+"332nd_CSW_Heavy_Repeater_W",
+"332nd_Heavy_Repeater_Mag",
+"332nd_JT12_2",
+"332nd_Uniform_Clone_Whoops",
+"332nd_Uniform_Clone_Stryker",
+"332nd_Helmet_P2_Mark",
+"332nd_Helmet_P2_Whoops",
+"332nd_Helmet_P2_VB",
+"332nd_Helmet_P2_Crota",
+"332nd_Helmet_P2_Ghoul",
+"332nd_Helmet_ARF_Stryker",
 "DC15SA_Muzzle"]
 
 ] call ace_arsenal_fnc_initBox
