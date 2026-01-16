@@ -26,6 +26,7 @@ class CfgPatches
             "332nd_Droid_B1_Pilot",
 			"332nd_Droid_B1_Rifleman_Jump",
 			"332nd_Droid_B1_Support_Jump",
+			"332nd_Droid_B1_Rifleman_Fly",
 			"332nd_Droid_T_Series",
 			"332nd_Droid_B2_Rockets",
 			"332nd_Droid_B2_Flamer",
