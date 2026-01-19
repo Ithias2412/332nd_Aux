@@ -66,7 +66,7 @@ class CfgVehicles
 				
 			};
 		};
-	};
+	}; 
 	class 332nd_Rho_Class: 3AS_Rho_REP_F
 	{
 		faction="332nd_Faction";
@@ -78,6 +78,8 @@ class CfgVehicles
 		ls_impulsor_fuelDrain_2=0.00010;
 		armor = 400;
 		transportSoldier=34;
+		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+		hiddenSelectionsTextures[] = {"332nd_Aux\Aircraft\Rho_Class\tex\332nd_Rho_Hull_co.paa","3as\3as_republic_heli\nu_class\data\hull_front_co.paa","3as\3as_republic_heli\rho_class\data\wings_rho_co.paa","3as\3as_republic_heli\rho_class\data\cockpit_co.paa","3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa","3as\3as_republic_heli\rho_class\data\interior_co.paa","3as\3as_republic_heli\rho_class\data\interior_optional_co.paa"};
 		weapons[] =
 		{
 			"332nd_Rho_Cannon",
