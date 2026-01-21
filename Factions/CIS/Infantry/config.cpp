@@ -764,8 +764,8 @@ class CfgVehicles {
         respawnWeapons[] = {"WBK_Dutch_Vibro", "332nd_CIS_E5", "Throw", "Put"};
         magazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
         respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
-        linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
-        respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        linkedItems[] = {"ls_droidVest_bx","ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
+        respawnLinkedItems[] = {"ls_droidVest_bx","ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
 		class HitPoints: HitPoints
 		{
 			class HitFace
@@ -2248,6 +2248,38 @@ class CfgGroups
                     };
                 };
 			};
+        };
+    };
+};
+
+
+class Extended_InitPost_EventHandlers {
+	class 332nd_Droid_B1_Rifleman {
+        class WBK_B1_Init {
+            init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_B1_Load;};";
+        };
+    };
+
+	class 332nd_Droid_BX_Shield {
+        class WBK_BX_Assasin_1_init {
+            init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_BX_Load;};";
+        };
+    };
+	class 332nd_Droid_BX_Range {
+        class WBK_BX_Assasin_1_init {
+            init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_BX_Load;};";
+        };
+    };
+	class 332nd_Droid_BX_Melee {
+        class WBK_BX_Assasin_1_init {
+            init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_BX_Load;};";
+        };
+    };
+
+
+	class 332nd_Droid_B2 {
+        class WBK_B2_Mod_init {
+            init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_B2_Load;};";
         };
     };
 };

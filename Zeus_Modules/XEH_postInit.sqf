@@ -1976,7 +1976,7 @@ SB_fnc_Init_JumpPack = {
 	_cooldownMove = 2;
 
 
-	_jumpDistMin = 10;
+	_jumpDistMin = 1;
 	_jumpDistMax = 500;
 
 	_jumpTime = -10;
@@ -2038,8 +2038,17 @@ SB_fnc_Init_JumpPack = {
 
 						if (_diffTime > _cooldown) then {
 							if (_unit distance _target > _jumpDistMin && _unit distance _target < _jumpDistMax) then {
-								_jumpTime = [_unit, "", _cooldown] call SB_fnc_JumpPack;
-
+								if (_unit distance _target > 25) then {
+									systemchat "Outside Min distance, Using Jump";
+									_jumpTime = [_unit, "", _cooldown] call SB_fnc_JumpPack;
+								}
+								else 
+								{
+									systemchat "Within Min distance, Using evade";
+									[_unit, "B1_Droid_Jetpack"] remoteExec ["switchMove",0];				
+									_unit playActionNow "WBK_Droid_Disable_Gesture";
+									_unit remoteExec ["WBK_Droids_B1_JetpackEffect",[0,-2] select isDedicated]; 
+								};
 								_jumpTime = time;
 							};
 						};
