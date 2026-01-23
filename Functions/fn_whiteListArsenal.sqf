@@ -330,6 +330,9 @@ params ["_obj"];
 "332nd_Helmet_P2_Crota",
 "332nd_Helmet_P2_Ghoul",
 "332nd_Helmet_ARF_Stryker",
+"332nd_Uniform_Clone_Roseiry",
+"332nd_Uniform_Clone_VB",
+"332nd_Helmet_P2_Roseiry",
 "DC15SA_Muzzle"]
 
 ] call ace_arsenal_fnc_initBox
