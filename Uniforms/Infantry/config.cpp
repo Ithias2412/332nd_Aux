@@ -335,7 +335,6 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	/*
 	class 332nd_Uniform_Clone_Lettuce: 332nd_Uniform_Clone_CR
 	{
 		displayName="[332nd] Clone Trooper Armor (Lettuce)";
@@ -348,7 +347,6 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	*/
 	class 332nd_Uniform_Clone_Whoops: 332nd_Uniform_Clone_CR
 	{
 		displayName="[332nd] Clone Trooper Armor (Whoops)";
@@ -368,6 +366,30 @@ class cfgWeapons
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Stryker_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Roseiry: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Roseiry)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Roseiry_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_VB: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (VB)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_VB_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -817,7 +839,6 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aztec.paa",
 		};
 	};
-	/*
 	class 332nd_Uniform_Clone_Lettuce_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
@@ -828,7 +849,6 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Lettuce.paa",
 		};
 	};
-	*/
 	class 332nd_Uniform_Clone_Whoops_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
@@ -847,6 +867,26 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Stryker.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stryker.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Roseiry_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Roseiry";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Roseiry.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Roseiry.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_VB_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_VB";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_VB.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_VB.paa",
 		};
 	};
 };
@@ -965,6 +1005,8 @@ class XtdGearModels
 					"Shovie",
 					"Aztec",
 					"Whoops",
+					"Roseiry",
+					"VB",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1160,6 +1202,18 @@ class XtdGearModels
 					description = "Will friendly fire you";
 					//image = "xxx";
 				};
+				class Roseiry
+				{
+					label = "Roseiry";
+					description = "Fun Police / Webtoon Enjoyer";
+					//image = "xxx";
+				};
+				class VB
+				{
+					label = "VB";
+					description = "Medic Mommy";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1313,6 +1367,16 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Stryker";
+		};
+		class 332nd_Uniform_Clone_Roseiry
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Roseiry";
+		};
+		class 332nd_Uniform_Clone_VB
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "VB";
 		};
 	};
 };

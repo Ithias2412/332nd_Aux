@@ -378,7 +378,6 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Clari.paa"
 		};
 	};
-	/*
 	class 332nd_Helmet_P2_Lettuce: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Lettuce)";
@@ -391,7 +390,6 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Lettuce.paa"
 		};
 	};
-	*/
 	class 332nd_Helmet_P2_Mark: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Mark)";
@@ -450,6 +448,18 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ghoul.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Roseiry: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Roseiry)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Roseiry.paa"
 		};
 	};
 };
@@ -1024,6 +1034,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ghoul";
+		};
+		class 332nd_Helmet_P2_Roseiry
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Roseiry";
 		};
 	};
 };
