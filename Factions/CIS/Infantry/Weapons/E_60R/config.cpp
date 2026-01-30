@@ -19,7 +19,7 @@ class cfgWeapons
 	class JLTS_E60R_AT;
 	class 332nd_CIS_E60R_AA: JLTS_E60R_AT
 	{
-		scope = 1;
+		scope = 2;
 		displayName = "[CIS] E-60R";
 		magazines[] = {"332nd_CIS_E60R_Mag"};
 	};

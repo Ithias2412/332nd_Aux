@@ -28,7 +28,7 @@ class cfgWeapons
 //Primary
 	class 332nd_CIS_SBB3: JLTS_SBB3
 	{
-		scope = 1;
+		scope = 2;
 		baseWeapon = "332nd_CIS_SBB3";
 		displayName = "[CIS] SB-B3";
 		magazines[] = {"332nd_CIS_SBB3_Mag"};

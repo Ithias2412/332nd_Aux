@@ -22,8 +22,6 @@ class cfgWeapons
 	class Pelvis;
 	class JLTS_CloneVestHolster;
 
-
-
 	class 332nd_Trooper_Vest: JLTS_CloneVestHolster
 	{
 		author="Ithias";
@@ -278,6 +276,7 @@ class cfgWeapons
 			};
 		};
 	};
+	
 	class 332nd_CSS_Vest_Body: 332nd_Trooper_Vest
 	{
 		displayName="New! [332nd] Vest (Body)";
@@ -303,8 +302,32 @@ class cfgWeapons
 		};
 	};
 
-};
+	class 332nd_CSS_Vest_Crow: 332nd_Trooper_Vest
+	{
+		displayName="New! [332nd] Vest (Crow)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Crow.paa",
+			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"
+			};
+		};
+	};
 
+};
 
 class XtdGearModels
 {
@@ -422,6 +445,7 @@ class XtdGearModels
         };
     };
 };
+
 class XtdGearInfos
 {
     class CfgWeapons 
@@ -470,6 +494,11 @@ class XtdGearInfos
 		{
             model = "332nd_Vest_Extended";
             Custom = "Body";
+		};
+		class 332nd_CSS_Vest_Crow
+		{
+            model = "332nd_Vest_Extended";
+            Custom = "Crow";
 		};
 	};
 };
