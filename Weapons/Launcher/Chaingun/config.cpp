@@ -1,4 +1,4 @@
-
+/*
 class CfgPatches
 {
 	class 332nd_Chaingun
