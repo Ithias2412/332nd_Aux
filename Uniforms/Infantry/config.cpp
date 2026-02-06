@@ -407,6 +407,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Rode: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Rode)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Rode_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -911,6 +923,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Thym.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Rode_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Rode";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rode.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rode.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1030,6 +1052,7 @@ class XtdGearModels
 					"Roseiry",
 					"VB",
 					"Thym",
+					"Rode",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1243,6 +1266,12 @@ class XtdGearModels
 					description = "Very big updates, very good updates, but not for this armor";
 					//image = "xxx";
 				};
+				class Rode
+				{
+					label = "Rode";
+					description = "This bad boy can fit so many crayons";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1412,5 +1441,11 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Customs = "Thym";
 		};
+		class 332nd_Uniform_Clone_Rode
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Rode";
+		};
 	};
 };
+
