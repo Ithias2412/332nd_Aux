@@ -16,7 +16,6 @@ class CfgPatches
 		requiredAddons[] = 
 		{
 			"3AS_Prop_Crates",
-			"",
 		};
 	};
 };
