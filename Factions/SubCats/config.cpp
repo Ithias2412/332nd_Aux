@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 332nd_Faction_Config {
+	class 332nd_Faction_Config_Subcat {
 		units[] = 
         {
 			"",
