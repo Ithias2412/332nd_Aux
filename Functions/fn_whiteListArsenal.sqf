@@ -336,6 +336,7 @@ params ["_obj"];
 "332nd_Uniform_Clone_Thym",
 "332nd_CSS_Vest_Crow",
 "332nd_Uniform_Clone_Rode",
+"332nd_Uniform_Clone_Clari",
 "DC15SA_Muzzle"]
 
 ] call ace_arsenal_fnc_initBox
