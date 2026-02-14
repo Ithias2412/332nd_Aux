@@ -5,10 +5,7 @@ class CfgPatches
         author = "Ithias";
         name = "East Enian Flag";
         weapons[] = {};
-		requiredAddons[] = 
-		{
-			"A3_Structures_F_Mil_Flags",
-		};
+		requiredAddons[] = {};
         units[] = 
 		{
             "332nd_East_Enia_Props_Flag",

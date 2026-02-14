@@ -2,10 +2,7 @@ class CfgPatches
 {
 	class 332nd_LAAT_LE 
 	{
-		requiredAddons[] = 
-		{
-			"3AS_LAAT_LE",
-		};
+		requiredAddons[] = {};
 		units[] = 
         {
 			"332nd_LAAT_LE",

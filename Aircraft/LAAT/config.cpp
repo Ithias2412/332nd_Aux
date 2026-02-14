@@ -9,7 +9,6 @@ class CfgPatches
 			"lsd_sounds",
 			"A3_Air_F_EPB_Heli_Light_03",
 			"lsd_vehicles_heli",
-			"3AS_LAAT",
 		};
 		units[] = 
         {

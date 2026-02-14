@@ -12,10 +12,7 @@ class CfgPatches
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = 
-		{
-			"3AS_Static_J1_Proton_Cannon",
-		};
+		requiredAddons[] = {};
 	};
 };
 

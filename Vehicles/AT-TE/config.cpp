@@ -2,10 +2,7 @@ class CfgPatches
 {
 	class 332nd_ATTE
 	{
-		requiredAddons[] = 
-		{
-			"3AS_ATTE"
-		};
+		requiredAddons[] = {"3AS_ATTE"};
 		units[] = 
 		{
 			"332nd_ATTE",

@@ -5,10 +5,7 @@ class CfgPatches
         author = "Ithias";
         name = "East Enian Speeder Truck";
         weapons[] = {};
-		requiredAddons[] = 
-		{
-			"JMSLLTE_vehgr_AA5",
-		};
+		requiredAddons[] = {};
         units[] = 
 		{
             "332nd_East_Enia_Speeder_Truck",

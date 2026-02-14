@@ -2,10 +2,7 @@ class CfgPatches
 {
 	class 332nd_Y_Wing
 	{
-		requiredAddons[] = 
-		{
-			"3AS_BTLB_Bomber",
-		};
+		requiredAddons[] = {};
 		units[] = 
         {
 			"332nd_Y_Wing",

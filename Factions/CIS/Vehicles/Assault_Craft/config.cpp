@@ -11,10 +11,7 @@ class CfgPatches
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = 
-		{
-			"3AS_CIS_Wheeled_PAC",
-		};
+		requiredAddons[] = {};
 	};
 };
 

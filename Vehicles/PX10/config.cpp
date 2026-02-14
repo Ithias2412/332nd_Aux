@@ -2,10 +2,7 @@ class CfgPatches
 {
 	class 332nd_PX10
 	{
-		requiredAddons[] = 
-		{
-			"3AS_Rebel_Armor_PX10"
-		};
+		requiredAddons[] = {"3AS_Rebel_Armor_PX10"};
 		units[] = 
 		{
 			"332nd_PX10_F",

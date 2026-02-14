@@ -3,9 +3,7 @@ class CfgPatches
 	class 332nd_Umbaran_AA
 	{
 		requiredAddons[]=
-		{
-			"3AS_Reoublic_Static_Keeradak"
-		};
+		{"3AS_Reoublic_Static_Keeradak"};
 		units[]=
 		{
 			"332nd_Umbara_AA_Gun"

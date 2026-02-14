@@ -11,10 +11,7 @@ class CfgPatches
 			"",
 		};
         requiredVersion = 0.1;
-        requiredAddons[] = 
-		{
-			"JLTS_drones_prowler"
-		};
+        requiredAddons[] = {}; 
     };
 };
 

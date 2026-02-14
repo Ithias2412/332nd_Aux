@@ -2,10 +2,7 @@ class CfgPatches
 {
 	class 332nd_CSW
 	{
-		requiredAddons[] = 
-		{
-			"3AS_Static_Repeater",
-		};
+		requiredAddons[] = {};
 		units[] = 
 		{
 			"332nd_CSW_Heavy_Repeater",

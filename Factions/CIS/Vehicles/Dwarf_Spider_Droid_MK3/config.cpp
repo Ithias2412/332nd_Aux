@@ -11,10 +11,7 @@ class CfgPatches
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = 
-		{
-			"DBA_DwarfSpiderDroidMK3",
-		};
+		requiredAddons[] = {};
 	};
 };
 

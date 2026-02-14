@@ -2,10 +2,7 @@ class CfgPatches
 {
 	class 332nd_TX130
 	{
-		requiredAddons[] = 
-		{
-			"3AS_SaberTank"
-		};
+		requiredAddons[] = {"3AS_SaberTank"};
 		units[] = 
 		{
 			"332nd_Saber_Tank",

@@ -13,10 +13,7 @@ class CfgPatches
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = 
-		{
-			"3AS_CIS_Armor_HeavyAAT",
-		};
+		requiredAddons[] = {};
 	};
 };
 

@@ -2,10 +2,7 @@ class CfgPatches
 {
 	class 332nd_LAAT_C 
 	{
-		requiredAddons[] = 
-		{
-			"3AS_LAAT_Cargo",
-		};
+		requiredAddons[] = {};
 		units[] = 
         {
 			"332nd_LAAT_C",
