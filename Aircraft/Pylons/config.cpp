@@ -11,6 +11,7 @@ class CfgPatches {
             "332nd_Hammer_II",
             "332nd_Anvil_I",
 			"332nd_Anvil_III",
+			"332nd_Anvil_IV",
 			"332nd_Forge_III",
 			"332nd_Forge_III_Y",
 			"332nd_Forge_I",
@@ -221,29 +222,6 @@ class CfgWeapons
 			};
 		};
 	};
-	//Cosmos Gun
-	class CannonCore;
-	class Cannon_30mm_Plane_CAS_02_F: CannonCore
-	{
-		class LowROF;
-	};
-	class 3as_Z95_Heavy_Cannon: Cannon_30mm_Plane_CAS_02_F
-	{
-		class LowROF: LowROF {};
-	};
-	class 332nd_Z95_Cannon_Heavy: 3as_Z95_Heavy_Cannon
-	{
-		displayName = "[332nd] Heavy Energy Cannon";
-		ballisticsComputer="4 + 2 + 8";
-		magazines[]=
-		{
-			"332nd_Z95_Cannon_Heavy_Mag"
-		};
-		class LowROF: LowROF 
-		{
-			reloadTime=0.2;
-		};
-	};
 };
 
 class CfgMagazines
@@ -356,7 +334,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Anvil_IV_Ammo";
 		author = "Ithias";
-		count = 2;
+		count = 3;
 		descriptionShort = "Short-range, wire-guided, air-to-surface missile with explosive anti-tank warhead";
 		displayName = "[332nd] Anvil IV";
 		displayNameShort = "Wire AG";
@@ -514,20 +492,6 @@ class CfgMagazines
 		count = 500;
 		displayname = "Energy Cell";
 	};
-	class 3as_PylonWeapon_Z95_240Rnd_Heavy_Shells;
-	class 332nd_Z95_Cannon_Heavy_Mag: 3as_PylonWeapon_Z95_240Rnd_Heavy_Shells
-	{
-		ammo = "332nd_Z95_Cannon_Heavy_Ammo";
-		count = 1500;
-		displayname = "[332nd] Heavy Energy Cannon";
-		initSpeed = 1360;
-		hardpoints[] = 
-		{
-			"332nd_Z95_Cannon_Heavy",
-		};
-		descriptionShort = "A Z-95 Cannon with a slower fire rate and faster velocity";
-		pylonWeapon = "332nd_Z95_Cannon_Heavy";
-	};
 };
 
 class CfgAmmo
@@ -582,6 +546,10 @@ class CfgAmmo
 		manualControl = 1;
 		maxControlRange = 2000;
 		weaponLockSystem = "0";
+		//maneuvrability = 27;
+		maneuvrability = 30;
+		//sideAirFriction = 0.15;
+		sideAirFriction = 0.5;
 	};
 	class 332nd_Anvil_I_Ammo_Penetrator: ammo_Penetrator_AGM_02
 	{
@@ -658,14 +626,6 @@ class CfgAmmo
 		indirecthitrange = 3;
 	};
 	class 332nd_Rho_Cannon_Ammo: 3AS_Nu_HE
-	{
-		hit = 25;
-		caliber = 1;
-		indirecthit = 50;
-		indirecthitrange = 3;
-	};
-	class 3as_Z95_Heavy_Energy_shell;
-	class 332nd_Z95_Cannon_Heavy_Ammo: 3as_Z95_Heavy_Energy_shell
 	{
 		hit = 25;
 		caliber = 1;

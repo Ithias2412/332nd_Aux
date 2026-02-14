@@ -2,7 +2,10 @@ class CfgPatches
 {
 	class 332nd_CSW
 	{
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"3AS_Static_Repeater",
+		};
 		units[] = 
 		{
 			"332nd_CSW_Heavy_Repeater",
@@ -133,7 +136,11 @@ class CfgWeapons
 			mass = 620;
 		};
 	};
-	class 3AS_HeavyRepeater_W;
+	class LMG_RCWS;
+	class 3AS_HeavyRepeater_W: LMG_RCWS
+	{
+		class manual;
+	};
 	class 332nd_Heavy_Repeater_W: 3AS_HeavyRepeater_W
 	{
         magazineReloadTime = 0.5;
@@ -142,7 +149,30 @@ class CfgWeapons
 		{
 			"332nd_Heavy_Repeater_Mag"
 		};
-		
+		modes[] = {"manual_new"};
+		class manual_new: manual
+		{
+			displayName = "[332nd] Heavy Repeater";
+			dispersion = 0.00262;
+			reloadTime = 0.05;
+			sounds[] = {"StandardSound"};
+			class TestSound
+			{
+				begin1[] = {"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",1,1,1800};
+				closure1[] = {};
+				closure2[] = {};
+				soundBegin[] = {"begin1",1};
+				soundClosure[] = {};
+				weaponSoundEffect = "";
+			};
+			class StandardSound
+			{
+				soundsetshot[] = 
+				{
+					"332nd_Z6_SoundSet"
+				};
+			};
+		};
 	};
 };
 
@@ -151,7 +181,7 @@ class CfgMagazines
 	class 3AS_HeavyRepeater_1000Rnd_mag;
 	class 332nd_Heavy_Repeater_Mag: 3AS_HeavyRepeater_1000Rnd_mag
 	{
-		ammo = "332nd_Gas_Level_S3";
+		ammo = "332nd_Gas_Level_S2";
 		count = 1000;
 		displayName = "Heavy Repeater 1000 Round Energy Cell";
 		initSpeed = 800;
@@ -169,6 +199,24 @@ class ACE_CSW_Groups
 	class 332nd_Heavy_Repeater_Mag 
 	{ 
 		332nd_Heavy_Repeater_Mag = 1;    // Vehicle magazine that will be loaded when loading this magazine
+	};
+};
+
+class CfgSoundSets
+{
+	class 3AS_Z6_SoundSet;
+	class 332nd_Z6_SoundSet: 3AS_Z6_SoundSet
+	{
+		distanceFilter = "weaponShotDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponMediumShot3DProcessingType";
+		soundShaders[] = {"3AS_Z6_SoundShader"};
+		spatial = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
 	};
 };
 

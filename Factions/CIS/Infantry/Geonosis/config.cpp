@@ -7,7 +7,7 @@ class CfgPatches
         name = "332nd Aux CIS Infantry Geonosis";
         requiredAddons[] = 
 		{
-			"JLTS_characters_DroidArmor"
+			"JLTS_characters_DroidUnits"
 		};
         weapons[] = {};
         units[] = 

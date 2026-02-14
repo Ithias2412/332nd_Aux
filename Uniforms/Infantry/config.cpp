@@ -419,6 +419,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Clari: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Clari)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Clari_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -933,6 +945,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rode.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Clari_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Clari";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Clari.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Clari.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1053,6 +1075,7 @@ class XtdGearModels
 					"VB",
 					"Thym",
 					"Rode",
+					"Clari",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1272,6 +1295,12 @@ class XtdGearModels
 					description = "This bad boy can fit so many crayons";
 					//image = "xxx";
 				};
+				class Clari
+				{
+					label = "Clari";
+					description = "Zesty Clone";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1445,6 +1474,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Rode";
+		};
+		class 332nd_Uniform_Clone_Clari
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Clari";
 		};
 	};
 };

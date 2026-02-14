@@ -7,7 +7,12 @@ class CfgPatches
         name = "332nd Aux CIS Infantry";
         requiredAddons[] = 
 		{
-			"JLTS_characters_DroidArmor"
+			"JLTS_characters_DroidArmor",
+			"3AS_Characters_Droids_B2",
+			"3AS_Characters_Droids_TSeries",
+			"3AS_CIS_Infantry",
+			"ls_units_redfor",
+			"lsd_units_redfor"
 		};
         weapons[] = {};
         units[] = 

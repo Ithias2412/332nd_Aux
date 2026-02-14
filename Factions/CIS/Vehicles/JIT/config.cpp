@@ -11,7 +11,10 @@ class CfgPatches
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"3AS_Static_DF9",
+		};
 	};
 };
 class SensorTemplatePassiveRadar;

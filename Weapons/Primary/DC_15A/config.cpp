@@ -206,6 +206,48 @@ class cfgWeapons
 			//"Single",
 			"FullAuto",
 		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				begin1[]=
+				{
+					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
+					1,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			//reloadTime = 0.17142;
+			reloadTime=0.0857;
+			recoil="recoil_auto_primary_3outof10";
+			recoilProne="recoil_auto_primary_prone_3outof10";
+			dispersion=0.00058;
+			minRange=0;
+			minRangeProbab=0.89999998;
+			midRange=15;
+			midRangeProbab=0.69999999;
+			maxRange=30;
+			maxRangeProbab=0.1;
+			aiRateOfFire=1e-006;
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass=97;

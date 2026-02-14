@@ -66,9 +66,9 @@ class CfgVehicles
 		};
 		magazines[] = 
 		{
-		//	"332nd_Z95_Cannon_Mag",
-		//	"332nd_Z95_Cannon_Mag",
-		//	"332nd_Z95_Cannon_Mag",
+			"332nd_Z95_Cannon_Mag",
+			"332nd_Z95_Cannon_Mag",
+			"332nd_Z95_Cannon_Mag",
 			//"Laserbatteries",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
@@ -76,7 +76,7 @@ class CfgVehicles
 		};
 		weapons[] = 
 		{
-		//	"332nd_Z95_Cannon",
+			"332nd_Z95_Cannon",
 			"CMFlareLauncher",
 			//"Laserdesignator_pilotCamera"
 		};
@@ -289,6 +289,7 @@ class CfgVehicles
 						mirroredMissilePos = 5;
 						UIposition[] = {0.15,0.25};
 					};
+					/*
 					class Pylons7
 					{
 						turret[]={0};
@@ -301,6 +302,7 @@ class CfgVehicles
 						};
 						
 					};
+					*/
 				};
 			};
 		};

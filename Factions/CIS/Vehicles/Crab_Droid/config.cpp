@@ -11,7 +11,10 @@ class CfgPatches
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"101st_Crab",
+		};
 	};
 };
 

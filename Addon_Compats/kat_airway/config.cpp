@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class DBA_Medical
+	class kat_airway
 	{
 		units[]=
 		{

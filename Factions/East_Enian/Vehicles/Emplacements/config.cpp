@@ -5,7 +5,13 @@ class CfgPatches
         author = "Ithias";
         name = "East Enian Emplacements";
         weapons[] = {};
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"101st_EWEB",
+			"3AS_CIS_Static_J10s",
+			"3AS_Mortar",
+			"3AS_Static_ParticleCannon",
+		};
         units[] = 
 		{
             "332nd_East_Enia_Particle_Cannon",

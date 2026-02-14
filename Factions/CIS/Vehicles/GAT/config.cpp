@@ -12,7 +12,10 @@ class CfgPatches
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"3AS_GAT",
+		};
 	};
 };
 
@@ -36,5 +39,4 @@ class CfgVehicles
 		armor = 150;
 		editorPreview = "";
 	};
-
 };

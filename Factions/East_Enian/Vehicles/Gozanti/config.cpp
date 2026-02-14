@@ -5,7 +5,10 @@ class CfgPatches
         author = "Ithias";
         name = "East Enian Gozanti";
         weapons[] = {};
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"3AS_Imperial_Air_Gozanti",
+		};
         units[] = 
 		{
             "332nd_East_Enia_Gozanti",

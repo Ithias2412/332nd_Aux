@@ -2,7 +2,10 @@ class CfgPatches
 {
 	class 332nd_Rho_Class
 	{
-		requiredAddons[] ={};
+		requiredAddons[] =
+		{
+			"3AS_Republic_Heli_Rho",
+		};
 		units[] =
         {
 			"332nd_Rho_Class",

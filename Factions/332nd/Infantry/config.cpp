@@ -4,7 +4,10 @@ class CfgPatches
 	{
         author = "Ithias";
         name = "332nd Aux 332nd Infantry";
-        requiredAddons[] = {};
+        requiredAddons[] = 
+		{
+			"332nd_Uniforms",
+		};
         weapons[] = {};
         units[] = 
 		{
