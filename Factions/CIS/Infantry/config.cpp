@@ -2254,7 +2254,7 @@ class CfgGroups
 
 
 class Extended_InitPost_EventHandlers {
-	class 332nd_Droid_B1_Rifleman {
+	class 332nd_Droid_Base {
         class WBK_B1_Init {
             init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_B1_Load;};";
         };
