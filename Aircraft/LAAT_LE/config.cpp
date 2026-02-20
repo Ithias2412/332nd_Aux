@@ -127,6 +127,7 @@ class CfgVehicles
 					};
 				};
 			};
+			class TransportCounterMeasuresComponent;
 		};
 	};
 	class 332nd_LAAT_LE: 3AS_Patrol_LAAT_Republic
@@ -436,6 +437,7 @@ class CfgVehicles
 					};
 				};
 			};
+			class TransportCounterMeasuresComponent;
 		};
 		class UserActions: UserActions
 		{

@@ -112,7 +112,6 @@ class CfgMagazines
 		count = 1;
 		maxLeadSpeed = 40;
 		mass = 200;
-
 	};
 };
 class CfgNonAIVehicles

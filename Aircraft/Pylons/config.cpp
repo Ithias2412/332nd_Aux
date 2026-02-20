@@ -12,10 +12,13 @@ class CfgPatches {
             "332nd_Anvil_I",
 			"332nd_Anvil_III",
 			"332nd_Anvil_IV",
+			"332nd_Anvil_X_S",
+			"332nd_Anvil_X_K",
 			"332nd_Forge_III",
 			"332nd_Forge_III_Y",
 			"332nd_Forge_I",
 			"332nd_Forge_X_N",
+			"332nd_Forge_X_C",
 			"332nd_CIS_A2A_Missile",
 			"332nd_CIS_ATG_Missile",
         };
@@ -77,6 +80,15 @@ class CfgWeapons
 		magazines[] = 
 		{
 			"332nd_Anvil_X_S_Mag",
+		};
+	};
+	class 332nd_Anvil_X_K: missiles_DAR
+	{
+		displayName = "[332nd] Anvil X-K";
+		showAimCursorInternal = 0;
+		magazines[] = 
+		{
+			"332nd_Anvil_X_K_Mag",
 		};
 	};
 	class 332nd_Anvil_I: weapon_AGM_65Launcher
@@ -303,7 +315,7 @@ class CfgMagazines
 	class 332nd_Anvil_X_S_Mag: PylonRack_12Rnd_missiles
 	{
 		ammo = "332nd_Anvil_X_S_Ammo";
-		count = 12;
+		count = 24;
 		descriptionShort = "Unguided rockets with a smaller-explosive warhead";
 		displayName = "[332nd] Anvil X-S";
 		displayNameShort = "HE";
@@ -312,6 +324,19 @@ class CfgMagazines
 			"332nd_Anvil_X_S",
 		};
 		pylonWeapon = "332nd_Anvil_X_S";
+	};
+	class 332nd_Anvil_X_K_Mag: PylonRack_12Rnd_missiles
+	{
+		ammo = "332nd_Anvil_X_K_Ammo";
+		count = 12;
+		descriptionShort = "Unguided rockets with a white smoke warhead";
+		displayName = "[332nd] Anvil X-K";
+		displayNameShort = "Smoke";
+		hardpoints[] = 
+		{
+			"332nd_Anvil_X_K",
+		};
+		pylonWeapon = "332nd_Anvil_X_K";
 	};
 	class 332nd_Anvil_I_Mag: PylonRack_Missile_AGM_02_x1
 	{
@@ -533,6 +558,28 @@ class CfgAmmo
 	{
 		effectsMissile = "332nd_Effect_Hydra";
 		fuseDistance = 5;
+	};
+	class 332nd_Anvil_X_K_Ammo: M_AT
+	{
+		effectsMissile = "332nd_Effect_Hydra";
+		fuseDistance = 5;
+		//simulation = "shotSmoke";
+		smokeColor[] = {1,1,1,1};
+		ExplosionEffects = "";
+		//effectsSmoke = "IDA_SmokeEffect";
+		CraterEffects = "";
+		ace_frag_enabled = 0;
+		//whistleDist = 0;
+		SmokeShellSoundLoop2[] = {"A3\Sounds_F\weapons\smokeshell\smoke_loop2",0.125893,1,70};
+		SmokeShellSoundLoop1[] = {"A3\Sounds_F\weapons\smokeshell\smoke_loop1",0.125893,1,70};
+		SmokeShellSoundHit3[] = {"A3\Sounds_F\weapons\smokeshell\smoke_3",1.25893,1,100};
+		SmokeShellSoundHit2[] = {"A3\Sounds_F\weapons\smokeshell\smoke_2",1.25893,1,100};
+		SmokeShellSoundHit1[] = {"A3\Sounds_F\weapons\smokeshell\smoke_1",1.25893,1,100};
+		grenadeFireSound[] = {"SmokeShellSoundHit1",0.25,"SmokeShellSoundHit2",0.25,"SmokeShellSoundHit3",0.5};
+		grenadeBurningSound[] = {"SmokeShellSoundLoop1",0.5,"SmokeShellSoundLoop2",0.5};
+		effectsSmoke = "SmokeShellWhiteEffect";
+		hit = 0;
+		indirectHit = 0;
 	};
 	class 332nd_Anvil_I_Ammo: Missile_AGM_02_F
 	{

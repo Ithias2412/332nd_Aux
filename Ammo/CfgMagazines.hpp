@@ -185,7 +185,7 @@ class CfgMagazines
 	class 332nd_C_24_Flamer_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_FlameRound";
-		count = 10;
+		count = 20;
 		displayname = "C-24 Flame Cartridge";
 		mass = 10; 
 		scope = 2;
@@ -299,6 +299,7 @@ class CfgMagazines
 		displayNameShort = "NLAW";
 		mass = 22;
 		scope = 2;
+		initSpeed = 190;
 	};
 	class 332nd_PLX1_Mag: JLTS_PLX1_AP_mag
 	{

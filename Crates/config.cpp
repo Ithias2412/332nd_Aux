@@ -245,6 +245,11 @@ class CfgVehicles
 				count = 25;
 				magazine = "332nd_PLX1_Mag";
 			};
+			class 332nd_Heavy_Repeater_Mag
+			{
+				count = 25;
+				magazine = "332nd_Heavy_Repeater_Mag";
+			};
 
 			// moved from TransportItems – these are mags/grenades
 			class 3AS_SmokeWhite
@@ -599,10 +604,10 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_Mode_A_Zoom_2_Raised_Forward_2";
 			};
-			class SWLB_clone_binocular 
+			class 332nd_Binocular 
 			{
 				count = 10;
-				weapon = "SWLB_clone_binocular";
+				weapon = "332nd_Binocular";
 			};
 		};
 
@@ -874,10 +879,10 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_NVG_Chip";
 			};
-			class SWLB_clone_binocular 
+			class 332nd_Binocular 
 			{
 				count = 10;
-				weapon = "SWLB_clone_binocular";
+				weapon = "332nd_Binocular";
 			};
 			class 332nd_Dispo_F
 			{

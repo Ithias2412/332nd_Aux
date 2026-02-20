@@ -324,9 +324,20 @@ class CfgAmmo
 	{
 		//ExplosionEffects = "MortarExplosion";
 		hit=300;
-		initTime = 0;
 		effectsMissile = "3AS_Rocket_effect_Blue_fly";
+		indirectHit = 20;
+		indirectHitRange = 2;
 		fuseDistance = 5;
+		submunitionAmmo = "3AS_ammo_Penetrator_MK41";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitialOffset[] = {0,0,-0.2};
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0;
+		
+		explosive = 1;
+		triggerOnImpact = 1;
+		triggerDistance = 0;
+		proximityExplosionDistance = 0;
 	};
 	//PLX1
 	class 332nd_PLX1_Ammo_AT: 3AS_M_MK43_AT

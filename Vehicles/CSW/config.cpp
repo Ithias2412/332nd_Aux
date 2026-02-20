@@ -63,6 +63,7 @@ class CfgVehicles
 		faction = "332nd_Faction";
 		displayName = "[332nd] Heavy Repeater";
 		crew = "JLTS_Clone_P2_DC15S";
+		armor = 50;
 		class ace_csw
 		{
 			ammoLoadTime = 5;
