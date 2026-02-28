@@ -338,6 +338,8 @@ params ["_obj"];
 "332nd_Uniform_Clone_Rode",
 "332nd_Uniform_Clone_Clari",
 "ACE_EarPlugs",
+"332nd_Helmet_P2_Lettuce",
+"332nd_Uniform_Clone_Lettuce",
 "DC15SA_Muzzle"]
 
 ] call ace_arsenal_fnc_initBox

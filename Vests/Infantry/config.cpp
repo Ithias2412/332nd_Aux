@@ -256,6 +256,7 @@ class cfgWeapons
 	{
 		displayName="New! [332nd] Vest (Walkie)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		scope = 1
 		hiddenSelections[] = 
 		{
 			"camo1",
