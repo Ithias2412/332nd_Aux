@@ -462,6 +462,30 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Roseiry.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Crucial: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Crucial)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crucial.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Ithias: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Ithias)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ithias.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -558,6 +582,7 @@ class XtdGearModels
 					"VB",
 					"Crota",
 					"Ghoul",
+					"Crucial",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -731,7 +756,7 @@ class XtdGearModels
 				class Aqua
 				{
 					label = "Aqua";
-					description = "40k Fanatic";
+					description = "Still working on Jokers Custom";
 					//image = "xxx";
 				};
 				class Grim
@@ -792,7 +817,7 @@ class XtdGearModels
 				class Mouse
 				{
 					label = "Mouse";
-					description = "Havok's Boy Toy";
+					description = "[Redacted]'s Boy Toy";
 					//image = "xxx";
 				};
 				class Shuck
@@ -853,6 +878,12 @@ class XtdGearModels
 				{
 					label = "Ghoul";
 					description = "Ithias' Son";
+					//image = "xxx";
+				};
+				class Crucial
+				{
+					label = "Crucial";
+					description = "N/A";
 					//image = "xxx";
 				};
             };
@@ -1039,6 +1070,16 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Roseiry";
+		};
+		class 332nd_Helmet_P2_Crucial
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Crucial";
+		};
+		class 332nd_Helmet_P2_Ithias
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Ithias";
 		};
 	};
 };

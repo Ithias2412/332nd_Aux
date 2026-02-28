@@ -17,7 +17,7 @@ class cfgWeapons
 {
 	class UniformItem;
 	class JLTS_CloneArmor;
-	
+
 // Uniform
 	class 332nd_Uniform_Clone_CR: JLTS_CloneArmor
 	{
@@ -426,6 +426,18 @@ class cfgWeapons
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Clari_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Ithias: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Ithias)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Ithias_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -955,6 +967,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Clari.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Ithias_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Ithias";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ithias.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1479,6 +1501,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Clari";
+		};
+		class 332nd_Uniform_Clone_Ithias
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Ithias";
 		};
 	};
 };
