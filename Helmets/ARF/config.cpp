@@ -38,11 +38,11 @@ class cfgWeapons
 			"",
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Base_JLTS.paa",
 		};
-		model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+		model = "\ls\core\addons\characters_clone_legacy\helmets\arf\ls_gar_arf_helmet.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=1;
-			uniformModel = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+			uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\arf\ls_gar_arf_helmet.p3d";
 			hiddenSelections[] = 
 			{
 				"camo1",

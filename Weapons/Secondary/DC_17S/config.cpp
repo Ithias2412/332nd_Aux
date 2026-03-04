@@ -98,6 +98,26 @@ class cfgWeapons
 				"332nd_Sidearm_Stun_Mag",
 			};
 		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=40;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]={};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[]={};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]={};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[]={};
+			};
+		};
 	};
 	class 332nd_DC17S_Dual : 3AS_DC17S_Dual_F
 	{

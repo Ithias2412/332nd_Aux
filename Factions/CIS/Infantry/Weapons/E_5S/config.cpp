@@ -47,6 +47,7 @@ class cfgWeapons
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
 			reloadTime = 0.6;
+			sounds[] = {"StandardSound"};
 			class BaseSoundModeType
 			{
 				closure1[] = {};

@@ -13,7 +13,7 @@ class CfgPatches {
 	};
 };
 
-/*
+
 class Extended_PreStart_EventHandlers
 {
 	class ls_deprecated
@@ -104,7 +104,7 @@ class CfgSounds
 		duration=3;
 	};
 };
-*/
+
 class Extended_PostInit_EventHandlers
 {
     class SB_332nd_Vehicle_spawner_postInit
