@@ -306,24 +306,21 @@ class cfgWeapons
 	class 332nd_CSS_Vest_Crow: 332nd_Trooper_Vest
 	{
 		displayName="New! [332nd] Vest (Crow)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = 
 		{
 			"camo1",
-			"camo2"
 		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Crow.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 			hiddenSelections[] = 
 			{
 				"camo1",
-				"camo2"
 			};
 		};
 	};
