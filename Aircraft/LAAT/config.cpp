@@ -44,7 +44,7 @@ class Extended_init_EventHandlers
 	{
 		class laat_init_eh
 		{
-			init="if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle; }; (_this) spawn fn_ImpulsorMonitor;";
+			init="if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle; }; (_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";
 		};
 	};
 	class 332nd_LAAT_Ball
