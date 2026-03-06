@@ -61,19 +61,21 @@ class CfgVehicles
 			class HitBody;
 		};
 	};
-	class lsd_ground_agtRaptor: UGV_01_rcws_base_F
+	class ls_vehicle_agtRaptor_base: UGV_01_rcws_base_F
 	{
 		class HitPoints: HitPoints
 		{
 			
 		};
 	};
-	class 332nd_CIS_Raptor: lsd_ground_agtRaptor
+	class 332nd_CIS_Raptor: ls_vehicle_agtRaptor_base
 	{
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Light_Vics";
 		displayName="Raptor Light UGV";
 		armor = 7.5;
+		scope = 2;
+		side = 0;
 		class HitPoints: HitPoints
 		{
 			class HitRFWheel
