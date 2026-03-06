@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[] = 
         {
-			""
+			"332nd_CIS_OG9"
         };
 		weapons[] = 
         {
