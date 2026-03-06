@@ -536,6 +536,10 @@ class CfgAmmo
 		effectsMissile = "332nd_Effect_Hammer";
 		proximityExplosionDistance = 7;
 		fuseDistance = 5;
+		
+        missileLockMaxDistance = 3000;   // max distance (meters) target can be locked
+        missileLockMinDistance = 200;    // optional: minimum lock distance
+        maxControlRange = 5000;          // optional: how far missile can guide
 	};
 	class 332nd_CIS_A2A_Missile_Ammo: 332nd_Hammer_I_Ammo
 	{
@@ -547,12 +551,22 @@ class CfgAmmo
 		effectsMissile = "332nd_Effect_Hammer_II";
 		proximityExplosionDistance = 12;
 		fuseDistance = 5;
+		
+        missileLockMaxDistance = 9000;   // max distance (meters) target can be locked
+        missileLockMinDistance = 200;    // optional: minimum lock distance
+        maxControlRange = 10000;          // optional: how far missile can guide
 	};
 	class 332nd_Hammer_II_L_Ammo: M_Zephyr
 	{
 		effectsMissile = "332nd_Effect_Hammer_II";
 		hit = 750;
 		indirectHit = 750;
+		proximityExplosionDistance = 12;
+		fuseDistance = 5;
+		
+        missileLockMaxDistance = 9000;   // max distance (meters) target can be locked
+        missileLockMinDistance = 200;    // optional: minimum lock distance
+        maxControlRange = 10000;          // optional: how far missile can guide
 	};
 	class 332nd_Anvil_X_S_Ammo: M_AT
 	{

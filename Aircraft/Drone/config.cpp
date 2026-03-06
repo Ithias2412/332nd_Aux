@@ -82,7 +82,9 @@ class CfgVehicles
 		faction = "332nd_Faction";
 		hiddenSelectionsTextures[] = {"\MRC\JLTS\drones\prowler1000\data\prowler_cis_co.paa"};
 		textureList[] = {"Blufor",1};
-		fuelCapacity = 2.5;
+		fuelCapacity = 5;
+		fuelConsumptionRate = 0.01;
+		camouflage = 0.6; // 0.6 = Sniper
 		class assembleInfo 
 		{
 			primary = 1;

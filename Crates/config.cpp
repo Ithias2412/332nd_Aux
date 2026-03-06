@@ -562,6 +562,16 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_DC17S";
 			};
+			class 332nd_CSW_Heavy_Repeater_W
+			{
+				count = 10;
+				weapon = "332nd_CSW_Heavy_Repeater_W";
+			};
+			class 332nd_CSW_Heavy_Repeater_Baseplate_W
+			{
+				count = 10;
+				weapon = "332nd_CSW_Heavy_Repeater_Baseplate_W";
+			};
 
 			// Optics / attachments still treated as weapons (CfgWeapons)
 			class 332nd_Mode_A_Raised
@@ -832,6 +842,17 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_DC17S";
 			};
+			class 332nd_CSW_Heavy_Repeater_W
+			{
+				count = 10;
+				weapon = "332nd_CSW_Heavy_Repeater_W";
+			};
+			class 332nd_CSW_Heavy_Repeater_Baseplate_W
+			{
+				count = 10;
+				weapon = "332nd_CSW_Heavy_Repeater_Baseplate_W";
+			};
+
 
 			class 332nd_Mode_A_Raised
 			{

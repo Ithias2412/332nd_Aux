@@ -1,5 +1,7 @@
-class CfgPatches {
-	class 332nd_ENG_Throwables {
+class CfgPatches 
+{
+	class 332nd_ENG_Throwables 
+	{
 		units[] = 
         {
 			""
@@ -32,8 +34,8 @@ class CfgAmmo
 		hit = 2500;
 		indirectHit = 2500;
 		indirectHitRange = 5;
-		mineModelDisabled = "ls_weapons\explosives\detPack\ls_explosives_detpack_armed";
-		model = "ls_weapons\explosives\detPack\ls_explosives_detpack_armed";
+		mineModelDisabled = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
+		model = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
 		explosionTime = 7;
 	};
 	class 332nd_Detonation_pack_Ammo_Thrown: ACE_DemoCharge_Remote_Ammo_Thrown

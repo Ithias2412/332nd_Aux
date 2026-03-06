@@ -1,5 +1,7 @@
-class CfgPatches {
-	class 332nd_Explosives {
+class CfgPatches 
+{
+	class 332nd_Explosives 
+	{
 		units[] = 
         {
 			""
@@ -28,9 +30,10 @@ class CfgAmmo
 		hit = 2500;
 		indirectHit = 2500;
 		indirectHitRange = 5;
-		mineModelDisabled = "ls_weapons\explosives\detPack\ls_explosives_detpack_armed";
-		model = "ls_weapons\explosives\detPack\ls_explosives_detpack_armed";
+		mineModelDisabled = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
+		model = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
 	};
+		
 	class 332nd_Detonation_pack_Ammo: ACE_DemoCharge_Remote_Ammo
 	{
 		CraterEffects = "MineNondirectionalCrater";
@@ -59,7 +62,7 @@ class CfgMagazines
 		descriptionShort = "Type: Charge<br />Rounds: 1<br />Used on: Ground";
 		displayName = "[332nd] Remote Charge";
 		mass = 15;
-		model = "ls_weapons\explosives\detPack\ls_explosives_detpack_armed";
+		model = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
 		
 	};

@@ -52,6 +52,7 @@ class cfgWeapons
 			"Single",
 			"FullAuto",
 		};
+		muzzles[] = {"this"};
 		class GL_3GL_F: UGL_F
 		{
 			cameraDir = "OP_look";

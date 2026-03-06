@@ -16,10 +16,10 @@ class CfgPatches {
 class cfgWeapons 
 {
 	class HeadgearItem;
-	class SWLB_clone_pilot_P2_helmet;
+	class ls_gar_phase2Pilot_helmet;
 
 //Base Start
-	class 332nd_Helmet_Pilot: SWLB_clone_pilot_P2_helmet
+	class 332nd_Helmet_Pilot: ls_gar_phase2Pilot_helmet
 	{
 		scope=2;
 		dlc="332nd Aux";
