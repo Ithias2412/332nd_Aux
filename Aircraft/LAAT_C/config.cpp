@@ -6,7 +6,6 @@ class CfgPatches
 		units[] = 
         {
 			"332nd_LAAT_C",
-			"332nd_LAAT_C_Old",
         };
 		weapons[] = 
         {
@@ -26,6 +25,8 @@ class Extended_init_EventHandlers
 	};
 };
 
+class ls_impulsor_base;
+
 class CfgVehicles
 {
 	class 3AS_LAATC_Wampa;
@@ -41,11 +42,11 @@ class CfgVehicles
 		displayname = "[332nd] LAAT/c";
 		scope = 2;
 		faction = "332nd_Faction";
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 300;
-		ls_impulsor_boostSpeed_2 = 600;
-		ls_impulsor_fuelDrain_1=0.00005; 
-		ls_impulsor_fuelDrain_2=0.00010; 
+		class ls_impulsor: ls_impulsor_base
+		{
+			speed = 300;
+			overchargeSpeed = 600;
+		};
 		weapons[] = 
 		{
 			"332nd_LAAT_Cannon",

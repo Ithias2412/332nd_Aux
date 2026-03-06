@@ -27,6 +27,8 @@ class Extended_init_EventHandlers
 	};
 };
 
+class ls_impulsor_base;
+
 class CfgVehicles 
 {
 	class Helicopter;
@@ -71,11 +73,11 @@ class CfgVehicles
 	{
 		faction="332nd_Faction";
 		displayname="[332nd] Rho-Class [WIP]";
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 300;
-		ls_impulsor_boostSpeed_2 = 600;
-		ls_impulsor_fuelDrain_1=0.00005;
-		ls_impulsor_fuelDrain_2=0.00010;
+		class ls_impulsor: ls_impulsor_base
+		{
+			speed = 300;
+			overchargeSpeed = 600;
+		};
 		armor = 400;
 		transportSoldier=34;
 		textureList[] = {"Republic",0,"Imperial",0,"Medical",0};

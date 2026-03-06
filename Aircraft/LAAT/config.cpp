@@ -10,7 +10,6 @@ class CfgPatches
         {
 			"332nd_LAAT",
 			"332nd_LAAT_Ball",
-			"332nd_LAAT_Old",
 			"332nd_LAAT_Lamps"
         };
 		weapons[] = 
@@ -56,6 +55,7 @@ class Extended_init_EventHandlers
 	};
 };
 
+class ls_impulsor_base;
 
 class CfgVehicles 
 {
@@ -78,15 +78,15 @@ class CfgVehicles
 	{
 		faction="332nd_Faction"; // Changed from LS_GAR
 		displayname="[332nd] LAAT/i"; // Changed from "LAAT/i Gunship (Pylons)"
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 300;
-		ls_impulsor_boostSpeed_2 = 600;
-		ls_impulsor_fuelDrain_1=0.00005; 
-		ls_impulsor_fuelDrain_2=0.00010; 
 		//smokeLauncherGrenadeCount = 16;	// Number of smoke grenades
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
-	//	smokeLauncherAngle = 360;		// Coverage angle
+		//smokeLauncherAngle = 360;		// Coverage angle
+		class ls_impulsor: ls_impulsor_base
+		{
+			speed = 300;
+			overchargeSpeed = 600;
+		};
 		class TransportMagazines
 		{
 			
@@ -551,21 +551,19 @@ class CfgVehicles
 		};
 		class UserActions
 		{
-			class impulse
+			class ls_impulsor_impulse
 			{
 				displayName="Impulse";
 				position="pilotview";
 				radius=5;
-				onlyforplayer=0;
-				shortcut="User19";
-				condition="isEngineOn this and ls_player == currentPilot this and isTouchingGround this";
-				statement="this call ls_vehicle_fnc_ImpulseJoystick;";
+				onlyForPlayer=0;
+				condition="ls_player == currentPilot this and {this call ls_impulsor_fnc_canImpulse}";
+				statement="[this, 1] call ls_impulsor_fnc_impulse";
 			};
-			class repulse: impulse
+			class ls_impulsor_repulse: ls_impulsor_impulse
 			{
 				displayName="Repulse";
-				shortcut="User20";
-				statement="this call ls_vehicle_fnc_RepulseJoystick;";
+				statement="[this, -1] call ls_impulsor_fnc_impulse";
 			};
 			class rampClose
 			{
@@ -791,11 +789,11 @@ class CfgVehicles
 	{
 		faction="332nd_Faction"; // Changed from LS_GAR
 		displayname="[332nd] LAAT/i (Ball Turrets)"; // Changed from "LAAT/i Gunship (Pylons)"
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 300;
-		ls_impulsor_boostSpeed_2 = 600;
-		ls_impulsor_fuelDrain_1=0.00005; 
-		ls_impulsor_fuelDrain_2=0.00010; 
+		class ls_impulsor: ls_impulsor_base
+		{
+			speed = 300;
+			overchargeSpeed = 600;
+		};
 		//smokeLauncherGrenadeCount = 16;	// Number of smoke grenades
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
