@@ -1937,7 +1937,7 @@ fnc_SB_DroidPopper = {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
     _projectile addEventHandler ["Explode", { 
         params ["_projectile", "_position", "_velocity"]; 
-        _units = _position nearEntities [["JLTS_Droid_B1_E5"], 10];
+        _units = _position nearEntities [["JLTS_Droid_B1_E5"], 15];
         {
 			_x setDamage 1;
         } forEach _units;

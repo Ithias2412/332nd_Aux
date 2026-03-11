@@ -19,22 +19,22 @@ class CfgPatches
 };
 class cfgWeapons
 {
-    class GrenadeLauncher;
-    class Throw: GrenadeLauncher
-    {
-        muzzles[] +=
-        {
-            "332nd_DroidPopperMuzzle"
-        };
-        class ThrowMuzzle;
-        class 332nd_DroidPopperMuzzle: ThrowMuzzle
-        {
-            magazines[] =
-            {
-                "332nd_DroidPopper_x1_mag"
-            };
-        };
-    };
+	class GrenadeLauncher;
+	class Throw: GrenadeLauncher
+	{
+		muzzles[] +=
+		{
+			"332nd_DroidPopperMuzzle"
+		};
+		class ThrowMuzzle;
+		class 332nd_DroidPopperMuzzle: ThrowMuzzle
+		{
+			magazines[] =
+			{
+				"332nd_DroidPopper_x1_mag"
+			};
+		};
+	};
 };
 
 class cfgAmmo
@@ -48,7 +48,7 @@ class cfgAmmo
         ace_frag_enabled = 0;
         ace_frag_skip = 1;
         indirectHit = 0;
-        indirectHitRange = 10;
+        indirectHitRange = 15;
 		dangerRadiusHit=5;
 		suppressionRadiusHit=5;
         ExplosionEffects = "Droid_Popper_GrenadeExplosion"; 

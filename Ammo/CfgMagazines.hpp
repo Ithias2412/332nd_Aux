@@ -80,6 +80,15 @@ class CfgMagazines
 		scope = 2;
 		//initSpeed = 1200;
 	};
+	class 332nd_785MK_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_L1";
+		count = 8;
+		displayname = "785MK 8 Round Energy Cell";
+		mass = 6.8;
+		scope = 2;
+		initSpeed = 1200;
+	};
 	class 332nd_DP23_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Scattershot_S1";

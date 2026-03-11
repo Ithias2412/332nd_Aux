@@ -1,3 +1,4 @@
+/*
 class CfgPatches {
 	class 332nd_DW_32S {
 		units[] = 

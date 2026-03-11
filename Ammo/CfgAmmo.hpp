@@ -159,7 +159,7 @@ class CfgAmmo
 		// B1=2 B2=6
 		hit = 20;
 		caliber = 3;
-		typicalspeed = 1200;
+		//typicalspeed = 1200;
 	};
 	class 332nd_Gas_Level_L1: 332nd_Base_Ammo_IDA
 	{
@@ -182,21 +182,21 @@ class CfgAmmo
 		// B1=1 B2=4
 		hit = 25;
 		caliber = 3;
-		typicalspeed = 1200;
+		//typicalspeed = 1200;
 	};
 	class 332nd_Gas_Level_L3: 332nd_Base_Ammo_IDA
 	{
 		// B1=2 B2=6 
 		hit = 20;
 		caliber = 3;
-		typicalspeed = 1200;
+		//typicalspeed = 1200;
 	};
 	class 332nd_Gas_Level_L3_P: 332nd_Base_Ammo_IDA
 	{
 		// B1=2 B2=6
 		hit = 20;
 		caliber = 25;
-		typicalspeed = 1200;
+		//typicalspeed = 1200;
 	};
 	class 332nd_Gas_Level_M1: 332nd_Base_Ammo_IDA
 	{
