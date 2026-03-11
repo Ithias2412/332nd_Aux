@@ -25,7 +25,7 @@ class cfgWeapons
 	class 332nd_Trooper_Vest: JLTS_CloneVestHolster
 	{
 		author="Ithias";
-		displayName = "New! [332nd] Vest (Trooper)";
+		displayName = "[332nd] Vest (Trooper)";
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
@@ -119,7 +119,7 @@ class cfgWeapons
 
 	class 332nd_CSP_Vest: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (CSP)";
+		displayName="[332nd] Vest (CSP)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestSuspender.p3d";
 		hiddenSelections[] = 
 		{
@@ -141,7 +141,7 @@ class cfgWeapons
 
 	class 332nd_CP_Vest: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (CP)";
+		displayName="[332nd] Vest (CP)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
 		hiddenSelections[] = 
 		{
@@ -163,7 +163,7 @@ class cfgWeapons
 
 	class 332nd_CS_Vest: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (CS)";
+		displayName="[332nd] Vest (CS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
 		hiddenSelections[] = 
 		{
@@ -185,7 +185,7 @@ class cfgWeapons
 
 	class 332nd_CSS_Vest: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (CSS)";
+		displayName="[332nd] Vest (CSS)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 		hiddenSelections[] = 
 		{
@@ -210,7 +210,7 @@ class cfgWeapons
 
 	class 332nd_CSM_Vest: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (CSM)";
+		displayName="[332nd] Vest (CSM)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = 
 		{
@@ -232,7 +232,7 @@ class cfgWeapons
 
 	class 332nd_CC_Vest: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (CC)";
+		displayName="[332nd] Vest (CC)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
 		hiddenSelections[] = 
 		{
@@ -252,9 +252,9 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_CSS_Vest_Walkie: 332nd_Trooper_Vest
+	class 332nd_Vest_Walkie: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (Walkie)";
+		displayName="[332nd] Vest (Walkie)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 		scope = 1
 		hiddenSelections[] = 
@@ -278,9 +278,9 @@ class cfgWeapons
 		};
 	};
 	
-	class 332nd_CSS_Vest_Body: 332nd_Trooper_Vest
+	class 332nd_Vest_Body: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (Body)";
+		displayName="[332nd] Vest (Body)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
 		hiddenSelections[] = 
 		{
@@ -303,9 +303,9 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_CSS_Vest_Crow: 332nd_Trooper_Vest
+	class 332nd_Vest_Crow: 332nd_Trooper_Vest
 	{
-		displayName="New! [332nd] Vest (Crow)";
+		displayName="[332nd] Vest (Crow)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = 
 		{
@@ -324,7 +324,7 @@ class cfgWeapons
 			};
 		};
 	};
-
+	
 };
 
 class XtdGearModels
@@ -483,17 +483,17 @@ class XtdGearInfos
             model = "332nd_Vest_Extended";
             Rank = "CC";
         };
-        class 332nd_CSS_Vest_Walkie
+        class 332nd_Vest_Walkie
         {
             model = "332nd_Vest_Extended";
             Custom = "Walkie";
         };
-		class 332nd_CSS_Vest_Body
+		class 332nd_Vest_Body
 		{
             model = "332nd_Vest_Extended";
             Custom = "Body";
 		};
-		class 332nd_CSS_Vest_Crow
+		class 332nd_Vest_Crow
 		{
             model = "332nd_Vest_Extended";
             Custom = "Crow";

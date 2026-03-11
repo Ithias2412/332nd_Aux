@@ -136,7 +136,7 @@ class cfgWeapons
 					1
 				};
 			};
-			reloadTime=0.2;
+			reloadTime=0.2; // was 0.2
 			dispersion=0.00035;
 			minRange=2;
 			minRangeProbab=0.5;

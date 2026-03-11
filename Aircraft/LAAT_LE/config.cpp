@@ -29,14 +29,92 @@ class ls_impulsor_base;
 
 class CfgVehicles
 {
-
-	class 3AS_Patrol_LAAT_Base;
-	class 3AS_Patrol_LAAT_Republic: 3AS_Patrol_LAAT_Base
+//
+	class AllVehicles;
+	class Air: AllVehicles
 	{
 		class Components;
-		class UserActions;
-		class ACE_SelfActions;
+		class AnimationSources;
 	};
+	class Helicopter: Air
+	{
+		class Components: Components
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class Helicopter_Base_F: Helicopter
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions;
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class Heli_Attack_01_base_F: Helicopter_Base_F
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class 3AS_Patrol_LAAT_Base: Heli_Attack_01_base_F
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class HitPoints; //Rose is 500 years old
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+		class UserActions;
+	};
+	class 3AS_Patrol_LAAT_Republic: 3AS_Patrol_LAAT_Base
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class HitPoints: HitPoints
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+		class UserActions: UserActions
+		{
+			
+		};
+	};
+//
 	class 332nd_LAAT_LE: 3AS_Patrol_LAAT_Republic
 	{
 		displayName = "[332nd] LAAT/le";
@@ -348,85 +426,20 @@ class CfgVehicles
 		};
 		class UserActions: UserActions
 		{
-			class impulse
+			class ls_impulsor_impulse
 			{
 				displayName="Impulse";
 				position="pilotview";
 				radius=5;
-				onlyforplayer=0;
-				shortcut="User19";
-				condition="isEngineOn this and ls_player == currentPilot this and isTouchingGround this";
-				statement="this call ls_vehicle_fnc_ImpulseJoystick;";
+				onlyForPlayer=0;
+				condition="ls_player == currentPilot this and {this call ls_impulsor_fnc_canImpulse}";
+				statement="[this, 1] call ls_impulsor_fnc_impulse";
 			};
-			class repulse: impulse
+			class ls_impulsor_repulse: ls_impulsor_impulse
 			{
 				displayName="Repulse";
-				shortcut="User20";
-				statement="this call ls_vehicle_fnc_RepulseJoystick;";
+				statement="[this, -1] call ls_impulsor_fnc_impulse";
 			};
-		/*	class beacons_start
-			{
-				available = 0;
-				condition = "(ace_player == driver this) AND {this animationSourcePhase 'Beacons' < 0.5}";
-				displayName = "Beacons On";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca.paa' size='2.5' />";
-				onlyForplayer = 0;
-				position = "pilotview";
-				radius = 9;
-				showWindow = 0;
-				statement = "this animateSource ['Beacons',1];";
-			};
-			class beacons_stop: beacons_start
-			{
-				condition = "(ace_player == driver this) AND {this animationSourcePhase 'Beacons' > 0.5}";
-				displayName = "Beacons Off";
-				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca.paa' size='2.5' />";
-				statement = "this animateSource ['Beacons',0];";
-			};
-			class LeftDoor_Close
-			{
-				available = 0;
-				condition = "(ace_player == driver this) && (this animationSourcePhase 'Door_L' == 1)";
-				displayName = "Left Door Close";
-				onlyforplayer = 0;
-				position = "pilotview";
-				radius = 9;
-				showWindow = 0;
-				statement = "this animateSource ['Door_L',0];";
-			};
-			class LeftDoor_Open
-			{
-				available = 0;
-				condition = "(ace_player == driver this) && (this animationSourcePhase 'Door_L' == 0)";
-				displayName = "Left Door Open";
-				onlyforplayer = 0;
-				position = "pilotview";
-				radius = 9;
-				showWindow = 0;
-				statement = "this animateSource ['Door_L',1];";
-			};
-			class RightDoor_Close
-			{
-				available = 0;
-				condition = "(ace_player == driver this) && (this animationSourcePhase 'Door_R' == 1)";
-				displayName = "Right Door Close";
-				onlyforplayer = 0;
-				position = "pilotview";
-				radius = 9;
-				showWindow = 0;
-				statement = "this animateSource ['Door_R',0];";
-			};
-			class RightDoor_Open
-			{
-				available = 0;
-				condition = "(ace_player == driver this) && (this animationSourcePhase 'Door_R' == 1)";
-				displayName = "Right Door Open";
-				onlyforplayer = 0;
-				position = "pilotview";
-				radius = 9;
-				showWindow = 0;
-				statement = "this animateSource ['Door_R',1];";
-			};	*/
 		};
 	};
 };

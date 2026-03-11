@@ -53,7 +53,7 @@ class cfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime=0.2;
+			reloadTime=0.4; // was 0.2
 			recoil = "recoil_single_primary_3outof10";
 			recoilProne = "recoil_single_primary_prone_3outof10";
 			dispersion=0.00035;

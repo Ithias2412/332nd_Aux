@@ -14,7 +14,8 @@ class CfgMagazineWells
             "332nd_SmokePurple_LauncherGrenade",
 			"332nd_SmokeOrange_LauncherGrenade",
 			"332nd_SmokeYellow_LauncherGrenade",
-			"ACE_HuntIR_M203"
+			"ACE_HuntIR_M203",
+			"UGL_FlareWhite_Illumination_F"
         };
     };
 };

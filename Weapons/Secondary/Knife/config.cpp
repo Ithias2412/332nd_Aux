@@ -21,7 +21,7 @@ class cfgWeapons
 	
 	class 332nd_Knife: Weap_melee_knife
 	{
-		displayName="[332nd] Reconnaissance Knife";
+		displayName="[332nd] Reconnaissance Knife (ARF)";
 		IMS_ExecutionType = "Knife";
 		IMS_Melee_Param_Damage = 1;
 		//IMS_Melee_Param_Damage = 0.50;

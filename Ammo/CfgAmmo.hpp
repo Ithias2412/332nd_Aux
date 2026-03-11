@@ -171,8 +171,8 @@ class CfgAmmo
 	class 332nd_Gas_Level_L1_P_X: 332nd_Base_Ammo_IDA
 	{
 		// B1=1 B2=2
-		hit = 60;
-		caliber = 25;
+		hit = 180; // Was 60
+		caliber = 12.5; // was 25
 		typicalspeed = 1200;
 		tracerscale = 5;
 		tracerEndTime = 10000;

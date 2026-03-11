@@ -33,7 +33,7 @@ class cfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot.paa",
 		};
-		model="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
+		model = "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
 		subItems[]=
 		{
 			""
@@ -41,7 +41,7 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem
 		{
 			mass=1;
-			uniformModel="\SWLB_clones\SWLB_clone_pilot_P2_helmet.p3d";
+			uniformModel= "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
 			hiddenSelections[]=
 			{
 				"camo1",

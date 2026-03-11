@@ -44,11 +44,11 @@ class CfgVehicles
         faction = "332nd_Faction";
         editorSubcategory = "EdSubcat_Personnel";
 		hiddenSelections[] = {"bodyGlove","camo_legs"};
-		hiddenSelectionsTextures[] = {"ls_armor_bluefor\uniform\gar\phase2\data\bodyGlove_co.paa","ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa"};
-		model = "ls_armor_bluefor\uniform\gar\phase2\lsd_gar_naked_uniform.p3d";
+		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\bodyGlove_co.paa",""};
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\lsd_gar_naked_uniform.p3d";
 		nakedUniform = "lsd_gar_bodyGlove_uniform";
-        uniformClass = "lsd_gar_bodyGloveLegArmor_uniform";
-		identityTypes[] = {"LanguageENG_F","Head_LSD_CLONE"};
+        uniformClass = "lsd_gar_bodyGlove_uniform";
+		identityTypes[] = {"LanguageENG_F","ls_head_clone"};
 		backpack = "";
 		displayName = "[332nd] Trooper";
 		faceType = "Man_A3";

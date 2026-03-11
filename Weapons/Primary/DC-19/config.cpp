@@ -4,13 +4,13 @@ class CfgPatches
 	class 332nd_DC19 
 	{
 		units[] = 
-        {
+		{
 			""
-        };
+		};
 		weapons[] = 
-        {
-            "332nd_DC19",
-        };
+		{
+			"332nd_DC19",
+		};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
 	};

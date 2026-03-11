@@ -1,3 +1,4 @@
+
 class CfgPatches 
 {
 	class 332nd_LAAT 
@@ -56,23 +57,101 @@ class Extended_init_EventHandlers
 };
 
 class ls_impulsor_base;
-
 class CfgVehicles 
 {
-
-	class 3AS_LAAT_Base;
-	class 3AS_LAAT_Mk2: 3AS_LAAT_Base
+	class AllVehicles;
+	class Air: AllVehicles
 	{
 		class Components;
-		class ACE_SelfActions;
-		class HitPoints;
 		class AnimationSources;
+	};
+	class Helicopter: Air
+	{
+		class Components: Components
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class Helicopter_Base_F: Helicopter
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions;
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class Helicopter_Base_H: Helicopter_Base_F
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class 3AS_LAAT_Base: Helicopter_Base_H
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class HitPoints; //Rose is 500 years old
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class 3AS_LAAT_Mk2: 3AS_LAAT_Base
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class HitPoints: HitPoints
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
 	};
 	class 3AS_LAAT_Mk1: 3AS_LAAT_Base
 	{
-		class Components;
-		class ACE_SelfActions;
-		class HitPoints;
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class HitPoints: HitPoints
+		{
+			
+		};
 	};
 	class 332nd_LAAT: 3AS_LAAT_Mk2
 	{
@@ -691,15 +770,6 @@ class CfgVehicles
 					runOnHover=0;
 					priority=2.5;
 				};
-				/*  class 332nd_Skins
-				{
-					displayname="332nd Custom Skins";
-					class 332nd_3AS_Base_Test: DefaultSkin
-					{
-						displayName="332nd Test";
-						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
-					};
-				};  */
 			};
 		};
 	};
@@ -797,7 +867,7 @@ class CfgVehicles
 		//smokeLauncherGrenadeCount = 16;	// Number of smoke grenades
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
-	//	smokeLauncherAngle = 360;		// Coverage angle
+		//smokeLauncherAngle = 360;		// Coverage angle
 		hiddenselectionstextures[]=
 		{
 			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",
@@ -869,7 +939,7 @@ class CfgVehicles
 						componentType="ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef=-1;
 						maxGroundNoiseDistance=-1;
-						maxSpeedThreshold=1000; // changed from 0
+						maxSpeedThreshold=1000; //changed from 0
 						maxTrackableATL=1e+010;
 						maxTrackableSpeed=1e+010; //was 125
 						minSpeedThreshold=0;
@@ -1358,15 +1428,6 @@ class CfgVehicles
 					runOnHover=0;
 					priority=2.5;
 				};
-				/*  class 332nd_Skins
-				{
-					displayname="332nd Custom Skins";
-					class 332nd_3AS_Base_Test: DefaultSkin
-					{
-						displayName="332nd Test";
-						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
-					};
-				};  */
 			};
 		};
 	};

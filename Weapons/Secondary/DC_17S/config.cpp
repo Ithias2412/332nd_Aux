@@ -100,14 +100,20 @@ class cfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=40;
+			mass = 22;
+			holsterScale = 0.75;
+			holsterOffset = "holster";
+			allowedSlots[] = {801,701,901};
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]={};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
-				compatibleItems[]={};
+				compatibleItems[]=
+				{
+					"332nd_Suppressor_Muzzle",
+				};
 			};
 			class PointerSlot: PointerSlot
 			{

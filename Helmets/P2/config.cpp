@@ -1,5 +1,7 @@
-class CfgPatches {
-	class 332nd_Helmets_P2 {
+class CfgPatches 
+{
+	class 332nd_Helmets_P2 
+	{
 		units[] = 
         {
 			""

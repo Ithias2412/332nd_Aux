@@ -108,6 +108,8 @@ class cfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass=40;
+			holsterScale = 0.8;
+			holsterOffset = "holster";
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]={};
@@ -116,7 +118,7 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"DC15SA_Muzzle",
+					"332nd_Suppressor_Muzzle",
 				};
 			};
 			class PointerSlot: PointerSlot
@@ -141,10 +143,10 @@ class cfgWeapons
 	{
 		class ItemInfo;
 	};
-	class DC15SA_Muzzle: muzzle_snds_H
+	class 332nd_Suppressor_Muzzle: muzzle_snds_H
 	{
 		author = "Ithias";
-		displayName = "NFA/Cali Compliant Suppressor";
+		displayName = "[332nd] NFA/Cali Compliant Suppressor (ARF)";
 		model = "\3AS\3AS_Weapons\Republic\ACC\3AS_acca_DC17S_Muzzle_F";
 		picture = "";
 		class ItemInfo: ItemInfo
@@ -159,7 +161,7 @@ class cfgWeapons
 				audibleFire = 0;
 				audibleFireTime = 0;
 				cost = 1;
-				hit = 0.5;
+				hit = 0.75;
 				typicalSpeed = 1;
 				visibleFire = 0;
 				visibleFireTime = 0;

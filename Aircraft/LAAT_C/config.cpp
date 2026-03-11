@@ -29,14 +29,112 @@ class ls_impulsor_base;
 
 class CfgVehicles
 {
-	class 3AS_LAATC_Wampa;
-	class 3AS_LAATC: 3AS_LAATC_Wampa
+
+	class AllVehicles;
+	class Air: AllVehicles
 	{
 		class Components;
+		class AnimationSources;
+	};
+	class Helicopter: Air
+	{
+		class Components: Components
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class Helicopter_Base_F: Helicopter
+	{
+		class Components: Components
+		{
+			
+		};
 		class ACE_SelfActions;
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class Helicopter_Base_H: Helicopter_Base_F
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class 3AS_LAAT_Base: Helicopter_Base_H
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class HitPoints; //Rose is 500 years old
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+	};
+	class 3AS_LAAT_Cargo_Base: 3AS_LAAT_Base
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class HitPoints: HitPoints
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
 		class UserActions;
 	};
+	class 3AS_LAATC: 3AS_LAAT_Cargo_Base
+	{
+		class Components: Components
+		{
+			
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			
+		};
+		class HitPoints: HitPoints
+		{
+			
+		};
+		class AnimationSources: AnimationSources
+		{
+			
+		};
+		class UserActions: UserActions
+		{
+			
+		};
+	};
 
+	
 	class 332nd_LAAT_C: 3AS_LAATC
 	{
 		displayname = "[332nd] LAAT/c";

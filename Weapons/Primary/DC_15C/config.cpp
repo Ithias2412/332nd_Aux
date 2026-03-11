@@ -54,6 +54,10 @@ class cfgWeapons
 			"Single",
 			//"Burst"
 		};
+		muzzles[] = 
+		{
+			"this",
+		};
 		class OpticsModes
 		{
 			class Ironsights

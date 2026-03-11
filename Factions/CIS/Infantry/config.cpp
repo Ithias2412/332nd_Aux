@@ -771,135 +771,135 @@ class CfgVehicles {
 			class HitFace
 			{
 				armor = 1;
-				explosionShielding = 0.1;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "face_hub";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.08;
 			};
 			class HitNeck: HitFace
 			{
-				armor = 1;
-				explosionShielding = 0.5;
+				armor = 5;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "neck";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.1;
 			};
 			class HitHead: HitNeck
 			{
 				armor = 1;
 				depends = "HitFace max HitNeck";
-				explosionShielding = 0.5;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "head";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.2;
 			};
 			class HitPelvis: HitHead
 			{
-				armor = 14; //was 8
+				armor = 5;
 				depends = "";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "pelvis";
-				passThrough = 0.8;
-				radius = 0.24;
+				passThrough = 0.1;
+				radius = 0.2;
 				visual = "injury_body";
 			};
 			class HitAbdomen: HitPelvis
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine1";
-				passThrough = 0.8;
-				radius = 0.16;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitDiaphragm: HitAbdomen
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine2";
-				passThrough = 0.33;
-				radius = 0.18;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitChest: HitDiaphragm
 			{
-				armor = 12; //was 8
+				armor = 5;
 				depends = "";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine3";
-				passThrough = 0.33;
-				radius = 0.18;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitBody: HitChest
 			{
-				armor = 1000;
+				armor = 1500;
 				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "body";
-				passThrough = 1;
-				radius = 0;
+				passThrough = 0.1;
+				radius = 0.16;
 				visual = "injury_body";
 			};
 			class HitArms: HitBody
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "0";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "arms";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitHands: HitArms
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "HitArms";
-				explosionShielding = 1;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "hands";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitLegs: HitHands
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "0";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "legs";
-				passThrough = 1;
-				radius = 0.14;
+				passThrough = 0.1;
+				radius = 0.12;
 				visual = "injury_legs";
 			};
 			class Incapacitated: HitLegs
 			{
 				armor = 1000;
 				depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-				explosionShielding = 3;
+				explosionShielding = 1;
 				material = -1;
 				minimalHit = 0;
 				name = "body";
@@ -909,13 +909,13 @@ class CfgVehicles {
 			};
 			class HitLeftArm
 			{
-				armor = 9; //was 6
-				explosionShielding = 3;
+				armor = 5;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "hand_l";
-				passThrough = 1;
-				radius = 0.08;
+				passThrough = 0.1;
+				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitRightArm: HitLeftArm
@@ -924,12 +924,12 @@ class CfgVehicles {
 			};
 			class HitLeftLeg
 			{
-				armor = 9; //was 6
-				explosionShielding = 3;
+				armor = 5;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "leg_l";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_legs";
 			};
@@ -937,7 +937,7 @@ class CfgVehicles {
 			{
 				name="leg_r";
 			};	
-		};	
+		};
 	};
 	class 332nd_Droid_BX_Range: lsd_cis_bxdroid_specops
 	{
@@ -955,135 +955,135 @@ class CfgVehicles {
 			class HitFace
 			{
 				armor = 1;
-				explosionShielding = 0.1;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "face_hub";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.08;
 			};
 			class HitNeck: HitFace
 			{
-				armor = 1;
-				explosionShielding = 0.5;
+				armor = 5;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "neck";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.1;
 			};
 			class HitHead: HitNeck
 			{
 				armor = 1;
 				depends = "HitFace max HitNeck";
-				explosionShielding = 0.5;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "head";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.2;
 			};
 			class HitPelvis: HitHead
 			{
-				armor = 14; //was 8
+				armor = 5;
 				depends = "";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "pelvis";
-				passThrough = 0.8;
-				radius = 0.24;
+				passThrough = 0.1;
+				radius = 0.2;
 				visual = "injury_body";
 			};
 			class HitAbdomen: HitPelvis
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine1";
-				passThrough = 0.8;
-				radius = 0.16;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitDiaphragm: HitAbdomen
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine2";
-				passThrough = 0.33;
-				radius = 0.18;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitChest: HitDiaphragm
 			{
-				armor = 12; //was 8
+				armor = 5;
 				depends = "";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine3";
-				passThrough = 0.33;
-				radius = 0.18;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitBody: HitChest
 			{
-				armor = 1000;
+				armor = 1500;
 				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "body";
-				passThrough = 1;
-				radius = 0;
+				passThrough = 0.1;
+				radius = 0.16;
 				visual = "injury_body";
 			};
 			class HitArms: HitBody
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "0";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "arms";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitHands: HitArms
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "HitArms";
-				explosionShielding = 1;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "hands";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitLegs: HitHands
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "0";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "legs";
-				passThrough = 1;
-				radius = 0.14;
+				passThrough = 0.1;
+				radius = 0.12;
 				visual = "injury_legs";
 			};
 			class Incapacitated: HitLegs
 			{
 				armor = 1000;
 				depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-				explosionShielding = 3;
+				explosionShielding = 1;
 				material = -1;
 				minimalHit = 0;
 				name = "body";
@@ -1093,13 +1093,13 @@ class CfgVehicles {
 			};
 			class HitLeftArm
 			{
-				armor = 9; //was 6
-				explosionShielding = 3;
+				armor = 5;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "hand_l";
-				passThrough = 1;
-				radius = 0.08;
+				passThrough = 0.1;
+				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitRightArm: HitLeftArm
@@ -1108,12 +1108,12 @@ class CfgVehicles {
 			};
 			class HitLeftLeg
 			{
-				armor = 9; //was 6
-				explosionShielding = 3;
+				armor = 5;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "leg_l";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_legs";
 			};
@@ -1121,7 +1121,7 @@ class CfgVehicles {
 			{
 				name="leg_r";
 			};	
-		};	
+		};
 	};
 	class 332nd_Droid_BX_Shield: lsd_cis_bxdroid_specops
 	{
@@ -1139,135 +1139,135 @@ class CfgVehicles {
 			class HitFace
 			{
 				armor = 1;
-				explosionShielding = 0.1;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "face_hub";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.08;
 			};
 			class HitNeck: HitFace
 			{
-				armor = 1;
-				explosionShielding = 0.5;
+				armor = 5;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "neck";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.1;
 			};
 			class HitHead: HitNeck
 			{
 				armor = 1;
 				depends = "HitFace max HitNeck";
-				explosionShielding = 0.5;
+				explosionShielding = 1.5;
 				material = -1;
 				minimalHit = 0.01;
 				name = "head";
-				passThrough = 0.8;
+				passThrough = 0.1;
 				radius = 0.2;
 			};
 			class HitPelvis: HitHead
 			{
-				armor = 14; //was 8
+				armor = 5;
 				depends = "";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "pelvis";
-				passThrough = 0.8;
-				radius = 0.24;
+				passThrough = 0.1;
+				radius = 0.2;
 				visual = "injury_body";
 			};
 			class HitAbdomen: HitPelvis
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine1";
-				passThrough = 0.8;
-				radius = 0.16;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitDiaphragm: HitAbdomen
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine2";
-				passThrough = 0.33;
-				radius = 0.18;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitChest: HitDiaphragm
 			{
-				armor = 12; //was 8
+				armor = 5;
 				depends = "";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "spine3";
-				passThrough = 0.33;
-				radius = 0.18;
+				passThrough = 0.1;
+				radius = 0.15;
 				visual = "injury_body";
 			};
 			class HitBody: HitChest
 			{
-				armor = 1000;
+				armor = 1500;
 				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-				explosionShielding = 6;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "body";
-				passThrough = 1;
-				radius = 0;
+				passThrough = 0.1;
+				radius = 0.16;
 				visual = "injury_body";
 			};
 			class HitArms: HitBody
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "0";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "arms";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitHands: HitArms
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "HitArms";
-				explosionShielding = 1;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "hands";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitLegs: HitHands
 			{
-				armor = 9; //was 6
+				armor = 5;
 				depends = "0";
-				explosionShielding = 3;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "legs";
-				passThrough = 1;
-				radius = 0.14;
+				passThrough = 0.1;
+				radius = 0.12;
 				visual = "injury_legs";
 			};
 			class Incapacitated: HitLegs
 			{
 				armor = 1000;
 				depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-				explosionShielding = 3;
+				explosionShielding = 1;
 				material = -1;
 				minimalHit = 0;
 				name = "body";
@@ -1277,13 +1277,13 @@ class CfgVehicles {
 			};
 			class HitLeftArm
 			{
-				armor = 9; //was 6
-				explosionShielding = 3;
+				armor = 5;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "hand_l";
-				passThrough = 1;
-				radius = 0.08;
+				passThrough = 0.1;
+				radius = 0.1;
 				visual = "injury_hands";
 			};
 			class HitRightArm: HitLeftArm
@@ -1292,12 +1292,12 @@ class CfgVehicles {
 			};
 			class HitLeftLeg
 			{
-				armor = 9; //was 6
-				explosionShielding = 3;
+				armor = 5;
+				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
 				name = "leg_l";
-				passThrough = 1;
+				passThrough = 0.1;
 				radius = 0.1;
 				visual = "injury_legs";
 			};
@@ -1305,7 +1305,7 @@ class CfgVehicles {
 			{
 				name="leg_r";
 			};	
-		};	
+		};
 	};
 };
 
@@ -1313,7 +1313,7 @@ class CfgGroups
 {
     class East 
 	{
-        class 332nd_CIS_Faction 
+        class 332nd_CIS_Faction
 		{
             name = "[332nd] CIS";
 
@@ -2252,7 +2252,7 @@ class CfgGroups
     };
 };
 
-
+/*
 class Extended_InitPost_EventHandlers {
 	class 332nd_Droid_Base {
         class WBK_B1_Init {

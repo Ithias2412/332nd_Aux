@@ -62,12 +62,20 @@ class CfgVehicles
 
 class CfgWeapons
 {
-	class DBA_25mw_H96C_AC;
+	class LMG_RCWS;
+	class DBA_25mw_H96C_AC: LMG_RCWS
+	{
+		class manual;
+	};
 	class 332nd_25mw_H96C_AC: DBA_25mw_H96C_AC
 	{
 		magazines[] = 
 		{
 			"332nd_25mm_UB5_x50_mag"
+		};
+		class manual: manual
+		{
+			reloadTime = 0.26; // 0.136364
 		};
 	};
 };

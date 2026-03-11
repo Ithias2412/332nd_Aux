@@ -23,7 +23,7 @@ class cfgWeapons
 	{
 		author="Ithias";
 		dlc="332nd Aux";
-		displayName="[332nd] ARF Helmet (JLTS)";
+		displayName="[332nd] ARF Helmet (CT)";
 		332nd_Has_Lowlight = 1;
 		subItems[] = {};
 		hiddenSelections[] = 
@@ -75,7 +75,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Desert: 332nd_Helmet_ARF_Base
 	{
-		displayName="[332nd] ARF Helmet (JLTS / Desert)";
+		displayName="[332nd] ARF Helmet (Desert)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Desert_JLTS.paa",
@@ -85,7 +85,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Urban: 332nd_Helmet_ARF_Base
 	{
-		displayName="[332nd] ARF Helmet (JLTS / Urban)";
+		displayName="[332nd] ARF Helmet (Urban)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Urban_JLTS.paa",
@@ -95,7 +95,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Winter: 332nd_Helmet_ARF_Base
 	{
-		displayName="[332nd] ARF Helmet (JLTS / Winter)";
+		displayName="[332nd] ARF Helmet (Winter)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Winter_JLTS.paa",
@@ -105,7 +105,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Woodland: 332nd_Helmet_ARF_Base
 	{
-		displayName="[332nd] ARF Helmet (JLTS / Woodland)";
+		displayName="[332nd] ARF Helmet (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Woodland_JLTS.paa",

@@ -30,7 +30,7 @@ class CfgAmmo
 		hit = 2500;
 		indirectHit = 2500;
 		indirectHitRange = 5;
-		mineModelDisabled = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
+		mineModelDisabled = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack_defused.p3d";
 		model = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
 	};
 		
@@ -118,7 +118,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName = "[332nd] Remote Charge";
-		model = "ls_weapons\explosives\detPack\ls_explosives_detpack_armed";
+		model = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
     };
 	class 332nd_Explosives_Place_Detonation_pack: ACE_Explosives_Place
 	{

@@ -1,3 +1,4 @@
+
 class CfgPatches 
 {
     class 332nd_CIS_Faction_Vehicles_Snail_Tank
@@ -17,29 +18,81 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class Tank;
+	class All;
+	class AllVehicles: All
+	{
+		class NewTurret;
+	};
+	class Land: AllVehicles
+	{
+		class NewTurret: NewTurret
+		{
+			
+		};
+	};
+	class LandVehicle: Land
+	{
+		class NewTurret: NewTurret
+		{
+			
+		};
+	};
+	class Tank: LandVehicle
+	{
+		class NewTurret: NewTurret
+		{
+			
+		};
+	};
 	class Tank_F: Tank
 	{
-		class Turrets;
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				
+			};
+		};
 	};
 	class 3AS_N99_base_F: Tank_F
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret;
+			class MainTurret: MainTurret
+			{
+				
+			};
 		};
 	};
 	class 3AS_CIS_N99_base_F: 3AS_N99_base_F
 	{
-		
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				
+			};
+		};
 	};
 	class 3AS_CIS_N99_F: 3AS_CIS_N99_base_F
 	{
-		
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				
+			};
+		};
 	};
 	class 3AS_N99: 3AS_CIS_N99_F
 	{
-		
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				
+			};
+		};
 	};
 	class 332nd_CIS_Snail_Tank: 3AS_N99
 	{
@@ -96,8 +149,8 @@ class CfgAmmo
 	class 332nd_N99_redplasma_HEAT: 3AS_N99_redplasma_HEAT
 	{
 		hit = 250;
-		indirectHit = 15;
-		indirectHitRange = 3;
+		indirectHit = 10;
+		indirectHitRange = 1;
 		caliber = 1;
 		typicalSpeed = 900;
 		submunitionAmmo = "";

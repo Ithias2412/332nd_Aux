@@ -39,7 +39,7 @@ class CfgMagazines
 		ammo = "332nd_Gas_Level_L1_P_X";
 		count = 6;
 		displayname = "DC-15X 6 Round Charged Energy Cell";
-		mass = 13.6;
+		mass = 9.06;
 		scope = 2;
 		initSpeed = 1200;
 	};
@@ -59,7 +59,7 @@ class CfgMagazines
 		displayname = "Slug Thrower 20 Round Bullet Block";
 		mass = 13.6;
 		scope = 2;
-		initSpeed = 1200;
+		//initSpeed = 1200;
 		picture = "\A3\weapons_f\data\UI\m_M24_CA.paa";
 	};
 	class 332nd_Firepuncher_Mag: 332nd_Base_Mag
@@ -69,7 +69,7 @@ class CfgMagazines
 		displayname = "Firepuncher 20 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
-		initSpeed = 1200;
+		//initSpeed = 1200;
 	};
 	class 332nd_DW_32S_Mag: 332nd_Base_Mag
 	{
@@ -78,7 +78,7 @@ class CfgMagazines
 		displayname = "DW-32S 20 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
-		initSpeed = 1200;
+		//initSpeed = 1200;
 	};
 	class 332nd_DP23_Mag: 332nd_Base_Mag
 	{
@@ -140,7 +140,7 @@ class CfgMagazines
 		displayname = "Valken 20 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
-		initSpeed = 1200;
+		//initSpeed = 1200;
 	};
 	class 332nd_DC15A_Mag: 332nd_Base_Mag
 	{

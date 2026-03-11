@@ -443,6 +443,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Joker: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Joker)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Joker_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -977,6 +989,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Joker_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Joker";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Joker.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Joker.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1506,6 +1528,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Ithias";
+		};
+		class 332nd_Uniform_Clone_Joker
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Joker";
 		};
 	};
 };
