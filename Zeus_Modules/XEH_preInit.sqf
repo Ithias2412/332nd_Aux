@@ -140,11 +140,7 @@ fnc_SB_DroidPopper = {
         params ["_projectile", "_position", "_velocity"]; 
         _units = _position nearEntities [["JLTS_Droid_B1_E5"], 10];
         {
-			_x spawn {
-				[_this, "A_PlayerDeathAnim_Electric"] remoteExec ["switchMove"];
-				sleep 4;
-				_this setDamage 1;
-			};
+			_x setDamage 1;
         } forEach _units;
     }];
 };
