@@ -333,4 +333,6 @@ class cfgWeapons
 		};
 	};
 
+
+
 };

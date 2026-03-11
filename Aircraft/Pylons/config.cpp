@@ -28,6 +28,8 @@ class CfgPatches {
 };
 //#include "xtdGear.hpp"
 
+class Mode_FullAuto;
+
 class CfgWeapons
 {
 	class missiles_ASRAAM;
@@ -172,7 +174,21 @@ class CfgWeapons
 	};
 	
 	//cannon
-	class 3as_LAAT_Medium_Canon;
+	class CannonCore;
+	class Cannon_30mm_Plane_CAS_02_F: CannonCore
+	{
+		class LowROF: Mode_FullAuto
+		{
+			
+		};
+	};
+	class 3as_LAAT_Medium_Canon: Cannon_30mm_Plane_CAS_02_F
+	{
+		class LowROF: LowROF
+		{
+			
+		};
+	};
 	class 3AS_BTLB_Heavy_Cannon;
 	class 3AS_Z95_Light_Cannon;
 	class 3AS_ARC_Light_Canon;
@@ -189,6 +205,38 @@ class CfgWeapons
 		magazines[] = 
 		{
 			"332nd_LAAT_Cannon_Mag",
+		};
+	};
+	class 332nd_LAAT_Minigun: 3as_LAAT_Medium_Canon
+	{
+		displayName = "[332nd] Minigun";
+		ballisticsComputer="4 + 2 + 8";
+		magazines[] = 
+		{
+			"332nd_LAAT_Minigun_Mag",
+		};
+		class LowROF: LowROF
+		{
+			reloadTime = 0.025; //was 0.05
+			class BaseSoundModeType
+			{
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
+				weaponSoundEffect = "";
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1,1800};
+				begin2[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1.025,1800};
+				begin3[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,0.95,1800};
+				begin4[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,1.05,1800};
+				begin5[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1.25,0.9,1800};
+				beginwater1[] = {"\Indecisive_Armoury_Sounds\Imperial\DLT19.ogg",1,1,400};
+				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
+				soundBeginWater[] = {"beginwater1",1};
+				weaponSoundEffect = "";
+			};
 		};
 	};
 	class 332nd_Y_Wing_Cannon: 3AS_BTLB_Heavy_Cannon
@@ -485,6 +533,12 @@ class CfgMagazines
 	{
 		ammo = "332nd_LAAT_Cannon_Ammo";
 		count = 500;
+		displayname = "Energy Cell";
+	};
+	class 332nd_LAAT_Minigun_Mag: 3as_LAAT_1000Rnd_Medium_shells
+	{
+		ammo = "332nd_Gas_Level_M1_S";
+		count = 2000;
 		displayname = "Energy Cell";
 	};
 	class 332nd_Y_Wing_Cannon_Mag: 3AS_BTLB_450Rnd_Heavy_Shells

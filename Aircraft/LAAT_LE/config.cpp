@@ -143,7 +143,7 @@ class CfgVehicles
 		};
 		weapons[] = 
 		{
-			"3as_LAAT_Medium_Canon",
+			"332nd_LAAT_Minigun",
 			"CMFlareLauncher"
 		};
 		magazines[] = 
@@ -152,10 +152,10 @@ class CfgVehicles
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
 			"300Rnd_CMFlare_Chaff_Magazine",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells",
-			"3as_LAAT_1000Rnd_Medium_shells"
+			"332nd_LAAT_Minigun_Mag",
+			"332nd_LAAT_Minigun_Mag",
+			"332nd_LAAT_Minigun_Mag",
+			"332nd_LAAT_Minigun_Mag"
 		};
 		class Components: Components
 		{
@@ -410,7 +410,9 @@ class CfgVehicles
 						hardpoints[]=
 						{
 							"332nd_Anvil_I",
-							"332nd_Anvil_III",
+							"332nd_Anvil_IV",
+							"332nd_Anvil_X_S",
+							"332nd_Hammer_I",
 						};
 						turret[]={0};
 						UIposition[] = {0.5,0.25};

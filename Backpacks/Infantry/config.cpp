@@ -99,6 +99,29 @@ class CfgVehicles
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Medic.paa",
 		};
 	};
+	
+	class 332nd_Backpack_Medic_RTO: JLTS_Clone_backpack_RTO
+	{
+		author="Ithias";
+		displayName="New! [332nd] Backpack (Platoon Medic)";
+		maximumLoad=321;
+		mass=40;
+		hiddenSelections[] = 
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Medic.paa",
+		};
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=300000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
 
 	class 332nd_Backpack_Engineer: JLTS_Clone_backpack
 	{
@@ -221,7 +244,7 @@ class XtdGearModels
             class Backpacks
             {
                 label = "Backpacks";
-				values[] = {"AMMO", "AT", "ENG", "RTO", "Medic", };
+				values[] = {"AMMO", "AT", "ENG", "RTO", "Medic", "Plt_Medic",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class AMMO
@@ -251,6 +274,12 @@ class XtdGearModels
 				class Medic
                 {
                     label = "Medic";
+					//description = "";
+                    //image = "xxx";
+                };
+				class Plt_Medic
+                {
+                    label = "Plt Medic";
 					//description = "";
                     //image = "xxx";
                 };
@@ -376,6 +405,11 @@ class XtdGearInfos
         {
             model = "332nd_Backpack_Extended";
             Jumppack = "Pilot";
+        };
+        class 332nd_Backpack_Medic_RTO
+        {
+            model = "332nd_Backpack_Extended";
+            Backpacks = "Plt_Medic";
         };
     };
 };

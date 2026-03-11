@@ -147,6 +147,7 @@ class cfgWeapons
 				compatibleItems[]=
 				{
 					"bipod_01_F_blk",
+					"3AS_bipod_DC15X_F",
 				};
 			};
 		};

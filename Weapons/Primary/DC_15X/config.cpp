@@ -31,7 +31,7 @@ class cfgWeapons
 
 //Primary
 
-	class 332nd_DC15X: arifle_MX_Base_F
+	class 332nd_DC15X_Old: arifle_MX_Base_F
 	{
 		cursor = "332nd_Cursor_Tri";
 		cursoraim = "332nd_Cursor_Dot";
@@ -40,12 +40,12 @@ class cfgWeapons
 		JLTS_friedItem="JLTS_DC15X_fried";
 		JLTS_repairTime=33;
 		author="Ithias";
-		scope=2;
+		scope=1;
 		displayName="[332nd] DC-15X (MRK)";
 		descriptionShort="$STR_JLTS_descs_BlasterRifle";
 		picture="\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
 		model="\MRC\JLTS\weapons\DC15X\DC15X.p3d";
-		baseWeapon="332nd_DC15X";
+		baseWeapon="332nd_DC15X_Old";
 		recoil="recoil_mx";
 		reloadAction = "GestureReload_JLTS_DC15S";
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
@@ -372,6 +372,154 @@ class cfgWeapons
 				directionName="Konec hlavne";
 				effectName="RifleAssaultCloud";
 				positionName="Usti hlavne";
+			};
+		};
+	};
+
+	class 3AS_DC15X_F;
+	class 332nd_DC15X: 3AS_DC15X_F
+	{
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Dot";
+		author="Ithias";
+		scope=2;
+		displayName="[332nd] DC-15X (MRK)";
+		descriptionShort="$STR_JLTS_descs_BlasterRifle";
+		picture="\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
+		baseWeapon="332nd_DC15X";
+		recoil="recoil_mx";
+		reloadAction = "GestureReload_JLTS_DC15S";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+		weaponInfoType="RscOptics_nightstalker";
+		dexterity = 2; // was 1.7
+		magazines[]=
+		{
+			"332nd_DC15X_Mag",
+		};
+		magazineWell[]={};
+		modes[]=
+		{
+			"Single"
+		};
+		muzzles[]=
+		{
+			"this",
+			"Charged",
+		};
+		class Charged: arifle_MX_Base_F
+		{
+			displayName="Charged Shot";
+			cursor = "332nd_Cursor_Tri";
+			cursoraim = "332nd_Cursor_Dot";
+			reloadAction = "GestureReload_JLTS_DC15S";
+			magazines[]=
+			{
+				"332nd_DC15X_Charged_Mag",
+			};
+			magazineWell[]={};
+			modes[]=
+			{
+				"Single_Charged"
+			};
+			class Single_Charged: Mode_SemiAuto
+			{
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class BaseSoundModeType
+				{
+					weaponSoundEffect="";
+					closure1[]={};
+					closure2[]={};
+					soundClosure[]={};
+				};
+				class StandardSound: BaseSoundModeType
+				{
+					begin1[] = {"\Indecisive_Armoury_Sounds\INDEP\IQA11.ogg",2.5,1,1800};
+					beginwater1[] = {"\Indecisive_Armoury_Sounds\INDEP\IQA11.ogg",1,1,400};
+					soundBegin[] = {"begin1",1};
+					soundBeginWater[] = {"beginwater1",1};
+					weaponSoundEffect = "";
+				};
+				reloadTime=0.5;
+				recoil = "recoil_single_primary_3outof10";
+				recoilProne = "recoil_single_primary_prone_3outof10";
+				dispersion=0.00018;
+				minRange=2;
+				minRangeProbab=0.5;
+				midRange=250;
+				midRangeProbab=0.69999999;
+				maxRange=450;
+				maxRangeProbab=0.30000001;
+			};
+		};
+		class Single: Mode_SemiAuto
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = 
+				{
+					"3AS_DLT19X_Shot_SoundSet"
+				};
+			};
+			reloadTime=0.5;
+			recoil = "recoil_single_primary_3outof10";
+			recoilProne = "recoil_single_primary_prone_3outof10";
+			dispersion=0.00018;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=250;
+			midRangeProbab=0.69999999;
+			maxRange=450;
+			maxRangeProbab=0.30000001;
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=92;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]=
+				{
+					"332nd_3AS_DC15X_scope"
+				};
+				iconPicture="";
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[]={};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]={};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[]=
+				{
+					"3AS_bipod_DC15X_F"
+				};
+			};
+		};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="332nd_3AS_DC15X_scope";
+			};
+			class LinkedItemsBipod
+			{
+				slot="UnderBarrelSlot";
+				item="3AS_bipod_DC15X_F";
 			};
 		};
 	};

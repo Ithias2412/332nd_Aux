@@ -1842,6 +1842,61 @@ class cfgWeapons
 		};
 	};
 
+	class 3AS_optic_DC15X_F: ItemCore
+	{
+		class ItemInfo;
+	};
+	class 332nd_3AS_DC15X_scope: 3AS_optic_DC15X_F
+	{
+		scope=2;
+		displayName="[3AS] DC15X Scope";
+		picture = "\A3\Weapons_F_EPB\Acc\Data\UI\gear_acco_sniper02_CA.paa";
+		model = "\3AS\3AS_Weapons\Republic\ACC\3AS_acco_DC15X_Scope_F.p3d";
+		weaponInfoType="RscWeaponZeroing";
+		class ItemInfo: ItemInfo
+		{
+			mass=16;
+			opticType=2;
+			weaponInfoType="RscWeaponRangeZeroingFOV";
+			optics=1;
+			modelOptics="\A3\Weapons_F\acc\reticle_sniper_F";
+			class OpticsModes
+			{
+				class Snip
+				{
+					opticsID=1;
+					opticsDisplayName="WFOV";
+					useModelOptics=1;
+					opticsPPEffects[]=
+					{
+						"OpticsCHAbera1",
+						"OpticsBlur1"
+					};
+					opticsZoomMin=0.015625;
+					opticsZoomMax=0.03125;
+					opticsZoomInit=0.03125;
+					discreteDistance[]={300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+					discreteDistanceInitIndex=2;
+					distanceZoomMin=300;
+					distanceZoomMax=2400;
+					//discretefov[]={0.03125,0.015625};
+					//discreteInitIndex=0;
+					memoryPointCamera="opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"TI"
+					};
+					opticsFlare=1;
+					opticsDisablePeripherialVision=1;
+					cameraDir="";
+				};
+			};
+		};
+	};
+
 	class 332nd_3AS_VK38X: 3AS_optic_VK38X_F
 	{
 		scope=2;

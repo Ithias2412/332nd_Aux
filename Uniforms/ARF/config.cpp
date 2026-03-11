@@ -67,7 +67,6 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-
 };
 
 class CfgVehicles
