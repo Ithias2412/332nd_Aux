@@ -209,7 +209,7 @@ class CfgWeapons
 	};
 	class 332nd_LAAT_Minigun: 3as_LAAT_Medium_Canon
 	{
-		displayName = "[332nd] Minigun";
+		displayName = "[332nd] Ghillie's Gatling Guns";
 		ballisticsComputer="4 + 2 + 8";
 		magazines[] = 
 		{
