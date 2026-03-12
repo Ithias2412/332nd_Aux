@@ -325,6 +325,28 @@ class cfgWeapons
 		};
 	};
 	
+	class 332nd_Vest_Dovah: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Dovah)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Dovah.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+			};
+		};
+	};
+	
 };
 
 class XtdGearModels
@@ -388,7 +410,7 @@ class XtdGearModels
 			class Custom
             {
                 label = "Customs";
-                values[] = { "Cherryy", "Asuka", "Ithias", "Joker", "Body", "Crow", "Frankenburg", "Walkie"};
+                values[] = { "Cherryy", "Asuka", "Ithias", "Joker", "Body", "Crow", "Frankenburg", "Walkie", "Dovah",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -437,6 +459,12 @@ class XtdGearModels
                 {
                     label = "Walkie";
                     description = "We hate the French";
+                    // image = "xxx";
+                };
+				class Dovah
+                {
+                    label = "Dovah";
+                    description = "MEDIC!!!";
                     // image = "xxx";
                 };
             };
@@ -497,6 +525,11 @@ class XtdGearInfos
 		{
             model = "332nd_Vest_Extended";
             Custom = "Crow";
+		};
+		class 332nd_Vest_Dovah
+		{
+            model = "332nd_Vest_Extended";
+            Custom = "Dovah";
 		};
 	};
 };

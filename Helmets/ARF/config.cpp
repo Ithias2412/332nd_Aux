@@ -153,6 +153,16 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Stryker.paa",
 		};
 	};
+	class 332nd_Helmet_ARF_Aztec: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Aztec)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Aztec.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Aztec.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -211,7 +221,7 @@ class XtdGearModels
 			class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Cin", /* "Walkie", */ "Trick", "Stryker", "Smoke",};
+				values[] = { "Asuka", "Cin", /* "Walkie", */ "Trick", "Stryker", "Smoke", "Aztec",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -248,6 +258,12 @@ class XtdGearModels
                 {
                     label = "Smoke";
                     description = "Smokey Mountain Range";
+                    //image = "xxx";
+                };
+				class Aztec
+                {
+                    label = "Aztec";
+                    description = "Brazilian or something idk";
                     //image = "xxx";
                 };
             };
@@ -303,6 +319,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Stryker";
+        };
+        class 332nd_Helmet_ARF_Aztec
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Aztec";
         };
 	};
 };

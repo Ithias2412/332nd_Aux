@@ -164,6 +164,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Joker.paa"
 		};
 	};
+	/*
 	class 332nd_Helmet_P2_Aztec: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Aztec)";
@@ -176,6 +177,7 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Aztec.paa"
 		};
 	};
+	*/
 	class 332nd_Helmet_P2_Aqua: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Aqua)";

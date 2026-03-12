@@ -455,6 +455,30 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Crota: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Crota)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Crota_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Cosmos: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Cosmos)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Cosmos_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -999,6 +1023,26 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Joker.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Crota_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Crota";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crota.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crota.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Cosmos_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Cosmos";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Cosmos.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cosmos.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1120,6 +1164,8 @@ class XtdGearModels
 					"Thym",
 					"Rode",
 					"Clari",
+					"Crota",
+					"Cosmos",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1345,6 +1391,18 @@ class XtdGearModels
 					description = "Zesty Clone";
 					//image = "xxx";
 				};
+				class Crota
+				{
+					label = "Crota";
+					description = "Son of Oryx";
+					//image = "xxx";
+				};
+				class Cosmos
+				{
+					label = "Cosmos";
+					description = "CAGmos";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1533,6 +1591,16 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Joker";
+		};
+		class 332nd_Uniform_Clone_Crota
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Crota";
+		};
+		class 332nd_Uniform_Clone_Cosmos
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Cosmos";
 		};
 	};
 };

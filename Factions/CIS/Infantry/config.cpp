@@ -56,8 +56,7 @@ class CfgVehicles {
 	class 3AS_CIS_TS_F;
 	class 3AS_U_CIS_Light;
 	class SWLB_clone_bag_leg;
-	class lsd_cis_bxdroid_specops;
-	class WBK_BX_Assasin_1;
+	class WBK_LS_BX;
 	class HitPoints;
 
     // B1 Droids
@@ -754,7 +753,7 @@ class CfgVehicles {
 		};
 	};
 	//BX Droids
-	class 332nd_Droid_BX_Melee: WBK_BX_Assasin_1
+	class 332nd_Droid_BX_Melee: WBK_LS_BX
 	{
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Special_Operations";
@@ -939,7 +938,7 @@ class CfgVehicles {
 			};	
 		};
 	};
-	class 332nd_Droid_BX_Range: lsd_cis_bxdroid_specops
+	class 332nd_Droid_BX_Range: WBK_LS_BX
 	{
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Special_Operations";
@@ -1123,7 +1122,7 @@ class CfgVehicles {
 			};	
 		};
 	};
-	class 332nd_Droid_BX_Shield: lsd_cis_bxdroid_specops
+	class 332nd_Droid_BX_Shield: WBK_LS_BX
 	{
 		faction = "332nd_CIS_Faction";
         editorSubcategory = "EdSubcat_332nd_Special_Operations";
