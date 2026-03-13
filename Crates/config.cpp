@@ -100,10 +100,10 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DLT15_Mag";
 			};
-			class 332nd_DW_32S_Mag
+			class 332nd_785MK_Mag
 			{
 				count = 100;
-				magazine = "332nd_DW_32S_Mag";
+				magazine = "332nd_785MK_Mag";
 			};
 			class 332nd_EPL_2_Mag
 			{
@@ -953,10 +953,10 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DLT15_Mag";
 			};
-			class 332nd_DW_32S_Mag
+			class 332nd_785MK_Mag
 			{
 				count = 100;
-				magazine = "332nd_DW_32S_Mag";
+				magazine = "332nd_785MK_Mag";
 			};
 			class 332nd_EPL_2_Mag
 			{
