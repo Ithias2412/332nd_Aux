@@ -490,6 +490,31 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ithias.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Icurus: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Icurus)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Icurus.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Alpha: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Alpha)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Alpha.paa"
+		};
+	};
+
 };
 
 class XtdGearModels
@@ -587,6 +612,7 @@ class XtdGearModels
 					"Crota",
 					"Ghoul",
 					"Crucial",
+					"Icurus",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -890,6 +916,12 @@ class XtdGearModels
 					description = "N/A";
 					//image = "xxx";
 				};
+				class Icurus
+				{
+					label = "Icurus";
+					description = "And Icarus laughed as he fell, for he knew to fall means to once have soared...";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -1084,6 +1116,16 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ithias";
+		};
+		class 332nd_Helmet_P2_Icurus
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Icurus";
+		};
+		class 332nd_Helmet_P2_Alpha
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Alpha";
 		};
 	};
 };
