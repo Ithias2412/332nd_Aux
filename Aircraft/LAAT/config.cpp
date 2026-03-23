@@ -75,6 +75,7 @@ class CfgVehicles
 		{
 			
 		};
+		class ACE_SelfActions;
 	};
 	class Helicopter_Base_F: Helicopter
 	{
@@ -82,7 +83,6 @@ class CfgVehicles
 		{
 			
 		};
-		class ACE_SelfActions;
 		class AnimationSources: AnimationSources
 		{
 			
@@ -94,10 +94,6 @@ class CfgVehicles
 		{
 			
 		};
-		class ACE_SelfActions: ACE_SelfActions
-		{
-			
-		};
 		class AnimationSources: AnimationSources
 		{
 			
@@ -106,10 +102,6 @@ class CfgVehicles
 	class 3AS_LAAT_Base: Helicopter_Base_H
 	{
 		class Components: Components
-		{
-			
-		};
-		class ACE_SelfActions: ACE_SelfActions
 		{
 			
 		};
@@ -125,10 +117,6 @@ class CfgVehicles
 		{
 			
 		};
-		class ACE_SelfActions: ACE_SelfActions
-		{
-			
-		};
 		class HitPoints: HitPoints
 		{
 			
@@ -141,10 +129,6 @@ class CfgVehicles
 	class 3AS_LAAT_Mk1: 3AS_LAAT_Base
 	{
 		class Components: Components
-		{
-			
-		};
-		class ACE_SelfActions: ACE_SelfActions
 		{
 			
 		};

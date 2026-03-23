@@ -46,6 +46,7 @@ class CfgVehicles
 		{
 			
 		};
+		class ACE_SelfActions;
 	};
 	class Helicopter_Base_F: Helicopter
 	{
@@ -53,7 +54,6 @@ class CfgVehicles
 		{
 			
 		};
-		class ACE_SelfActions;
 		class AnimationSources: AnimationSources
 		{
 			
@@ -62,10 +62,6 @@ class CfgVehicles
 	class Heli_Attack_01_base_F: Helicopter_Base_F
 	{
 		class Components: Components
-		{
-			
-		};
-		class ACE_SelfActions: ACE_SelfActions
 		{
 			
 		};
@@ -80,10 +76,6 @@ class CfgVehicles
 		{
 			
 		};
-		class ACE_SelfActions: ACE_SelfActions
-		{
-			
-		};
 		class HitPoints; //Rose is 500 years old
 		class AnimationSources: AnimationSources
 		{
@@ -94,10 +86,6 @@ class CfgVehicles
 	class 3AS_Patrol_LAAT_Republic: 3AS_Patrol_LAAT_Base
 	{
 		class Components: Components
-		{
-			
-		};
-		class ACE_SelfActions: ACE_SelfActions
 		{
 			
 		};

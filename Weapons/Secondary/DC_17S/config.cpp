@@ -76,7 +76,7 @@ class cfgWeapons
 			};
 			class SilencedSound: BaseSoundModeType
 			{
-				soundSetShot[] = {"3AS_DC15S_Shot_SoundSet"};
+				soundSetShot[] = {"332nd_DC15SA_Suppressed_Shot_SoundSet"};
 			};
 			class StandardSound: BaseSoundModeType
 			{
@@ -164,7 +164,7 @@ class cfgWeapons
 				};
 				class SilencedSound: BaseSoundModeType
 				{
-					soundSetShot[] = {"3AS_DC15S_Shot_SoundSet"};
+					soundSetShot[] = {"332nd_DC15SA_Suppressed_Shot_SoundSet"};
 				};
 				class StandardSound: BaseSoundModeType
 				{
