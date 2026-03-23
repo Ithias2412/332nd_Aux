@@ -31,12 +31,13 @@ class CfgVehicles
 		antiRollbarSpeedMax = 170; // was 70
 		antiRollbarSpeedMin = 5; // was 15
 		*/
+		/* Newest, had issues crossing water
 		antiRollbarForceCoef = 100; // was 24
 		antiRollbarForceLimit = 100;
 		antiRollbarSpeedMax = 100; // was 70
 		antiRollbarSpeedMin = 0; // was 15
 		maxSpeed = 300; // was 160
-
+		*/
 		hiddenSelections[] = 
 		{
 			"camo",

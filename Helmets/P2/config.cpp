@@ -481,6 +481,7 @@ class cfgWeapons
 	class 332nd_Helmet_P2_Ithias: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Ithias)";
+		332nd_Has_Lowlight = 1;
 		hiddenSelections[]=
 		{
 			"camo1"
