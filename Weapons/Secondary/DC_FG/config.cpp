@@ -29,7 +29,8 @@ class cfgWeapons
 			"332nd_SmokeGreen_LauncherGrenade",
 			"332nd_SmokeBlue_LauncherGrenade",
 			"332nd_SmokePurple_LauncherGrenade",
-			"ACE_HuntIR_M203"
+			"ACE_HuntIR_M203",
+			"UGL_FlareWhite_Illumination_F",
 		};
 		magazineWell[]={};
 	};
