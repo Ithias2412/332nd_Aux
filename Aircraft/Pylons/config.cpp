@@ -282,6 +282,13 @@ class CfgWeapons
 			};
 		};
 	};
+	//Smoke Rockets
+	/* class 332nd_Smoke_RKT_Launcher : 332nd_Anvil_X_S
+	{
+		magazines[] = {"332nd_Hydra_Smoke_Mag_7_Count"};
+		displayName = "[332nd] Smoke Hydra Launcher";
+	}; */
+
 };
 
 class CfgMagazines
@@ -571,6 +578,21 @@ class CfgMagazines
 		count = 500;
 		displayname = "Energy Cell";
 	};
+	//Aircraft Smokes
+	/* 	class 332nd_Hydra_Smoke_Mag_7_Count : PylonRack_12Rnd_missiles
+	{
+		scope = 2;
+		displayName = "[332nd] Smoke Rocket x7";
+		displayNameShort = "Smoke Rocket";
+		ammo = "332nd_Hydra_Smoke";
+		descriptionShort = "unguided rocket, 2.75-inch, RP Smoke";				
+		initSpeed = 0;
+		count = 7;
+		maxLeadSpeed = 300;
+		pylonWeapon = "332nd_Smoke_RKT_Launcher";
+		mass = 125;		
+	}; */
+
 };
 
 class CfgAmmo
@@ -747,6 +769,74 @@ class CfgAmmo
 		indirecthit = 50;
 		indirecthitrange = 3;
 	};
+	//Aircraft Smoke Hydra's / Dumbfire Rockets (Currently Commented out)
+		/* class 332nd_Hydra_Smoke : 332nd_Anvil_X_S_Ammo
+		{
+			effectsMissile = "332nd_Effect_Hydra";
+			submunitionAmmo = "332nd_Hydra_Smoke_Deploy";
+			submunitionConeAngle = 1;
+			submunitionConeType[] = {"randomcenter",1};
+			triggerDistance = 5;
+			triggerSpeedCoef[] = {0.8,1};
+		};
+		class 332nd_Hydra_Smoke_Red : 332nd_Hydra_Smoke
+		{
+			submunitionAmmo = "332nd_Hydra_Smoke_Deploy_Red";
+		};
+		class 332nd_Hydra_Smoke_Green : 332nd_Hydra_Smoke
+		{
+			submunitionAmmo = "332nd_Hydra_Smoke_Deploy_Green";
+		};
+		class 332nd_Hydra_Smoke_Blue : 332nd_Hydra_Smoke
+		{
+			submunitionAmmo = "332nd_Hydra_Smoke_Deploy_Blue";
+		};
+		//Smoke Deploy Classes
+			class ShotDeployBase;
+			class 332nd_Hydra_Smoke_Deploy : ShotDeployBase
+			{
+				model = "\A3\weapons_F\ammo\mag_univ.p3d";
+				proxyShape = "\A3\weapons_F\ammo\mag_univ.p3d";
+				hit = 0;
+				indirectHit = 0;
+				indirectHitRange = 0.1;
+				initTime = 0;
+				cost = 400;
+				//effectFly = "clustereffectfly";
+				explosionEffects = "GrenadeExplosion";
+				submunitionAmmo = "332nd_Smoke_Sub";
+			};
+			class 332nd_Hydra_Smoke_Deploy_Red : 332nd_Hydra_Smoke_Deploy
+			{
+				submunitionAmmo = "332nd_Smoke_Sub_Red";
+			};
+			class 332nd_Hydra_Smoke_Deploy_Green : 332nd_Hydra_Smoke_Deploy
+			{
+				submunitionAmmo = "332nd_Smoke_Sub_Green";
+			};
+			class 332nd_Hydra_Smoke_Deploy_Blue : 332nd_Hydra_Smoke_Deploy
+			{
+				submunitionAmmo = "332nd_Smoke_Sub_Blue";
+			};
+		//smoke submunitions
+				class SmokeShell;
+				class 332nd_Smoke_Sub : SmokeShell
+				{
+					smokeColor[]={1,1,1,1};
+					effectsSmoke = "IDA_SmokeEffect";
+				};
+				class 332nd_Smoke_Sub_Red : 332nd_Smoke_Sub
+				{
+				smokeColor[]={0.84380001,0.1383,0.1353,1};
+				};
+				class 332nd_Smoke_Sub_Green : 332nd_Smoke_Sub
+				{
+				smokeColor[]={0.21250001,0.62580001,0.48909998,1};
+				};
+				class 332nd_Smoke_Sub_Blue : 332nd_Smoke_Sub
+				{
+				smokeColor[]={0.1183,0.1867,1,1};
+				}; */
 };
 
 class 332nd_Effect_Hammer
