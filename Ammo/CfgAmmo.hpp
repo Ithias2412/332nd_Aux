@@ -458,7 +458,7 @@ class CfgAmmo
 		indirectHitRange=30;
 		ace_frag_enabled = 0;
 	};
-};
+}; 
 
 class CfgCloudlets
 {

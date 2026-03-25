@@ -362,16 +362,6 @@ class CfgMagazines
 		ammo="IDA_smoke_Impact";
 		mass=4;
 	};
-	class 332nd_Smoke_LauncherGrenade_3GL: 3Rnd_Smoke_Grenade_shell
-	{
-		author="Cherryy";
-		count=3;
-		displayName="[332nd] Impact Smoke (White) x3";
-		displayNameShort="White Smoke";
-		descriptionShort="Impact Smoke grenade";
-		ammo="IDA_smoke_Impact";
-		mass=12;
-	};
 	class 332nd_SmokeRed_LauncherGrenade: IDA_Smoke_LauncherGrenade
 	{
 		author="Cherryy";
@@ -405,7 +395,7 @@ class CfgMagazines
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
 		mass=4;
 	};
-	class 332nd_SmokePurple_LauncherGrenade: 332nd_Smoke_LauncherGrenade
+	class 332nd_SmokePurple_LauncherGrenade: 332nd_Smoke_LauncherGrenade 
 	{
 		author="Cherryy";
 		count=1;
@@ -415,7 +405,7 @@ class CfgMagazines
 		ammo="IDA_smoke_Impact_Purple";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_purple_CA.paa";
 		mass=4;
-	};
+	}; //bounces
 	class 332nd_SmokeYellow_LauncherGrenade: 332nd_Smoke_LauncherGrenade
 	{
 		author="Viper";
@@ -426,12 +416,89 @@ class CfgMagazines
 		ammo="332nd_UGL_Smoke_Yellow";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
 		mass=4;
-	};
+	}; //bounces
 	class 332nd_SmokeOrange_LauncherGrenade: 332nd_Smoke_LauncherGrenade
 	{
 		author="Viper";
 		count=1;
 		displayName="[332nd] Impact Smoke (Orange)";
+		displayNameShort="Orange Smoke";
+		descriptionShort="Orange Impact Smoke grenade";
+		ammo="332nd_UGL_Smoke_Orange";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_orange_CA.paa";
+		mass=4;
+	};
+	//3 Round smokes
+	class 332nd_Smoke_LauncherGrenade_3GL: 3Rnd_Smoke_Grenade_shell
+	{
+		author="Cherryy";
+		count=3;
+		displayName="[332nd] Impact Smoke (White) x3";
+		displayNameShort="White Smoke";
+		descriptionShort="Impact Smoke grenade";
+		ammo="IDA_smoke_Impact";
+		mass=12;
+	};
+	class 332nd_Smoke_LauncherGrenade_3GL_Red: IDA_Smoke_LauncherGrenade
+	{
+		author="Cherryy";
+		count=3;
+		displayName="[332nd] Impact Smoke (Red) x3";
+		displayNameShort="Red Smoke";
+		descriptionShort="Red Impact Smoke grenade";
+		ammo="IDA_smoke_Impact_Red";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_red_CA.paa";
+		mass=4;
+	};
+	class 332nd_Smoke_LauncherGrenade_3GL_Green: 332nd_Smoke_LauncherGrenade
+	{
+		author="Cherryy";
+		count=3;
+		displayName="[332nd] Impact Smoke (Green) x3";
+		displayNameShort="Green Smoke";
+		descriptionShort="Green Impact Smoke grenade";
+		ammo="IDA_smoke_Impact_Green";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_green_CA.paa";
+		mass=4;
+	};
+	class 332nd_Smoke_LauncherGrenade_3GL_Blue: 332nd_Smoke_LauncherGrenade
+	{
+		author="Cherryy";
+		count=3;
+		displayName="[332nd] Impact Smoke (Blue) x3";
+		displayNameShort="Blue Smoke";
+		descriptionShort="Blue Impact Smoke grenade";
+		ammo="IDA_smoke_Impact_Blue";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
+		mass=4;
+	};
+	class 332nd_Smoke_LauncherGrenade_3GL_Purple: 332nd_Smoke_LauncherGrenade
+	{
+		author="Cherryy";
+		count=3;
+		displayName="[332nd] Impact Smoke (Purple) x3";
+		displayNameShort="Purple Smoke";
+		descriptionShort="Purple Impact Smoke grenade";
+		ammo="IDA_smoke_Impact_Purple";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_purple_CA.paa";
+		mass=4;
+	};
+	class 332nd_Smoke_LauncherGrenade_3GL_Yellow: 332nd_Smoke_LauncherGrenade
+	{
+		author="Viper";
+		count=3;
+		displayName="[332nd] Impact Smoke (Yellow) x3";
+		displayNameShort="Yellow Smoke";
+		descriptionShort="Yellow Impact Smoke grenade";
+		ammo="332nd_UGL_Smoke_Yellow";
+		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
+		mass=4;
+	};
+	class 332nd_Smoke_LauncherGrenade_3GL_Orange: 332nd_Smoke_LauncherGrenade
+	{
+		author="Viper";
+		count=3;
+		displayName="[332nd] Impact Smoke (Orange) x3";
 		displayNameShort="Orange Smoke";
 		descriptionShort="Orange Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Orange";
