@@ -30,7 +30,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_950mm_Ball";
 		count = 3;
-		displayname = "DLT 3 Round Energy Cell";
+		displayname = "[332nd] DLT 3 Round Energy Cell";
 		mass = 15;
 		scope = 2;
 	};
@@ -38,7 +38,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_L1_P_X";
 		count = 6;
-		displayname = "DC-15X 6 Round Charged Energy Cell";
+		displayname = "[332nd] DC-15X 6 Round Charged Energy Cell";
 		mass = 9.06;
 		scope = 2;
 		initSpeed = 1200;
@@ -47,7 +47,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_L2";
 		count = 15;
-		displayname = "DC-15X 15 Round Energy Cell";
+		displayname = "[332nd] DC-15X 15 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
 		initSpeed = 1200;
@@ -56,7 +56,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Slug_Thrower_Round";
 		count = 20;
-		displayname = "Slug Thrower 20 Round Bullet Block";
+		displayname = "[332nd] Slug Thrower 20 Round Bullet Block";
 		mass = 13.6;
 		scope = 2;
 		//initSpeed = 1200;
@@ -66,7 +66,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_L3_P";
 		count = 20;
-		displayname = "Firepuncher 20 Round Energy Cell";
+		displayname = "[332nd] Firepuncher 20 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
 		//initSpeed = 1200;
@@ -75,7 +75,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_L3";
 		count = 20;
-		displayname = "DW-32S 20 Round Energy Cell";
+		displayname = "[332nd] DW-32S 20 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
 		//initSpeed = 1200;
@@ -84,7 +84,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_L1";
 		count = 8;
-		displayname = "785MK 8 Round Energy Cell";
+		displayname = "[332nd] 785MK 8 Round Energy Cell";
 		mass = 6.8;
 		scope = 2;
 		initSpeed = 1200;
@@ -93,7 +93,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Scattershot_S1";
 		count = 10;
-		displayname = "DP-23 10 Round Energy Cell";
+		displayname = "[332nd] DP-23 10 Round Energy Cell";
 		mass = 8;
 		scope = 2;
 	};
@@ -101,7 +101,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Scattershot_S2";
 		count = 10;
-		displayname = "Scatter-shot 10 Round Energy Cell";
+		displayname = "[332nd] Scatter-shot 10 Round Energy Cell";
 		mass = 8;
 		scope = 2;
 	};
@@ -109,7 +109,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Condensedshot_S1";
 		count = 5;
-		displayname = "Condensed-shot 5 Round Energy Cell";
+		displayname = "[332nd] Condensed-shot 5 Round Energy Cell";
 		mass = 8;
 		scope = 2;
 	};
@@ -117,7 +117,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_FlameRound_Scatter";
 		count = 5;
-		displayname = "Flame-Shot 5 Round Cartridge";
+		displayname = "[332nd] Flame-Shot 5 Round Cartridge";
 		mass = 8; 
 		scope = 2;
 		//initSpeed = 25;
@@ -129,7 +129,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_M2_S";
 		count = 200;
-		displayname = "DC-15L 200 Round Energy Cell";
+		displayname = "[332nd] DC-15L 200 Round Energy Cell";
 		mass = 40;
 		scope = 2;
 	};
@@ -137,7 +137,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_M1_S";
 		count = 300;
-		displayname = "DLT-15 300 Round Energy Cell";
+		displayname = "[332nd] DLT-15 300 Round Energy Cell";
 		mass = 40;
 		scope = 2;
 		ACE_isBelt = 1;
@@ -146,7 +146,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_L2";
 		count = 20;
-		displayname = "Valken 20 Round Energy Cell";
+		displayname = "[332nd] Valken 20 Round Energy Cell";
 		mass = 13.6;
 		scope = 2;
 		//initSpeed = 1200;
@@ -155,7 +155,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S1";
 		count = 30;
-		displayname = "DC-15A 30 Round Energy Cell";
+		displayname = "[332nd] DC-15A 30 Round Energy Cell";
 		mass = 10;
 		scope = 2;
 	};
@@ -163,7 +163,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_M3_S";
 		count = 100;
-		displayname = "DC-15LE 100 Round Energy Cell";
+		displayname = "[332nd] DC-15LE 100 Round Energy Cell";
 		mass = 13.3;
 		scope = 2;
 	};
@@ -171,7 +171,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S1";
 		count = 30;
-		displayname = "EPL-2 30 Round Energy Cell";
+		displayname = "[332nd] EPL-2 30 Round Energy Cell";
 		mass = 10;
 		scope = 2;
 	};
@@ -179,7 +179,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S2";
 		count = 45;
-		displayname = "DC-15C 45 Round Energy Cell";
+		displayname = "[332nd] DC-15C 45 Round Energy Cell";
 		mass = 8.3; 
 		scope = 2;
 	};
@@ -187,7 +187,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S2";
 		count = 45;
-		displayname = "C-24 45 Round Energy Cell";
+		displayname = "[332nd] C-24 45 Round Energy Cell";
 		mass = 8.3; 
 		scope = 2;
 	};
@@ -195,7 +195,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_FlameRound";
 		count = 20;
-		displayname = "C-24 Flame Cartridge";
+		displayname = "[332nd] C-24 Flame Cartridge";
 		mass = 10; 
 		scope = 2;
 		initSpeed = 25;
@@ -206,7 +206,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S2";
 		count = 45;
-		displayname = "Westar 45 Round Energy Cell";
+		displayname = "[332nd] Westar 45 Round Energy Cell";
 		mass = 8.3;
 		scope = 2;
 	}
@@ -214,7 +214,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_M3_S";
 		count = 400;
-		displayname = "Z-6 400 Round Energy Cell";
+		displayname = "[332nd] Z-6 400 Round Energy Cell";
 		mass = 40;
 		scope = 2;
 	};
@@ -222,7 +222,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S3";
 		count = 80;
-		displayname = "DC-15S 80 Round Low Power Energy Cell";
+		displayname = "[332nd] DC-15S 80 Round Low Power Energy Cell";
 		mass = 8.3; 
 		scope = 2;
 	};
@@ -230,7 +230,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S2";
 		count = 40;
-		displayname = "DC-15S 40 Round High Power Energy Cell";
+		displayname = "[332nd]DC-15S 40 Round High Power Energy Cell";
 		mass = 8.3; 
 		scope = 2;
 	};
@@ -238,7 +238,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S1";
 		count = 20;
-		displayname = "DC-15SA 20 Round Energy Cell";
+		displayname = "[332nd] DC-15SA 20 Round Energy Cell";
 		mass = 5;
 		scope = 2;
 	};
@@ -246,7 +246,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S2";
 		count = 30;
-		displayname = "DC-17S 30 Round Energy Cell";
+		displayname = "[332nd] DC-17S 30 Round Energy Cell";
 		mass = 5;
 		scope = 2;
 	};
@@ -254,7 +254,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S1_Dual";
 		count = 30;
-		displayname = "DC-17S 30 Round Energy Cell";
+		displayname = "[332nd] DC-17S 30 Round Energy Cell";
 		mass = 5;
 		scope = 2;
 	};
@@ -262,7 +262,7 @@ class CfgMagazines
 	{
 		ammo = "JLTS_bullet_stun";
 		count = 5;
-		displayname = "5 Round Stun Cell";
+		displayname = "[332nd] 5 Round Stun Cell";
 		mass = 25;
 		scope = 2;
 		JLTS_stunDuration = 15;
@@ -272,7 +272,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_EPL_AT";
 		count = 1;
-		displayname = "EPL-2 Anti-Tank Cell";
+		displayname = "[332nd] EPL-2 Anti-Tank Cell";
 		mass = 8.3;
 		scope = 2;
 		initSpeed = 1000;
@@ -284,7 +284,7 @@ class CfgMagazines
 		ammo = "332nd_RPS6_Ammo_AT";
 		count = 1;
 		descriptionShort = "";
-		displayname = "RPS-6 AT Rocket";
+		displayname = "[332nd] RPS-6 AT Rocket";
 		displayNameShort = "AT";
 		mass = 11.1;
 		scope = 2;
@@ -294,7 +294,7 @@ class CfgMagazines
 		ammo = "332nd_RPS6_Ammo_NLAW";
 		count = 1;
 		descriptionShort = "";
-		displayname = "RPS-6 AT NLAW";
+		displayname = "[332nd] RPS-6 AT NLAW";
 		displayNameShort = "NLAW";
 		mass = 22;
 		scope = 2;
@@ -304,7 +304,7 @@ class CfgMagazines
 		ammo = "332nd_Dispo_Ammo_NLAW";
 		count = 1;
 		descriptionShort = "";
-		displayname = "Dispo AT NLAW";
+		displayname = "[332nd] Dispo AT NLAW";
 		displayNameShort = "NLAW";
 		mass = 22;
 		scope = 2;
@@ -315,7 +315,7 @@ class CfgMagazines
 		ammo = "332nd_PLX1_Ammo_AT";
 		count = 2;
 		descriptionShort = "";
-		displayname = "PLX-1 AT Rocket";
+		displayname = "[332nd] PLX-1 AT Rocket";
 		displayNameShort = "AT";
 		mass = 50;
 		scope = 2;
@@ -328,7 +328,7 @@ class CfgMagazines
 		ammo="332nd_HE_UGLGrenade";
 		count=1;
 		descriptionShort="";
-		displayname="332nd 1 Round HE";
+		displayname="[332nd] 1 Round HE";
 		displayNameShort="";
 		mass=4;
 		scope=2;
@@ -338,7 +338,7 @@ class CfgMagazines
 		ammo="332nd_DroidPopper_UGLGrenade";
 		count=1;
 		descriptionShort="";
-		displayname="332nd 1 Round Droid Popper";
+		displayname="[332nd] 1 Round Droid Popper";
 		displayNameShort="";
 		mass=4;
 		scope=2;
@@ -347,7 +347,7 @@ class CfgMagazines
 	{
 		ammo="332nd_Westar_Rifle_Grenade";
 		count=1;
-		displayname="Westar Rifle Grenade Charge";
+		displayname="[332nd] Westar Rifle Grenade Charge";
 		mass=6;
 		//initSpeed = 80;
 		initSpeed = 1000;
@@ -356,7 +356,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="332nd Impact Smoke (White)";
+		displayName="[332nd] Impact Smoke (White)";
 		displayNameShort="White Smoke";
 		descriptionShort="Impact Smoke grenade";
 		ammo="IDA_smoke_Impact";
@@ -366,7 +366,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=3;
-		displayName="332nd Impact Smoke (White) x3";
+		displayName="[332nd] Impact Smoke (White) x3";
 		displayNameShort="White Smoke";
 		descriptionShort="Impact Smoke grenade";
 		ammo="IDA_smoke_Impact";
@@ -376,7 +376,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="332nd Impact Smoke (Red)";
+		displayName="[332nd] Impact Smoke (Red)";
 		displayNameShort="Red Smoke";
 		descriptionShort="Red Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Red";
@@ -387,7 +387,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="332nd Impact Smoke (Green)";
+		displayName="[332nd] Impact Smoke (Green)";
 		displayNameShort="Green Smoke";
 		descriptionShort="Green Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Green";
@@ -398,7 +398,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="332nd Impact Smoke (Blue)";
+		displayName="[332nd] Impact Smoke (Blue)";
 		displayNameShort="Blue Smoke";
 		descriptionShort="Blue Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Blue";
@@ -409,7 +409,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="332nd Impact Smoke (Purple)";
+		displayName="[332nd] Impact Smoke (Purple)";
 		displayNameShort="Purple Smoke";
 		descriptionShort="Purple Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Purple";
@@ -420,7 +420,7 @@ class CfgMagazines
 	{
 		author="Viper";
 		count=1;
-		displayName="332nd Impact Smoke (Yellow)";
+		displayName="[332nd] Impact Smoke (Yellow)";
 		displayNameShort="Yellow Smoke";
 		descriptionShort="Yellow Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Yellow";
@@ -431,7 +431,7 @@ class CfgMagazines
 	{
 		author="Viper";
 		count=1;
-		displayName="332nd Impact Smoke (Orange)";
+		displayName="[332nd] Impact Smoke (Orange)";
 		displayNameShort="Orange Smoke";
 		descriptionShort="Orange Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Orange";
