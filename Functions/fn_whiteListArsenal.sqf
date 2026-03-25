@@ -359,6 +359,12 @@ params ["_obj"];
 "332nd_CSS_Vest_AB",
 "332nd_ARC_Vest",
 "332nd_Vest_Dovah",
-"332nd_Suppressor_Muzzle"]
+"332nd_Suppressor_Muzzle",
+"332nd_Smoke_LauncherGrenade_3GL_Red",
+"332nd_Smoke_LauncherGrenade_3GL_Green",
+"332nd_Smoke_LauncherGrenade_3GL_Blue",
+"332nd_Smoke_LauncherGrenade_3GL_Purple",
+"332nd_Smoke_LauncherGrenade_3GL_Yellow",
+"332nd_Smoke_LauncherGrenade_3GL_Orange"]
 
 ] call ace_arsenal_fnc_initBox
