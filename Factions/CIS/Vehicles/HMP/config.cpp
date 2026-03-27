@@ -18,17 +18,66 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class 3AS_HMP_Transport;
-	class Helicopter_Base_F;
+	class All;
+	class AllVehicles: All
+	{
+		class NewTurret;
+	};
+	class Air: AllVehicles
+	{
+		
+	};
+	class Helicopter: Air
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				
+			};
+		};
+	};
+	class Helicopter_Base_F: Helicopter
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				
+			};
+		};
+	};
 	class Heli_Attack_01_base_F: Helicopter_Base_F
 	{
 		class Components;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				
+			};
+		};
 	};
 	class 3AS_HMP_Base: Heli_Attack_01_base_F
 	{
 		class Components: Components 
 		{
 			class TransportPylonsComponent;
+		};
+		class Turrets: Turrets
+		{
+			class Copilot: MainTurret
+			{
+				
+			};
+			class LeftGun: MainTurret
+			{
+				
+			};
+			class RightDoorGun: MainTurret
+			{
+				
+			};
 		};
 	};
 	class 3AS_HMP_Gunship: 3AS_HMP_Base
@@ -40,6 +89,10 @@ class CfgVehicles
 				
 			};
 		};
+	};
+	class 3AS_HMP_Transport: 3AS_HMP_Base
+	{
+		
 	};
 	class 332nd_CIS_HMP_Gunship: 3AS_HMP_Gunship
 	{
@@ -105,6 +158,58 @@ class CfgVehicles
 				};
 			};
 		};
+		weapons[] = 
+		{
+			"332nd_HMP_Autocannon",
+			"CMFlareLauncher"
+		};
+		magazines[] = 
+		{
+			"332nd_HMP_Cannon_Mag",
+			"332nd_HMP_Cannon_Mag",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine"
+		};
+		class Turrets: Turrets
+		{
+			class Copilot: Copilot
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+			class LeftGun: LeftGun
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+			class RightDoorGun: RightDoorGun
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+		};
 	};
 	class 332nd_CIS_HMP_Transport: 3AS_HMP_Transport
 	{
@@ -113,5 +218,86 @@ class CfgVehicles
 		displayName="HMP Transport";
 		editorPreview = "";
 		crew = "332nd_Droid_B1_Pilot";
+		weapons[] = 
+		{
+			"332nd_HMP_Autocannon",
+			"CMFlareLauncher"
+		};
+		magazines[] = 
+		{
+			"332nd_HMP_Cannon_Mag",
+			"332nd_HMP_Cannon_Mag",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine"
+		};
+		class Turrets: Turrets
+		{
+			class Copilot: Copilot
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+			class LeftGun: LeftGun
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+			class RightDoorGun: RightDoorGun
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+		};
+	};
+};
+
+class CfgWeapons
+{
+	class HMP_Autocannon;
+	class 332nd_HMP_Autocannon: HMP_Autocannon
+	{
+		magazines[] = {"332nd_HMP_Cannon_Mag"};
+	};
+};
+
+class CfgMagazines
+{
+	class HMP_Cannon_Mag;
+	class 332nd_HMP_Cannon_Mag: HMP_Cannon_Mag
+	{
+		ammo = "332nd_HMP_laserAmmo";
+	};
+};
+
+class CfgAmmo
+{
+	class HMP_laserAmmo;
+	class 332nd_HMP_laserAmmo: HMP_laserAmmo
+	{
+		hit = 35; // was 75
+		indirecthit = 5;
+		caliber = 1.6;
 	};
 };

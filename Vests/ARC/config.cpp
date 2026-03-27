@@ -40,7 +40,8 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			//"332nd_Aux\Missing_Texture.paa"
-			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_arc_co.paa"
+			//"MRC\JLTS\characters\CloneArmor\data\Clone_vest_arc_co.paa"
+			"332nd_Aux\Vests\Tex\332nd_Vest_ARC.paa",
 		};
 		class ItemInfo: ItemInfo
 		{

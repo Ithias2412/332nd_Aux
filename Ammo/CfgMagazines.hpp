@@ -82,7 +82,7 @@ class CfgMagazines
 	};
 	class 332nd_785MK_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_Gas_Level_L1";
+		ammo = "332nd_Gas_Level_L2";
 		count = 8;
 		displayname = "[332nd] 785MK 8 Round Energy Cell";
 		mass = 6.8;
@@ -273,7 +273,7 @@ class CfgMagazines
 		ammo = "332nd_EPL_AT";
 		count = 1;
 		displayname = "[332nd] EPL-2 Anti-Tank Cell";
-		mass = 8.3;
+		mass = 6.25;
 		scope = 2;
 		initSpeed = 1000;
 	};

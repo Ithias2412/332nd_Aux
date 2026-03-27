@@ -33,7 +33,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"332nd_Aux\Missing_Texture.paa"
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARC.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{

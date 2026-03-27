@@ -515,6 +515,42 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Alpha.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Oddball: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Oddball)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Oddball.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Logan: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Logan)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Logan.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Komrk: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Komrk)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Komrk.paa"
+		};
+	};
 
 };
 
@@ -614,6 +650,9 @@ class XtdGearModels
 					"Ghoul",
 					"Crucial",
 					"Icurus",
+					"Oddball",
+					"Logan",
+					"Komrk",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -923,6 +962,24 @@ class XtdGearModels
 					description = "And Icarus laughed as he fell, for he knew to fall means to once have soared...";
 					//image = "xxx";
 				};
+				class Oddball
+				{
+					label = "Oddball";
+					description = "I like balls - Roseiry";
+					//image = "xxx";
+				};
+				class Logan
+				{
+					label = "Logan";
+					description = "Needs to get Ilvl 230";
+					//image = "xxx";
+				};
+				class Komrk
+				{
+					label = "Komrk";
+					description = "Com-rk (slaps knee)";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -1127,6 +1184,21 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Alpha";
+		};
+		class 332nd_Helmet_P2_Oddball
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Oddball";
+		};
+		class 332nd_Helmet_P2_Logan
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Logan";
+		};
+		class 332nd_Helmet_P2_Komrk
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Komrk";
 		};
 	};
 };

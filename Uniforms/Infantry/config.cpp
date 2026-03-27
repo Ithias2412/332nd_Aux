@@ -479,6 +479,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Fusion: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Fusion)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Fusion_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1043,6 +1055,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cosmos.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Fusion_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Fusion";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Fusion.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Fusion.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1166,6 +1188,7 @@ class XtdGearModels
 					"Clari",
 					"Crota",
 					"Cosmos",
+					"Fusion",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1403,6 +1426,12 @@ class XtdGearModels
 					description = "CAGmos";
 					//image = "xxx";
 				};
+				class Fusion
+				{
+					label = "Fusion";
+					description = "Avalonian";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1601,6 +1630,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Cosmos";
+		};
+		class 332nd_Uniform_Clone_Fusion
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Fusion";
 		};
 	};
 };

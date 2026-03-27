@@ -20,52 +20,24 @@ class cfgWeapons
 	class SWLB_clone_commander_binocular;
 	class Rangefinder;
 
-//Primary
-/*
-	class 332nd_Binocular_Base : Rangefinder
-	{
-		scope = 1;
-		author = "Frankie";
-		displayName = "[332nd] Binocular Base";
-		descriptionShort = "Binocular Base";
-		model = "\SWLB_equipment\binoculars\SWLB_clone_binocular.p3d";
-		modelOptics = "\SWLB_equipment\binoculars\SWLB_clone_commander_binocular_optic.p3d";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\SWLB_equipment\binoculars\data\SWLB_clone_binocular_co.paa"};
-		picture = "\SWLB_equipment\binoculars\data\ui\icon_SWLB_clone_commander_binocular_ca.paa";
-		visionMode[] = {"Normal","NVG","TI"};
-		thermalMode[] = {0,1};
-		opticsZoomMin = 0.01;
-        opticsZoomMax = 0.2;
-        opticsZoomInit = 0.2;
-
-        distanceZoomMin = 100;
-        distanceZoomMax = 3000;
-
-        // Optional: enable zoom in steps
-        discreteDistance[] = {100, 200, 300, 400, 500, 1000, 2000, 3000};
-        discreteDistanceInitIndex = 0;
-
-        ACE_Override = 1; // If using ACE
-		ace_rangefinder_enabled = 1;          // ENABLE rangefinder mode
-        ace_rangefinder_maxRange = 5000;      // Set maximum range in meters
-        ace_rangefinder_minRange = 1;         // Minimum range
-
-        ace_rangefinder_accuracy = 1;         // Higher = more accurate (1 = best)
-        ace_rangefinder_compass = 1;          // Enable compass overlay
-	};
-*/
 	class 332nd_Binocular: JLTS_CloneBinocular
 	{
 		author="Ithias";
 		displayName="[332nd] Binocular";
-		
+		Laser = 0;
+		magazines[] = {"Laserbatteries"};
+		weaponInfoType = "RscOptics_LaserDesignator";
 	};
-	/*
-	class 332nd_Laser_Designator: SWLB_clone_commander_binocular
+	class 332nd_Binocular_RTO: JLTS_CloneBinocular
 	{
-		author="Frankie";
-		displayName="[332nd] Laser Designator";
+		author="Ithias";
+		displayName="[332nd] Binocular (RTO)";
+		//thermalMode[] = {2};
+		thermalMode[] = {0};
+		visionMode[] = {"Normal","NVG","Ti"};
+		hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_binocular_black_co.paa"};
+		Laser = 1;
+		magazines[] = {"Laserbatteries"};
+		weaponInfoType = "RscOptics_LaserDesignator";
 	};
-	*/
 };

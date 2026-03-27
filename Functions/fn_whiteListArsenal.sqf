@@ -151,11 +151,9 @@ params ["_obj"];
 "332nd_DroidPopper_x1_mag",
 "3AS_SmokeBlue",
 "3AS_SmokeGreen",
-"3AS_SmokeOrange",
 "3AS_SmokePurple",
 "3AS_SmokeRed",
 "3AS_SmokeWhite",
-"3AS_SmokeYellow",
 "332nd_Acti_Bandage_Weap",
 "332nd_Bacta_Spray_Weap",
 "332nd_Painkiller_Weap",
@@ -365,6 +363,14 @@ params ["_obj"];
 "332nd_Smoke_LauncherGrenade_3GL_Blue",
 "332nd_Smoke_LauncherGrenade_3GL_Purple",
 "332nd_Smoke_LauncherGrenade_3GL_Yellow",
+"332nd_Helmet_P2_Icurus",
+"332nd_Helmet_P2_Alpha",
+"332nd_Helmet_P2_Oddball",
+"332nd_Helmet_P2_Logan",
+"332nd_Helmet_P2_Komrk",
+"332nd_Helmet_Pilot_Ghillie",
+"332nd_Uniform_Clone_Fusion",
+"332nd_Binocular_RTO",
 "332nd_Smoke_LauncherGrenade_3GL_Orange"]
 
 ] call ace_arsenal_fnc_initBox

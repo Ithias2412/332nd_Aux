@@ -85,7 +85,6 @@ class CfgVehicles
 		};
 	};
 	
-	class 3AS_Advanced_DSD;
 	class 332nd_CIS_Advanced_DSD: 3AS_Advanced_DSD
 	{
 		faction="332nd_CIS_Faction";

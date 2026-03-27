@@ -95,6 +95,14 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Gizmo.paa",
 		};
 	};
+	class 332nd_Helmet_Pilot_Ghillie: 332nd_Helmet_Pilot
+	{
+		displayName="[332nd] Pilot Helmet (Ghillie)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Ghillie.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -127,6 +135,7 @@ class XtdGearModels
 					"Jorge", 
 					"Cosmos",
 					"Gizmo",
+					"Ghillie",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -146,6 +155,12 @@ class XtdGearModels
 				{
                     label = "Gizmo";
                     description = "Condemned to changing a million pixels to grey";
+                    //image = "xxx";
+				};
+				class Ghillie
+				{
+                    label = "Ghillie";
+                    description = "Weewoo Light enjoyer";
                     //image = "xxx";
 				};
             };
@@ -176,6 +191,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Gizmo";
+		};
+		class 332nd_Helmet_Pilot_Ghillie
+		{
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Ghillie";
 		};
 	};
 };
