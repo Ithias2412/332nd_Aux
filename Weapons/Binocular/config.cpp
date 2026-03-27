@@ -25,14 +25,13 @@ class cfgWeapons
 		author="Ithias";
 		displayName="[332nd] Binocular";
 		Laser = 0;
-		magazines[] = {"Laserbatteries"};
+		magazines[] = {};
 		weaponInfoType = "RscOptics_LaserDesignator";
 	};
 	class 332nd_Binocular_RTO: JLTS_CloneBinocular
 	{
 		author="Ithias";
 		displayName="[332nd] Binocular (RTO)";
-		//thermalMode[] = {2};
 		thermalMode[] = {0};
 		visionMode[] = {"Normal","NVG","Ti"};
 		hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_binocular_black_co.paa"};
