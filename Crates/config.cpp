@@ -623,10 +623,10 @@ class CfgVehicles
 
 		class TransportBackpacks
 		{
-			class 332nd_Bag
+			class 332nd_Back
 			{
 				count = 5;
-				backpack = "332nd_Bag";
+				backpack = "332nd_Back";
 			};
 		};
 	};
@@ -914,10 +914,10 @@ class CfgVehicles
 
 		class TransportBackpacks
 		{
-			class 332nd_Bag
+			class 332nd_Back
 			{
 				count = 5;
-				backpack = "332nd_Bag";
+				backpack = "332nd_Back";
 			};
 		};
 
