@@ -551,6 +551,18 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Komrk.paa"
 		};
 	};
+class 332nd_Helmet_P2_Coal: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Coal)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Coal.paa"
+		};
+	};
 
 };
 
@@ -653,6 +665,7 @@ class XtdGearModels
 					"Oddball",
 					"Logan",
 					"Komrk",
+					"Coal",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -980,6 +993,12 @@ class XtdGearModels
 					description = "Com-rk (slaps knee)";
 					//image = "xxx";
 				};
+				class Coal
+				{
+					label = "Coal";
+					description = "King of the Chuds";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -1199,6 +1218,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Komrk";
+		};
+		class 332nd_Helmet_P2_Coal
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Coal";
 		};
 	};
 };
