@@ -563,19 +563,7 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Coal.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Crucial: 332nd_Helmet_P2_CR
-	{
-		displayName="[332nd] P2 Helmet (Crucial)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crucial.paa"
-		};
-	};
-class 332nd_Helmet_P2_Wesker: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Wesker: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Wesker)";
 		hiddenSelections[]=
