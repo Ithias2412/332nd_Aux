@@ -1012,12 +1012,6 @@ class XtdGearModels
 					description = "King of the Chuds";
 					//image = "xxx";
 				};
-				class Crucial
-				{
-					label = "Crucial";
-					description = "TBD";
-					//image = "xxx";
-				};
 				class Wesker
 				{
 					label = "Wesker";
@@ -1248,11 +1242,6 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Coal";
-		};
-		class 332nd_Helmet_P2_Crucial
-		{
-            model = "332nd_Helmets_P2_Extended";
-            Customs = "Crucial";
 		};
 		class 332nd_Helmet_P2_Wesker
 		{
