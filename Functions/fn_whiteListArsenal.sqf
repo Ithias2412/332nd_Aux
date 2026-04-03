@@ -371,6 +371,7 @@ params ["_obj"];
 "332nd_Helmet_Pilot_Ghillie",
 "332nd_Uniform_Clone_Fusion",
 "332nd_Binocular_RTO",
-"332nd_Smoke_LauncherGrenade_3GL_Orange"]
+"332nd_Smoke_LauncherGrenade_3GL_Orange",
+"332nd_Helmet_P2_Crucial"]
 
 ] call ace_arsenal_fnc_initBox
