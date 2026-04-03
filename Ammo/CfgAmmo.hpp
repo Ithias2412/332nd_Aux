@@ -180,7 +180,7 @@ class CfgAmmo
 	class 332nd_Gas_Level_L2: 332nd_Base_Ammo_IDA
 	{
 		// B1=1 B2=4
-		hit = 25;
+		hit = 30;
 		caliber = 3;
 		//typicalspeed = 1200;
 	};

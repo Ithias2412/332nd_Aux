@@ -15,7 +15,7 @@ class CfgPatches
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class CfgWeapons 
 {
 	class HeadgearItem;
 	class JLTS_CloneHelmetP2;
@@ -563,6 +563,18 @@ class 332nd_Helmet_P2_Coal: 332nd_Helmet_P2_CR
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Coal.paa"
 		};
 	};
+class 332nd_Helmet_P2_Wesker: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Wesker)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Wesker.paa"
+		};
+	};
 
 };
 
@@ -666,6 +678,7 @@ class XtdGearModels
 					"Logan",
 					"Komrk",
 					"Coal",
+					"Wesker",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -999,6 +1012,12 @@ class XtdGearModels
 					description = "King of the Chuds";
 					//image = "xxx";
 				};
+				class Wesker
+				{
+					label = "Wesker";
+					description = "7 Minutes";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -1223,6 +1242,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Coal";
+		};
+		class 332nd_Helmet_P2_Wesker
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Wesker";
 		};
 	};
 };

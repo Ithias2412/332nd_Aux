@@ -491,6 +491,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Jorge: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Jorge)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Jorge_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1065,6 +1077,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Fusion.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Jorge_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Jorge";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Jorge.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Jorge.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1189,6 +1211,7 @@ class XtdGearModels
 					"Crota",
 					"Cosmos",
 					"Fusion",
+					"Jorge",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1432,6 +1455,12 @@ class XtdGearModels
 					description = "Avalonian";
 					//image = "xxx";
 				};
+				class Jorge
+				{
+					label = "Jorge";
+					description = "Is into Frieren a little too much";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1635,6 +1664,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Fusion";
+		};
+		class 332nd_Uniform_Clone_Jorge
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Jorge";
 		};
 	};
 };
