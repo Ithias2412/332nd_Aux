@@ -551,7 +551,7 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Komrk.paa"
 		};
 	};
-class 332nd_Helmet_P2_Coal: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Coal: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Coal)";
 		hiddenSelections[]=
@@ -561,6 +561,18 @@ class 332nd_Helmet_P2_Coal: 332nd_Helmet_P2_CR
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Coal.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Crucial: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Crucial)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Crucial.paa"
 		};
 	};
 class 332nd_Helmet_P2_Wesker: 332nd_Helmet_P2_CR
@@ -1012,6 +1024,12 @@ class XtdGearModels
 					description = "King of the Chuds";
 					//image = "xxx";
 				};
+				class Crucial
+				{
+					label = "Crucial";
+					description = "TBD";
+					//image = "xxx";
+				};
 				class Wesker
 				{
 					label = "Wesker";
@@ -1242,6 +1260,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Coal";
+		};
+		class 332nd_Helmet_P2_Crucial
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Crucial";
 		};
 		class 332nd_Helmet_P2_Wesker
 		{
