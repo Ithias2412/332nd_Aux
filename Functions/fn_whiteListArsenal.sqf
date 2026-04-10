@@ -129,7 +129,7 @@ params ["_obj"];
 "332nd_Marine_Backpack_NCO",
 "332nd_Marine_Backpack_RTO",
 "332nd_JT12",
-"332nd_JT12_LR",
+"332nd_JT12_NCO",
 "332nd_MC",
 "332nd_NVG_Chip",
 "332nd_NVG_Rangefinder",
@@ -375,6 +375,7 @@ params ["_obj"];
 "332nd_Helmet_P2_Crucial",
 "332nd_Uniform_Clone_Jorge",
 "332nd_Helmet_P2_Wesker",
+"332nd_Helmet_P2_Butch",
 "332nd_Smoke_LauncherGrenade_3GL_Orange"]
 
 ] call ace_arsenal_fnc_initBox

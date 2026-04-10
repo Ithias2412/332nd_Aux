@@ -575,6 +575,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Wesker.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Butch: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Butch)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Butch.paa"
+		};
+	};
 
 };
 
@@ -679,6 +691,7 @@ class XtdGearModels
 					"Komrk",
 					"Coal",
 					"Wesker",
+					"Butch",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1018,6 +1031,12 @@ class XtdGearModels
 					description = "7 Minutes";
 					//image = "xxx";
 				};
+				class Butch
+				{
+					label = "Butch";
+					description = "His Lordship";
+					//image = "xxx";
+				};
             };
         };
     };
@@ -1247,6 +1266,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Wesker";
+		};
+		class 332nd_Helmet_P2_Butch
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Butch";
 		};
 	};
 };
