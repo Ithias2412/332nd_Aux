@@ -511,7 +511,7 @@ class CfgVehicles
 							"332nd_Anvil_I",
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
-							//"332nd_Anvil_X_K",
+							"332nd_Anvil_X_K",
 						};
 						//turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
@@ -531,7 +531,7 @@ class CfgVehicles
 							"332nd_Anvil_I",
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
-							//"332nd_Anvil_X_K",
+							"332nd_Anvil_X_K",
 						};
 						//turret[]={0};
 						UIposition[]={0.079999998,0.34999999};
@@ -551,7 +551,7 @@ class CfgVehicles
 							"332nd_Anvil_I",
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
-							//"332nd_Anvil_X_K",
+							"332nd_Anvil_X_K",
 							"332nd_Dropcrate_PW1",
 						};
 						//turret[]={0};
@@ -1167,7 +1167,7 @@ class CfgVehicles
 							"332nd_Anvil_I",
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
-							//"332nd_Anvil_X_K",
+							"332nd_Anvil_X_K",
 						};
 						//turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
@@ -1187,7 +1187,7 @@ class CfgVehicles
 							"332nd_Anvil_I",
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
-							//"332nd_Anvil_X_K",
+							"332nd_Anvil_X_K",
 						};
 						//turret[]={0};
 						UIposition[]={0.079999998,0.34999999};
@@ -1207,7 +1207,7 @@ class CfgVehicles
 							"332nd_Anvil_I",
 							"332nd_Anvil_IV",
 							"332nd_Anvil_X_S",
-							//"332nd_Anvil_X_K",
+							"332nd_Anvil_X_K",
 							"332nd_Dropcrate_PW1",
 						};
 						//turret[]={0};
