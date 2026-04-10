@@ -286,7 +286,7 @@ class ace_medical_treatment_actions
             {
                 "332nd_Bacta_Spray_Weap",
             };
-        treatmentTime = 6;
+        treatmentTime = 8;
     };
     class 332nd_Painkiller : Morphine
     {
