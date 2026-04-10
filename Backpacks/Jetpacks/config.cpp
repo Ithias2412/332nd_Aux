@@ -18,7 +18,7 @@ class CfgVehicles
 	{
 		scope=0;
 		author="Cherryy";
-		maximumLoad=150;
+		maximumLoad=50;
 		tf_hasLRradio=0;
 		tf_range=25000;
 		//nsm
@@ -62,7 +62,7 @@ class CfgVehicles
 		};
 		picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
     };
-	class 332nd_JT12_LR: 332nd_JT12
+	class 332nd_JT12_NCO: 332nd_JT12
 	{
 		hiddenSelections[]=
 		{
@@ -72,7 +72,7 @@ class CfgVehicles
 		{
 			"332nd_Aux\Backpacks\tex\332nd_JT12_LR.paa"
 		};
-		displayName="[332nd] JT-12 (LR)";
+		displayName="[332nd] JT-12 (NCO)";
 		tf_hasLRradio=1;
 		tf_encryptionCode="tf_west_radio_code";
 		tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
@@ -117,6 +117,8 @@ class CfgVehicles
 		};
 	};
 
+	
+/*
 	class 332nd_Jetpack_Base_2: B_Kitbag_rgr
 	{
 		scope=0;
@@ -165,6 +167,7 @@ class CfgVehicles
 		};
 		picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
 	};
+*/
 };
 /*class XtdGearModels
 {

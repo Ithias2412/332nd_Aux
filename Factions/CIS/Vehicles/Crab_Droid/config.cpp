@@ -42,6 +42,28 @@ class CfgVehicles
 			{
 				weapons[] = 
 				{
+					"3AS_J10_Turret_MG"
+				};
+				magazines[] = 
+				{
+					"3AS_500Rnd_J10MG_Mag",
+					"3AS_500Rnd_J10MG_Mag",
+					"3AS_500Rnd_J10MG_Mag",
+					"3AS_500Rnd_J10MG_Mag",
+					"3AS_500Rnd_J10MG_Mag",
+					"3AS_500Rnd_J10MG_Mag",
+					"3AS_500Rnd_J10MG_Mag",
+					"3AS_500Rnd_J10MG_Mag",
+				};
+			};
+		};
+		/*
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = 
+				{
 					"332nd_25mw_H96C_AC"
 				};
 				magazines[] = 
@@ -57,6 +79,7 @@ class CfgVehicles
 				};
 			};
 		};
+		*/
 	};
 };
 

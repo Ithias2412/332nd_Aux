@@ -300,6 +300,9 @@ class CfgVehicles {
         respawnMagazines[] = {"332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", "332nd_CIS_Wrist_Blaster_Mag", };
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch","332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch","332nd_NVG_Chip"};
+		hiddenSelections[] = {"camo_arms","legs","torso"};
+		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\b2\data\arms_co.paa","\ls\core\addons\characters_droid\uniforms\b2\data\legs_co.paa","\ls\core\addons\characters_droid\uniforms\b2\data\torso_co.paa"};
+		model = "\ls\core\addons\characters_droid\uniforms\b2\ls_uniform_droid_b2.p3d";
 		class HitPoints: HitPoints
 		{
 			class HitFace

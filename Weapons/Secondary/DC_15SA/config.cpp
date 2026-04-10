@@ -149,6 +149,7 @@ class cfgWeapons
 		displayName = "[332nd] NFA/Cali Compliant Suppressor (ARF)";
 		model = "\3AS\3AS_Weapons\Republic\ACC\3AS_acca_DC17S_Muzzle_F";
 		picture = "";
+		scope = 1;
 		class ItemInfo: ItemInfo
 		{
 			class MagazineCoef
