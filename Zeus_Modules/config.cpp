@@ -9,7 +9,10 @@ class CfgPatches {
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"WBK_DroidsSw",
+		};
 	};
 };
 
