@@ -790,6 +790,8 @@ class CfgAmmo
 	class ShotDeployBase;
 	class 332nd_Hydra_Smoke_Deploy : ShotDeployBase
 	{
+		simulation = "shotSubmunitions";
+		triggerOnImpact = 1;
 		model = "\A3\weapons_F\ammo\mag_univ.p3d";
 		proxyShape = "\A3\weapons_F\ammo\mag_univ.p3d";
 		hit = 0;
