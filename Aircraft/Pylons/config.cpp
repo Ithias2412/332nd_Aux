@@ -768,7 +768,7 @@ class CfgAmmo
 	{
 		effectsMissile = "332nd_Effect_Hydra";
 		simulation = "shotSubmunitions";
-		submunitionAmmo = "332nd_Hydra_Smoke_Deploy";
+		submunitionAmmo = "332nd_Smoke_Sub";
 		submunitionConeAngle = 1;
 		submunitionConeType[] = {"randomcenter", 1};
 		triggerDistance = 5;
