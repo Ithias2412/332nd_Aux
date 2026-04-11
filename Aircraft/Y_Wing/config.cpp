@@ -265,6 +265,7 @@ class CfgVehicles
 								"332nd_Forge_III_Y",
 								"332nd_Forge_X_C",
 								//"332nd_Forge_X_N",
+								"B_HARM",
 							};
 						// turret[]={0};
 						UIposition[] = {0.5, 0.25};
@@ -284,6 +285,7 @@ class CfgVehicles
 								"332nd_Forge_III_Y",
 								"332nd_Forge_X_C",
 								//"332nd_Forge_X_N",
+								"B_HARM",
 							};
 						// turret[]={0};
 						UIposition[] = {0.55, 0.35};
@@ -303,6 +305,7 @@ class CfgVehicles
 								"332nd_Forge_III_Y",
 								"332nd_Forge_X_C",
 								//"332nd_Forge_X_N",
+								"B_HARM",
 							};
 						// turret[]={0};
 						UIposition[] = {0.6, 0.45};
@@ -322,6 +325,7 @@ class CfgVehicles
 								"332nd_Forge_III_Y",
 								"332nd_Forge_X_C",
 								//"332nd_Forge_X_N",
+								"B_HARM",
 							};
 						// turret[]={0};
 						UIposition[] = {0.45, 0.4};

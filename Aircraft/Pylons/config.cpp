@@ -44,6 +44,7 @@ class CfgWeapons
 	class FSNB_B61_4_Timed_W; // Forge X-N
 	class missiles_DAR;
 	class Mk82BombLauncher;
+	class weapon_HARMLauncher;
 
 	class 332nd_Hammer_I : missiles_ASRAAM
 	{
@@ -174,6 +175,14 @@ class CfgWeapons
 				"332nd_Forge_X_C_Mag",
 			};
 	};
+	class 332nd_Anvil_VI : weapon_HARMLauncher
+	{
+		displayName = "[332nd] Anvil V";
+		magazines[] =
+			{
+				"332nd_Anvil_VI_Mag",
+			};
+	};
 
 	// cannon
 	class CannonCore;
@@ -300,6 +309,7 @@ class CfgMagazines
 	class FSNB_B61_4_Timed_M;	 // Forge X-N
 	class PylonRack_12Rnd_missiles;
 	class 4Rnd_BombCluster_01_F;
+	class PylonMissile_Missile_HARM_x1;
 
 	class 332nd_Hammer_I_Mag : PylonMissile_1Rnd_AAA_missiles
 	{
@@ -526,6 +536,20 @@ class CfgMagazines
 		pylonWeapon = "332nd_Forge_X_C";
 		weight = 0;
 	};
+	class 332nd_Anvil_VI_Mag : PylonMissile_Missile_HARM_x1 // "Sima cant fly for shit" Mouse, c 2026
+	{
+		ammo = "332nd_Anvil_VI_Ammo";
+		author = "Ithias";
+		count = 1;
+		descriptionShort = "Long-range, anti-radiation missile with explosive warhead";
+		displayName = "[332nd] Anvil VI";
+		displayNameShort = "ARM";
+		hardpoints[] =
+			{
+				"B_HARM",
+			};
+		pylonWeapon = "332nd_Anvil_VI";
+	};
 
 	// Cannon
 	class 3as_LAAT_1000Rnd_Medium_shells;
@@ -603,6 +627,7 @@ class CfgAmmo
 	class BombCluster_01_Ammo_F;
 	class ammo_Bomb_SDB;
 	class ace_missile_gbu_12;
+	class ammo_Missile_HARM;
 
 	class 332nd_Hammer_I_Ammo : M_Air_AA
 	{
@@ -720,6 +745,12 @@ class CfgAmmo
 	class 332nd_Forge_III_Ammo_Y : 332nd_Forge_III_Ammo {
 
 	};
+	class 332nd_Anvil_VI_Ammo : ammo_Missile_HARM
+	{
+		displayName = "[332nd] Anvil V";
+		effectsMissile = "332nd_Effect_Anvil";
+		fuseDistance = 5;
+	};
 
 	// cannon
 	class 3as_LAAT_Medium_Energy_shell;
@@ -836,6 +867,7 @@ class CfgAmmo
 	};
 };
 
+// Effect
 class 332nd_Effect_Hammer
 {
 	class 332nd_Light_Hammer
