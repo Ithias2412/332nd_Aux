@@ -108,6 +108,8 @@ class CfgVehicles
 		displayName = "[332nd] LAAT/le";
 		scope = 2;
 		faction = "332nd_Faction";
+		radarTargetSize = 0.2;
+		irTargetSize = 0.2;
 		class ls_impulsor: ls_impulsor_base
 		{
 			speed = 300;

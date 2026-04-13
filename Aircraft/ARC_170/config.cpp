@@ -74,6 +74,7 @@ class CfgVehicles
 		faction="332nd_Faction";
 		//editorPreview="";
 		maxSpeed = 600;
+		irTargetSize = 1;
 		weapons[]=
 		{
 			"332nd_ARC_Cannon",

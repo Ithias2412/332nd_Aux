@@ -250,6 +250,11 @@ class CfgVehicles
 				count = 25;
 				magazine = "332nd_Heavy_Repeater_Mag";
 			};
+			class 332nd_Mortar_Mag
+			{
+				count = 25;
+				magazine = "332nd_Mortar_Mag";
+			};
 
 			// moved from TransportItems – these are mags/grenades
 			class 3AS_SmokeWhite
@@ -1087,6 +1092,16 @@ class CfgVehicles
 			{
 				count = 25;
 				magazine = "332nd_PLX1_Mag";
+			};
+			class 332nd_Heavy_Repeater_Mag
+			{
+				count = 25;
+				magazine = "332nd_Heavy_Repeater_Mag";
+			};
+			class 332nd_Mortar_Mag
+			{
+				count = 25;
+				magazine = "332nd_Mortar_Mag";
 			};
 
 			// moved from Items – grenade/mag variants

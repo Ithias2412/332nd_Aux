@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[] = 
         {
-            "332nd_CIS_JIT",
+			"332nd_CIS_JIT",
         };
 		weapons[] = 
         {
@@ -107,20 +107,20 @@ class CfgVehicles
 					{
 						class AirTarget
 						{
-							minRange=9000;
-							maxRange=9000;
+							minRange=0;
+							maxRange=4000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
 						class GroundTarget
 						{
-							minRange=9000;
-							maxRange=9000;
+							minRange=0;
+							maxRange=4000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
 						animDirection="mainGun";
-						typeRecognitionDistance=9000;
+						typeRecognitionDistance=4000;
 						maxTrackableSpeed=1388.89;
 					};
 				};
@@ -198,9 +198,6 @@ class CfgVehicles
             };
         };
     };
-
- 
-
 };
 class CfgAmmo 
 {
@@ -213,18 +210,20 @@ class CfgAmmo
 class CfgMagazines
 {
 
-	class 332nd_CIS_A2A_Missile_Mag;
-    class 332nd_JIT_Missile_Pack: 332nd_CIS_A2A_Missile_Mag
+	class 332nd_Hammer_II_Mag;
+    class 332nd_JIT_Missile_Pack: 332nd_Hammer_II_Mag
     {
+		displayName = "[332nd] JIT-10 Missile";
 		ammo = "332nd_JIT_Missile";
         count = 12;
 	};
 }; 
 class CfgWeapons 
 { 
-	class 332nd_CIS_A2A_Missile;
-    class 332nd_JIT_Missile_Launcher: 332nd_CIS_A2A_Missile
+	class 332nd_Hammer_II;
+    class 332nd_JIT_Missile_Launcher: 332nd_Hammer_II
     {
+		displayName = "[332nd] JIT-10 Missile";
 		magazines[] = {"332nd_JIT_Missile_Pack"};
 		reloadTime = 1.5;
 	};

@@ -52,6 +52,8 @@ class CfgVehicles
 		displayname = "[332nd] Y-Wing";
 		faction = "332nd_Faction";
 		maxSpeed = 550;
+		radarTargetSize = 1; // was 0.2
+		irTargetSize = 1;
 		hiddenselectionstextures[] = 
 		{
 			"332nd_Aux\Aircraft\Y_Wing\Tex\332nd_Y_Wing_Chasis.paa",
@@ -296,6 +298,7 @@ class CfgVehicles
 							"332nd_Forge_I",
 							"332nd_Forge_III_Y",
 							"332nd_Forge_X_C",
+							"332nd_Anvil_V",
 							//"332nd_Forge_X_N",
 						};
 						//turret[]={0};
@@ -315,6 +318,7 @@ class CfgVehicles
 							"332nd_Forge_I",
 							"332nd_Forge_III_Y",
 							"332nd_Forge_X_C",
+							//"332nd_Anvil_V",
 							//"332nd_Forge_X_N",
 						};
 						//turret[]={0};

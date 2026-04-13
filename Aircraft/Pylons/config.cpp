@@ -41,6 +41,7 @@ class CfgWeapons
 	class FSNB_B61_4_Timed_W; // Forge X-N
 	class missiles_DAR;
 	class Mk82BombLauncher;
+	class weapon_HARMLauncher;
 
 	
 	class 332nd_Hammer_I: missiles_ASRAAM
@@ -109,6 +110,14 @@ class CfgWeapons
 			"332nd_Anvil_IV_Mag",
 		};
 		canLock = 1;
+	};
+	class 332nd_Anvil_V: weapon_HARMLauncher
+	{
+		displayName = "[332nd] Anvil V";
+		magazines[] = 
+		{
+			"332nd_Anvil_V_Mag",
+		};
 	};
 	class 332nd_CIS_ATG_Missile: 332nd_Anvil_I
 	{
@@ -295,6 +304,7 @@ class CfgMagazines
 	class FSNB_B61_4_Timed_M; // Forge X-N
 	class PylonRack_12Rnd_missiles;
 	class 4Rnd_BombCluster_01_F;
+	class PylonMissile_Missile_HARM_x1;
 
 	class 332nd_Hammer_I_Mag: PylonMissile_1Rnd_AAA_missiles
 	{
@@ -418,6 +428,23 @@ class CfgMagazines
 		mass = 90;
 		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_Rail_x1_F";
 		pylonWeapon = "332nd_Anvil_IV";
+		weight = 0;
+	};
+	class 332nd_Anvil_V_Mag: PylonMissile_Missile_HARM_x1
+	{
+		ammo = "332nd_Anvil_V_Ammo";
+		author = "Ithias";
+		count = 2;
+		descriptionShort = "Medium-range, anti-radiation, air-to-surface missile with high-explosive warhead";
+		displayName = "[332nd] Anvil V";
+		displayNameShort = "Anti-Radiation AG";
+		hardpoints[] = 
+		{
+			"332nd_Anvil_V",
+		};
+		mass = 90;
+		model = "\A3\Weapons_F_Jets\Ammo\PylonPod_Missile_AGM_02_Rail_x1_F";
+		pylonWeapon = "332nd_Anvil_V";
 		weight = 0;
 	};
 	class 332nd_CIS_ATG_Missile_Mag: 332nd_Anvil_I_Mag
@@ -584,6 +611,7 @@ class CfgAmmo
 	class BombCluster_01_Ammo_F;
 	class ammo_Bomb_SDB;
 	class ace_missile_gbu_12;
+	class ammo_Missile_HARM;
 	
 	class 332nd_Hammer_I_Ammo: M_Air_AA
 	{
@@ -665,6 +693,13 @@ class CfgAmmo
 		maneuvrability = 30;
 		//sideAirFriction = 0.15;
 		sideAirFriction = 0.5;
+	};
+	class 332nd_Anvil_V_Ammo: ammo_Missile_HARM
+	{
+		effectsMissile = "332nd_Effect_Anvil";
+		submunitionAmmo = "332nd_Anvil_I_Ammo_Penetrator";
+		hit = 400;
+		fuseDistance = 5;
 	};
 	class 332nd_Anvil_I_Ammo_Penetrator: ammo_Penetrator_AGM_02
 	{

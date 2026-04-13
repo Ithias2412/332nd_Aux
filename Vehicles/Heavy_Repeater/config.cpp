@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class 332nd_CSW
+	class 332nd_CSW_Heavy_Repeater
 	{
 		requiredAddons[] = {};
 		units[] = 
