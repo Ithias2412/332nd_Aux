@@ -4,7 +4,8 @@ class CfgPatches
 	{
 		units[] = 
         {
-            "332nd_CIS_HMP_Gunship",
+            "332nd_CIS_HMP_AT_Gunship",
+            "332nd_CIS_HMP_AA_Gunship",
 			"332nd_CIS_HMP_Transport",
         };
 		weapons[] = 
@@ -94,11 +95,128 @@ class CfgVehicles
 	{
 		
 	};
-	class 332nd_CIS_HMP_Gunship: 3AS_HMP_Gunship
+	class 332nd_CIS_HMP_AT_Gunship: 3AS_HMP_Gunship
 	{
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Helicopters";
-		displayName="HMP Gunship";
+		displayName="HMP Gunship (AT)";
+		editorPreview = "";
+		crew = "332nd_Droid_B1_Pilot";
+		class Components: Components 
+		{
+			class TransportPylonsComponent: TransportPylonsComponent
+			{
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment="332nd_CIS_ATG_Missile_Mag";
+						priority = 5;
+						hardpoints[]=
+						{
+							"332nd_CIS_ATG_Missile",
+						};
+						turret[]={0};
+						UIposition[]={0.059999999,0.40000001};
+					};
+					class PylonLeft2: PylonLeft1
+					{
+						attachment="332nd_CIS_ATG_Missile_Mag";
+						priority = 5;
+						hardpoints[]=
+						{
+							"332nd_CIS_A2A_Missile",
+						};
+						turret[]={0};
+						UIposition[]={0.079999998,0.34999999};
+					};
+					class PylonLeft3: PylonLeft1
+					{
+						attachment="332nd_CIS_ATG_Missile_Mag";
+						priority = 5;
+						hardpoints[]=
+						{
+							"332nd_CIS_ATG_Missile",
+						};
+						turret[]={0};
+						UIposition[]={0.1,0.30000001};
+					};
+					class PylonRight3: PylonLeft3
+					{
+						mirroredMissilePos=3;
+						UIposition[]={0.58999997,0.30000001};
+					};
+					class PylonRight2: PylonLeft2
+					{
+						mirroredMissilePos=2;
+						UIposition[]={0.62,0.34999999};
+					};
+					class PylonRight1: PylonLeft1
+					{
+						mirroredMissilePos=1;
+						UIposition[]={0.63999999,0.40000001};
+					};
+				};
+			};
+		};
+		weapons[] = 
+		{
+			"332nd_HMP_Autocannon",
+			"CMFlareLauncher"
+		};
+		magazines[] = 
+		{
+			"332nd_HMP_Cannon_Mag",
+			"332nd_HMP_Cannon_Mag",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine"
+		};
+		class Turrets: Turrets
+		{
+			class Copilot: Copilot
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+			class LeftGun: LeftGun
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+			class RightDoorGun: RightDoorGun
+			{
+				weapons[] = 
+				{
+					"332nd_HMP_Autocannon",
+				};
+				magazines[] = 
+				{
+					"332nd_HMP_Cannon_Mag",
+					"332nd_HMP_Cannon_Mag",
+				};
+			};
+		};
+	};
+	class 332nd_CIS_HMP_AA_Gunship: 3AS_HMP_Gunship
+	{
+		faction="332nd_CIS_Faction";
+		editorSubcategory = "EdSubcat_332nd_Helicopters";
+		displayName="HMP Gunship (AA)";
 		editorPreview = "";
 		crew = "332nd_Droid_B1_Pilot";
 		class Components: Components 
@@ -131,11 +249,11 @@ class CfgVehicles
 					};
 					class PylonLeft3: PylonLeft1
 					{
-						attachment="332nd_CIS_ATG_Missile_Mag";
+						attachment="332nd_CIS_A2A_Missile_Mag";
 						priority = 5;
 						hardpoints[]=
 						{
-							"332nd_CIS_ATG_Missile",
+							"332nd_CIS_A2A_Missile",
 						};
 						turret[]={0};
 						UIposition[]={0.1,0.30000001};

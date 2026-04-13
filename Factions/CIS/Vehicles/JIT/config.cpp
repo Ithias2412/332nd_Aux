@@ -107,20 +107,20 @@ class CfgVehicles
 					{
 						class AirTarget
 						{
-							minRange=8000;
-							maxRange=8000;
+							minRange=9000;
+							maxRange=9000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
 						class GroundTarget
 						{
-							minRange=8000;
-							maxRange=8000;
+							minRange=9000;
+							maxRange=9000;
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
 						animDirection="mainGun";
-						typeRecognitionDistance=8000;
+						typeRecognitionDistance=9000;
 						maxTrackableSpeed=1388.89;
 					};
 				};
@@ -204,8 +204,8 @@ class CfgVehicles
 };
 class CfgAmmo 
 {
-	class 332nd_CIS_A2A_Missile_Ammo;
-    class 332nd_JIT_Missile: 332nd_CIS_A2A_Missile_Ammo
+	class 332nd_Hammer_II_Ammo;
+    class 332nd_JIT_Missile: 332nd_Hammer_II_Ammo
     {
 		effectsMissile = "332nd_Effect_CIS_A2A";
     };
