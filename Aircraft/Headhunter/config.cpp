@@ -58,6 +58,8 @@ class CfgVehicles
 		displayname = "[332nd] Z-95 Headhunter";
 		faction = "332nd_Faction";
 		maxSpeed = 1000;
+		radarTargetSize = 1;
+		irTargetSize = 1;
 		hiddenselectionstextures[] = 
 		{
 			"332nd_Aux\Aircraft\Headhunter\Tex\332nd_Z95.paa",

@@ -503,6 +503,30 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Crucial: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Crucial)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Crucial_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Logan: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Logan)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Logan_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1087,6 +1111,26 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Jorge.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Crucial_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Crucial";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crucial.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crucial.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Logan_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Logan";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Logan.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Logan.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1212,6 +1256,8 @@ class XtdGearModels
 					"Cosmos",
 					"Fusion",
 					"Jorge",
+					"Crucial",
+					"Logan",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1461,10 +1507,22 @@ class XtdGearModels
 					description = "Is into Frieren a little too much";
 					//image = "xxx";
 				};
+				class Crucial
+				{
+					label = "Crucial";
+					description = "Jailer from DbD";
+					//image = "xxx";
+				};
+				class Logan
+				{
+					label = "Logan";
+					description = "Never got Ilvl for raid";
+					//image = "xxx";
+				};
 			};
 		};
 	};
-};
+};  
 
 class XtdGearInfos
 {
@@ -1670,6 +1728,16 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Customs = "Jorge";
 		};
+		class 332nd_Uniform_Clone_Crucial
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Crucial";
+		};
+		class 332nd_Uniform_Clone_Logan
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Logan";
+		};
 	};
-};
+}; 
 
