@@ -1,3 +1,12 @@
+class Extended_PreInit_EventHandlers
+{
+    class 332nd_Pylons
+    {
+        init = "call compile preprocessFileLineNumbers '332nd_Aux\Aircraft\Pylons\XEH_preInit.sqf'";
+    };
+};
+
+
 class CfgPatches
 {
 	class 332nd_Pylons
@@ -13,9 +22,7 @@ class CfgPatches
 				"332nd_Hammer_II",
 				"332nd_Anvil_I",
 				"332nd_Anvil_III",
-				"332nd_Anvil_IV",
-				"332nd_Anvil_X_S",
-				"332nd_Anvil_X_K",
+				"332nd_Anvil_IV",				"332nd_Anvil_X_S",
 				"332nd_Forge_III",
 				"332nd_Forge_III_Y",
 				"332nd_Forge_I",
@@ -26,7 +33,7 @@ class CfgPatches
 				"332nd_Smoke_RKT_Launcher",
 			};
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = {"cba_main"}; // cba_main for smoke rockets
 	};
 };
 // #include "xtdGear.hpp"
@@ -85,15 +92,6 @@ class CfgWeapons
 		magazines[] =
 			{
 				"332nd_Anvil_X_S_Mag",
-			};
-	};
-	class 332nd_Anvil_X_K : missiles_DAR
-	{
-		displayName = "[332nd] Anvil X-K";
-		showAimCursorInternal = 0;
-		magazines[] =
-			{
-				"332nd_Anvil_X_K_Mag",
 			};
 	};
 	class 332nd_Anvil_I : weapon_AGM_65Launcher
@@ -291,9 +289,10 @@ class CfgWeapons
 		};
 	};
 	// Smoke Rockets
-	class 332nd_Smoke_RKT_Launcher : 332nd_Anvil_X_S
+	class 332nd_Smoke_RKT_Launcher : missiles_DAR
 	{
 		magazines[] = {"332nd_Hydra_Smoke_Mag_7_Count"};
+		showAimCursorInternal = 0;
 		displayName = "[332nd] Smoke Hydra Launcher";
 	};
 };
@@ -387,19 +386,6 @@ class CfgMagazines
 				"332nd_Anvil_X_S",
 			};
 		pylonWeapon = "332nd_Anvil_X_S";
-	};
-	class 332nd_Anvil_X_K_Mag : PylonRack_12Rnd_missiles
-	{
-		ammo = "332nd_Anvil_X_K_Ammo";
-		count = 12;
-		descriptionShort = "Unguided rockets with a white smoke warhead";
-		displayName = "[332nd] Anvil X-K";
-		displayNameShort = "Smoke";
-		hardpoints[] =
-			{
-				"332nd_Anvil_X_K",
-			};
-		pylonWeapon = "332nd_Anvil_X_K";
 	};
 	class 332nd_Anvil_I_Mag : PylonRack_Missile_AGM_02_x1
 	{
@@ -607,12 +593,16 @@ class CfgMagazines
 		displayName = "[332nd] Smoke Rocket x7";
 		displayNameShort = "Smoke Rocket";
 		ammo = "332nd_Hydra_Smoke";
-		descriptionShort = "unguided rocket, 2.75-inch, RP Smoke";
+		descriptionShort = "Unguided rocket with white smoke warhead";
 		initSpeed = 0;
 		count = 7;
 		maxLeadSpeed = 300;
 		pylonWeapon = "332nd_Smoke_RKT_Launcher";
 		mass = 125;
+		hardpoints[] =
+			{
+				"332nd_Smoke_RKT",
+			};
 	};
 };
 
@@ -670,28 +660,6 @@ class CfgAmmo
 	{
 		effectsMissile = "332nd_Effect_Hydra";
 		fuseDistance = 5;
-	};
-	class 332nd_Anvil_X_K_Ammo : M_AT
-	{
-		effectsMissile = "332nd_Effect_Hydra";
-		fuseDistance = 5;
-		// simulation = "shotSmoke";
-		smokeColor[] = {1, 1, 1, 1};
-		ExplosionEffects = "";
-		// effectsSmoke = "IDA_SmokeEffect";
-		CraterEffects = "";
-		ace_frag_enabled = 0;
-		// whistleDist = 0;
-		SmokeShellSoundLoop2[] = {"A3\Sounds_F\weapons\smokeshell\smoke_loop2", 0.125893, 1, 70};
-		SmokeShellSoundLoop1[] = {"A3\Sounds_F\weapons\smokeshell\smoke_loop1", 0.125893, 1, 70};
-		SmokeShellSoundHit3[] = {"A3\Sounds_F\weapons\smokeshell\smoke_3", 1.25893, 1, 100};
-		SmokeShellSoundHit2[] = {"A3\Sounds_F\weapons\smokeshell\smoke_2", 1.25893, 1, 100};
-		SmokeShellSoundHit1[] = {"A3\Sounds_F\weapons\smokeshell\smoke_1", 1.25893, 1, 100};
-		grenadeFireSound[] = {"SmokeShellSoundHit1", 0.25, "SmokeShellSoundHit2", 0.25, "SmokeShellSoundHit3", 0.5};
-		grenadeBurningSound[] = {"SmokeShellSoundLoop1", 0.5, "SmokeShellSoundLoop2", 0.5};
-		effectsSmoke = "SmokeShellWhiteEffect";
-		hit = 0;
-		indirectHit = 0;
 	};
 	class 332nd_Anvil_I_Ammo : Missile_AGM_02_F
 	{
@@ -794,55 +762,29 @@ class CfgAmmo
 		indirecthit = 50;
 		indirecthitrange = 3;
 	};
-	// Aircraft Smoke Hydra's / Dumbfire Rockets (Currently Commented out)
+	// Aircraft Smoke Rockets (SmokeShell on impact) see sqf in pylon/postinitsqf for effect
 	class 332nd_Hydra_Smoke : 332nd_Anvil_X_S_Ammo
 	{
 		effectsMissile = "332nd_Effect_Hydra";
-		simulation = "shotSubmunitions";
 		submunitionAmmo = "332nd_Smoke_Sub";
-		submunitionConeAngle = 1;
-		submunitionConeType[] = {"randomcenter", 1};
-		triggerDistance = 5;
-		triggerSpeedCoef[] = {0.8, 1};
+		submuntionConeAngle = 0;
+		triggerDistance = 2;
+		hit = 0; // from here to crater effects, it's so the pilots don't truth nuke anybody near point of impact or detonation, because we still use the M_AT. And so there's no crater or explosive effect.
+		indirectHit = 0;
+		indirectHitRange = 0; 
+		ace_frag_enabled = 0;
+		explosionEffects = "";
+		CraterEffects = "";
 	};
 	class 332nd_Hydra_Smoke_Red : 332nd_Hydra_Smoke
 	{
-		submunitionAmmo = "332nd_Hydra_Smoke_Deploy_Red";
+		submunitionAmmo = "332nd_Smoke_Sub_Red";
 	};
 	class 332nd_Hydra_Smoke_Green : 332nd_Hydra_Smoke
 	{
-		submunitionAmmo = "332nd_Hydra_Smoke_Deploy_Green";
-	};
-	class 332nd_Hydra_Smoke_Blue : 332nd_Hydra_Smoke
-	{
-		submunitionAmmo = "332nd_Hydra_Smoke_Deploy_Blue";
-	};
-	// Smoke Deploy Classes
-	class ShotDeployBase;
-	class 332nd_Hydra_Smoke_Deploy : ShotDeployBase
-	{
-		simulation = "shotSubmunitions";
-		triggerOnImpact = 1;
-		model = "\A3\weapons_F\ammo\mag_univ.p3d";
-		proxyShape = "\A3\weapons_F\ammo\mag_univ.p3d";
-		hit = 0;
-		indirectHit = 0;
-		indirectHitRange = 0.1;
-		initTime = 0;
-		cost = 400;
-		// effectFly = "clustereffectfly";
-		explosionEffects = "GrenadeExplosion";
-		submunitionAmmo = "332nd_Smoke_Sub";
-	};
-	class 332nd_Hydra_Smoke_Deploy_Red : 332nd_Hydra_Smoke_Deploy
-	{
-		submunitionAmmo = "332nd_Smoke_Sub_Red";
-	};
-	class 332nd_Hydra_Smoke_Deploy_Green : 332nd_Hydra_Smoke_Deploy
-	{
 		submunitionAmmo = "332nd_Smoke_Sub_Green";
 	};
-	class 332nd_Hydra_Smoke_Deploy_Blue : 332nd_Hydra_Smoke_Deploy
+	class 332nd_Hydra_Smoke_Blue : 332nd_Hydra_Smoke
 	{
 		submunitionAmmo = "332nd_Smoke_Sub_Blue";
 	};
