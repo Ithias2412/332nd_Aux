@@ -22,12 +22,12 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Chip: OPTRE_NVG
 	{
-		displayName = "New! [332nd] NVG Chip";
+		displayName = "[332nd] NVG Chip";
 		picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 	};
 	class 332nd_NVG_Marshal_Commander: OPTRE_NVG
 	{
-		displayName = "New! [332nd] Marshal Commander";
+		displayName = "[332nd] Marshal Commander";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGMC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_mc_visor_ui_ca.paa";
 		hiddenSelections[] = 
@@ -55,7 +55,7 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Commander: OPTRE_NVG
 	{
-		displayName = "New! [332nd] Commander";
+		displayName = "[332nd] Commander";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGCC.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_cc_visor_ui_ca.paa";
 		hiddenSelections[] = 
@@ -83,7 +83,7 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Rangefinder: OPTRE_NVG
 	{
-		displayName = "New! [332nd] Rangefinder";
+		displayName = "[332nd] Rangefinder";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_range_ui_ca.paa";
 		hiddenSelections[] = 
@@ -111,7 +111,7 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Visor: OPTRE_NVG
 	{
-		displayName = "New! [332nd] Visor";
+		displayName = "[332nd] Visor";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
 		hiddenSelections[] = 
@@ -137,9 +137,37 @@ class CfgWeapons
 			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
+	class 332nd_NVG_Visor_Luci: OPTRE_NVG
+	{
+		displayName = "[332nd] Visor (Luci)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
+		hiddenSelections[] = 
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Luci.paa"
+		};
+		visionMode[] = 
+		{
+			"Normal",
+			"NVG",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+		};
+	};
 	class 332nd_NVG_Inverted_Visor: OPTRE_NVG
 	{
-		displayName = "New! [332nd] Visor (Inverted)";
+		displayName = "[332nd] Visor (Inverted)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
 		hiddenSelections[] = 
@@ -222,7 +250,12 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = { "Cherryy", "Walkie"};
+				values[] = 
+				{
+					"Cherryy",
+					"Walkie",
+					"Luci",
+				};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -234,6 +267,12 @@ class XtdGearModels
 				class Walkie
                 {
                     label = "Walkie";
+                    //description = "Default";
+                    //image = "xxx";
+                };
+				class Luci
+                {
+                    label = "Luci";
                     //description = "Default";
                     //image = "xxx";
                 };
@@ -294,6 +333,11 @@ class XtdGearInfos
         {
             model = "332nd_NVG_Extended";
             Type = "Marshal_Commander";
+        };
+        class 332nd_NVG_Visor_Luci
+        {
+            model = "332nd_NVG_Extended";
+            Customs = "Luci";
         };
     };
 };

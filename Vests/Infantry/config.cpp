@@ -302,6 +302,30 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_Vest_Lettuce: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Lettuce)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Lettuce.paa",
+			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"
+			};
+		};
+	};
 
 	class 332nd_Vest_Crow: 332nd_Trooper_Vest
 	{
@@ -410,7 +434,19 @@ class XtdGearModels
 			class Custom
             {
                 label = "Customs";
-                values[] = { "Cherryy", "Asuka", "Ithias", "Joker", "Body", "Crow", "Frankenburg", "Walkie", "Dovah",};
+                values[] = 
+				{
+					"Cherryy",
+					"Asuka",
+					"Ithias",
+					"Joker",
+					"Body",
+					"Crow",
+					"Frankenburg",
+					"Walkie",
+					"Dovah",
+					"Lettuce",
+				};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Cherryy
@@ -465,6 +501,12 @@ class XtdGearModels
                 {
                     label = "Dovah";
                     description = "MEDIC!!!";
+                    // image = "xxx";
+                };
+				class Lettuce
+                {
+                    label = "Lettuce";
+                    description = "Sour dough bread supplier";
                     // image = "xxx";
                 };
             };
@@ -530,6 +572,11 @@ class XtdGearInfos
 		{
             model = "332nd_Vest_Extended";
             Custom = "Dovah";
+		};
+		class 332nd_Vest_Lettuce
+		{
+            model = "332nd_Vest_Extended";
+            Custom = "Lettuce";
 		};
 	};
 };
