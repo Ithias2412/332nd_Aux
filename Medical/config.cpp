@@ -9,6 +9,7 @@ class CfgPatches {
             "332nd_Acti_Bandage_Weap",
 			"332nd_Painkiller_Weap",
 			"332nd_Bacta_Spray_Weap",
+            "332nd_Plasma_2000_Weap"
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -189,6 +190,16 @@ class ace_medical_treatment
 		{
 		};
     };
+    class IV
+    {
+        class SalineIV;
+        class 332nd_Plasma_2000: SalineIV
+        {
+            volume = 2000;           // 2000ml
+            ratio[] = {"Plasma"};    // fluid type
+            incompatibleMedication[] = {};
+        };
+    };
     class Medication
 	{
 		class Morphine;
@@ -241,6 +252,7 @@ class ace_medical_treatment_actions
 	class Morphine;
 	class ApplyTourniquet;
 	class RemoveTourniquet;
+    class SalineIV;
 	/*
     class BasicInjector: Morphine
 	{
@@ -286,6 +298,20 @@ class ace_medical_treatment_actions
 		};
 		treatmentTime = 6;
 	};
+    class 332nd_Plasma_2000: SalineIV
+    {
+        displayName = "[332nd] Plasma 2000";
+        displayNameProgress = "Administering Plasma";
+        allowedSelections[] = {"Body","Hand_L","Hand_R","Leg_L","Leg_R"};
+        items[] =
+        {
+            "332nd_Plasma_2000_Weap"
+        };
+        treatmentTime = 10;
+        medicRequired = 1;        // require medic? 0 = anyone, 1 = medic, 2 = doctor
+        consumeItem = 1;
+        treatmentLocations = 0;   // 0 = anywhere, 1 = medical facility/vehicle
+    };
 	/*
     class 332nd_Franks_Jungle_Juice: BasicInjector
     {
@@ -373,4 +399,16 @@ class cfgWeapons
 			mass = 0.5;
         };
 	};
+    class 332nd_Plasma_2000_Weap: ACE_salineIV
+    {
+        scope = 2;
+        author = "Ithias";
+        displayName = "[332nd] Plasma 2000";
+        descriptionShort = "A 2000ml bag of plasma for rapid fluid replacement.";
+        descriptionUse = "Administering plasma infusion.";
+        class ItemInfo: CBA_MiscItem_ItemInfo
+        {
+            mass = 20;           // adjust weight as needed
+        };
+    };
 };
