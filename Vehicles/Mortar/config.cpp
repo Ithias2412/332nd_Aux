@@ -267,5 +267,12 @@ class ACE_CSW_Groups
 	{ 
 		332nd_Mortar_Mag = 1;    // Vehicle magazine that will be loaded when loading this magazine
 	};
+	class 332nd_Mortar_Flare_Mag 
+	{ 
+		332nd_Mortar_Flare_Mag = 1;    // Vehicle magazine that will be loaded when loading this magazine
+	};
+	class 332nd_Mortar_Smoke_Mag 
+	{ 
+		332nd_Mortar_Smoke_Mag = 1;    // Vehicle magazine that will be loaded when loading this magazine
+	};
 };
-

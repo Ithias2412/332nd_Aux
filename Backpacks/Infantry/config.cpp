@@ -306,7 +306,13 @@ class XtdGearModels
             class Jumppack
             {
                 label = "Jumppack";
-				values[] = { "JT12", "JT12_NCO", "Pilot", };
+				values[] = 
+				{
+					"JT12",
+					"JT12_NCO",
+					"JT12_Medic",
+					"Pilot", 
+				};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class JT12
@@ -318,6 +324,12 @@ class XtdGearModels
 				class JT12_NCO
                 {
                     label = "JT12 (LR)";
+                    //description = "Orange";
+                    //image = "xxx";
+                };
+				class JT12_Medic
+                {
+                    label = "JT12 (medic)";
                     //description = "Orange";
                     //image = "xxx";
                 };
@@ -400,6 +412,11 @@ class XtdGearInfos
         {
             model = "332nd_Backpack_Extended";
             Jumppack = "JT12_NCO";
+        };
+        class 332nd_JT12_Medic
+        {
+            model = "332nd_Backpack_Extended";
+            Jumppack = "JT12_Medic";
         };
         class 332nd_MC
         {
