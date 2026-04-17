@@ -938,3 +938,5 @@ class 332nd_Effect_CIS_ATG
 		type = "332nd_Missile_Pink_Smoke";
 	};
 };
+
+//fixed
