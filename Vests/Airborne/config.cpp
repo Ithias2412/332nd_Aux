@@ -114,7 +114,10 @@ class XtdGearModels
         {
             label = "AB Vests";
             author = "Ithias";
-			options[] = { "Rank", };
+			options[] = 
+			{
+				"Rank",
+			};
             class Rank
             {
                 label = "Rank";
