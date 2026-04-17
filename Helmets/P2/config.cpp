@@ -587,6 +587,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Butch.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Blackjack: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Blackjack)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Blackjack.paa"
+		};
+	};
 
 };
 
@@ -692,6 +704,7 @@ class XtdGearModels
 					"Coal",
 					"Wesker",
 					"Butch",
+					"Blackjack",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1037,9 +1050,15 @@ class XtdGearModels
 					description = "His Lordship";
 					//image = "xxx";
 				};
+				class Blackjack
+				{
+					label = "Blackjack";
+					description = "CLAPX5";
+					//image = "xxx";
+				};
             };
         };
-    };
+    }; 
 };
 
 class XtdGearInfos
@@ -1271,6 +1290,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Butch";
+		};
+		class 332nd_Helmet_P2_Blackjack
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Blackjack";
 		};
 	};
 };
