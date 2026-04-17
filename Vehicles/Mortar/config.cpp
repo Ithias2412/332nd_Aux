@@ -103,7 +103,11 @@ class CfgVehicles
 		};
 		class assembleInfo
 		{
-			
+			assembleTo = "";
+			base = "";
+			displayName = "";
+			dissasembleTo[] = {""};
+			primary = 0;
 		};
 		class ace_csw
 		{
@@ -183,7 +187,9 @@ class CfgWeapons
 		displayName = "[332nd] Mortar";
 		magazines[] = 
 		{
-			"332nd_Mortar_Mag"
+			"332nd_Mortar_Mag",
+			"332nd_Mortar_Flare_Mag",
+			"332nd_Mortar_Smoke_Mag",
 		};
 	};
 };
@@ -191,11 +197,36 @@ class CfgWeapons
 class CfgMagazines
 {
 	class 3AS_8Rnd_82mm_Mo_shells;
+	class 3AS_8Rnd_82mm_Mo_Flare_white;
+	class 3AS_8Rnd_82mm_Mo_Smoke_white;
+	
 	class 332nd_Mortar_Mag: 3AS_8Rnd_82mm_Mo_shells
 	{
 		ammo = "332nd_Mortar_Ammo";
 		count = 1;
-		displayName = "[332nd] Mortar Shell";
+		displayName = "[332nd] Mortar Shell (HE)";
+		scope = 2;
+		scopeCurator = 2;
+		mass = 8;
+		//type = 256;
+		//picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+	};
+	class 332nd_Mortar_Flare_Mag: 3AS_8Rnd_82mm_Mo_Flare_white
+	{
+		ammo = "332nd_Mortar_Flare_Ammo";
+		count = 1;
+		displayName = "[332nd] Mortar Shell (Flare)";
+		scope = 2;
+		scopeCurator = 2;
+		mass = 8;
+		//type = 256;
+		//picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+	};
+	class 332nd_Mortar_Smoke_Mag: 3AS_8Rnd_82mm_Mo_Smoke_white
+	{
+		ammo = "332nd_Mortar_Smoke_Ammo";
+		count = 1;
+		displayName = "[332nd] Mortar Shell (Smoke)";
 		scope = 2;
 		scopeCurator = 2;
 		mass = 8;
@@ -207,6 +238,8 @@ class CfgMagazines
 class CfgAmmo
 {
 	class 3AS_82mm_HE_Mortar; 
+	class 3AS_82mm_Flare_White;
+	class 3AS_82mm_Smoke_White;
 	class 332nd_Mortar_Ammo: 3AS_82mm_HE_Mortar
 	{
 		caliber = 1;
@@ -218,6 +251,14 @@ class CfgAmmo
 		indirectHitRange = 7.5;
 		suppressionRadiusHit = 24;
 	};
+	class 332nd_Mortar_Flare_Ammo: 3AS_82mm_Flare_White
+	{
+		displayname = "Republic Flare Mortar Shell";
+	};
+	class 332nd_Mortar_Smoke_Ammo: 3AS_82mm_Smoke_White
+	{
+		displayname = "Republic Smoke Mortar Shell";
+	};
 };
 
 class ACE_CSW_Groups 
@@ -227,3 +268,4 @@ class ACE_CSW_Groups
 		332nd_Mortar_Mag = 1;    // Vehicle magazine that will be loaded when loading this magazine
 	};
 };
+

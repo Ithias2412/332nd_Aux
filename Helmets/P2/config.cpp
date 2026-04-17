@@ -590,6 +590,7 @@ class CfgWeapons
 	class 332nd_Helmet_P2_Blackjack: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Blackjack)";
+		scope = 1;
 		hiddenSelections[]=
 		{
 			"camo1"
