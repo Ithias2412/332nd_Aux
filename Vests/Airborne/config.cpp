@@ -53,6 +53,31 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class 332nd_CSP_Vest_AB: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (CSP / AB)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"",
+			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2",
+			};
+		};
+	};
 
 	class 332nd_CSS_Vest_AB: 332nd_Trooper_Vest
 	{
@@ -93,9 +118,20 @@ class XtdGearModels
             class Rank
             {
                 label = "Rank";
-				values[] = {"CS", "CSS",};
+				values[] = 
+				{
+					"CSP",
+					"CS",
+					"CSS",
+				};
                 changeingame = 0;
                 alwaysSelectable = 1;
+                class CSP
+                {
+                    label = "CSP";
+                    description = "Specialist";
+                    //image = "xxx";
+                };
                 class CS
                 {
                     label = "CS";

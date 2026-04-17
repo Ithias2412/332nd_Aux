@@ -79,6 +79,19 @@ class CfgVehicles
         tf_subtype="digital_lr";
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel";
 	};
+	class 332nd_JT12_Medic: 332nd_JT12
+	{
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Backpacks\tex\332nd_JT12_Medic.paa"
+		};
+		displayName="[332nd] JT-12 (Medic)";
+		maximumLoad=75;
+	};
 	class 332nd_MC: 332nd_Jetpack_Base
 	{
 		scope=2;
@@ -116,131 +129,4 @@ class CfgVehicles
 			},
 		};
 	};
-
-	
-/*
-	class 332nd_Jetpack_Base_2: B_Kitbag_rgr
-	{
-		scope=0;
-		author="Ithias";
-		maximumLoad=150;
-		tf_hasLRradio=0;
-		tf_range=25000;
-		//nsm
-		NSM_jumppack_is_jumppack = 1;
-		NSM_jumppack_spam_delay = 1;
-		NSM_jumppack_energy_capacity = 10;
-		NSM_jumppack_recharge = 0;
-		NSM_jumppack_jump_types[] = 
-		{
-			{
-				"Jump",		// Name of jump
-				{
-					10,		//forward velo  [meters/second] (0)
-					5,		//verticle velo [meters/second] (1)
-					1,		//cost          [no units]      (2)
-					0,		//angle         [degrees]       (3)
-					0,		//directional   [bool, 0 = false, 1 = true] (4)
-					0		//can prone jump [bool, 0 = false, 1 = true] (5)
-				}
-			},
-		};
-		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
-		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
-		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
-		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
-		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
-	};
-	class 332nd_JT12_2: 332nd_Jetpack_Base_2
-    {  
-		scope=2;
-		author="Ithias";
-		displayName="[332nd] JT-12 (Limeted + No Directional)";
-		model="\MRC\JLTS\characters\CloneArmor2\clonejumppackjt12.p3d";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Backpacks\tex\332nd_JT12.paa"
-		};
-		picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
-	};
-*/
-};
-/*class XtdGearModels
-{
-    class CfgWeapons 
-    {
-         class 332nd_Jetpacks_Extended
-        {
-            label = "Jetpacks";
-            author = "Cherryy";
-			options[] = { "Type", "Variant",};
-            class Type
-            {
-                label = "Type";
-				values[] = { "JT12", "Pilot", };
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class JT12
-                {
-                    label = "JT12";
-                    description = "Airborne";
-                    //image = "xxx";
-                };
-				class Pilot
-                {
-                    label = "Pilot";
-                    description = "Pilots Only";
-                    //image = "xxx";
-				};
-			};
-			class Variant
-            {
-                label = "Variant";
-				values[] = { "Normal", "LR", };
-                changeingame = 0;
-                alwaysSelectable = 1;
-                class Normal
-                {
-                    label = "Normal";
-                    //description = "Default";
-                    //image = "xxx";
-                };
-                class LR
-                {
-                    label = "LR";
-                    //description = "Not Default";
-                    //image = "xxx";
-                };
-			};
-        };
-    };
-};
-
-class XtdGearInfos
-{
-    class CfgVehicles 
-    {
-        class 332nd_JT12
-        {
-            model = "332nd_Jetpacks_Extended";
-            Type = "JT12";
-			Variant = "Normal";
-        };
-		class 332nd_JT12_LR
-        {
-            model = "332nd_Jetpacks_Extended";
-            Type = "JT12";
-			Variant = "LR";
-        };
-       	class 332nd_MC
-        {
-            model = "332nd_Jetpacks_Extended";
-            Type = "Pilot";
-			Variant = "LR";
-        };
-    };
 };
