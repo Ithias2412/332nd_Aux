@@ -527,6 +527,42 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Ahri: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Ahri)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Ahri_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Rimuru: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Rimuru)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Rimuru_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Icurus: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Icurus)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Icurus_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1131,6 +1167,36 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Logan.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Ahri_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Ahri";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ahri.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ahri.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Rimuru_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Rimuru";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rimuru.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rimuru.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Icurus_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Icurus";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Icurus.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Icurus.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1258,6 +1324,9 @@ class XtdGearModels
 					"Jorge",
 					"Crucial",
 					"Logan",
+					"Ahri",
+					"Rimuru",
+					"Icurus",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1519,6 +1588,24 @@ class XtdGearModels
 					description = "Never got Ilvl for raid";
 					//image = "xxx";
 				};
+				class Ahri
+				{
+					label = "Ahri";
+					description = "L*ague of L*gends Reference";
+					//image = "xxx";
+				};
+				class Rimuru
+				{
+					label = "Rimuru";
+					description = "Reincarnated as a Chud";
+					//image = "xxx";
+				};
+				class Icurus
+				{
+					label = "Icurus";
+					description = "Company's biggest opposition";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1738,6 +1825,20 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Customs = "Logan";
 		};
+		class 332nd_Uniform_Clone_Ahri
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Ahri";
+		};
+		class 332nd_Uniform_Clone_Rimuru
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Rimuru";
+		};
+		class 332nd_Uniform_Clone_Icurus
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Icurus";
+		};
 	};
-}; 
-
+};

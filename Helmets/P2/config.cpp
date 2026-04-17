@@ -599,6 +599,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Blackjack.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Ahri: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Ahri)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ahri.paa"
+		};
+	};
 
 };
 
@@ -705,6 +717,7 @@ class XtdGearModels
 					"Wesker",
 					"Butch",
 					"Blackjack",
+					"Ahri",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1056,6 +1069,12 @@ class XtdGearModels
 					description = "CLAPX5";
 					//image = "xxx";
 				};
+				class Ahri
+				{
+					label = "Ahri";
+					description = "Ear Revision #9999";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1295,6 +1314,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Blackjack";
+		};
+		class 332nd_Helmet_P2_Ahri
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Ahri";
 		};
 	};
 };
