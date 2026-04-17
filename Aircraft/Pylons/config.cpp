@@ -1,12 +1,3 @@
-class Extended_PreInit_EventHandlers
-{
-    class 332nd_Pylons
-    {
-        init = "call compile preprocessFileLineNumbers '332nd_Aux\Aircraft\Pylons\XEH_preInit.sqf'";
-    };
-};
-
-
 class CfgPatches
 {
 	class 332nd_Pylons
