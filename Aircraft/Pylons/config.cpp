@@ -616,6 +616,7 @@ class CfgAmmo
 	class ammo_Bomb_SDB;
 	class ace_missile_gbu_12;
 	class ammo_Missile_HARM;
+	class SmokeShell;
 	
 	class 332nd_Hammer_I_Ammo: M_Air_AA
 	{
