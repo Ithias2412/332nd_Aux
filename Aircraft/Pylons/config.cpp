@@ -12,6 +12,7 @@ class CfgPatches {
             "332nd_Anvil_I",
 			"332nd_Anvil_III",
 			"332nd_Anvil_IV",
+			"332nd_Anvil_V",
 			"332nd_Anvil_X_S",
 			"332nd_Anvil_X_K",
 			"332nd_Forge_III",
@@ -387,6 +388,9 @@ class CfgMagazines
 	{
 		ammo = "332nd_Anvil_X_K_Ammo";
 		count = 12;
+		initSpeed = 0;
+		maxLeadSpeed = 300;
+		mass = 125;
 		descriptionShort = "Unguided rockets with a white smoke warhead";
 		displayName = "[332nd] Anvil X-K";
 		displayNameShort = "Smoke";
@@ -655,27 +659,23 @@ class CfgAmmo
 		effectsMissile = "332nd_Effect_Hydra";
 		fuseDistance = 5;
 	};
-	class 332nd_Anvil_X_K_Ammo: M_AT
+	class 332nd_Anvil_X_K_Ammo: 332nd_Anvil_X_S_Ammo
 	{
 		effectsMissile = "332nd_Effect_Hydra";
-		fuseDistance = 5;
-		//simulation = "shotSmoke";
-		smokeColor[] = {1,1,1,1};
-		ExplosionEffects = "";
-		//effectsSmoke = "IDA_SmokeEffect";
-		CraterEffects = "";
-		ace_frag_enabled = 0;
-		//whistleDist = 0;
-		SmokeShellSoundLoop2[] = {"A3\Sounds_F\weapons\smokeshell\smoke_loop2",0.125893,1,70};
-		SmokeShellSoundLoop1[] = {"A3\Sounds_F\weapons\smokeshell\smoke_loop1",0.125893,1,70};
-		SmokeShellSoundHit3[] = {"A3\Sounds_F\weapons\smokeshell\smoke_3",1.25893,1,100};
-		SmokeShellSoundHit2[] = {"A3\Sounds_F\weapons\smokeshell\smoke_2",1.25893,1,100};
-		SmokeShellSoundHit1[] = {"A3\Sounds_F\weapons\smokeshell\smoke_1",1.25893,1,100};
-		grenadeFireSound[] = {"SmokeShellSoundHit1",0.25,"SmokeShellSoundHit2",0.25,"SmokeShellSoundHit3",0.5};
-		grenadeBurningSound[] = {"SmokeShellSoundLoop1",0.5,"SmokeShellSoundLoop2",0.5};
-		effectsSmoke = "SmokeShellWhiteEffect";
-		hit = 0;
+		submunitionAmmo = "332nd_Smoke_Sub";
+		submuntionConeAngle = 0;
+		triggerDistance = 2;
+		hit = 0; // from here to crater effects, it's so the pilots don't truth nuke anybody near point of impact or detonation, because we still use the M_AT. And so there's no crater or explosive effect.
 		indirectHit = 0;
+		indirectHitRange = 0; 
+		ace_frag_enabled = 0;
+		explosionEffects = "";
+		CraterEffects = "";
+	};
+	class 332nd_Smoke_Sub : SmokeShell
+	{
+		smokeColor[] = {1, 1, 1, 1};
+		effectsSmoke = "SmokeShellWhiteEffect";
 	};
 	class 332nd_Anvil_I_Ammo: Missile_AGM_02_F
 	{
