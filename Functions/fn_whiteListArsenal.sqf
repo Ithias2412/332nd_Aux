@@ -388,6 +388,12 @@ params ["_obj"];
 "332nd_Uniform_Clone_Ahri",
 "332nd_Uniform_Clone_Rimuru",
 "332nd_Uniform_Clone_Icurus",
+"332nd_Vest_Lettuce",
+"332nd_Mortar_Flare_Mag",
+"332nd_Mortar_Smoke_Mag",
+"332nd_JT12_Medic",
+"332nd_CSP_Vest_AB",
+"332nd_Plasma_2000_Weap",
 "332nd_Smoke_LauncherGrenade_3GL_Orange"]
 
 ] call ace_arsenal_fnc_initBox
