@@ -376,6 +376,18 @@ params ["_obj"];
 "332nd_Uniform_Clone_Jorge",
 "332nd_Helmet_P2_Wesker",
 "332nd_Helmet_P2_Butch",
+"332nd_CSW_Mortar_Baseplate_W",
+"332nd_CSW_Mortar_W",
+"332nd_Mortar_W",
+"332nd_Mortar_Mag",
+"332nd_Mine_Dispenser_Mag",
+"332nd_Helmet_P2_Blackjack",
+"332nd_Uniform_Clone_Crucial",
+"332nd_Helmet_P2_Ahri",
+"332nd_NVG_Visor_Luci",
+"332nd_Uniform_Clone_Ahri",
+"332nd_Uniform_Clone_Rimuru",
+"332nd_Uniform_Clone_Icurus",
 "332nd_Smoke_LauncherGrenade_3GL_Orange"]
 
 ] call ace_arsenal_fnc_initBox
