@@ -394,6 +394,7 @@ params ["_obj"];
 "332nd_JT12_Medic",
 "332nd_CSP_Vest_AB",
 "332nd_Plasma_2000_Weap",
+"332nd_Uniform_Clone_Logan",
 "332nd_Smoke_LauncherGrenade_3GL_Orange"]
 
 ] call ace_arsenal_fnc_initBox

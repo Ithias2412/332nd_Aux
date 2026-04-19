@@ -1,5 +1,7 @@
-class CfgPatches {
-	class 332nd_Medical_Items {
+class CfgPatches 
+{
+	class 332nd_Medical_Items 
+	{
 		units[] = 
         {
 			""
