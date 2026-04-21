@@ -236,7 +236,7 @@ class ace_medical_treatment
         class PlasmaIV;
         class 332nd_Plasma_2000: PlasmaIV
         {
-            volume = 2000;           // 2000ml
+            volume = 2000;
         };
     };
     class Medication
@@ -374,7 +374,7 @@ class cfgWeapons
     class ACE_fieldDressing;
     class ACE_morphine;
 	class CBA_MiscItem_ItemInfo;
-	class ACE_PlasmaIV;
+	class ACE_ItemCore;
 	class ACE_tourniquet;
 	/*
     class 332nd_Franks_Jungle_Juice_Weap: ACE_morphine
@@ -432,9 +432,18 @@ class cfgWeapons
 			mass = 0.5;
         };
 	};
-    class 332nd_Plasma_2000_Weap: ACE_PlasmaIV
+    class 332nd_Plasma_2000_Weap: ACE_ItemCore
     {
-        displayName = "Plasma IV (500ml)";
+		scope=2;
+		ACE_isMedicalItem = 1;
+		author = "ACE-Team";
+		descriptionShort = "A volume-expanding blood supplement.";
+		descriptionUse = "A volume-expanding blood supplement.";
+        displayName = "Plasma IV (2000ml)";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\z\ace\addons\medical_treatment\data\IVBag_plasma_1000ml_ca.paa"};
+		model = "\z\ace\addons\medical_treatment\data\IVBag_1000ml.p3d";
+		picture = "\z\ace\addons\medical_treatment\ui\plasmaIV_ca.paa";
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
             mass = 20;           // adjust weight as needed

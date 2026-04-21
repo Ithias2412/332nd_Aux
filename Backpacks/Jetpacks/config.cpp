@@ -24,7 +24,7 @@ class CfgVehicles
 		//nsm
 		NSM_jumppack_is_jumppack = 1;
 		NSM_jumppack_spam_delay = 1;
-		NSM_jumppack_energy_capacity = 15;
+		NSM_jumppack_energy_capacity = 30;
 		NSM_jumppack_recharge = 1;
 		NSM_jumppack_jump_types[] = 
 		{

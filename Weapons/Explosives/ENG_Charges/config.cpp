@@ -60,7 +60,7 @@ class CfgMagazines
 		ammo = "332nd_Remote_Charge_Ammo";
 		author = "Ithias";
 		descriptionShort = "Type: Charge<br />Rounds: 1<br />Used on: Ground";
-		displayName = "[332nd] Remote Charge";
+		displayName = "[332nd] Remote Charge (ENG)";
 		mass = 15;
 		model = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
@@ -74,7 +74,7 @@ class CfgMagazines
 		ammo = "332nd_Detonation_pack_Ammo";
 		author = "Ithias";
 		descriptionShort = "Type: Charge<br />Rounds: 1<br />Used on: Ground";
-		displayName = "[332nd] Detonation Pack";
+		displayName = "[332nd] Detonation Pack (ENG)";
 		mass = 30;
 		model = "LF_Weapon_Unit_Explosives\typeabc\typea.p3d";
 		picture = "\LF_Weapon_Unit_Explosives\typeabc\ui\type_icon.paa";
@@ -117,13 +117,13 @@ class CfgVehicles
 	class 332nd_Explosives_Place_Remote_Charge: ACE_Explosives_Place
 	{
 		scope=2;
-		displayName = "[332nd] Remote Charge";
+		displayName = "[332nd] Remote Charge (ENG)";
 		model = "\ls\core\addons\weapons_explosives\detpack\ls_explosive_detpack.p3d";
     };
 	class 332nd_Explosives_Place_Detonation_pack: ACE_Explosives_Place
 	{
 		scope=2;
-		displayName = "[332nd] Detonation Pack";
+		displayName = "[332nd] Detonation Pack (ENG)";
 		model = "LF_Weapon_Unit_Explosives\typeabc\typea.p3d";
     };
 };

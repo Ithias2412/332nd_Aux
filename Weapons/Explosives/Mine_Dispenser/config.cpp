@@ -53,7 +53,7 @@ class CfgMagazines
 		ammo = "332nd_Mine_Dispenser_Ammo";
 		author = "Ithias";
 		descriptionShort = "Type: Charge<br />Rounds: 1<br />Used on: Ground";
-		displayName = "[332nd] Mine Dispenser";
+		displayName = "[332nd] Mine Dispenser (ARF)";
 		mass = 15;
 		model = "\A3\Weapons_F_Orange\Explosives\APERSmineDispenser_i";
 		picture = "\A3\Weapons_F_Orange\Explosives\Data\UI\gear_APERSmineDispenser_CA.paa";
@@ -88,7 +88,7 @@ class CfgVehicles
 	class 332nd_Explosives_Place_Mine_Dispenser: ACE_Explosives_Place
 	{
 		scope=2;
-		displayName = "[332nd] Mine Dispenser";
+		displayName = "[332nd] Mine Dispenser (ARF)";
 		model = "\A3\Weapons_F_Orange\Explosives\APERSmineDispenser_i";
     };
 };

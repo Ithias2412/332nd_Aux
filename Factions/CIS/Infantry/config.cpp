@@ -2255,29 +2255,40 @@ class CfgGroups
 };
 
 
-class Extended_InitPost_EventHandlers {
-	class 332nd_Droid_Base {
-        class WBK_B1_Init {
+class Extended_InitPost_EventHandlers 
+{
+	class 332nd_Droid_Base 
+	{
+        class WBK_B1_Init 
+		{
             init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_B1_Load;};";
         };
     };
-	class 332nd_Droid_BX_Shield {
-        class WBK_BX_Assasin_1_init {
+	class 332nd_Droid_BX_Shield 
+	{
+        class WBK_BX_Assasin_1_init 
+		{
             init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_BX_Load;};";
         };
     };
-	class 332nd_Droid_BX_Range {
-        class WBK_BX_Assasin_1_init {
+	class 332nd_Droid_BX_Range 
+	{
+        class WBK_BX_Assasin_1_init 
+		{
             init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_BX_Load;};";
         };
     };
-	class 332nd_Droid_BX_Melee {
-        class WBK_BX_Assasin_1_init {
+	class 332nd_Droid_BX_Melee 
+	{
+        class WBK_BX_Assasin_1_init 
+		{
             init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_BX_Load;};";
         };
     };
-	class 332nd_Droid_B2 {
-        class WBK_B2_Mod_init {
+	class 332nd_Droid_B2 
+	{
+        class WBK_B2_Mod_init 
+		{
             init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_B2_Load;};";
         };
     };
