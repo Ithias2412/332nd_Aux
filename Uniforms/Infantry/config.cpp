@@ -563,6 +563,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Saiko: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Saiko)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Saiko_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1197,6 +1209,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Icurus.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Saiko_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Saiko";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Saiko.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Saiko.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1327,6 +1349,7 @@ class XtdGearModels
 					"Ahri",
 					"Rimuru",
 					"Icurus",
+					"Saiko",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1606,6 +1629,12 @@ class XtdGearModels
 					description = "Company's biggest opposition";
 					//image = "xxx";
 				};
+				class Saiko
+				{
+					label = "Saiko";
+					description = "Leeroy Enthusiast";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1839,6 +1868,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Icurus";
+		};
+		class 332nd_Uniform_Clone_Saiko
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Saiko";
 		};
 	};
 };
