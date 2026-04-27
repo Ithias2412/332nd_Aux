@@ -611,6 +611,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ahri.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Saiko: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Saiko)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Saiko.paa"
+		};
+	};
 
 };
 
@@ -1319,6 +1331,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ahri";
+		};
+		class 332nd_Helmet_P2_Saiko
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Saiko";
 		};
 	};
 };

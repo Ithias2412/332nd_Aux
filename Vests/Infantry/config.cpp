@@ -370,6 +370,30 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_Vest_Joker: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Joker)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Joker.paa",
+			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"
+			};
+		};
+	};
 	
 };
 
@@ -470,7 +494,7 @@ class XtdGearModels
 				class Joker
                 {
                     label = "Joker";
-                    description = "The prodigal son returns";
+                    description = "Still isnt the original";
                     // image = "xxx";
                 };
 				class Body
@@ -577,6 +601,11 @@ class XtdGearInfos
 		{
             model = "332nd_Vest_Extended";
             Custom = "Lettuce";
+		};
+		class 332nd_Vest_Joker
+		{
+            model = "332nd_Vest_Extended";
+            Custom = "Joker";
 		};
 	};
 };
