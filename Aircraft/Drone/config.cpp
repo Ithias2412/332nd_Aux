@@ -27,6 +27,8 @@ class CfgWeapons
 	};
 };
 
+
+
 class CfgVehicles
 {
 	class Air;
