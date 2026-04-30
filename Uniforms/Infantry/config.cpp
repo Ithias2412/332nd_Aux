@@ -587,6 +587,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Villa: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Villa)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Villa_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1241,6 +1253,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Coal.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Villa_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_i";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Villa.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1373,6 +1395,7 @@ class XtdGearModels
 					"Icurus",
 					"Saiko",
 					"Coal",
+					"Villa",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1664,6 +1687,12 @@ class XtdGearModels
 					description = "King Chud";
 					//image = "xxx";
 				};
+				class Villa
+				{
+					label = "Villa";
+					description = "BWA BWA";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -1907,6 +1936,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Coal";
+		};
+		class 332nd_Uniform_Clone_Villa
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Villa";
 		};
 	};
 };
