@@ -24,7 +24,7 @@ class CfgVehicles
         //editorPreview = "CM_Main\Assets\theCube\theCube.jpg";
 		vehicleClass = "Prop";
 		faction = "prop";
-        scope = 2;
+        scope = 1;
         scopecurator = 2;
 		hiddenSelections[] = 
 		{
