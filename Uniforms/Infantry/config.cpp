@@ -1516,7 +1516,7 @@ class XtdGearModels
 				class Lettuce
 				{
 					label = "Lettuce";
-					description = "Cardboard Desk";
+					description = "BWA BWA Actual";
 					//image = "xxx";
 				};
 				class Grim
