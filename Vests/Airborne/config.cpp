@@ -166,5 +166,10 @@ class XtdGearInfos
             model = "332nd_Vest_AB_Extended";
             Rank = "CSS";
         };
+        class 332nd_CSP_Vest_AB
+        {
+            model = "332nd_Vest_AB_Extended";
+            Rank = "CSP";
+        };
 	};
 };

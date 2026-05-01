@@ -207,9 +207,9 @@ class CfgMagazines
 		displayName = "[332nd] Mortar Shell (HE)";
 		scope = 2;
 		scopeCurator = 2;
-		mass = 8;
-		//type = 256;
-		//picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		mass = 10;
+		type = 256;
+		picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
 	};
 	class 332nd_Mortar_Flare_Mag: 3AS_8Rnd_82mm_Mo_Flare_white
 	{
@@ -218,9 +218,9 @@ class CfgMagazines
 		displayName = "[332nd] Mortar Shell (Flare)";
 		scope = 2;
 		scopeCurator = 2;
-		mass = 8;
-		//type = 256;
-		//picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		mass = 10;
+		type = 256;
+		picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
 	};
 	class 332nd_Mortar_Smoke_Mag: 3AS_8Rnd_82mm_Mo_Smoke_white
 	{
@@ -229,9 +229,9 @@ class CfgMagazines
 		displayName = "[332nd] Mortar Shell (Smoke)";
 		scope = 2;
 		scopeCurator = 2;
-		mass = 8;
-		//type = 256;
-		//picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		mass = 10;
+		type = 256;
+		picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
 	};
 };
 

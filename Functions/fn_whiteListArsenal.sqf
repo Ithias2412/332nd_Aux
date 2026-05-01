@@ -397,6 +397,11 @@ params ["_obj"];
 "332nd_Uniform_Clone_Logan",
 "332nd_Uniform_Clone_Saiko",
 "332nd_Helmet_P2_Saiko",
+"332nd_Helmet_P2_Wylder",
+"332nd_Helmet_P2_Raven",
+"332nd_Uniform_Clone_Komrk",
+"332nd_Uniform_Clone_Raven",
+"332nd_Uniform_Clone_Wylder",
 "332nd_Smoke_LauncherGrenade_3GL_Orange"]
 
 ] call ace_arsenal_fnc_initBox

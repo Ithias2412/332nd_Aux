@@ -623,6 +623,30 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Saiko.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Wylder: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Wylder)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Wylder.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Raven: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Raven)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Raven.paa"
+		};
+	};
 
 };
 
@@ -730,6 +754,8 @@ class XtdGearModels
 					"Butch",
 					"Blackjack",
 					"Ahri",
+					"Wylder",
+					"Raven",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1087,6 +1113,18 @@ class XtdGearModels
 					description = "Ear Revision #9999";
 					//image = "xxx";
 				};
+				class Wylder
+				{
+					label = "Wylder";
+					description = "Not Peter";
+					//image = "xxx";
+				};
+				class Raven
+				{
+					label = "Raven";
+					description = "NA";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1336,6 +1374,16 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Saiko";
+		};
+		class 332nd_Helmet_P2_Wylder
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Wylder";
+		};
+		class 332nd_Helmet_P2_Raven
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Raven";
 		};
 	};
 };
