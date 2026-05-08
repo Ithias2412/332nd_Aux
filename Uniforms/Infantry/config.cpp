@@ -635,6 +635,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Butch: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Butch)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Butch_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1500,6 +1512,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Raven.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Butch_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Butch";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Butch.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Butch.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1636,6 +1658,7 @@ class XtdGearModels
 					"Komrk",
 					"Wylder",
 					"Raven",
+					"Butch",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1951,10 +1974,16 @@ class XtdGearModels
 					description = "Hex 2.0";
 					//image = "xxx";
 				};
+				class Butch
+				{
+					label = "Butch";
+					description = "The one and only Butch Deloria";
+					//image = "xxx";
+				};
 			};
 		};
 	};
-};  
+};
 
 class XtdGearInfos
 {
@@ -2214,6 +2243,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Raven";
+		};
+		class 332nd_Uniform_Clone_Butch
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Butch";
 		};
 	};
 };
