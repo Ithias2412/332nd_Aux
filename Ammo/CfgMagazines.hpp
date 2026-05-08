@@ -328,7 +328,7 @@ class CfgMagazines
 		ammo="332nd_HE_UGLGrenade";
 		count=1;
 		descriptionShort="";
-		displayname="[332nd] 1 Round HE";
+		displayname="[332nd] 1 Round HE (GRN)";
 		displayNameShort="";
 		mass=4;
 		scope=2;
@@ -338,7 +338,7 @@ class CfgMagazines
 		ammo="332nd_DroidPopper_UGLGrenade";
 		count=1;
 		descriptionShort="";
-		displayname="[332nd] 1 Round Droid Popper";
+		displayname="[332nd] 1 Round Droid Popper (GRN)";
 		displayNameShort="";
 		mass=4;
 		scope=2;
@@ -347,7 +347,7 @@ class CfgMagazines
 	{
 		ammo="332nd_Westar_Rifle_Grenade";
 		count=1;
-		displayname="[332nd] Westar Rifle Grenade Charge";
+		displayname="[332nd] Westar Rifle Grenade Charge (GRN)";
 		mass=6;
 		//initSpeed = 80;
 		initSpeed = 1000;
@@ -356,7 +356,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="[332nd] Impact Smoke (White)";
+		displayName="[332nd] Impact Smoke White (RTO)";
 		displayNameShort="White Smoke";
 		descriptionShort="Impact Smoke grenade";
 		ammo="IDA_smoke_Impact";
@@ -366,7 +366,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="[332nd] Impact Smoke (Red)";
+		displayName="[332nd] Impact Smoke Red (RTO)";
 		displayNameShort="Red Smoke";
 		descriptionShort="Red Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Red";
@@ -377,7 +377,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="[332nd] Impact Smoke (Green)";
+		displayName="[332nd] Impact Smoke Green (RTO)";
 		displayNameShort="Green Smoke";
 		descriptionShort="Green Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Green";
@@ -388,7 +388,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="[332nd] Impact Smoke (Blue)";
+		displayName="[332nd] Impact Smoke Blue (RTO)";
 		displayNameShort="Blue Smoke";
 		descriptionShort="Blue Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Blue";
@@ -399,7 +399,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=1;
-		displayName="[332nd] Impact Smoke (Purple)";
+		displayName="[332nd] Impact Smoke Purple (RTO)";
 		displayNameShort="Purple Smoke";
 		descriptionShort="Purple Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Purple";
@@ -410,7 +410,7 @@ class CfgMagazines
 	{
 		author="Viper";
 		count=1;
-		displayName="[332nd] Impact Smoke (Yellow)";
+		displayName="[332nd] Impact Smoke Yellow (RTO)";
 		displayNameShort="Yellow Smoke";
 		descriptionShort="Yellow Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Yellow";
@@ -421,7 +421,7 @@ class CfgMagazines
 	{
 		author="Viper";
 		count=1;
-		displayName="[332nd] Impact Smoke (Orange)";
+		displayName="[332nd] Impact Smoke Orange (RTO)";
 		displayNameShort="Orange Smoke";
 		descriptionShort="Orange Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Orange";
@@ -433,7 +433,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=3;
-		displayName="[332nd] Impact Smoke (White) x3";
+		displayName="[332nd] Impact Smoke White x3 (RTO)";
 		displayNameShort="White Smoke";
 		descriptionShort="Impact Smoke grenade";
 		ammo="IDA_smoke_Impact";
@@ -443,7 +443,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=3;
-		displayName="[332nd] Impact Smoke (Red) x3";
+		displayName="[332nd] Impact Smoke Red x3 (RTO)";
 		displayNameShort="Red Smoke";
 		descriptionShort="Red Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Red";
@@ -454,7 +454,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=3;
-		displayName="[332nd] Impact Smoke (Green) x3";
+		displayName="[332nd] Impact Smoke Green x3 (RTO)";
 		displayNameShort="Green Smoke";
 		descriptionShort="Green Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Green";
@@ -465,7 +465,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=3;
-		displayName="[332nd] Impact Smoke (Blue) x3";
+		displayName="[332nd] Impact Smoke Blue x3 (RTO)";
 		displayNameShort="Blue Smoke";
 		descriptionShort="Blue Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Blue";
@@ -476,7 +476,7 @@ class CfgMagazines
 	{
 		author="Cherryy";
 		count=3;
-		displayName="[332nd] Impact Smoke (Purple) x3";
+		displayName="[332nd] Impact Smoke Purple x3 (RTO)";
 		displayNameShort="Purple Smoke";
 		descriptionShort="Purple Impact Smoke grenade";
 		ammo="IDA_smoke_Impact_Purple";
@@ -487,7 +487,7 @@ class CfgMagazines
 	{
 		author="Viper";
 		count=3;
-		displayName="[332nd] Impact Smoke (Yellow) x3";
+		displayName="[332nd] Impact Smoke Yellow x3 (RTO)";
 		displayNameShort="Yellow Smoke";
 		descriptionShort="Yellow Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Yellow";
@@ -498,11 +498,26 @@ class CfgMagazines
 	{
 		author="Viper";
 		count=3;
-		displayName="[332nd] Impact Smoke (Orange) x3";
+		displayName="[332nd] Impact Smoke Orange x3 (RTO)";
 		displayNameShort="Orange Smoke";
 		descriptionShort="Orange Impact Smoke grenade";
 		ammo="332nd_UGL_Smoke_Orange";
 		picture="\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_orange_CA.paa";
 		mass=4;
 	};
+	class ACE_HuntIR_M203;
+	class 332nd_HuntIR_UGLGrenade_Mag: ACE_HuntIR_M203 
+	{
+		author="Ithias";
+		count=1;
+		displayName="[332nd] HuntIR Round (RTO)";
+	};
+	class UGL_FlareWhite_Illumination_F;
+	class 332nd_FlareWhite_UGLGrenade_Mag: UGL_FlareWhite_Illumination_F 
+	{
+		author="Ithias";
+		count=1;
+		displayName="[332nd] Illumination Round White (RTO)";
+	};
+
 };

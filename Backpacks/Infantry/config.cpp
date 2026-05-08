@@ -32,7 +32,7 @@ class CfgVehicles
 	class 332nd_Backpack: JLTS_Clone_backpack
 	{
 		author="Ithias";
-		displayName="New! [332nd] Backpack (Ammo Bearer)";
+		displayName="[332nd] Backpack (Ammo Bearer)";
 		maximumLoad=320;
 		mass=40;
 		hiddenSelections[] = 
@@ -48,7 +48,7 @@ class CfgVehicles
 	class 332nd_Backpack_AT: JLTS_Clone_backpack
 	{
 		author="Ithias";
-		displayName="New! [332nd] Backpack (AT)";
+		displayName="[332nd] Backpack (AT)";
 		maximumLoad=200;
 		mass=40;
 		hiddenSelections[] = 
@@ -64,7 +64,7 @@ class CfgVehicles
 	class 332nd_Backpack_RTO: JLTS_Clone_backpack_RTO
 	{
 		author="Ithias";
-		displayName="New! [332nd] Backpack (RTO)";
+		displayName="[332nd] Backpack (RTO)";
 		maximumLoad=258;
 		mass=40;
 		hiddenSelections[] = 
@@ -87,7 +87,7 @@ class CfgVehicles
 	class 332nd_Backpack_Medic: JLTS_Clone_backpack
 	{
 		author="Ithias";
-		displayName="New! [332nd] Backpack (Medic)";
+		displayName="[332nd] Backpack (Medic)";
 		maximumLoad=321;
 		mass=40;
 		hiddenSelections[] = 
@@ -103,7 +103,7 @@ class CfgVehicles
 	class 332nd_Backpack_Medic_RTO: JLTS_Clone_backpack_RTO
 	{
 		author="Ithias";
-		displayName="New! [332nd] Backpack (Platoon Medic)";
+		displayName="[332nd] Backpack (Platoon Medic)";
 		maximumLoad=321;
 		mass=40;
 		hiddenSelections[] = 
@@ -127,7 +127,7 @@ class CfgVehicles
 	{
         ace_fortify_fortifyTool = 1;
 		author="Ithias";
-		displayName="New! [332nd] Backpack (Engineer)";
+		displayName="[332nd] Backpack (Engineer)";
 		maximumLoad=320;
 		mass=40;
 		hiddenSelections[] = 
@@ -144,7 +144,7 @@ class CfgVehicles
 	class 332nd_Bag_GRN_MRK: JLTS_Clone_belt_bag
 	{
 		author="Ithias";
-		displayName="New! [332nd] GRN / MRK Bags";
+		displayName="[332nd] GRN / MRK Bags";
 		maximumLoad=150;
 		mass=40;
 	};
@@ -152,7 +152,7 @@ class CfgVehicles
 	class 332nd_Bag_AR: IDA_Clone_ScoutPack
 	{
 		author="Ithias";
-		displayName="New! [332nd] Backpack (Auto-Rifleman)";
+		displayName="[332nd] Backpack (Auto-Rifleman)";
 		maximumLoad=200;
 		mass=40;
 	};
@@ -161,7 +161,7 @@ class CfgVehicles
 	class 332nd_Back_Radio: JLTS_Clone_LR_attachment
 	{
 		author="Ithias";
-		displayName="New! [332nd] Radio";
+		displayName="[332nd] Radio";
 		maximumLoad=150;
 		mass=40;
 		tf_isolatedAmount=0.64999998;
@@ -176,7 +176,7 @@ class CfgVehicles
 	class 332nd_Back_NCO: JLTS_Clone_RTO_pack
 	{
 		author="Ithias";
-		displayName="New! [332nd] Backpack (NCO)";
+		displayName="[332nd] Backpack (NCO)";
 		maximumLoad=200;
 		mass=40;
 		hiddenSelections[] = 
@@ -199,7 +199,7 @@ class CfgVehicles
 	class 332nd_Back: JLTS_Clone_belt_bag
 	{
 		author="Ithias";
-		displayName="New! [332nd] Rifleman Bags";
+		displayName="[332nd] Rifleman Bags";
 		model = "\a3\weapons_f\empty.p3d";
 		maximumLoad=100;
 		mass=40;

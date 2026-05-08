@@ -22,16 +22,16 @@ class PointerSlot;
 
 class cfgWeapons 
 {
-	class 3AS_Valken38X_F;
+	class ls_weapon_valken38x;
 
 //Primary
-	class 332nd_Valken: 3AS_Valken38X_F
+	class 332nd_Valken: ls_weapon_valken38x
 	{
 		cursor = "332nd_Cursor_Tri";
 		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
 		displayName="[332nd] Valken (MRK)";
-		recoil="3AS_recoil_DC15A";
+		recoil = "3AS_recoil_DC15A";
 		reloadAction = "3AS_GestureReload_DC17M";
 		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
 		reloadSound[] = {"",1,1};
@@ -93,7 +93,7 @@ class cfgWeapons
 			{
 				compatibleItems[]=
 				{
-					"332nd_3AS_VK38X",
+					"332nd_LS_VK38X",
 				};
 				iconPicture="";
 			};
@@ -107,10 +107,7 @@ class cfgWeapons
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				compatibleItems[]=
-				{
-					"3AS_Bipod_VK38X_f",
-				};
+				compatibleItems[]={};
 			};
 		};
 	};

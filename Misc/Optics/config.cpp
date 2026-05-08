@@ -1781,6 +1781,10 @@ class cfgWeapons
 	{
 		class ItemInfo;
 	};
+	class ls_cows_valken_optic: ItemCore
+	{
+		class ItemInfo;
+	};
 	class InventoryOpticsItem_Base_F;
 	class optic_lrps;
 
@@ -1911,6 +1915,51 @@ class cfgWeapons
 			class OpticsModes
 			{
 				class 3AS_VK38X_Optic
+				{
+					opticsID=1;
+					useModelOptics=1;
+					opticsPPEffects[]={};
+					opticsZoomMin=0.03125;
+					opticsZoomMax=0.0625;
+					opticsZoomInit=0.0625;
+					discreteDistance[]={100,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex = 0;
+					distanceZoomMin=100;
+					distanceZoomMax=1000;
+					//discretefov[] = {0.03125,0.0625};
+					//discreteInitIndex=0;
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					memoryPointCamera="opticView";
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"Ti"
+					};
+					thermalMode[]={0};
+					opticsFlare=1;
+					opticsDisablePeripherialVision=1;
+					cameraDir="";
+				};
+			};
+		};
+	};
+	
+	class 332nd_LS_VK38X: ls_cows_valken_optic
+	{
+		scope=2;
+		displayName="[LS] VK-38X Optic";
+		picture = "\A3\Weapons_F_EPB\Acc\Data\UI\gear_acco_sniper02_CA.paa";
+		model = "\ls\core\addons\weapons_valken\ls_acc_valken_optic.p3d";
+		weaponInfoType="RscWeaponZeroing";
+		class ItemInfo: ItemInfo
+		{
+			mass = 14;
+			//modelOptics = "\3AS\3AS_Weapons\Republic\ACC\3AS_reticle_VK38X_F";
+			modelOptics = "\A3\Weapons_F\acc\reticle_LRPS_F";
+			class OpticsModes
+			{
+				class LS_VK38X_Optic
 				{
 					opticsID=1;
 					useModelOptics=1;

@@ -189,6 +189,12 @@ class CfgVehicles
 		displayName = "[332nd] Rho Crate (Transport) [WIP]";
 		armor = 1000;
 		transportSoldier=34;
+		hiddenSelections[] = {"camo","camo1"};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Aircraft\Rho_Class\tex\332nd_Rho_Crate_co.paa",
+			"3as\3as_republic_heli\rho_class\data\crate_int_co.paa"
+		};
 		class ACE_SelfActions: ACE_SelfActions
 		{
 			class TFAR_IntercomChannel

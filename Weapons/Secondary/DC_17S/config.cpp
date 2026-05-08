@@ -42,7 +42,7 @@ class cfgWeapons
 		cursor = "332nd_Cursor_Circle";
 		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
-		displayName="[332nd] DC-17S";
+		displayName="[332nd] DC-17S (RFL)";
 		baseWeapon = "332nd_DC17S";
 		magazines[] =
 		{
@@ -127,7 +127,7 @@ class cfgWeapons
 	};
 	class 332nd_DC17S_Dual : 3AS_DC17S_Dual_F
 	{
-		displayName = "[332nd] DC-17S Dual";
+		displayName = "[332nd] DC-17S Dual (MED / CS+)";
 		baseWeapon = "332nd_DC17S_Dual";
 		ls_isWeaponType = 1;
 		muzzles[] = {"Right","Left"};
