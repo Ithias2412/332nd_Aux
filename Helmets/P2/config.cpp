@@ -647,6 +647,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Raven.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Max: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Max)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Max.paa"
+		};
+	};
 
 };
 
@@ -756,6 +768,7 @@ class XtdGearModels
 					"Ahri",
 					"Wylder",
 					"Raven",
+					"Max",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1122,7 +1135,13 @@ class XtdGearModels
 				class Raven
 				{
 					label = "Raven";
-					description = "NA";
+					description = "Work-a-holic";
+					//image = "xxx";
+				};
+				class Max
+				{
+					label = "Max";
+					description = "Forever Applicant";
 					//image = "xxx";
 				};
             };
@@ -1384,6 +1403,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Raven";
+		};
+		class 332nd_Helmet_P2_Max
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Max";
 		};
 	};
 };

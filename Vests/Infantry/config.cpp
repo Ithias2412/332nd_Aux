@@ -187,7 +187,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Walkie.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_Walkie.paa",
+			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -245,28 +245,6 @@ class cfgWeapons
 			{
 				"camo1",
 				"camo2"
-			};
-		};
-	};
-
-	class 332nd_Vest_Crow: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (Crow)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Crow.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
 			};
 		};
 	};
@@ -387,7 +365,6 @@ class XtdGearModels
 					"Ithias",
 					"Joker",
 					"Body",
-					"Crow",
 					"Frankenburg",
 					"Walkie",
 					"Dovah",
@@ -423,12 +400,6 @@ class XtdGearModels
                 {
                     label = "Body";
                     description = "Sir Lego Himself";
-                    // image = "xxx";
-                };
-				class Crow
-                {
-                    label = "Crow";
-                    description = "Attendence Enthusiast";
                     // image = "xxx";
                 };
 				class Frankenburg
@@ -508,11 +479,6 @@ class XtdGearInfos
 		{
             model = "332nd_Vest_Extended";
             Custom = "Body";
-		};
-		class 332nd_Vest_Crow
-		{
-            model = "332nd_Vest_Extended";
-            Custom = "Crow";
 		};
 		class 332nd_Vest_Dovah
 		{
