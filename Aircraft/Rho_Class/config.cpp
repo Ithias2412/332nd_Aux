@@ -94,7 +94,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Aircraft\Rho_Class\tex\332nd_Rho_Hull_co.paa",
-			"3as\3as_republic_heli\nu_class\data\hull_front_co.paa",
+			"332nd_Aux\Aircraft\Rho_Class\tex\332nd_Rho_Hull_Front_co.paa",
 			"332nd_Aux\Aircraft\Rho_Class\tex\332nd_Rho_Wings_co.paa",
 			"3as\3as_republic_heli\rho_class\data\cockpit_co.paa",
 			"3as\3as_republic_heli\rho_class\data\cockpit_interfaces_co.paa",

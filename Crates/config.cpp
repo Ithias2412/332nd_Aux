@@ -52,7 +52,6 @@ class CfgVehicles
 		{
 			"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"
 		};
-
 		class TransportMagazines
 		{
 			class 332nd_DC15A_Mag
@@ -255,7 +254,16 @@ class CfgVehicles
 				count = 25;
 				magazine = "332nd_Mortar_Mag";
 			};
-
+			class 332nd_Mortar_Flare_Mag
+			{
+				count = 25;
+				magazine = "332nd_Mortar_Flare_Mag";
+			};
+			class 332nd_Mortar_Smoke_Mag
+			{
+				count = 25;
+				magazine = "332nd_Mortar_Smoke_Mag";
+			};
 			// moved from TransportItems – these are mags/grenades
 			class 3AS_SmokeWhite
 			{
@@ -574,13 +582,23 @@ class CfgVehicles
 			};
 			class 332nd_CSW_Heavy_Repeater_W
 			{
-				count = 10;
+				count = 3;
 				weapon = "332nd_CSW_Heavy_Repeater_W";
 			};
 			class 332nd_CSW_Heavy_Repeater_Baseplate_W
 			{
-				count = 10;
+				count = 3;
 				weapon = "332nd_CSW_Heavy_Repeater_Baseplate_W";
+			};
+			class 332nd_CSW_Mortar_W
+			{
+				count = 3;
+				weapon = "332nd_CSW_Mortar_W";
+			};
+			class 332nd_CSW_Mortar_Baseplate_W
+			{
+				count = 3;
+				weapon = "332nd_CSW_Mortar_Baseplate_W";
 			};
 
 			// Optics / attachments still treated as weapons (CfgWeapons)
@@ -1113,7 +1131,16 @@ class CfgVehicles
 				count = 25;
 				magazine = "332nd_Mortar_Mag";
 			};
-
+			class 332nd_Mortar_Flare_Mag
+			{
+				count = 25;
+				magazine = "332nd_Mortar_Flare_Mag";
+			};
+			class 332nd_Mortar_Smoke_Mag
+			{
+				count = 25;
+				magazine = "332nd_Mortar_Smoke_Mag";
+			};
 			// moved from Items – grenade/mag variants
 			class 3AS_SmokeWhite
 			{
