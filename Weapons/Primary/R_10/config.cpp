@@ -1,6 +1,6 @@
 class CfgPatches 
 {
-	class 332nd_Mando_Rifle
+	class 332nd_R_10
 	{
 		units[] = 
         {
@@ -8,7 +8,7 @@ class CfgPatches
         };
 		weapons[] = 
         {
-            "332nd_Mando_Rifle",
+            "332nd_R_10",
         };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -26,13 +26,13 @@ class WeaponSlotsInfo;
 class GunParticles;
 class cfgWeapons 
 {
-	class SFA_Mando_Arkanian_rifle;
+	class SFA_R10;
 //Primary
-	class 332nd_Mando_Rifle: SFA_Mando_Arkanian_rifle
+	class 332nd_R_10: SFA_R10
 	{
-		displayname = "[Butch Deloria] Mandalorian Assault Rifle";
+		displayname = "[Butch Deloria] R-10";
 		modes[] = {"Single","Burst","close","short","medium"};
-		magazines[] = {"332nd_Mando_Rifle_Mag"};
+		magazines[] = {"332nd_R_10_Mag"};
 		class Single: Mode_SemiAuto
 		{
 			reloadTime = 0.12;
@@ -57,8 +57,8 @@ class cfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\SFA_Main\SFA_Weapons_R\Arkanian\data\SFX\arkanian_blaster.wav",1,1,1800};
-				beginwater1[] = {"\SFA_Main\SFA_Weapons_R\Arkanian\data\SFX\arkanian_blaster.wav",1,1,1800};
+				begin1[] = {"\SFA_Main\SFA_Weapons_R\Ossan_Elim\data\SFX\ossan_elim.wav",1,1,1800};
+				beginwater1[] = {"\SFA_Main\SFA_Weapons_R\Ossan_Elim\data\SFX\ossan_elim.wav",1,1,1800};
 				soundBegin[] = {"begin1",0.33};
 				soundBeginwater[] = {"beginwater1",0.33};
 				weaponSoundEffect = "";
@@ -88,8 +88,8 @@ class cfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\SFA_Main\SFA_Weapons_R\Arkanian\data\SFX\arkanian_blaster.wav",1,1,1800};
-				beginwater1[] = {"\SFA_Main\SFA_Weapons_R\Arkanian\data\SFX\arkanian_blaster.wav",1,1,1800};
+				begin1[] = {"\SFA_Main\SFA_Weapons_R\Ossan_Elim\data\SFX\ossan_elim.wav",1,1,1800};
+				beginwater1[] = {"\SFA_Main\SFA_Weapons_R\Ossan_Elim\data\SFX\ossan_elim.wav",1,1,1800};
 				soundBegin[] = {"begin1",0.33};
 				soundBeginwater[] = {"beginwater1",0.33};
 				weaponSoundEffect = "";
@@ -100,11 +100,11 @@ class cfgWeapons
 
 class CfgMagazines
 {
-	class SFA_Arkanian_mag;
-	class 332nd_Mando_Rifle_Mag: SFA_Arkanian_mag
+	class SFA_R10_mag;
+	class 332nd_R_10_Mag: SFA_R10_mag
 	{
-		ammo = "332nd_Gas_Level_S2";
-		displayname = "[Butch Deloria] Mandalorian Assault Rifle Energy Cell";
+		ammo = "332nd_CIS_E5_Ammo";
+		displayname = "[Butch Deloria] R-10 Energy Cell";
 	};
 
 };
