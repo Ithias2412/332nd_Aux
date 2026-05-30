@@ -48,8 +48,8 @@ class cfgAmmo
         ace_frag_enabled = 0;
         ace_frag_skip = 1;
         indirectHit = 0;
-        indirectHitRange = 15;
-		dangerRadiusHit=5;
+        indirectHitRange = 30;
+		dangerRadiusHit=10;
 		suppressionRadiusHit=5;
         ExplosionEffects = "Droid_Popper_GrenadeExplosion"; 
         SoundSetExplosion[] = {"Droidpopper_Soundset"}; 
