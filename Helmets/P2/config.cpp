@@ -298,7 +298,7 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Mouse.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Fusion: 332nd_Helmet_P2_CR
+	/* class 332nd_Helmet_P2_Fusion: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Fusion)";
 		hiddenSelections[]=
@@ -309,8 +309,8 @@ class CfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Fusion.paa"
 		};
-	};
-	class 332nd_Helmet_P2_Cherryy: 332nd_Helmet_P2_CR
+	}; */
+	/* class 332nd_Helmet_P2_Cherryy: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Cherryy)";
 		hiddenSelections[]=
@@ -321,7 +321,7 @@ class CfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Cherryy.paa"
 		};
-	};
+	}; */
 	class 332nd_Helmet_P2_Shuck: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Shuck)";
@@ -709,7 +709,7 @@ class XtdGearModels
 				{
 					// "Asuka",
 					"Body", 
-					"Cherryy", 
+					/* "Cherryy",  */
 					// "Cin",
 					"Crow", 
 					"Denal", 
@@ -747,7 +747,7 @@ class XtdGearModels
 					"Inu",
 					"Mouse",
 					"Shuck",
-					"Fusion",
+					/* "Fusion", */
 					"Rode",
 					"Rimuru",
 					"Clari",
@@ -784,12 +784,12 @@ class XtdGearModels
                     description = "The man the myth the legend";
                     //image = "xxx";
                 };
-				class Cherryy
+				/* class Cherryy
                 {
                     label = "Cherryy";
                     description = "Piller of the community";
                     //image = "xxx";
-                };
+                }; */
 				/* class Cin
 				{
 					label = "Cin";
@@ -1012,12 +1012,12 @@ class XtdGearModels
 					description = "Waited 3 months for this";
 					//image = "xxx";
 				};
-				class Fusion
+				/* class Fusion
 				{
 					label = "Fusion";
 					description = "Awaiting Rimuru DM";
 					//image = "xxx";
-				};
+				}; */
 				class Rode
 				{
 					label = "Rode";
@@ -1259,21 +1259,21 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Mouse";
 		};
-		class 332nd_Helmet_P2_Cherryy
+		/* class 332nd_Helmet_P2_Cherryy
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Cherryy";
-		};
+		}; */
 		class 332nd_Helmet_P2_Shuck
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Shuck";
 		};
-		class 332nd_Helmet_P2_Fusion
+		/* class 332nd_Helmet_P2_Fusion
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Fusion";
-		};
+		}; */
 		class 332nd_Helmet_P2_Crow
 		{
             model = "332nd_Helmets_P2_Extended";
