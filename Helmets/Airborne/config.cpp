@@ -68,12 +68,10 @@ class cfgWeapons
 			};
 		};		
 	};
-	class 332nd_Helmet_AB_Cherryy: JLTS_CloneHelmetAB
+	class 332nd_Helmet_AB_Cherryy: 332nd_Helmet_AB_Base
 	{
 		author="Cherryy";
-		dlc="332nd Aux";
 		displayName="[332nd] AB Helmet (Cherryy)";
-		subItems[] = {};
 		hiddenSelections[] = 
 		{
 			"camo1",
@@ -83,12 +81,10 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Cherryy.paa",
 		};		
 	};
-	class 332nd_Helmet_AB_Fusion: JLTS_CloneHelmetAB
+	class 332nd_Helmet_AB_Fusion: 332nd_Helmet_AB_Base
 	{
 		author="Fusion";
-		dlc="332nd Aux";
 		displayName="[332nd] AB Helmet (Fusion)";
-		subItems[] = {};
 		hiddenSelections[] = 
 		{
 			"camo1",
@@ -98,42 +94,10 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Fusion.paa",
 		};		
 	};
-	class 332nd_Helmet_AB_Crow: JLTS_CloneHelmetAB
+	class 332nd_Helmet_AB_Trick: 332nd_Helmet_AB_Base
 	{
 		author="Ahri";
-		dlc="332nd Aux";
-		displayName="[332nd] AB Helmet (Crow)";
-		subItems[] = {};
-		hiddenSelections[] = 
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Crow.paa",
-		};		
-	};
-	class 332nd_Helmet_AB_Grim: JLTS_CloneHelmetAB
-	{
-		author="Grim";
-		dlc="332nd Aux";
-		displayName="[332nd] AB Helmet (Grim)";
-		subItems[] = {};
-		hiddenSelections[] = 
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Grim.paa",
-		};		
-	};
-	class 332nd_Helmet_AB_Trick: JLTS_CloneHelmetAB
-	{
-		author="Ahri";
-		dlc="332nd Aux";
 		displayName="[332nd] AB Helmet (Trick)";
-		subItems[] = {};
 		hiddenSelections[] = 
 		{
 			"camo1",
@@ -174,8 +138,6 @@ class XtdGearModels
 				{ 
 					"Cherryy",
 					"Fusion",
-					"Crow",
-					"Grim",
 					"Trick", 
 				};
                 changeingame = 0;
@@ -183,7 +145,7 @@ class XtdGearModels
 				class Cherryy
                 {
                     label = "Cherryy";
-                    description = "Piller of the community";
+                    description = "Can't hold a billet";
                     //image = "xxx";
             	};
 				class Fusion
@@ -192,18 +154,6 @@ class XtdGearModels
                     description = "Awaiting Rimuru DM";
                     //image = "xxx";
             	};
-				class Crow
-				{
-					label = "Crow";
-					description = "On the List";
-					//image = "xxx";
-				};
-				class Grim
-				{
-					label = "Grim";
-					description = "Artificially Intelligent";
-					//image = "xxx";
-				};
 				class Trick
                 {
                     label = "Trick";
@@ -219,7 +169,7 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-         class 332nd_Helmet_AB_Base
+        class 332nd_Helmet_AB_Base
         {
             model = "332nd_Helmets_AB_Extended";
             Default = "Trooper";
@@ -233,16 +183,6 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_AB_Extended";
             Customs = "Fusion";
-        };
-		class 332nd_Helmet_AB_Crow
-        {
-            model = "332nd_Helmets_AB_Extended";
-            Customs = "Crow";
-        };
-		class 332nd_Helmet_AB_Grim
-        {
-            model = "332nd_Helmets_AB_Extended";
-            Customs = "Grim";
         };
 		class 332nd_Helmet_AB_Trick
         {
