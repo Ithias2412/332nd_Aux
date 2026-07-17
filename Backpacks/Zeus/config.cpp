@@ -1,13 +1,14 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+class CfgPatches
 {
 	class 332nd_Backpacks_Zeus
 	{
-		units[] = 
+		units[] =
         {
             "",
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             "",
             ""
@@ -28,7 +29,7 @@ class CfgVehicles
 	{
 		displayName="[332nd] Naval Radio Pouches";
 		model = "3AS\3AS_Characters_Imperial\Vests\Model\3AS_Stormtrooper_vest_addons.p3d";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo_pouldron",
 			"camo_bandolier",
@@ -36,7 +37,7 @@ class CfgVehicles
 			"camo_ammo_shoulder",
 			"camo_ammo_belt"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"",
 			"",
@@ -77,10 +78,6 @@ class XtdGearInfos
 {
     class CfgVehicles
     {
-        class 332nd_Zeus_Backpack
-        {
-            model = "332nd_Zeus_Backpack_Extended";
-            Type = "Radio";
-        };
+        XTD_INFO(332nd_Zeus_Backpack, "332nd_Zeus_Backpack_Extended", Type, "Radio")
     };
 };

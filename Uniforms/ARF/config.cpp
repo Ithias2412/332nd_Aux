@@ -1,3 +1,4 @@
+#include "..\..\332nd_Aux_Macros.hpp"
 class CfgPatches {
 	class 332nd_Uniforms_ARF {
 		units[] = 
@@ -19,131 +20,19 @@ class cfgWeapons
 	class 332nd_Uniform_Clone_CR;
 	
 // Uniform
-	class 332nd_Uniform_ARF_Desert: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] ARF Trooper Armor (Desert)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_ARF_Desert_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_ARF_Urban: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] ARF Trooper Armor (Urban)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_ARF_Urban_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_ARF_Winter: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] ARF Trooper Armor (Winter)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_ARF_Winter_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_ARF_Woodland: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] ARF Trooper Armor (Woodland)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_ARF_Woodland_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
+	UNI_ITEM(332nd_Uniform_ARF_Desert, "332nd_Uniform_ARF_Desert_Veh", "[332nd] ARF Trooper Armor (Desert)")
+	UNI_ITEM(332nd_Uniform_ARF_Urban, "332nd_Uniform_ARF_Urban_Veh", "[332nd] ARF Trooper Armor (Urban)")
+	UNI_ITEM(332nd_Uniform_ARF_Winter, "332nd_Uniform_ARF_Winter_Veh", "[332nd] ARF Trooper Armor (Winter)")
+	UNI_ITEM(332nd_Uniform_ARF_Woodland, "332nd_Uniform_ARF_Woodland_Veh", "[332nd] ARF Trooper Armor (Woodland)")
 };
 
 class CfgVehicles
 {
 	class 332nd_Uniform_Clone_CR_Veh;
-	class 332nd_Uniform_ARF_Desert_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_ARF_Desert";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Desert.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Desert.paa",
-		};
-		camouflage = 0.1;
-	};
-	class 332nd_Uniform_ARF_Urban_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_ARF_Urban";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Urban.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Urban.paa",
-		};
-		camouflage = 0.1;
-	};
-	class 332nd_Uniform_ARF_Winter_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_ARF_Winter";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Winter.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Winter.paa",
-		};
-		camouflage = 0.1;
-	};
-	class 332nd_Uniform_ARF_Woodland_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_ARF_Woodland";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"insignia"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Woodland.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Woodland.paa",
-		};
-		camouflage = 0.1;
-	};
+	UNI_VEH_ARF(332nd_Uniform_ARF_Desert_Veh, "332nd_Uniform_ARF_Desert", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Desert.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Desert.paa")
+	UNI_VEH_ARF(332nd_Uniform_ARF_Urban_Veh, "332nd_Uniform_ARF_Urban", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Urban.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Urban.paa")
+	UNI_VEH_ARF(332nd_Uniform_ARF_Winter_Veh, "332nd_Uniform_ARF_Winter", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Winter.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Winter.paa")
+	UNI_VEH_ARF(332nd_Uniform_ARF_Woodland_Veh, "332nd_Uniform_ARF_Woodland", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF_Woodland.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_ARF_Woodland.paa")
 
 };
 
@@ -195,25 +84,9 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Uniform_ARF_Desert
-        {
-            model = "332nd_Uniform_ARF_Extended";
-            Camo = "Desert";
-        };
-        class 332nd_Uniform_ARF_Urban
-        {
-            model = "332nd_Uniform_ARF_Extended";
-            Camo = "Urban";
-        };
-        class 332nd_Uniform_ARF_Winter
-        {
-            model = "332nd_Uniform_ARF_Extended";
-            Camo = "Winter";
-        };
-        class 332nd_Uniform_ARF_Woodland
-        {
-            model = "332nd_Uniform_ARF_Extended";
-            Camo = "Woodland";
-        };
+        XTD_INFO(332nd_Uniform_ARF_Desert, "332nd_Uniform_ARF_Extended", Camo, "Desert")
+        XTD_INFO(332nd_Uniform_ARF_Urban, "332nd_Uniform_ARF_Extended", Camo, "Urban")
+        XTD_INFO(332nd_Uniform_ARF_Winter, "332nd_Uniform_ARF_Extended", Camo, "Winter")
+        XTD_INFO(332nd_Uniform_ARF_Woodland, "332nd_Uniform_ARF_Extended", Camo, "Woodland")
     };
 };

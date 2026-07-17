@@ -1,6 +1,9 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+#define INF_VEST_RO(NAME,DISP,TEX) class NAME: 332nd_Trooper_Vest { displayName=DISP; model="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d"; hiddenSelections[]={"camo1","camo2"}; hiddenSelectionsTextures[]={TEX,"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa"}; class ItemInfo: ItemInfo { uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d"; hiddenSelections[]={"camo1","camo2"}; }; };
+#define INF_VEST_OFF(NAME,DISP,TEX) class NAME: 332nd_Trooper_Vest { displayName=DISP; model="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d"; hiddenSelections[]={"camo1"}; hiddenSelectionsTextures[]={TEX}; class ItemInfo: ItemInfo { uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d"; hiddenSelections[]={"camo1"}; }; };
+class CfgPatches
 {
-	class 332nd_Vests 
+	class 332nd_Vests
 	{
 		units[] = 
         {
@@ -105,69 +108,26 @@ class cfgWeapons
 		};
 	};
 
-	class 332nd_CSS_Vest: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (CSS)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2"
-			};
-		};
-	};
+	INF_VEST_RO(332nd_CSS_Vest, "[332nd] Vest (CSS)", "332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa")
 
-	class 332nd_CSM_Vest: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (CSM)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-			};
-		};
-	};
+	INF_VEST_OFF(332nd_CSM_Vest, "[332nd] Vest (CSM)", "332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa")
 
 	class 332nd_CC_Vest: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (CC)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa",
 		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[] =
 			{
 				"camo1",
 			};
@@ -200,100 +160,11 @@ class cfgWeapons
 		};
 	};
 	
-	class 332nd_Vest_Body: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (Body)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Body.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2"
-			};
-		};
-	};
-	class 332nd_Vest_Lettuce: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (Lettuce)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Lettuce.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2"
-			};
-		};
-	};
+	INF_VEST_RO(332nd_Vest_Body, "[332nd] Vest (Body)", "332nd_Aux\Vests\Tex\332nd_Vest_Officer_Body.paa")
+	INF_VEST_RO(332nd_Vest_Lettuce, "[332nd] Vest (Lettuce)", "332nd_Aux\Vests\Tex\332nd_Vest_Officer_Lettuce.paa")
 	
-	class 332nd_Vest_Dovah: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (Dovah)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Dovah.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-			};
-		};
-	};
-	class 332nd_Vest_Joker: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (Joker)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Joker.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2"
-			};
-		};
-	};
+	INF_VEST_OFF(332nd_Vest_Dovah, "[332nd] Vest (Dovah)", "332nd_Aux\Vests\Tex\332nd_Vest_Officer_Dovah.paa")
+	INF_VEST_RO(332nd_Vest_Joker, "[332nd] Vest (Joker)", "332nd_Aux\Vests\Tex\332nd_Vest_Officer_Joker.paa")
 	
 };
 
@@ -435,65 +306,17 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Trooper_Vest
-        {
-            model = "332nd_Vest_Extended";
-            Rank = "CR";
-        };
-        class 332nd_CSP_Vest
-        {
-            model = "332nd_Vest_Extended";
-            Rank = "CSP";
-        };
-        class 332nd_CP_Vest
-        {
-            model = "332nd_Vest_Extended";
-            Rank = "CP";
-        };
-        class 332nd_CS_Vest
-        {
-            model = "332nd_Vest_Extended";
-            Rank = "CS";
-        };
-        class 332nd_CSS_Vest
-        {
-            model = "332nd_Vest_Extended";
-            Rank = "CSS";
-        };
-        class 332nd_CSM_Vest
-        {
-            model = "332nd_Vest_Extended";
-            Rank = "CSM";
-        };
-        class 332nd_CC_Vest
-        {
-            model = "332nd_Vest_Extended";
-            Rank = "CC";
-        };
-        class 332nd_Vest_Walkie
-        {
-            model = "332nd_Vest_Extended";
-            Custom = "Walkie";
-        };
-		class 332nd_Vest_Body
-		{
-            model = "332nd_Vest_Extended";
-            Custom = "Body";
-		};
-		class 332nd_Vest_Dovah
-		{
-            model = "332nd_Vest_Extended";
-            Custom = "Dovah";
-		};
-		class 332nd_Vest_Lettuce
-		{
-            model = "332nd_Vest_Extended";
-            Custom = "Lettuce";
-		};
-		class 332nd_Vest_Joker
-		{
-            model = "332nd_Vest_Extended";
-            Custom = "Joker";
-		};
+        XTD_INFO(332nd_Trooper_Vest, "332nd_Vest_Extended", Rank, "CR")
+        XTD_INFO(332nd_CSP_Vest, "332nd_Vest_Extended", Rank, "CSP")
+        XTD_INFO(332nd_CP_Vest, "332nd_Vest_Extended", Rank, "CP")
+        XTD_INFO(332nd_CS_Vest, "332nd_Vest_Extended", Rank, "CS")
+        XTD_INFO(332nd_CSS_Vest, "332nd_Vest_Extended", Rank, "CSS")
+        XTD_INFO(332nd_CSM_Vest, "332nd_Vest_Extended", Rank, "CSM")
+        XTD_INFO(332nd_CC_Vest, "332nd_Vest_Extended", Rank, "CC")
+        XTD_INFO(332nd_Vest_Walkie, "332nd_Vest_Extended", Custom, "Walkie")
+        XTD_INFO(332nd_Vest_Body, "332nd_Vest_Extended", Custom, "Body")
+        XTD_INFO(332nd_Vest_Dovah, "332nd_Vest_Extended", Custom, "Dovah")
+        XTD_INFO(332nd_Vest_Lettuce, "332nd_Vest_Extended", Custom, "Lettuce")
+        XTD_INFO(332nd_Vest_Joker, "332nd_Vest_Extended", Custom, "Joker")
 	};
 };

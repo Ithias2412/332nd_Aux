@@ -1,13 +1,15 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+#define BP_VAR(NAME,PARENT,DISP,TEX) class NAME: PARENT { displayName = DISP; hiddenSelectionsTextures[] = { TEX }; };
+class CfgPatches
 {
 	class 332nd_Backpacks_P1
 	{
-		units[] = 
+		units[] =
         {
             "",
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             "",
             ""
@@ -28,37 +30,11 @@ class CfgVehicles
 //Base Items
 
 	//Backpacks
-	class 332nd_Backpack_P1: 332nd_Backpack
-	{
-		displayName="[332nd] Backpack (Ammo Bearer)";
-		hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_co.paa"};
-	};
-	class 332nd_Backpack_AT_P1: 332nd_Backpack_AT
-	{
-		displayName="[332nd] Backpack (AT)";
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_AT_P1.paa",
-		};
-	};
-	class 332nd_Backpack_RTO_P1: 332nd_Backpack_RTO
-	{
-		displayName="[332nd] Backpack (RTO)";
-		hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_co.paa"};
-	};
-	class 332nd_Backpack_Medic_P1: 332nd_Backpack_Medic
-	{
-		displayName="[332nd] Backpack (Medic)";
-		hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_medic_co.paa"};
-	};
-	class 332nd_Backpack_Engineer_P1: 332nd_Backpack_Engineer
-	{
-		displayName="[332nd] Backpack (ENG)";
-		hiddenSelectionsTextures[] = 
-		{
-			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Engineer_P1.paa",
-		};
-	};
+	BP_VAR(332nd_Backpack_P1, 332nd_Backpack, "[332nd] Backpack (Ammo Bearer)", "\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_co.paa")
+	BP_VAR(332nd_Backpack_AT_P1, 332nd_Backpack_AT, "[332nd] Backpack (AT)", "\332nd_Aux\Backpacks\Tex\332nd_Backpack_AT_P1.paa")
+	BP_VAR(332nd_Backpack_RTO_P1, 332nd_Backpack_RTO, "[332nd] Backpack (RTO)", "\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_co.paa")
+	BP_VAR(332nd_Backpack_Medic_P1, 332nd_Backpack_Medic, "[332nd] Backpack (Medic)", "\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_medic_co.paa")
+	BP_VAR(332nd_Backpack_Engineer_P1, 332nd_Backpack_Engineer, "[332nd] Backpack (ENG)", "\332nd_Aux\Backpacks\Tex\332nd_Backpack_Engineer_P1.paa")
 };
 
 
@@ -116,30 +92,10 @@ class XtdGearInfos
 {
     class CfgVehicles
     {
-        class 332nd_Backpack_P1
-        {
-            model = "332nd_Backpack_P1_Extended";
-            Backpacks = "AMMO";
-        };
-        class 332nd_Backpack_AT_P1
-        {
-            model = "332nd_Backpack_P1_Extended";
-            Backpacks = "AT";
-        };
-        class 332nd_Backpack_RTO_P1
-        {
-            model = "332nd_Backpack_P1_Extended";
-            Backpacks = "RTO";
-        };
-        class 332nd_Backpack_Medic_P1
-        {
-            model = "332nd_Backpack_P1_Extended";
-            Backpacks = "Medic";
-        };
-        class 332nd_Backpack_Engineer_P1
-        {
-            model = "332nd_Backpack_P1_Extended";
-            Backpacks = "ENG";
-        };
+        XTD_INFO(332nd_Backpack_P1, "332nd_Backpack_P1_Extended", Backpacks, "AMMO")
+        XTD_INFO(332nd_Backpack_AT_P1, "332nd_Backpack_P1_Extended", Backpacks, "AT")
+        XTD_INFO(332nd_Backpack_RTO_P1, "332nd_Backpack_P1_Extended", Backpacks, "RTO")
+        XTD_INFO(332nd_Backpack_Medic_P1, "332nd_Backpack_P1_Extended", Backpacks, "Medic")
+        XTD_INFO(332nd_Backpack_Engineer_P1, "332nd_Backpack_P1_Extended", Backpacks, "ENG")
     };
 };

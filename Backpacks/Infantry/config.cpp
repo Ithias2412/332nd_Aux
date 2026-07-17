@@ -1,13 +1,14 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+class CfgPatches
 {
-	class 332nd_Backpacks 
+	class 332nd_Backpacks
 	{
-		units[] = 
+		units[] =
         {
             "",
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             "",
             ""
@@ -35,27 +36,27 @@ class CfgVehicles
 		displayName="[332nd] Backpack (Ammo Bearer)";
 		maximumLoad=320;
 		mass=40;
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack.paa",
 		};
 	};
-	
+
 	class 332nd_Backpack_AT: JLTS_Clone_backpack
 	{
 		author="Ithias";
 		displayName="[332nd] Backpack (AT)";
 		maximumLoad=200;
 		mass=40;
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_AT.paa",
 		};
@@ -67,11 +68,11 @@ class CfgVehicles
 		displayName="[332nd] Backpack (RTO)";
 		maximumLoad=258;
 		mass=40;
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack.paa",
 		};
@@ -90,27 +91,27 @@ class CfgVehicles
 		displayName="[332nd] Backpack (Medic)";
 		maximumLoad=321;
 		mass=40;
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Medic.paa",
 		};
 	};
-	
+
 	class 332nd_Backpack_Medic_RTO: JLTS_Clone_backpack_RTO
 	{
 		author="Ithias";
 		displayName="[332nd] Backpack (Platoon Medic)";
 		maximumLoad=321;
 		mass=40;
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Medic.paa",
 		};
@@ -130,16 +131,16 @@ class CfgVehicles
 		displayName="[332nd] Backpack (Engineer)";
 		maximumLoad=320;
 		mass=40;
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Engineer.paa",
 		};
 	};
-	
+
 	//Bag
 	class 332nd_Bag_GRN_MRK: JLTS_Clone_belt_bag
 	{
@@ -148,7 +149,7 @@ class CfgVehicles
 		maximumLoad=150;
 		mass=40;
 	};
-		
+
 	class 332nd_Bag_AR: IDA_Clone_ScoutPack
 	{
 		author="Ithias";
@@ -179,11 +180,11 @@ class CfgVehicles
 		displayName="[332nd] Backpack (NCO)";
 		maximumLoad=200;
 		mass=40;
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_RTO_pack_co.paa"
 		};
@@ -306,12 +307,12 @@ class XtdGearModels
             class Jumppack
             {
                 label = "Jumppack";
-				values[] = 
+				values[] =
 				{
 					"JT12",
 					"JT12_NCO",
 					"JT12_Medic",
-					"Pilot", 
+					"Pilot",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -348,85 +349,20 @@ class XtdGearInfos
 {
     class CfgVehicles
     {
-        class 332nd_Backpack
-        {
-            model = "332nd_Backpack_Extended";
-            Backpacks = "AMMO";
-			
-        };
-        class 332nd_Backpack_AT
-        {
-            model = "332nd_Backpack_Extended";
-            Backpacks = "AT";
-			
-        };
-        class 332nd_Backpack_RTO
-        {
-            model = "332nd_Backpack_Extended";
-            Backpacks = "RTO";
-			
-        };
-        class 332nd_Backpack_Medic
-        {
-            model = "332nd_Backpack_Extended";
-            Backpacks = "Medic";
-        };
-        class 332nd_Backpack_Engineer
-        {
-            model = "332nd_Backpack_Extended";
-            Backpacks = "ENG";
-			
-        };
-        class 332nd_Back
-        {
-            model = "332nd_Backpack_Extended";
-            Bags = "Rifleman";
-        };
-        class 332nd_Bag_GRN_MRK
-        {
-            model = "332nd_Backpack_Extended";
-            Bags = "GRN_MRK";
-        };
-        class 332nd_Bag_AR
-        {
-            model = "332nd_Backpack_Extended";
-            Bags = "AR";
-        };
-        class 332nd_Back_Radio
-        {
-            model = "332nd_Backpack_Extended";
-            NCO = "Radio";
-        };
-        class 332nd_Back_NCO
-        {
-            model = "332nd_Backpack_Extended";
-            NCO = "Qual";
-			
-        };
-        class 332nd_JT12
-        {
-            model = "332nd_Backpack_Extended";
-            Jumppack = "JT12";
-        };
-        class 332nd_JT12_NCO
-        {
-            model = "332nd_Backpack_Extended";
-            Jumppack = "JT12_NCO";
-        };
-        class 332nd_JT12_Medic
-        {
-            model = "332nd_Backpack_Extended";
-            Jumppack = "JT12_Medic";
-        };
-        class 332nd_MC
-        {
-            model = "332nd_Backpack_Extended";
-            Jumppack = "Pilot";
-        };
-        class 332nd_Backpack_Medic_RTO
-        {
-            model = "332nd_Backpack_Extended";
-            Backpacks = "Plt_Medic";
-        };
+        XTD_INFO(332nd_Backpack, "332nd_Backpack_Extended", Backpacks, "AMMO")
+        XTD_INFO(332nd_Backpack_AT, "332nd_Backpack_Extended", Backpacks, "AT")
+        XTD_INFO(332nd_Backpack_RTO, "332nd_Backpack_Extended", Backpacks, "RTO")
+        XTD_INFO(332nd_Backpack_Medic, "332nd_Backpack_Extended", Backpacks, "Medic")
+        XTD_INFO(332nd_Backpack_Engineer, "332nd_Backpack_Extended", Backpacks, "ENG")
+        XTD_INFO(332nd_Back, "332nd_Backpack_Extended", Bags, "Rifleman")
+        XTD_INFO(332nd_Bag_GRN_MRK, "332nd_Backpack_Extended", Bags, "GRN_MRK")
+        XTD_INFO(332nd_Bag_AR, "332nd_Backpack_Extended", Bags, "AR")
+        XTD_INFO(332nd_Back_Radio, "332nd_Backpack_Extended", NCO, "Radio")
+        XTD_INFO(332nd_Back_NCO, "332nd_Backpack_Extended", NCO, "Qual")
+        XTD_INFO(332nd_JT12, "332nd_Backpack_Extended", Jumppack, "JT12")
+        XTD_INFO(332nd_JT12_NCO, "332nd_Backpack_Extended", Jumppack, "JT12_NCO")
+        XTD_INFO(332nd_JT12_Medic, "332nd_Backpack_Extended", Jumppack, "JT12_Medic")
+        XTD_INFO(332nd_MC, "332nd_Backpack_Extended", Jumppack, "Pilot")
+        XTD_INFO(332nd_Backpack_Medic_RTO, "332nd_Backpack_Extended", Backpacks, "Plt_Medic")
     };
 };

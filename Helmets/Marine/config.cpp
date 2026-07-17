@@ -1,10 +1,11 @@
+#include "..\..\332nd_Aux_Macros.hpp"
 class CfgPatches {
 	class 332nd_Helmets_Marine {
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -13,7 +14,7 @@ class CfgPatches {
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class cfgWeapons
 {
 	class HeadgearItem;
 	class SEA_Helmet_GM_21;
@@ -41,7 +42,7 @@ class cfgWeapons
 		{
 			mass=1;
 			uniformModel = "JLTS_AE_GM\SEA_Helmet_GM_Base.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[] =
 			{
 				"Camo1",
 				"Visor",
@@ -74,7 +75,7 @@ class cfgWeapons
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Helmets_Marine_Extended
         {
@@ -100,12 +101,8 @@ class XtdGearModels
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
-        class 332nd_Helmet_Marine_CT
-        {
-            model = "332nd_Helmets_Marine_Extended";
-            Type = "Trooper";
-        };
+        XTD_INFO(332nd_Helmet_Marine_CT, "332nd_Helmets_Marine_Extended", Type, "Trooper")
 	};
 };

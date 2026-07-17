@@ -1,13 +1,14 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+class CfgPatches
 {
 	class 332nd_Backpacks_Marine
 	{
-		units[] = 
+		units[] =
         {
             "",
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             "",
             ""
@@ -34,11 +35,11 @@ class CfgVehicles
 		maximumLoad=100;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack.paa",
 		};
@@ -51,11 +52,11 @@ class CfgVehicles
 		maximumLoad=200;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_AR.paa",
 		};
@@ -68,11 +69,11 @@ class CfgVehicles
 		maximumLoad=200;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_AT.paa",
 		};
@@ -85,12 +86,12 @@ class CfgVehicles
 		maximumLoad=258;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenselections[] = 
+		hiddenselections[] =
 		{
 			"Camo1",
 			"Camo2",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_RTO.paa",
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_RTO_2.paa",
@@ -112,12 +113,12 @@ class CfgVehicles
 		maximumLoad=200;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenselections[] = 
+		hiddenselections[] =
 		{
 			"Camo1",
 			"Camo2",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_RTO.paa",
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_RTO_2_NCO.paa",
@@ -139,11 +140,11 @@ class CfgVehicles
 		maximumLoad=321;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_Medic.paa",
 		};
@@ -157,11 +158,11 @@ class CfgVehicles
 		maximumLoad=320;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_ENG.paa",
 		};
@@ -174,11 +175,11 @@ class CfgVehicles
 		maximumLoad=320;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_Ammo_Bearer.paa",
 		};
@@ -191,11 +192,11 @@ class CfgVehicles
 		maximumLoad=150;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_GRN.paa",
 		};
@@ -208,11 +209,11 @@ class CfgVehicles
 		maximumLoad=150;
 		mass=40;
 		picture = "\332nd_Aux\Backpacks\Tex\Logo_Backpack.paa";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Marine_Backpack_MRK.paa",
 		};
@@ -304,55 +305,15 @@ class XtdGearInfos
 {
     class CfgVehicles
     {
-        class 332nd_Marine_Backpack
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "Rifleman";
-        };
-        class 332nd_Marine_Backpack_AR
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "AR";
-        };
-        class 332nd_Marine_Backpack_AT
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "AT";
-        };
-        class 332nd_Marine_Backpack_RTO
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "RTO";
-        };
-        class 332nd_Marine_Backpack_NCO
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "NCO";
-        };
-        class 332nd_Marine_Backpack_Medic
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "Medic";
-        };
-        class 332nd_Marine_Backpack_ENG
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "ENG";
-        };
-        class 332nd_Marine_Backpack_Ammo_Bearer
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "Ammo_Bearer";
-        };
-        class 332nd_Marine_Backpack_GRN
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "GRN";
-        };
-        class 332nd_Marine_Backpack_MRK
-        {
-            model = "332nd_Marine_Backpack_Extended";
-            Backpacks = "MRK";
-        };
+        XTD_INFO(332nd_Marine_Backpack, "332nd_Marine_Backpack_Extended", Backpacks, "Rifleman")
+        XTD_INFO(332nd_Marine_Backpack_AR, "332nd_Marine_Backpack_Extended", Backpacks, "AR")
+        XTD_INFO(332nd_Marine_Backpack_AT, "332nd_Marine_Backpack_Extended", Backpacks, "AT")
+        XTD_INFO(332nd_Marine_Backpack_RTO, "332nd_Marine_Backpack_Extended", Backpacks, "RTO")
+        XTD_INFO(332nd_Marine_Backpack_NCO, "332nd_Marine_Backpack_Extended", Backpacks, "NCO")
+        XTD_INFO(332nd_Marine_Backpack_Medic, "332nd_Marine_Backpack_Extended", Backpacks, "Medic")
+        XTD_INFO(332nd_Marine_Backpack_ENG, "332nd_Marine_Backpack_Extended", Backpacks, "ENG")
+        XTD_INFO(332nd_Marine_Backpack_Ammo_Bearer, "332nd_Marine_Backpack_Extended", Backpacks, "Ammo_Bearer")
+        XTD_INFO(332nd_Marine_Backpack_GRN, "332nd_Marine_Backpack_Extended", Backpacks, "GRN")
+        XTD_INFO(332nd_Marine_Backpack_MRK, "332nd_Marine_Backpack_Extended", Backpacks, "MRK")
     };
 };

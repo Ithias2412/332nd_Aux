@@ -1,3 +1,4 @@
+#include "..\..\332nd_Aux_Macros.hpp"
 class CfgPatches {
 	class 332nd_Uniforms_Marine {
 		units[] = 
@@ -263,10 +264,6 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Uniform_Marine_CT
-        {
-            model = "332nd_Uniform_Marine_Extended";
-            Type = "Trooper";
-        };
+        XTD_INFO(332nd_Uniform_Marine_CT, "332nd_Uniform_Marine_Extended", Type, "Trooper")
     };
 };

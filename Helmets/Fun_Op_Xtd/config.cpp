@@ -1,10 +1,11 @@
+#include "..\..\332nd_Aux_Macros.hpp"
 class CfgPatches {
 	class 332nd_Helmets_Fun_Ops_Xtd {
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -15,7 +16,7 @@ class CfgPatches {
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Helmets_Fun_Ops_Extended
         {
@@ -129,67 +130,23 @@ class XtdGearModels
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
 		//Commando
-        class 332nd_Helmet_Commando
-        {
-            model = "332nd_Helmets_Fun_Ops_Extended";
-            Commando = "Default";
-        };
+        XTD_INFO(332nd_Helmet_Commando, "332nd_Helmets_Fun_Ops_Extended", Commando, "Default")
 		//ARC
-        class 332nd_Helmet_ARC
-        {
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			ARC = "P1";
-        };
-		class 332nd_Helmet_ARC_P2
-        {
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			ARC = "P2";
-        };
+        XTD_INFO(332nd_Helmet_ARC, "332nd_Helmets_Fun_Ops_Extended", ARC, "P1")
+		XTD_INFO(332nd_Helmet_ARC_P2, "332nd_Helmets_Fun_Ops_Extended", ARC, "P2")
 		//104th
-		class 332nd_Helmet_P2_CT_104
-		{
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			104th = "Trooper";
-		};
-		class 332nd_Helmet_P2_CT_Boost
-		{
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			104th = "Boost";
-		};
-		class 332nd_Helmet_P2_CT_Comet
-		{
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			104th = "Comet";
-		};
-		class 332nd_Helmet_P2_CT_Sinker
-		{
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			104th = "Sinker";
-		};
+		XTD_INFO(332nd_Helmet_P2_CT_104, "332nd_Helmets_Fun_Ops_Extended", 104th, "Trooper")
+		XTD_INFO(332nd_Helmet_P2_CT_Boost, "332nd_Helmets_Fun_Ops_Extended", 104th, "Boost")
+		XTD_INFO(332nd_Helmet_P2_CT_Comet, "332nd_Helmets_Fun_Ops_Extended", 104th, "Comet")
+		XTD_INFO(332nd_Helmet_P2_CT_Sinker, "332nd_Helmets_Fun_Ops_Extended", 104th, "Sinker")
 		//212th
-		class 332nd_Helmet_P2_CT_212
-		{
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			212th = "Trooper";
-		};
-		class 332nd_Helmet_P2_CT_Waxer
-		{
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			212th = "Waxer";
-		};
-		class 332nd_Helmet_P2_CT_Boil
-		{
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			212th = "Boil";
-		};
+		XTD_INFO(332nd_Helmet_P2_CT_212, "332nd_Helmets_Fun_Ops_Extended", 212th, "Trooper")
+		XTD_INFO(332nd_Helmet_P2_CT_Waxer, "332nd_Helmets_Fun_Ops_Extended", 212th, "Waxer")
+		XTD_INFO(332nd_Helmet_P2_CT_Boil, "332nd_Helmets_Fun_Ops_Extended", 212th, "Boil")
 		//327th
-		class 332nd_Helmet_P2_CT_327
-		{
-            model = "332nd_Helmets_Fun_Ops_Extended";
-			327th = "Trooper";
-		};
+		XTD_INFO(332nd_Helmet_P2_CT_327, "332nd_Helmets_Fun_Ops_Extended", 327th, "Trooper")
 	};
 };

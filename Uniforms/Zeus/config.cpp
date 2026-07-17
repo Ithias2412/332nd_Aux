@@ -1,3 +1,5 @@
+#include "..\..\332nd_Aux_Macros.hpp"
+#define ZEUS_ITEM(NAME,PARENT,DISP,VEHREF) class NAME: PARENT { dlc = "332nd"; author = "Ithias"; scope = 2; displayName = DISP; class ItemInfo: UniformItem { uniformModel = ""; uniformClass = VEHREF; uniformType = "Neopren"; containerClass = "Supply50"; mass = 40; }; };
 class CfgPatches {
 	class 332nd_Uniforms_Zeus {
 		units[] = 
@@ -19,38 +21,10 @@ class cfgWeapons
 	class JMSLLTE_EmpOfficerCoat_green_F_CombatUniform;
 	class JMSGD_CloneOfficer_gr_F_CombatUniform;
 	
-	class 332nd_Uniform_Zeus_Field: JMSLLTE_EmpOfficerCoat_green_F_CombatUniform
-	{
-		dlc="332nd";
-		author="Ithias";
-		scope=2;
-		displayName="[332nd] Naval Uniform (Field)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Zeus_Field_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
+	ZEUS_ITEM(332nd_Uniform_Zeus_Field, JMSLLTE_EmpOfficerCoat_green_F_CombatUniform, "[332nd] Naval Uniform (Field)", "332nd_Uniform_Zeus_Field_Veh")
 
-	class 332nd_Uniform_Zeus_Deck: JMSGD_CloneOfficer_gr_F_CombatUniform 
-	{
-		dlc="332nd";
-		author="Ithias";
-		scope=2;
-		displayName="[332nd] Naval Uniform (Deck)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Zeus_Deck_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-};	
+	ZEUS_ITEM(332nd_Uniform_Zeus_Deck, JMSGD_CloneOfficer_gr_F_CombatUniform, "[332nd] Naval Uniform (Deck)", "332nd_Uniform_Zeus_Deck_Veh")
+};
 
 class CfgVehicles
 {
@@ -443,15 +417,7 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Uniform_Zeus_Deck
-        {
-            model = "332nd_Uniform_Zeus_Extended";
-            Envirement = "Deck";
-        };
-        class 332nd_Uniform_Zeus_Field
-        {
-            model = "332nd_Uniform_Zeus_Extended";
-            Envirement = "Field";
-        };
+        XTD_INFO(332nd_Uniform_Zeus_Deck, "332nd_Uniform_Zeus_Extended", Envirement, "Deck")
+        XTD_INFO(332nd_Uniform_Zeus_Field, "332nd_Uniform_Zeus_Extended", Envirement, "Field")
     };
 };

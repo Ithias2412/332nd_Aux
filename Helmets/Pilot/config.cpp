@@ -1,10 +1,12 @@
+#include "..\..\332nd_Aux_Macros.hpp"
+#define PILOT_HELM(NAME,DISP,TEX) class NAME: 332nd_Helmet_Pilot { displayName = DISP; hiddenSelectionsTextures[] = { TEX, }; };
 class CfgPatches {
 	class 332nd_Helmets_Pilot {
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -13,7 +15,7 @@ class CfgPatches {
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class cfgWeapons
 {
 	class HeadgearItem;
 	class ls_gar_phase2Pilot_helmet;
@@ -71,43 +73,15 @@ class cfgWeapons
 			};
 		};
 	};
-	class 332nd_Helmet_Pilot_Jorge: 332nd_Helmet_Pilot
-	{
-		displayName="[332nd] Pilot Helmet (Jorge)";
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Jorge.paa",
-		};
-	};
-	class 332nd_Helmet_Pilot_Cosmos: 332nd_Helmet_Pilot
-	{
-		displayName="[332nd] Pilot Helmet (Cosmos)";
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Cosmos.paa",
-		};
-	};
-	class 332nd_Helmet_Pilot_Gizmo: 332nd_Helmet_Pilot
-	{
-		displayName="[332nd] Pilot Helmet (Gizmo)";
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Gizmo.paa",
-		};
-	};
-	class 332nd_Helmet_Pilot_Ghillie: 332nd_Helmet_Pilot
-	{
-		displayName="[332nd] Pilot Helmet (Ghillie)";
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Ghillie.paa",
-		};
-	};
+	PILOT_HELM(332nd_Helmet_Pilot_Jorge, "[332nd] Pilot Helmet (Jorge)", "332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Jorge.paa")
+	PILOT_HELM(332nd_Helmet_Pilot_Cosmos, "[332nd] Pilot Helmet (Cosmos)", "332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Cosmos.paa")
+	PILOT_HELM(332nd_Helmet_Pilot_Gizmo, "[332nd] Pilot Helmet (Gizmo)", "332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Gizmo.paa")
+	PILOT_HELM(332nd_Helmet_Pilot_Ghillie, "[332nd] Pilot Helmet (Ghillie)", "332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Ghillie.paa")
 };
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Helmets_Pilot_Extended
         {
@@ -130,9 +104,9 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = 
+				values[] =
 				{
-					"Jorge", 
+					"Jorge",
 					"Cosmos",
 					"Gizmo",
 					"Ghillie",
@@ -170,32 +144,12 @@ class XtdGearModels
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
-        class 332nd_Helmet_Pilot
-        {
-            model = "332nd_Helmets_Pilot_Extended";
-            Type = "Pilot";
-        };
-		class 332nd_Helmet_Pilot_Jorge
-		{
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Jorge";
-		};
-		class 332nd_Helmet_Pilot_Cosmos
-		{
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Cosmos";
-		};
-		class 332nd_Helmet_Pilot_Gizmo
-		{
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Gizmo";
-		};
-		class 332nd_Helmet_Pilot_Ghillie
-		{
-            model = "332nd_Helmets_Pilot_Extended";
-            Customs = "Ghillie";
-		};
+        XTD_INFO(332nd_Helmet_Pilot, "332nd_Helmets_Pilot_Extended", Type, "Pilot")
+		XTD_INFO(332nd_Helmet_Pilot_Jorge, "332nd_Helmets_Pilot_Extended", Customs, "Jorge")
+		XTD_INFO(332nd_Helmet_Pilot_Cosmos, "332nd_Helmets_Pilot_Extended", Customs, "Cosmos")
+		XTD_INFO(332nd_Helmet_Pilot_Gizmo, "332nd_Helmets_Pilot_Extended", Customs, "Gizmo")
+		XTD_INFO(332nd_Helmet_Pilot_Ghillie, "332nd_Helmets_Pilot_Extended", Customs, "Ghillie")
 	};
 };

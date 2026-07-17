@@ -1,3 +1,4 @@
+#include "..\..\332nd_Aux_Macros.hpp"
 class CfgPatches {
 	class 332nd_Vests_Zeus {
 		units[] = 
@@ -445,25 +446,9 @@ class XtdGearInfos
 {
     class cfgWeapons
     {
-        class 332nd_Zeus_Vest_CPO
-        {
-            model = "332nd_Zeus_Vest_Extended";
-            Rank = "CPO";
-        };
-        class 332nd_Zeus_Vest_ENS
-        {
-            model = "332nd_Zeus_Vest_Extended";
-            Rank = "ENS";
-        };
-        class 332nd_Zeus_Vest_LCDR
-        {
-            model = "332nd_Zeus_Vest_Extended";
-            Rank = "LCDR";
-        };
-        class 332nd_Zeus_Vest_CMDR
-        {
-            model = "332nd_Zeus_Vest_Extended";
-            Rank = "CMDR";
-        };
+        XTD_INFO(332nd_Zeus_Vest_CPO, "332nd_Zeus_Vest_Extended", Rank, "CPO")
+        XTD_INFO(332nd_Zeus_Vest_ENS, "332nd_Zeus_Vest_Extended", Rank, "ENS")
+        XTD_INFO(332nd_Zeus_Vest_LCDR, "332nd_Zeus_Vest_Extended", Rank, "LCDR")
+        XTD_INFO(332nd_Zeus_Vest_CMDR, "332nd_Zeus_Vest_Extended", Rank, "CMDR")
     };
 };

@@ -1,10 +1,12 @@
+#include "..\..\332nd_Aux_Macros.hpp"
+#define P1_HELM(NAME,DISP,TEX) class NAME: 332nd_Helmet_P1_Base { displayName = DISP; hiddenSelections[] = { "Camo1", "Visor" }; hiddenSelectionsTextures[] = { TEX, TEX }; };
 class CfgPatches {
 	class 332nd_Helmets_P1 {
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -13,7 +15,7 @@ class CfgPatches {
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class cfgWeapons
 {
 	class HeadgearItem;
 	class SEA_Helmet_P1_Base;
@@ -26,7 +28,7 @@ class cfgWeapons
 		{
 			mass=1;
 			uniformModel = "JLTS_AE\SEA_Helmet_P1.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[] =
 			{
 				"Camo1",
 				"Visor"
@@ -39,7 +41,7 @@ class cfgWeapons
 					armor = 10;
 					hitpointName="HitFace";
 					passThrough=0.1;
-				};	
+				};
 				class Head
 				{
 					armor = 10;
@@ -51,38 +53,14 @@ class cfgWeapons
 					armor = 10;
 					hitpointName="HitNeck";
 					passThrough=0.1;
-				};	
+				};
 			};
 		};
 	};
-	class 332nd_Helmet_P1_Sgt: 332nd_Helmet_P1_Base
-	{
-		displayName="[332nd] P1 Helmet (Squad Lead)";
-		hiddenSelections[] = {"Camo1","Visor"};
-		hiddenSelectionsTextures[] = {"\JLTS_EA_Units\data\Phase1\Helmet_Sergeant.paa","\JLTS_EA_Units\data\Phase1\Helmet_Sergeant.paa"};
-	};
-	class 332nd_Helmet_P1_Lt: 332nd_Helmet_P1_Base
-	{
-		displayName="[332nd] P1 Helmet (Platoon Leader)";
-		hiddenSelections[] = {"Camo1","Visor"};
-		hiddenSelectionsTextures[] = {"\JLTS_EA_Units\data\Phase1\Helmet_Lieutenant.paa","\JLTS_EA_Units\data\Phase1\Helmet_Lieutenant.paa"};
-	};
-	class 332nd_Helmet_P1_Cpt: 332nd_Helmet_P1_Base
-	{
-		displayName="[332nd] P1 Helmet (Company Staff)";
-		hiddenSelections[] = {"Camo1","Visor"};
-		hiddenSelectionsTextures[] = {"\JLTS_EA_Units\data\Phase1\Helmet_Captain.paa","\JLTS_EA_Units\data\Phase1\Helmet_Captain.paa"};
-	};
-	class 332nd_Helmet_P1_Unit: 332nd_Helmet_P1_Base
-	{
-		displayName="[332nd] P1 Helmet (332nd)";
-		hiddenSelections[] = {"Camo1","Visor"};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P1_CT.paa",
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P1_CT.paa",
-		};
-	};
+	P1_HELM(332nd_Helmet_P1_Sgt, "[332nd] P1 Helmet (Squad Lead)", "\JLTS_EA_Units\data\Phase1\Helmet_Sergeant.paa")
+	P1_HELM(332nd_Helmet_P1_Lt, "[332nd] P1 Helmet (Platoon Leader)", "\JLTS_EA_Units\data\Phase1\Helmet_Lieutenant.paa")
+	P1_HELM(332nd_Helmet_P1_Cpt, "[332nd] P1 Helmet (Company Staff)", "\JLTS_EA_Units\data\Phase1\Helmet_Captain.paa")
+	P1_HELM(332nd_Helmet_P1_Unit, "[332nd] P1 Helmet (332nd)", "332nd_Aux\Helmets\Tex\332nd_Helmet_P1_CT.paa")
 	class 332nd_Helmet_P1_Pilot: 332nd_Helmet_P1_Base
 	{
 		model = "JLTS_AE\LS_Helmet_Pilot_P1.p3d";
@@ -102,7 +80,7 @@ class cfgWeapons
 					armor = 10;
 					hitpointName="HitFace";
 					passThrough=0.1;
-				};	
+				};
 				class Head
 				{
 					armor = 10;
@@ -114,7 +92,7 @@ class cfgWeapons
 					armor = 10;
 					hitpointName="HitNeck";
 					passThrough=0.1;
-				};	
+				};
 			};
 		};
 	};
@@ -123,7 +101,7 @@ class cfgWeapons
 	class 332nd_Helmet_P1_ARF: 332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] P1 Helmet (ARF)";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 			"camo2",
@@ -141,16 +119,16 @@ class cfgWeapons
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Helmets_P1_Extended
         {
             label = "Phase 1";
             author = "Ithias";
-			options[] = 
+			options[] =
 			{
-				"Early", 
-				"Late", 
+				"Early",
+				"Late",
 				//"Customs",
 			};
             class Early
@@ -213,7 +191,7 @@ class XtdGearModels
 			class Customs
 			{
 				label = "Customs";
-				values[] = 
+				values[] =
 				{
 					"",
 				};
@@ -233,42 +211,14 @@ class XtdGearModels
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
-        class 332nd_Helmet_P1_Base
-        {
-            model = "332nd_Helmets_P1_Extended";
-            Early = "Trooper";
-        };
-        class 332nd_Helmet_P1_Sgt
-        {
-            model = "332nd_Helmets_P1_Extended";
-            Early = "SL";
-        };
-        class 332nd_Helmet_P1_Lt
-        {
-            model = "332nd_Helmets_P1_Extended";
-            Early = "PL";
-        };
-        class 332nd_Helmet_P1_Cpt
-        {
-            model = "332nd_Helmets_P1_Extended";
-            Early = "CO";
-        };
-		class 332nd_Helmet_P1_Pilot
-		{
-            model = "332nd_Helmets_P1_Extended";
-            Early = "Pilot";
-		};
-		class 332nd_Helmet_P1_Unit
-		{
-            model = "332nd_Helmets_P1_Extended";
-            Late = "Trooper";
-		};
-		class 332nd_Helmet_P1_ARF
-		{
-            model = "332nd_Helmets_P1_Extended";
-            Early = "ARF";
-		};
+        XTD_INFO(332nd_Helmet_P1_Base, "332nd_Helmets_P1_Extended", Early, "Trooper")
+        XTD_INFO(332nd_Helmet_P1_Sgt, "332nd_Helmets_P1_Extended", Early, "SL")
+        XTD_INFO(332nd_Helmet_P1_Lt, "332nd_Helmets_P1_Extended", Early, "PL")
+        XTD_INFO(332nd_Helmet_P1_Cpt, "332nd_Helmets_P1_Extended", Early, "CO")
+		XTD_INFO(332nd_Helmet_P1_Pilot, "332nd_Helmets_P1_Extended", Early, "Pilot")
+		XTD_INFO(332nd_Helmet_P1_Unit, "332nd_Helmets_P1_Extended", Late, "Trooper")
+		XTD_INFO(332nd_Helmet_P1_ARF, "332nd_Helmets_P1_Extended", Early, "ARF")
 	};
 };

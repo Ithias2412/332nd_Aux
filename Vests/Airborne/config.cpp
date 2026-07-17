@@ -1,12 +1,14 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+#define AB_VEST(NAME,DISP,MDL,TEXA,TEXB) class NAME: 332nd_Trooper_Vest { displayName=DISP; model=MDL; hiddenSelections[]={"camo1","camo2"}; hiddenSelectionsTextures[]={TEXA,TEXB}; class ItemInfo: ItemInfo { uniformModel=MDL; hiddenSelections[]={"camo1","camo2"}; }; };
+class CfgPatches
 {
 	class 332nd_Vests_Airborne
 	{
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -15,7 +17,7 @@ class CfgPatches
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class cfgWeapons
 {
 	class VestItem;
 	class Hands;
@@ -25,103 +27,34 @@ class cfgWeapons
 	{
 		class ItemInfo: VestItem
 		{
-			
+
 		};
 	};
 
-	class 332nd_CS_Vest_AB: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (CS / AB)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa",
-			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2",
-			};
-		};
-	};
-	
-	class 332nd_CSP_Vest_AB: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (CSP / AB)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"",
-			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2",
-			};
-		};
-	};
+	AB_VEST(332nd_CS_Vest_AB, "[332nd] Vest (CS / AB)", "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d", "332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa", "MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa")
 
-	class 332nd_CSS_Vest_AB: 332nd_Trooper_Vest
-	{
-		displayName="[332nd] Vest (CSS / AB)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa",
-			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa",
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2",
-			};
-		};
-	};
+	AB_VEST(332nd_CSP_Vest_AB, "[332nd] Vest (CSP / AB)", "\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d", "", "MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa")
+
+	AB_VEST(332nd_CSS_Vest_AB, "[332nd] Vest (CSS / AB)", "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d", "332nd_Aux\Vests\Tex\332nd_Vest_Officer_JLTS.paa", "MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa")
 
 };
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Vest_AB_Extended
         {
             label = "AB Vests";
             author = "Ithias";
-			options[] = 
+			options[] =
 			{
 				"Rank",
 			};
             class Rank
             {
                 label = "Rank";
-				values[] = 
+				values[] =
 				{
 					"CSP",
 					"CS",
@@ -154,22 +87,10 @@ class XtdGearModels
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
-        class 332nd_CS_Vest_AB
-        {
-            model = "332nd_Vest_AB_Extended";
-            Rank = "CS";
-        };
-        class 332nd_CSS_Vest_AB
-        {
-            model = "332nd_Vest_AB_Extended";
-            Rank = "CSS";
-        };
-        class 332nd_CSP_Vest_AB
-        {
-            model = "332nd_Vest_AB_Extended";
-            Rank = "CSP";
-        };
+        XTD_INFO(332nd_CS_Vest_AB, "332nd_Vest_AB_Extended", Rank, "CS")
+        XTD_INFO(332nd_CSS_Vest_AB, "332nd_Vest_AB_Extended", Rank, "CSS")
+        XTD_INFO(332nd_CSP_Vest_AB, "332nd_Vest_AB_Extended", Rank, "CSP")
 	};
 };

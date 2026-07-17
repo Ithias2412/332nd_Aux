@@ -1,12 +1,14 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+#define AB_HELM(NAME,AUTH,DISP,TEX) class NAME: 332nd_Helmet_AB_Base { author = AUTH; displayName = DISP; hiddenSelections[] = { "camo1", }; hiddenSelectionsTextures[] = { TEX, }; };
+class CfgPatches
 {
-	class 332nd_Helmets_AB 
+	class 332nd_Helmets_AB
 	{
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -15,7 +17,7 @@ class CfgPatches
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class cfgWeapons
 {
 	class HeadgearItem;
 	class JLTS_CloneHelmetAB;
@@ -27,11 +29,11 @@ class cfgWeapons
 		dlc="332nd Aux";
 		displayName="[332nd] AB Helmet (CT)";
 		subItems[] = {};
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Base.paa",
 		};
@@ -40,7 +42,7 @@ class cfgWeapons
 		{
 			mass=1;
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneHelmetAB.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[] =
 			{
 				"camo1"
 			};
@@ -66,52 +68,16 @@ class cfgWeapons
 					passThrough=0.1;
 				};
 			};
-		};		
-	};
-	class 332nd_Helmet_AB_Cherryy: 332nd_Helmet_AB_Base
-	{
-		author="Cherryy";
-		displayName="[332nd] AB Helmet (Cherryy)";
-		hiddenSelections[] = 
-		{
-			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Cherryy.paa",
-		};		
 	};
-	class 332nd_Helmet_AB_Fusion: 332nd_Helmet_AB_Base
-	{
-		author="Fusion";
-		displayName="[332nd] AB Helmet (Fusion)";
-		hiddenSelections[] = 
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Fusion.paa",
-		};		
-	};
-	class 332nd_Helmet_AB_Trick: 332nd_Helmet_AB_Base
-	{
-		author="Ahri";
-		displayName="[332nd] AB Helmet (Trick)";
-		hiddenSelections[] = 
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Trick.paa",
-		};		
-	};
+	AB_HELM(332nd_Helmet_AB_Cherryy, "Cherryy", "[332nd] AB Helmet (Cherryy)", "332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Cherryy.paa")
+	AB_HELM(332nd_Helmet_AB_Fusion, "Fusion", "[332nd] AB Helmet (Fusion)", "332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Fusion.paa")
+	AB_HELM(332nd_Helmet_AB_Trick, "Ahri", "[332nd] AB Helmet (Trick)", "332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Trick.paa")
 };
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Helmets_AB_Extended
         {
@@ -134,11 +100,11 @@ class XtdGearModels
             class Customs
             {
                 label = "Customs";
-				values[] = 
-				{ 
+				values[] =
+				{
 					"Cherryy",
 					"Fusion",
-					"Trick", 
+					"Trick",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -162,32 +128,16 @@ class XtdGearModels
                 };
 			};
         };
-    }; 
+    };
 };
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
-        class 332nd_Helmet_AB_Base
-        {
-            model = "332nd_Helmets_AB_Extended";
-            Default = "Trooper";
-        };
-		class 332nd_Helmet_AB_Cherryy
-        {
-            model = "332nd_Helmets_AB_Extended";
-            Customs = "Cherryy";
-        };
-		class 332nd_Helmet_AB_Fusion
-        {
-            model = "332nd_Helmets_AB_Extended";
-            Customs = "Fusion";
-        };
-		class 332nd_Helmet_AB_Trick
-        {
-            model = "332nd_Helmets_AB_Extended";
-            Customs = "Trick";
-        };
+        XTD_INFO(332nd_Helmet_AB_Base, "332nd_Helmets_AB_Extended", Default, "Trooper")
+		XTD_INFO(332nd_Helmet_AB_Cherryy, "332nd_Helmets_AB_Extended", Customs, "Cherryy")
+		XTD_INFO(332nd_Helmet_AB_Fusion, "332nd_Helmets_AB_Extended", Customs, "Fusion")
+		XTD_INFO(332nd_Helmet_AB_Trick, "332nd_Helmets_AB_Extended", Customs, "Trick")
 	};
 };

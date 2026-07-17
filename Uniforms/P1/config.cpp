@@ -1,3 +1,6 @@
+#include "..\..\332nd_Aux_Macros.hpp"
+#define P1_ITEM(NAME,DISP,VEHREF) class NAME: 332nd_Uniform_Clone_CT_P1 { displayName = DISP; class ItemInfo: UniformItem { uniformModel = ""; uniformClass = VEHREF; uniformType = "Neopren"; containerClass = "Supply50"; mass = 40; }; };
+#define P1_VEH(NAME,ITEMREF,TEXA,TEXB) class NAME: 332nd_Uniform_Clone_CT_P1_Veh { scope = 1; uniformClass = ITEMREF; hiddenSelectionsTextures[] = { TEXA, TEXB }; };
 class CfgPatches {
 	class 332nd_Uniforms_P1 {
 		units[] = 
@@ -35,42 +38,9 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Sgt: 332nd_Uniform_Clone_CT_P1
-	{
-		displayName="[332nd] Clone Trooper Armor (Squad Leader)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Sgt_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Lt: 332nd_Uniform_Clone_CT_P1
-	{
-		displayName="[332nd] Clone Trooper Armor (Platoon Leader)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Lt_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Cpt: 332nd_Uniform_Clone_CT_P1
-	{
-		displayName="[332nd] Clone Trooper Armor (Company Staff)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Cpt_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
+	P1_ITEM(332nd_Uniform_Clone_Sgt, "[332nd] Clone Trooper Armor (Squad Leader)", "332nd_Uniform_Clone_Sgt_Veh")
+	P1_ITEM(332nd_Uniform_Clone_Lt, "[332nd] Clone Trooper Armor (Platoon Leader)", "332nd_Uniform_Clone_Lt_Veh")
+	P1_ITEM(332nd_Uniform_Clone_Cpt, "[332nd] Clone Trooper Armor (Company Staff)", "332nd_Uniform_Clone_Cpt_Veh")
 
 };
 
@@ -266,36 +236,9 @@ class CfgVehicles
 			};
 		};
 	};
-	class 332nd_Uniform_Clone_Sgt_Veh: 332nd_Uniform_Clone_CT_P1_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Sgt";
-		hiddenSelectionsTextures[] = 
-		{
-			"\MRC\JLTS\characters\CloneLegions\data\Clone_sergeant_armor1_co.paa",
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa"
-		};
-	};
-	class 332nd_Uniform_Clone_Lt_Veh: 332nd_Uniform_Clone_CT_P1_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Lt";
-		hiddenSelectionsTextures[] = 
-		{
-			"\MRC\JLTS\characters\CloneLegions\data\Clone_lieutenant_armor1_co.paa",
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa"
-		};
-	};
-	class 332nd_Uniform_Clone_Cpt_Veh: 332nd_Uniform_Clone_CT_P1_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Cpt";
-		hiddenSelectionsTextures[] = 
-		{
-			"\MRC\JLTS\characters\CloneLegions\data\Clone_captain_armor1_co.paa",
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa"
-		};
-	};
+	P1_VEH(332nd_Uniform_Clone_Sgt_Veh, "332nd_Uniform_Clone_Sgt", "\MRC\JLTS\characters\CloneLegions\data\Clone_sergeant_armor1_co.paa", "\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa")
+	P1_VEH(332nd_Uniform_Clone_Lt_Veh, "332nd_Uniform_Clone_Lt", "\MRC\JLTS\characters\CloneLegions\data\Clone_lieutenant_armor1_co.paa", "\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa")
+	P1_VEH(332nd_Uniform_Clone_Cpt_Veh, "332nd_Uniform_Clone_Cpt", "\MRC\JLTS\characters\CloneLegions\data\Clone_captain_armor1_co.paa", "\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa")
 };
 
 class XtdGearModels
@@ -346,25 +289,9 @@ class XtdGearInfos
 {
 	class CfgWeapons 
 	{
-		class 332nd_Uniform_Clone_CT_P1
-		{
-			model = "332nd_Uniform_P1_Extended";
-			P1 = "CT";
-		};
-		class 332nd_Uniform_Clone_Sgt
-		{
-			model = "332nd_Uniform_P1_Extended";
-			P1 = "SL";
-		};
-		class 332nd_Uniform_Clone_Lt
-		{
-			model = "332nd_Uniform_P1_Extended";
-			P1 = "PL";
-		};
-		class 332nd_Uniform_Clone_Cpt
-		{
-			model = "332nd_Uniform_P1_Extended";
-			P1 = "CO";
-		};
-	}; 
+		XTD_INFO(332nd_Uniform_Clone_CT_P1, "332nd_Uniform_P1_Extended", P1, "CT")
+		XTD_INFO(332nd_Uniform_Clone_Sgt, "332nd_Uniform_P1_Extended", P1, "SL")
+		XTD_INFO(332nd_Uniform_Clone_Lt, "332nd_Uniform_P1_Extended", P1, "PL")
+		XTD_INFO(332nd_Uniform_Clone_Cpt, "332nd_Uniform_P1_Extended", P1, "CO")
+	};
 };

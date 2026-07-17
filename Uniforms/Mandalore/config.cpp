@@ -1,4 +1,7 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+#define MANDO_ITEM(NAME,PARENT,DISP,VEHREF) class NAME: PARENT { dlc = "332nd"; author = "Ithias"; scope = 2; displayName = DISP; class ItemInfo: UniformItem { uniformModel = ""; uniformClass = VEHREF; uniformType = "Neopren"; containerClass = "Supply50"; mass = 40; }; };
+#define MANDO_VEH(NAME,ITEMREF,TEXA,TEXB) class NAME: 332nd_Uniform_Crusader_RM_Armor_Veh { scope = 1; uniformClass = ITEMREF; hiddenSelectionsTextures[] = { TEXA, TEXB }; };
+class CfgPatches
 {
 	class 332nd_Uniforms_Butch_Deloria_Mandolore
 	{
@@ -22,81 +25,11 @@ class cfgWeapons
 	class SFA_Crusader_RM_Armor;
 	
 // Uniform
-	class 332nd_Uniform_Revanite_Armor: SFA_Revanite_Armor
-	{
-		dlc="332nd";
-		author="Ithias";
-		scope=2;
-		displayName="[Butch Deloria] Revanite Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Revanite_Armor_veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Crusader_RM_Armor: SFA_Crusader_RM_Armor
-	{
-		dlc="332nd";
-		author="Ithias";
-		scope=2;
-		displayName="[Butch Deloria] Neo-Crusader Rally Master Uniform";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Crusader_RM_Armor_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Crusader_FM_Armor: SFA_Crusader_RM_Armor
-	{
-		dlc="332nd";
-		author="Ithias";
-		scope=2;
-		displayName="[Butch Deloria] Neo-Crusader Field Marshal Uniform";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Crusader_FM_Armor_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Crusader_Vet_Armor: SFA_Crusader_RM_Armor
-	{
-		dlc="332nd";
-		author="Ithias";
-		scope=2;
-		displayName="[Butch Deloria] Neo-Crusader Veteran Uniform";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Crusader_Vet_Armor_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Crusader_Armor: SFA_Crusader_RM_Armor
-	{
-		dlc="332nd";
-		author="Ithias";
-		scope=2;
-		displayName="[Butch Deloria] Neo-Crusader Uniform";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Crusader_Armor_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
+	MANDO_ITEM(332nd_Uniform_Revanite_Armor, SFA_Revanite_Armor, "[Butch Deloria] Revanite Armor", "332nd_Uniform_Revanite_Armor_veh")
+	MANDO_ITEM(332nd_Uniform_Crusader_RM_Armor, SFA_Crusader_RM_Armor, "[Butch Deloria] Neo-Crusader Rally Master Uniform", "332nd_Uniform_Crusader_RM_Armor_Veh")
+	MANDO_ITEM(332nd_Uniform_Crusader_FM_Armor, SFA_Crusader_RM_Armor, "[Butch Deloria] Neo-Crusader Field Marshal Uniform", "332nd_Uniform_Crusader_FM_Armor_Veh")
+	MANDO_ITEM(332nd_Uniform_Crusader_Vet_Armor, SFA_Crusader_RM_Armor, "[Butch Deloria] Neo-Crusader Veteran Uniform", "332nd_Uniform_Crusader_Vet_Armor_Veh")
+	MANDO_ITEM(332nd_Uniform_Crusader_Armor, SFA_Crusader_RM_Armor, "[Butch Deloria] Neo-Crusader Uniform", "332nd_Uniform_Crusader_Armor_Veh")
 };
 
 class CfgVehicles
@@ -455,22 +388,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 332nd_Uniform_Crusader_FM_Armor_Veh: 332nd_Uniform_Crusader_RM_Armor_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Crusader_FM_Armor";	
-		hiddenSelectionsTextures[] = {"SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Body_FM_co.paa","SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Gloves_FM_co.paa"};
-	};
-	class 332nd_Uniform_Crusader_Vet_Armor_Veh: 332nd_Uniform_Crusader_RM_Armor_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Crusader_Vet_Armor";	
-		hiddenSelectionsTextures[] = {"SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Body_Vet_co.paa","SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Gloves_co.paa"};
-	};
-	class 332nd_Uniform_Crusader_Armor_Veh: 332nd_Uniform_Crusader_RM_Armor_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Crusader_Armor";	
-		hiddenSelectionsTextures[] = {"SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Body_blue_co.paa","SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Gloves_blue_co.paa"};
-	};
+	MANDO_VEH(332nd_Uniform_Crusader_FM_Armor_Veh, "332nd_Uniform_Crusader_FM_Armor", "SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Body_FM_co.paa", "SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Gloves_FM_co.paa")
+	MANDO_VEH(332nd_Uniform_Crusader_Vet_Armor_Veh, "332nd_Uniform_Crusader_Vet_Armor", "SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Body_Vet_co.paa", "SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Gloves_co.paa")
+	MANDO_VEH(332nd_Uniform_Crusader_Armor_Veh, "332nd_Uniform_Crusader_Armor", "SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Body_blue_co.paa", "SFA_Main\SFA_Equipment_N\Mandalorians\Neo\data\Neo_Gloves_blue_co.paa")
 };

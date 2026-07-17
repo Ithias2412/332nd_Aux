@@ -1,12 +1,13 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+class CfgPatches
 {
 	class 332nd_Vests_ARC
 	{
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -15,7 +16,7 @@ class CfgPatches
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class cfgWeapons
 {
 	class VestItem;
 	class Hands;
@@ -25,7 +26,7 @@ class cfgWeapons
 	{
 		class ItemInfo: VestItem
 		{
-			
+
 		};
 	};
 
@@ -33,11 +34,11 @@ class cfgWeapons
 	{
 		displayName="[332nd] Vest (ARC)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1"
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			//"332nd_Aux\Missing_Texture.paa"
 			//"MRC\JLTS\characters\CloneArmor\data\Clone_vest_arc_co.paa"
@@ -46,7 +47,7 @@ class cfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[] =
 			{
 				"camo1"
 			};
@@ -56,7 +57,7 @@ class cfgWeapons
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Vest_ARC_Extended
         {
@@ -82,12 +83,8 @@ class XtdGearModels
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
-        class 332nd_ARC_Vest
-        {
-            model = "332nd_Vest_ARC_Extended";
-            Rank = "ARC";
-        };
+        XTD_INFO(332nd_ARC_Vest, "332nd_Vest_ARC_Extended", Rank, "ARC")
 	};
 };

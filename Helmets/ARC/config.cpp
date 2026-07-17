@@ -1,12 +1,13 @@
-class CfgPatches 
+#include "..\..\332nd_Aux_Macros.hpp"
+class CfgPatches
 {
 	class 332nd_Helmets_ARC
 	{
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -15,7 +16,7 @@ class CfgPatches
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class cfgWeapons
 {
 	class HeadgearItem;
 	class SEA_Helmet_ARC;
@@ -27,11 +28,11 @@ class cfgWeapons
 		dlc="332nd Aux";
 		displayName="[332nd] ARC Helmet";
 		subItems[] = {};
-		hiddenSelections[] = 
+		hiddenSelections[] =
 		{
 			"camo1",
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARC.paa"
 		};
@@ -39,7 +40,7 @@ class cfgWeapons
 		{
 			mass=1;
 			uniformModel = "\MRC\JLTS\characters\CloneArmor2\CloneHelmetARC.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[] =
 			{
 				"camo1",
 			};
@@ -65,13 +66,13 @@ class cfgWeapons
 					passThrough=0.1;
 				};
 			};
-		};		
+		};
 	};
 };
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Helmets_ARC_Extended
         {
@@ -97,12 +98,8 @@ class XtdGearModels
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
-        class 332nd_Helmet_ARC_Base
-        {
-            model = "332nd_Helmets_ARC_Extended";
-            Default = "Trooper";
-        };
+        XTD_INFO(332nd_Helmet_ARC_Base, "332nd_Helmets_ARC_Extended", Default, "Trooper")
 	};
 };

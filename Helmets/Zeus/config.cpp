@@ -1,10 +1,11 @@
+#include "..\..\332nd_Aux_Macros.hpp"
 class CfgPatches {
 	class 332nd_Helmets_Zeus {
-		units[] = 
+		units[] =
         {
 			""
         };
-		weapons[] = 
+		weapons[] =
         {
             ""
         };
@@ -13,13 +14,13 @@ class CfgPatches {
 	};
 };
 //#include "xtdGear.hpp"
-class cfgWeapons 
+class cfgWeapons
 {
 	class HeadgearItem;
 	class JMSLLTE_EmpOfficerCap2_green_helmet;
 
 //Base Start
-	class 332nd_Helmet_Zeus: JMSLLTE_EmpOfficerCap2_green_helmet 
+	class 332nd_Helmet_Zeus: JMSLLTE_EmpOfficerCap2_green_helmet
 	{
 		author="Ithias";
 		dlc="332nd Aux";
@@ -28,7 +29,7 @@ class cfgWeapons
 		{
 			mass=1;
 			uniformmodel = "JMSLLTE_empire_m\helmets\Officer_cap2.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[] =
 			{
 				"Camo1"
 			};
@@ -60,7 +61,7 @@ class cfgWeapons
 
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
         class 332nd_Helmets_Zeus_Extended
         {
@@ -84,12 +85,8 @@ class XtdGearModels
 
 class XtdGearInfos
 {
-    class CfgWeapons 
+    class CfgWeapons
     {
-        class 332nd_Helmet_Zeus
-        {
-            model = "332nd_Helmets_Zeus_Extended";
-            Type = "Cap";
-        };
+        XTD_INFO(332nd_Helmet_Zeus, "332nd_Helmets_Zeus_Extended", Type, "Cap")
 	};
 };

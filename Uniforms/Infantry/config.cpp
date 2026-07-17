@@ -1,3 +1,4 @@
+#include "..\..\332nd_Aux_Macros.hpp"
 class CfgPatches {
 	class 332nd_Uniforms {
 		units[] = 
@@ -35,630 +36,58 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_CT: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (JLTS)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_CT_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_SCT: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (JLTS)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_SCT_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_CT_Medic: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (JLTS / Medic)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_CT_Medic_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_SCT_Medic: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (JLTS / Medic)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_SCT_Medic_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Body: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Body)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Body_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Grim: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Grim)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Grim_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Warthog: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Warthog)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Warthog_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Nate: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Nate)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Nate_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Dovah: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Dovah)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Dovah_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Aqua: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Aqua)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Aqua_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Luci: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Luci)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Luci_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Arson: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Arson)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Arson_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Inu: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Inu)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Inu_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Asuka)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Asuka_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Ketamine: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Ketamine)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Ketamine_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Walkie: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Walkie)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Walkie_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Rat: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Rat)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Rat_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Mouse: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Mouse)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Mouse_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Frankenburg: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Frankenburg)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Frankenburg_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Crow: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Crow)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Crow_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Cherryy: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Cherryy)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Cherryy_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Shuck: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Shuck)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Shuck_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Trick: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Trick)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Trick_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Shovie: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Shovie)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Shovie_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Aztec: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Aztec)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Aztec_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Lettuce: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Lettuce)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Lettuce_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Whoops: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Whoops)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Whoops_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Stryker: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Stryker)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Stryker_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Roseiry: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Roseiry)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Roseiry_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_VB: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (VB)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_VB_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Thym: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Thym)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Thym_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Rode: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Rode)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Rode_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Clari: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Clari)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Clari_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Ithias: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Ithias)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Ithias_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Joker: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Joker)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Joker_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Crota: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Crota)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Crota_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Cosmos: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Cosmos)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Cosmos_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Fusion: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Fusion)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Fusion_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Jorge: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Jorge)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Jorge_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Crucial: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Crucial)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Crucial_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Logan: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Logan)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Logan_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Ahri: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Ahri)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Ahri_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Rimuru: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Rimuru)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Rimuru_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Icurus: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Icurus)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Icurus_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Saiko: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Saiko)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Saiko_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Coal: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Coal)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Coal_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Villa: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Villa)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Villa_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Komrk: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Komrk)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Komrk_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Wylder: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Wylder)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Wylder_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Raven: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Raven)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Raven_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Butch: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Butch)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Butch_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Max: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Max)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Max_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
+	UNI_ITEM(332nd_Uniform_Clone_CT, "332nd_Uniform_Clone_CT_Veh", "[332nd] Clone Trooper Armor (JLTS)")
+	UNI_ITEM(332nd_Uniform_Clone_SCT, "332nd_Uniform_Clone_SCT_Veh", "[332nd] Clone Trooper Armor (JLTS)")
+	UNI_ITEM(332nd_Uniform_Clone_CT_Medic, "332nd_Uniform_Clone_CT_Medic_Veh", "[332nd] Clone Trooper Armor (JLTS / Medic)")
+	UNI_ITEM(332nd_Uniform_Clone_SCT_Medic, "332nd_Uniform_Clone_SCT_Medic_Veh", "[332nd] Clone Trooper Armor (JLTS / Medic)")
+	UNI_ITEM(332nd_Uniform_Clone_Body, "332nd_Uniform_Clone_Body_Veh", "[332nd] Clone Trooper Armor (Body)")
+	UNI_ITEM(332nd_Uniform_Clone_Grim, "332nd_Uniform_Clone_Grim_Veh", "[332nd] Clone Trooper Armor (Grim)")
+	UNI_ITEM(332nd_Uniform_Clone_Warthog, "332nd_Uniform_Clone_Warthog_Veh", "[332nd] Clone Trooper Armor (Warthog)")
+	UNI_ITEM(332nd_Uniform_Clone_Nate, "332nd_Uniform_Clone_Nate_Veh", "[332nd] Clone Trooper Armor (Nate)")
+	UNI_ITEM(332nd_Uniform_Clone_Dovah, "332nd_Uniform_Clone_Dovah_Veh", "[332nd] Clone Trooper Armor (Dovah)")
+	UNI_ITEM(332nd_Uniform_Clone_Aqua, "332nd_Uniform_Clone_Aqua_Veh", "[332nd] Clone Trooper Armor (Aqua)")
+	UNI_ITEM(332nd_Uniform_Clone_Luci, "332nd_Uniform_Clone_Luci_Veh", "[332nd] Clone Trooper Armor (Luci)")
+	UNI_ITEM(332nd_Uniform_Clone_Arson, "332nd_Uniform_Clone_Arson_Veh", "[332nd] Clone Trooper Armor (Arson)")
+	UNI_ITEM(332nd_Uniform_Clone_Inu, "332nd_Uniform_Clone_Inu_Veh", "[332nd] Clone Trooper Armor (Inu)")
+	UNI_ITEM(332nd_Uniform_Clone_Asuka, "332nd_Uniform_Clone_Asuka_Veh", "[332nd] Clone Trooper Armor (Asuka)")
+	UNI_ITEM(332nd_Uniform_Clone_Ketamine, "332nd_Uniform_Clone_Ketamine_Veh", "[332nd] Clone Trooper Armor (Ketamine)")
+	UNI_ITEM(332nd_Uniform_Clone_Walkie, "332nd_Uniform_Clone_Walkie_Veh", "[332nd] Clone Trooper Armor (Walkie)")
+	UNI_ITEM(332nd_Uniform_Clone_Rat, "332nd_Uniform_Clone_Rat_Veh", "[332nd] Clone Trooper Armor (Rat)")
+	UNI_ITEM(332nd_Uniform_Clone_Mouse, "332nd_Uniform_Clone_Mouse_Veh", "[332nd] Clone Trooper Armor (Mouse)")
+	UNI_ITEM(332nd_Uniform_Clone_Frankenburg, "332nd_Uniform_Clone_Frankenburg_Veh", "[332nd] Clone Trooper Armor (Frankenburg)")
+	UNI_ITEM(332nd_Uniform_Clone_Crow, "332nd_Uniform_Clone_Crow_Veh", "[332nd] Clone Trooper Armor (Crow)")
+	UNI_ITEM(332nd_Uniform_Clone_Cherryy, "332nd_Uniform_Clone_Cherryy_Veh", "[332nd] Clone Trooper Armor (Cherryy)")
+	UNI_ITEM(332nd_Uniform_Clone_Shuck, "332nd_Uniform_Clone_Shuck_Veh", "[332nd] Clone Trooper Armor (Shuck)")
+	UNI_ITEM(332nd_Uniform_Clone_Trick, "332nd_Uniform_Clone_Trick_Veh", "[332nd] Clone Trooper Armor (Trick)")
+	UNI_ITEM(332nd_Uniform_Clone_Shovie, "332nd_Uniform_Clone_Shovie_Veh", "[332nd] Clone Trooper Armor (Shovie)")
+	UNI_ITEM(332nd_Uniform_Clone_Aztec, "332nd_Uniform_Clone_Aztec_Veh", "[332nd] Clone Trooper Armor (Aztec)")
+	UNI_ITEM(332nd_Uniform_Clone_Lettuce, "332nd_Uniform_Clone_Lettuce_Veh", "[332nd] Clone Trooper Armor (Lettuce)")
+	UNI_ITEM(332nd_Uniform_Clone_Whoops, "332nd_Uniform_Clone_Whoops_Veh", "[332nd] Clone Trooper Armor (Whoops)")
+	UNI_ITEM(332nd_Uniform_Clone_Stryker, "332nd_Uniform_Clone_Stryker_Veh", "[332nd] Clone Trooper Armor (Stryker)")
+	UNI_ITEM(332nd_Uniform_Clone_Roseiry, "332nd_Uniform_Clone_Roseiry_Veh", "[332nd] Clone Trooper Armor (Roseiry)")
+	UNI_ITEM(332nd_Uniform_Clone_VB, "332nd_Uniform_Clone_VB_Veh", "[332nd] Clone Trooper Armor (VB)")
+	UNI_ITEM(332nd_Uniform_Clone_Thym, "332nd_Uniform_Clone_Thym_Veh", "[332nd] Clone Trooper Armor (Thym)")
+	UNI_ITEM(332nd_Uniform_Clone_Rode, "332nd_Uniform_Clone_Rode_Veh", "[332nd] Clone Trooper Armor (Rode)")
+	UNI_ITEM(332nd_Uniform_Clone_Clari, "332nd_Uniform_Clone_Clari_Veh", "[332nd] Clone Trooper Armor (Clari)")
+	UNI_ITEM(332nd_Uniform_Clone_Ithias, "332nd_Uniform_Clone_Ithias_Veh", "[332nd] Clone Trooper Armor (Ithias)")
+	UNI_ITEM(332nd_Uniform_Clone_Joker, "332nd_Uniform_Clone_Joker_Veh", "[332nd] Clone Trooper Armor (Joker)")
+	UNI_ITEM(332nd_Uniform_Clone_Crota, "332nd_Uniform_Clone_Crota_Veh", "[332nd] Clone Trooper Armor (Crota)")
+	UNI_ITEM(332nd_Uniform_Clone_Cosmos, "332nd_Uniform_Clone_Cosmos_Veh", "[332nd] Clone Trooper Armor (Cosmos)")
+	UNI_ITEM(332nd_Uniform_Clone_Fusion, "332nd_Uniform_Clone_Fusion_Veh", "[332nd] Clone Trooper Armor (Fusion)")
+	UNI_ITEM(332nd_Uniform_Clone_Jorge, "332nd_Uniform_Clone_Jorge_Veh", "[332nd] Clone Trooper Armor (Jorge)")
+	UNI_ITEM(332nd_Uniform_Clone_Crucial, "332nd_Uniform_Clone_Crucial_Veh", "[332nd] Clone Trooper Armor (Crucial)")
+	UNI_ITEM(332nd_Uniform_Clone_Logan, "332nd_Uniform_Clone_Logan_Veh", "[332nd] Clone Trooper Armor (Logan)")
+	UNI_ITEM(332nd_Uniform_Clone_Ahri, "332nd_Uniform_Clone_Ahri_Veh", "[332nd] Clone Trooper Armor (Ahri)")
+	UNI_ITEM(332nd_Uniform_Clone_Rimuru, "332nd_Uniform_Clone_Rimuru_Veh", "[332nd] Clone Trooper Armor (Rimuru)")
+	UNI_ITEM(332nd_Uniform_Clone_Icurus, "332nd_Uniform_Clone_Icurus_Veh", "[332nd] Clone Trooper Armor (Icurus)")
+	UNI_ITEM(332nd_Uniform_Clone_Saiko, "332nd_Uniform_Clone_Saiko_Veh", "[332nd] Clone Trooper Armor (Saiko)")
+	UNI_ITEM(332nd_Uniform_Clone_Coal, "332nd_Uniform_Clone_Coal_Veh", "[332nd] Clone Trooper Armor (Coal)")
+	UNI_ITEM(332nd_Uniform_Clone_Villa, "332nd_Uniform_Clone_Villa_Veh", "[332nd] Clone Trooper Armor (Villa)")
+	UNI_ITEM(332nd_Uniform_Clone_Komrk, "332nd_Uniform_Clone_Komrk_Veh", "[332nd] Clone Trooper Armor (Komrk)")
+	UNI_ITEM(332nd_Uniform_Clone_Wylder, "332nd_Uniform_Clone_Wylder_Veh", "[332nd] Clone Trooper Armor (Wylder)")
+	UNI_ITEM(332nd_Uniform_Clone_Raven, "332nd_Uniform_Clone_Raven_Veh", "[332nd] Clone Trooper Armor (Raven)")
+	UNI_ITEM(332nd_Uniform_Clone_Butch, "332nd_Uniform_Clone_Butch_Veh", "[332nd] Clone Trooper Armor (Butch)")
+	UNI_ITEM(332nd_Uniform_Clone_Max, "332nd_Uniform_Clone_Max_Veh", "[332nd] Clone Trooper Armor (Max)")
 };
 
 class CfgVehicles
@@ -1024,526 +453,58 @@ class CfgVehicles
 		};
 		======================================================= */
 	};
-	class 332nd_Uniform_Clone_CT_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_CT";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_SCT_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_SCT";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_CT_Medic_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_CT_Medic";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_Medic.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_SCT_Medic_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_SCT_Medic";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_Medic.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Body_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Body";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Body.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Body.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Grim_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Grim";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Grim.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Grim.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Warthog_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Warthog";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Warthog.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Warthog.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Nate_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Nate";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Nate.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Nate.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Dovah_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Dovah";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Dovah.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Dovah.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Aqua_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Aqua";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Aqua.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aqua.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Luci_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Luci";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Luci.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Luci.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Arson_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Arson";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Arson.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Arson.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Inu_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Inu";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Inu.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Inu.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Asuka_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Asuka";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Asuka.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Ketamine_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Ketamine";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ketamine.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ketamine.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Walkie_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Walkie";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Walkie.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Walkie.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Rat_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Rat";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rat.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rat.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Mouse_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Mouse";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Mouse.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Mouse.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Frankenburg_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Frankenburg";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Frankenburg.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Frankenburg.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Crow_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Crow";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crow.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crow.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Cherryy_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Cherryy";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Cherryy.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cherryy.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Shuck_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Shuck";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shuck.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shuck.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Trick_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Trick";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Trick.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Trick.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Shovie_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Shovie";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shovie.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shovie.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Aztec_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Aztec";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Aztec.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aztec.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Lettuce_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Lettuce";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Lettuce.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Lettuce.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Whoops_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Whoops";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Whoops.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Whoops.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Stryker_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Stryker";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Stryker.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stryker.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Roseiry_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Roseiry";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Roseiry.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Roseiry.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_VB_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_VB";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_VB.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_VB.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Thym_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Thym";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Thym.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Thym.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Rode_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Rode";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rode.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rode.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Clari_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Clari";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Clari.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Clari.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Ithias_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Ithias";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ithias.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Joker_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Joker";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Joker.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Joker.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Crota_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Crota";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crota.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crota.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Cosmos_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Cosmos";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Cosmos.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cosmos.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Fusion_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Fusion";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Fusion.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Fusion.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Jorge_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Jorge";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Jorge.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Jorge.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Crucial_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Crucial";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crucial.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crucial.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Logan_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Logan";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Logan.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Logan.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Ahri_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Ahri";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ahri.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ahri.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Rimuru_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Rimuru";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rimuru.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rimuru.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Icurus_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Icurus";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Icurus.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Icurus.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Saiko_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Saiko";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Saiko.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Saiko.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Coal_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Coal";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Coal.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Coal.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Villa_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Villa";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Villa.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Komrk_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Komrk";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Komrk.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Komrk.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Wylder_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Wylder";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Wylder.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Wylder.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Raven_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Raven";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Raven.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Raven.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Butch_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Butch";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Butch.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Butch.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Max_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Max";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Max.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Max.paa",
-		};
-	};
+	UNI_VEH(332nd_Uniform_Clone_CT_Veh, "332nd_Uniform_Clone_CT", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa")
+	UNI_VEH(332nd_Uniform_Clone_SCT_Veh, "332nd_Uniform_Clone_SCT", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa")
+	UNI_VEH(332nd_Uniform_Clone_CT_Medic_Veh, "332nd_Uniform_Clone_CT_Medic", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_CT_Medic.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa")
+	UNI_VEH(332nd_Uniform_Clone_SCT_Medic_Veh, "332nd_Uniform_Clone_SCT_Medic", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_SCT_Medic.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa")
+	UNI_VEH(332nd_Uniform_Clone_Body_Veh, "332nd_Uniform_Clone_Body", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Body.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Body.paa")
+	UNI_VEH(332nd_Uniform_Clone_Grim_Veh, "332nd_Uniform_Clone_Grim", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Grim.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Grim.paa")
+	UNI_VEH(332nd_Uniform_Clone_Warthog_Veh, "332nd_Uniform_Clone_Warthog", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Warthog.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Warthog.paa")
+	UNI_VEH(332nd_Uniform_Clone_Nate_Veh, "332nd_Uniform_Clone_Nate", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Nate.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Nate.paa")
+	UNI_VEH(332nd_Uniform_Clone_Dovah_Veh, "332nd_Uniform_Clone_Dovah", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Dovah.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Dovah.paa")
+	UNI_VEH(332nd_Uniform_Clone_Aqua_Veh, "332nd_Uniform_Clone_Aqua", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Aqua.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aqua.paa")
+	UNI_VEH(332nd_Uniform_Clone_Luci_Veh, "332nd_Uniform_Clone_Luci", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Luci.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Luci.paa")
+	UNI_VEH(332nd_Uniform_Clone_Arson_Veh, "332nd_Uniform_Clone_Arson", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Arson.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Arson.paa")
+	UNI_VEH(332nd_Uniform_Clone_Inu_Veh, "332nd_Uniform_Clone_Inu", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Inu.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Inu.paa")
+	UNI_VEH(332nd_Uniform_Clone_Asuka_Veh, "332nd_Uniform_Clone_Asuka", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Asuka.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa")
+	UNI_VEH(332nd_Uniform_Clone_Ketamine_Veh, "332nd_Uniform_Clone_Ketamine", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ketamine.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ketamine.paa")
+	UNI_VEH(332nd_Uniform_Clone_Walkie_Veh, "332nd_Uniform_Clone_Walkie", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Walkie.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Walkie.paa")
+	UNI_VEH(332nd_Uniform_Clone_Rat_Veh, "332nd_Uniform_Clone_Rat", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rat.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rat.paa")
+	UNI_VEH(332nd_Uniform_Clone_Mouse_Veh, "332nd_Uniform_Clone_Mouse", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Mouse.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Mouse.paa")
+	UNI_VEH(332nd_Uniform_Clone_Frankenburg_Veh, "332nd_Uniform_Clone_Frankenburg", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Frankenburg.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Frankenburg.paa")
+	UNI_VEH(332nd_Uniform_Clone_Crow_Veh, "332nd_Uniform_Clone_Crow", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crow.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crow.paa")
+	UNI_VEH(332nd_Uniform_Clone_Cherryy_Veh, "332nd_Uniform_Clone_Cherryy", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Cherryy.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cherryy.paa")
+	UNI_VEH(332nd_Uniform_Clone_Shuck_Veh, "332nd_Uniform_Clone_Shuck", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shuck.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shuck.paa")
+	UNI_VEH(332nd_Uniform_Clone_Trick_Veh, "332nd_Uniform_Clone_Trick", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Trick.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Trick.paa")
+	UNI_VEH(332nd_Uniform_Clone_Shovie_Veh, "332nd_Uniform_Clone_Shovie", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shovie.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shovie.paa")
+	UNI_VEH(332nd_Uniform_Clone_Aztec_Veh, "332nd_Uniform_Clone_Aztec", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Aztec.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aztec.paa")
+	UNI_VEH(332nd_Uniform_Clone_Lettuce_Veh, "332nd_Uniform_Clone_Lettuce", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Lettuce.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Lettuce.paa")
+	UNI_VEH(332nd_Uniform_Clone_Whoops_Veh, "332nd_Uniform_Clone_Whoops", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Whoops.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Whoops.paa")
+	UNI_VEH(332nd_Uniform_Clone_Stryker_Veh, "332nd_Uniform_Clone_Stryker", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Stryker.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stryker.paa")
+	UNI_VEH(332nd_Uniform_Clone_Roseiry_Veh, "332nd_Uniform_Clone_Roseiry", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Roseiry.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Roseiry.paa")
+	UNI_VEH(332nd_Uniform_Clone_VB_Veh, "332nd_Uniform_Clone_VB", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_VB.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_VB.paa")
+	UNI_VEH(332nd_Uniform_Clone_Thym_Veh, "332nd_Uniform_Clone_Thym", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Thym.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Thym.paa")
+	UNI_VEH(332nd_Uniform_Clone_Rode_Veh, "332nd_Uniform_Clone_Rode", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rode.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rode.paa")
+	UNI_VEH(332nd_Uniform_Clone_Clari_Veh, "332nd_Uniform_Clone_Clari", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Clari.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Clari.paa")
+	UNI_VEH(332nd_Uniform_Clone_Ithias_Veh, "332nd_Uniform_Clone_Ithias", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ithias.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa")
+	UNI_VEH(332nd_Uniform_Clone_Joker_Veh, "332nd_Uniform_Clone_Joker", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Joker.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Joker.paa")
+	UNI_VEH(332nd_Uniform_Clone_Crota_Veh, "332nd_Uniform_Clone_Crota", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crota.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crota.paa")
+	UNI_VEH(332nd_Uniform_Clone_Cosmos_Veh, "332nd_Uniform_Clone_Cosmos", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Cosmos.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Cosmos.paa")
+	UNI_VEH(332nd_Uniform_Clone_Fusion_Veh, "332nd_Uniform_Clone_Fusion", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Fusion.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Fusion.paa")
+	UNI_VEH(332nd_Uniform_Clone_Jorge_Veh, "332nd_Uniform_Clone_Jorge", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Jorge.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Jorge.paa")
+	UNI_VEH(332nd_Uniform_Clone_Crucial_Veh, "332nd_Uniform_Clone_Crucial", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Crucial.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Crucial.paa")
+	UNI_VEH(332nd_Uniform_Clone_Logan_Veh, "332nd_Uniform_Clone_Logan", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Logan.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Logan.paa")
+	UNI_VEH(332nd_Uniform_Clone_Ahri_Veh, "332nd_Uniform_Clone_Ahri", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ahri.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ahri.paa")
+	UNI_VEH(332nd_Uniform_Clone_Rimuru_Veh, "332nd_Uniform_Clone_Rimuru", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Rimuru.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Rimuru.paa")
+	UNI_VEH(332nd_Uniform_Clone_Icurus_Veh, "332nd_Uniform_Clone_Icurus", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Icurus.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Icurus.paa")
+	UNI_VEH(332nd_Uniform_Clone_Saiko_Veh, "332nd_Uniform_Clone_Saiko", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Saiko.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Saiko.paa")
+	UNI_VEH(332nd_Uniform_Clone_Coal_Veh, "332nd_Uniform_Clone_Coal", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Coal.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Coal.paa")
+	UNI_VEH(332nd_Uniform_Clone_Villa_Veh, "332nd_Uniform_Clone_Villa", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Villa.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa")
+	UNI_VEH(332nd_Uniform_Clone_Komrk_Veh, "332nd_Uniform_Clone_Komrk", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Komrk.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Komrk.paa")
+	UNI_VEH(332nd_Uniform_Clone_Wylder_Veh, "332nd_Uniform_Clone_Wylder", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Wylder.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Wylder.paa")
+	UNI_VEH(332nd_Uniform_Clone_Raven_Veh, "332nd_Uniform_Clone_Raven", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Raven.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Raven.paa")
+	UNI_VEH(332nd_Uniform_Clone_Butch_Veh, "332nd_Uniform_Clone_Butch", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Butch.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Butch.paa")
+	UNI_VEH(332nd_Uniform_Clone_Max_Veh, "332nd_Uniform_Clone_Max", "332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Max.paa", "332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Max.paa")
 };
 
 class XtdGearModels
@@ -2018,270 +979,58 @@ class XtdGearInfos
 {
 	class CfgWeapons 
 	{
-		class 332nd_Uniform_Clone_CR
-		{
-			model = "332nd_Uniform_Extended";
-			Trooper = "CR";
-		};
-		class 332nd_Uniform_Clone_CT
-		{
-			model = "332nd_Uniform_Extended";
-			Trooper = "CT";
-		};
-		class 332nd_Uniform_Clone_SCT
-		{
-			model = "332nd_Uniform_Extended";
-			Trooper = "SCT";
-		};
-		class 332nd_Uniform_Clone_CT_Medic
-		{
-			model = "332nd_Uniform_Extended";
-			Medic = "CT";
-		};
-		class 332nd_Uniform_Clone_SCT_Medic
-		{
-			model = "332nd_Uniform_Extended";
-			Medic = "SCT";
-		};
-		class 332nd_Uniform_Clone_Body
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Body";
-		};
-		class 332nd_Uniform_Clone_Grim
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Grim";
-		};
-		class 332nd_Uniform_Clone_Warthog
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Warthog";
-		};
-		class 332nd_Uniform_Clone_Nate
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Nate";
-		};
-		class 332nd_Uniform_Clone_Dovah
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Dovah";
-		};
-		class 332nd_Uniform_Clone_Aqua
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Aqua";
-		};
-		class 332nd_Uniform_Clone_Luci
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Luci";
-		};
-		class 332nd_Uniform_Clone_Arson
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Arson";
-		};
-		class 332nd_Uniform_Clone_Inu
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Inu";
-		};
-		class 332nd_Uniform_Clone_Asuka
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Asuka";
-		};
-		class 332nd_Uniform_Clone_Ketamine
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Ketamine";
-		};
-		class 332nd_Uniform_Clone_Walkie
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Walkie";
-		};
-		class 332nd_Uniform_Clone_Rat
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Rat";
-		};
-		class 332nd_Uniform_Clone_Mouse
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Mouse";
-		};
-		class 332nd_Uniform_Clone_Frankenburg
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Frankenburg";
-		};
-		class 332nd_Uniform_Clone_Crow
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Crow";
-		};
-		class 332nd_Uniform_Clone_Cherryy
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Cherryy";
-		};
-		class 332nd_Uniform_Clone_Shuck
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Shuck";
-		};
-		class 332nd_Uniform_Clone_Shovie
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Shovie";
-		};
-		class 332nd_Uniform_Clone_Aztec
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Aztec";
-		};
-		class 332nd_Uniform_Clone_Trick
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Trick";
-		};
-		class 332nd_Uniform_Clone_Lettuce
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Lettuce";
-		};
-		class 332nd_Uniform_Clone_Whoops
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Whoops";
-		};
-		class 332nd_Uniform_Clone_Stryker
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Stryker";
-		};
-		class 332nd_Uniform_Clone_Roseiry
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Roseiry";
-		};
-		class 332nd_Uniform_Clone_VB
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "VB";
-		};
-		class 332nd_Uniform_Clone_Thym
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Thym";
-		};
-		class 332nd_Uniform_Clone_Rode
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Rode";
-		};
-		class 332nd_Uniform_Clone_Clari
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Clari";
-		};
-		class 332nd_Uniform_Clone_Ithias
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Ithias";
-		};
-		class 332nd_Uniform_Clone_Joker
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Joker";
-		};
-		class 332nd_Uniform_Clone_Crota
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Crota";
-		};
-		class 332nd_Uniform_Clone_Cosmos
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Cosmos";
-		};
-		class 332nd_Uniform_Clone_Fusion
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Fusion";
-		};
-		class 332nd_Uniform_Clone_Jorge
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Jorge";
-		};
-		class 332nd_Uniform_Clone_Crucial
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Crucial";
-		};
-		class 332nd_Uniform_Clone_Logan
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Logan";
-		};
-		class 332nd_Uniform_Clone_Ahri
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Ahri";
-		};
-		class 332nd_Uniform_Clone_Rimuru
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Rimuru";
-		};
-		class 332nd_Uniform_Clone_Icurus
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Icurus";
-		};
-		class 332nd_Uniform_Clone_Saiko
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Saiko";
-		};
-		class 332nd_Uniform_Clone_Coal
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Coal";
-		};
-		class 332nd_Uniform_Clone_Villa
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Villa";
-		};
-		class 332nd_Uniform_Clone_Komrk
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Komrk";
-		};
-		class 332nd_Uniform_Clone_Wylder
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Wylder";
-		};
-		class 332nd_Uniform_Clone_Raven
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Raven";
-		};
-		class 332nd_Uniform_Clone_Butch
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Butch";
-		};
-		class 332nd_Uniform_Clone_Max
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Max";
-		};
+		XTD_INFO(332nd_Uniform_Clone_CR, "332nd_Uniform_Extended", Trooper, "CR")
+		XTD_INFO(332nd_Uniform_Clone_CT, "332nd_Uniform_Extended", Trooper, "CT")
+		XTD_INFO(332nd_Uniform_Clone_SCT, "332nd_Uniform_Extended", Trooper, "SCT")
+		XTD_INFO(332nd_Uniform_Clone_CT_Medic, "332nd_Uniform_Extended", Medic, "CT")
+		XTD_INFO(332nd_Uniform_Clone_SCT_Medic, "332nd_Uniform_Extended", Medic, "SCT")
+		XTD_INFO(332nd_Uniform_Clone_Body, "332nd_Uniform_Extended", Customs, "Body")
+		XTD_INFO(332nd_Uniform_Clone_Grim, "332nd_Uniform_Extended", Customs, "Grim")
+		XTD_INFO(332nd_Uniform_Clone_Warthog, "332nd_Uniform_Extended", Customs, "Warthog")
+		XTD_INFO(332nd_Uniform_Clone_Nate, "332nd_Uniform_Extended", Customs, "Nate")
+		XTD_INFO(332nd_Uniform_Clone_Dovah, "332nd_Uniform_Extended", Customs, "Dovah")
+		XTD_INFO(332nd_Uniform_Clone_Aqua, "332nd_Uniform_Extended", Customs, "Aqua")
+		XTD_INFO(332nd_Uniform_Clone_Luci, "332nd_Uniform_Extended", Customs, "Luci")
+		XTD_INFO(332nd_Uniform_Clone_Arson, "332nd_Uniform_Extended", Customs, "Arson")
+		XTD_INFO(332nd_Uniform_Clone_Inu, "332nd_Uniform_Extended", Customs, "Inu")
+		XTD_INFO(332nd_Uniform_Clone_Asuka, "332nd_Uniform_Extended", Customs, "Asuka")
+		XTD_INFO(332nd_Uniform_Clone_Ketamine, "332nd_Uniform_Extended", Customs, "Ketamine")
+		XTD_INFO(332nd_Uniform_Clone_Walkie, "332nd_Uniform_Extended", Customs, "Walkie")
+		XTD_INFO(332nd_Uniform_Clone_Rat, "332nd_Uniform_Extended", Customs, "Rat")
+		XTD_INFO(332nd_Uniform_Clone_Mouse, "332nd_Uniform_Extended", Customs, "Mouse")
+		XTD_INFO(332nd_Uniform_Clone_Frankenburg, "332nd_Uniform_Extended", Customs, "Frankenburg")
+		XTD_INFO(332nd_Uniform_Clone_Crow, "332nd_Uniform_Extended", Customs, "Crow")
+		XTD_INFO(332nd_Uniform_Clone_Cherryy, "332nd_Uniform_Extended", Customs, "Cherryy")
+		XTD_INFO(332nd_Uniform_Clone_Shuck, "332nd_Uniform_Extended", Customs, "Shuck")
+		XTD_INFO(332nd_Uniform_Clone_Shovie, "332nd_Uniform_Extended", Customs, "Shovie")
+		XTD_INFO(332nd_Uniform_Clone_Aztec, "332nd_Uniform_Extended", Customs, "Aztec")
+		XTD_INFO(332nd_Uniform_Clone_Trick, "332nd_Uniform_Extended", Customs, "Trick")
+		XTD_INFO(332nd_Uniform_Clone_Lettuce, "332nd_Uniform_Extended", Customs, "Lettuce")
+		XTD_INFO(332nd_Uniform_Clone_Whoops, "332nd_Uniform_Extended", Customs, "Whoops")
+		XTD_INFO(332nd_Uniform_Clone_Stryker, "332nd_Uniform_Extended", Customs, "Stryker")
+		XTD_INFO(332nd_Uniform_Clone_Roseiry, "332nd_Uniform_Extended", Customs, "Roseiry")
+		XTD_INFO(332nd_Uniform_Clone_VB, "332nd_Uniform_Extended", Customs, "VB")
+		XTD_INFO(332nd_Uniform_Clone_Thym, "332nd_Uniform_Extended", Customs, "Thym")
+		XTD_INFO(332nd_Uniform_Clone_Rode, "332nd_Uniform_Extended", Customs, "Rode")
+		XTD_INFO(332nd_Uniform_Clone_Clari, "332nd_Uniform_Extended", Customs, "Clari")
+		XTD_INFO(332nd_Uniform_Clone_Ithias, "332nd_Uniform_Extended", Customs, "Ithias")
+		XTD_INFO(332nd_Uniform_Clone_Joker, "332nd_Uniform_Extended", Customs, "Joker")
+		XTD_INFO(332nd_Uniform_Clone_Crota, "332nd_Uniform_Extended", Customs, "Crota")
+		XTD_INFO(332nd_Uniform_Clone_Cosmos, "332nd_Uniform_Extended", Customs, "Cosmos")
+		XTD_INFO(332nd_Uniform_Clone_Fusion, "332nd_Uniform_Extended", Customs, "Fusion")
+		XTD_INFO(332nd_Uniform_Clone_Jorge, "332nd_Uniform_Extended", Customs, "Jorge")
+		XTD_INFO(332nd_Uniform_Clone_Crucial, "332nd_Uniform_Extended", Customs, "Crucial")
+		XTD_INFO(332nd_Uniform_Clone_Logan, "332nd_Uniform_Extended", Customs, "Logan")
+		XTD_INFO(332nd_Uniform_Clone_Ahri, "332nd_Uniform_Extended", Customs, "Ahri")
+		XTD_INFO(332nd_Uniform_Clone_Rimuru, "332nd_Uniform_Extended", Customs, "Rimuru")
+		XTD_INFO(332nd_Uniform_Clone_Icurus, "332nd_Uniform_Extended", Customs, "Icurus")
+		XTD_INFO(332nd_Uniform_Clone_Saiko, "332nd_Uniform_Extended", Customs, "Saiko")
+		XTD_INFO(332nd_Uniform_Clone_Coal, "332nd_Uniform_Extended", Customs, "Coal")
+		XTD_INFO(332nd_Uniform_Clone_Villa, "332nd_Uniform_Extended", Customs, "Villa")
+		XTD_INFO(332nd_Uniform_Clone_Komrk, "332nd_Uniform_Extended", Customs, "Komrk")
+		XTD_INFO(332nd_Uniform_Clone_Wylder, "332nd_Uniform_Extended", Customs, "Wylder")
+		XTD_INFO(332nd_Uniform_Clone_Raven, "332nd_Uniform_Extended", Customs, "Raven")
+		XTD_INFO(332nd_Uniform_Clone_Butch, "332nd_Uniform_Extended", Customs, "Butch")
+		XTD_INFO(332nd_Uniform_Clone_Max, "332nd_Uniform_Extended", Customs, "Max")
 	};
 };
