@@ -125,14 +125,6 @@ class CfgMagazines
 		lastRoundsTracer = 999;
 		picture = "\3AS\3AS_Weapons\Data\UI\3as_ammo_flamer.paa";
 	};
-	class 332nd_DC15L_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_Gas_Level_M2_S";
-		count = 200;
-		displayname = "[332nd] DC-15L 200 Round Energy Cell";
-		mass = 40;
-		scope = 2;
-	};
 	class 332nd_DLT15_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_M1_S";
@@ -159,12 +151,20 @@ class CfgMagazines
 		mass = 10;
 		scope = 2;
 	};
+	class 332nd_DC15L_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_M2_S";
+		count = 200;
+		displayname = "[332nd] DC-15L 200 Round Energy Cell";
+		mass = 40;
+		scope = 2;
+	};
 	class 332nd_DC15LE_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_M3_S";
 		count = 100;
 		displayname = "[332nd] DC-15LE 100 Round Energy Cell";
-		mass = 13.3;
+		mass = 20;
 		scope = 2;
 	};
 	class 332nd_EPL_Mag: 332nd_Base_Mag

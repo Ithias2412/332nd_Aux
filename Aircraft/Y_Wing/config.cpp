@@ -238,8 +238,8 @@ class CfgVehicles
 						displayName = "Bombs";
 						attachment[] = 
 						{
-							"332nd_Forge_X_C",
-							"332nd_Forge_X_C",
+							"332nd_Forge_III_Mag_Y",
+							"332nd_Forge_III_Mag_Y",
 							"332nd_Forge_III_Mag_Y",
 							"332nd_Forge_III_Mag_Y",
 							"332nd_Forge_III_Mag_Y",
@@ -317,6 +317,7 @@ class CfgVehicles
 						{
 							"332nd_Forge_I",
 							"332nd_Forge_III_Y",
+							"332nd_Forge_III_L",
 							"332nd_Forge_X_C",
 							//"332nd_Anvil_V",
 							//"332nd_Forge_X_N",

@@ -151,6 +151,14 @@ class CfgWeapons
 			"332nd_Forge_III_Mag_Y",
 		};
 	};
+	class 332nd_Forge_III_L: 332nd_Forge_III
+	{
+		displayName = "[332nd] Forge III-L";
+		magazines[] = 
+		{
+			"332nd_Forge_III_L_Mag",
+		};
+	};
 	class 332nd_Forge_I: weapon_SDBLauncher
 	{
 		displayName = "[332nd] Forge I";
@@ -504,6 +512,18 @@ class CfgMagazines
 		};
 		pylonWeapon = "332nd_Forge_III_Y";
 	};
+	class 332nd_Forge_III_L_Mag: 332nd_Forge_III_Mag
+	{
+		ammo = "332nd_Forge_III_L_Ammo";
+		descriptionShort = "1000lb, high-explosive, laser-guided bomb";
+		displayName = "[332nd] Forge III-L";
+		count = 2;
+		hardpoints[] = 
+		{
+			"332nd_Forge_III_L",
+		};
+		pylonWeapon = "332nd_Forge_III_L";
+	};
 	class 332nd_Forge_I_Mag: PylonRack_Bomb_SDB_x4
 	{
 		ammo = "332nd_Forge_I_Ammo";
@@ -720,6 +740,7 @@ class CfgAmmo
 	};
 	class 332nd_Forge_X_C_Ammo: BombCluster_01_Ammo_F
 	{
+		weaponLockSystem = 0;
 		submunitionAmmo[] = 
 		{
 			"Mo_cluster_Bomb_01_F",
@@ -739,6 +760,14 @@ class CfgAmmo
 	class 332nd_Forge_III_Ammo_Y: 332nd_Forge_III_Ammo
 	{
 		
+	};
+	class 332nd_Forge_III_L_Ammo: 332nd_Forge_III_Ammo
+	{
+		//ExplosionEffects = "PHAN_JDAM_Fx_500";
+		explosionForceCoef = 8;
+		hit = 5000;
+		indirectHit = 1800;
+		indirectHitRange = 34;
 	};
 
 	//cannon
