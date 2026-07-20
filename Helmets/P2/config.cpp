@@ -659,6 +659,54 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Max.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Jammur: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Jammur)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Jammur.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Fang: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Fang)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Fang.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Morgan: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Morgan)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Morgan.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Shark: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Shark)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Shark.paa"
+		};
+	};
 
 };
 
@@ -769,6 +817,9 @@ class XtdGearModels
 					"Wylder",
 					"Raven",
 					"Max",
+					"Jammur",
+					"Fang",
+					"Morgan",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1144,6 +1195,24 @@ class XtdGearModels
 					description = "Forever Applicant";
 					//image = "xxx";
 				};
+				class Jammur
+				{
+					label = "Jammur";
+					description = "Rainharuto's Hand Holder";
+					//image = "xxx";
+				};
+				class Fang
+				{
+					label = "Fang";
+					description = "South California Stan";
+					//image = "xxx";
+				};
+				class Morgan
+				{
+					label = "Morgan";
+					description = "N/A";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1408,6 +1477,26 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Max";
+		};
+		class 332nd_Helmet_P2_Jammur
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Jammur";
+		};
+		class 332nd_Helmet_P2_Fang
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Fang";
+		};
+		class 332nd_Helmet_P2_Morgan
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Morgan";
+		};
+		class 332nd_Helmet_P2_Shark
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Shark";
 		};
 	};
 };

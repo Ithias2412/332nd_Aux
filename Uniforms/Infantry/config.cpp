@@ -659,6 +659,54 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_McGurkin: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (McGurkin)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_McGurkin_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Dande: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Dande)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Dande_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Oddball: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Oddball)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Oddball_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Shark: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Shark)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Shark_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1544,6 +1592,46 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Max.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_McGurkin_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_McGurkin";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_McGurkin.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_McGurkin.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Dande_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Dande";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Dande.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Oddball_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Oddball";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Oddball.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Oddball.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Shark_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Shark";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shark.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shark.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1682,6 +1770,9 @@ class XtdGearModels
 					"Raven",
 					"Butch",
 					"Max",
+					"McGurkin",
+					"Dande",
+					"Oddball",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -2009,6 +2100,24 @@ class XtdGearModels
 					description = "Opposite of Min";
 					//image = "xxx";
 				};
+				class McGurkin
+				{
+					label = "McGurkin";
+					description = "Almost didnt get slotted";
+					//image = "xxx";
+				};
+				class Dande
+				{
+					label = "Dande";
+					description = "Doesn't show up on time";
+					//image = "xxx";
+				};
+				class Oddball
+				{
+					label = "Oddball";
+					description = "Aztec fucked his texture pathing";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -2282,6 +2391,26 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Max";
+		};
+		class 332nd_Uniform_Clone_McGurkin
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "McGurkin";
+		};
+		class 332nd_Uniform_Clone_Dande
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Dande";
+		};
+		class 332nd_Uniform_Clone_Oddball
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Oddball";
+		};
+		class 332nd_Uniform_Clone_Shark
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Shark";
 		};
 	};
 };
