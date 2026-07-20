@@ -412,6 +412,11 @@ class CfgVehicles
 				count = 25;
 				name = "ACE_plasmaIV_500";
 			};
+			class 332nd_Plasma_2000_Weap
+			{
+				count = 20;
+				name = "332nd_Plasma_2000_Weap";
+			};
 			class ACE_splint
 			{
 				count = 25;
