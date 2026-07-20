@@ -382,11 +382,6 @@ class CfgVehicles
 				count = 100;
 				name = "332nd_Painkiller_Weap";
 			};
-			class 332nd_Plasma_2000_Weap
-			{
-				count = 20;
-				name = "332nd_Plasma_2000_Weap";
-			}
 			class ACE_epinephrine
 			{
 				count = 25;
@@ -699,7 +694,7 @@ class CfgVehicles
 			{
 				count = 20;
 				name = "332nd_Plasma_2000_Weap";
-			}
+			};
 			class ACE_epinephrine
 			{
 				count = 25;
