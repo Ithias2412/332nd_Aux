@@ -107,6 +107,19 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Trick.paa",
 		};		
 	};
+	class 332nd_Helmet_AB_Stryker: 332nd_Helmet_AB_Base
+	{
+		author="Ahri";
+		displayName="[332nd] AB Helmet (Stryker)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Stryker.paa",
+		};		
+	};
 };
 
 class XtdGearModels
@@ -139,6 +152,7 @@ class XtdGearModels
 					"Cherryy",
 					"Fusion",
 					"Trick", 
+					"Stryker", 
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -158,6 +172,12 @@ class XtdGearModels
                 {
                     label = "Trick";
                     description = "Goon Platoon";
+                    //image = "xxx";
+                };
+				class Stryker
+                {
+                    label = "Stryker";
+                    description = "Trend Chaser";
                     //image = "xxx";
                 };
 			};
@@ -188,6 +208,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_AB_Extended";
             Customs = "Trick";
+        };
+		class 332nd_Helmet_AB_Stryker
+        {
+            model = "332nd_Helmets_AB_Extended";
+            Customs = "Stryker";
         };
 	};
 };
