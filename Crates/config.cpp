@@ -139,10 +139,10 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_HE_UGLGrenade_Mag";
 			};
-			class ACE_HuntIR_M203
+			class 332nd_HuntIR_UGLGrenade_Mag
 			{
 				count = 50;
-				magazine = "ACE_HuntIR_M203";
+				magazine = "332nd_HuntIR_UGLGrenade_Mag";
 			};
 			class 332nd_Smoke_LauncherGrenade
 			{
@@ -642,6 +642,11 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_Binocular";
 			};
+			class 332nd_Binocular_RTO 
+			{
+				count = 10;
+				weapon = "332nd_Binocular_RTO";
+			};
 		};
 
 		class TransportBackpacks
@@ -933,6 +938,11 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_Binocular";
 			};
+			class 332nd_Binocular_RTO 
+			{
+				count = 10;
+				weapon = "332nd_Binocular_RTO";
+			};
 			class 332nd_Dispo_F
 			{
 				count = 6;
@@ -1021,10 +1031,10 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_HE_UGLGrenade_Mag";
 			};
-			class ACE_HuntIR_M203 
+			class 332nd_HuntIR_UGLGrenade_Mag 
 			{ 
 				count = 50; 
-				magazine = "ACE_HuntIR_M203"; 
+				magazine = "332nd_HuntIR_UGLGrenade_Mag"; 
 			}; 
 			class 332nd_Smoke_LauncherGrenade
 			{

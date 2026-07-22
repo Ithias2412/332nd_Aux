@@ -273,24 +273,21 @@ class cfgWeapons
 	class 332nd_Vest_Joker: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Joker)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = 
 		{
 			"camo1",
-			"camo2"
 		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Joker.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 			hiddenSelections[] = 
 			{
 				"camo1",
-				"camo2"
 			};
 		};
 	};

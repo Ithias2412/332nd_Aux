@@ -22,11 +22,11 @@ class CfgVehicles
 		tf_hasLRradio=0;
 		tf_range=25000;
 		//nsm
-		NSM_jumppack_is_jumppack = 1;
-		NSM_jumppack_spam_delay = 1;
-		NSM_jumppack_energy_capacity = 30;
-		NSM_jumppack_recharge = 1;
-		NSM_jumppack_jump_types[] = 
+		DBA_jumppack_is_jumppack = 1;
+		DBA_jumppack_spam_delay = 1;
+		DBA_jumppack_energy_capacity = 30;
+		DBA_jumppack_recharge = 1;
+		DBA_jumppack_jump_types[] = 
 		{
 			{
 				"Jump",		// Name of jump
@@ -40,11 +40,18 @@ class CfgVehicles
 				}
 			},
 		};
-		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
-		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
-		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
-		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
-		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
+		/*
+		DBA_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
+		DBA_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
+		DBA_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
+		DBA_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
+		DBA_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
+		*/
+		DBA_jumppack_jump_effect_script = "DBA_jumppack_effect_fnc_jt_21";
+		DBA_jumppack_effect_points[] ={{"spine3",{0,-0.30000001,-0.1}}};
+		DBA_jumppack_sound_ignite[] ={"DBA_Core\Addons\DBA_JumpPack\jumppack\Sounds\cdv21Start.ogg"};
+		DBA_jumppack_sound_land[] ={"DBA_Core\Addons\DBA_JumpPack\jumppack\Sounds\cdv21End.ogg"};
+		DBA_jumppack_sound_idle[] ={"DBA_Core\Addons\DBA_JumpPack\jumppack\Sounds\cdv21Idle.ogg"};
 	};
     class 332nd_JT12: 332nd_Jetpack_Base
     {  
@@ -112,9 +119,9 @@ class CfgVehicles
 		tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
         tf_subtype="digital_lr";
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel";
-		NSM_jumppack_energy_capacity = 60;
-		NSM_jumppack_recharge = 1;
-		NSM_jumppack_jump_types[] = 
+		DBA_jumppack_energy_capacity = 60;
+		DBA_jumppack_recharge = 1;
+		DBA_jumppack_jump_types[] = 
 		{
 			{
 				"Jump",// Name of jump
