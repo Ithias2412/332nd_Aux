@@ -443,7 +443,10 @@ class CfgVehicles
 		{
 			"3AS\3AS_Props\Crates\Data\Supply_Large_orange\Supply_Large_orange_co.paa"
 		};
-
+		class EventHandlers
+		{
+			init = "_this execVM '332nd_Aux\Functions\fn_whiteListArsenalResup.sqf';";
+		};
 		class TransportItems
 		{
 			class ACE_DefusalKit
