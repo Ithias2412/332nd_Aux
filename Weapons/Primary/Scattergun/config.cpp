@@ -39,7 +39,8 @@ class cfgWeapons
 		author="$STR_3as_Studio";
 		magazines[]=
 		{
-			"332nd_ScatterGun_Scattershot_Mag"
+			"332nd_ScatterGun_Scattershot_Mag",
+			//"332nd_ScatterGun_Arc_Mag",
 		};
 		magazineWell[]={};
 		reloadAction="3AS_GestureReloadScatterGun";
@@ -131,6 +132,8 @@ class cfgWeapons
 			};
 			magazineWell[]={};
 			modelOptics = "\332nd_Aux\Misc\Optics\332nd_Zoom.p3d";
+			cursor = "332nd_Cursor_Tri";
+			cursoraim = "332nd_Cursor_Dot";
 			class OpticsModes
 			{
 				class Nozoom

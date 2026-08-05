@@ -18,7 +18,7 @@ class CfgVehicles
 	{
 		scope=0;
 		author="Cherryy";
-		maximumLoad=50;
+		maximumLoad=75;
 		tf_hasLRradio=0;
 		tf_range=25000;
 		//nsm
@@ -97,7 +97,7 @@ class CfgVehicles
 			"332nd_Aux\Backpacks\tex\332nd_JT12_Medic.paa"
 		};
 		displayName="[332nd] JT-12 (Medic)";
-		maximumLoad=75;
+		maximumLoad=100;
 	};
 	class 332nd_MC: 332nd_Jetpack_Base
 	{

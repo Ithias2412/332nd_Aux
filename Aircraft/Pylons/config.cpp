@@ -641,7 +641,7 @@ class CfgAmmo
 	class 332nd_Hammer_I_Ammo: M_Air_AA
 	{
 		effectsMissile = "332nd_Effect_Hammer";
-		proximityExplosionDistance = 7;
+		proximityExplosionDistance = 6;
 		fuseDistance = 5;
 		
         missileLockMaxDistance = 3000;   // max distance (meters) target can be locked
@@ -656,7 +656,7 @@ class CfgAmmo
 	class 332nd_Hammer_II_Ammo: M_Zephyr
 	{
 		effectsMissile = "332nd_Effect_Hammer_II";
-		proximityExplosionDistance = 12;
+		proximityExplosionDistance = 11;
 		fuseDistance = 5;
 		
         missileLockMaxDistance = 9000;   // max distance (meters) target can be locked
@@ -668,7 +668,7 @@ class CfgAmmo
 		effectsMissile = "332nd_Effect_Hammer_II";
 		hit = 750;
 		indirectHit = 750;
-		proximityExplosionDistance = 12;
+		proximityExplosionDistance = 11;
 		fuseDistance = 5;
 		
         missileLockMaxDistance = 9000;   // max distance (meters) target can be locked

@@ -8,6 +8,7 @@ class CfgPatches
 			"332nd_Medical_Crate",
 			"332nd_Equipment_Crate",
 			"332nd_Refueling_Barrel",
+			"332nd_Resupply_Crate",
         };
 		weapons[] = 
         {
@@ -58,6 +59,16 @@ class CfgVehicles
 			{
 				count = 100;
 				magazine = "332nd_DC15A_Mag";
+			};
+			class 332nd_DW_32S_Arc_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Arc_Mag";
+			};
+			class 332nd_DW_32S_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Mag";
 			};
 			class 332nd_DC15C_Mag
 			{
@@ -968,6 +979,21 @@ class CfgVehicles
 			{
 				count = 100;
 				magazine = "332nd_DC15A_Mag";
+			};
+			class 332nd_DC15LE_Mag
+			{
+				count = 100;
+				magazine = "332nd_DC15LE_Mag";
+			};
+			class 332nd_DW_32S_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Mag";
+			};
+			class 332nd_DW_32S_Arc_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Arc_Mag";
 			};
 			class 332nd_DC15C_Mag
 			{

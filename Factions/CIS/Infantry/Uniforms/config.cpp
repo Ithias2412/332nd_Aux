@@ -11,7 +11,10 @@ class CfgPatches
             ""
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"JLTS_characters_DroidArmor",
+		};
 	};
 };
 //#include "xtdGear.hpp"
@@ -20,9 +23,28 @@ class cfgWeapons
     class UniformItem;
 	class 3AS_U_CIS_Light_Armor;
 	class 3AS_U_CIS_Heavy_Armor;
+	class U_I_CombatUniform;
 	
 // Uniform
-class 332nd_Uniform_CIS_Human_Light: 3AS_U_CIS_Light_Armor
+	class JLTS_DroidB1: U_I_CombatUniform
+	{
+		author = "MrClock";
+		displayName = "Battle droid";
+		JLTS_deathSounds = "DeathDroid";
+		JLTS_hasEMPProtection = 0;
+		JLTS_isDroid = 0;
+		model = "\MRC\JLTS\characters\DroidArmor\DroidUniformB1.p3d";
+		picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
+		scope = 2;
+		class ItemInfo: UniformItem
+		{
+			containerClass = "Supply150";
+			mass = 40;
+			uniformClass = "JLTS_Droid_B1_E5";
+			uniformModel = "-";
+		};
+	};
+	class 332nd_Uniform_CIS_Human_Light: 3AS_U_CIS_Light_Armor
 	{
 		dlc="332nd";
 		scope=1;
@@ -35,7 +57,7 @@ class 332nd_Uniform_CIS_Human_Light: 3AS_U_CIS_Light_Armor
 			containerClass = "Supply150";
 		};
 	};
-class 332nd_Uniform_CIS_Human_Medical: 3AS_U_CIS_Light_Armor
+	class 332nd_Uniform_CIS_Human_Medical: 3AS_U_CIS_Light_Armor
 	{
 		dlc="332nd";
 		scope=1;
@@ -48,7 +70,7 @@ class 332nd_Uniform_CIS_Human_Medical: 3AS_U_CIS_Light_Armor
 			containerClass = "Supply150";
 		};
 	};
-class 332nd_Uniform_CIS_Human_Officer: 3AS_U_CIS_Light_Armor
+	class 332nd_Uniform_CIS_Human_Officer: 3AS_U_CIS_Light_Armor
 	{
 		dlc="332nd";
 		scope=1;
@@ -61,7 +83,7 @@ class 332nd_Uniform_CIS_Human_Officer: 3AS_U_CIS_Light_Armor
 			containerClass = "Supply150";
 		};
 	};
-class 332nd_Uniform_CIS_Human_Heavy: 3AS_U_CIS_Heavy_Armor
+	class 332nd_Uniform_CIS_Human_Heavy: 3AS_U_CIS_Heavy_Armor
 	{
 		dlc="332nd";
 		scope=1;

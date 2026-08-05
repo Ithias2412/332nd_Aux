@@ -71,15 +71,6 @@ class CfgMagazines
 		scope = 2;
 		//initSpeed = 1200;
 	};
-	class 332nd_DW_32S_Mag: 332nd_Base_Mag
-	{
-		ammo = "332nd_Gas_Level_L3";
-		count = 20;
-		displayname = "[332nd] DW-32S 20 Round Energy Cell";
-		mass = 13.6;
-		scope = 2;
-		//initSpeed = 1200;
-	};
 	class 332nd_785MK_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_L2";
@@ -102,6 +93,14 @@ class CfgMagazines
 		ammo = "332nd_Scattershot_S2";
 		count = 10;
 		displayname = "[332nd] Scatter-shot 10 Round Energy Cell";
+		mass = 8;
+		scope = 2;
+	};
+	class 332nd_ScatterGun_Arc_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Scattershot_S1_ARC";
+		count = 10;
+		displayname = "[332nd] Arc-shot 10 Round Energy Cell";
 		mass = 8;
 		scope = 2;
 	};
@@ -150,6 +149,24 @@ class CfgMagazines
 		displayname = "[332nd] DC-15A 30 Round Energy Cell";
 		mass = 10;
 		scope = 2;
+	};
+	class 332nd_DW_32S_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_S1";
+		count = 30;
+		displayname = "[332nd] DW-32S 30 Round Energy Cell";
+		mass = 10;
+		scope = 2;
+	};
+	class 332nd_DW_32S_Arc_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Gas_Level_S1_ARC";
+		count = 20;
+		displayname = "[332nd] DW-32S 20 Round Arc Cell";
+		mass = 10;
+		scope = 2;
+		JLTS_stunDuration = 1;
+		initSpeed = 400; //was 800
 	};
 	class 332nd_DC15L_Mag: 332nd_Base_Mag
 	{
@@ -230,7 +247,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Gas_Level_S2";
 		count = 40;
-		displayname = "[332nd]DC-15S 40 Round High Power Energy Cell";
+		displayname = "[332nd] DC-15S 40 Round High Power Energy Cell";
 		mass = 8.3; 
 		scope = 2;
 	};

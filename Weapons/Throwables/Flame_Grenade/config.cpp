@@ -39,9 +39,10 @@ class CfgMagazines
 	class 332nd_Flame_Grenade: IDA_grenade_Detonator_mag
 	{
 		ammo = "332nd_Flame_Grenade_Ammo";
-		displayName = "[332nd] Flame Grenade";
+		displayName = "[332nd] Flame Grenade (ENG)";
 		//descriptionShort = "[332nd] Flame Grenade";
 		displayNameShort = "Flame Grenade";
+		mass = 8;
 		//model = "\Indecisive_Armoury_Ammos\Data\Thermal_Imploder\IDA_Thermal_Imploder.p3d";
 		//picture = "\Indecisive_Armoury_Ammos\Data\Thermal_Imploder\Thermal_Imploder_UI.paa";
 	};

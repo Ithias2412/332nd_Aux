@@ -188,13 +188,13 @@ class CfgAmmo
 	class 3AS_GAT_redPlasma;
 	class 332nd_GAT_autocannon_Ammo: 3AS_GAT_redPlasma
 	{
-		caliber = 2.8;
+		caliber = 3;
 		aiAmmoUsageFlags = "64 + 128 + 256";
 		airLock = 1;
 		dangerRadiusBulletClose = 20;
 		dangerRadiusHit = 60;
 		explosive = 0.6;
-		hit = 60;
+		hit = 100; // WAS 60
 		indirectHit = 25;
 		indirectHitRange = 2.4;
 		suppressionRadiusBulletClose = 12;

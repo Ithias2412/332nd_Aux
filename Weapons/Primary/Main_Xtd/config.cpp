@@ -81,7 +81,7 @@ class XtdGearModels
             class Marksman
             {
                 label = "Marksman (MRK)";
-				values[] = { "Valken", "Firepuncher", "DW_32S", "785MK", };
+				values[] = { "Valken", "Firepuncher", "785MK", };
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Valken
@@ -94,12 +94,6 @@ class XtdGearModels
                 {
                     label = "Firepuncher";
                     description = "Penetrative Precision Blaster";
-                    //image = "xxx";
-                };
-                class DW_32S
-                {
-                    label = "DW-32S";
-                    description = "Automatic Precision Blaster";
                     //image = "xxx";
                 };
                 class 785MK
@@ -150,7 +144,7 @@ class XtdGearModels
             class Engineer
             {
                 label = "Engineer (ENG)";
-				values[] = { "Scattergun", "C_24",};
+				values[] = { "Scattergun", "C_24", "DW_32S",};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Scattergun
@@ -163,6 +157,12 @@ class XtdGearModels
                 {
                     label = "C-24";
                     description = "Experimental Flame Carbine";
+                    //image = "xxx";
+                };
+                class DW_32S
+                {
+                    label = "Test Weapon";
+                    description = "BANNED";
                     //image = "xxx";
                 };
             };
@@ -248,11 +248,6 @@ class XtdGearInfos
             model = "332nd_Weapons_Main_Extended";
             AutoRifleman = "DC_15L";
 		};
-		class 332nd_DW_32S
-		{
-            model = "332nd_Weapons_Main_Extended";
-            Marksman = "DW_32S";
-		};
 		class 332nd_Firepuncher
 		{
             model = "332nd_Weapons_Main_Extended";
@@ -292,6 +287,11 @@ class XtdGearInfos
 		{
             model = "332nd_Weapons_Main_Extended";
             Engineer = "Scattergun";
+		};
+		class 332nd_DW_32S
+		{
+            model = "332nd_Weapons_Main_Extended";
+            Engineer = "DW_32S";
 		};
 		class 332nd_DC15S_Shield
 		{

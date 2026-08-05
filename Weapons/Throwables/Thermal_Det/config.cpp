@@ -40,6 +40,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Thermal_Detonator_Ammo";
 		displayName = "[332nd] Thermal Detonator";
+		mass = 8;
 	};
 };
 
