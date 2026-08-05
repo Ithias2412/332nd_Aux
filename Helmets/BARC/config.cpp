@@ -1,4 +1,3 @@
-/*
 class CfgPatches 
 {
 	class 332nd_Helmets_BARC
@@ -19,10 +18,10 @@ class CfgPatches
 class cfgWeapons 
 {
 	class HeadgearItem;
-	class JLTS_CloneHelmetAB;
+	class JLTS_CloneHelmetBARC;
 
 //Base Start
-	class 332nd_Helmet_BARC_Base: JLTS_CloneHelmetAB
+	class 332nd_Helmet_BARC_Base: JLTS_CloneHelmetBARC
 	{
 		author="Ithias";
 		dlc="332nd Aux";
@@ -30,19 +29,21 @@ class cfgWeapons
 		subItems[] = {};
 		hiddenSelections[] = 
 		{
-			"camo1",
+			"camo2",
+			"camo1"
 		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_BARC_Base.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_BARC_Base.paa",
 		};
-		//model = "\MRC\JLTS\characters\CloneArmor\CloneHelmetAB.p3d";
 		class ItemInfo: HeadgearItem
 		{
 			mass=1;
-			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneHelmetAB.p3d";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor2\CloneHelmetBARC.p3d";
 			hiddenSelections[] = 
 			{
+				"camo2",
 				"camo1"
 			};
 			modelSides[] = {6};
@@ -75,15 +76,15 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 332nd_Helmets_AB_Extended
+        class 332nd_Helmets_BARC_Extended
         {
-            label = "AB";
+            label = "BARC";
             author = "Ithias";
-			options[] = { "Default",};
+			options[] = { "Default", };
             class Default
             {
                 label = "Default";
-				values[] = { "Trooper", };
+				values[] = { "Trooper",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Trooper
@@ -101,9 +102,9 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-        class 332nd_Helmet_AB_Base
+        class 332nd_Helmet_BARC_Base
         {
-            model = "332nd_Helmets_AB_Extended";
+            model = "332nd_Helmets_BARC_Extended";
             Default = "Trooper";
         };
 	};

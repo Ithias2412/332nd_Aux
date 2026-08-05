@@ -62,7 +62,6 @@ class CfgVehicles {
     // B1 Droids
     class 332nd_Droid_Base: JLTS_Droid_B1_E5 
 	{
-		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
 		impactEffectsBlood = "ImpactMetal";
 		impactEffectsNoBlood = "ImpactPlastic";
         scope = 0; // Base class (hidden)
@@ -195,10 +194,8 @@ class CfgVehicles {
         respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
-		//identityTypes[] = {"SWdroidvoice"}; // Apply the custom identity
 		impactEffectsBlood = "ImpactMetal";
 		impactEffectsNoBlood = "ImpactPlastic";		
-		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
     };
     class 332nd_Droid_B1_Security: 332nd_Droid_Base 
 	{
@@ -224,10 +221,8 @@ class CfgVehicles {
         respawnMagazines[] = {"332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag", "332nd_CIS_E5_Mag",};
         linkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
         respawnLinkedItems[] = {"ItemMap", "JLTS_droid_comlink", "ItemCompass", "ItemWatch", "332nd_NVG_Chip"};
-		//identityTypes[] = {"SWdroidvoice"}; // Apply the custom identity
 		impactEffectsBlood = "ImpactMetal";
 		impactEffectsNoBlood = "ImpactPlastic";
-		identityTypes[] = {"332nd_B1_Voice","Head_NATO"};
     };
 	class 332nd_Droid_B1_Rifleman_Jump: 332nd_Droid_Base 
 	{
