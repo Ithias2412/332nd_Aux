@@ -707,7 +707,80 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Shark.paa"
 		};
 	};
-
+	class 332nd_Helmet_P2_Kitra: 332nd_Helmet_P2_CR
+	{
+		scope = 1
+		displayName="[332nd] P2 Helmet (Kitra)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Kitra.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Frohman: 332nd_Helmet_P2_CR
+	{
+		scope = 1
+		displayName="[332nd] P2 Helmet (Frohman)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Frohman.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Weasel: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Weasel)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Weasel.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Veta: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Veta)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Veta.paa"
+		};
+	};
+	class 332nd_Helmet_P2_McGurkin: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (McGurkin)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_McGurkin.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Ougaran: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Ougaran)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ougaran.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -820,6 +893,12 @@ class XtdGearModels
 					"Jammur",
 					"Fang",
 					"Morgan",
+					"Kitra",
+					"Frohman",
+					"Weasel",
+					"Veta",
+					"McGurkin",
+					"Ougaran",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -915,7 +994,7 @@ class XtdGearModels
 				class Walkie
 				{
 					label = "Walkie";
-					description = "Whispers drugs into my system";
+					description = "Slave Driver";
 					//image = "xxx";
 				}; 
 				class Ghost
@@ -1213,6 +1292,42 @@ class XtdGearModels
 					description = "N/A";
 					//image = "xxx";
 				};
+				class Kitra
+				{
+					label = "Kitra";
+					description = "Idk who tf Sully is...";
+					//image = "xxx";
+				};
+				class Frohman
+				{
+					label = "Frohman";
+					description = "Doom something or another";
+					//image = "xxx";
+				};
+				class Weasel
+				{
+					label = "Weasel";
+					description = "Not the real Bobert";
+					//image = "xxx";
+				};
+				class Veta
+				{
+					label = "Veta";
+					description = "Was naked for 2 years";
+					//image = "xxx";
+				};
+				class McGurkin
+				{
+					label = "McGurkin";
+					description = "Straight McGurkin it, and by it, well lets just say my peanuts";
+					//image = "xxx";
+				};
+				class Ougaran
+				{
+					label = "Ougaran";
+					description = "His SL cannot pronounce his name";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1497,6 +1612,36 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Shark";
+		};
+		class 332nd_Helmet_P2_Kitra
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Kitra";
+		};
+		class 332nd_Helmet_P2_Frohman
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Frohman";
+		};
+		class 332nd_Helmet_P2_Weasel
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Weasel";
+		};
+		class 332nd_Helmet_P2_Veta
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Veta";
+		};
+		class 332nd_Helmet_P2_McGurkin
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "McGurkin";
+		};
+		class 332nd_Helmet_P2_Ougaran
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Ougaran";
 		};
 	};
 };

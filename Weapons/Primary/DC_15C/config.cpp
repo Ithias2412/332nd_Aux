@@ -222,6 +222,7 @@ class cfgWeapons
 		displayName="[332nd] DC-15C GL (GRN)";
 		picture = "Indecisive_Armoury_Weapons_REPUBLIC\Data\DC23\DC23_ui.paa";
 		reloadAction = "GestureReload_JLTS_DC15S";
+		recoil="3AS_recoil_DC15S";
 		baseWeapon = "332nd_DC15C_GL";
 		magazines[] =
 		{

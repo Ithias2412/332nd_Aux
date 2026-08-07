@@ -109,6 +109,27 @@ class CfgWeapons
 			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
+	class 332nd_NVG_Rangefinder_activeCamo: 332nd_NVG_Rangefinder
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+		};
+	};
 	class 332nd_NVG_Visor: OPTRE_NVG
 	{
 		displayName = "[332nd] Visor";

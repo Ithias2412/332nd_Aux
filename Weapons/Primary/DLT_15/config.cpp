@@ -26,6 +26,11 @@ class cfgWeapons
 //Primary
 	class 332nd_DLT15: IDA_DLT19
 	{
+		ace_overheating_barrelMass = 1.3;
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_closedBolt = 0; 
+		ace_overheating_dispersion = 1;
+		ace_overheating_slowdownFactor = 1;
 		cursor = "332nd_Cursor_Tri";
 		cursoraim = "332nd_Cursor_Arrow";
 		scope=2;
@@ -51,7 +56,7 @@ class cfgWeapons
 		modes[]=
 		{
 			"FullAuto",
-			//"SlowAuto"
+			"FullAuto_But_More",
 		};
 		muzzles[]=
 		{
@@ -102,7 +107,7 @@ class cfgWeapons
 				soundBegin[] = {"begin1",0.2,"begin2",0.2,"begin3",0.2,"begin4",0.2,"begin5",0.2};
 				soundBeginWater[] = {"beginwater1",1};
 			};
-			reloadTime=0.06;
+			reloadTime=0.08;
 			dispersion = 0.00174;
 			minRange=2;
 			minRangeProbab=0.5;
@@ -110,6 +115,12 @@ class cfgWeapons
 			midRangeProbab=0.69999999;
 			maxRange=10000;
 			maxRangeProbab=0.30000001;
+		};
+		class FullAuto_But_More: FullAuto
+		{
+			reloadTime=0.04;
+			dispersion = 0.00174;
+			textureType = "fastAuto";
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{

@@ -203,6 +203,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Asuka_activeCamo: 332nd_Uniform_Clone_CR
+	{
+		scope = 1;
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Asuka_Veh_activeCamo";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 	class 332nd_Uniform_Clone_Ketamine: 332nd_Uniform_Clone_CR
 	{
 		displayName="[332nd] Clone Trooper Armor (Ketamine)";
@@ -330,6 +342,19 @@ class cfgWeapons
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Aztec_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Aztec_activeCamo: 332nd_Uniform_Clone_CR
+	{
+		scope = 1;
+		displayName="[332nd] Clone Trooper Armor (Aztec)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Aztec_Veh_activeCamo";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -647,6 +672,19 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Butch_activeCamo: 332nd_Uniform_Clone_CR
+	{
+		scope = 1;
+		displayName="[332nd] Clone Trooper Armor (Butch)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Butch_Veh_activeCamo";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 	class 332nd_Uniform_Clone_Max: 332nd_Uniform_Clone_CR
 	{
 		displayName="[332nd] Clone Trooper Armor (Max)";
@@ -702,6 +740,18 @@ class cfgWeapons
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Shark_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Kitra: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Kitra)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Kitra_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -1212,6 +1262,21 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Asuka_Veh_activeCamo: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Asuka_activeCamo";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 	class 332nd_Uniform_Clone_Ketamine_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
@@ -1320,6 +1385,21 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Aztec.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aztec.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Aztec_Veh_activeCamo: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Aztec_activeCamo";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
 		};
 	};
 	class 332nd_Uniform_Clone_Lettuce_Veh: 332nd_Uniform_Clone_CR_Veh
@@ -1582,6 +1662,21 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Butch.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Butch_Veh_activeCamo: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Butch_activeCamo";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 	class 332nd_Uniform_Clone_Max_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
@@ -1630,6 +1725,16 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shark.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shark.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Kitra_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Kitra";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Kitra.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Kitra.paa",
 		};
 	};
 };
@@ -1773,6 +1878,7 @@ class XtdGearModels
 					"McGurkin",
 					"Dande",
 					"Oddball",
+					"Kitra",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1839,7 +1945,7 @@ class XtdGearModels
 				class Walkie
 				{
 					label = "Walkie";
-					description = "Walkie Texas Ranger";
+					description = "Rule 34/5";
 					//image = "xxx";
 				};
 				class Cin
@@ -2116,6 +2222,12 @@ class XtdGearModels
 				{
 					label = "Oddball";
 					description = "Aztec fucked his texture pathing";
+					//image = "xxx";
+				};
+				class Kitra
+				{
+					label = "Kitra";
+					description = "Feining";
 					//image = "xxx";
 				};
 			};
@@ -2411,6 +2523,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Shark";
+		};
+		class 332nd_Uniform_Clone_Kitra
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Kitra";
 		};
 	};
 };

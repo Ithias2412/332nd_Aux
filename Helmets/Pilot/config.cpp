@@ -103,6 +103,14 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Ghillie.paa",
 		};
 	};
+	class 332nd_Helmet_Pilot_Lawman: 332nd_Helmet_Pilot
+	{
+		displayName="[332nd] Pilot Helmet (Lawman)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Lawman.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -136,6 +144,7 @@ class XtdGearModels
 					"Cosmos",
 					"Gizmo",
 					"Ghillie",
+					"Lawman",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -161,6 +170,12 @@ class XtdGearModels
 				{
                     label = "Ghillie";
                     description = "Weewoo Light enjoyer";
+                    //image = "xxx";
+				};
+				class Lawman
+				{
+                    label = "Lawman";
+                    description = "Bass Reeves????";
                     //image = "xxx";
 				};
             };
@@ -196,6 +211,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Ghillie";
+		};
+		class 332nd_Helmet_Pilot_Lawman
+		{
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Lawman";
 		};
 	};
 };

@@ -19,6 +19,31 @@ class cfgWeapons
 	class 332nd_Uniform_Clone_CR;
 	
 // Uniform
+	class 332nd_Uniform_ARF_Base: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] ARF Trooper Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_ARF_Base_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_ARF_Base_activeCamo: 332nd_Uniform_Clone_CR
+	{
+		scope=1;
+		displayName="[332nd] ARF Trooper Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_ARF_Base_Veh_activeCamo";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 	class 332nd_Uniform_ARF_Desert: 332nd_Uniform_Clone_CR
 	{
 		displayName="[332nd] ARF Trooper Armor (Desert)";
@@ -72,6 +97,38 @@ class cfgWeapons
 class CfgVehicles
 {
 	class 332nd_Uniform_Clone_CR_Veh;
+	class 332nd_Uniform_ARF_Base_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_ARF_Base";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_ARF.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_CT.paa",
+		};
+		camouflage = 0.1;
+	};
+	class 332nd_Uniform_ARF_Base_Veh_activeCamo: 332nd_Uniform_ARF_Base_Veh
+	{
+		uniformClass="332nd_Uniform_ARF_Base_activeCamo";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 	class 332nd_Uniform_ARF_Desert_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
@@ -155,7 +212,24 @@ class XtdGearModels
         {
             label = "ARF";
             author = "Ithias";
-			options[] = { "Camo", };
+			options[] = 
+			{
+				"Default",
+				"Camo",
+			};
+            class Default
+            {
+                label = "Default";
+				values[] = { "Trooper"};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Trooper
+                {
+                    label = "Trooper";
+                    //description = "Recruit";
+                    //image = "xxx";
+                };
+            };
             class Camo
             {
                 label = "Camo";
@@ -195,6 +269,11 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
+        class 332nd_Uniform_ARF_Base
+        {
+            model = "332nd_Uniform_ARF_Extended";
+            Default = "Trooper";
+        };
         class 332nd_Uniform_ARF_Desert
         {
             model = "332nd_Uniform_ARF_Extended";

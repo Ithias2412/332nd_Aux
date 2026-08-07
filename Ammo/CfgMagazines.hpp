@@ -129,7 +129,7 @@ class CfgMagazines
 		ammo = "332nd_Gas_Level_M1_S";
 		count = 300;
 		displayname = "[332nd] DLT-15 300 Round Energy Cell";
-		mass = 40;
+		mass = 30;
 		scope = 2;
 		ACE_isBelt = 1;
 	};

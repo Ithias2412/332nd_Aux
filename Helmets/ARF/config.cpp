@@ -73,6 +73,23 @@ class cfgWeapons
 			};
 		};		
 	};
+	class 332nd_Helmet_ARF_Base_activeCamo: 332nd_Helmet_ARF_Base
+	{
+		scope=1;
+		displayName="[332nd] ARF Helmet (CT)";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+			"",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+			"",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 	class 332nd_Helmet_ARF_Desert: 332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Desert)";
@@ -123,6 +140,23 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Asuka.paa",
 		};
 	};
+	class 332nd_Helmet_ARF_Asuka_activeCamo: 332nd_Helmet_ARF_Base
+	{
+		scope=1;
+		displayName="[332nd] ARF Helmet (Asuka)";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+			"",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+			"",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 	class 332nd_Helmet_ARF_Cin: 332nd_Helmet_ARF_Base
 	{
 		displayName="[332nd] ARF Helmet (Cin)";
@@ -161,6 +195,50 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Aztec.paa",
 			"",
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Aztec.paa",
+		};
+	};
+	class 332nd_Helmet_ARF_Aztec_activeCamo: 332nd_Helmet_ARF_Base
+	{
+		scope=1;
+		displayName="[332nd] ARF Helmet (Aztec)";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+			"",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+			"",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
+	class 332nd_Helmet_ARF_Butch: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Butch)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Butch.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Butch.paa",
+		};
+	};
+	class 332nd_Helmet_ARF_Butch_activeCamo: 332nd_Helmet_ARF_Base
+	{
+		scope=1;
+		displayName="[332nd] ARF Helmet (Butch)";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+			"",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+			"",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
 		};
 	};
 };
@@ -221,7 +299,17 @@ class XtdGearModels
 			class Customs
             {
                 label = "Customs";
-				values[] = { "Asuka", "Cin", /* "Walkie", */ "Trick", "Stryker", "Smoke", "Aztec",};
+				values[] = 
+				{
+					"Asuka",
+					"Cin",
+					/* "Walkie", */
+					"Trick",
+					"Stryker",
+					"Smoke",
+					"Aztec",
+					"Butch",
+				};
                 changeingame = 0;
                 alwaysSelectable = 1;
 				class Asuka
@@ -264,6 +352,12 @@ class XtdGearModels
                 {
                     label = "Aztec";
                     description = "Brazilian or something idk";
+                    //image = "xxx";
+                };
+				class Butch
+                {
+                    label = "Butch";
+                    description = "His Lordship";
                     //image = "xxx";
                 };
             };
@@ -324,6 +418,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Aztec";
+        };
+        class 332nd_Helmet_ARF_Butch
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Butch";
         };
 	};
 };
