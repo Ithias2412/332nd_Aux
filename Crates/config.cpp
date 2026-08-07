@@ -70,6 +70,11 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DW_32S_Mag";
 			};
+			class 332nd_DW_32S_Arc_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Arc_Mag";
+			};
 			class 332nd_DC15C_Mag
 			{
 				count = 100;
@@ -465,6 +470,11 @@ class CfgVehicles
 				count = 5;
 				name = "ACE_DefusalKit";
 			};
+			class ACE_SpareBarrel
+			{
+				count = 10;
+				name = "ACE_SpareBarrel";
+			};
 			class ACE_EntrenchingTool
 			{
 				count = 10;
@@ -755,6 +765,11 @@ class CfgVehicles
 			{
 				count = 5;
 				name = "ACE_DefusalKit";
+			};
+			class ACE_SpareBarrel
+			{
+				count = 10;
+				name = "ACE_SpareBarrel";
 			};
 			class ACE_EntrenchingTool
 			{
