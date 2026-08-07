@@ -46,6 +46,7 @@ class CfgVehicles
 	};
 	class 332nd_Backpack_activeCamo: 332nd_Backpack
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -73,6 +74,7 @@ class CfgVehicles
 	};
 	class 332nd_Backpack_AT_activeCamo: 332nd_Backpack_AT
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -107,6 +109,7 @@ class CfgVehicles
 	};
 	class 332nd_Backpack_RTO_activeCamo: 332nd_Backpack_RTO
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -135,6 +138,7 @@ class CfgVehicles
 	};
 	class 332nd_Backpack_Medic_activeCamo: 332nd_Backpack_Medic
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -170,6 +174,7 @@ class CfgVehicles
 	};
 	class 332nd_Backpack_Medic_RTO_activeCamo: 332nd_Backpack_Medic_RTO
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -199,6 +204,7 @@ class CfgVehicles
 	};
 	class 332nd_Backpack_Engineer_activeCamo: 332nd_Backpack_Engineer
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -219,6 +225,7 @@ class CfgVehicles
 	};
 	class 332nd_Bag_GRN_MRK_activeCamo: 332nd_Bag_GRN_MRK
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -238,6 +245,7 @@ class CfgVehicles
 	};
 	class 332nd_Bag_AR_activeCamo: 332nd_Bag_AR
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
 			"",
@@ -275,6 +283,7 @@ class CfgVehicles
 	};
 	class 332nd_Back_Radio_activeCamo: 332nd_Back_Radio
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -309,6 +318,7 @@ class CfgVehicles
 	};
 	class 332nd_Back_NCO_activeCamo: 332nd_Back_NCO
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -330,6 +340,7 @@ class CfgVehicles
 	};
 	class 332nd_Back_activeCamo: 332nd_Back
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",

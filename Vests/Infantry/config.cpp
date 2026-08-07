@@ -40,6 +40,7 @@ class cfgWeapons
 	};
 	class 332nd_Trooper_Vest_activeCamo: 332nd_Trooper_Vest
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -73,6 +74,7 @@ class cfgWeapons
 	};
 	class 332nd_CSP_Vest_activeCamo: 332nd_CSP_Vest
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -106,6 +108,7 @@ class cfgWeapons
 	};
 	class 332nd_CP_Vest_activeCamo: 332nd_CP_Vest
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -139,6 +142,7 @@ class cfgWeapons
 	};
 	class 332nd_CS_Vest_activeCamo: 332nd_CS_Vest
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -175,6 +179,7 @@ class cfgWeapons
 	};
 	class 332nd_CSS_Vest_activeCamo: 332nd_CSS_Vest
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -210,6 +215,7 @@ class cfgWeapons
 	};
 	class 332nd_CSM_Vest_activeCamo: 332nd_CSM_Vest
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -243,6 +249,7 @@ class cfgWeapons
 	};
 	class 332nd_CC_Vest_activeCamo: 332nd_CC_Vest
 	{
+		scope=1;
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",

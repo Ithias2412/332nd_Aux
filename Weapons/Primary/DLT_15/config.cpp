@@ -29,7 +29,7 @@ class cfgWeapons
 		ace_overheating_barrelMass = 1.3;
 		ace_overheating_allowSwapBarrel = 1;
 		ace_overheating_closedBolt = 0; 
-		ace_overheating_dispersion = 1;
+		ace_overheating_dispersion = 1.5;
 		ace_overheating_slowdownFactor = 1;
 		cursor = "332nd_Cursor_Tri";
 		cursoraim = "332nd_Cursor_Arrow";
