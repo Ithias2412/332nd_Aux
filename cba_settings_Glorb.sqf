@@ -17,6 +17,10 @@ force DBA_Stims_Battle_Stim_Side_Effect_Duration = 60;
 force DBA_Stims_Battle_Stim_Side_Effect_Pain_Multiplier = 2;
 force DBA_Stims_Inject_Duration = 5;
 
+// 332nd Droid Fixes
+force nd332_DroidNade_Cooldown = 600;
+force nd332_DroidNade_RequireLoadout = true;
+
 // 3AS
 TAS_fusioncutter_deCrewSimple = true;
 force TAS_fusioncutter_heavyAug = 50;
@@ -1241,6 +1245,7 @@ diwako_dui_namelist_text_shadow = 2;
 diwako_dui_namelist_width = 215;
 diwako_dui_radar_ace_finger = true;
 force diwako_dui_radar_ace_medic = true;
+diwako_dui_radar_always_show_player_number = true;
 diwako_dui_radar_always_show_unit_numbers = false;
 diwako_dui_radar_compassRangeCrew = 500;
 force diwako_dui_radar_compassRangeLimit = 50;
@@ -1305,6 +1310,7 @@ force emr_main_yeetCoefficient = 1.4;
 
 // Fire support PLUS
 force FSPLUS_105mmTrainingShell = true;
+force FSPLUS_120MortarBarrage = true;
 force FSPLUS_122Rocket = true;
 force FSPLUS_122RocketBarrage = true;
 force FSPLUS_155Barrage = true;
@@ -1318,6 +1324,7 @@ force FSPLUS_230mmTrainingRocket = true;
 force FSPLUS_82mmTrainingShell = true;
 force FSPLUS_82MortarBarrage = true;
 force FSPLUS_Big_Nuke = true;
+force FSPLUS_ClusterDPICM = true;
 force FSPLUS_CruiseMissile = true;
 force FSPLUS_Fireworks = true;
 force FSPLUS_JDAM = true;
@@ -1325,8 +1332,14 @@ force FSPLUS_Napalm = true;
 force FSPLUS_Not230mmBarrage = true;
 force FSPLUS_RodsfromGod = true;
 force FSPLUS_Smoke_white = true;
+force FSPLUS_SmokeBarrage = true;
+force FSPLUS_Thermobaric = true;
+force FSPLUS_WP = true;
+force PHAN_EMP_banned = false;
+force PHAN_WP_banned = false;
+force PHAN_WP_forceSafe = false;
 
-// Fire support PLUS (Freestyle's Nuclear Blast)
+// Fire Support PLUS (Freestyle's Nuclear Blast)
 force FSNB_AllowWeapons = true;
 force FSNB_BlastWave = true;
 force FSNB_CondensationRing = true;
@@ -1472,7 +1485,7 @@ force hatg_setting_distance_close = 10;
 force hatg_setting_distance_close_multiplier = 2;
 force hatg_setting_distance_height = -1;
 force hatg_setting_distance_reset = 30;
-force hatg_setting_distance_shots = 2;
+force hatg_setting_distance_shots = 1.10055;
 force force hatg_setting_enable_crouch = true;
 force hatg_setting_movement_crouch = 20;
 force hatg_setting_mp_ai = false;
@@ -1483,10 +1496,10 @@ force hatg_setting_surfaces = false;
 
 // Hide Among The Grass -  Equipment
 force hatg_setting_equipment_ghillie_blacklist = "[]";
-force hatg_setting_equipment_ghillie_whitelist = "[""U_I_FullGhillie_ard"",""U_O_FullGhillie_ard"",""U_B_FullGhillie_ard"",""U_I_FullGhillie_lsh"",""U_O_FullGhillie_lsh"",""U_B_FullGhillie_lsh"",""U_I_FullGhillie_sard"",""U_O_FullGhillie_sard"",""U_B_FullGhillie_sard"",""U_I_GhillieSuit"",""U_O_GhillieSuit"",""U_B_GhillieSuit"",""U_O_T_FullGhillie_tna_F"",""U_B_T_FullGhillie_tna_F"",""U_O_T_Sniper_F"",""U_B_T_Sniper_F"",""CUP_U_B_CZ_WDL_Ghillie"",""CUP_U_O_RUS_Ghillie"",""CUP_U_B_BAF_DDPM_GHILLIE"",""CUP_U_B_BAF_DPM_GHILLIE"",""CUP_U_B_BAF_MTP_GHILLIE"",""CUP_U_B_CZ_DST_Ghillie"",""CUP_U_O_TK_Ghillie_Top"",""CUP_U_I_Ghillie_Top"",""U_SSU_Stealth_Uniform_Ghillie_HexcamBrown"",""U_SSU_Stealth_Uniform_Ghillie_HexcamGreen"",""U_SSU_Stealth_Uniform_Ghillie_MCAM_Alpine"",""U_SSU_Stealth_Uniform_Ghillie_AOR1"",""U_SSU_Stealth_Uniform_Ghillie_AOR2"",""U_SSU_Stealth_Uniform_Ghillie_MCAM_Black"",""U_SSU_Stealth_Uniform_Ghillie_Black"",""U_SSU_Stealth_Uniform_Ghillie_M81"",""U_SSU_Stealth_Uniform_Ghillie_MCAM"",""U_SSU_Stealth_Uniform_Ghillie_OCP"",""U_SSU_Stealth_Uniform_Ghillie_MCAM_Tropic"",""U_SSU_Stealth_Uniform_Ghillie_MCAM_Woodland"",""332nd_Uniform_ARF_Desert"",""332nd_Uniform_ARF_Urban"",""332nd_Uniform_ARF_Winter"",""332nd_Uniform_ARF_Woodland""]"; 
+force hatg_setting_equipment_ghillie_whitelist = "[""U_I_FullGhillie_ard"",""U_O_FullGhillie_ard"",""U_B_FullGhillie_ard"",""U_I_FullGhillie_lsh"",""U_O_FullGhillie_lsh"",""U_B_FullGhillie_lsh"",""U_I_FullGhillie_sard"",""U_O_FullGhillie_sard"",""U_B_FullGhillie_sard"",""U_I_GhillieSuit"",""U_O_GhillieSuit"",""U_B_GhillieSuit"",""U_O_T_FullGhillie_tna_F"",""U_B_T_FullGhillie_tna_F"",""U_O_T_Sniper_F"",""U_B_T_Sniper_F"",""CUP_U_B_CZ_WDL_Ghillie"",""CUP_U_O_RUS_Ghillie"",""CUP_U_B_BAF_DDPM_GHILLIE"",""CUP_U_B_BAF_DPM_GHILLIE"",""CUP_U_B_BAF_MTP_GHILLIE"",""CUP_U_B_CZ_DST_Ghillie"",""CUP_U_O_TK_Ghillie_Top"",""CUP_U_I_Ghillie_Top"",""U_SSU_Stealth_Uniform_Ghillie_HexcamBrown"",""U_SSU_Stealth_Uniform_Ghillie_HexcamGreen"",""U_SSU_Stealth_Uniform_Ghillie_MCAM_Alpine"",""U_SSU_Stealth_Uniform_Ghillie_AOR1"",""U_SSU_Stealth_Uniform_Ghillie_AOR2"",""U_SSU_Stealth_Uniform_Ghillie_MCAM_Black"",""U_SSU_Stealth_Uniform_Ghillie_Black"",""U_SSU_Stealth_Uniform_Ghillie_M81"",""U_SSU_Stealth_Uniform_Ghillie_MCAM"",""U_SSU_Stealth_Uniform_Ghillie_OCP"",""U_SSU_Stealth_Uniform_Ghillie_MCAM_Tropic"",""U_SSU_Stealth_Uniform_Ghillie_MCAM_Woodland"",""332nd_Uniform_ARF_Desert"",""332nd_Uniform_ARF_Urban"",""332nd_Uniform_ARF_Winter"",""332nd_Uniform_ARF_Woodland""]";
 force hatg_setting_equipment_suppressor_blacklist = "[""ACE_muzzle_mzls_B"",""ACE_muzzle_mzls_L"",""ACE_muzzle_mzls_H"",""ACE_muzzle_mzls_93mmg"",""ACE_muzzle_mzls_338"",""ACE_muzzle_mzls_smg_01"",""ACE_muzzle_mzls_smg_02"",""muzzle_antenna_01_f"",""muzzle_antenna_02_f"",""muzzle_antenna_03_f"",""CUP_muzzle_mfsup_Flashhider_545x39_Black"",""CUP_muzzle_mfsup_Flashhider_545x39_OD"",""CUP_muzzle_mfsup_Flashhider_545x39_Tan"",""CUP_muzzle_mfsup_Flashhider_556x45_Black"",""CUP_muzzle_mfsup_Flashhider_556x45_OD"",""CUP_muzzle_mfsup_Flashhider_556x45_Tan"",""CUP_muzzle_mfsup_SCAR_L"",""CUP_muzzle_mfsup_SCAR_H"",""CUP_muzzle_mfsup_Flashhider_762x39_Black"",""CUP_muzzle_mfsup_Flashhider_762x39_OD"",""CUP_muzzle_mfsup_Flashhider_762x39_Tan"",""CUP_muzzle_mfsup_Flashhider_762x51_Black"",""CUP_muzzle_mfsup_Flashhider_762x51_OD"",""CUP_muzzle_mfsup_Flashhider_762x51_Tan"",""CUP_muzzle_mfsup_CSA"",""CUP_muzzle_mfsup_CSA_desert"",""CUP_muzzle_mfsup_CSA_woodland"",""CUP_muzzle_mfsup_flashhider_Sa58"",""CUP_muzzle_mfsup_Zendl"",""CUP_muzzle_mfsup_Zendl_desert"",""CUP_muzzle_mfsup_Zendl_woodland"",""CUP_acc_bfa"",""CUP_acc_sffh"",""CUP_muzzle_mfsup_Flashhider_PK_Black"",""CUP_muzzle_mfsup_Flashhider_PK_OD"",""CUP_muzzle_mfsup_Flashhider_PK_Tan"",""rhs_acc_ak5"",""rhs_acc_dtk"",""rhs_acc_dtk1983"",""rhs_acc_dtk1"",""rhs_acc_dtk2"",""rhs_acc_dtk3"",""rhs_acc_pgs64"",""rhs_acc_pgs64_74u"",""rhs_acc_pgs64_74un"",""rhs_acc_uuk"",""rhs_acc_dtk1l"",""rhs_acc_dtkakm"",""rhs_acc_dtkrpk"",""rhsusf_acc_ARDEC_M240"",""rhsgref_acc_falMuzzle_l1a1"",""rhsusf_acc_SF3P556"",""rhsusf_acc_SFMB556"",""rhsgref_acc_zendl"",""rhsusf_acc_m14_flashsuppresor"",""rhsusf_acc_m24_muzzlehider_black"",""rhsusf_acc_m24_muzzlehider_d"",""rhsusf_acc_m24_muzzlehider_wd"",""hlc_muzzle_Miter18T"",""hlc_muzzle_snds_ROTEX3P"",""hlc_muzzle_Gunfighter_comp"",""hlc_muzzle_Brevis"",""hlc_muzzle_MAG58_Brake"",""hlc_muzzle_17SBrake"",""hlc_muzzle_OEMDevice"",""hlc_muzzle_KX3_comp"",""hlc_muzzle_FSC30"",""hlc_muzzle_Cherrybomb"",""hlc_muzzle_SF3P_762R"",""hlc_muzzle_A1_FlashHider"",""hlc_muzzle_XM177E1_Moderator"",""hlc_muzzle_XM177E2_Moderator"",""hlc_muzzle_E1_FlashHider"",""hlc_muzzle_OEMDevice_556"",""hlc_muzzle_snds_ArsenalComp"",""hlc_muzzle_SF3P_762""]";
-force hatg_setting_equipment_suppressor_integral = "[""srifle_DMR_02_F"",""srifle_DMR_02_camo_F"",""srifle_DMR_02_sniper_F"",""srifle_DMR_04_F"",""srifle_DMR_04_Tan_F"",""CUP_arifle_AS_VAL"",""CUP_arifle_AS_VAL_flash"",""CUP_arifle_AS_VAL_VFG"",""CUP_arifle_AS_VAL_top_rail"",""CUP_arifle_AS_VAL_flash_top"",""CUP_arifle_AS_VAL_VFG_top_rail"",""CUP_srifle_VSSVintorez"",""CUP_srifle_VSSVintorez_flash"",""CUP_srifle_VSSVintorez_VFG"",""CUP_srifle_VSSVintorez_top_rail"",""CUP_srifle_VSSVintorez_flash_top"",""CUP_srifle_VSSVintorez_VFG_top_rail"",""CUP_smg_MP5SD6"",""CUP_arifle_OTS14_GROZA_762_Grip"",""CUP_arifle_OTS14_GROZA_Grip"",""rhs_weap_asval"",""rhs_weap_asval_grip"",""rhs_weap_asval_grip_npz"",""rhs_weap_asval_npz"",""rhs_weap_vss"",""rhs_weap_vss_grip"",""rhs_weap_vss_grip_npz"",""rhs_weap_vss_npz"",""rhs_weap_m3a1_specops"",""hlc_rifle_honeybase"",""hlc_rifle_awcovert_BL"",""hlc_rifle_awcovert_FDE"",""hlc_rifle_awcovert"",""hlc_smg_mp5sd5"",""hlc_smg_mp5sd6""]";
-force hatg_setting_equipment_suppressor_whitelist = "[""332nd_Suppressor_Muzzle"",""Slug_Thrower_Muzzle"",]";
+force hatg_setting_equipment_suppressor_integral = "[""srifle_DMR_02_F"",""srifle_DMR_02_camo_F"",""srifle_DMR_02_sniper_F"",""srifle_DMR_04_F"",""srifle_DMR_04_Tan_F"",""CUP_arifle_AS_VAL"",""CUP_arifle_AS_VAL_flash"",""CUP_arifle_AS_VAL_VFG"",""CUP_arifle_AS_VAL_top_rail"",""CUP_arifle_AS_VAL_flash_top"",""CUP_arifle_AS_VAL_VFG_top_rail"",""CUP_srifle_VSSVintorez"",""CUP_srifle_VSSVintorez_flash"",""CUP_srifle_VSSVintorez_VFG"",""CUP_srifle_VSSVintorez_top_rail"",""CUP_srifle_VSSVintorez_flash_top"",""CUP_srifle_VSSVintorez_VFG_top_rail"",""CUP_smg_MP5SD6"",""CUP_arifle_OTS14_GROZA_762_Grip"",""CUP_arifle_OTS14_GROZA_Grip"",""rhs_weap_asval"",""rhs_weap_asval_grip"",""rhs_weap_asval_grip_npz"",""rhs_weap_asval_npz"",""rhs_weap_vss"",""rhs_weap_vss_grip"",""rhs_weap_vss_grip_npz"",""rhs_weap_vss_npz"",""rhs_weap_m3a1_specops"",""hlc_rifle_honeybase"",""hlc_rifle_awcovert_BL"",""hlc_rifle_awcovert_FDE"",""hlc_rifle_awcovert"",""hlc_smg_mp5sd5"",""hlc_smg_mp5sd6"",""332nd_Slug_Thrower""]";
+force hatg_setting_equipment_suppressor_whitelist = "[""332nd_Suppressor_Muzzle""]";
 
 // Hide Among The Grass -  UI
 force force hatg_setting_ui = false;
@@ -1566,6 +1579,14 @@ force JLTS_settings_EMP_repairTimeSecondary = 40;
 force JLTS_settings_Stun_mainSwitch = 1;
 force JLTS_settings_Stun_worksInVehicles = true;
 
+// KJW's Two Primary Weapons
+force KJW_TwoPrimaryWeapons_blacklistedClasses = "[]";
+force KJW_TwoPrimaryWeapons_Enabled = true;
+force KJW_TwoPrimaryWeapons_Launchers = true;
+KJW_TwoPrimaryWeapons_selectedPositionPrimary = [["spine3",[[-0.942853,0.330874,0.0362221],[-0.33272,-0.939935,-0.0747082]],[-0.145057,-0.196157,0.06247]]];
+KJW_TwoPrimaryWeapons_selectedPositionSecondary = [["spine3",[[-0.942853,0.330874,0.0362221],[-0.33272,-0.939935,-0.0747082]],[-0.145057,-0.196157,0.06247]]];
+force KJW_TwoPrimaryWeapons_whitelistedClasses = "[""332nd_Scattergun"", ""332nd_DC15A"", ""332nd_DC15C"", ""332nd_DC15S"", ""332nd_DP23""]";
+
 // LAMBS Danger
 force lambs_danger_cqbRange = 60;
 force lambs_danger_disableAIAutonomousManoeuvres = false;
@@ -1621,6 +1642,10 @@ force ls_activecamo_maxAllowedHits = 5;
 ls_compat_ace_addHudColorChangerActions = true;
 ls_compat_ace_addViVActions = true;
 force ls_compat_ace_customBloodDropsEnabled = true;
+force ls_droids_droidekaShieldCooldown = 30;
+force ls_droids_droidekaShieldHealth = 200;
+force ls_droids_droidekaShieldRegen = 0.01;
+force ls_droids_droidekaShieldTargetsEnabled = true;
 ls_equipment_enableRangefinderOverlay = false;
 ls_holoprojector_maxDistance = 50;
 ls_impulsor_enableImpulseOnGround = false;
@@ -1634,6 +1659,7 @@ force ls_props_reinsertCooldown = 5;
 force ls_props_reinsertMessage = "%1 has requested a reinsert.";
 ls_vehicles_customHudColor = [1,1,1,1];
 ls_vehicles_disableAutoVectoring = false;
+force ls_vehicles_turretDroid_lifeTime = 120;
 force ls_vehicles_vivLoadingRange = 10;
 ls_weapons_adsSound_enabled = true;
 
@@ -1923,13 +1949,47 @@ OPTRE_Enable_Player_Door_On_Gear_Pelican = true;
 force OPTRE_Enable_Supercombustion_dev = true;
 force OPTRE_Enable_Turret_Detach = true;
 OPTRE_Falcon_PIP_Position = "0,1";
+force OPTRE_HEV_Allow_Jellybean = true;
+force OPTRE_HEV_Atmosphere_End = "2000";
+force OPTRE_HEV_Atmosphere_Start = "3000";
+force OPTRE_HEV_Chute_Detach = "500,200,100";
+force OPTRE_HEV_Chute_Open = "1000,500,300";
+force OPTRE_HEV_Chute_Velocity = 0;
+force OPTRE_HEV_Crater = 1;
+force OPTRE_HEV_Debug_Arrow = false;
+force OPTRE_HEV_Eject_Delay = 0.5;
+force OPTRE_HEV_Eject_Distance = 3;
+force OPTRE_HEV_Explosion_Class = "OPTRE_HEV_Landing_Explosive";
+force OPTRE_HEV_Explosion_Enabled = false;
+force OPTRE_HEV_Explosion_Simulation_Delay = 0.5;
+force OPTRE_HEV_Jellybean_Forward = 10;
+force OPTRE_HEV_Jellybean_Up = 15;
+force OPTRE_HEV_Jellybean_Use = 1;
+force OPTRE_HEV_Landed_Altitude = 3;
+OPTRE_HEV_LandingEffects = 1;
+force OPTRE_HEV_Start_Heights = "5000,4500,4000";
+force OPTRE_HEV_Thruster_Limit = false;
+force OPTRE_HEV_Thruster_Max_Velocity = 20;
+force OPTRE_HEV_Thruster_Min_Height = 500;
+force OPTRE_HEV_Thruster_Rotate_Angle = 45;
+force OPTRE_HEV_Thruster_Rotate_Time = 0.5;
+force OPTRE_HEV_Thruster_Uses = 5;
+force OPTRE_HEV_Thruster_Velocity = 5;
 force force OPTRE_Hijack_FriendlyFireEnabled = true;
 force force OPTRE_Hijack_Mode = 0;
 force OPTRE_Human_Non_Detachable_Turrets = "";
 force OPTRE_Jackal_Randomize = true;
+force OPTRE_Rotate_Step = 30;
 force OPTRE_Shell_Ejection = 240;
 force OPTRE_Spartan_Non_Detachable_Turrets = "";
 force OPTRE_Spartan_Randomize = true;
+force OPTRE_Turret_Hack_Enable_Create = true;
+force OPTRE_Turret_Hack_Enable_Hack = true;
+force OPTRE_Turret_Hack_Enable_Remove = true;
+force OPTRE_Turret_Hack_Max_Fails = 3;
+force OPTRE_Turret_Hack_Max_Seq_Len_Value = 10;
+force OPTRE_Turret_Hack_Min_Seq_Len = 5;
+force OPTRE_Turret_Hack_Time = 5;
 force OPTRE_Turret_Zero_M460AGL = 1000;
 force OPTRE_Viper_ECM5_Long_Burst_Max_Chance = 0.85;
 force OPTRE_Viper_ECM5_Long_Burst_Max_Range = 200;
@@ -1943,7 +2003,7 @@ force OPTRE_Viper_ECM5_Short_Burst_Min_Chance = 0.35;
 force OPTRE_Viper_ECM5_Short_Burst_Min_Range = 0;
 
 // Sci-fi Support PLUS
-force ScifiSupportPlus_AmbientShipSound_Radius = "5000";
+force ScifiSupportPlus_AmbientShipSound_Radius = 7000;
 force ScifiSupportPlus_Archer = true;
 force ScifiSupportPlus_ArcherBarrage = true;
 force ScifiSupportPlus_AutoDeleteTimer = "180";
@@ -2009,6 +2069,9 @@ sfa_boosts_ekolto_regenerateBlood = true;
 sfa_boosts_ekolto_removeMedications = true;
 sfa_boosts_reflex_reducedSwayFactor = 0.25;
 sfa_boosts_reflex_reducedSwayTime = 300;
+
+// SFA Modules
+force SFA_KeypadLock_SliceFailChance = 25;
 
 // TFAR - Clientside settings
 TFAR_curatorCamEars = false;
@@ -2306,8 +2369,14 @@ zen_faction_filter_0_OPF_T_F = true;
 zen_faction_filter_0_OPTRE_FC_Covenant = true;
 zen_faction_filter_0_OPTRE_Ins = true;
 zen_faction_filter_0_OPTRE_Ins_groups = true;
+zen_faction_filter_0_OPTRE_UNSC = true;
+zen_faction_filter_0_SFA_Geo_Assets = true;
+zen_faction_filter_0_SFA_groups_geo_opfor = true;
 zen_faction_filter_0_SFA_groups_imp = true;
+zen_faction_filter_0_SFA_groups_kotor_sith = true;
+zen_faction_filter_0_SFA_Mantellian_Separatists_Assets = true;
 zen_faction_filter_0_SFA_Plague_Assets = true;
+zen_faction_filter_0_SFA_Revanite_Assets = true;
 zen_faction_filter_0_SFA_Sith_Assets = true;
 zen_faction_filter_0_WBK_AI = true;
 zen_faction_filter_0_WBK_AI_Melee = true;
@@ -2326,7 +2395,7 @@ zen_faction_filter_1_BLU_GEN_F = true;
 zen_faction_filter_1_BLU_T_F = true;
 zen_faction_filter_1_BLU_W_F = true;
 zen_faction_filter_1_Default = true;
-zen_faction_filter_1_EMP_Greystone_PMC = true;
+zen_faction_filter_1_EMP_Greystone_PMC_Blufor = true;
 zen_faction_filter_1_GUL_Faction = true;
 zen_faction_filter_1_IDA_Clones_Faction = true;
 zen_faction_filter_1_IDA_Empire_Faction = true;
@@ -2340,15 +2409,16 @@ zen_faction_filter_1_ls_csf = true;
 zen_faction_filter_1_ls_gar = true;
 zen_faction_filter_1_ls_gar_legions = true;
 zen_faction_filter_1_ls_jedi = true;
-zen_faction_filter_1_ls_newRepublic = true;
 zen_faction_filter_1_ls_orsf = true;
 zen_faction_filter_1_ls_rebel = true;
 zen_faction_filter_1_lsb_turret = true;
 zen_faction_filter_1_OPTRE_UNSC = true;
+zen_faction_filter_1_SFA_groups_kotor_rep = true;
 zen_faction_filter_1_SFA_groups_rep = true;
 zen_faction_filter_1_SFA_Rep_Assets = true;
 zen_faction_filter_1_TKE_FEDSEC_Groups = true;
 zen_faction_filter_1_TKE_UCN_Drop_Pods = true;
+zen_faction_filter_1_UCN_CSTR = true;
 zen_faction_filter_1_UCN_FED_ARMY = true;
 zen_faction_filter_1_UCN_FEDRA = true;
 zen_faction_filter_1_UCN_MARINE_CORP = true;
@@ -2386,9 +2456,12 @@ zen_faction_filter_2_OPTRE_Ins = true;
 zen_faction_filter_2_OPTRE_Ins_groups = true;
 zen_faction_filter_2_OPTRE_PD = true;
 zen_faction_filter_2_OPTRE_UEG_Civ = true;
+zen_faction_filter_2_OPTRE_UNSC = true;
 zen_faction_filter_2_PMC = true;
 zen_faction_filter_2_SFA_Cartel_Assets = true;
 zen_faction_filter_2_SFA_Czerka_Assets = true;
+zen_faction_filter_2_SFA_Geo_Assets = true;
+zen_faction_filter_2_SFA_groups_geo_independent = true;
 zen_faction_filter_2_SFA_Mando_Assets = true;
 zen_faction_filter_2_SFA_Onderon_Assets = true;
 zen_faction_filter_2_SFA_Revanite_Assets = true;
@@ -2404,3 +2477,4 @@ zen_faction_filter_3_IND_L_F = true;
 zen_faction_filter_3_JMSLLTE_civilian_fact = true;
 zen_faction_filter_3_ls_civilians = true;
 zen_faction_filter_3_OPTRE_UEG_Civ = true;
+zen_faction_filter_3_OPTRE_UNSC = true;
