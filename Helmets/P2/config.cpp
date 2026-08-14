@@ -709,7 +709,6 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Kitra: 332nd_Helmet_P2_CR
 	{
-		scope = 1
 		displayName="[332nd] P2 Helmet (Kitra)";
 		hiddenSelections[]=
 		{
@@ -722,7 +721,6 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Frohman: 332nd_Helmet_P2_CR
 	{
-		scope = 1
 		displayName="[332nd] P2 Helmet (Frohman)";
 		hiddenSelections[]=
 		{
