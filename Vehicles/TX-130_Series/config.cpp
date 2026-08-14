@@ -226,6 +226,8 @@ class cfgvehicles
 		scopecurator=2;
 		scopearsenal=2;
 		side=1;
+		ace_repair_spareTracks = 4;
+		ace_cargo_space = 10;
         faction="332nd_Faction";
 		displayname = "[332nd] TX-130";
 		hiddenSelections[] = {"Camo1","Camo2"};
@@ -430,6 +432,8 @@ class CfgWeapons
 	};
 	class 332nd_Sabre_Cannons_Base: 3AS_Sabre_Cannons
 	{
+		cursor = "";
+		cursoraim = "332nd_Cursor_Cannon";
 		class manual: manual
 		{
 			dispersion = 0.0015;

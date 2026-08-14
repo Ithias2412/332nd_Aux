@@ -191,30 +191,6 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Asuka)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Asuka_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Asuka_activeCamo: 332nd_Uniform_Clone_CR
-	{
-		scope = 1;
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Asuka_Veh_activeCamo";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
 	class 332nd_Uniform_Clone_Ketamine: 332nd_Uniform_Clone_CR
 	{
 		displayName="[332nd] Clone Trooper Armor (Ketamine)";
@@ -330,31 +306,6 @@ class cfgWeapons
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Shovie_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Aztec: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Aztec)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Aztec_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Aztec_activeCamo: 332nd_Uniform_Clone_CR
-	{
-		scope = 1;
-		displayName="[332nd] Clone Trooper Armor (Aztec)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Aztec_Veh_activeCamo";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -655,31 +606,6 @@ class cfgWeapons
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Raven_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Butch: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Butch)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Butch_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Butch_activeCamo: 332nd_Uniform_Clone_CR
-	{
-		scope = 1;
-		displayName="[332nd] Clone Trooper Armor (Butch)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Butch_Veh_activeCamo";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -1252,31 +1178,6 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Inu.paa",
 		};
 	};
-	class 332nd_Uniform_Clone_Asuka_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Asuka";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Asuka.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Asuka_Veh_activeCamo: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Asuka_activeCamo";
-		hiddenSelectionsTextures[] = 
-		{
-            "\ls\core\addons\data\textures\blank_ca.paa",
-            "\ls\core\addons\data\textures\blank_ca.paa",
-		};
-		hiddenSelectionsMaterials[] = 
-		{
-            "\ls\core\addons\data\materials\activeCamo.rvmat",
-            "\ls\core\addons\data\materials\activeCamo.rvmat",
-		};
-	};
 	class 332nd_Uniform_Clone_Ketamine_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
@@ -1375,31 +1276,6 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shovie.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shovie.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Aztec_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Aztec";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Aztec.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aztec.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Aztec_Veh_activeCamo: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Aztec_activeCamo";
-		hiddenSelectionsTextures[] = 
-		{
-            "\ls\core\addons\data\textures\blank_ca.paa",
-            "\ls\core\addons\data\textures\blank_ca.paa",
-		};
-		hiddenSelectionsMaterials[] = 
-		{
-            "\ls\core\addons\data\materials\activeCamo.rvmat",
-            "\ls\core\addons\data\materials\activeCamo.rvmat",
 		};
 	};
 	class 332nd_Uniform_Clone_Lettuce_Veh: 332nd_Uniform_Clone_CR_Veh
@@ -1650,31 +1526,6 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Raven.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Raven.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Butch_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Butch";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Butch.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Butch.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Butch_Veh_activeCamo: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Butch_activeCamo";
-		hiddenSelectionsTextures[] = 
-		{
-            "\ls\core\addons\data\textures\blank_ca.paa",
-            "\ls\core\addons\data\textures\blank_ca.paa",
-		};
-		hiddenSelectionsMaterials[] = 
-		{
-            "\ls\core\addons\data\materials\activeCamo.rvmat",
-            "\ls\core\addons\data\materials\activeCamo.rvmat",
 		};
 	};
 	class 332nd_Uniform_Clone_Max_Veh: 332nd_Uniform_Clone_CR_Veh
@@ -2309,11 +2160,6 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Customs = "Inu";
 		};
-		class 332nd_Uniform_Clone_Asuka
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Asuka";
-		};
 		class 332nd_Uniform_Clone_Ketamine
 		{
 			model = "332nd_Uniform_Extended";
@@ -2358,11 +2204,6 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Shovie";
-		};
-		class 332nd_Uniform_Clone_Aztec
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Aztec";
 		};
 		class 332nd_Uniform_Clone_Trick
 		{
@@ -2493,11 +2334,6 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Raven";
-		};
-		class 332nd_Uniform_Clone_Butch
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Butch";
 		};
 		class 332nd_Uniform_Clone_Max
 		{

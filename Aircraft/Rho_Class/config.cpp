@@ -190,10 +190,37 @@ class CfgVehicles
 		armor = 1000;
 		transportSoldier=34;
 		hiddenSelections[] = {"camo","camo1"};
+		ace_rearm_defaultSupply = 1200;
+		ace_refuel_fuelCargo = 10000;
+		ace_refuel_hooks[] = {{0.5,-3,-0.5},{-0.4,-3,-0.75}}; 
+		ace_repair_canRepair = 1;
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Aircraft\Rho_Class\tex\332nd_Rho_Crate_co.paa",
 			"3as\3as_republic_heli\rho_class\data\crate_int_co.paa"
+		};
+		textureList[] = {"332nd",1};
+		class TextureSources
+		{
+			class 332nd
+			{
+				author = "Ithias";
+				displayName = "332nd";
+				factions[] = 
+				{
+					"3AS_Rep",
+					"3AS_Imperial",
+					"332nd_Faction",
+				};
+				textures[] = 
+				{
+					"332nd_Aux\Aircraft\Rho_Class\tex\332nd_Rho_Crate_co.paa",
+					"3as\3as_republic_heli\rho_class\data\crate_int_co.paa",
+					"3as\3as_republic_heli\rho_class\data\variant_barracks_co.paa",
+					"3as\3as_republic_heli\rho_class\data\clone_bed_co.paa",
+					"3as\3as_republic_heli\rho_class\data\interior_co.paa"
+				};
+			};
 		};
 		class ACE_SelfActions: ACE_SelfActions
 		{

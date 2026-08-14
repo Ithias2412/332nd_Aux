@@ -56,10 +56,37 @@ class Extended_init_EventHandlers
 	};
 };
 
+class RCWSOptics;
+class Optics_Armored
+{
+	class Wide: RCWSOptics
+	{
+		
+	};
+	class Medium: Wide
+	{
+		
+	};
+	class Narrow: Medium
+	{
+		
+	};
+};
+class Optics_Gunner_APC_01: Optics_Armored
+{
+	class Wide: Wide
+	{
+		
+	};
+};
 class ls_impulsor_base;
 class CfgVehicles 
 {
-	class AllVehicles;
+	class All;
+	class AllVehicles: All
+	{
+		class NewTurret;
+	};
 	class Air: AllVehicles
 	{
 		class Components;
@@ -67,6 +94,13 @@ class CfgVehicles
 	};
 	class Helicopter: Air
 	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				
+			};
+		};
 		class Components: Components
 		{
 			
@@ -79,6 +113,13 @@ class CfgVehicles
 	};
 	class Helicopter_Base_F: Helicopter
 	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				
+			};
+		};
 		class Components: Components
 		{
 			
@@ -90,6 +131,13 @@ class CfgVehicles
 	};
 	class Helicopter_Base_H: Helicopter_Base_F
 	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				
+			};
+		};
 		class Components: Components
 		{
 			
@@ -110,6 +158,31 @@ class CfgVehicles
 		{
 			
 		};
+		class Turrets: Turrets
+		{
+			class LeftDoorGun: MainTurret
+			{
+				class OpticsIn: Optics_Gunner_APC_01
+				{
+					class Medium: Medium
+					{
+						
+					};
+					class Narrow: Narrow
+					{
+						
+					};
+					class Wide: Wide
+					{
+						
+					};
+				};
+			};
+			class RightDoorGun: LeftDoorGun
+			{
+				
+			};
+		};
 	};
 	class 3AS_LAAT_Mk2: 3AS_LAAT_Base
 	{
@@ -122,6 +195,10 @@ class CfgVehicles
 			
 		};
 		class AnimationSources: AnimationSources
+		{
+			
+		};
+		class Turrets: Turrets
 		{
 			
 		};
@@ -852,6 +929,59 @@ class CfgVehicles
 		//smokeLauncherVelocity = 15;		// Ejection velocity
 		//smokeLauncherOnTurret = 1;		// Not tied to a turret
 		//smokeLauncherAngle = 360;		// Coverage angle
+		class Turrets: Turrets
+		{
+			class LeftDoorgun: LeftDoorgun
+			{
+				turretInfoType = "RscOptics_VTOL_01_gunner";
+				usePip = 1;
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						directionStabilized = 1;
+						gunnerOpticsModel = "\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+						opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					};
+					class Medium: Medium
+					{
+						directionStabilized = 1;
+						gunnerOpticsModel = "\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+						opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					};
+					class Narrow: Narrow
+					{
+						directionStabilized = 1;
+						gunnerOpticsModel = "\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+						opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					};
+				};
+			};
+			class RightDoorgun: RightDoorgun
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						directionStabilized = 1;
+						gunnerOpticsModel = "\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+						opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					};
+					class Medium: Medium
+					{
+						directionStabilized = 1;
+						gunnerOpticsModel = "\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+						opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					};
+					class Narrow: Narrow
+					{
+						directionStabilized = 1;
+						gunnerOpticsModel = "\A3\Drones_F\weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+						opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					};
+				};
+			};
+		};
 		hiddenselectionstextures[]=
 		{
 			"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa",

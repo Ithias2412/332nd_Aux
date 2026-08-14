@@ -65,7 +65,6 @@ params ["_obj"];
 "C_24_Muzzle",
 "DLT15_Muzzle",
 "332nd_SmokeBlue_LauncherGrenade",
-"332nd_SmokeGreen_LauncherGrenade",
 "332nd_SmokePurple_LauncherGrenade",
 "332nd_SmokeRed_LauncherGrenade",
 "332nd_Smoke_LauncherGrenade",
@@ -149,7 +148,6 @@ params ["_obj"];
 "ItemAndroid",
 "332nd_DroidPopper_x1_mag",
 "3AS_SmokeBlue",
-"3AS_SmokeGreen",
 "3AS_SmokePurple",
 "3AS_SmokeRed",
 "3AS_SmokeWhite",
@@ -223,9 +221,7 @@ params ["_obj"];
 "332nd_Drone_Packed",
 "332nd_DC15SA",
 "332nd_Sidearm_Stun_Mag",
-"332nd_SmokeYellow_LauncherGrenade",
 "332nd_Smoke_LauncherGrenade_3GL",
-"332nd_SmokeOrange_LauncherGrenade",
 "332nd_DC15SA_Mag",
 "332nd_Helmet_P2_Body",
 "332nd_Helmet_P2_Dovah",
@@ -358,10 +354,8 @@ params ["_obj"];
 "332nd_Vest_Dovah",
 "332nd_Suppressor_Muzzle",
 "332nd_Smoke_LauncherGrenade_3GL_Red",
-"332nd_Smoke_LauncherGrenade_3GL_Green",
 "332nd_Smoke_LauncherGrenade_3GL_Blue",
 "332nd_Smoke_LauncherGrenade_3GL_Purple",
-"332nd_Smoke_LauncherGrenade_3GL_Yellow",
 "332nd_Helmet_P2_Icurus",
 "332nd_Helmet_P2_Alpha",
 "332nd_Helmet_P2_Oddball",
@@ -433,7 +427,6 @@ params ["_obj"];
 "332nd_Uniform_ARF_Base",
 "332nd_Uniform_Clone_Kitra",
 "332nd_Vest_Trick",
-"ACE_SpareBarrel",
-"332nd_Smoke_LauncherGrenade_3GL_Orange"]
+"ACE_SpareBarrel"]
 
 ] call ace_arsenal_fnc_initBox

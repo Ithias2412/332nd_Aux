@@ -289,29 +289,28 @@ class cfgWeapons
 	class 332nd_Vest_Trick: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Trick)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-		scope = 2
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
 		hiddenSelections[] = 
 		{
 			"camo1",
-			"camo2"
+			"camo2",
 		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Trick.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
+			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa",
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
 			hiddenSelections[] = 
 			{
 				"camo1",
-				"camo2"
+				"camo2",
 			};
 		};
 	};
-	
+
 	class 332nd_Vest_Body: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Body)";

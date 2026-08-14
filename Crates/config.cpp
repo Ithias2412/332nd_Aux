@@ -70,11 +70,6 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DW_32S_Mag";
 			};
-			class 332nd_DW_32S_Arc_Mag
-			{
-				count = 100;
-				magazine = "332nd_DW_32S_Arc_Mag";
-			};
 			class 332nd_DC15C_Mag
 			{
 				count = 100;
