@@ -427,6 +427,8 @@ params ["_obj"];
 "332nd_Uniform_ARF_Base",
 "332nd_Uniform_Clone_Kitra",
 "332nd_Vest_Trick",
+"332nd_NVG_Rangefinder_Inverted",
+"332nd_Uniform_Clone_Morgan",
 "ACE_SpareBarrel"]
 
 ] call ace_arsenal_fnc_initBox
