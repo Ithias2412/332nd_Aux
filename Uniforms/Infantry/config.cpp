@@ -695,6 +695,54 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Hawkeye: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Hawkeye)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Hawkeye_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Weasel: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Weasel)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Weasel_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Milk: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Milk)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Milk_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Beansworth: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Beansworth)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Beansworth_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1610,6 +1658,46 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Morgan.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Hawkeye_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Hawkeye";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Hawkeye.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Hawkeye.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Weasel_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Weasel";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Weasel.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Weasel.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Milk_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Milk";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Milk.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Milk.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Beansworth_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Beansworth";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Beansworth.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Beansworth.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1753,6 +1841,10 @@ class XtdGearModels
 					"Oddball",
 					"Kitra",
 					"Morgan",
+					"Hawkeye",
+					"Weasel",
+					"Milk",
+					"Beansworth",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -2110,6 +2202,30 @@ class XtdGearModels
 					description = "Komrk's Bitch";
 					//image = "xxx";
 				};
+				class Hawkeye
+				{
+					label = "Hawkeye";
+					description = "Ex Platoon Leader";
+					//image = "xxx";
+				};
+				class Weasel
+				{
+					label = "Weasel";
+					description = "@Kitra you are fish - Weasel circa 2026";
+					//image = "xxx";
+				};
+				class Milk
+				{
+					label = "Milk";
+					description = "Trains Racing Pigeons";
+					//image = "xxx";
+				};
+				class Beansworth
+				{
+					label = "Beansworth";
+					description = "Oh I can't say that - Beansworth circa every discord call";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -2398,6 +2514,26 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Morgan";
+		};
+		class 332nd_Uniform_Clone_Hawkeye
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Hawkeye";
+		};
+		class 332nd_Uniform_Clone_Weasel
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Weasel";
+		};
+		class 332nd_Uniform_Clone_Milk
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Milk";
+		};
+		class 332nd_Uniform_Clone_Beansworth
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Beansworth";
 		};
 	};
 };

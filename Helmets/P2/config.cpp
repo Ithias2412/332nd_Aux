@@ -779,6 +779,42 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Ougaran.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Hawkeye: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Hawkeye)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Hawkeye.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Don: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Don)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Don.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Sovereign: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Sovereign)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Sovereign.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -897,6 +933,8 @@ class XtdGearModels
 					"Veta",
 					"McGurkin",
 					"Ougaran",
+					"Hawkeye",
+					"Don",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1326,6 +1364,18 @@ class XtdGearModels
 					description = "His SL cannot pronounce his name";
 					//image = "xxx";
 				};
+				class Hawkeye
+				{
+					label = "Hawkeye";
+					description = "Ithias' Land Lord";
+					//image = "xxx";
+				};
+				class Don
+				{
+					label = "Don";
+					description = "Promote ahead of peers";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1640,6 +1690,21 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Ougaran";
+		};
+		class 332nd_Helmet_P2_Hawkeye
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Hawkeye";
+		};
+		class 332nd_Helmet_P2_Don
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Don";
+		};
+		class 332nd_Helmet_P2_Sovereign
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Sovereign";
 		};
 	};
 };
