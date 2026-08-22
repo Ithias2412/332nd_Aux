@@ -57,7 +57,6 @@ class CfgMagazines
 		mass = 15;
 		model = "\A3\Weapons_F_Orange\Explosives\APERSmineDispenser_i";
 		picture = "\A3\Weapons_F_Orange\Explosives\Data\UI\gear_APERSmineDispenser_CA.paa";
-		
 	};
 };
 
@@ -68,10 +67,10 @@ class CfgWeapons
 	{
         muzzles[]+= 
 		{
-			"332nd_Remote_Charge_Muzzle",
+			"332nd_Mine_Dispenser_Muzzle",
 		};
         class PutMuzzle: Default {};
-        class 332nd_Remote_Charge_Muzzle: PutMuzzle 
+        class 332nd_Mine_Dispenser_Muzzle: PutMuzzle 
 		{
             magazines[] = 
 			{

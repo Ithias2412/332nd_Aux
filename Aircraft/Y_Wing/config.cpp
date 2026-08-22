@@ -25,7 +25,27 @@ class SensorTemplateNV;
 class SensorTemplateDataLink;
 class CfgVehicles
 {
-	class Plane_Fighter_03_base_F;
+	class All;
+	class AllVehicles: All
+	{
+		class NewTurret;
+	};
+	class Air: AllVehicles
+	{
+		
+	};
+	class Plane: Air
+	{
+		
+	};
+	class Plane_Base_F: Plane
+	{
+		
+	};
+	class Plane_Fighter_03_base_F: Plane_Base_F
+	{
+		
+	};
 	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
 	{
 		class Components;
@@ -35,6 +55,24 @@ class CfgVehicles
 		class Components: Components 
 		{
 			class TransportPylonsComponent;
+		};
+		class Turrets
+		{
+			class BubbleGun: NewTurret
+			{
+				class OpticsIn
+				{
+					class Wide;
+					class Medium: Wide
+					{
+						
+					};
+					class Narrow: Wide
+					{
+						
+					};
+				};
+			};
 		};
 	};
 	class 3AS_BTLB_Bomber: BTL_Base
@@ -77,6 +115,27 @@ class CfgVehicles
 			"332nd_Y_Wing_Cannon",
 			"CMFlareLauncher",
 			//"Laserdesignator_pilotCamera"
+		};
+		class Turrets: Turrets
+		{
+			class BubbleGun: BubbleGun
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						directionStabilized = 1;
+					};
+					class Medium: Medium
+					{
+						directionStabilized = 1;
+					};
+					class Narrow: Narrow
+					{
+						directionStabilized = 1;
+					};
+				};
+			};
 		};
 		class Components: Components
 		{

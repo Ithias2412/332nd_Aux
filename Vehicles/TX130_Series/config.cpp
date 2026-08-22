@@ -6,6 +6,7 @@ class CfgPatches
 		units[] = 
 		{
 			"332nd_Saber_Tank",
+			"332nd_Saber_Tank_But_Can_Die",
 		};
 		weapons[] = {};
 		author = "Viper";
@@ -397,6 +398,42 @@ class cfgvehicles
 					"332nd_Sabre_MG",
 					"SmokeLauncher"
 				};
+			};
+		};
+	};
+
+	class 332nd_Saber_Tank_But_Can_Die: 332nd_Saber_Tank
+	{
+		displayname = "[332nd] TX-130 (But Can Die)";
+		armor = 500;
+		armorStructural = 5;
+		hullDamageCauseExplosion = 1;
+		class HitPoints: HitPoints
+		{
+			class HitHull: HitHull
+			{
+				armor = 4.5; // was 4.5
+				passThrough = 1; // 1
+			};
+			class HitEngine: HitEngine
+			{
+				armor = 0.6; // was 0.6
+				passThrough = 0.2; // 0.2
+			};
+			class HitLTrack: HitLTrack
+			{
+				armor = -650; // was -650
+				passThrough = 0;
+			};
+			class HitRTrack: HitRTrack
+			{
+				armor = -650; // was -650
+				passThrough = 0;
+			};
+			class HitFuel: HitFuel
+			{
+				armor = 0.5; //was 0.5
+				passThrough = 0.1; // 0.1
 			};
 		};
 	};
