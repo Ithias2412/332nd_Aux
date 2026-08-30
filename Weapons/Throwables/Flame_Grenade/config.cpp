@@ -26,8 +26,8 @@ class CfgAmmo
 	class 332nd_Flame_Grenade_Ammo: IDA_grenade_Detonator_ammo
 	{
 		hit = 20;
-		indirectHit = 40;
-		indirectHitRange = 10;
+		indirectHit = 20; // was 40 
+		indirectHitRange = 5;
 		explosionEffects = "332nd_Flame_Grenade_Effect";
 		//model = "\Indecisive_Armoury_Ammos\Data\Thermal_Imploder\IDA_Thermal_Imploder.p3d";
 	};
@@ -84,7 +84,7 @@ class 332nd_Flame_Grenade_Effect
 	{
 		intensity = 0.11;
 		interval = 1;
-		lifeTime = 100; // was 10
+		lifeTime = 200; // was 10
 		position = "smoke_pos";
 		simulation = "particles";
 		type = "3as_Cloudlet_Rhydonium_Fire";
@@ -93,9 +93,51 @@ class 332nd_Flame_Grenade_Effect
 	{
 		intensity = 1;
 		interval = 1;
-		lifeTime = 100; // was 10
+		lifeTime = 200; // was 10
 		position = "smoke_pos";
 		simulation = "particles";
 		type = "3as_Cloudlet_Rhydonium_Smoke";
+	};
+};
+
+
+class 332nd_Flame_Grenade_Effect_UGL
+{
+	class Explosion1
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.1; // was 0.1
+		position = "smoke_pos";
+		simulation = "particles";
+		type = "3as_Cloudlet_Rhydonium_Explosion";
+	};
+	class Fire1
+	{
+		intensity = 0.11;
+		interval = 1;
+		lifeTime = 200; // was 10
+		position = "smoke_pos";
+		simulation = "particles";
+		type = "332nd_Cloudlet_Rhydonium_Fire";
+	};
+	class Smoke2
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 200; // was 10
+		position = "smoke_pos";
+		simulation = "particles";
+		type = "3as_Cloudlet_Rhydonium_Smoke";
+	};
+};
+
+
+class CfgCloudlets
+{
+	class 3as_Cloudlet_Rhydonium_Fire;
+	class 332nd_Cloudlet_Rhydonium_Fire: 3as_Cloudlet_Rhydonium_Fire
+	{
+		onSurface = 0;
 	};
 };

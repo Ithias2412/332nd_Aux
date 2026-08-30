@@ -379,6 +379,11 @@ class CfgAmmo
 		lightcolor[]={0,0,1};
 		model="Indecisive_Armoury_Ammos\Data\40mm_Grenade\IDA_40mm_Grenade.p3d";
 	};
+	class 332nd_Flame_UGLGrenade: 332nd_HE_UGLGrenade
+	{
+		indirectHit = 20; // was 40 
+		explosionEffects = "332nd_Flame_Grenade_Effect_UGL";
+	};
 	class 332nd_DroidPopper_UGLGrenade: 332nd_HE_UGLGrenade
 	{
 		ace_frag_enabled=0;
@@ -386,7 +391,7 @@ class CfgAmmo
         hit=0;
 		indirectHit=0;
         ace_frag_skip = 1;
-		dangerRadiusHit=5;
+		dangerRadiusHit=10;
 		suppressionRadiusHit=5;
         ExplosionEffects = "Droid_Popper_GrenadeExplosion"; 
         SoundSetExplosion[] = {"Droidpopper_Soundset"}; 

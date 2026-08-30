@@ -121,7 +121,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_ARF_Desert: 332nd_Uniform_Clone_CR
 	{
-		scope=1;
+		scope=2;
 		displayName="[332nd] ARF Trooper Armor (Desert)";
 		class ItemInfo: UniformItem
 		{
@@ -134,7 +134,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_ARF_Urban: 332nd_Uniform_Clone_CR
 	{
-		scope=1;
+		scope=2;
 		displayName="[332nd] ARF Trooper Armor (Urban)";
 		class ItemInfo: UniformItem
 		{
@@ -147,7 +147,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_ARF_Winter: 332nd_Uniform_Clone_CR
 	{
-		scope=1;
+		scope=2;
 		displayName="[332nd] ARF Trooper Armor (Winter)";
 		class ItemInfo: UniformItem
 		{
@@ -160,7 +160,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_ARF_Woodland: 332nd_Uniform_Clone_CR
 	{
-		scope=1;
+		scope=2;
 		displayName="[332nd] ARF Trooper Armor (Woodland)";
 		class ItemInfo: UniformItem
 		{

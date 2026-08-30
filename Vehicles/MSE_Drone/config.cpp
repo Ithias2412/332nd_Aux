@@ -103,6 +103,7 @@ class CfgVehicles
 			
 		};
 		class UserActions;
+		class EventHandlers;
 	};
 	class 332nd_MSE6_Drone: JLTS_UGV_MSE6
 	{
@@ -125,6 +126,12 @@ class CfgVehicles
 		//fuelConsumptionRate = 0.01;
 		camouflage = 0.1; // 0.6 = Sniper
 		//armor = 5; // was 0.5
+		class EventHandlers: EventHandlers 
+		{
+			fired = "_this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+			hitPart = "(_this select 0) call JLTS_fnc_mse6OnHit";
+			init = "(_this # 0) spawn {_this disableAI 'lights'};if (local (_this select 0)) then { [(_this select 0), """", [], false] call BIS_fnc_initVehicle; }";
+		};
 		class Attributes
 		{
 			class JLTS_mse6_var_idleSounds
