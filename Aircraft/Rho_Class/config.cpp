@@ -72,7 +72,7 @@ class CfgVehicles
 	class 332nd_Rho_Class: 3AS_Rho_REP_F
 	{
 		faction="332nd_Faction";
-		displayname="[332nd] Rho-Class [WIP]";
+		displayname="[332nd] Rho-Class";
 		class ls_impulsor: ls_impulsor_base
 		{
 			speed = 300;
@@ -143,6 +143,32 @@ class CfgVehicles
 				};
 			};
 		};
+		class ace_cargo 
+		{
+			class cargo 
+			{
+				class 332nd_Ammo_Crate 
+				{ 
+					type = "332nd_Ammo_Crate";
+					amount = 2;
+				};
+				class 332nd_Medical_Crate 
+				{ 
+					type = "332nd_Medical_Crate";
+					amount = 2;
+				};
+				class 332nd_Equipment_Crate 
+				{ 
+					type = "332nd_Equipment_Crate";
+					amount = 2;
+				};
+				class 332nd_Refueling_Barrel
+				{
+					type = "332nd_Refueling_Barrel";
+					amount = 1;
+				};
+			};
+		};
 		class ACE_SelfActions: ACE_SelfActions
 		{
 			class TFAR_IntercomChannel
@@ -186,7 +212,7 @@ class CfgVehicles
 	class 332nd_Transport_Rho_Crate: 3AS_Rho_Crate_REP_Transport
 	{
 		faction="332nd_Faction";
-		displayName = "[332nd] Rho Crate (Transport) [WIP]";
+		displayName = "[332nd] Rho Crate (Transport)";
 		armor = 1000;
 		transportSoldier=34;
 		hiddenSelections[] = {"camo","camo1"};

@@ -159,6 +159,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Cin: 332nd_Helmet_ARF_Base
 	{
+		scope = 1;
 		displayName="[332nd] ARF Helmet (Cin)";
 		hiddenSelectionsTextures[]=
 		{
@@ -169,6 +170,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Trick: 332nd_Helmet_ARF_Base
 	{
+		scope = 1;
 		displayName="[332nd] ARF Helmet (Trick)";
 		hiddenSelectionsTextures[]=
 		{
@@ -179,6 +181,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_ARF_Stryker: 332nd_Helmet_ARF_Base
 	{
+		scope = 1;
 		displayName="[332nd] ARF Helmet (Stryker)";
 		hiddenSelectionsTextures[]=
 		{
@@ -228,6 +231,33 @@ class cfgWeapons
 	{
 		scope=1;
 		displayName="[332nd] ARF Helmet (Butch)";
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+			"",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+			"",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
+	class 332nd_Helmet_ARF_Demo: 332nd_Helmet_ARF_Base
+	{
+		displayName="[332nd] ARF Helmet (Demo)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Demo.paa",
+			"",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_ARF_Demo.paa",
+		};
+	};
+	class 332nd_Helmet_ARF_Demo_activeCamo: 332nd_Helmet_ARF_Base
+	{
+		scope=1;
+		displayName="[332nd] ARF Helmet (Demo)";
 		hiddenSelectionsTextures[] = 
 		{
             "\ls\core\addons\data\textures\blank_ca.paa",
@@ -309,6 +339,7 @@ class XtdGearModels
 					"Smoke",
 					"Aztec",
 					"Butch",
+					"Demo",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -358,6 +389,12 @@ class XtdGearModels
                 {
                     label = "Butch";
                     description = "His Lordship";
+                    //image = "xxx";
+                };
+				class Demo
+                {
+                    label = "Demo";
+                    description = "Blue on Blue magnet";
                     //image = "xxx";
                 };
             };
@@ -423,6 +460,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_ARF_Extended";
             Customs = "Butch";
+        };
+        class 332nd_Helmet_ARF_Demo
+        {
+            model = "332nd_Helmets_ARF_Extended";
+            Customs = "Demo";
         };
 	};
 };

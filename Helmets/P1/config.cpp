@@ -137,6 +137,17 @@ class cfgWeapons
 		};
 	};
 
+	class 332nd_Helmet_P1_Ahri: 332nd_Helmet_P1_Base
+	{
+		displayName="[332nd] P1 Helmet (Ahri)";
+		hiddenSelections[] = {"Camo1","Visor"};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P1_Ahri.paa",
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P1_Ahri.paa",
+		};
+	};
+
 };
 
 class XtdGearModels
@@ -151,7 +162,7 @@ class XtdGearModels
 			{
 				"Early", 
 				"Late", 
-				//"Customs",
+				"Customs",
 			};
             class Early
             {
@@ -209,24 +220,22 @@ class XtdGearModels
                     //image = "xxx";
                 };
 			};
-			/*
 			class Customs
 			{
-				label = "Customs";
+                label = "Customs";
 				values[] = 
 				{
-					"",
+					"Ahri",
 				};
-				changeingame = 0;
-				alwaysSelectable = 1;
-				class Test
-				{
-					label = "Test";
-					description = "Test";
-					//image = "xxx";
-				};
+                changeingame = 0;
+                alwaysSelectable = 1;
+                class Ahri
+                {
+                    label = "Ahri";
+                    description = "Won the race to first P1";
+                    //image = "xxx";
+                };
 			};
-			*/
         };
     };
 };
@@ -269,6 +278,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P1_Extended";
             Early = "ARF";
+		};
+		class 332nd_Helmet_P1_Ahri
+		{
+            model = "332nd_Helmets_P1_Extended";
+            Customs = "Ahri";
 		};
 	};
 };

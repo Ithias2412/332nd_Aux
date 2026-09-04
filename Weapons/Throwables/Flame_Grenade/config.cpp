@@ -39,7 +39,7 @@ class CfgMagazines
 	class 332nd_Flame_Grenade: IDA_grenade_Detonator_mag
 	{
 		ammo = "332nd_Flame_Grenade_Ammo";
-		displayName = "[332nd] Flame Grenade (ENG)";
+		displayName = "[332nd] Flame Grenade (GRN)";
 		//descriptionShort = "[332nd] Flame Grenade";
 		displayNameShort = "Flame Grenade";
 		mass = 8;

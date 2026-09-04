@@ -25,6 +25,7 @@ class cfgWeapons
 		dlc="332nd Aux";
 		author="Ithias";
 		displayName="[332nd] Pilot Helmet";
+		TFAR_ExternalIntercomWirelessCapable = 1;
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -111,6 +112,14 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Lawman.paa",
 		};
 	};
+	class 332nd_Helmet_Pilot_Milk: 332nd_Helmet_Pilot
+	{
+		displayName="[332nd] Pilot Helmet (Milk)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Milk.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -145,6 +154,7 @@ class XtdGearModels
 					"Gizmo",
 					"Ghillie",
 					"Lawman",
+					"Milk",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -176,6 +186,12 @@ class XtdGearModels
 				{
                     label = "Lawman";
                     description = "Bass Reeves????";
+                    //image = "xxx";
+				};
+				class Milk
+				{
+                    label = "Milk";
+                    description = "I've got the mass";
                     //image = "xxx";
 				};
             };
@@ -216,6 +232,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Lawman";
+		};
+		class 332nd_Helmet_Pilot_Milk
+		{
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Milk";
 		};
 	};
 };

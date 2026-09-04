@@ -80,36 +80,14 @@ class cfgWeapons
 				};
 				class BaseSoundModeType
 				{
-					/*
-					weaponSoundEffect="";
-					closure1[]={};
-					closure2[]={};
-					soundClosure[]={};
-					*/
+					
 				};
 				class StandardSound: BaseSoundModeType
 				{
 					soundSetShot[] = 
 					{
-						"JMSLLTE_ArcCast_Shot_SoundSet",
-						//"SDAR_Tail_SoundSet",
-						//"SDAR_InteriorTail_SoundSet"
+						"332nd_ArcCast_Shot_SoundSet",
 					};
-					/*
-					weaponSoundEffect="";
-					begin1[]=
-					{
-						"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
-						1,
-						1.1,
-						1800
-					};
-					soundBegin[]=
-					{
-						"begin1",
-						1
-					};
-					*/
 				};
 				reloadTime = 0.17142;
 				recoil="recoil_single_primary_3outof10";
@@ -279,4 +257,76 @@ class cfgWeapons
 			};
 		};
 	};
+};
+
+class CfgSoundSets
+{
+	class JMSLLTE_ArcCast_Shot_SoundSet;
+	class 332nd_ArcCast_Shot_SoundSet: JMSLLTE_ArcCast_Shot_SoundSet
+	{
+		volumeFactor = 1;
+	};
+};
+
+class ARC_Explosion_Effect
+{
+	/*
+	class Blue_Flash
+	{
+		simulation = "particles";	// type of simulation - particles or light
+		type = "3AS_ExplosionPlasmaFlash_Blue";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		position[] = { 0, 0, 0 };	// position related to the default position or memorypoint
+		lifeTime = 1;			// life time of emitter
+		//start = 1;					// is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+		//enabled = 1;				// 1 effect is enabled, -1 effect is disabled
+	};
+	class Sparks
+	{
+		simulation = "particles";	// type of simulation - particles or light
+		type = "3AS_ImpactSparksPlasma2";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		position[] = { 0, 0, 0 };	// position related to the default position or memorypoint
+		lifeTime = 1;			// life time of emitter
+		//start = 1;					// is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+		//enabled = 1;				// 1 effect is enabled, -1 effect is disabled
+	};
+	class Sparks_2
+	{
+		simulation = "particles";	// type of simulation - particles or light
+		type = "AmmoExpSparks";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		position[] = { 0, 0, 0 };	// position related to the default position or memorypoint
+		lifeTime = 1;			// life time of emitter
+		//start = 1;					// is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+		//enabled = 1;				// 1 effect is enabled, -1 effect is disabled
+	};
+	class Smoke
+	{
+		simulation = "particles";	// type of simulation - particles or light
+		type = "GrenadeSmoke1";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		position[] = { 0, 0, 0 };	// position related to the default position or memorypoint
+		lifeTime = 1;			// life time of emitter
+		//start = 1;					// is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+		//enabled = 1;				// 1 effect is enabled, -1 effect is disabled
+	};
+	class Refract
+	{
+		simulation = "particles";	// type of simulation - particles or light
+		type = "EMPGL_Refract";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		position[] = { 0, 0, 0 };	// position related to the default position or memorypoint
+		lifeTime = 1;			// life time of emitter
+		//start = 1;					// is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+		//enabled = 1;				// 1 effect is enabled, -1 effect is disabled
+	};
+	*/
+	class Lightning
+	{
+		simulation = "particles";	// type of simulation - particles or light
+		type = "EMPGL_sparks_Large";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		//type = "EMPLarge_sparks_Large";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		//type = "ls_electricSparks";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		position[] = { 0, 0, 0 };	// position related to the default position or memorypoint
+		lifeTime = 1;			// life time of emitter
+		//start = 1;					// is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+		//enabled = 1;				// 1 effect is enabled, -1 effect is disabled
+	};
+
 };

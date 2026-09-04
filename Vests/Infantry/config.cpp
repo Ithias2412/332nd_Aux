@@ -362,6 +362,7 @@ class cfgWeapons
 	
 	class 332nd_Vest_Dovah: 332nd_Trooper_Vest
 	{
+		scope = 1;
 		displayName="[332nd] Vest (Dovah)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = 
@@ -392,6 +393,28 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Joker.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+			};
+		};
+	};
+	
+	class 332nd_Vest_Rat: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Rat)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Rat.paa",
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -478,6 +501,7 @@ class XtdGearModels
 					"Dovah",
 					"Lettuce",
 					"Trick",
+					"Rat",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -539,6 +563,12 @@ class XtdGearModels
                 {
                     label = "Trick";
                     description = "Calls me Daddy";
+                    // image = "xxx";
+                };
+				class Rat
+                {
+                    label = "Rat";
+                    description = "I LOVE WOMAN KISSING!!!!!";
                     // image = "xxx";
                 };
             };
@@ -614,6 +644,11 @@ class XtdGearInfos
 		{
             model = "332nd_Vest_Extended";
             Custom = "Trick";
+		};
+		class 332nd_Vest_Rat
+		{
+            model = "332nd_Vest_Extended";
+            Custom = "Rat";
 		};
 	};
 };

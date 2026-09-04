@@ -97,6 +97,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Grim: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Grim)";
 		class ItemInfo: UniformItem
 		{
@@ -109,6 +110,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Warthog: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Warthog)";
 		class ItemInfo: UniformItem
 		{
@@ -121,6 +123,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Nate: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Nate)";
 		class ItemInfo: UniformItem
 		{
@@ -133,6 +136,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Dovah: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Dovah)";
 		class ItemInfo: UniformItem
 		{
@@ -193,6 +197,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Ketamine: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Ketamine)";
 		class ItemInfo: UniformItem
 		{
@@ -253,6 +258,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Crow: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Crow)";
 		class ItemInfo: UniformItem
 		{
@@ -301,6 +307,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Shovie: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Shovie)";
 		class ItemInfo: UniformItem
 		{
@@ -517,6 +524,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Rimuru: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Rimuru)";
 		class ItemInfo: UniformItem
 		{
@@ -738,6 +746,18 @@ class cfgWeapons
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Beansworth_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Ougaran: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Ougaran)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Ougaran_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -1698,6 +1718,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Beansworth.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Ougaran_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Ougaran";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ougaran.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ougaran.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1845,6 +1875,7 @@ class XtdGearModels
 					"Weasel",
 					"Milk",
 					"Beansworth",
+					"Ougaran",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -2223,7 +2254,13 @@ class XtdGearModels
 				class Beansworth
 				{
 					label = "Beansworth";
-					description = "Oh I can't say that - Beansworth circa every discord call";
+					description = "N/A";
+					//image = "xxx";
+				};
+				class Ougaran
+				{
+					label = "Ougaran";
+					description = "N/A";
 					//image = "xxx";
 				};
 			};
@@ -2534,6 +2571,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Beansworth";
+		};
+		class 332nd_Uniform_Clone_Ougaran
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Ougaran";
 		};
 	};
 };

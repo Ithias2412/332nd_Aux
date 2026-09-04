@@ -68,6 +68,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_CT_JLTS.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Visor_Test: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Test)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Visor_Test.paa"
+		};
+	};
 	class 332nd_Helmet_P2_Body: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Body)";
@@ -94,6 +106,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Dovah: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Dovah)";
 		hiddenSelections[]=
 		{
@@ -106,6 +119,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Grim: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Grim)";
 		hiddenSelections[]=
 		{
@@ -130,6 +144,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Warthog: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Warthog)";
 		hiddenSelections[]=
 		{
@@ -192,6 +207,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Nate: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Nate)";
 		hiddenSelections[]=
 		{
@@ -216,6 +232,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Shovie: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Shovie)";
 		hiddenSelections[]=
 		{
@@ -264,6 +281,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Ketamine: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Ketamine)";
 		hiddenSelections[]=
 		{
@@ -310,7 +328,7 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Fusion.paa"
 		};
 	}; */
-	/* class 332nd_Helmet_P2_Cherryy: 332nd_Helmet_P2_CR
+	class 332nd_Helmet_P2_Cherryy: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Cherryy)";
 		hiddenSelections[]=
@@ -321,7 +339,7 @@ class CfgWeapons
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Cherryy.paa"
 		};
-	}; */
+	}; 
 	class 332nd_Helmet_P2_Shuck: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Shuck)";
@@ -336,6 +354,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Crow: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Crow)";
 		hiddenSelections[]=
 		{
@@ -360,6 +379,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Rimuru: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Rimuru)";
 		hiddenSelections[]=
 		{
@@ -396,6 +416,7 @@ class CfgWeapons
 	};
 	class 332nd_Helmet_P2_Mark: 332nd_Helmet_P2_CR
 	{
+		scope = 1;
 		displayName="[332nd] P2 Helmet (Mark)";
 		hiddenSelections[]=
 		{
@@ -815,6 +836,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Sovereign.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Bomba: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Bomba)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Bomba.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -864,7 +897,7 @@ class XtdGearModels
 				{
 					// "Asuka",
 					"Body", 
-					/* "Cherryy",  */
+					"Cherryy",
 					// "Cin",
 					"Crow", 
 					"Denal", 
@@ -935,6 +968,8 @@ class XtdGearModels
 					"Ougaran",
 					"Hawkeye",
 					"Don",
+					"Test",
+					"Bomba",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1376,6 +1411,18 @@ class XtdGearModels
 					description = "Promote ahead of peers";
 					//image = "xxx";
 				};
+				class Test
+				{
+					label = "Test";
+					description = "Ignore";
+					//image = "xxx";
+				};
+				class Bomba
+				{
+					label = "Bomba";
+					description = "Displeases the machine spirit";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1491,11 +1538,11 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Mouse";
 		};
-		/* class 332nd_Helmet_P2_Cherryy
+		 class 332nd_Helmet_P2_Cherryy
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Cherryy";
-		}; */
+		};
 		class 332nd_Helmet_P2_Shuck
 		{
             model = "332nd_Helmets_P2_Extended";
@@ -1705,6 +1752,16 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Sovereign";
+		};
+		class 332nd_Helmet_P2_Visor_Test
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Test";
+		};
+		class 332nd_Helmet_P2_Bomba
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Bomba";
 		};
 	};
 };

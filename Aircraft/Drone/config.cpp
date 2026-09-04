@@ -20,7 +20,7 @@ class CfgWeapons
 	class sch_packableItem;
 	class 332nd_Drone_Packed: sch_packableItem
 	{
-		displayName = "[332nd] Prowler Drone";
+		displayName = "[332nd] Prowler Drone (ARF)";
 		scope = 2;
 		scopeCurator = 2;
 		sch_unPacksTo = "332nd_Prowler_Drone";

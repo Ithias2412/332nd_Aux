@@ -24,7 +24,7 @@ class CfgWeapons
 	};
 	class 332nd_MSE6_Packed: sch_packableItem
 	{
-		displayName = "[332nd] MSE6 Drone";
+		displayName = "[332nd] MSE6 Drone (RTO)";
 		scope = 2;
 		scopeCurator = 2;
 		sch_unPacksTo = "332nd_MSE6_Drone";

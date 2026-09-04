@@ -27,6 +27,7 @@ class cfgWeapons
 		dlc="332nd Aux";
 		displayName="[332nd] BARC Helmet (CT)";
 		subItems[] = {};
+		TFAR_ExternalIntercomWirelessCapable = 1;
 		hiddenSelections[] = 
 		{
 			"camo2",

@@ -240,10 +240,16 @@ class CfgAmmo
 	{
 		// B1=2 B2=12
 		hit = 15;
-		JLTS_isStunAmmo = 1;
+		indirectHit = 10;
+		indirectHitRange = 1;
+		//JLTS_isStunAmmo = 1;
 		model = "\JMSLLTE_weapons\mags\lightblue.p3d";
 		tracerscale = 2;
 		typicalspeed = 400; // was 800
+		ACE_damageType = "332nd_ARC_DamageType";
+		explosive = 1;
+		ExplosionEffects = "ARC_Explosion_Effect";
+		craterEffects = "";
 	};
 	class 332nd_Gas_Level_S1_Dual: 332nd_Base_Ammo_IDA
 	{
