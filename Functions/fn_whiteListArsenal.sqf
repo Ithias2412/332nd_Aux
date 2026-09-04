@@ -437,6 +437,14 @@ params ["_obj"];
 "332nd_Uniform_Clone_Milk",
 "332nd_Uniform_Clone_Beansworth",
 "332nd_Flame_Grenade",
+"332nd_Flame_UGLGrenade_Mag",
+"332nd_MSE6_Packed",
+"332nd_Helmet_ARF_Demo",
+"332nd_Helmet_P1_Ahri",
+"332nd_Helmet_Pilot_Milk",
+"332nd_Helmet_P2_Bomba",
+"332nd_Uniform_Clone_Ougaran",
+"332nd_Vest_Rat",
 "ACE_SpareBarrel"]
 
 ] call ace_arsenal_fnc_initBox
