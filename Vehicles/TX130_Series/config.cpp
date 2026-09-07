@@ -238,6 +238,9 @@ class cfgvehicles
 		fuelCapacity = 12;
 		fuelConsumptionRate = 0.01;
 		transportSoldier = 5;
+		ace_cargo_size = 10;
+		ace_cargo_canLoad = 1;
+		crewVulnerable = 0; //was 1
 		cargoAction[] = {"passenger_apc_narrow_generic02","passenger_apc_narrow_generic03","passenger_apc_generic02","passenger_apc_generic04","passenger_apc_narrow_generic01","passenger_generic01_foldhands","passenger_generic01_leanleft","passenger_generic01_leanright"};
 		cargoGetInAction[] = {"GetInAMV_cargo"};
 		cargoGetOutAction[] = {"GetOutLow"};
@@ -264,12 +267,12 @@ class cfgvehicles
 			};
 			class HitLTrack: HitLTrack
 			{
-				armor = 1; // was -650
+				armor = -650; // was -650
 				passThrough = 0;
 			};
 			class HitRTrack: HitRTrack
 			{
-				armor = 1; // was -650
+				armor = -650; // was -650
 				passThrough = 0;
 			};
 			class HitFuel: HitFuel
@@ -358,12 +361,14 @@ class cfgvehicles
 				};
 				magazines[] = 
 				{
-					"332nd_40Rnd_Sabre_AP_mag",
-					"332nd_40Rnd_Sabre_AP_mag",
-					"332nd_40Rnd_Sabre_AP_mag",
-					"332nd_60Rnd_Sabre_HE_mag",
-					"332nd_60Rnd_Sabre_HE_mag",
-					"332nd_60Rnd_Sabre_HE_mag",
+					"332nd_60Rnd_Sabre_AP_mag",
+					"332nd_60Rnd_Sabre_AP_mag",
+					"332nd_60Rnd_Sabre_AP_mag",
+					"332nd_60Rnd_Sabre_AP_mag",
+					"332nd_80Rnd_Sabre_HE_mag",
+					"332nd_80Rnd_Sabre_HE_mag",
+					"332nd_80Rnd_Sabre_HE_mag",
+					"332nd_80Rnd_Sabre_HE_mag",
 					"332nd_Saber_Missile_Pack"
 				};
 				
@@ -473,7 +478,8 @@ class CfgWeapons
 		cursoraim = "332nd_Cursor_Cannon";
 		class manual: manual
 		{
-			dispersion = 0.0015;
+			//dispersion = 0.0015;
+			dispersion = 0.00018;
 			reloadTime = 0.3;
 		};
 	};
@@ -483,12 +489,12 @@ class CfgWeapons
 		class AP: 332nd_Sabre_Cannons_Base
 		{
 			displayName = "Condensed Rounds";
-			magazines[] = {"332nd_40Rnd_Sabre_AP_mag"};
+			magazines[] = {"332nd_60Rnd_Sabre_AP_mag"};
 		};
 		class HE: 332nd_Sabre_Cannons_Base
 		{
 			displayName = "Unstable Rounds";
-			magazines[] = {"332nd_60Rnd_Sabre_HE_mag"};
+			magazines[] = {"332nd_80Rnd_Sabre_HE_mag"};
 		};
 	};
 	
@@ -527,20 +533,20 @@ class CfgMagazines
 	};
 	// 40mm Cannon
 	class 3AS_50Rnd_Sabre_mag;
-	class 332nd_40Rnd_Sabre_AP_mag: 3AS_50Rnd_Sabre_mag
+	class 332nd_60Rnd_Sabre_AP_mag: 3AS_50Rnd_Sabre_mag
 	{
 		displayName = "40Rnd Sabre Magazine (AP)";
 		displayNameShort = "AP";
 		ammo="332nd_Sabre_AP_Ammo";
-		count = 40;
+		count = 60;
 		initSpeed = 1600;
 	};
-	class 332nd_60Rnd_Sabre_HE_mag: 3AS_50Rnd_Sabre_mag
+	class 332nd_80Rnd_Sabre_HE_mag: 3AS_50Rnd_Sabre_mag
 	{
 		displayName = "40Rnd Sabre Magazine (HE)";
 		displayNameShort = "HE";
 		ammo="332nd_Sabre_HE_Ammo";
-		count = 60;
+		count = 80;
 		initSpeed = 1000;
 	};
 	// Top MG

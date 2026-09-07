@@ -1493,7 +1493,7 @@ class CfgGroups
                     };
                     class Unit2 {
                         side = 0;
-                        vehicle = "332nd_Droid_B1_AT";
+                        vehicle = "332nd_Droid_B1_Rifleman";
                         rank = "PRIVATE";
                         position[] = {-5, -5, 0};
                     };

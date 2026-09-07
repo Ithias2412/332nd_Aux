@@ -23,7 +23,7 @@ class ACE_Medical_Injuries
 		{
 			bleeding = 0;
 			causeFracture = 0;
-			causeLimping = 1;
+			causeLimping = 0;
 			pain = 1;
 		};
 	};

@@ -220,6 +220,8 @@ class CfgVehicles
 		ace_refuel_fuelCargo = 10000;
 		ace_refuel_hooks[] = {{0.5,-3,-0.5},{-0.4,-3,-0.75}}; 
 		ace_repair_canRepair = 1;
+		ace_cargo_hasCargo = 1;
+		ace_cargo_space = 20;
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Aircraft\Rho_Class\tex\332nd_Rho_Crate_co.paa",

@@ -134,9 +134,6 @@ class CfgAmmo
 	};
 	class 332nd_FlameRound: FlameRound
 	{
-		//submunitionAmmo = "FlameRound_sub";
-		//submunitionConeAngle = 4;
-		//submunitionConeType[] = {"poissondisc",4};
 		submunitionAmmo = "332nd_FlameRound_sub";
 		submunitionConeAngle = 1;
 		submunitionConeType[] = {"poissondisc",1};
@@ -239,9 +236,9 @@ class CfgAmmo
 	class 332nd_Gas_Level_S1_ARC: 332nd_Base_Ammo_IDA
 	{
 		// B1=2 B2=12
-		hit = 15;
-		indirectHit = 10;
-		indirectHitRange = 1;
+		hit = 1;
+		indirectHit = 5;
+		indirectHitRange = 2;
 		//JLTS_isStunAmmo = 1;
 		model = "\JMSLLTE_weapons\mags\lightblue.p3d";
 		tracerscale = 2;

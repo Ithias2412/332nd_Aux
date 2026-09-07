@@ -18,6 +18,10 @@ class CfgVehicles
 	{
 		displayname = "[332nd] BARC Speeder";
 		faction = "332nd_Faction";
+
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+
 		scope = 2;
 		side = 1;
 		armor = 50; // was 22

@@ -50,6 +50,8 @@ class CfgVehicles
 		transportSoldier = 8;
 		canFloat = 1;
 		tas_canBlift = 1;
+		ace_cargo_size = 5;
+		ace_cargo_canLoad = 1;
         tas_liftVars = [[[[0,-4.5,-9]]], [0], [0]];
 		hiddenSelections[] = 
 		{

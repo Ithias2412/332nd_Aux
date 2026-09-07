@@ -274,6 +274,10 @@ class CfgWeapons
 		{
 			"332nd_Z95_Cannon_Mag",
 		};
+		class Manual: 3AS_ARC_Light_Canon
+		{
+			dispersion = 0.001;
+		};
 	};
 	class 332nd_ARC_Cannon: 3AS_ARC_Light_Canon
 	{

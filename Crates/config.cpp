@@ -446,6 +446,10 @@ class CfgVehicles
 		editorCategory = "332nd_Crates";
 		editorSubcategory = "EdSubcat_332nd_Resupply_Crates";
 		editorPreview = "\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Black_Prop.jpg";
+		ace_rearm_defaultSupply = 1200;
+		ace_refuel_fuelCargo = 10000;
+		ace_refuel_hooks[] = {{0.5,-3,-0.5},{-0.4,-3,-0.75}}; 
+		ace_repair_canRepair = 1;
 		hiddenSelections[] =
 		{
 			"camo1"

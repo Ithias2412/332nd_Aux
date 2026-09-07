@@ -68,6 +68,26 @@ class ace_medical_treatment
                 effectiveness = 1;
             };
 
+			class ElectricBurn: Abrasion 
+			{
+				effectiveness = 2;
+				reopeningChance = 0.7;
+				reopeningMinDelay = 1000;
+				reopeningMaxDelay = 1600;
+			};
+			class ElectricBurnMinor: ElectricBurn 
+			{
+				effectiveness = 2;
+			};
+			class ElectricBurnMedium: ElectricBurn 
+			{
+				effectiveness = 1.4;
+			};
+			class ElectricBurnLarge: ElectricBurn 
+			{
+				effectiveness = 1;
+			};
+
             class Contusion: Abrasion 
 			{
                 effectiveness = 2;
@@ -199,6 +219,26 @@ class ace_medical_treatment
             class AvulsionMinor: Avulsion { effectiveness = 4; };
             class AvulsionMedium: Avulsion { effectiveness = 2.8; };
             class AvulsionLarge: Avulsion { effectiveness = 2; };
+
+			class ElectricBurn: Abrasion 
+			{
+				effectiveness = 2;
+				reopeningChance = 0.7;
+				reopeningMinDelay = 1000;
+				reopeningMaxDelay = 1600;
+			};
+			class ElectricBurnMinor: ElectricBurn 
+			{
+				effectiveness = 2;
+			};
+			class ElectricBurnMedium: ElectricBurn 
+			{
+				effectiveness = 1.4;
+			};
+			class ElectricBurnLarge: ElectricBurn 
+			{
+				effectiveness = 1;
+			};
 
             class Contusion: Abrasion { effectiveness = 4; reopeningChance = 0; reopeningMinDelay = 0; reopeningMaxDelay = 0; };
             class ContusionMinor: Contusion {};
