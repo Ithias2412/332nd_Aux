@@ -1,5 +1,7 @@
-class CfgPatches {
-	class 332nd_DP23 {
+class CfgPatches 
+{
+	class 332nd_DP23 
+	{
 		units[] = 
         {
 			""
