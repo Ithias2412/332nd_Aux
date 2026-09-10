@@ -34,10 +34,28 @@ class DefaultVehicleSystemsDisplayManagerRight
 {
 	class components;
 };
-class Optics_Armored;
+class RCWSOptics;
+class Optics_Armored
+{
+	class Wide: RCWSOptics
+	{
+		
+	};
+	class Medium: Wide
+	{
+		
+	};
+	class Narrow: Medium
+	{
+		
+	};
+};
 class Optics_Commander_01: Optics_Armored
 {
-	class Wide;
+	class Wide: Wide
+	{
+		
+	};
 	class Medium;
 	class Narrow;
 };
@@ -55,13 +73,88 @@ class Optics_Commander_02: Optics_Armored
 };
 class Optics_Gunner_MBT_03: Optics_Armored
 {
-	class Wide;
-	class Medium;
-	class Narrow;
+	class Wide: Wide
+	{
+		
+	};
+	class Medium: Medium
+	{
+		
+	};
+	class Narrow: Narrow
+	{
+		
+	};
 };
 class CfgVehicles
 {
-    class 3AS_ARC_170_Base;
+	class All;
+	class AllVehicles: All
+	{
+		class NewTurret;
+	};
+	class Air: AllVehicles
+	{
+		
+	};
+	class Plane: Air
+	{
+		
+	};
+	class Plane_Base_F: Plane
+	{
+		
+	};
+	class Plane_Fighter_03_base_F: Plane_Base_F
+	{
+		
+	};
+	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
+	{
+		
+	};
+	class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F
+	{
+		class Turrets
+		{
+			class Reargun: NewTurret
+			{
+				class OpticsIn: Optics_Commander_02
+				{
+					class Wide: Wide
+					{
+						
+					};
+					class Medium: Medium
+					{
+						
+					};
+					class Narrow: Narrow
+					{
+						
+					};
+				};
+			};
+			class LaserPilot: Reargun
+			{
+				class OpticsIn: Optics_Gunner_MBT_03
+				{
+					class Wide: Wide
+					{
+						
+					};
+					class Medium: Medium
+					{
+						
+					};
+					class Narrow: Narrow
+					{
+						
+					};
+				};
+			};
+		};
+	};
 	class Components;
 	
 
@@ -95,6 +188,45 @@ class CfgVehicles
 			"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Main.paa",
 			"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Wings.paa",
 			"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Guns.paa",
+		};
+		class Turrets: Turrets
+		{
+			class Reargun: Reargun
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						directionStabilized = 1;
+					};
+					class Medium: Medium
+					{
+						directionStabilized = 1;
+					};
+					class Narrow: Narrow
+					{
+						directionStabilized = 1;
+					};
+				};
+			};
+			class LaserPilot: LaserPilot
+			{
+				class OpticsIn: OpticsIn
+				{
+					class Wide: Wide
+					{
+						directionStabilized = 1;
+					};
+					class Medium: Medium
+					{
+						directionStabilized = 1;
+					};
+					class Narrow: Narrow
+					{
+						directionStabilized = 1;
+					};
+				};
+			};
 		};
 		class TextureSources
 		{

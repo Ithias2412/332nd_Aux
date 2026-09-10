@@ -8,6 +8,7 @@ class CfgPatches
 			"332nd_Medical_Crate",
 			"332nd_Equipment_Crate",
 			"332nd_Refueling_Barrel",
+			"332nd_Resupply_Crate",
         };
 		weapons[] = 
         {
@@ -58,6 +59,16 @@ class CfgVehicles
 			{
 				count = 100;
 				magazine = "332nd_DC15A_Mag";
+			};
+			class 332nd_DW_32S_Arc_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Arc_Mag";
+			};
+			class 332nd_DW_32S_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Mag";
 			};
 			class 332nd_DC15C_Mag
 			{
@@ -139,11 +150,26 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_HE_UGLGrenade_Mag";
 			};
-			class ACE_HuntIR_M203
-			{
-				count = 50;
-				magazine = "ACE_HuntIR_M203";
-			};
+			class 332nd_Flame_UGLGrenade_Mag 
+			{ 
+				count = 50; 
+				magazine = "332nd_Flame_UGLGrenade_Mag"; 
+			}; 
+			class 332nd_Droidpopper_UGLGrenade_Mag 
+			{ 
+				count = 50; 
+				magazine = "332nd_Droidpopper_UGLGrenade_Mag"; 
+			}; 
+			class 332nd_FlareWhite_UGLGrenade_Mag 
+			{ 
+				count = 50; 
+				magazine = "332nd_FlareWhite_UGLGrenade_Mag"; 
+			}; 
+			class 332nd_HuntIR_UGLGrenade_Mag 
+			{ 
+				count = 50; 
+				magazine = "332nd_HuntIR_UGLGrenade_Mag"; 
+			}; 
 			class 332nd_Smoke_LauncherGrenade
 			{
 				count = 50;
@@ -159,20 +185,30 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_SmokeRed_LauncherGrenade";
 			};
-			class 332nd_SmokeGreen_LauncherGrenade
+			class 332nd_Smoke_LauncherGrenade_3GL_Red
 			{
 				count = 50;
-				magazine = "332nd_SmokeGreen_LauncherGrenade";
+				magazine = "332nd_Smoke_LauncherGrenade_3GL_Red";
 			};
 			class 332nd_SmokeBlue_LauncherGrenade
 			{
 				count = 50;
 				magazine = "332nd_SmokeBlue_LauncherGrenade";
 			};
+			class 332nd_Smoke_LauncherGrenade_3GL_Blue
+			{
+				count = 50;
+				magazine = "332nd_Smoke_LauncherGrenade_3GL_Blue";
+			};
 			class 332nd_SmokePurple_LauncherGrenade
 			{
 				count = 50;
 				magazine = "332nd_SmokePurple_LauncherGrenade";
+			};
+			class 332nd_Smoke_LauncherGrenade_3GL_Purple
+			{
+				count = 50;
+				magazine = "332nd_Smoke_LauncherGrenade_3GL_Purple";
 			};
 			class 332nd_Westar_Rifle_Grenade
 			{
@@ -407,11 +443,6 @@ class CfgVehicles
 				count = 25;
 				name = "ACE_plasmaIV_500";
 			};
-			class 332nd_Plasma_2000_Weap
-			{
-				count = 20;
-				name = "332nd_Plasma_2000_Weap";
-			};
 			class ACE_splint
 			{
 				count = 25;
@@ -440,6 +471,10 @@ class CfgVehicles
 		editorCategory = "332nd_Crates";
 		editorSubcategory = "EdSubcat_332nd_Resupply_Crates";
 		editorPreview = "\3as\3as_props\Crates\EditorPreviews\3AS_Supply_Large_Black_Prop.jpg";
+		ace_rearm_defaultSupply = 1200;
+		ace_refuel_fuelCargo = 10000;
+		ace_refuel_hooks[] = {{0.5,-3,-0.5},{-0.4,-3,-0.75}}; 
+		ace_repair_canRepair = 1;
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -448,13 +483,21 @@ class CfgVehicles
 		{
 			"3AS\3AS_Props\Crates\Data\Supply_Large_orange\Supply_Large_orange_co.paa"
 		};
-
+		class EventHandlers
+		{
+			init = "_this execVM '332nd_Aux\Functions\fn_whiteListArsenalResup.sqf';";
+		};
 		class TransportItems
 		{
 			class ACE_DefusalKit
 			{
 				count = 5;
 				name = "ACE_DefusalKit";
+			};
+			class ACE_SpareBarrel
+			{
+				count = 10;
+				name = "ACE_SpareBarrel";
 			};
 			class ACE_EntrenchingTool
 			{
@@ -647,6 +690,11 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_Binocular";
 			};
+			class 332nd_Binocular_RTO 
+			{
+				count = 10;
+				weapon = "332nd_Binocular_RTO";
+			};
 		};
 
 		class TransportBackpacks
@@ -741,6 +789,11 @@ class CfgVehicles
 			{
 				count = 5;
 				name = "ACE_DefusalKit";
+			};
+			class ACE_SpareBarrel
+			{
+				count = 10;
+				name = "ACE_SpareBarrel";
 			};
 			class ACE_EntrenchingTool
 			{
@@ -938,6 +991,11 @@ class CfgVehicles
 				count = 10;
 				weapon = "332nd_Binocular";
 			};
+			class 332nd_Binocular_RTO 
+			{
+				count = 10;
+				weapon = "332nd_Binocular_RTO";
+			};
 			class 332nd_Dispo_F
 			{
 				count = 6;
@@ -961,6 +1019,21 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_DC15A_Mag";
 			};
+			class 332nd_DC15LE_Mag
+			{
+				count = 100;
+				magazine = "332nd_DC15LE_Mag";
+			};
+			class 332nd_DW_32S_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Mag";
+			};
+			class 332nd_DW_32S_Arc_Mag
+			{
+				count = 100;
+				magazine = "332nd_DW_32S_Arc_Mag";
+			};
 			class 332nd_DC15C_Mag
 			{
 				count = 100;
@@ -980,6 +1053,16 @@ class CfgVehicles
 			{
 				count = 50;
 				magazine = "332nd_C_24_Flamer_Mag";
+			};
+			class 332nd_EPL_Mag
+			{
+				count = 100;
+				magazine = "332nd_EPL_Mag";
+			};
+			class 332nd_EPL_AT_Mag
+			{
+				count = 50;
+				magazine = "332nd_EPL_AT_Mag";
 			};
 			class 332nd_DLT15_Mag
 			{
@@ -1026,17 +1109,32 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_HE_UGLGrenade_Mag";
 			};
-			class ACE_HuntIR_M203 
+			class 332nd_Flame_UGLGrenade_Mag 
 			{ 
 				count = 50; 
-				magazine = "ACE_HuntIR_M203"; 
+				magazine = "332nd_Flame_UGLGrenade_Mag"; 
+			}; 
+			class 332nd_Droidpopper_UGLGrenade_Mag 
+			{ 
+				count = 50; 
+				magazine = "332nd_Droidpopper_UGLGrenade_Mag"; 
+			}; 
+			class 332nd_FlareWhite_UGLGrenade_Mag 
+			{ 
+				count = 50; 
+				magazine = "332nd_FlareWhite_UGLGrenade_Mag"; 
+			}; 
+			class 332nd_HuntIR_UGLGrenade_Mag 
+			{ 
+				count = 50; 
+				magazine = "332nd_HuntIR_UGLGrenade_Mag"; 
 			}; 
 			class 332nd_Smoke_LauncherGrenade
 			{
 				count = 50;
 				magazine = "332nd_Smoke_LauncherGrenade";
 			};
-			class 332nd_Smoke_LauncherGrenade_3GL 
+			class 332nd_Smoke_LauncherGrenade_3GL
 			{ 
 				count = 50; 
 				magazine = "332nd_Smoke_LauncherGrenade_3GL"; 
@@ -1046,20 +1144,30 @@ class CfgVehicles
 				count = 50;
 				magazine = "332nd_SmokeRed_LauncherGrenade";
 			};
-			class 332nd_SmokeGreen_LauncherGrenade
+			class 332nd_Smoke_LauncherGrenade_3GL_Red
 			{
 				count = 50;
-				magazine = "332nd_SmokeGreen_LauncherGrenade";
+				magazine = "332nd_Smoke_LauncherGrenade_3GL_Red";
 			};
 			class 332nd_SmokeBlue_LauncherGrenade
 			{
 				count = 50;
 				magazine = "332nd_SmokeBlue_LauncherGrenade";
 			};
+			class 332nd_Smoke_LauncherGrenade_3GL_Blue
+			{
+				count = 50;
+				magazine = "332nd_Smoke_LauncherGrenade_3GL_Blue";
+			};
 			class 332nd_SmokePurple_LauncherGrenade
 			{
 				count = 50;
 				magazine = "332nd_SmokePurple_LauncherGrenade";
+			};
+			class 332nd_Smoke_LauncherGrenade_3GL_Purple
+			{
+				count = 50;
+				magazine = "332nd_Smoke_LauncherGrenade_3GL_Purple";
 			};
 			class 332nd_Westar_Rifle_Grenade
 			{

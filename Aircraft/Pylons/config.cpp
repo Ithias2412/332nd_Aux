@@ -151,6 +151,14 @@ class CfgWeapons
 			"332nd_Forge_III_Mag_Y",
 		};
 	};
+	class 332nd_Forge_III_L: 332nd_Forge_III
+	{
+		displayName = "[332nd] Forge III-L";
+		magazines[] = 
+		{
+			"332nd_Forge_III_L_Mag",
+		};
+	};
 	class 332nd_Forge_I: weapon_SDBLauncher
 	{
 		displayName = "[332nd] Forge I";
@@ -265,6 +273,10 @@ class CfgWeapons
 		magazines[] = 
 		{
 			"332nd_Z95_Cannon_Mag",
+		};
+		class Manual: 3AS_ARC_Light_Canon
+		{
+			dispersion = 0.001;
 		};
 	};
 	class 332nd_ARC_Cannon: 3AS_ARC_Light_Canon
@@ -504,6 +516,18 @@ class CfgMagazines
 		};
 		pylonWeapon = "332nd_Forge_III_Y";
 	};
+	class 332nd_Forge_III_L_Mag: 332nd_Forge_III_Mag
+	{
+		ammo = "332nd_Forge_III_L_Ammo";
+		descriptionShort = "1000lb, high-explosive, laser-guided bomb";
+		displayName = "[332nd] Forge III-L";
+		count = 2;
+		hardpoints[] = 
+		{
+			"332nd_Forge_III_L",
+		};
+		pylonWeapon = "332nd_Forge_III_L";
+	};
 	class 332nd_Forge_I_Mag: PylonRack_Bomb_SDB_x4
 	{
 		ammo = "332nd_Forge_I_Ammo";
@@ -621,7 +645,7 @@ class CfgAmmo
 	class 332nd_Hammer_I_Ammo: M_Air_AA
 	{
 		effectsMissile = "332nd_Effect_Hammer";
-		proximityExplosionDistance = 7;
+		proximityExplosionDistance = 6;
 		fuseDistance = 5;
 		
         missileLockMaxDistance = 3000;   // max distance (meters) target can be locked
@@ -636,7 +660,7 @@ class CfgAmmo
 	class 332nd_Hammer_II_Ammo: M_Zephyr
 	{
 		effectsMissile = "332nd_Effect_Hammer_II";
-		proximityExplosionDistance = 12;
+		proximityExplosionDistance = 11;
 		fuseDistance = 5;
 		
         missileLockMaxDistance = 9000;   // max distance (meters) target can be locked
@@ -648,7 +672,7 @@ class CfgAmmo
 		effectsMissile = "332nd_Effect_Hammer_II";
 		hit = 750;
 		indirectHit = 750;
-		proximityExplosionDistance = 12;
+		proximityExplosionDistance = 11;
 		fuseDistance = 5;
 		
         missileLockMaxDistance = 9000;   // max distance (meters) target can be locked
@@ -720,6 +744,7 @@ class CfgAmmo
 	};
 	class 332nd_Forge_X_C_Ammo: BombCluster_01_Ammo_F
 	{
+		weaponLockSystem = 0;
 		submunitionAmmo[] = 
 		{
 			"Mo_cluster_Bomb_01_F",
@@ -739,6 +764,14 @@ class CfgAmmo
 	class 332nd_Forge_III_Ammo_Y: 332nd_Forge_III_Ammo
 	{
 		
+	};
+	class 332nd_Forge_III_L_Ammo: 332nd_Forge_III_Ammo
+	{
+		//ExplosionEffects = "PHAN_JDAM_Fx_500";
+		explosionForceCoef = 8;
+		hit = 5000;
+		indirectHit = 1800;
+		indirectHitRange = 34;
 	};
 
 	//cannon

@@ -31,7 +31,7 @@ class cfgWeapons
 		cursor = "332nd_Cursor_Circle";
 		cursoraim = "332nd_Cursor_Dot";
 		author="Ithias";
-		displayName="[332nd] DC-15SA (ARF / CSP+)";
+		displayName="[332nd] DC-15SA (CSP+)";
 		magazines[] =
 		{
 			"332nd_DC15SA_Mag"

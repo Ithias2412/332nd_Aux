@@ -44,6 +44,18 @@ class CfgVehicles
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack.paa",
 		};
 	};
+	class 332nd_Backpack_activeCamo: 332nd_Backpack
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 	
 	class 332nd_Backpack_AT: JLTS_Clone_backpack
 	{
@@ -58,6 +70,18 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = 
 		{
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_AT.paa",
+		};
+	};
+	class 332nd_Backpack_AT_activeCamo: 332nd_Backpack_AT
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
 		};
 	};
 
@@ -83,6 +107,19 @@ class CfgVehicles
 		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+	class 332nd_Backpack_RTO_activeCamo: 332nd_Backpack_RTO
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
+
 
 	class 332nd_Backpack_Medic: JLTS_Clone_backpack
 	{
@@ -99,6 +136,19 @@ class CfgVehicles
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Medic.paa",
 		};
 	};
+	class 332nd_Backpack_Medic_activeCamo: 332nd_Backpack_Medic
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
+
 	
 	class 332nd_Backpack_Medic_RTO: JLTS_Clone_backpack_RTO
 	{
@@ -122,6 +172,19 @@ class CfgVehicles
 		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+	class 332nd_Backpack_Medic_RTO_activeCamo: 332nd_Backpack_Medic_RTO
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
+
 
 	class 332nd_Backpack_Engineer: JLTS_Clone_backpack
 	{
@@ -139,6 +202,18 @@ class CfgVehicles
 			"\332nd_Aux\Backpacks\Tex\332nd_Backpack_Engineer.paa",
 		};
 	};
+	class 332nd_Backpack_Engineer_activeCamo: 332nd_Backpack_Engineer
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 	
 	//Bag
 	class 332nd_Bag_GRN_MRK: JLTS_Clone_belt_bag
@@ -148,13 +223,47 @@ class CfgVehicles
 		maximumLoad=150;
 		mass=40;
 	};
-		
+	class 332nd_Bag_GRN_MRK_activeCamo: 332nd_Bag_GRN_MRK
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
+
 	class 332nd_Bag_AR: IDA_Clone_ScoutPack
 	{
 		author="Ithias";
 		displayName="[332nd] Backpack (Auto-Rifleman)";
 		maximumLoad=200;
 		mass=40;
+	};
+	class 332nd_Bag_AR_activeCamo: 332nd_Bag_AR
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+			"",
+			"",
+			"",
+			"",
+			"",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"",
+			"",
+			"",
+			"",
+			"",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
 	};
 
 	//Back
@@ -171,6 +280,18 @@ class CfgVehicles
 		tf_range=300000;
 		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
+	};
+	class 332nd_Back_Radio_activeCamo: 332nd_Back_Radio
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
 	};
 
 	class 332nd_Back_NCO: JLTS_Clone_RTO_pack
@@ -195,6 +316,19 @@ class CfgVehicles
 		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+	class 332nd_Back_NCO_activeCamo: 332nd_Back_NCO
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
+
 
 	class 332nd_Back: JLTS_Clone_belt_bag
 	{
@@ -203,6 +337,18 @@ class CfgVehicles
 		model = "\a3\weapons_f\empty.p3d";
 		maximumLoad=100;
 		mass=40;
+	};
+	class 332nd_Back_activeCamo: 332nd_Back
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
 	};
 
 };

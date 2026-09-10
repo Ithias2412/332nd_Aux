@@ -96,6 +96,8 @@ class CfgVehicles
 		displayName = "[332nd] Mortar";
 		crew = "JLTS_Clone_P2_DC15S";
 		armor = 50;
+		ace_cargo_size = 1;
+		ace_cargo_canLoad = 1;
 		hiddenSelectionsTextures[] = 
 		{
 			"\3as\3as_static\Mortar\data\base_co.paa",

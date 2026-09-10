@@ -24,6 +24,7 @@ class UnderBarrelSlot;
 class FullAuto;
 class WeaponSlotsInfo;
 class JLTS_Z6;
+class Mode_FullAuto;
 class CfgRecoils
 {
 	class recoil_default;

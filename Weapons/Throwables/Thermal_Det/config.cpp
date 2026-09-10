@@ -23,7 +23,8 @@ class CfgPatches {
 class CfgAmmo
 {
 	class 3AS_Detonator_1RND;
-	class 332nd_Thermal_Detonator_Ammo: 3AS_Detonator_1RND
+	class IDA_grenade_Detonator_ammo;
+	class 332nd_Thermal_Detonator_Ammo: IDA_grenade_Detonator_ammo
 	{
 		hit = 20;
 		indirectHit = 40;
@@ -34,10 +35,12 @@ class CfgAmmo
 class CfgMagazines
 {
 	class 3AS_ThermalDetonator;
-	class 332nd_Thermal_Detonator: 3AS_ThermalDetonator
+	class IDA_grenade_Detonator_mag;
+	class 332nd_Thermal_Detonator: IDA_grenade_Detonator_mag
 	{
 		ammo = "332nd_Thermal_Detonator_Ammo";
 		displayName = "[332nd] Thermal Detonator";
+		mass = 8;
 	};
 };
 

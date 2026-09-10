@@ -28,6 +28,10 @@ class CfgWeaponCursors
 	{
 		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Circle";
 	};
+	class 332nd_Cursor_Circle_Vic: throw
+	{
+		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Circle_Vic";
+	};
 	class 332nd_Cursor_Dot: throw
 	{
 		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Dot";
@@ -35,5 +39,13 @@ class CfgWeaponCursors
 	class 332nd_Cursor_Tri: throw
 	{
 		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Tri";
+	};
+	class 332nd_Cursor_Tri_Vic: throw
+	{
+		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Tri_Vic";
+	};
+	class 332nd_Cursor_Cannon: throw
+	{
+		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Cannon";
 	};
 };

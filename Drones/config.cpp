@@ -55,7 +55,7 @@ class CfgWeapons {
     class CBA_MiscItem_ItemInfo;
 
     class 332nd_Drone_Item : CBA_MiscItem {
-        scope = 2;
+        scope = 1;
         displayName = "Deployable Recon Drone";
         descriptionShort = "A packable reconnaissance UAV. Use ACE Self-Interact to deploy.";
         picture = "";

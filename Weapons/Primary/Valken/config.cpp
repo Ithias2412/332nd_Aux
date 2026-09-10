@@ -110,5 +110,13 @@ class cfgWeapons
 				compatibleItems[]={};
 			};
 		};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="332nd_LS_VK38X";
+			};
+		};
 	};
 };

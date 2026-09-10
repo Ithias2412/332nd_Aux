@@ -38,6 +38,18 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_Trooper_Vest_activeCamo: 332nd_Trooper_Vest
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 
 	class 332nd_CSP_Vest: 332nd_Trooper_Vest
 	{
@@ -58,6 +70,18 @@ class cfgWeapons
 			{
 				"camo1"
 			};
+		};
+	};
+	class 332nd_CSP_Vest_activeCamo: 332nd_CSP_Vest
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
 		};
 	};
 
@@ -82,6 +106,18 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_CP_Vest_activeCamo: 332nd_CP_Vest
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 
 	class 332nd_CS_Vest: 332nd_Trooper_Vest
 	{
@@ -102,6 +138,18 @@ class cfgWeapons
 			{
 				"camo1"
 			};
+		};
+	};
+	class 332nd_CS_Vest_activeCamo: 332nd_CS_Vest
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
 		};
 	};
 
@@ -129,6 +177,20 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_CSS_Vest_activeCamo: 332nd_CSS_Vest
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 
 	class 332nd_CSM_Vest: 332nd_Trooper_Vest
 	{
@@ -151,6 +213,18 @@ class cfgWeapons
 			};
 		};
 	};
+	class 332nd_CSM_Vest_activeCamo: 332nd_CSM_Vest
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+	};
 
 	class 332nd_CC_Vest: 332nd_Trooper_Vest
 	{
@@ -171,6 +245,18 @@ class cfgWeapons
 			{
 				"camo1",
 			};
+		};
+	};
+	class 332nd_CC_Vest_activeCamo: 332nd_CC_Vest
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
 		};
 	};
 
@@ -200,6 +286,31 @@ class cfgWeapons
 		};
 	};
 	
+	class 332nd_Vest_Trick: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Trick)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Trick.paa",
+			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2",
+			};
+		};
+	};
+
 	class 332nd_Vest_Body: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Body)";
@@ -251,6 +362,7 @@ class cfgWeapons
 	
 	class 332nd_Vest_Dovah: 332nd_Trooper_Vest
 	{
+		scope = 1;
 		displayName="[332nd] Vest (Dovah)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = 
@@ -273,24 +385,43 @@ class cfgWeapons
 	class 332nd_Vest_Joker: 332nd_Trooper_Vest
 	{
 		displayName="[332nd] Vest (Joker)";
-		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 		hiddenSelections[] = 
 		{
 			"camo1",
-			"camo2"
 		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Joker.paa",
-			"332nd_Aux\Vests\Tex\332nd_Vest_Airborne_JLTS.paa",
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
 			hiddenSelections[] = 
 			{
 				"camo1",
-				"camo2"
+			};
+		};
+	};
+	
+	class 332nd_Vest_Rat: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Rat)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Rat.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
 			};
 		};
 	};
@@ -369,6 +500,8 @@ class XtdGearModels
 					"Walkie",
 					"Dovah",
 					"Lettuce",
+					"Trick",
+					"Rat",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -424,6 +557,18 @@ class XtdGearModels
                 {
                     label = "Lettuce";
                     description = "Sour dough bread supplier";
+                    // image = "xxx";
+                };
+				class Trick
+                {
+                    label = "Trick";
+                    description = "Calls me Daddy";
+                    // image = "xxx";
+                };
+				class Rat
+                {
+                    label = "Rat";
+                    description = "I LOVE WOMAN KISSING!!!!!";
                     // image = "xxx";
                 };
             };
@@ -494,6 +639,16 @@ class XtdGearInfos
 		{
             model = "332nd_Vest_Extended";
             Custom = "Joker";
+		};
+		class 332nd_Vest_Trick
+		{
+            model = "332nd_Vest_Extended";
+            Custom = "Trick";
+		};
+		class 332nd_Vest_Rat
+		{
+            model = "332nd_Vest_Extended";
+            Custom = "Rat";
 		};
 	};
 };

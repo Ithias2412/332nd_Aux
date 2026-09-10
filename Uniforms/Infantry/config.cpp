@@ -97,6 +97,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Grim: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Grim)";
 		class ItemInfo: UniformItem
 		{
@@ -109,6 +110,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Warthog: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Warthog)";
 		class ItemInfo: UniformItem
 		{
@@ -121,6 +123,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Nate: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Nate)";
 		class ItemInfo: UniformItem
 		{
@@ -133,6 +136,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Dovah: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Dovah)";
 		class ItemInfo: UniformItem
 		{
@@ -191,20 +195,9 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Asuka: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Asuka)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Asuka_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
 	class 332nd_Uniform_Clone_Ketamine: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Ketamine)";
 		class ItemInfo: UniformItem
 		{
@@ -265,6 +258,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Crow: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Crow)";
 		class ItemInfo: UniformItem
 		{
@@ -313,23 +307,12 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Shovie: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Shovie)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Shovie_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
-	class 332nd_Uniform_Clone_Aztec: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Aztec)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Aztec_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -541,6 +524,7 @@ class cfgWeapons
 	};
 	class 332nd_Uniform_Clone_Rimuru: 332nd_Uniform_Clone_CR
 	{
+		scope = 1;
 		displayName="[332nd] Clone Trooper Armor (Rimuru)";
 		class ItemInfo: UniformItem
 		{
@@ -635,18 +619,6 @@ class cfgWeapons
 			mass=40;
 		};
 	};
-	class 332nd_Uniform_Clone_Butch: 332nd_Uniform_Clone_CR
-	{
-		displayName="[332nd] Clone Trooper Armor (Butch)";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="";
-			uniformClass="332nd_Uniform_Clone_Butch_Veh";
-			uniformType = "Neopren";
-			containerClass="Supply50";
-			mass=40;
-		};
-	};
 	class 332nd_Uniform_Clone_Max: 332nd_Uniform_Clone_CR
 	{
 		displayName="[332nd] Clone Trooper Armor (Max)";
@@ -702,6 +674,90 @@ class cfgWeapons
 		{
 			uniformModel="";
 			uniformClass="332nd_Uniform_Clone_Shark_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Kitra: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Kitra)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Kitra_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Morgan: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Morgan)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Morgan_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Hawkeye: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Hawkeye)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Hawkeye_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Weasel: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Weasel)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Weasel_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Milk: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Milk)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Milk_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Beansworth: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Beansworth)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Beansworth_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Ougaran: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Ougaran)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Ougaran_Veh";
 			uniformType = "Neopren";
 			containerClass="Supply50";
 			mass=40;
@@ -1202,16 +1258,6 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Inu.paa",
 		};
 	};
-	class 332nd_Uniform_Clone_Asuka_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Asuka";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Asuka.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Asuka.paa",
-		};
-	};
 	class 332nd_Uniform_Clone_Ketamine_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
@@ -1310,16 +1356,6 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shovie.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shovie.paa",
-		};
-	};
-	class 332nd_Uniform_Clone_Aztec_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Aztec";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Aztec.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Aztec.paa",
 		};
 	};
 	class 332nd_Uniform_Clone_Lettuce_Veh: 332nd_Uniform_Clone_CR_Veh
@@ -1572,16 +1608,6 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Raven.paa",
 		};
 	};
-	class 332nd_Uniform_Clone_Butch_Veh: 332nd_Uniform_Clone_CR_Veh
-	{
-		scope=1;
-		uniformClass="332nd_Uniform_Clone_Butch";
-		hiddenSelectionsTextures[] = 
-		{
-			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Butch.paa",
-			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Butch.paa",
-		};
-	};
 	class 332nd_Uniform_Clone_Max_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
@@ -1630,6 +1656,76 @@ class CfgVehicles
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Shark.paa",
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Shark.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Kitra_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Kitra";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Kitra.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Kitra.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Morgan_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Morgan";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Morgan.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Morgan.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Hawkeye_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Hawkeye";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Hawkeye.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Hawkeye.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Weasel_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Weasel";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Weasel.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Weasel.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Milk_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Milk";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Milk.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Milk.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Beansworth_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Beansworth";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Beansworth.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Beansworth.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Ougaran_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Ougaran";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Ougaran.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ougaran.paa",
 		};
 	};
 };
@@ -1773,6 +1869,13 @@ class XtdGearModels
 					"McGurkin",
 					"Dande",
 					"Oddball",
+					"Kitra",
+					"Morgan",
+					"Hawkeye",
+					"Weasel",
+					"Milk",
+					"Beansworth",
+					"Ougaran",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -1839,7 +1942,7 @@ class XtdGearModels
 				class Walkie
 				{
 					label = "Walkie";
-					description = "Walkie Texas Ranger";
+					description = "Rule 34/5";
 					//image = "xxx";
 				};
 				class Cin
@@ -2025,7 +2128,7 @@ class XtdGearModels
 				class Crucial
 				{
 					label = "Crucial";
-					description = "Jailer from DbD";
+					description = "Waited 4 months for this custom";
 					//image = "xxx";
 				};
 				class Logan
@@ -2118,6 +2221,48 @@ class XtdGearModels
 					description = "Aztec fucked his texture pathing";
 					//image = "xxx";
 				};
+				class Kitra
+				{
+					label = "Kitra";
+					description = "Feining";
+					//image = "xxx";
+				};
+				class Morgan
+				{
+					label = "Morgan";
+					description = "Komrk's Bitch";
+					//image = "xxx";
+				};
+				class Hawkeye
+				{
+					label = "Hawkeye";
+					description = "Ex Platoon Leader";
+					//image = "xxx";
+				};
+				class Weasel
+				{
+					label = "Weasel";
+					description = "@Kitra you are fish - Weasel circa 2026";
+					//image = "xxx";
+				};
+				class Milk
+				{
+					label = "Milk";
+					description = "Trains Racing Pigeons";
+					//image = "xxx";
+				};
+				class Beansworth
+				{
+					label = "Beansworth";
+					description = "N/A";
+					//image = "xxx";
+				};
+				class Ougaran
+				{
+					label = "Ougaran";
+					description = "N/A";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -2197,11 +2342,6 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Customs = "Inu";
 		};
-		class 332nd_Uniform_Clone_Asuka
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Asuka";
-		};
 		class 332nd_Uniform_Clone_Ketamine
 		{
 			model = "332nd_Uniform_Extended";
@@ -2246,11 +2386,6 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Shovie";
-		};
-		class 332nd_Uniform_Clone_Aztec
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Aztec";
 		};
 		class 332nd_Uniform_Clone_Trick
 		{
@@ -2382,11 +2517,6 @@ class XtdGearInfos
 			model = "332nd_Uniform_Extended";
 			Customs = "Raven";
 		};
-		class 332nd_Uniform_Clone_Butch
-		{
-			model = "332nd_Uniform_Extended";
-			Customs = "Butch";
-		};
 		class 332nd_Uniform_Clone_Max
 		{
 			model = "332nd_Uniform_Extended";
@@ -2411,6 +2541,41 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Shark";
+		};
+		class 332nd_Uniform_Clone_Kitra
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Kitra";
+		};
+		class 332nd_Uniform_Clone_Morgan
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Morgan";
+		};
+		class 332nd_Uniform_Clone_Hawkeye
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Hawkeye";
+		};
+		class 332nd_Uniform_Clone_Weasel
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Weasel";
+		};
+		class 332nd_Uniform_Clone_Milk
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Milk";
+		};
+		class 332nd_Uniform_Clone_Beansworth
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Beansworth";
+		};
+		class 332nd_Uniform_Clone_Ougaran
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Ougaran";
 		};
 	};
 };

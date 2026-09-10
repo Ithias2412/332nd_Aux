@@ -147,6 +147,32 @@ class CfgVehicles
 			"332nd_LAAT_Minigun_Mag",
 			"332nd_LAAT_Minigun_Mag"
 		};
+		class ace_cargo 
+		{
+			class cargo 
+			{
+				class 332nd_Ammo_Crate 
+				{ 
+					type = "332nd_Ammo_Crate";
+					amount = 2;
+				};
+				class 332nd_Medical_Crate 
+				{ 
+					type = "332nd_Medical_Crate";
+					amount = 2;
+				};
+				class 332nd_Equipment_Crate 
+				{ 
+					type = "332nd_Equipment_Crate";
+					amount = 2;
+				};
+				class 332nd_Refueling_Barrel
+				{
+					type = "332nd_Refueling_Barrel";
+					amount = 1;
+				};
+			};
+		};
 		class Components: Components
 		{
 			class SensorsManagerComponent

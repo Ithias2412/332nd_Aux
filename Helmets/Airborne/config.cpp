@@ -70,7 +70,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_AB_Cherryy: 332nd_Helmet_AB_Base
 	{
-		author="Cherryy";
+		scope = 1;
 		displayName="[332nd] AB Helmet (Cherryy)";
 		hiddenSelections[] = 
 		{
@@ -83,7 +83,7 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_AB_Fusion: 332nd_Helmet_AB_Base
 	{
-		author="Fusion";
+		scope = 1;
 		displayName="[332nd] AB Helmet (Fusion)";
 		hiddenSelections[] = 
 		{
@@ -96,7 +96,6 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_AB_Trick: 332nd_Helmet_AB_Base
 	{
-		author="Ahri";
 		displayName="[332nd] AB Helmet (Trick)";
 		hiddenSelections[] = 
 		{
@@ -109,7 +108,6 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_AB_Stryker: 332nd_Helmet_AB_Base
 	{
-		author="Ahri";
 		displayName="[332nd] AB Helmet (Stryker)";
 		hiddenSelections[] = 
 		{
@@ -118,6 +116,19 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Stryker.paa",
+		};		
+	};
+	class 332nd_Helmet_AB_Beansworth: 332nd_Helmet_AB_Base
+	{
+		scope = 1;
+		displayName="[332nd] AB Helmet (Beansworth)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_AB_Beansworth.paa",
 		};		
 	};
 };
@@ -151,8 +162,9 @@ class XtdGearModels
 				{ 
 					"Cherryy",
 					"Fusion",
-					"Trick", 
-					"Stryker", 
+					"Trick",
+					"Stryker",
+					"Beansworth",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -178,6 +190,12 @@ class XtdGearModels
                 {
                     label = "Stryker";
                     description = "Trend Chaser";
+                    //image = "xxx";
+                };
+				class Beansworth
+                {
+                    label = "Beansworth";
+                    description = "N/A";
                     //image = "xxx";
                 };
 			};
@@ -213,6 +231,11 @@ class XtdGearInfos
         {
             model = "332nd_Helmets_AB_Extended";
             Customs = "Stryker";
+        };
+		class 332nd_Helmet_AB_Beansworth
+        {
+            model = "332nd_Helmets_AB_Extended";
+            Customs = "Beansworth";
         };
 	};
 };

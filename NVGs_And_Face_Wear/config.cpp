@@ -109,6 +109,76 @@ class CfgWeapons
 			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
+	class 332nd_NVG_Rangefinder_activeCamo: 332nd_NVG_Rangefinder
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+		};
+	};
+	class 332nd_NVG_Rangefinder_Inverted: OPTRE_NVG
+	{
+		displayName = "[332nd] Rangefinder (Inverted)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_range_ui_ca.paa";
+		hiddenSelections[] = 
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Rangefinder_Inverted.paa"
+		};
+		visionMode[] = 
+		{
+			"Normal",
+			"NVG",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+		};
+	};
+	class 332nd_NVG_Rangefinder_Inverted_activeCamo: 332nd_NVG_Rangefinder_Inverted
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+		};
+	};
 	class 332nd_NVG_Visor: OPTRE_NVG
 	{
 		displayName = "[332nd] Visor";
@@ -207,7 +277,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", "Commander", "Marshal_Commander"};
+				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", "Rangefinder_Inverted", "Commander", "Marshal_Commander"};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Chip
@@ -231,6 +301,12 @@ class XtdGearModels
 				class Rangefinder
                 {
                     label = "Rangefinder";
+                    description = "VCT+";
+                    //image = "xxx";
+                };
+				class Rangefinder_Inverted
+                {
+                    label = "Rangefinder Inverted";
                     description = "VCT+";
                     //image = "xxx";
                 };
@@ -313,6 +389,11 @@ class XtdGearInfos
         {
             model = "332nd_NVG_Extended";
             Type = "Rangefinder";
+        };
+        class 332nd_NVG_Rangefinder_Inverted
+        {
+            model = "332nd_NVG_Extended";
+            Type = "Rangefinder_Inverted";
         };
         class 332nd_NVG_Visor
         {

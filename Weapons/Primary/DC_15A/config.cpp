@@ -198,6 +198,8 @@ class cfgWeapons
 		displayName="[332nd] DC-15LE (AR)";
 		baseWeapon = "332nd_DC15A_LE";
 		recoil="Old_IDA_recoil_Z6";
+		cursor = "332nd_Cursor_Tri";
+		cursoraim = "332nd_Cursor_Arrow";
 		magazines[] =
 		{
 			"332nd_DC15LE_Mag"
@@ -240,7 +242,8 @@ class cfgWeapons
 			reloadTime=0.0857;
 			recoil="recoil_auto_primary_3outof10";
 			recoilProne="recoil_auto_primary_prone_3outof10";
-			dispersion = 0.00116;
+			//dispersion = 0.00116;
+			dispersion = 0.00262;
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;

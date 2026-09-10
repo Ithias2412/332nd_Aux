@@ -1,4 +1,3 @@
-/*
 class CfgPatches {
 	class 332nd_DW_32S {
 		units[] = 
@@ -31,32 +30,16 @@ class cfgWeapons
 //Primary
 	class 332nd_DW_32S: JLTS_DW32S
 	{
-		cursor = "332nd_Cursor_Tri";
+		cursor = "332nd_Cursor_Block";
 		cursoraim = "332nd_Cursor_Dot";
 		JLTS_hasElectronics=1;
 		JLTS_hasEMPProtection=1;
 		JLTS_friedItem="";
-		author="MrClock";
+		author="Ithias";
 		scope=2;
-		displayName="[332nd] DW-32S (MRK)";
-		descriptionShort="$STR_JLTS_descs_BlasterRifleScoped";
-		picture="\MRC\JLTS\weapons\DW32S\data\ui\DW32S_ui_ca.paa";
-		model="\MRC\JLTS\weapons\DW32S\DW32S.p3d";
+		displayName="[332nd] DW-32S (ENG) (WIP)";
 		reloadAction = "3AS_GestureReload_DC17M";
 		recoil="3AS_recoil_DC15A";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\MRC\JLTS\weapons\DW32S\data\DW32S_co.paa"
-		};
-		handAnim[]=
-		{
-			"OFP2_ManSkeleton",
-			"\MRC\JLTS\weapons\DW32S\anims\DW32S_handanim.rtm"
-		};
 		magazines[]=
 		{
 			"332nd_DW_32S_Mag"
@@ -67,24 +50,84 @@ class cfgWeapons
 			"Single",
 			"FullAuto",
 		};
-		fireLightDiffuse[]={0,0,1};
-		drySound[]=
-		{
-			"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",
-			5,
-			1,
-			10
-		};
 		muzzles[]=
 		{
 			"this",
+			"332nd_Arc_Muzzle",
 			//"Stun"
 		};
-		class Stun: JLTS_stun_muzzle
+		class 332nd_Arc_Muzzle: JLTS_DW32S
 		{
+			cursor = "332nd_Cursor_Block";
+			cursoraim = "332nd_Cursor_Dot";
+			displayName="[332nd] Arc Rounds";
+			reloadAction = "3AS_GestureReload_DC17M";
+			recoil="3AS_recoil_DC15A";
+			magazines[]=
+			{
+				"332nd_DW_32S_Arc_Mag"
+			};
+			magazineWell[]={};
+			modes[]=
+			{
+				"Single",
+			};
+			class Single: Mode_SemiAuto
+			{
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class BaseSoundModeType
+				{
+					
+				};
+				class StandardSound: BaseSoundModeType
+				{
+					soundSetShot[] = 
+					{
+						"332nd_ArcCast_Shot_SoundSet",
+					};
+				};
+				reloadTime = 0.17142;
+				recoil="recoil_single_primary_3outof10";
+				recoilProne="recoil_single_primary_prone_3outof10";
+				dispersion=0.00058;
+				minRange=2;
+				minRangeProbab=0.5;
+				midRange=250;
+				midRangeProbab=0.69999999;
+				maxRange=450;
+				maxRangeProbab=0.30000001;
+			};
+			weaponInfoType="RscOptics_nightstalker";
+			modelOptics="\332nd_Aux\Misc\Optics\332nd_Zoom.p3d";
+			class OpticsModes
+			{
+				class NCTALKEP
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
 		};
-		distanceZoomMin=400;
-		distanceZoomMax=400;
 		class Single: Mode_SemiAuto
 		{
 			sounds[]=
@@ -114,15 +157,15 @@ class cfgWeapons
 					1
 				};
 			};
-			reloadTime=0.1;
-			recoil="recoil_single_mx";
-			recoilProne="recoil_single_prone_mx";
-			dispersion=0.00035;
+			reloadTime = 0.17142;
+			recoil="recoil_single_primary_3outof10";
+			recoilProne="recoil_single_primary_prone_3outof10";
+			dispersion=0.00058;
 			minRange=2;
 			minRangeProbab=0.5;
-			midRange=200;
+			midRange=250;
 			midRangeProbab=0.69999999;
-			maxRange=400;
+			maxRange=450;
 			maxRangeProbab=0.30000001;
 		};
 		class FullAuto: Mode_FullAuto
@@ -155,9 +198,9 @@ class cfgWeapons
 				};
 			};
 			reloadTime = 0.17142;
-			dispersion=0.00035;
-			recoil="recoil_auto_mx";
-			recoilProne="recoil_auto_prone_mx";
+			recoil="recoil_auto_primary_3outof10";
+			recoilProne="recoil_auto_primary_prone_3outof10";
+			dispersion=0.00058;
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;
@@ -166,161 +209,36 @@ class cfgWeapons
 			maxRangeProbab=0.1;
 			aiRateOfFire=1e-006;
 		};
-		class fullauto_medium: FullAuto
-		{
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
-					1,
-					1.1,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-			showToPlayer=0;
-			burst=3;
-			aiBurstTerminable=1;
-			minRange=2;
-			minRangeProbab=0.5;
-			midRange=75;
-			midRangeProbab=0.69999999;
-			maxRange=150;
-			maxRangeProbab=0.050000001;
-			aiRateOfFire=2;
-			aiRateOfFireDistance=200;
-		};
-		class single_medium_optics1: Single
-		{
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
-					1,
-					1.1,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-			requiredOpticType=1;
-			showToPlayer=0;
-			minRange=2;
-			minRangeProbab=0.2;
-			midRange=450;
-			midRangeProbab=0.69999999;
-			maxRange=600;
-			maxRangeProbab=0.2;
-			aiRateOfFire=6;
-			aiRateOfFireDistance=600;
-		};
-		class single_far_optics2: single_medium_optics1
-		{
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
-					1,
-					1.1,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-			requiredOpticType=2;
-			showToPlayer=0;
-			minRange=100;
-			minRangeProbab=0.1;
-			midRange=500;
-			midRangeProbab=0.60000002;
-			maxRange=700;
-			maxRangeProbab=0.050000001;
-			aiRateOfFire=8;
-			aiRateOfFireDistance=700;
-		};
 		weaponInfoType="RscOptics_nightstalker";
 		modelOptics="\332nd_Aux\Misc\Optics\332nd_Zoom.p3d";
 		class OpticsModes
 		{
 			class NCTALKEP
 			{
-				opticsID=1;
-				useModelOptics=1;
 				opticsPPEffects[]={};
-				opticsZoomMin=0.03125;
-				opticsZoomMax=0.0625;
-				opticsZoomInit=0.0625;
-				discreteDistance[]={100,300,400,500,600,700,800,900,1000};
+				opticsID=1
 				discreteDistanceInitIndex=1;
-				distanceZoomMin=100;
-				distanceZoomMax=1000;
-				//discreteFov[]={0.0625,0.02};
-				//discreteInitIndex=0;
-				memoryPointCamera="opticView";
+				discreteInitIndex = 0;
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
+				memoryPointCamera = "opticView";
+				modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom"};
+				opticsDisablePeripherialVision=1;
+				opticsFlare=1;
+				opticsZoomInit = 0.125;
+				opticsZoomMax = 0.125;
+				opticsZoomMin = 0.125;
+				useModelOptics=1;
 				visionMode[]=
 				{
 					"Normal",
 					"NVG",
-					"Ti"
 				};
-				thermalMode[]={0};
-				opticsFlare=1;
-				opticsDisablePeripherialVision=1;
-				cameraDir="";
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=68;
+			mass=97;
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[]={};
@@ -338,14 +256,38 @@ class cfgWeapons
 				compatibleItems[]={};
 			};
 		};
-		class GunParticles
-		{
-			class FirstEffect
-			{
-				directionName="Konec hlavne";
-				effectName="RifleAssaultCloud";
-				positionName="Usti hlavne";
-			};
-		};
+	};
+};
+
+class CfgSoundSets
+{
+	class JMSLLTE_ArcCast_Shot_SoundSet;
+	class 332nd_ArcCast_Shot_SoundSet: JMSLLTE_ArcCast_Shot_SoundSet
+	{
+		volumeFactor = 0.7;
+	};
+};
+
+class ARC_Explosion_Effect
+{
+	class Sparks_2
+	{
+		simulation = "particles";	// type of simulation - particles or light
+		type = "AmmoExpSparks";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		position[] = { 0, 0, 0 };	// position related to the default position or memorypoint
+		lifeTime = 1;			// life time of emitter
+		//start = 1;					// is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+		//enabled = 1;				// 1 effect is enabled, -1 effect is disabled
+	};
+	class Lightning
+	{
+		simulation = "particles";	// type of simulation - particles or light
+		type = "EMPGL_sparks_Large";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		//type = "EMPLarge_sparks_Large";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		//type = "ls_electricSparks";			// name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+		position[] = { 0, 0, 0 };	// position related to the default position or memorypoint
+		lifeTime = 1;			// life time of emitter
+		//start = 1;					// is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+		//enabled = 1;				// 1 effect is enabled, -1 effect is disabled
 	};
 };

@@ -134,9 +134,6 @@ class CfgAmmo
 	};
 	class 332nd_FlameRound: FlameRound
 	{
-		//submunitionAmmo = "FlameRound_sub";
-		//submunitionConeAngle = 4;
-		//submunitionConeType[] = {"poissondisc",4};
 		submunitionAmmo = "332nd_FlameRound_sub";
 		submunitionConeAngle = 1;
 		submunitionConeType[] = {"poissondisc",1};
@@ -172,7 +169,7 @@ class CfgAmmo
 	{
 		// B1=1 B2=2
 		hit = 180; // Was 60
-		caliber = 12.5; // was 25
+		caliber = 1; // was 25, then 12.5
 		typicalspeed = 1200;
 		tracerscale = 5;
 		tracerEndTime = 10000;
@@ -236,6 +233,21 @@ class CfgAmmo
 		// B1=2 B2=12
 		hit = 15;
 	};
+	class 332nd_Gas_Level_S1_ARC: 332nd_Base_Ammo_IDA
+	{
+		// B1=2 B2=12
+		hit = 1;
+		indirectHit = 5;
+		indirectHitRange = 2;
+		//JLTS_isStunAmmo = 1;
+		model = "\JMSLLTE_weapons\mags\lightblue.p3d";
+		tracerscale = 2;
+		typicalspeed = 400; // was 800
+		ACE_damageType = "332nd_ARC_DamageType";
+		explosive = 1;
+		ExplosionEffects = "ARC_Explosion_Effect";
+		craterEffects = "";
+	};
 	class 332nd_Gas_Level_S1_Dual: 332nd_Base_Ammo_IDA
 	{
 		// B1=2 B2=12
@@ -262,6 +274,13 @@ class CfgAmmo
 	class 332nd_Scattershot_S1: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
 	{
 		submunitionAmmo = "332nd_Scattershot_S1_Sub";
+		submunitionConeAngle = 0.25;
+		submunitionConeType[] = {"random",12};
+		triggerTime = 1e-09;
+	};
+	class 332nd_Scattershot_S1_ARC: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
+	{
+		submunitionAmmo = "332nd_Gas_Level_S1_ARC";
 		submunitionConeAngle = 0.25;
 		submunitionConeType[] = {"random",12};
 		triggerTime = 1e-09;
@@ -363,6 +382,11 @@ class CfgAmmo
 		lightcolor[]={0,0,1};
 		model="Indecisive_Armoury_Ammos\Data\40mm_Grenade\IDA_40mm_Grenade.p3d";
 	};
+	class 332nd_Flame_UGLGrenade: 332nd_HE_UGLGrenade
+	{
+		indirectHit = 20; // was 40 
+		explosionEffects = "332nd_Flame_Grenade_Effect_UGL";
+	};
 	class 332nd_DroidPopper_UGLGrenade: 332nd_HE_UGLGrenade
 	{
 		ace_frag_enabled=0;
@@ -370,7 +394,7 @@ class CfgAmmo
         hit=0;
 		indirectHit=0;
         ace_frag_skip = 1;
-		dangerRadiusHit=5;
+		dangerRadiusHit=10;
 		suppressionRadiusHit=5;
         ExplosionEffects = "Droid_Popper_GrenadeExplosion"; 
         SoundSetExplosion[] = {"Droidpopper_Soundset"}; 

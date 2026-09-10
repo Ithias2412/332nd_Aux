@@ -149,10 +149,10 @@ class CfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"332nd_Aux\Vehicles\AT-TE\tex\332nd_ATTE_Shell.paa",
+			"332nd_Aux\Vehicles\ATTE\tex\332nd_ATTE_Shell.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-			"332nd_Aux\Vehicles\AT-TE\tex\332nd_ATTE_Legs.paa",
+			"332nd_Aux\Vehicles\ATTE\tex\332nd_ATTE_Legs.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
 			"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 		};
@@ -164,10 +164,10 @@ class CfgVehicles
 				author = "Ithias";
 				textures[]=
 				{
-					"332nd_Aux\Vehicles\AT-TE\tex\332nd_ATTE_Shell.paa",
+					"332nd_Aux\Vehicles\ATTE\tex\332nd_ATTE_Shell.paa",
 					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
 					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-					"332nd_Aux\Vehicles\AT-TE\tex\332nd_ATTE_Legs.paa",
+					"332nd_Aux\Vehicles\ATTE\tex\332nd_ATTE_Legs.paa",
 					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
 					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 				};

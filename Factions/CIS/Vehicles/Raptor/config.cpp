@@ -5,6 +5,7 @@ class CfgPatches
 		units[] = 
         {
             "332nd_CIS_Raptor",
+            "332nd_CIS_Raptor_AA",
         };
 		weapons[] = 
         {
@@ -17,10 +18,18 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class LandVehicle;
+	class Land;
+	class LandVehicle: Land
+	{
+		class Components;
+	};
 	class Car: LandVehicle
 	{
 		class Hitpoints;
+		class Components: Components
+		{
+			
+		};
 	};
 	class Car_F: Car
 	{
@@ -67,13 +76,30 @@ class CfgVehicles
 		{
 			
 		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				class Pylons
+				{
+					class PylonLeft
+					{
+						
+					};
+					class PylonRight: PylonLeft
+					{
+						
+					};
+				};
+			};
+		};
 	};
 	class 332nd_CIS_Raptor: ls_vehicle_agtRaptor_base
 	{
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Light_Vics";
 		displayName="Raptor Light UGV";
-		armor = 7.5;
+		armor = 5; // was 7.5
 		scope = 2;
 		side = 0;
 		class HitPoints: HitPoints
@@ -126,6 +152,33 @@ class CfgVehicles
 				armor=0.5;
 				material=-1;
 				passThrough=0.30000001;
+			};
+		};
+	};
+	class 332nd_CIS_Raptor_AA: 332nd_CIS_Raptor
+	{
+		displayName="Raptor Light UGV (AA)";
+		class Components: Components
+		{
+			class TransportPylonsComponent: TransportPylonsComponent
+			{
+				class Pylons: Pylons
+				{
+					class PylonLeft: PylonLeft
+					{
+						attachment = "332nd_CIS_A2A_Missile_Mag";
+						hardpoints[] = {"332nd_CIS_A2A_Missile",};
+						priority = 5;
+						turret[] = {0};
+						UIposition[] = {0.44,0.2};
+					};
+					class PylonRight: PylonRight
+					{
+						attachment = "332nd_CIS_A2A_Missile_Mag";
+						mirroredMissilePos = 1;
+						UIposition[] = {0.44,0.35};
+					};
+				};
 			};
 		};
 	};
