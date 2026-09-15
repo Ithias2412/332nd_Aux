@@ -120,6 +120,14 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Milk.paa",
 		};
 	};
+	class 332nd_Helmet_Pilot_Cherryy: 332nd_Helmet_Pilot
+	{
+		displayName="[332nd] Pilot Helmet (Cherryy)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Cherryy.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -155,6 +163,7 @@ class XtdGearModels
 					"Ghillie",
 					"Lawman",
 					"Milk",
+					"Cherryy",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -192,6 +201,12 @@ class XtdGearModels
 				{
                     label = "Milk";
                     description = "I've got the mass";
+                    //image = "xxx";
+				};
+				class Cherryy
+				{
+                    label = "Cherryy";
+                    description = "Tree Crashing Extrodinare";
                     //image = "xxx";
 				};
             };
@@ -237,6 +252,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Milk";
+		};
+		class 332nd_Helmet_Pilot_Cherryy
+		{
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Cherryy";
 		};
 	};
 };
