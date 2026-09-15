@@ -5,7 +5,10 @@ class CfgPatches
 		author="Ithias";
 		requiredAddons[]=
 		{
-			"A3_Data_F_Enoch_Loadorder"
+			"A3_Data_F_Enoch_Loadorder",
+			"3AS_Main_Intro",
+			"ls_compat_tas",
+			"ls_compat_tas_terrains"
 		};
 		requiredVersion=0.1;
 		units[]={};

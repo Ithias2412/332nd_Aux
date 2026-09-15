@@ -161,7 +161,7 @@ class CfgVehicles
 	class 332nd_ARC_170: 3AS_ARC_170_Base
 	{
 		displayName="[332nd] ARC-170";
-		author="Frankenburg + Ithias + Blast";
+		author="Frankenburg + Ithias + Iris";
 		scope=2;
 		scopeCurator=2;
 		faction="332nd_Faction";
