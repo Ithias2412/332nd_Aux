@@ -445,6 +445,12 @@ params ["_obj"];
 "332nd_Helmet_P2_Bomba",
 "332nd_Uniform_Clone_Ougaran",
 "332nd_Vest_Rat",
+"332nd_Radio_Post_Crate_Packed",
+"332nd_Helmet_BARC_Whoops",
+"332nd_Helmet_Pilot_Cherryy",
+"332nd_Helmet_P2_Dog",
+"332nd_Uniform_Clone_Don",
+"332nd_Helmet_P2_Cosmos",
 "ACE_SpareBarrel"]
 
 ] call ace_arsenal_fnc_initBox
