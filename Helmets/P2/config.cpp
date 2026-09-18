@@ -860,6 +860,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Dog.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Cosmos: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Cosmos)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Cosmos.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -983,6 +995,7 @@ class XtdGearModels
 					"Test",
 					"Bomba",
 					"Dog",
+					"Cosmos",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1442,6 +1455,12 @@ class XtdGearModels
 					description = "Fighting Shark for the collar";
 					//image = "xxx";
 				};
+				class Cosmos
+				{
+					label = "Cosmos";
+					description = "Tortilla PB+J Enjoyer";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1786,6 +1805,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Dog";
+		};
+		class 332nd_Helmet_P2_Cosmos
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Cosmos";
 		};
 	};
 };

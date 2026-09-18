@@ -112,7 +112,9 @@ class CfgVehicles
 		
 		isUav = 1;
 		vehicleClass = "Autonomous";
-		
+		canFloat = 1;
+		waterDamageEngine = 0.2;
+		waterResistance = 1;
 		hiddenSelectionsTextures[] = 
 		{
 			"\MRC\JLTS\drones\MSE6\data\mse6_body_co.paa",
