@@ -69,6 +69,24 @@ class CfgVehicles
 		};
 		picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
     };
+    class 332nd_JT12_OTU: 332nd_Jetpack_Base
+    {  
+        scope=2;
+		author="Ithias";
+		displayName="[332nd] JT-12 (OTU)";
+		model="\MRC\JLTS\characters\CloneArmor2\clonejumppackjt12.p3d";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa",
+		};
+		picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
+		DBA_jumppack_energy_capacity = 15;
+		DBA_jumppack_recharge = 0;
+    };
 	class 332nd_JT12_NCO: 332nd_JT12
 	{
 		hiddenSelections[]=

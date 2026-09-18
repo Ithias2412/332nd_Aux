@@ -1781,7 +1781,7 @@ class cfgWeapons
 	{
 		class ItemInfo;
 	};
-	class ls_cows_valken_optic: ItemCore
+	class ls_cows_valken38x_scope: ItemCore
 	{
 		class ItemInfo;
 	};
@@ -1945,12 +1945,12 @@ class cfgWeapons
 		};
 	};
 	
-	class 332nd_LS_VK38X: ls_cows_valken_optic
+	class 332nd_LS_VK38X: ls_cows_valken38x_scope
 	{
 		scope=2;
 		displayName="[LS] VK-38X Optic";
 		picture = "\A3\Weapons_F_EPB\Acc\Data\UI\gear_acco_sniper02_CA.paa";
-		model = "\ls\core\addons\weapons_valken\ls_acc_valken_optic.p3d";
+		model = "\ls\core\addons\weapons_valken\ls_cows_valken38x_scope.p3d";
 		weaponInfoType="RscWeaponZeroing";
 		class ItemInfo: ItemInfo
 		{

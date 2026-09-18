@@ -129,7 +129,11 @@ class CfgVehicles
 		};
 		class TransportBackpacks
 		{
-			
+			class 332nd_JT12_OTU
+			{
+				count = 20;
+				backpack = "332nd_JT12_OTU";
+			};
 		};
 		weapons[] = 
 		{

@@ -241,7 +241,11 @@ class CfgVehicles
 		};
 		class TransportBackpacks
 		{
-			
+			class 332nd_JT12_OTU
+			{
+				count = 20;
+				backpack = "332nd_JT12_OTU";
+			};
 		};
 		class HitPoints: HitPoints
 		{
@@ -1014,6 +1018,14 @@ class CfgVehicles
 					type = "332nd_Refueling_Barrel";
 					amount = 1;
 				};
+			};
+		};
+		class TransportBackpacks
+		{
+			class 332nd_JT12_OTU
+			{
+				count = 20;
+				backpack = "332nd_JT12_OTU";
 			};
 		};
 		weapons[]= 

@@ -83,7 +83,6 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_AB_Fusion: 332nd_Helmet_AB_Base
 	{
-		scope = 1;
 		displayName="[332nd] AB Helmet (Fusion)";
 		hiddenSelections[] = 
 		{
@@ -120,7 +119,6 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_AB_Beansworth: 332nd_Helmet_AB_Base
 	{
-		scope = 1;
 		displayName="[332nd] AB Helmet (Beansworth)";
 		hiddenSelections[] = 
 		{
