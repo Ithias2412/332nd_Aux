@@ -71,18 +71,9 @@ class cfgWeapons
 			};
 		};		
 	};
-	class 332nd_Helmet_BARC_Whoops: JLTS_CloneHelmetBARC
+	class 332nd_Helmet_BARC_Whoops: 332nd_Helmet_BARC_Base
 	{
-		author="Ithias";
-		dlc="332nd Aux";
 		displayName="[332nd] BARC Helmet (Whoops)";
-		subItems[] = {};
-		TFAR_ExternalIntercomWirelessCapable = 1;
-		hiddenSelections[] = 
-		{
-			"camo2",
-			"camo1"
-		};
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_BARC_Whoops.paa",
@@ -115,14 +106,17 @@ class XtdGearModels
 			};
 			class Customs
             {
-                label = "Default";
-				values[] = { "Whoops",};
+                label = "Customs";
+				values[] = 
+				{
+					"Whoops",
+				};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Whoops
                 {
                     label = "Whoops";
-                    description = "THE FIRST BARC HELMET";
+                    description = "Your next";
                     //image = "xxx";
                 };
 			};

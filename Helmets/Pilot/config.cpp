@@ -206,7 +206,7 @@ class XtdGearModels
 				class Cherryy
 				{
                     label = "Cherryy";
-                    description = "Tree Crashing Extrodinare";
+                    description = "Can't hold a billet";
                     //image = "xxx";
 				};
             };

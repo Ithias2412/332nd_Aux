@@ -848,6 +848,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Bomba.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Dog: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Dog)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Dog.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -970,6 +982,7 @@ class XtdGearModels
 					"Don",
 					"Test",
 					"Bomba",
+					"Dog",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1423,6 +1436,12 @@ class XtdGearModels
 					description = "Displeases the machine spirit";
 					//image = "xxx";
 				};
+				class Dog
+				{
+					label = "Dog";
+					description = "Fighting Shark for the collar";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1762,6 +1781,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Bomba";
+		};
+		class 332nd_Helmet_P2_Dog
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Dog";
 		};
 	};
 };

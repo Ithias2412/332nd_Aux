@@ -763,6 +763,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Don: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Don)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Don_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1728,6 +1740,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Ougaran.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Don_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Don";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Don.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Don.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1876,6 +1898,7 @@ class XtdGearModels
 					"Milk",
 					"Beansworth",
 					"Ougaran",
+					"Don",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -2260,7 +2283,13 @@ class XtdGearModels
 				class Ougaran
 				{
 					label = "Ougaran";
-					description = "N/A";
+					description = "Where did the pattern go...";
+					//image = "xxx";
+				};
+				class Don
+				{
+					label = "Don";
+					description = "Private Military Clone Trooper";
 					//image = "xxx";
 				};
 			};
@@ -2576,6 +2605,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Ougaran";
+		};
+		class 332nd_Uniform_Clone_Don
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Don";
 		};
 	};
 };
