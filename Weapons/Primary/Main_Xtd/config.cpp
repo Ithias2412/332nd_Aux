@@ -81,7 +81,7 @@ class XtdGearModels
             class Marksman
             {
                 label = "Marksman (MRK)";
-				values[] = { "Valken", "Firepuncher", "785MK", };
+				values[] = { "Valken", "Firepuncher", "785MK", "Slug_Thrower_MKII",};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Valken
@@ -100,6 +100,12 @@ class XtdGearModels
                 {
                     label = "785MK";
                     description = "Concentrated Precision Blaster";
+                    //image = "xxx";
+                };
+                class Slug_Thrower_MKII
+                {
+                    label = "Test Weapon";
+                    description = "BANNED";
                     //image = "xxx";
                 };
             };
@@ -262,6 +268,11 @@ class XtdGearInfos
 		{
             model = "332nd_Weapons_Main_Extended";
             Marksman = "785MK";
+		};
+		class 332nd_Slug_Thrower_MKII
+		{
+            model = "332nd_Weapons_Main_Extended";
+            Marksman = "Slug_Thrower_MKII";
 		};
 		class 332nd_DC15A_GL
 		{

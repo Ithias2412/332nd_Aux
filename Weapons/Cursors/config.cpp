@@ -28,6 +28,10 @@ class CfgWeaponCursors
 	{
 		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Circle";
 	};
+	class 332nd_Cursor_Circle_Yellow: throw
+	{
+		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Circle_Yellow";
+	};
 	class 332nd_Cursor_Circle_Vic: throw
 	{
 		texture="\332nd_Aux\Weapons\Cursors\Tex\332nd_Cursor_Circle_Vic";

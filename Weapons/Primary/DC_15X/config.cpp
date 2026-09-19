@@ -1,5 +1,7 @@
-class CfgPatches {
-	class 332nd_DC15X {
+class CfgPatches 
+{
+	class 332nd_DC15X 
+	{
 		units[] = 
         {
 			""

@@ -132,6 +132,12 @@ class CfgAmmo
 			hitWood = "IDA_ImpactEffect";
 		};
 	};
+	class 332nd_Base_Ammo_IDA_Yellow: 332nd_Base_Ammo_IDA
+	{
+		effectfly = "IDA_BlasterBoltGlow_Yellow_Fly";
+		Lightcolor[] = {1,1,0};
+		model = "\Indecisive_Armoury_Ammos\Data\Tracers\IDA_Blasterbolt_Yellow.p3d";
+	};
 	class 332nd_FlameRound: FlameRound
 	{
 		submunitionAmmo = "332nd_FlameRound_sub";
@@ -164,6 +170,13 @@ class CfgAmmo
 		hit = 60;
 		caliber = 3;
 		typicalspeed = 1200;
+	};
+	class 332nd_Large_Slug_Thrower_Round: 332nd_Balistic_Bullet_Base
+	{
+		// B1=1 B2=2
+		hit = 90;
+		caliber = 3;
+		typicalspeed = 5000;
 	};
 	class 332nd_Gas_Level_L1_P_X: 332nd_Base_Ammo_IDA
 	{
@@ -264,14 +277,14 @@ class CfgAmmo
 		// B1=4 b2=22
 		hit = 7;
 	};
-	class 332nd_Scattershot_S2: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
+	class 332nd_Scattershot_S2_Yellow: 332nd_Base_Ammo_IDA_Yellow //IDA_blasterbolt_scatter // 332nd_Base_Ammo_IDA_Yellow
 	{
-		submunitionAmmo = "332nd_Scattershot_S1_Sub";
-		submunitionConeAngle = 0.50;
+		submunitionAmmo = "332nd_Scattershot_S1_Sub_Yellow";
+		submunitionConeAngle = 0.375;
 		submunitionConeType[] = {"random",18};
 		triggerTime = 1e-09;
 	};
-	class 332nd_Scattershot_S1: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
+	class 332nd_Scattershot_S1: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter 
 	{
 		submunitionAmmo = "332nd_Scattershot_S1_Sub";
 		submunitionConeAngle = 0.25;
@@ -281,7 +294,8 @@ class CfgAmmo
 	class 332nd_Scattershot_S1_ARC: 332nd_Base_Ammo_IDA //IDA_blasterbolt_scatter
 	{
 		submunitionAmmo = "332nd_Gas_Level_S1_ARC";
-		submunitionConeAngle = 0.25;
+		//submunitionConeAngle = 0.50;
+		submunitionConeAngle = 1;
 		submunitionConeType[] = {"random",12};
 		triggerTime = 1e-09;
 	};
@@ -289,7 +303,11 @@ class CfgAmmo
 	{
 		hit = 10;
 	};
-	class 332nd_Condensedshot_S1: 332nd_Base_Ammo_IDA
+	class 332nd_Scattershot_S1_Sub_Yellow: 332nd_Base_Ammo_IDA_Yellow
+	{
+		hit = 10;
+	};
+	class 332nd_Condensedshot_S1_Yellow: 332nd_Base_Ammo_IDA_Yellow
 	{
 		hit = 35;
 	};
@@ -421,6 +439,12 @@ class CfgAmmo
 		effectfly = "IDA_BlasterBoltGlow_Medium_Blue_Fly";
 		effectflare = "FlareShell";
 		Lightcolor[] = {1,0,0};
+	};
+	class 332nd_Scattergun_HEAP: 332nd_Westar_Rifle_Grenade
+	{
+		indirectHitRange=2.5;
+		typicalspeed = 500;
+		indirectHit=20;
 	};
 	class 332nd_UGL_Smoke: smokeshell
 	{

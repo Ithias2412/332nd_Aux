@@ -52,6 +52,15 @@ class CfgMagazines
 		scope = 2;
 		initSpeed = 1200;
 	};
+	class 332nd_Slug_Thrower_MKII_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Large_Slug_Thrower_Round";
+		count = 1;
+		displayname = "[332nd] Large Slug Round";
+		mass = 2;
+		scope = 2;
+		initSpeed = 5000;
+	};
 	class 332nd_Slug_Thrower_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Slug_Thrower_Round";
@@ -90,7 +99,7 @@ class CfgMagazines
 	};
 	class 332nd_ScatterGun_Scattershot_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_Scattershot_S2";
+		ammo = "332nd_Scattershot_S2_Yellow";
 		count = 10;
 		displayname = "[332nd] Scatter-shot 10 Round Energy Cell";
 		mass = 8;
@@ -106,9 +115,17 @@ class CfgMagazines
 	};
 	class 332nd_ScatterGun_Condensedshot_Mag: 332nd_Base_Mag
 	{
-		ammo = "332nd_Condensedshot_S1";
+		ammo = "332nd_Condensedshot_S1_Yellow";
 		count = 5;
 		displayname = "[332nd] Condensed-shot 5 Round Energy Cell";
+		mass = 8;
+		scope = 2;
+	};
+	class 332nd_Scattergun_HEAP_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Scattergun_HEAP";
+		count = 1;
+		displayname = "[332nd] HEAP Slug";
 		mass = 8;
 		scope = 2;
 	};
