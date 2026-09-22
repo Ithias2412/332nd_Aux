@@ -128,6 +128,14 @@ class cfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Cherryy.paa",
 		};
 	};
+	class 332nd_Helmet_Pilot_Cherryy: 332nd_Helmet_Pilot
+	{
+		displayName="[332nd] Pilot Helmet (Grease)";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Grease.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -164,6 +172,7 @@ class XtdGearModels
 					"Lawman",
 					"Milk",
 					"Cherryy",
+					"Grease",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -207,6 +216,12 @@ class XtdGearModels
 				{
                     label = "Cherryy";
                     description = "Can't hold a billet";
+                    //image = "xxx";
+				};
+				class Grease
+				{
+                    label = "Grease";
+                    description = "New Hire fr";
                     //image = "xxx";
 				};
             };
@@ -257,6 +272,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_Pilot_Extended";
             Customs = "Cherryy";
+		};
+		class 332nd_Helmet_Pilot_Grease
+		{
+            model = "332nd_Helmets_Pilot_Extended";
+            Customs = "Grease";
 		};
 	};
 };
