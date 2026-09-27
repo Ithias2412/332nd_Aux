@@ -722,7 +722,7 @@ class CfgVehicles
 
 		class TransportItems
 		{
-			// MEDICAL
+		// MEDICAL
 			class 332nd_Acti_Bandage_Weap
 			{
 				count = 250;
@@ -784,7 +784,7 @@ class CfgVehicles
 				name = "ACE_tourniquet";
 			};
 
-			// TOOLS / GEAR
+		// TOOLS / GEAR
 			class ACE_DefusalKit
 			{
 				count = 5;
@@ -846,7 +846,7 @@ class CfgVehicles
 				name = "ItemcTabHCam";
 			};
 
-			// THROWABLE “ITEM” VARIANTS
+		// THROWABLE “ITEM” VARIANTS
 			class 332nd_Remote_Charge_Throwable
 			{
 				count = 25;
@@ -858,7 +858,7 @@ class CfgVehicles
 				name = "332nd_Detonation_pack_Throwable";
 			};
 
-			// MAP / NAV / COMMS / WEARABLES
+		// MAP / NAV / COMMS / WEARABLES
 			class ItemMap 
 			{
 				count = 10;

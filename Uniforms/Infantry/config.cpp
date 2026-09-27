@@ -775,6 +775,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Stitch: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Stitch)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Stitch_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1750,6 +1762,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Don.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Stitch_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Stitch";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Stitch.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stitch.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1899,6 +1921,7 @@ class XtdGearModels
 					"Beansworth",
 					"Ougaran",
 					"Don",
+					"Stitch",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -2292,6 +2315,12 @@ class XtdGearModels
 					description = "Private Military Clone Trooper";
 					//image = "xxx";
 				};
+				class Stitch
+				{
+					label = "Stitch";
+					description = "Cherryy's Pocket Medic";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -2610,6 +2639,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Don";
+		};
+		class 332nd_Uniform_Clone_Stitch
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Stitch";
 		};
 	};
 };

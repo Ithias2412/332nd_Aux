@@ -872,6 +872,42 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Cosmos.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Swim: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Swim)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Swim.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Stitch: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Stitch)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Stitch.paa"
+		};
+	};
+	class 332nd_Helmet_P2_Balls: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Balls)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Balls.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -996,6 +1032,9 @@ class XtdGearModels
 					"Bomba",
 					"Dog",
 					"Cosmos",
+					"Swim",
+					"Stitch",
+					"Balls",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1461,6 +1500,24 @@ class XtdGearModels
 					description = "Tortilla PB+J Enjoyer";
 					//image = "xxx";
 				};
+				class Swim
+				{
+					label = "Swim";
+					description = "TBD";
+					//image = "xxx";
+				};
+				class Stitch
+				{
+					label = "Stitch";
+					description = "TBD";
+					//image = "xxx";
+				};
+				class Balls
+				{
+					label = "Balls";
+					description = "On Kiros's Hitlist";
+					//image = "xxx";
+				};
             };
         };
     }; 
@@ -1810,6 +1867,21 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Cosmos";
+		};
+		class 332nd_Helmet_P2_Swim
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Swim";
+		};
+		class 332nd_Helmet_P2_Stitch
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Stitch";
+		};
+		class 332nd_Helmet_P2_Balls
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Balls";
 		};
 	};
 };
