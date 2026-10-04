@@ -908,6 +908,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Balls.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Farsight: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Farsight)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Farsight.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -1035,6 +1047,7 @@ class XtdGearModels
 					"Swim",
 					"Stitch",
 					"Balls",
+					"Farsight",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1518,8 +1531,14 @@ class XtdGearModels
 					description = "On Kiros's Hitlist";
 					//image = "xxx";
 				};
+				class Farsight
+				{
+					label = "Farsight";
+					description = "TBD";
+					//image = "xxx";
+				};
             };
-        };
+        }; 
     }; 
 };
 
@@ -1882,6 +1901,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Balls";
+		};
+		class 332nd_Helmet_P2_Farsight
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Farsight";
 		};
 	};
 };
