@@ -426,6 +426,27 @@ class cfgWeapons
 		};
 	};
 	
+	class 332nd_Altred_Vest: 332nd_Trooper_Vest
+	{
+		displayName="[332nd] Vest (Altred)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
+		hiddenSelections[] = 
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Vests\Tex\332nd_Vest_Officer_Altred.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1"
+			};
+		};
+	};
 };
 
 class XtdGearModels
@@ -491,7 +512,7 @@ class XtdGearModels
                 label = "Customs";
                 values[] = 
 				{
-					"Cherryy",
+					/* "Cherryy", */
 					"Asuka",
 					"Ithias",
 					"Joker",
@@ -502,15 +523,16 @@ class XtdGearModels
 					"Lettuce",
 					"Trick",
 					"Rat",
+					"Altred",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
-                class Cherryy
+                /* class Cherryy
                 {
                     label = "Cherryy";
                     description = "Been sittin on this one";
                     // image = "xxx";
-                };
+                }; */
 				class Asuka
                 {
                     label = "Asuka";
@@ -649,6 +671,11 @@ class XtdGearInfos
 		{
             model = "332nd_Vest_Extended";
             Custom = "Rat";
+		};
+		class 332nd_Vest_Altred
+		{
+            model = "332nd_Vest_Extended";
+            Custom = "Altred";
 		};
 	};
 };
