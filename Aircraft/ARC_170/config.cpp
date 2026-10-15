@@ -113,6 +113,7 @@ class CfgVehicles
 	{
 		
 	};
+	class ACE_SelfActions;
 	class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F
 	{
 		class Turrets
@@ -245,11 +246,26 @@ class CfgVehicles
 					"332nd_Faction"
 				};
 			};
+			class 332nd_Cherryy
+			{
+				displayname="332nd Cherryy";
+				author="Cherryy";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Main_Cherryy.paa",
+					"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Wings_Cherryy.paa",
+					"332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Guns.paa",
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
 		};
 		textureList[]=
 		{
-			"332nd_Base_tex",
-			1,
+			"332nd_Base_Tex", 1,
+			"332nd_Cherryy", 0,
 		};
 		class Components: Components //MOTHERFUCKER
 		{
@@ -565,6 +581,36 @@ class CfgVehicles
 					};
 				};
 			};
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class Style_Changer
+            {
+                displayName = "Change Camo";
+                exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+                showDisabled = 0;
+                priority = 2;
+                class 332nd_Base_Tex
+                {
+                    displayName="332nd Base Variant ";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Main.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Wings.paa']; _target setObjectTextureGlobal [2,'332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Guns.paa'];";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 332nd_Cherryy: 332nd_Base_Tex
+                {
+                    displayName="332nd Cherryy Custom";
+                    statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Main_Cherryy.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Wings_Cherryy.paa']; _target setObjectTextureGlobal [2,'332nd_Aux\Aircraft\ARC_170\Tex\332nd_Arc_170_Guns.paa'];";
+                };
+            };
 		};
 	};
 };
