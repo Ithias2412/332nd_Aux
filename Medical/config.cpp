@@ -87,6 +87,26 @@ class ace_medical_treatment
 			{
 				effectiveness = 1;
 			};
+			
+			class CrystalShards: Abrasion 
+			{
+				effectiveness = 2;
+				reopeningChance = 0.7;
+				reopeningMinDelay = 1000;
+				reopeningMaxDelay = 1600;
+			};
+			class CrystalShardsMinor: CrystalShards 
+			{
+				effectiveness = 2;
+			};
+			class CrystalShardsMedium: CrystalShards 
+			{
+				effectiveness = 1.4;
+			};
+			class CrystalShardsLarge: CrystalShards 
+			{
+				effectiveness = 1;
+			};
 
             class Contusion: Abrasion 
 			{

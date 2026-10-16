@@ -175,7 +175,7 @@ class XtdGearModels
 				class Fusion
                 {
                     label = "Fusion";
-                    description = "Awaiting Rimuru DM";
+                    description = "Barks at goth woman";
                     //image = "xxx";
             	};
 				class Trick

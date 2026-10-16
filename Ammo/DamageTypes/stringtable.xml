@@ -13,5 +13,17 @@
         <Key ID="STR_ACE_Medical_Damage_ElectricBurn_Minor">
             <English>Minor Electric Burn</English>
         </Key>
+        <Key ID="STR_ACE_Medical_Damage_CrystalShards">
+            <English>Crystal Shrapnel</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_CrystalShards_Large">
+            <English>Large Crystal Shard</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_CrystalShards_Medium">
+            <English>Crystal Shard</English>
+        </Key>
+        <Key ID="STR_ACE_Medical_Damage_CrystalShards_Minor">
+            <English>Small Crystal Shard</English>
+        </Key>
     </Package>
 </Project>

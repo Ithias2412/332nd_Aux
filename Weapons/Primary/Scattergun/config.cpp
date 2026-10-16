@@ -40,9 +40,7 @@ class cfgWeapons
 		magazines[]=
 		{
 			"332nd_ScatterGun_Scattershot_Mag",
-			"332nd_ScatterGun_Condensedshot_Mag",
 			"332nd_ScatterGun_Arc_Mag",
-			"332nd_Scattergun_HEAP_Mag",
 		};
 		magazineWell[]={};
 		reloadAction="3AS_GestureReloadScatterGun";
@@ -123,6 +121,62 @@ class cfgWeapons
 		muzzles[]=
 		{
 			"this",
+			"Alternative_Barrel",
+		};
+		class Alternative_Barrel: 3AS_ScatterGun_F
+		{
+			displayName="Alternative Barrel";
+			magazines[]=
+			{
+				"332nd_ScatterGun_Condensedshot_Mag",
+				"332nd_Scattergun_HEAP_Mag",
+				"332nd_ScatterGun_Condensedshot_Crystal_Mag",
+			};
+			magazineWell[]={};
+			modelOptics = "\332nd_Aux\Misc\Optics\332nd_Zoom_Yellow.p3d";
+			cursor = "332nd_Cursor_Circle_Yellow";
+			cursoraim = "CursorAim";
+			class OpticsModes
+			{
+				class Nozoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					distanceZoomMax=600;
+					distanceZoomMin=100;
+					memoryPointCamera="eye";
+					modelOptics="\A3\Weapons_F\empty";
+					opticsDisablePeripherialVision=0;
+					opticsFlare=0;
+					opticsZoomInit=0.75;
+					opticsZoomMax=1.25;
+					opticsZoomMin=0.25;
+					useModelOptics=0;
+					visionMode[]={};
+				};
+				class Yeszoom
+				{
+					opticsPPEffects[]={};
+					opticsID=1
+					discreteDistanceInitIndex=1;
+					discreteInitIndex = 0;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\332nd_Aux\Misc\Optics\332nd_Zoom_Yellow"};
+					opticsDisablePeripherialVision=1;
+					opticsFlare=1;
+					opticsZoomInit = 0.125;
+					opticsZoomMax = 0.125;
+					opticsZoomMin = 0.125;
+					useModelOptics=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+					};
+				};
+			};
 		};
 		modes[]=
 		{

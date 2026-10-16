@@ -11,7 +11,10 @@ class CfgPatches
             "332nd_Slug_Thrower",
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"A3_Weapons_F_Rifles_MX",
+		};
 	};
 };
 //#include "xtdGear.hpp"
@@ -23,15 +26,32 @@ class PointerSlot;
 class Mode_Burst;
 class Mode_FullAuto;
 
+
 class cfgWeapons 
 {
-	class WeaponSlotsInfo;
-	class Rifle_Base_F;
-	class arifle_MX_Base_F: Rifle_Base_F
+	class Default
+	{
+		class GunClouds;
+	};
+	class RifleCore: Default
+	{
+		
+	};
+	class Rifle: RifleCore
+	{
+		class WeaponSlotsInfo;
+	};
+	class Rifle_Base_F: Rifle
 	{
 		class GunParticles;
-		class GunClouds;
-		class WeaponSlotsInfo
+	};
+	class arifle_MX_Base_F: Rifle_Base_F
+	{
+		class GunParticles: GunParticles
+		{
+			
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class SlotInfo;
 		};

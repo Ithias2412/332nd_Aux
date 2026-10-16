@@ -94,7 +94,7 @@ class CfgMagazines
 		ammo = "332nd_Scattershot_S1";
 		count = 10;
 		displayname = "[332nd] DP-23 10 Round Energy Cell";
-		mass = 8;
+		mass = 4;
 		scope = 2;
 	};
 	class 332nd_ScatterGun_Scattershot_Mag: 332nd_Base_Mag
@@ -102,7 +102,7 @@ class CfgMagazines
 		ammo = "332nd_Scattershot_S2_Yellow";
 		count = 10;
 		displayname = "[332nd] Scatter-shot 10 Round Energy Cell";
-		mass = 8;
+		mass = 4;
 		scope = 2;
 	};
 	class 332nd_ScatterGun_Arc_Mag: 332nd_Base_Mag
@@ -110,7 +110,7 @@ class CfgMagazines
 		ammo = "332nd_Scattershot_S1_ARC";
 		count = 10;
 		displayname = "[332nd] Arc-shot 10 Round Energy Cell";
-		mass = 8;
+		mass = 12;
 		scope = 2;
 	};
 	class 332nd_ScatterGun_Condensedshot_Mag: 332nd_Base_Mag
@@ -118,6 +118,14 @@ class CfgMagazines
 		ammo = "332nd_Condensedshot_S1_Yellow";
 		count = 5;
 		displayname = "[332nd] Condensed-shot 5 Round Energy Cell";
+		mass = 8;
+		scope = 2;
+	};
+	class 332nd_ScatterGun_Condensedshot_Crystal_Mag: 332nd_Base_Mag
+	{
+		ammo = "332nd_Condensedshot_S1_Crystal";
+		count = 1;
+		displayname = "[332nd] Crystal Slug (WIP)";
 		mass = 8;
 		scope = 2;
 	};

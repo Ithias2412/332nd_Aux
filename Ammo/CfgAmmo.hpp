@@ -261,6 +261,22 @@ class CfgAmmo
 		ExplosionEffects = "ARC_Explosion_Effect";
 		craterEffects = "";
 	};
+	class 332nd_Condensedshot_S1_Crystal: 332nd_Base_Ammo_IDA
+	{
+		// B1=2 B2=12
+		hit = 1;
+		indirectHit = 1;
+		indirectHitRange = 5;
+		model = "OPTRE_FC_Weapons\needler\needlebolt.p3d";
+		tracerscale = 2;
+		effectfly = "";
+		//typicalspeed = 400; // was 800
+		ACE_damageType = "332nd_Crystal_DamageType";
+		explosive = 1;
+		//ExplosionEffects = "ARC_Explosion_Effect";
+		explosionEffects = "";
+		craterEffects = "";
+	};
 	class 332nd_Gas_Level_S1_Dual: 332nd_Base_Ammo_IDA
 	{
 		// B1=2 B2=12

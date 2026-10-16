@@ -26,6 +26,13 @@ class ACE_Medical_Injuries
 			causeLimping = 0;
 			pain = 1;
 		};
+		class CrystalShards
+		{
+			bleeding = 0.5;
+			causeFracture = 0;
+			causeLimping = 0;
+			pain = 0.5;
+		};
 	};
     class damageTypes
 	{
@@ -46,6 +53,28 @@ class ACE_Medical_Injuries
 				ace_medical_damage_woundsHandlerBase = "ace_medical_damage_fnc_woundsHandlerBase";
             };
             class ElectricBurn 
+			{
+                //weighting[] = {{1.5,0},{1.5,1},{0.35,1},{0.35,0}};
+				weighting[] = {{0.2,2},{0,2.5}};
+            };
+        };
+        class 332nd_Crystal_DamageType 
+		{
+			thresholds[] = 
+			{
+				{20,10},
+				{4.5,2},
+				{3,1},
+				{0,1}
+			};
+            selectionSpecific = 0;
+            noBlood = 1;
+            class woundHandlers 
+			{
+                ace_medical_damage = "ace_medical_damage_fnc_woundsHandlerBase";
+				ace_medical_damage_woundsHandlerBase = "ace_medical_damage_fnc_woundsHandlerBase";
+            };
+            class CrystalShards 
 			{
                 //weighting[] = {{1.5,0},{1.5,1},{0.35,1},{0.35,0}};
 				weighting[] = {{0.2,2},{0,2.5}};

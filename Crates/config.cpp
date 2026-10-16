@@ -55,6 +55,11 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
+			class 332nd_Slug_Thrower_MKII_Mag
+			{
+				count = 200;
+				magazine = "332nd_Slug_Thrower_MKII_Mag";
+			};
 			class 332nd_DC15A_Mag
 			{
 				count = 100;
@@ -1014,6 +1019,11 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
+			class 332nd_Slug_Thrower_MKII_Mag
+			{
+				count = 200;
+				magazine = "332nd_Slug_Thrower_MKII_Mag";
+			};
 			class 332nd_DC15A_Mag
 			{
 				count = 100;
