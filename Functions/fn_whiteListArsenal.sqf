@@ -464,6 +464,7 @@ params ["_obj"];
 "332nd_NVG_Visor_Don",
 "332nd_Uniform_Clone_Jammur",
 "332nd_Uniform_Clone_Grease",
+"332nd_ScatterGun_Condensedshot_Crystal_Mag",
 "ACE_SpareBarrel"]
 
 ] call ace_arsenal_fnc_initBox
