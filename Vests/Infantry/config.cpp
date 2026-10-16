@@ -428,6 +428,7 @@ class cfgWeapons
 	
 	class 332nd_Altred_Vest: 332nd_Trooper_Vest
 	{
+		scope = 1;
 		displayName="[332nd] Vest (Altred)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
 		hiddenSelections[] = 

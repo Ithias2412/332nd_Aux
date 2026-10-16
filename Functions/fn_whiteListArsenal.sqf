@@ -451,10 +451,19 @@ params ["_obj"];
 "332nd_Helmet_P2_Dog",
 "332nd_Uniform_Clone_Don",
 "332nd_Helmet_P2_Cosmos",
-"332nd_Outland_Rifle",
 "332nd_Slug_Thrower_MKII",
 "332nd_Slug_Thrower_MKII_Mag",
 "332nd_Slug_Thrower_MKII_Muzzle",
+"332nd_Helmet_Pilot_Grease",
+"332nd_Helmet_P2_Swim",
+"332nd_Helmet_P2_Stitch",
+"332nd_Helmet_P2_Balls",
+"332nd_Uniform_Clone_Stitch",
+"332nd_Helmet_P2_Farsight",
+"332nd_Helmet_P2_Jammur",
+"332nd_NVG_Visor_Don",
+"332nd_Uniform_Clone_Jammur",
+"332nd_Uniform_Clone_Grease",
 "ACE_SpareBarrel"]
 
 ] call ace_arsenal_fnc_initBox
