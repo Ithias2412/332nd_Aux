@@ -747,6 +747,23 @@ class CfgVehicles
 					"332nd_Faction"
 				};
 			};
+			class 332nd_Variant_2_Tex
+			{
+				displayname="332nd Variant 2";
+				author="Cherryy";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull_Variant_2.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
 			class 332nd_3AS_Base_Tex
 			{
 				displayname="3AS Base";
@@ -767,9 +784,9 @@ class CfgVehicles
 		};
 		textureList[]=
 		{
-			"332nd_Base_Tex",
-			"332nd_3AS_Base_Tex",
-			1,
+			"332nd_Base_Tex", 1,
+			"332nd_3AS_Base_Tex", 0, 
+			"332nd_Variant_2_Tex", 0,
 		};
 		class ACE_SelfActions: ACE_SelfActions
 		{
@@ -806,19 +823,13 @@ class CfgVehicles
 			};
 			class Style_Changer
 			{
-				displayName="Change Camo";
-				exceptions[]=
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+				showDisabled = 0;
+				priority = 2;
+				class Variant_1
 				{
-					"isNotInside",
-					"isNotSwimming",
-					"isNotSitting"
-				};
-				condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-				showDisabled=0;
-				priority=2;
-				class DefaultSkin
-				{
-					displayName="332nd Base Skin";
+					displayName="332nd Variant 1";
 					exceptions[]=
 					{
 						"isNotInside",
@@ -831,6 +842,25 @@ class CfgVehicles
 					runOnHover=0;
 					priority=2.5;
 				};
+				class Variant_2: Variant_1
+				{
+					displayName="332nd Variant 2";
+					statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull_Variant_2.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+				};
+				/* class 332nd_Skins
+				{
+					displayname = "332nd Custom Skins";
+					class 332nd_Custom_1: Variant_1
+					{
+						displayName = "332nd Default Variant";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+					};
+					class 332nd_Custom_2: Variant_1
+					{
+						displayName = "332nd Variant 2";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull_Variant_2.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+					};
+				}; */
 			};
 		};
 	};
@@ -1458,6 +1488,23 @@ class CfgVehicles
 					"332nd_Faction"
 				};
 			};
+			class 332nd_Variant_2_Tex
+			{
+				displayname="332nd Variant 2";
+				author="Cherryy";
+				textures[]=
+				{
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull_Variant_2.paa",
+					"332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapons_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa",
+					"3AS\3AS_Laat\LAATI\data\Interior_CO.paa",
+				};
+				factions[]=
+				{
+					"332nd_Faction"
+				};
+			};
 			class 332nd_3AS_Base_Tex
 			{
 				displayname="3AS Base";
@@ -1478,9 +1525,9 @@ class CfgVehicles
 		};
 		textureList[]=
 		{
-			"332nd_Base_Tex",
-			"332nd_3AS_Base_Tex",
-			1,
+			"332nd_Base_Tex", 1,
+			"332nd_3AS_Base_Tex", 0, 
+			"332nd_Variant_2_Tex", 0,
 		};
 		class ACE_SelfActions: ACE_SelfActions
 		{
@@ -1517,19 +1564,13 @@ class CfgVehicles
 			};
 			class Style_Changer
 			{
-				displayName="Change Camo";
-				exceptions[]=
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+				showDisabled = 0;
+				priority = 2;
+				class Variant_1
 				{
-					"isNotInside",
-					"isNotSwimming",
-					"isNotSitting"
-				};
-				condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-				showDisabled=0;
-				priority=2;
-				class DefaultSkin
-				{
-					displayName="332nd Base Skin";
+					displayName="332nd Variant 1";
 					exceptions[]=
 					{
 						"isNotInside",
@@ -1542,6 +1583,25 @@ class CfgVehicles
 					runOnHover=0;
 					priority=2.5;
 				};
+				class Variant_2: Variant_1
+				{
+					displayName="332nd Variant 2";
+					statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull_Variant_2.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+				};
+				/* class 332nd_Skins
+				{
+					displayname = "332nd Custom Skins";
+					class 332nd_Custom_1: Variant_1
+					{
+						displayName = "332nd Default Variant";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+					};
+					class 332nd_Custom_2: Variant_1
+					{
+						displayName = "332nd Variant 2";
+						statement="_target setObjectTextureGlobal [0,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Hull_Variant_2.paa']; _target setObjectTextureGlobal [1,'332nd_Aux\Aircraft\LAAT\Tex\332nd_3AS_LAAT_i_Wings.paa']; _target setObjectTextureGlobal [2,'3AS\3AS_Laat\LAATI\data\Weapons_CO.paa']; _target setObjectTextureGlobal [3,'3AS\3AS_Laat\LAATI\data\Weapon_Details_CO.paa']; _target setObjectTextureGlobal [4,'3AS\3AS_Laat\LAATI\data\Interior_CO.paa']";
+					};
+				}; */
 			};
 		};
 	};

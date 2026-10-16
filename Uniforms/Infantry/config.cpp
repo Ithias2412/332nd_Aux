@@ -775,6 +775,54 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Stitch: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Stitch)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Stitch_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Jammur: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Jammur)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Jammur_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Dog: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Dog)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Dog_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
+	class 332nd_Uniform_Clone_Grease: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Grease)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Grease_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1750,6 +1798,46 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Don.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Stitch_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Stitch";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Stitch.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Stitch.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Jammur_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Jammurh";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Jammur.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Jammur.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Dog_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Dog";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Dog.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Dog.paa",
+		};
+	};
+	class 332nd_Uniform_Clone_Grease_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Grease";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Grease.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Grease.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1899,6 +1987,10 @@ class XtdGearModels
 					"Beansworth",
 					"Ougaran",
 					"Don",
+					"Stitch",
+					"Jammur",
+					"Dog",
+					"Grease",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -2292,6 +2384,30 @@ class XtdGearModels
 					description = "Private Military Clone Trooper";
 					//image = "xxx";
 				};
+				class Stitch
+				{
+					label = "Stitch";
+					description = "Cherryy's Pocket Medic";
+					//image = "xxx";
+				};
+				class Jammur
+				{
+					label = "Jammur";
+					description = "Anti-Tank Anonymous";
+					//image = "xxx";
+				};
+				class Dog
+				{
+					label = "Dog";
+					description = "Woof (*Wink*)";
+					//image = "xxx";
+				};
+				class Grease
+				{
+					label = "Grease";
+					description = "Hurricane Tortilla";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -2610,6 +2726,26 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Don";
+		};
+		class 332nd_Uniform_Clone_Stitch
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Stitch";
+		};
+		class 332nd_Uniform_Clone_Jammur
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Jammur";
+		};
+		class 332nd_Uniform_Clone_Dog
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Dog";
+		};
+		class 332nd_Uniform_Clone_Grease
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Grease";
 		};
 	};
 };

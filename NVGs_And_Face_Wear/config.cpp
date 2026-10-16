@@ -207,6 +207,34 @@ class CfgWeapons
 			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
+	class 332nd_NVG_Inverted_Visor: OPTRE_NVG
+	{
+		displayName = "[332nd] Visor (Inverted)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
+		hiddenSelections[] = 
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted_JLTS.paa"
+		};
+		visionMode[] = 
+		{
+			"Normal",
+			"NVG",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVG_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+		};
+	};
 	class 332nd_NVG_Visor_Luci: OPTRE_NVG
 	{
 		displayName = "[332nd] Visor (Luci)";
@@ -235,9 +263,9 @@ class CfgWeapons
 			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
-	class 332nd_NVG_Inverted_Visor: OPTRE_NVG
+	class 332nd_NVG_Visor_Don: OPTRE_NVG
 	{
-		displayName = "[332nd] Visor (Inverted)";
+		displayName = "[332nd] Visor (Don)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
 		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
 		hiddenSelections[] = 
@@ -246,7 +274,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Inverted_JLTS.paa"
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Don.paa"
 		};
 		visionMode[] = 
 		{
@@ -331,6 +359,7 @@ class XtdGearModels
 					"Cherryy",
 					"Walkie",
 					"Luci",
+					"Don",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -349,6 +378,12 @@ class XtdGearModels
 				class Luci
                 {
                     label = "Luci";
+                    //description = "Default";
+                    //image = "xxx";
+                };
+				class Don
+                {
+                    label = "Don";
                     //description = "Default";
                     //image = "xxx";
                 };
@@ -419,6 +454,11 @@ class XtdGearInfos
         {
             model = "332nd_NVG_Extended";
             Customs = "Luci";
+        };
+		class 332nd_NVG_Visor_Don
+        {
+            model = "332nd_NVG_Extended";
+            Customs = "Don";
         };
     };
 };
