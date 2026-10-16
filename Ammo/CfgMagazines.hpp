@@ -133,7 +133,7 @@ class CfgMagazines
 	{
 		ammo = "332nd_Scattergun_HEAP";
 		count = 1;
-		displayname = "[332nd] HEAP Slug";
+		displayname = "[332nd] HEAP Slug (WIP)";
 		mass = 8;
 		scope = 2;
 	};
