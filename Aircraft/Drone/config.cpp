@@ -11,7 +11,7 @@ class CfgPatches
 			"",
 		};
         requiredVersion = 0.1;
-        requiredAddons[] = {}; 
+        requiredAddons[] = {};
     };
 };
 
@@ -95,7 +95,7 @@ class CfgVehicles
 		textureList[] = {"Blufor",1};
 		fuelCapacity = 5;
 		fuelConsumptionRate = 0.01;
-		camouflage = 0.1; // 0.6 = Sniper
+		camouflage = 0; // 0.6 = Sniper
 		armor = 5; // was 0.5
 		class assembleInfo 
 		{

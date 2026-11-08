@@ -34,7 +34,7 @@ class CfgVehicles {
         scopeCurator = 2;
         author = "332nd";
 		faction="332nd_CIS_Faction";
-        displayName = "[332nd] Droideka (UGL-only shield)";
-        editorSubcategory = "ls_edsubcat_cis_standardDroids";
+		editorSubcategory = "EdSubcat_332nd_Droideka";
+        displayName = "Droideka (Walking)";
     };
 };
