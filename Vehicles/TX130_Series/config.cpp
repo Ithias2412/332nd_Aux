@@ -529,7 +529,7 @@ class CfgMagazines
 		displayName = "Missiles";
 		displayNameShort = "Wire Guided";
 		ammo = "332nd_Sabre_Missile_Ammo";
-        count = 4;
+        count = 6;
 	};
 	// 40mm Cannon
 	class 3AS_50Rnd_Sabre_mag;
@@ -567,8 +567,8 @@ class CfgAmmo
 	class 332nd_Sabre_Missile_Ammo: M_PG_AT
 	{
 		effectsMissile = "332nd_Effect_Anvil";
-		submunitionAmmo = "332nd_Anvil_I_Ammo_Penetrator";
-		hit = 800; // was 400
+		submunitionAmmo = "3AS_ammo_Penetrator_MK43";
+		hit = 900; // was 400
 		fuseDistance = 5;
 		manualControl = 1;
 		maxControlRange = 2000;
@@ -581,8 +581,9 @@ class CfgAmmo
 	class 3AS_Sabre_HE;
 	class 332nd_Sabre_AP_Ammo: 3AS_Sabre_HE
 	{
+		// Should be 10 rounds to kill AAT
 		caliber = 8;
-		hit = 225; // 150
+		hit = 325; // 150
 		indirectHit = 8;
 		indirectHitRange = 0.2;
 		craterEffects = "ImpactEffectsMedium";
@@ -596,8 +597,8 @@ class CfgAmmo
 	{
 		caliber = 4.6;
 		hit = 70;
-		indirectHit = 8;
-		indirectHitRange = 4;
+		indirectHit = 10;
+		indirectHitRange = 10;
 		
 		typicalSpeed = 1000;
 	};

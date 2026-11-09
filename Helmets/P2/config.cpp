@@ -920,18 +920,6 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Farsight.paa"
 		};
 	};
-	class 332nd_Helmet_P2_Jammur: 332nd_Helmet_P2_CR
-	{
-		displayName="[332nd] P2 Helmet (Jammur)";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Jammur.paa"
-		};
-	};
 	class 332nd_Helmet_P2_Donnie: 332nd_Helmet_P2_CR
 	{
 		displayName="[332nd] P2 Helmet (Donnie)";
@@ -1072,9 +1060,7 @@ class XtdGearModels
 					"Stitch",
 					"Balls",
 					"Farsight",
-					"Jammur",
 					"Donnie",
-					"Swim",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1570,12 +1556,6 @@ class XtdGearModels
 					description = "612th Refugee";
 					//image = "xxx";
 				};
-				class Swim
-				{
-					label = "Swim";
-					description = "My little Pocket Medic";
-					//image = "xxx";
-				};
             };
         }; 
     }; 
@@ -1946,20 +1926,10 @@ class XtdGearInfos
             model = "332nd_Helmets_P2_Extended";
             Customs = "Farsight";
 		};
-		class 332nd_Helmet_P2_Jammur
-		{
-            model = "332nd_Helmets_P2_Extended";
-            Customs = "Jammur";
-		};
 		class 332nd_Helmet_P2_Donnie
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Donnie";
-		};
-		class 332nd_Helmet_P2_Swim
-		{
-            model = "332nd_Helmets_P2_Extended";
-            Customs = "Swim";
 		};
 	};
 };
