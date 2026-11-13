@@ -122,8 +122,8 @@ class cfgWeapons
 	};
 	class 332nd_Helmet_Pilot_Cherryy: 332nd_Helmet_Pilot
 	{
+		scope = 1;
 		displayName="[332nd] Pilot Helmet (Cherryy)";
-		332nd_Has_Lowlight = 1;
 		hiddenSelectionsTextures[]=
 		{
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_Pilot_Cherryy.paa",
