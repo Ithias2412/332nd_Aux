@@ -226,7 +226,7 @@ class CfgVehicles {
     };
 	class 332nd_Droid_B1_Rifleman_Jump: 332nd_Droid_Base 
 	{
-        scope = 2;
+        scope = 0; //KILL YOURSELF!!!
         displayName = "B1 Rifleman (Jump)";
         uniformClass = "JLTS_DroidB1_Rocket";
 		backpack = "JLTS_B1_jetpack_Rocket";
@@ -244,7 +244,7 @@ class CfgVehicles {
 	};
     class 332nd_Droid_B1_Support_Jump: 332nd_Droid_Base 
 	{
-        scope = 2;
+        scope = 0; //KILL YOURSELF!!!
         displayName = "B1 Support Gunner (Jump)";
         uniformClass = "JLTS_DroidB1_Rocket";
 		backpack = "JLTS_B1_jetpack_Rocket";
@@ -1618,6 +1618,7 @@ class CfgGroups
 						position[] = {20, -20, 0};
                     };
                 };
+				/*
                 class 332nd_Rifle_Squad_Jump
 				{
                     name = "B1 Rifle Squad (Jump)";
@@ -1672,7 +1673,8 @@ class CfgGroups
 						position[] = {20, -20, 0};
                     };
                 };
-                class 332nd_Defensive_Garrison 
+                */
+				class 332nd_Defensive_Garrison 
 				{
                     name = "B1 Defensive Garrison [Rose's Game Crashers]";
                     faction = "332nd_CIS_Faction";

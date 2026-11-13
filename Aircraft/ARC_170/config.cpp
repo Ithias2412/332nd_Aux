@@ -194,6 +194,13 @@ class CfgVehicles
 		{
 			class Reargun: Reargun
 			{
+				magazines[] = 
+				{
+					"3AS_ARC_500Rnd_Light_Shells",
+					"3AS_ARC_500Rnd_Light_Shells",
+					"240Rnd_CMFlare_Chaff_Magazine",
+					"240Rnd_CMFlare_Chaff_Magazine",
+				};
 				class OpticsIn: OpticsIn
 				{
 					class Wide: Wide
@@ -212,6 +219,13 @@ class CfgVehicles
 			};
 			class LaserPilot: LaserPilot
 			{
+				magazines[] = 
+				{
+					"3AS_PylonWeapon_ARC_240Rnd_Heavy_Shells",
+					"3AS_PylonWeapon_ARC_240Rnd_Heavy_Shells",
+					"3AS_PylonWeapon_ARC_240Rnd_Heavy_Shells",
+					"3AS_PylonWeapon_ARC_240Rnd_Heavy_Shells",
+				};
 				class OpticsIn: OpticsIn
 				{
 					class Wide: Wide

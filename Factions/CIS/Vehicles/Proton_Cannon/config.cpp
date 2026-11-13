@@ -27,6 +27,8 @@ class CfgVehicles
 		//armor = 60;
 		editorPreview = "";
 		crew = "332nd_Droid_B1_Crewman";
+		crewVulnerable = 0;
+		crewExplosionProtection = 1;
 	};
 	class 332nd_CIS_Proton_Cannon_Flak: 332nd_CIS_Proton_Cannon
 	{

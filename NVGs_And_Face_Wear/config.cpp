@@ -179,6 +179,55 @@ class CfgWeapons
 			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 		};
 	};
+	class 332nd_NVG_Rangefinder_Inverted_NCO: OPTRE_NVG
+	{
+		displayName = "[332nd] Rangefinder (Inverted / NCO)";
+		model = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+		picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_range_ui_ca.paa";
+		hiddenSelections[] = 
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\332nd_Aux\NVGs_And_Face_Wear\Tex\332nd_NVG_Rangefinder_Inverted_NCO.paa"
+		};
+		visionMode[] = 
+		{
+			"Normal",
+			"NVG",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+		};
+	};
+	class 332nd_NVG_Rangefinder_Inverted_NCO_activeCamo: 332nd_NVG_Rangefinder_Inverted_NCO
+	{
+		scope=1;
+		hiddenSelectionsTextures[] = 
+		{
+            "\ls\core\addons\data\textures\blank_ca.paa",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+            "\ls\core\addons\data\materials\activeCamo.rvmat",
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1"};
+			mass = 5;
+			modelOff = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_off.p3d";
+			type = 616;
+			uniformModel = "\MRC\JLTS\characters\CloneArmor\CloneNVGRange_on.p3d";
+			picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+		};
+	};
 	class 332nd_NVG_Visor: OPTRE_NVG
 	{
 		displayName = "[332nd] Visor";
@@ -305,7 +354,7 @@ class XtdGearModels
             class Type
             {
                 label = "Type";
-				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", "Rangefinder_Inverted", "Commander", "Marshal_Commander"};
+				values[] = { "Chip", "Visor", "Visor_Inverted", "Rangefinder", "Rangefinder_Inverted", "Rangefinder_Inverted_NCO", "Commander", "Marshal_Commander"};
                 changeingame = 0;
                 alwaysSelectable = 1;
                 class Chip
@@ -336,6 +385,12 @@ class XtdGearModels
                 {
                     label = "Rangefinder Inverted";
                     description = "VCT+";
+                    //image = "xxx";
+                };
+				class Rangefinder_Inverted_NCO
+                {
+                    label = "Rangefinder Inverted NCO";
+                    description = "CP+";
                     //image = "xxx";
                 };
 				class Commander
@@ -429,6 +484,11 @@ class XtdGearInfos
         {
             model = "332nd_NVG_Extended";
             Type = "Rangefinder_Inverted";
+        };
+        class 332nd_NVG_Rangefinder_Inverted_NCO
+        {
+            model = "332nd_NVG_Extended";
+            Type = "Rangefinder_Inverted_NCO";
         };
         class 332nd_NVG_Visor
         {

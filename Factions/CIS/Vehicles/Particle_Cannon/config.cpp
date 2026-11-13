@@ -26,5 +26,7 @@ class CfgVehicles
 		//armor = 60;
 		editorPreview = "";
 		crew = "332nd_Droid_B1_Crewman";
+		crewVulnerable = 1;
+		crewExplosionProtection = 0;
 	};
 };

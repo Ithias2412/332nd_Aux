@@ -752,6 +752,7 @@ class CfgAmmo
 			"BombCluster_01_UXO_deploy",
 			0.07	*/
 		};
+		class Components;
 	};
 	class 332nd_Forge_I_Ammo: ammo_Bomb_SDB
 	{
@@ -759,7 +760,28 @@ class CfgAmmo
 	};
 	class 332nd_Forge_III_Ammo: ace_missile_gbu_12
 	{
-		
+        class ace_missileguidance 
+		{
+			attackProfiles[] = {"DIR"};
+			bangBangGuidance = 1;
+			canVanillaLock = 0;
+			defaultAttackProfile = "DIR";
+			defaultNavigationType = "Direct";
+			defaultSeekerLockMode = "SALH";
+			defaultSeekerType = "SALH";
+			enabled = 1;
+			navigationTypes[] = {"Direct"};
+			pitchRate = 5;
+			seekerAccuracy = 1;
+			seekerAngle = 60;
+			seekerLockModes[] = {"SALH"};
+			seekerMaxRange = 5000;
+			seekerMinRange = 5;
+			seekerTypes[] = {"SALH"};
+			seekLastTargetPos = 0;
+			stabilityCoefficient = 0.4;
+			yawRate = 5;
+		};
 	};
 	class 332nd_Forge_III_Ammo_Y: 332nd_Forge_III_Ammo
 	{

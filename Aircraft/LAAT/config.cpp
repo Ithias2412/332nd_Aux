@@ -959,6 +959,8 @@ class CfgVehicles
 			};
 			class RightDoorgun: RightDoorgun
 			{
+				turretInfoType = "RscOptics_VTOL_01_gunner";
+				usePip = 1;
 				class OpticsIn: OpticsIn
 				{
 					class Wide: Wide

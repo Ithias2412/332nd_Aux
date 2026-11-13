@@ -2,7 +2,7 @@ class CfgPatches {
     class Faction_CIS_Script {
         author = "Legion Studio & 332nd";
         requiredVersion = 0.1;
-        requiredAddons[] = {"ls_characters_droid"};
+        requiredAddons[] = {"ls_characters_droid", "ls_droids"};
         units[] = {"332nd_droideka"};
         weapons[] = {};
     };
@@ -35,6 +35,14 @@ class CfgVehicles {
         author = "332nd";
 		faction="332nd_CIS_Faction";
 		editorSubcategory = "EdSubcat_332nd_Droideka";
-        displayName = "Droideka (Walking)";
+        displayName = "Droideka (Mobile)";
     };
+	class ls_shield_base;
+	class ls_droideka_shield: ls_shield_base
+	{
+		armor = 2; // was 3
+		armorLights = 0.4; // was 0.4
+		model = "\ls\core\addons\droids\ls_shield_droideka.p3d";
+		scope = 1;
+	};
 };
