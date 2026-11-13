@@ -201,7 +201,6 @@ params ["_obj"];
 "332nd_Knife",
 "ACE_wirecutter",
 "332nd_DC15X_Charged_Mag",
-"332nd_ScatterGun_Flamer_Mag",
 "332nd_Helmet_ARF_Desert",
 "ACE_DefusalKit",
 "332nd_CC_Vest",
@@ -461,10 +460,14 @@ params ["_obj"];
 "332nd_Uniform_Clone_Stitch",
 "332nd_Helmet_P2_Farsight",
 "332nd_Helmet_P2_Jammur",
+"332nd_Helmet_P2_Donnie",
 "332nd_NVG_Visor_Don",
 "332nd_Uniform_Clone_Jammur",
 "332nd_Uniform_Clone_Grease",
-"332nd_ScatterGun_Condensedshot_Crystal_Mag",
+"332nd_Uniform_Clone_Dog",
+"332nd_NVG_Rangefinder_Inverted_NCO",
+"332nd_Helmet_P2_Retro",
+"332nd_Uniform_Clone_Balls",
 "ACE_SpareBarrel"]
 
 ] call ace_arsenal_fnc_initBox

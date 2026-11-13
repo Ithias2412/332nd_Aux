@@ -823,6 +823,18 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+	class 332nd_Uniform_Clone_Balls: 332nd_Uniform_Clone_CR
+	{
+		displayName="[332nd] Clone Trooper Armor (Balls)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="";
+			uniformClass="332nd_Uniform_Clone_Balls_Veh";
+			uniformType = "Neopren";
+			containerClass="Supply50";
+			mass=40;
+		};
+	};
 };
 
 class CfgVehicles
@@ -1838,6 +1850,16 @@ class CfgVehicles
 			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Grease.paa",
 		};
 	};
+	class 332nd_Uniform_Clone_Balls_Veh: 332nd_Uniform_Clone_CR_Veh
+	{
+		scope=1;
+		uniformClass="332nd_Uniform_Clone_Balls";
+		hiddenSelectionsTextures[] = 
+		{
+			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Balls.paa",
+			"332nd_Aux\Uniforms\Tex\332nd_Lower_Armor_Balls.paa",
+		};
+	};
 };
 
 class XtdGearModels
@@ -1991,6 +2013,7 @@ class XtdGearModels
 					"Jammur",
 					"Dog",
 					"Grease",
+					"Balls",
 				};
 				changeingame = 0;
 				alwaysSelectable = 1;
@@ -2408,6 +2431,12 @@ class XtdGearModels
 					description = "Hurricane Tortilla";
 					//image = "xxx";
 				};
+				class Balls
+				{
+					label = "Balls";
+					description = "The #1 Companion of Dick";
+					//image = "xxx";
+				};
 			};
 		};
 	};
@@ -2746,6 +2775,11 @@ class XtdGearInfos
 		{
 			model = "332nd_Uniform_Extended";
 			Customs = "Grease";
+		};
+		class 332nd_Uniform_Clone_Balls
+		{
+			model = "332nd_Uniform_Extended";
+			Customs = "Balls";
 		};
 	};
 };

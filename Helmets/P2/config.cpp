@@ -932,6 +932,18 @@ class CfgWeapons
 			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Donnie.paa"
 		};
 	};
+	class 332nd_Helmet_P2_Retro: 332nd_Helmet_P2_CR
+	{
+		displayName="[332nd] P2 Helmet (Retro)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_Aux\Helmets\Tex\332nd_Helmet_P2_Retro.paa"
+		};
+	};
 };
 
 class XtdGearModels
@@ -1061,6 +1073,7 @@ class XtdGearModels
 					"Balls",
 					"Farsight",
 					"Donnie",
+					"Retro",
 				};
                 changeingame = 0;
                 alwaysSelectable = 1;
@@ -1529,7 +1542,7 @@ class XtdGearModels
 				class Swim
 				{
 					label = "Swim";
-					description = "TBD";
+					description = "Banned";
 					//image = "xxx";
 				};
 				class Stitch
@@ -1554,6 +1567,12 @@ class XtdGearModels
 				{
 					label = "Donnie";
 					description = "612th Refugee";
+					//image = "xxx";
+				};
+				class Retro
+				{
+					label = "Retro";
+					description = "22...";
 					//image = "xxx";
 				};
             };
@@ -1930,6 +1949,11 @@ class XtdGearInfos
 		{
             model = "332nd_Helmets_P2_Extended";
             Customs = "Donnie";
+		};
+		class 332nd_Helmet_P2_Retro
+		{
+            model = "332nd_Helmets_P2_Extended";
+            Customs = "Retro";
 		};
 	};
 };
