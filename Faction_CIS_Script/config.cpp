@@ -27,6 +27,7 @@ class CfgVehicles {
         scope = 1;
         author = "332nd";
         aux332_uglOnlyShield = 1;
+        mlg_protected = 1;
     };
 
     class 332nd_droideka: 332nd_droideka_base {
