@@ -2003,9 +2003,6 @@ SB_fnc_Init_JumpPack = {
 
 
 
-				[_unit, false] remoteExec ["allowDamage", 0];
-				_unit setVariable ["VPR_DroidHealth", 50, true];
-                _unit remoteExecCall ["WBK_ResetArmourHitPart",0,true];
 
 
 				while {alive _unit} do {
@@ -2170,9 +2167,6 @@ SB_fnc_Init_FlyPack = {
 
 
 
-				[_unit, false] remoteExec ["allowDamage", 0];
-				_unit setVariable ["VPR_DroidHealth", 50, true];
-                _unit remoteExecCall ["WBK_ResetArmourHitPart",0,true];
 
 
 				while {alive _unit} do {
