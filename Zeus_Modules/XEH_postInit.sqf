@@ -1,3 +1,4 @@
+#include "\a3\ui_f\hpp\defineDIKCodes.inc"
 
 [] spawn {
 
@@ -754,7 +755,7 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
                 ["toOLBOX", "direction", [0, 1, 8, ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]]],
                 ["sideS", ["Side select (ONLY ONE!)", "The side the spawned dropped units will be on."], [east]],
                 ["toOLBOX", ["Type select", "What type of Droids to spawn."], [3, 2, 3, _options, nil]],
-                ["SLIDER",["Drop pod Amount", "How many drop pods will be Deployed"],[0, 24, 8, 0]], 
+                ["SLIDER",["Drop pod Amount", "How many drop pods will be Deployed"],[0, 16, 8, 0]], 
                 ["SLIDER",["Amount of Vultures", "How many Vultures will be Deployed"],[0, 16, 2, 0]], 
                 ["CHECKBOX",["Jump Ship Out Afterwards?","The ship will leave after it has deployed the troops"],[true]]
                 ], {
@@ -1011,9 +1012,7 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 						_projectile setPosATL (getPosATL _mainprojectile);
 						[_projectile, _mainprojectile] call BIS_fnc_attachtorelative;
 						_projectile allowdamage false;
-						while {alive _projectile} do {
-							_projectile setObjectScale 9;
-							};
+						_projectile setObjectScale 9;
 						[_mainprojectile, _pos,_projectile] spawn {
 							params ["_mainprojectile", "_pos","_projectile"];
 							while {alive _mainprojectile} do {
@@ -1165,9 +1164,7 @@ _ReturnShip = [_position, _Ship_direction, _altitude, _Ship] call ScifiSupportPL
 						_projectile setPosATL (getPosATL _mainprojectile);
 						[_projectile, _mainprojectile] call BIS_fnc_attachtorelative;
 						_projectile allowdamage false;
-						while {alive _projectile} do {
-							_projectile setObjectScale 9;
-							};
+						_projectile setObjectScale 9;
 						[_mainprojectile, _pos,_projectile] spawn {
 							params ["_mainprojectile", "_pos","_projectile"];
 							while {alive _mainprojectile} do {

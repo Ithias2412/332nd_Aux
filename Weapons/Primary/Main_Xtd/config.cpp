@@ -118,7 +118,7 @@ class XtdGearModels
                 class EPL_2
                 {
                     label = "EPL-2";
-                    description = "Integrated Anti-Tank Blaster";
+                    description = "Integrated Anti-Tank Blaster";
                     //image = "xxx";
                 };
 			};

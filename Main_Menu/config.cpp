@@ -97,7 +97,7 @@ class RscDisplayMain: RscStandardDisplay
 			style=2;
 			onbuttonclick="connectToServer ['136.175.187.107', 2306, '332nd']";
 			colorBackground[]={0,0,0,0.5};
-			colorBackgroundActive[]={1,0,0,0,2};
+			colorBackgroundActive[]={1,0,0,0.2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="SafeZoneXAbs + 0.427 * SafeZoneW";
@@ -110,7 +110,7 @@ class RscDisplayMain: RscStandardDisplay
 		{
 			idc=142;
 			colorBackground[]={0,0,0,0.5};
-			colorBackgroundActive[]={1,0,0,0,2};
+			colorBackgroundActive[]={1,0,0,0.2};
 			text="$STR_A3_RscDisplayMain_ButtonEditor";
 			tooltip="We love our mission builders";
 			x="SafeZoneXAbs + 0.427 * SafeZoneW";
@@ -127,7 +127,7 @@ class RscDisplayMain: RscStandardDisplay
 			style=2;
 			onbuttonclick = "playMission ['', '\z\ace\addons\arsenal\missions\Arsenal.VR']";
 			colorBackground[]={0,0,0,0.5};
-			colorBackgroundActive[]={1,0,0,0,2};
+			colorBackgroundActive[]={1,0,0,0.2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="SafeZoneXAbs + 0.427 * SafeZoneW";
@@ -143,7 +143,7 @@ class RscDisplayMain: RscStandardDisplay
 			style=2;
 			onbuttonclick = "playMission ['', configFile >> 'CfgMissions' >> 'Missions' >> '332nd_Arsenal']";
 			colorBackground[]={0,0,0,0.5};
-			colorBackgroundActive[]={1,0,0,0,2};
+			colorBackgroundActive[]={1,0,0,0.2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="SafeZoneXAbs + 0.427 * SafeZoneW";
@@ -159,7 +159,7 @@ class RscDisplayMain: RscStandardDisplay
 			style=2;
 			url="https://discord.gg/ztx9A6rUPj";
 			colorBackground[]={0,0,0,0.5};
-			colorBackgroundActive[]={1,0,0,0,2};
+			colorBackgroundActive[]={1,0,0,0.2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="SafeZoneXAbs + 0.427 * SafeZoneW";

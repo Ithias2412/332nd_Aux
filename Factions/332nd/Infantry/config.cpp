@@ -146,7 +146,7 @@ class CfgVehicles
 		weapons[] = {"332nd_DW_32S","Throw","Put"};
 		respawnWeapons[] = {"332nd_DW_32S","Throw","Put"};
 		items[] = {"332nd_Acti_Bandage_Weap","332nd_Acti_Bandage_Weap","332nd_Acti_Bandage_Weap","332nd_Acti_Bandage_Weap","32nd_Painkiller_Weap","32nd_Painkiller_Weap","ace_splint","ace_tourniquet"};
-		magazines[] = {"332nd_DW32S_Mag"};
+		magazines[] = {"332nd_DW_32S_Mag"};
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","332nd_Trooper_Vest","332nd_Helmet_P2_CT","332nd_NVG_Chip"};
 	};
 	class 332nd_Marksman_FP: 332nd_Spawn_Unit
@@ -544,10 +544,10 @@ class CfgVehicles
 		displayName="New! [332nd] GRN / MRK Bags";
 		class TransportMagazines
 		{
-			class 332nd_DW32S_Mag
+			class 332nd_DW_32S_Mag
 			{
 				count = 10;
-				magazine = "332nd_DW32S_Mag";
+				magazine = "332nd_DW_32S_Mag";
 			};
 
 		};

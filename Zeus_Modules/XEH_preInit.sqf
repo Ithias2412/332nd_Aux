@@ -1,3 +1,4 @@
+#include "\a3\ui_f\hpp\defineDIKCodes.inc"
 
 fnc_SB_Flak = {  
     params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];  

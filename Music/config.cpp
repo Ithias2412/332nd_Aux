@@ -54,7 +54,7 @@ class CfgMusic
     class Brain_Stew
     {
         name = "Brain Stew";
-		sound[] = {"332nd_Aux\music\music\movie\brain_Stew.ogg",1,1};
+		sound[] = {"332nd_Aux\Music\Music\Rock\Brain_Stew.ogg",1,1};
 		duration = 190;
 		musicClass = "332nd_Music_Rock";
     };

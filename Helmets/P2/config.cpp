@@ -1089,12 +1089,12 @@ class XtdGearModels
                     description = "The man the myth the legend";
                     //image = "xxx";
                 };
-				/* class Cherryy
+				class Cherryy
                 {
                     label = "Cherryy";
                     description = "Piller of the community";
                     //image = "xxx";
-                }; */
+                };
 				/* class Cin
 				{
 					label = "Cin";
@@ -1302,7 +1302,7 @@ class XtdGearModels
 				class Inu
 				{
 					label = "Inu";
-					description = "A Handsome Guy";
+					description = "A Handsome Guy";
 					//image = "xxx";
 				};
 				class Mouse
@@ -1512,67 +1512,67 @@ class XtdGearModels
 				class Don
 				{
 					label = "Don";
-					description = "Promote ahead of peers";
+					description = "Promote ahead of peers";
 					//image = "xxx";
 				};
 				class Test
 				{
 					label = "Test";
-					description = "Ignore";
+					description = "Ignore";
 					//image = "xxx";
 				};
 				class Bomba
 				{
 					label = "Bomba";
-					description = "Displeases the machine spirit";
+					description = "Displeases the machine spirit";
 					//image = "xxx";
 				};
 				class Dog
 				{
 					label = "Dog";
-					description = "Fighting Shark for the collar";
+					description = "Fighting Shark for the collar";
 					//image = "xxx";
 				};
 				class Cosmos
 				{
 					label = "Cosmos";
-					description = "Tortilla PB+J Enjoyer";
+					description = "Tortilla PB+J Enjoyer";
 					//image = "xxx";
 				};
 				class Swim
 				{
 					label = "Swim";
-					description = "Banned";
+					description = "Banned";
 					//image = "xxx";
 				};
 				class Stitch
 				{
 					label = "Stitch";
-					description = "TBD";
+					description = "TBD";
 					//image = "xxx";
 				};
 				class Balls
 				{
 					label = "Balls";
-					description = "On Kiros's Hitlist";
+					description = "On Kiros's Hitlist";
 					//image = "xxx";
 				};
 				class Farsight
 				{
 					label = "Farsight";
-					description = "TBD";
+					description = "TBD";
 					//image = "xxx";
 				};
 				class Donnie
 				{
 					label = "Donnie";
-					description = "612th Refugee";
+					description = "612th Refugee";
 					//image = "xxx";
 				};
 				class Retro
 				{
 					label = "Retro";
-					description = "22...";
+					description = "22...";
 					//image = "xxx";
 				};
             };

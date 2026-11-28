@@ -28,7 +28,7 @@ class cfgWeapons
 	class JLTS_stun_muzzle;
 
 //Primary
-	class 332nd_DW_32S: JLTS_DW32S
+	class 332nd_DW_32S: JLTS_DW32S
 	{
 		cursor = "332nd_Cursor_Block";
 		cursoraim = "332nd_Cursor_Dot";
@@ -107,7 +107,7 @@ class cfgWeapons
 				class NCTALKEP
 				{
 					opticsPPEffects[]={};
-					opticsID=1
+					opticsID=1;
 					discreteDistanceInitIndex=1;
 					discreteInitIndex = 0;
 					distanceZoomMax = 300;
@@ -216,7 +216,7 @@ class cfgWeapons
 			class NCTALKEP
 			{
 				opticsPPEffects[]={};
-				opticsID=1
+				opticsID=1;
 				discreteDistanceInitIndex=1;
 				discreteInitIndex = 0;
 				distanceZoomMax = 300;

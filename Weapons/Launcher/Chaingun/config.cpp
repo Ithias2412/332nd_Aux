@@ -179,3 +179,4 @@ class CfgMagazines
 		scope = 2;
 	};
 };
+*/

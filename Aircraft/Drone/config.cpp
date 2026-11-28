@@ -132,7 +132,7 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {""};
+				weapons[] = {};
 				class OpticsIn
 				{
 					class Wide

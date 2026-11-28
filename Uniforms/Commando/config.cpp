@@ -99,7 +99,7 @@ class CfgVehicles
 				explosionShielding = 3; 
 				visual="injury_body";
 				minimalHit = 0.01; 
-				depends="";
+				depends="0";
 			};
 			class HitAbdomen: HitPelvis
 			{
@@ -227,3 +227,4 @@ class CfgVehicles
 		};
 	};
 };
+*/

@@ -15,14 +15,14 @@ class CfgPatches {
 };
 //#include "xtdGear.hpp"
 
+class SensorTemplateLaser;
 class CfgAmmo
 {
-	class SensorTemplateLaser;
 	class Bo_GBU12_LGB;
 	class 332nd_Dropcrate_A: Bo_GBU12_LGB
 	{
 		model = "3as\3as_props\crates\models\supply_Large.p3d";
-		proxyshape = "Dropcrate_FC\Dropcrate_closed.p3d";
+		proxyshape = "3as\3as_props\crates\models\supply_Large.p3d";
         hit = 0;
         indirectHit = 0;
         explosive = 0;
@@ -37,7 +37,7 @@ class CfgAmmo
         trackLead = 0.95;
         maneuvrability = 16;
         maxSpeed = 600;
-        initSpeed = 30
+        initSpeed = 30;
         whistleDist = 24;
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_orange\Supply_Large_orange_co.paa"};

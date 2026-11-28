@@ -5,7 +5,6 @@ class CfgPatches
         units[] = 
 		{
 			"332nd_Radio_Post_Crate",
-			"332nd_Radio_Post_Radio",
 			"332nd_Radio_Post_Antenna",
 		};
         weapons[] = 

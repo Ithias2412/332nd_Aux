@@ -141,7 +141,7 @@ class cfgWeapons
 				class Nozoom
 				{
 					opticsPPEffects[]={};
-					opticsID=1
+					opticsID=1;
 					distanceZoomMax=600;
 					distanceZoomMin=100;
 					memoryPointCamera="eye";
@@ -157,7 +157,7 @@ class cfgWeapons
 				class Yeszoom
 				{
 					opticsPPEffects[]={};
-					opticsID=1
+					opticsID=1;
 					discreteDistanceInitIndex=1;
 					discreteInitIndex = 0;
 					distanceZoomMax = 300;
@@ -245,7 +245,7 @@ class cfgWeapons
 			class Nozoom
 			{
 				opticsPPEffects[]={};
-				opticsID=1
+				opticsID=1;
 				distanceZoomMax=600;
 				distanceZoomMin=100;
 				memoryPointCamera="eye";
@@ -261,7 +261,7 @@ class cfgWeapons
 			class Yeszoom
 			{
 				opticsPPEffects[]={};
-				opticsID=1
+				opticsID=1;
 				discreteDistanceInitIndex=1;
 				discreteInitIndex = 0;
 				distanceZoomMax = 300;

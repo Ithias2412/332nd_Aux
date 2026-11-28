@@ -251,7 +251,7 @@ class CfgMagazines
 		displayname = "[332nd] Westar 45 Round Energy Cell";
 		mass = 8.3;
 		scope = 2;
-	}
+	};
 	class 332nd_Z6_Mag: 332nd_Base_Mag
 	{
 		ammo = "332nd_Gas_Level_M3_S";

@@ -29,7 +29,7 @@ class 332nd_Uniform_East_Enian: JMSLLTE_EmpOfficerCoat_green_F_CombatUniform
 		class ItemInfo: UniformItem
 		{
 			uniformModel="";
-			uniformClass="332nd_Enian_Base";
+			uniformClass="332nd_Enia_Base";
 			uniformType = "Neopren";
 			containerClass = "Supply150";
 		};

@@ -38,3 +38,4 @@ class CfgVehicles
 		tf_hasLRradio=1;
     };
 };
+*/

@@ -175,6 +175,7 @@ class CfgWeapons
 		{
 			dispersion = 0.00073;
 			displayName = "Full";
+			sounds[] = {"StandardSound"};
 			reloadTime = 0.075;
 			class BaseSoundModeType
 			{

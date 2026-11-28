@@ -264,7 +264,7 @@ class cfgWeapons
 	{
 		displayName="[332nd] Vest (Walkie)";
 		model = "\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
-		scope = 2
+		scope = 2;
 		hiddenSelections[] = 
 		{
 			"camo1",
@@ -594,6 +594,11 @@ class XtdGearModels
                     description = "I LOVE WOMAN KISSING!!!!!";
                     // image = "xxx";
                 };
+				class Altred
+                {
+                    label = "Altred";
+                    description = "";
+                };
             };
         };
     };
@@ -673,7 +678,7 @@ class XtdGearInfos
             model = "332nd_Vest_Extended";
             Custom = "Rat";
 		};
-		class 332nd_Vest_Altred
+		class 332nd_Altred_Vest
 		{
             model = "332nd_Vest_Extended";
             Custom = "Altred";

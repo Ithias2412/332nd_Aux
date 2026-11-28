@@ -210,7 +210,7 @@ class XtdGearModels
 				class Milk
 				{
                     label = "Milk";
-                    description = "I've got the mass";
+                    description = "I've got the mass";
                     //image = "xxx";
 				};
 				class Cherryy

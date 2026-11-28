@@ -38,7 +38,7 @@ class cfgWeapons
 		recoil="3AS_recoil_DC15C";
 		reloadAction="GestureReload_JLTS_DC15A";
 		baseWeapon = "332nd_DC15A";
-		scope = 2
+		scope = 2;
 		magazines[] =
 		{
 			"332nd_DC15A_Mag"

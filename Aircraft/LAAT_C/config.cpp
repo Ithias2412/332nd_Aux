@@ -30,7 +30,7 @@ class ls_impulsor_base;
 class CfgVehicles
 {
 
-	class AllVehicles;
+	class AllVehicles;
 	class Air: AllVehicles
 	{
 		class Components;

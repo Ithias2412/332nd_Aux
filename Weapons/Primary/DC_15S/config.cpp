@@ -415,7 +415,7 @@ class cfgWeapons
 		reloadAction = "GestureReload_JLTS_DC15S";
 		//reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
 		picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_ui_ca.paa";
-		baseWeapon = "332nd_DC15S_New";
+		baseWeapon = "332nd_DC15S_3AS";
 		weaponInfoType="";
 		//IDA_StunWeapon = "";
 		//IDA_AltWeapon="";
@@ -674,7 +674,7 @@ class cfgWeapons
 
 	class 332nd_DC15S_GL: 332nd_DC15S_3AS
 	{
-		baseWeapon = "332nd_DC15S_GL_New";
+		baseWeapon = "332nd_DC15S_GL";
 		displayName = "[3AS] DC-15S GL";
 		handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DC15S\Data\Anim\New_DC15SGL_Handanim.rtm"};
 		model = "\3AS\3AS_Weapons\Republic\DC15S\3AS_DC15S_GL.p3d";

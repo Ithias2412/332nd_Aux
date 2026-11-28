@@ -3,6 +3,8 @@
 // PostInit - Loads settings and registers ACE interactions.
 // ============================================================================
 
+["332nd_Prowler_Drone", "Init", {_this call trd_Drones_fnc_droneCrewInit}, true, [], true] call CBA_fnc_addClassEventHandler;
+
 if (!hasInterface) exitWith {};
 
 // Load settings first
@@ -33,8 +35,6 @@ private _deployAction = [
     ["ACE_SelfActions"],
     _deployAction
 ] call ace_interact_menu_fnc_addActionToObject;
-
-["332nd_Prowler_Drone", "Init", {_this call trd_Drones_fnc_droneCrewInit}, true, [], true] call CBA_fnc_addClassEventHandler;
 
 if (trd_drone_debug) then {
     systemChat "[332nd Drones] ACE actions initialized";

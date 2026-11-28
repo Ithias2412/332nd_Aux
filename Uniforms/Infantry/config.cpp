@@ -902,7 +902,7 @@ class CfgVehicles
 				explosionShielding = 3; 
 				visual="injury_body";
 				minimalHit = 0.01; 
-				depends="";
+				depends="0";
 			};
 			class HitAbdomen: HitPelvis
 			{
@@ -1072,7 +1072,7 @@ class CfgVehicles
 				explosionShielding = 3; 
 				visual="injury_body";
 				minimalHit = 0.01; 
-				depends="";
+				depends="0";
 			};
 			class HitAbdomen: HitPelvis
 			{
@@ -1823,7 +1823,7 @@ class CfgVehicles
 	class 332nd_Uniform_Clone_Jammur_Veh: 332nd_Uniform_Clone_CR_Veh
 	{
 		scope=1;
-		uniformClass="332nd_Uniform_Clone_Jammurh";
+		uniformClass="332nd_Uniform_Clone_Jammur";
 		hiddenSelectionsTextures[] = 
 		{
 			"332nd_Aux\Uniforms\Tex\332nd_Upper_Armor_Jammur.paa",
@@ -2170,133 +2170,133 @@ class XtdGearModels
 				class Inu
 				{
 					label = "Inu";
-					description = "RAHHHHHHHHHHHHHH I LOVE WAR";
+					description = "RAHHHHHHHHHHHHHH I LOVE WAR";
 					//image = "xxx";
 				};
 				class Rat
 				{
 					label = "Rat";
-					description = "SATURDAY IS DRINKING DAY!!!";
+					description = "SATURDAY IS DRINKING DAY!!!";
 					//image = "xxx";
 				};
 				class Mouse
 				{
 					label = "Mouse";
-					description = "Hates Quebec";
+					description = "Hates Quebec";
 					//image = "xxx";
 				};
 				class Shuck
 				{
 					label = "Shuck";
-					description = "Unc Status";
+					description = "Unc Status";
 					//image = "xxx";
 				};
 				class Shovie
 				{
 					label = "Shovie";
-					description = "JROTC Warrior";
+					description = "JROTC Warrior";
 					//image = "xxx";
 				};
 				class Aztec
 				{
 					label = "Aztec";
-					description = "Men Impregnater";
+					description = "Men Impregnater";
 					//image = "xxx";
 				};
 				class Whoops
 				{
 					label = "Whoops";
-					description = "Will friendly fire you";
+					description = "Will friendly fire you";
 					//image = "xxx";
 				};
 				class Roseiry
 				{
 					label = "Roseiry";
-					description = "Fun Police / Webtoon Enjoyer";
+					description = "Fun Police / Webtoon Enjoyer";
 					//image = "xxx";
 				};
 				class VB
 				{
 					label = "VB";
-					description = "Medic Mommy";
+					description = "Medic Mommy";
 					//image = "xxx";
 				};
 				class Thym
 				{
 					label = "Thym";
-					description = "Very big updates, very good updates, but not for this armor";
+					description = "Very big updates, very good updates, but not for this armor";
 					//image = "xxx";
 				};
 				class Rode
 				{
 					label = "Rode";
-					description = "This bad boy can fit so many crayons";
+					description = "This bad boy can fit so many crayons";
 					//image = "xxx";
 				};
 				class Clari
 				{
 					label = "Clari";
-					description = "Zesty Clone";
+					description = "Zesty Clone";
 					//image = "xxx";
 				};
 				class Crota
 				{
 					label = "Crota";
-					description = "Son of Oryx";
+					description = "Son of Oryx";
 					//image = "xxx";
 				};
 				class Cosmos
 				{
 					label = "Cosmos";
-					description = "CAGmos";
+					description = "CAGmos";
 					//image = "xxx";
 				};
 				class Fusion
 				{
 					label = "Fusion";
-					description = "Avalonian";
+					description = "Avalonian";
 					//image = "xxx";
 				};
 				class Jorge
 				{
 					label = "Jorge";
-					description = "Is into Frieren a little too much";
+					description = "Is into Frieren a little too much";
 					//image = "xxx";
 				};
 				class Crucial
 				{
 					label = "Crucial";
-					description = "Waited 4 months for this custom";
+					description = "Waited 4 months for this custom";
 					//image = "xxx";
 				};
 				class Logan
 				{
 					label = "Logan";
-					description = "Never got Ilvl for raid";
+					description = "Never got Ilvl for raid";
 					//image = "xxx";
 				};
 				class Ahri
 				{
 					label = "Ahri";
-					description = "L*ague of L*gends Reference";
+					description = "L*ague of L*gends Reference";
 					//image = "xxx";
 				};
 				class Rimuru
 				{
 					label = "Rimuru";
-					description = "Reincarnated as a Chud";
+					description = "Reincarnated as a Chud";
 					//image = "xxx";
 				};
 				class Icurus
 				{
 					label = "Icurus";
-					description = "Company's biggest opposition";
+					description = "Company's biggest opposition";
 					//image = "xxx";
 				};
 				class Saiko
 				{
 					label = "Saiko";
-					description = "Leeroy Enthusiast";
+					description = "Leeroy Enthusiast";
 					//image = "xxx";
 				};
 				class Coal

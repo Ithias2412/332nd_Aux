@@ -46,7 +46,7 @@ class CfgSFX
         };
         empty[] = {"",0,0,0,0,0,0,0};
     };
-}
+};
 class CfgVehicles
 {
     class All;

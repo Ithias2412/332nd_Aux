@@ -120,11 +120,6 @@ class CfgVehicles
 				count = 100;
 				magazine = "332nd_785MK_Mag";
 			};
-			class 332nd_EPL_2_Mag
-			{
-				count = 100;
-				magazine = "332nd_EPL_2_Mag";
-			};
 			class 332nd_Firepuncher_Mag
 			{
 				count = 100;
@@ -1083,11 +1078,6 @@ class CfgVehicles
 			{
 				count = 100;
 				magazine = "332nd_785MK_Mag";
-			};
-			class 332nd_EPL_2_Mag
-			{
-				count = 100;
-				magazine = "332nd_EPL_2_Mag";
 			};
 			class 332nd_Firepuncher_Mag
 			{

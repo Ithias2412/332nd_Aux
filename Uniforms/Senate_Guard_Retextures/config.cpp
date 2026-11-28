@@ -108,7 +108,7 @@ class CfgVehicles
 			class HitPelvis: HitHead
 			{
 				armor = 14; //was 8
-				depends = "";
+				depends = "0";
 				explosionShielding = 3;
 				material = -1;
 				minimalHit = 0.01;
@@ -120,7 +120,7 @@ class CfgVehicles
 			class HitAbdomen: HitPelvis
 			{
 				armor = 9; //was 6
-				depends = "";
+				depends = "0";
 				explosionShielding = 3;
 				material = -1;
 				minimalHit = 0.01;
@@ -132,7 +132,7 @@ class CfgVehicles
 			class HitDiaphragm: HitAbdomen
 			{
 				armor = 9; //was 6
-				depends = "";
+				depends = "0";
 				explosionShielding = 6;
 				material = -1;
 				minimalHit = 0.01;
@@ -144,7 +144,7 @@ class CfgVehicles
 			class HitChest: HitDiaphragm
 			{
 				armor = 12; //was 8
-				depends = "";
+				depends = "0";
 				explosionShielding = 6;
 				material = -1;
 				minimalHit = 0.01;

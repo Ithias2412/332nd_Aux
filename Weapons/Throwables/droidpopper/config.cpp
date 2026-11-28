@@ -55,7 +55,7 @@ class cfgAmmo
         SoundSetExplosion[] = {"Droidpopper_Soundset"}; 
         class EventHandlers 
 		{
-            Fired="_unit = _this select 0; if (local _unit) then {_this spawn fnc_SB_DroidPopper};"
+            Fired="_unit = _this select 0; if (local _unit) then {_this spawn fnc_SB_DroidPopper};";
         };
     };
 };

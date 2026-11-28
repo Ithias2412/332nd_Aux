@@ -276,7 +276,7 @@ class CfgVehicles {
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base
 			{
 			};
-			init="_unit = _this select 0; if (local _unit) then {[_this select 0] spawn SB_fnc_Init_FlyPack};";
+			init="_unit = _this select 0; if (local _unit) then {[_this select 0] spawn {waitUntil {!isNil 'SB_fnc_Init_FlyPack'}; _this spawn SB_fnc_Init_FlyPack}};";
 		};
 	};
 	// B2 Droids
@@ -334,7 +334,7 @@ class CfgVehicles {
 			class HitPelvis: HitHead
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -346,7 +346,7 @@ class CfgVehicles {
 			class HitAbdomen: HitPelvis
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -358,7 +358,7 @@ class CfgVehicles {
 			class HitDiaphragm: HitAbdomen
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -370,7 +370,7 @@ class CfgVehicles {
 			class HitChest: HitDiaphragm
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -555,7 +555,7 @@ class CfgVehicles {
 			class HitPelvis: HitHead
 			{
 				armor = 14; //was 8
-				depends = "";
+				depends = "0";
 				explosionShielding = 3;
 				material = -1;
 				minimalHit = 0.01;
@@ -567,7 +567,7 @@ class CfgVehicles {
 			class HitAbdomen: HitPelvis
 			{
 				armor = 9; //was 6
-				depends = "";
+				depends = "0";
 				explosionShielding = 3;
 				material = -1;
 				minimalHit = 0.01;
@@ -579,7 +579,7 @@ class CfgVehicles {
 			class HitDiaphragm: HitAbdomen
 			{
 				armor = 9; //was 6
-				depends = "";
+				depends = "0";
 				explosionShielding = 6;
 				material = -1;
 				minimalHit = 0.01;
@@ -591,7 +591,7 @@ class CfgVehicles {
 			class HitChest: HitDiaphragm
 			{
 				armor = 12; //was 8
-				depends = "";
+				depends = "0";
 				explosionShielding = 6;
 				material = -1;
 				minimalHit = 0.01;
@@ -799,7 +799,7 @@ class CfgVehicles {
 			class HitPelvis: HitHead
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -811,7 +811,7 @@ class CfgVehicles {
 			class HitAbdomen: HitPelvis
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -823,7 +823,7 @@ class CfgVehicles {
 			class HitDiaphragm: HitAbdomen
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -835,7 +835,7 @@ class CfgVehicles {
 			class HitChest: HitDiaphragm
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -983,7 +983,7 @@ class CfgVehicles {
 			class HitPelvis: HitHead
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -995,7 +995,7 @@ class CfgVehicles {
 			class HitAbdomen: HitPelvis
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -1007,7 +1007,7 @@ class CfgVehicles {
 			class HitDiaphragm: HitAbdomen
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -1019,7 +1019,7 @@ class CfgVehicles {
 			class HitChest: HitDiaphragm
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -1167,7 +1167,7 @@ class CfgVehicles {
 			class HitPelvis: HitHead
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -1179,7 +1179,7 @@ class CfgVehicles {
 			class HitAbdomen: HitPelvis
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -1191,7 +1191,7 @@ class CfgVehicles {
 			class HitDiaphragm: HitAbdomen
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;
@@ -1203,7 +1203,7 @@ class CfgVehicles {
 			class HitChest: HitDiaphragm
 			{
 				armor = 5;
-				depends = "";
+				depends = "0";
 				explosionShielding = 2;
 				material = -1;
 				minimalHit = 0.01;

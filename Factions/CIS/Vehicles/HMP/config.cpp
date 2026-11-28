@@ -61,10 +61,6 @@ class CfgVehicles
 	};
 	class 3AS_HMP_Base: Heli_Attack_01_base_F
 	{
-		class Components: Components 
-		{
-			class TransportPylonsComponent;
-		};
 		class Turrets: Turrets
 		{
 			class Copilot: MainTurret
@@ -85,10 +81,7 @@ class CfgVehicles
 	{
 		class Components: Components 
 		{
-			class TransportPylonsComponent: TransportPylonsComponent
-			{
-				
-			};
+			class TransportPylonsComponent;
 		};
 	};
 	class 3AS_HMP_Transport: 3AS_HMP_Base

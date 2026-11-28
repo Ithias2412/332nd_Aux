@@ -174,8 +174,8 @@ class cfgvehicles
 			{
 				class HitPoints
 				{
-					class HitGun {};
-					class HitTurret {};
+					class HitGun1 {};
+					class HitTurret1 {};
 				};
 			};
 			class CargoTurret_01: CargoTurret {};
@@ -380,12 +380,12 @@ class cfgvehicles
 				gunnerOutOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
 				class HitPoints: HitPoints
 				{
-					class HitGun: HitGun
+					class HitGun1: HitGun1
 					{
 						armor = 1000;
 						passThrough = 0;
 					};
-					class HitTurret: HitTurret
+					class HitTurret1: HitTurret1
 					{
 						armor = 1000;
 						passThrough = 0;

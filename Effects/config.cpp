@@ -110,7 +110,7 @@ class CfgCloudlets
     };
     class 332nd_smoke_Purple: 332nd_smoke_Base
     {
-        color[] = {{0.5,0.0,1,1},{0.5,0.0,1,0}};
+        color[] = {{0.5,0.0,1,1},{0.5,0.0,1,0}};
     };
     class 332nd_smoke_Teal: 332nd_smoke_Base
     {
@@ -132,6 +132,10 @@ class CfgCloudlets
 	class 332nd_Missile_Green_Smoke: Missile3
 	{
         color[] = {{0,1,0,0.07}};
+	};
+	class 332nd_Missile_Purple_Smoke: Missile3
+	{
+        color[] = {{0.5,0,1,0.07},{0.5,0,1,0.07},{0.5,0,1,0.07},{0.25,0,0.5,0.004},{0,0,0,0.003}};
 	};
 };
 

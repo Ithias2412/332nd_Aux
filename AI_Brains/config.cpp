@@ -55,3 +55,4 @@ class CfgBrains
 		bestDecreaseTime = 0.6; // how long (in seconds) it should take 1.0 skilled soldier to stabilize the aim completely
 		turningInfluence = 1.2; // importance of turning in algorithm, multiplier
 	};
+*/
